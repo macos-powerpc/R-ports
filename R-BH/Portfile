@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran eddelbuettel BH 1.84.0-0
-revision            1
+R.setup             cran eddelbuettel BH 1.87.0-1
+revision            0
 categories-append   devel
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             Boost-1
 description         Boost C++ Header Files
 long_description    {*}${description}
 homepage            https://dirk.eddelbuettel.com/code/bh.html
-checksums           rmd160  d195071d1b7abf4efd8d9c9fec6ef3743a311b36 \
-                    sha256  6fb660755f572cd975073d7052075654acf8db12d208954ca223b8e4f77ef1ac \
-                    size    14017751
+checksums           rmd160  b891d8e35266ec348b671d4b87555f334ff3790e \
+                    sha256  59829ae635f42a23289a1c51617f5f972704e1b243b604dad20ef5a812e60393 \
+                    size    14335542
 supported_archs     noarch
-platforms           {darwin any}
 
 test.run            yes
