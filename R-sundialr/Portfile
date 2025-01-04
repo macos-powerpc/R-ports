@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran sn248 sundialr 0.1.6 v
+R.setup             cran sn248 sundialr 0.1.6.1 v
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -13,9 +13,9 @@ description         Interface to SUNDIALS ordinary differential equation \
                     (ODE) solvers
 long_description    {*}${description}
 homepage            http://sn248.github.io/sundialr
-checksums           rmd160  9f28d29e7f7d5fe1a003582b3dc491be04d5eb19 \
-                    sha256  93a8870dc0c33a3a8c0b68cd94dc105c7e53abfacc118ca91b6de9eb54b93951 \
-                    size    305406
+checksums           rmd160  7670a9e9b979793d24c3a95cd095b88ee3198498 \
+                    sha256  15d0b065b999feea95a1341c61378d99d7acf513709783af187e8b3d0e8d6981 \
+                    size    305454
 
 depends_build-append \
                     path:bin/cmake:cmake
