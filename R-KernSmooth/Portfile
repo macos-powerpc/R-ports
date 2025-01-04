@@ -6,15 +6,15 @@ PortGroup           R 1.0
 R.recommended       yes
 
 # This is a recommended package. Keep it CRAN-sourced.
-R.setup             cran cran KernSmooth 2.23-24
+R.setup             cran r-project KernSmooth 2.23-26
 revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             Permissive
 description         Functions for kernel smoothing (and density estimation)
 long_description    {*}${description}. Recommended package.
-checksums           rmd160  e09e82f9153cfd5b73ab74d8f2b6f5166a956f27 \
-                    sha256  d0b3ec39547ffd92565e91b0c3bb637f3b30e7a46afe416d8790b8c4f528ac5f \
-                    size    26067
+checksums           rmd160  2df2dcb1cba2bb45bf2011c3d91abb3962aea4ba \
+                    sha256  b465bdac197f7faa787e625412ae03d1b7c2c134b1c924cfeb775faf9c4da73e \
+                    size    27607
 
 compilers.setup     require_fortran
 
