@@ -6,16 +6,16 @@ PortGroup           R 1.0
 R.recommended       yes
 
 # This is a recommended package. Keep it CRAN-sourced.
-R.setup             cran cran class 7.3-22
-revision            1
+R.setup             cran r-project class 7.3-23
+revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             {GPL-2 GPL-3}
 description         Various functions for classification
 long_description    {*}${description}, including k-nearest neighbour, learning vector quantization and self-organizing maps. \
                     Recommended package.
-checksums           rmd160  8866105f04e83a2ffec4a685914b43c5286681c7 \
-                    sha256  b6994164e93843fcc7e08dfdc8c8b4af6a5a10ef7153d2e72a6855342508d15c \
-                    size    20812
+checksums           rmd160  a377f06e49965773152f69722d0ed423a101564f \
+                    sha256  4d1adb12eae045f15641516d795177dd1d3074c0a86ac633000507c4822891f1 \
+                    size    22058
 
 depends_lib-append  port:R-MASS
 
