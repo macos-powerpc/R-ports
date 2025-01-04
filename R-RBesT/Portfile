@@ -7,7 +7,7 @@ PortGroup           R 1.0
 R.setup             cran Novartis RBesT 1.7-4
 revision            0
 categories-append   math
-maintainers         {@barracuda156 gmail.com:vital.had} openmaintainer
+maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3+
 description         R Bayesian Evidence Synthesis Tools
 long_description    {*}${description}

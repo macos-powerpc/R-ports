@@ -7,7 +7,7 @@ R.setup             cran r-spatial stars 0.6-7
 revision            0
 categories-append   math
 platforms           {darwin any}
-maintainers         {@barracuda156 gmail.com:vital.had} openmaintainer
+maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             Apache
 description         Spatiotemporal arrays, raster and vector data cubes
 long_description    {*}${description}

@@ -7,7 +7,7 @@ PortGroup           R 1.0
 R.setup             cran dakep pense 2.2.2
 revision            0
 categories-append   math
-maintainers         {@barracuda156 gmail.com:vital.had} openmaintainer
+maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Penalized elastic net s/mm-estimator of regression
 long_description    {*}${description}

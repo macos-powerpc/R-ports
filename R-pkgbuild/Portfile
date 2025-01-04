@@ -7,7 +7,7 @@ R.setup             github r-lib pkgbuild 1.4.5 v
 revision            0
 categories-append   devel
 platforms           {darwin any}
-maintainers         {@barracuda156 gmail.com:vital.had} openmaintainer
+maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Find tools needed to build R packages
 long_description    {*}${description}

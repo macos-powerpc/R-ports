@@ -6,7 +6,7 @@ PortGroup           R 1.0
 R.setup             cran cran snowFT 1.6-1
 revision            1
 categories-append   parallel
-maintainers         {@barracuda156 gmail.com:vital.had} openmaintainer
+maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Fault-tolerant simple network of workstations
 long_description    {*}${description}

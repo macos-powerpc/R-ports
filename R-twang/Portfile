@@ -6,7 +6,7 @@ PortGroup           R 1.0
 R.setup             cran burgette twang 2.6.1
 revision            0
 categories-append   math
-maintainers         {@barracuda156 gmail.com:vital.had} openmaintainer
+maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Toolkit for Weighting and Analysis of Nonequivalent Groups
 long_description    {*}${description}

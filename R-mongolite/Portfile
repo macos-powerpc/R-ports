@@ -8,7 +8,7 @@ PortGroup           R 1.0
 R.setup             cran jeroen mongolite 2.8.2
 revision            0
 categories-append   databases
-maintainers         {@barracuda156 gmail.com:vital.had} openmaintainer
+maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             Apache-2
 description         Fast and simple MongoDB client for R
 long_description    {*}${description}

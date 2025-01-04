@@ -7,7 +7,7 @@ R.setup             cran r-lib cpp11 0.5.1
 revision            0
 categories-append   devel
 platforms           {darwin any}
-maintainers         {@barracuda156 gmail.com:vital.had} openmaintainer
+maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         ${name} helps you to interact with R objects \
                     using C++ code

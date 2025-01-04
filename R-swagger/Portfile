@@ -8,7 +8,7 @@ R.setup             cran rstudio swagger 5.17.14.1 v
 revision            0
 categories-append   devel
 platforms           {darwin any}
-maintainers         {@barracuda156 gmail.com:vital.had} openmaintainer
+maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             Apache-2
 description         API generator for R
 long_description    {*}${description}
