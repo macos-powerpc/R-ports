@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github JanMarvin openxlsx2 1.11 v
+R.setup             github JanMarvin openxlsx2 1.12 v
 revision            0
 categories-append   office
-maintainers         nomaintainer
+maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Read, write and edit xlsx files
 long_description    {*}${description}
 homepage            https://janmarvin.github.io/openxlsx2
-checksums           rmd160  a1d80f9abae44fb4b7136ed19dde57dc81799e76 \
-                    sha256  42cf5b2b6856fffe60c2454611374db8fe51a3ac843bca8dc964ba0f1d7691a7 \
-                    size    5662841
+checksums           rmd160  39d674fa7599b62618509256cdd4cd35cb5494e2 \
+                    sha256  c4983e4591108af7158e0fdb7305e9a553b532c604be10fdbd43460e92469630 \
+                    size    5673690
 github.tarball_from archive
 
 depends_lib-append  port:R-magrittr \
