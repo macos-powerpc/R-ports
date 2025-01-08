@@ -3,18 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran nimble-dev nimbleHMC 0.2.2
+R.setup             cran nimble-dev nimbleHMC 0.2.3
 revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             {BSD GPL-2+}
-description         Hamiltonian Monte Carlo and other gradient-based MCMC sampling algorithms for R-nimble
+description         Hamiltonian Monte Carlo and other gradient-based MCMC \
+                    sampling algorithms for R-nimble
 long_description    {*}${description}
 homepage            https://R-nimble.org
-checksums           rmd160  299f88481ffcffe567942d76ac9df3bd8762c77d \
-                    sha256  ccf6c08468a2e9db11bb5145180bc479a8bf82c7a2eb27d40d64b9a92fccc877 \
-                    size    40912
+checksums           rmd160  2ef7447b5d22edc48d51279fa906673348b89328 \
+                    sha256  748536ded1ddbda80ebab34a1252ca447b586c9ee223a069264a94d4ad8ffd73 \
+                    size    40987
 supported_archs     noarch
 
 # Fix running tests:
