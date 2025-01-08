@@ -4,16 +4,16 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran tnagler RcppThread 2.1.7
-revision            1
+R.setup             cran tnagler RcppThread 2.2.0
+revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         R-friendly threading in C++
 long_description    {*}${description}
 homepage            https://github.com/tnagler/RcppThread
-checksums           rmd160  543e3033ebb4118dffe13b03d35d20ded496f901 \
-                    sha256  88debafefb13a77e507eeb2ae2a9e53f717e8cff071fcb4063b2be549423bbe8 \
-                    size    166842
+checksums           rmd160  0955b18085894fb53bee2f6500a862abbdc52297 \
+                    sha256  44835bae083ff89924e27856674868901c895537b24c4f7c11850defa8058d37 \
+                    size    168665
 
 depends_test-append port:R-R.rsp \
                     port:R-Rcpp \
