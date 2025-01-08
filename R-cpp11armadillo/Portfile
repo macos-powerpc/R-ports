@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran pachadotdev cpp11armadillo 0.3.3
+R.setup             cran pachadotdev cpp11armadillo 0.4.1
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -15,13 +15,14 @@ long_description    ${name} provides function declarations and inline function \
                     and the Armadillo C++ library for linear algebra \
                     and scientific computing.
 homepage            https://pacha.dev/cpp11armadillo
-checksums           rmd160  77b0a72173aef9c7c386dd6cf4dddb42f26f7b9f \
-                    sha256  452819868bd8cb4bb12680adec89279de1de6118c04754462170bd5e1d33a6cd \
-                    size    732574
+checksums           rmd160  b227c3870b6535f05514e2cfaec67a599f7ddb50 \
+                    sha256  826b8b0bb255b454704280cca34fe3720e2dc6ff39babd700609fbad3449d043 \
+                    size    771712
 supported_archs     noarch
 
-depends_test-append port:R-cpp11 \
-                    port:R-desc \
+depends_lib-append  port:R-cpp11
+
+depends_test-append port:R-desc \
                     port:R-knitr \
                     port:R-mockery \
                     port:R-rmarkdown \
