@@ -4,21 +4,21 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran dalenbe2 bayesMeanScale 0.1.4 v
+R.setup             cran dalenbe2 bayesMeanScale 0.2.0 v
 revision            0
 categories-append   math
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+platforms           {darwin any}
+maintainers         nomaintainer
 license             GPL-3+
 description         Bayesian Post-Estimation on the Mean Scale
 long_description    Computes Bayesian posterior distributions of predictions, \
                     marginal effects and differences of marginal effects \
                     for various generalized linear models.
 homepage            https://github.com/dalenbe2/bayesMeanScale
-checksums           rmd160  68be108abeb43a6da36da17a7aecc6e34bb9a535 \
-                    sha256  00115746742c2ecfe2adcb41e998734b283a1bb8c90918236a037d509cd96e7e \
-                    size    318600
+checksums           rmd160  8717e14faabf6b27f5e2b1ebb9487f8edd3fbde2 \
+                    sha256  e89ce552b140b0d3660cd16d7820c60419c5fd7eac584ea2e1f47459b654f5e0 \
+                    size    1673493
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-bayestestR \
                     port:R-data.table \
