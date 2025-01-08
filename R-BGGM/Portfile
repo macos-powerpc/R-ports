@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran donaldRwilliams BGGM 2.1.4
+R.setup             cran donaldRwilliams BGGM 2.1.5
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             GPL-2
 description         Bayesian Gaussian Graphical Models
 long_description    {*}${description}
 homepage            https://donaldrwilliams.github.io/BGGM
-checksums           rmd160  869ba2f02560241512bc2b1fbf1e7777e055b33d \
-                    sha256  99013c65ba8e44e32c02fef6ba4da85e024f466e38566a12e96de2f9f9182b3e \
-                    size    3141661
+checksums           rmd160  9695bbe2ce4e79907ec864530439d9e16a773c09 \
+                    sha256  fedba2b14a011860512a1a2df2200298e6bc3e013a12b3518813ab0b1fd52dd9 \
+                    size    3141113
 
 depends_lib-append  port:R-BFpack \
                     port:R-GGally \
