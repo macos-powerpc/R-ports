@@ -6,7 +6,7 @@ PortGroup           R 1.0
 
 legacysupport.newest_darwin_requires_legacy 15
 
-R.setup             cran andrjohns QuickJSR 1.4.0
+R.setup             cran andrjohns QuickJSR 1.5.1
 revision            0
 categories-append   devel
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -14,9 +14,9 @@ license             MIT
 description         Interface for the QuickJS light-weight JavaScript engine
 long_description    {*}${description}
 homepage            https://github.com/andrjohns/QuickJSR
-checksums           rmd160  550aad71ba09850946bcfb1c89169bc0f0852f3a \
-                    sha256  345dda48e2bd055a67234ebc5ad3270563f5e80300a69069c414ff119a7b54ba \
-                    size    801930
+checksums           rmd160  ad29bf31a83a9bb572de7f1416c7d09cded84c62 \
+                    sha256  b561c1ee5a64b4e443558b2db2b66b77116ca4d391566c5cb34ecdce6cc2d67b \
+                    size    748026
 
 # Native ppc build has been fixed in: https://github.com/andrjohns/QuickJSR/commit/07fb3893d29fa17658a8cb8b17ffd2aba4453280
 # See: https://github.com/andrjohns/QuickJSR/issues/1
