@@ -3,17 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran comodin19 BayesVarSel 2.2.5
-revision            3
+R.setup             cran comodin19 BayesVarSel 2.4.5
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         Bayes factors, model choice and variable selection in linear models
 long_description    Bayes factors and posterior probabilities in Linear models, \
                     aimed at providing a formal Bayesian answer to testing and variable selection problems.
-checksums           rmd160  a89b3353e2bee70c6fd1659145a895b52d1e62fc \
-                    sha256  b6c99102b17f65209b0df38ddc8146a1eed4678afaca7b4a1643d9d59267e8c2 \
-                    size    221993
+homepage            https://github.com/comodin19/BayesVarSel
+checksums           rmd160  e57e5058d9541686c91495d4879f377514f5bc68 \
+                    sha256  d13ed4831af8b65e96bf1ef1115bb1b4b433b4b95415391d91aa9e9faf2e38fe \
+                    size    227829
 
 depends_lib-append  port:gsl \
                     port:R-mvtnorm
