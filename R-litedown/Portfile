@@ -3,28 +3,25 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github yihui litedown 0.4 v
+R.setup             github yihui litedown 0.5 v
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Light-weight version of R-markdown
 long_description    {*}${description}
-checksums           rmd160  9593406c9f058dbca9752616d618038f9026ade1 \
-                    sha256  903ad460956c3318a4728b487214a9051ff8076977a538e01b65ebb2313027f2 \
-                    size    111927
+checksums           rmd160  4503d581725f3c2f9c71bbbfbbfa3b8c05ab88ab \
+                    sha256  9fbd0d99f034f57de1f0b4075909e598fee033349fa9e4f844868ba115f982f1 \
+                    size    155408
 github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-commonmark \
                     port:R-xfun
 
-depends_test-append port:R-knitr \
-                    port:R-rbibutils \
-                    port:R-rmarkdown \
+depends_test-append port:R-rbibutils \
                     port:R-rstudioapi \
-                    port:R-tinytex \
-                    port:R-yaml
+                    port:R-tinytex
 
 test.run            yes
 # Error: could not find function "mark"
