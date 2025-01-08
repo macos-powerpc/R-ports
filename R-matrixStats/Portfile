@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github HenrikBengtsson matrixStats 1.4.1
+R.setup             github HenrikBengtsson matrixStats 1.5.0
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             Artistic-2
 description         Functions that apply to rows and columns of matrices
 long_description    {*}${description} (and to vectors).
 homepage            https://github.com/HenrikBengtsson/matrixStats
-checksums           rmd160  9ec9fa8b9a17fef0f4d08d1a2be28ce9958c2c9e \
-                    sha256  549143edf5d8aaeae8b9e3f6edf46eaa5411fd64d33604fc574d5cf7c347ff18 \
-                    size    332162
+checksums           rmd160  72b6aa0590380913b17afe2360d05404d10a31dc \
+                    sha256  352bcca1c4551cabfae58e3be42fc95169c02e7851c7301146d588ec72038b02 \
+                    size    341087
 github.tarball_from archive
 
 depends_test-append port:R-base64enc \
