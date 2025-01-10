@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran mlr-org bbotk 1.4.1 v
+R.setup             cran mlr-org bbotk 1.5.0 v
 revision            0
 categories-append   math
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             LGPL-3
 description         Black-Box Optimization Toolkit
 long_description    {*}${description}
 homepage            https://bbotk.mlr-org.com
-checksums           rmd160  f4cfffe8b4e0250645c4751f92f2eda8df3032e4 \
-                    sha256  e7f63572b183959434761e8405c47b70981a4f82f7489566523752a9a7d8fef2 \
-                    size    131329
+checksums           rmd160  7030d13900739022921caa42a79024ad1b69341e \
+                    sha256  abf633bd40b1bc44f48094c4a338eb91f53771b526705973cf8bdb48ed5ea8d6 \
+                    size    134912
 
 depends_lib-append  port:R-checkmate \
                     port:R-data.table \
