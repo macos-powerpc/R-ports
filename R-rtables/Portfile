@@ -3,8 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-# Revert to GitHub once updated there.
-R.setup             cran insightsengineering rtables 0.6.10 v
+R.setup             github insightsengineering rtables 0.6.11 v
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,10 +11,10 @@ license             Apache-2
 description         Reporting tables with R
 long_description    {*}${description}
 homepage            https://insightsengineering.github.io/rtables
-checksums           rmd160  82520a3784c83f495d85585da9a0f2eeea9261c1 \
-                    sha256  0499f861cd91ffee1d3c2d5a66b8a3420c0f892c67606d50f6ffb2978bec5fce \
-                    size    2711147
-# github.tarball_from archive
+checksums           rmd160  1bdf15aa1f77be2a7f46bb1290822d6070104f3c \
+                    sha256  4e46fed8b1f6f641c8c4ba0e33ad74325bc0d5bf02ae502a41db34be792f5798 \
+                    size    12751881
+github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-checkmate \
