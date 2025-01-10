@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran koheiw seededlda 1.4.1
+R.setup             cran koheiw seededlda 1.4.2
 revision            0
 categories-append   textproc
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             GPL-3
 description         Seeded sequential LDA for topic modelling
 long_description    {*}${description}
 homepage            https://koheiw.github.io/seededlda
-checksums           rmd160  093b904697b489e2073e5d4375a28972e3b0a48e \
-                    sha256  80299411c82ff5e7f1d26256572736faa891d8cd4339ee67d71246ad0ef1acec \
-                    size    3849062
+checksums           rmd160  57526760dcc98b43b57790fd4993f8e708f29013 \
+                    sha256  cadd1ff7ec95ad90dcf0a2d575e551f46e7535f4461c6b5b6c1ee386967fd9b0 \
+                    size    3849139
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
@@ -54,8 +54,7 @@ depends_lib-append  port:onetbb \
 
 compilers.setup     require_fortran
 
-depends_test-append port:R-keyATM \
-                    port:R-topicmodels \
+depends_test-append port:R-topicmodels \
                     port:R-spelling
 
 # FIXME: tests freeze due to a broken R BATCH.
