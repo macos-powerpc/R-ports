@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran asl svd 0.5.7
+R.setup             cran asl svd 0.5.8
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             BSD
 description         Interface to Lanczos SVD and eigensolvers
 long_description    {*}${description} from R.
 homepage            https://github.com/asl/svd
-checksums           rmd160  e17ae67feef9fbd2b3c91bc8c896b8649d960793 \
-                    sha256  50994e78708ddbebf7ba937846e2cadde48437a6e26f1af0a9cfbfd624441514 \
-                    size    122006
+checksums           rmd160  acb05077f0c94da525b8c314747b87283b8cedaa \
+                    sha256  c8f99c62ada68fbb1b40ca5d20775d5177478598416a200f421003e6b21f6543 \
+                    size    122001
 
 compilers.setup     require_fortran
 
