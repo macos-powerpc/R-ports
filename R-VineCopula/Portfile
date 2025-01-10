@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-# Revert to GitHub once updated there.
-R.setup             cran tnagler VineCopula 2.5.1
+# GitHub version is outdated.
+R.setup             cran tnagler VineCopula 2.6.0
 revision            0
 categories-append   math
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             GPL-2+
 description         Statistical inference of vine copulas
 long_description    {*}${description}
 homepage            https://github.com/tnagler/VineCopula
-checksums           rmd160  4cce8c75be9f0c5699c413e236fb059aeca24cc1 \
-                    sha256  f13e82ecc8bb116e476a8698f7b0bbdf81d47f0ae92445913a08a5e21de46b5c \
-                    size    448927
+checksums           rmd160  a77ebe0813612321eb446e1ff89857c3961db0e5 \
+                    sha256  b91f6fa5921031bb7d8f9a17396bd5ce18f038508ffa45ac7fe0d2ff53073933 \
+                    size    449798
 
 depends_lib-append  port:R-ADGofTest \
                     port:R-mvtnorm
