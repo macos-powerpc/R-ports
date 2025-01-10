@@ -3,15 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran markvanderloo gower 1.0.1
-revision            2
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+R.setup             cran markvanderloo gower 1.0.2
+revision            0
+maintainers         nomaintainer
 license             GPL-3
 description         Gower distance
 long_description    {*}${description}
-checksums           rmd160  68761de5d9cd90f6bf93881cf2607755d49d8672 \
-                    sha256  296a9d8e5efa8c3a8cc6b92cf38880915753afdef30281629af9dc8eae8315fc \
-                    size    187590
+homepage            https://github.com/markvanderloo/gower
+checksums           rmd160  901387fc4506808108207e2c3752672573f1457c \
+                    sha256  4fd569a50326133bd5629647ad0581340c9b9f8cd7f95572315f206f78185751 \
+                    size    187966
 
 depends_test-append port:R-tinytest
 
