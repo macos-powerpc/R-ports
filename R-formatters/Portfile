@@ -3,8 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-# Revert to GitHub once updated there.
-R.setup             cran insightsengineering formatters 0.5.9 v
+R.setup             github insightsengineering formatters 0.5.10 v
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +11,10 @@ license             Apache-2
 description         ASCII formatting for values and tables
 long_description    {*}${description}
 homepage            https://insightsengineering.github.io/formatters
-checksums           rmd160  00e5334f439b62c1f8232fbface93a92b3c03e8e \
-                    sha256  5cf0fb29b8778040794b5de1899e6fc28b40e85edad11e4e4fb779fb42992748 \
-                    size    4300536
+checksums           rmd160  911a77237d7c9652f040cad54553d7fff32a7132 \
+                    sha256  906149263cea8d422b893668e13f68d2b45016f7799cab27b8b2b0621464ecbb \
+                    size    2616295
+github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-checkmate \
