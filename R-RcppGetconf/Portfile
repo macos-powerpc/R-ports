@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran eddelbuettel RcppGetconf 0.0.3
-revision            2
+R.setup             cran eddelbuettel RcppGetconf 0.0.4
+revision            0
 categories-append   devel sysutils
 maintainers         nomaintainer
-license             {GPL-2 GPL-3}
+license             GPL-2+
 description         Rcpp interface for querying system configuration variables
 long_description    {*}${description}
 homepage            https://dirk.eddelbuettel.com/code/rcpp.html
-checksums           rmd160  39ae5330bcc0d013c14a606f8c7ad3fa8367f28d \
-                    sha256  806a184056c2d66f640d9ab80b2e8cf7ff45d49f363b940e5768252810b196e1 \
-                    size    12756
+checksums           rmd160  12aa278bcb5a7cedfe0e9b5cd2f4d0bc663db77d \
+                    sha256  54e86dd2e9c0070502b4284d270765afed1b879102c6cbdd5e4729d3f5a2c6f7 \
+                    size    14378
 
 depends_lib-append  port:R-Rcpp
 
