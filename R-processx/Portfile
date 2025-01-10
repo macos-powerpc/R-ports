@@ -4,8 +4,8 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran r-lib processx 3.8.4
-revision            1
+R.setup             cran r-lib processx 3.8.5
+revision            0
 categories-append   sysutils
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
@@ -15,9 +15,9 @@ long_description    Tools to run system processes in the background. It can chec
                     get the exit status of finished processes, kill background processes. \
                     It can read the standard output and error of the processes, using non-blocking connections. 
 homepage            https://processx.r-lib.org
-checksums           rmd160  a50cd66a266468bedc1db953933c74a87f7ee7ba \
-                    sha256  6627672d7fb109f37dc1d0eaef913f4cfc7ad8ac807abf0397e6d37753b1e70b \
-                    size    163983
+checksums           rmd160  c2c23140a1462807c4532afa26ed406313a8173a \
+                    sha256  e24f8cabd54a889c28aa7342af4cd64e4e30dc9c4e8fa4863e146e72cddbaf3e \
+                    size    165103
 
 depends_lib-append  port:R-ps \
                     port:R-R6
