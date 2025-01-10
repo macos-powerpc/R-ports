@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github SebKrantz collapse 2.0.18 v
+R.setup             github SebKrantz collapse 2.0.19 v
 revision            0
 categories-append   economics math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,14 +11,15 @@ license             GPL-2+
 description         Advanced and fast data transformation
 long_description    {*}${description}
 homepage            https://sebkrantz.github.io/collapse
-checksums           rmd160  c05da723b185b4bcb4a5e677d7a220271a719255 \
-                    sha256  30f8f9946cadc273ab145c1cb2dd530ae521e079e1c65a1b157c090e93b9cc40 \
-                    size    12015989
+checksums           rmd160  1c4f3496926e00780fae0db9020b7ab2929e64f8 \
+                    sha256  208f21890a870df72aa2d657aa734b8a5bcb472fa5cdfe33a7a9c5ac1ecca4d3 \
+                    size    12031156
 github.tarball_from archive
 
 depends_lib-append  port:R-Rcpp
 
-depends_test-append port:R-covr \
+depends_test-append port:R-bit64 \
+                    port:R-covr \
                     port:R-data.table \
                     port:R-dplyr \
                     port:R-fastverse \
