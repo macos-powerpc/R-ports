@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran davidcsterratt geometry 0.5.0
+R.setup             cran davidcsterratt geometry 0.5.1
 revision            0
 categories-append   geometry
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             GPL-3+
 description         Mesh generation and surface tessellation
 long_description    {*}${description}
 homepage            https://davidcsterratt.github.io/geometry
-checksums           rmd160  4e718050f68b4a4d53746f88023c854ccf999f67 \
-                    sha256  b5f7554d6304e7bd0cda730e743b54634296391c1051663889980ebd7aaf9e61 \
-                    size    1030561
+checksums           rmd160  975c0023398ad841dd573c8700c967bd11419723 \
+                    sha256  87413027a50229d463eb7c9b95e87e65d32b7d9b64534663c08378cfa52e2115 \
+                    size    1147372
 
 depends_lib-append  port:R-linprog \
                     port:R-lpSolve \
