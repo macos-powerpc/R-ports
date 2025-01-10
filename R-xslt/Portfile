@@ -3,17 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-# Revert to GitHub once updated there.
-R.setup             cran ropensci xslt 1.4.6 v
+# GitHub version is old.
+R.setup             cran ropensci xslt 1.5.0 v
 revision            0
+categories-append   textproc
 maintainers         nomaintainer
 license             GPL-2+
 description         Extensible style-sheet language transformations
 long_description    {*}${description}
 homepage            https://docs.ropensci.org/xslt
-checksums           rmd160  6655a1f0030ebb2f9c8ed07c3c949e487044ab86 \
-                    sha256  1c59a8109ae54b79d8d6ae23abd05c47a1d967d3eaf6d724325256cc68fdb6ed \
-                    size    18348
+checksums           rmd160  0e1c29395fd5450344cffe2409ddc2ec43969797 \
+                    sha256  702709c741e5e15a805a19624982a91029274988b507d7bee91a2267ad4a6a97 \
+                    size    18451
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
