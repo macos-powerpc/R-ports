@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github easystats datawizard 0.13.0 v
+R.setup             github easystats datawizard 1.0.0 v
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             MIT
 description         Easy data wrangling and statistical transformations
 long_description    {*}${description}
 homepage            https://easystats.github.io/datawizard
-checksums           rmd160  60a9fad46d94a41b78fbf9857310ffe033d1eaa8 \
-                    sha256  e0ec8d236f1db1b279603fcb7df661cfc8661e4a5d402521f8d01fc3aca22ba0 \
-                    size    868806
+checksums           rmd160  b35cacdcd48ef3827e2110ba4a908daa4992a621 \
+                    sha256  a55243164aa941adf66a56f743d1d92a363990cf426135fd74948cb5a8affc39 \
+                    size    883705
 github.tarball_from archive
 supported_archs     noarch
 
