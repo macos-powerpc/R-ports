@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github easystats insight 1.0.0 v
+R.setup             github easystats insight 1.0.1 v
 revision            0
 categories-append   math
 platforms           {darwin any}
-maintainers         nomaintainer
+maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Easy access to model information for various model objects
 long_description    {*}${description}
 homepage            https://easystats.github.io/insight
-checksums           rmd160  d97beaa783701cc8b735ccee369d6809e7174b70 \
-                    sha256  3e40d72b1d13149332cdfaa611f611a398f6f130061e01abee8a7408f8723a07 \
-                    size    1649628
+checksums           rmd160  d1d1562ed5424b028614e5b81fefc776b5779924 \
+                    sha256  703f091ea062ad6231ea9290dd7def614c45bc13ea3acc09dcbdc214d1f00a17 \
+                    size    1651394
 github.tarball_from archive
 supported_archs     noarch
 
