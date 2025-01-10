@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Does not install from GitHub, use CRAN.
-R.setup             cran kaskr TMB 1.9.15
+R.setup             cran kaskr TMB 1.9.16
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             GPL-2
 description         Template Model Builder
 long_description    {*}${description}
 homepage            https://github.com/kaskr/adcomp/wiki
-checksums           rmd160  66f72358b6f4493db77d0ac7f348da372deea9cd \
-                    sha256  a3aacafda54779186099819820980b5b3a3ba0fcc2e80c94bcfc57712f1b3786 \
-                    size    759692
+checksums           rmd160  da1751b762010cb8a7e3cd793b8c03299e86ae04 \
+                    sha256  c6e1fce30bb8703909318dbce4b71f49ea8249ab7adeea9dbf097c6e4646bd43 \
+                    size    760075
 
 depends_lib-append  port:R-RcppEigen
 
