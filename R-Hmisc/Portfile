@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran harrelfe Hmisc 5.2-1
+R.setup             cran harrelfe Hmisc 5.2-2
 revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
@@ -14,9 +14,9 @@ long_description    Contains many functions useful for data analysis, high-level
                     advanced table making, variable clustering, character string manipulation, \
                     conversion of R objects to LaTeX and html code, and recoding variables.
 homepage            https://hbiostat.org/R/Hmisc
-checksums           rmd160  b46c646e748c49d4a728cd13597fe588f31bd994 \
-                    sha256  77329ef9696f0532b7c723452eac70a3cdcb2f96e02f2d57a1b71a9000babcee \
-                    size    889555
+checksums           rmd160  1f8514238811cb2136802c4466cf987a7e26b893 \
+                    sha256  c55221af4fe0add8f2b9a112a6205833772bd1d2786fcb13f72ae0d06d58097c \
+                    size    894979
 
 depends_lib-append  port:R-base64enc \
                     port:R-colorspace \
