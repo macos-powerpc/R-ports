@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is archaic.
-R.setup             cran Nowosad spData 2.3.3
+R.setup             cran Nowosad spData 2.3.4
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             CC
 description         Datasets for spatial analysis
 long_description    {*}${description}
 homepage            https://jakubnowosad.com/spData
-checksums           rmd160  f38c6010b603e0f1c4dc807055673db8182ff616 \
-                    sha256  c093b9ebc631954d504af96268041e171ba8e156f9d06307a0905838009e39e0 \
-                    size    4406482
+checksums           rmd160  04435aad3ddd9da6fb7f4a5bbd6548ad26d68196 \
+                    sha256  7094318e47e1f00c98712def5c8f42d8f0cdf48a97a0ec421aec8880ca78fa33 \
+                    size    3806775
 supported_archs     noarch
 
 depends_lib-append  port:R-sp
