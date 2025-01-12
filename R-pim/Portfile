@@ -4,18 +4,18 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran CenterForStatistics-UGent pim 2.0.2
-revision            1
+R.setup             cran CenterForStatistics-UGent pim 2.0.4
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Probabilistic Index Models
 long_description    {*}${description}
-checksums           rmd160  9e693bc52289d480161a6691a8dc419e7426b309 \
-                    sha256  1195dbdbd67348dfef4b6fc34fcec643da685ebe58d34bbe049ab121aca9944f \
-                    size    295778
+checksums           rmd160  5086a8ab7b9da2d8d9848a98fa5de8642dff9d62 \
+                    sha256  77d65935aba664a949d661af5be5a5eed6e0b460eeed6a1376b5e3c55e178de4 \
+                    size    318381
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-BB \
                     port:R-nleqslv
