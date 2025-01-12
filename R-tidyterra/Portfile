@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github dieghernan tidyterra 0.6.1 v
+R.setup             github dieghernan tidyterra 0.6.2 v
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             MIT
 description         R-tidyverse methods and R-ggplot2 helpers for R-terra objects
 long_description    {*}${description}
 homepage            https://dieghernan.github.io/tidyterra
-checksums           rmd160  f3afe0c88f10188c0ca958668491975d09040c7d \
-                    sha256  6578d8d166e52d235b8aaef50a98afe0dbf75fe93625c2f79d7cdf3e670b7887 \
-                    size    34913846
+checksums           rmd160  ec296786a622011f524c65524d6e1b0c14f75016 \
+                    sha256  7d9d662f3a26f88c0d021bc4435d3b266215e3f8944f3c34dd2d26cee90f3977 \
+                    size    38554986
 github.tarball_from archive
 supported_archs     noarch
 
