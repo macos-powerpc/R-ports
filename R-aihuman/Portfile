@@ -3,22 +3,26 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran sooahnshin aihuman 0.1.0
-revision            1
+R.setup             cran sooahnshin aihuman 1.0.0
+revision            0
+categories-append   economics
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Experimental evaluation of algorithm-assisted human decision-making
 long_description    {*}${description}
-checksums           rmd160  9d13cf52486e3b581872a671c6f44aaf5d6b2cd2 \
-                    sha256  96e0d523ab23deafca2673b6cb0c5f27dabd6ff44e7f3b996b89428787344d47 \
-                    size    470618
+checksums           rmd160  33d4838fb0b9df5ef96e63bfb1183941255b99c3 \
+                    sha256  e7dcbca83f85e02cfb8a78101b09a271c52929cac667c78a3aef369671e802ca \
+                    size    1214974
 
 depends_lib-append  port:R-abind \
                     port:R-coda \
                     port:R-doParallel \
                     port:R-dplyr \
+                    port:R-forcats \
                     port:R-foreach \
+                    port:R-gbm \
                     port:R-ggplot2 \
+                    port:R-GLMMadaptive \
                     port:R-lme4 \
                     port:R-magrittr \
                     port:R-metR \
@@ -26,7 +30,9 @@ depends_lib-append  port:R-abind \
                     port:R-Rcpp \
                     port:R-RcppArmadillo \
                     port:R-RcppEigen \
-                    port:R-tidyr
+                    port:R-stringr \
+                    port:R-tidyr \
+                    port:R-tidyselect
 
 compilers.setup     require_fortran
 
