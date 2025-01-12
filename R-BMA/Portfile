@@ -4,16 +4,16 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran hanase BMA 3.18.19 v
+R.setup             cran hanase BMA 3.18.20 v
 revision            0
 categories-append   economics math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Bayesian Model Averaging
 long_description    {*}${description}
-checksums           rmd160  4c4e6102103c0391aef5ee6f1af411cca8c9c426 \
-                    sha256  09ead6ec3dc0bcc1de4d47b18b705fd2a7637cd888eec220cbc5b175e8ca8d42 \
-                    size    71243
+checksums           rmd160  c4479a2eda0650f462ef2ae156376f95d598db57 \
+                    sha256  2d72a96cbf2cbfa8b38453adc309e9e0596270e923c9c991bb8fb4e909f830a3 \
+                    size    71324
 # github.tarball_from archive
 
 depends_lib-append  port:R-inline \
