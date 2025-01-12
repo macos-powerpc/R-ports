@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran mratios 1.4.2
-revision            1
+R.setup             cran schaarschmidt mratios 1.4.4
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2
 description         Ratios of coefficients in the general linear model
 long_description    {*}${description}
-checksums           rmd160  407f5a32d0d2e33d6764be94a928a8bbb5fcc5be \
-                    sha256  cefdf96719b7dc59c9446b075944de2ce3d6f723157b73f603bc62a06703f1a2 \
-                    size    51616
+checksums           rmd160  73e56ab1bc0cba54a34ee9319e1dab8a0c666599 \
+                    sha256  8aa0dce02f55760e0e5a7406c78378967b3ddfe35a52e973c10bc2fbfb5df601 \
+                    size    52399
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-multcomp \
                     port:R-mvtnorm \
