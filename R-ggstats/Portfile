@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github larmarange ggstats 0.7.0 v
+R.setup             github larmarange ggstats 0.8.0 v
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -11,9 +11,10 @@ license             GPL-3
 description         Extension to ggplot2 for plotting stats
 long_description    {*}${description}
 homepage            https://larmarange.github.io/ggstats
-checksums           rmd160  4c3477e8d1d5baa298c366f40043cd746b6cea6c \
-                    sha256  adc06a332ee5549ad91e2b7e0f64ca6c788e78138fba768be4ce01a759c594a5 \
-                    size    282705
+checksums           rmd160  a5be3514158f0117a9ce19799e267f491c5accce \
+                    sha256  8efb8ce1de0b46f98f7efe7f100a328c5d8dfece0e885e9a2c80e85d3241d0f5 \
+                    size    300510
+github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
