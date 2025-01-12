@@ -5,16 +5,17 @@ PortGroup           R 1.0
 
 R.setup             github tidymodels tune 1.2.1 v
 revision            1
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Tidy tuning tools
 long_description    {*}${description}
 homepage            https://tune.tidymodels.org
-checksums           rmd160  833bf33c5c658e953caadf396b9b8ee8f5db6c5f \
-                    sha256  fc82e0fa3fd287e6d80f5100d970121a83e1b6773465ddcd8787eb816ffca22b \
-                    size    898209
+checksums           rmd160  a9c2d73882b597b34ca2ec060681036cea4c889b \
+                    sha256  b8d5d5b2157fafd73ad5794cb62793099813f3c79150b8677b30387f04d9565d \
+                    size    896702
+github.tarball_from archive
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-cli \
                     port:R-dials \
