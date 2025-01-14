@@ -1,11 +1,10 @@
 # -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
-PortGroup           conflicts_build 1.0
 PortGroup           R 1.0
 
-R.setup             cran roigrp highs 0.1-10
-revision            3
+R.setup             cran roigrp highs 1.9.0-1
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
@@ -13,28 +12,29 @@ description         HiGHS optimization solver
 long_description    R interface to HiGHS, an optimization solver for solving mixed integer optimization \
                     problems with quadratic or linear objective and linear constraints.
 homepage            https://gitlab.com/roigrp/solver/highs
-checksums           rmd160  2fc440d27e217824ecbaf4e355dcc04b82c76194 \
-                    sha256  4ce0034f9eea27e5ba3562c57b09d6c656d898e37cd6a01c19a4d2e6ddfa55ee \
-                    size    1128369
+checksums           rmd160  4102ef39730a391d0f7a585bf8dbc64cae45be09 \
+                    sha256  660b76822799da748b1bc60e8a5db60c27062ff72eec96926d6a29a349c3a4e0 \
+                    size    1552081
 
 depends_build-append \
                     path:bin/cmake:cmake \
                     port:bash \
-                    port:pkgconfig
-depends_lib-append  port:R-checkmate \
+                    path:bin/pkg-config:pkgconfig
+
+depends_lib-append  port:HiGHS \
+                    port:R-checkmate \
                     port:R-Rcpp
 
-# Switching to bundled HiGHS due to incompatibility with v. 1.7.0,
-# until upstream addresses it: https://gitlab.com/roigrp/solver/highs/-/issues/5
-# depends_lib-append  port:HiGHS
-# patchfiles          patch-use-Macports-highs.diff
-# post-patch {
-#     reinplace "s,@PREFIX@,${prefix}," ${worksrcpath}/configure
-# }
-conflicts_build     HiGHS
+patchfiles          patch-use-Macports-highs.diff
+post-patch {
+    reinplace "s,@PREFIX@,${prefix}," ${worksrcpath}/configure
+}
+
+compiler.cxx_standard   2017
 
 if {[string match *gcc* ${configure.compiler}]} {
-    # To avoid multiplying patches, just apply this for gcc cases:
+    # To avoid multiplying patches, just apply this for gcc cases.
+    # Notice, this assumes libstdc++ with older C++ ABI.
     patchfiles-append \
                     patch-gcc-builds.diff
 } else {
