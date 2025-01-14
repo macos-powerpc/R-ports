@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran oobianom quickcode 1.0.2
+R.setup             cran oobianom quickcode 1.0.4
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Compilation of some frequently used R functions
 long_description    {*}${description}
-homepage            https://quickcode.obi.obianom.com
-checksums           rmd160  8df34ab06df0df6089ef706050ad343c83fc3987 \
-                    sha256  a8379504815267d77bea42db9574879cb565f83bf7489ddcd06176736e10de71 \
-                    size    186570
+homepage            https://quickcode.rpkg.net
+checksums           rmd160  2130b0f58d562df6fd51092be4da5c24a336337e \
+                    sha256  f7e4a0eb25bc33a0fbcf9896e5ea2b8c56f8b52fb799b002d35ad502ee437e93 \
+                    size    188430
 supported_archs     noarch
 
 depends_lib-append  port:R-fitdistrplus \
