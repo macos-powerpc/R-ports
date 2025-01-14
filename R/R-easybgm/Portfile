@@ -3,20 +3,20 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran KarolineHuth easybgm 0.1.2
-revision            1
+R.setup             cran KarolineHuth easybgm 0.2.1
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Extract and visualize Bayesian graphical models
 long_description    Fit and visualize the results of a Bayesian analysis \
                     of networks commonly found in psychology.
 homepage            https://github.com/KarolineHuth/easybgm
-checksums           rmd160  cfa56b7590a32b1277d7c140e0415887c1aa8cd2 \
-                    sha256  d9e5a3feadfb5e3cce547b2a9ecf44551a797353f8607a2e1bdf5eaa57bae883 \
-                    size    612995
+checksums           rmd160  7c608a136f5b9f071444a4fbfb679e7dc4d39846 \
+                    sha256  a3286958d6a96e1727368784cc5bb9e1762621c2ab8ab5dcd548307822dea46c \
+                    size    610972
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-BDgraph \
                     port:R-BGGM \
