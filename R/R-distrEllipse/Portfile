@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             r-forge r-project distrEllipse 2.8.3
+R.setup             r-forge r-project distrEllipse 2.8.4
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -13,9 +13,9 @@ description         Estimation and testing classes \
                     based on package R-distr
 long_description    {*}${description}
 homepage            https://distr.r-forge.r-project.org
-checksums           rmd160  c0b18f04bdaab4795cb6988f9a758e4bdf67d64c \
-                    sha256  d3645cee912289c7557a0ed3ab9df028cf235a0e63937a4c7ba033b79ab894cd \
-                    size    22736
+checksums           rmd160  d9f5e77a573a7c7b69315bd9a393edbbf7315f0e \
+                    sha256  684373a5c2f7d8be5f3573b6722c60e335ceca5f62c9e8fe01c8190af52bf403 \
+                    size    22908
 supported_archs     noarch
 
 depends_lib-append  port:R-distr \
