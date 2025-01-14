@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran James.Thorson dsem 1.3.0
+R.setup             cran James.Thorson dsem 1.4.0
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,22 +11,24 @@ license             GPL-3
 description         Fit dynamic structural equation models
 long_description    {*}${description}
 homepage            https://james-thorson-noaa.github.io/dsem
-checksums           rmd160  7781759b0e6313ffaaeeb68fd36b50d1c7c0467e \
-                    sha256  5e721a6404f2f703f4bf45fc331c770fc64c5fa0b587b9fedd88dc2894e61eff \
-                    size    271586
+checksums           rmd160  d4fbdbb00e49bbd27e1a66fdba1d0ee44ea26f28 \
+                    sha256  224a191c03a60880a26cf4cd686616cbc29cb08c70a4f33701373762433b814d \
+                    size    319458
 
-depends_lib-append  port:R-igraph \
+depends_lib-append  port:R-ggplot2 \
+                    port:R-ggraph \
+                    port:R-igraph \
                     port:R-RcppEigen \
+                    port:R-RTMB \
                     port:R-sem \
                     port:R-TMB
 
 depends_test-append port:R-AER \
+                    port:R-DHARMa \
                     port:R-dynlm \
                     port:R-gridExtra \
                     port:R-knitr \
-                    port:R-ggplot2 \
                     port:R-ggpubr \
-                    port:R-ggraph \
                     port:R-MARSS \
                     port:R-phylopath \
                     port:R-reshape \
