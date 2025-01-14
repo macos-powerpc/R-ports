@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran peter.ruckdeschel startupmsg 0.9.7
+R.setup             cran peter.ruckdeschel startupmsg 1.0.0
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             LGPL-3
 description         Utilities for start-up messages
 long_description    {*}${description}
-checksums           rmd160  c811d2b1a26908b593fe40602e3c0484bd119cdc \
-                    sha256  49f8f7754af26b5fe8063213110520de5f4e1cc63b16de22e38181668639059e \
-                    size    9698
+checksums           rmd160  b35a94c5537b122853d7968f6873879e6b7027b4 \
+                    sha256  7bd62011f4f94f46c33f219b584ce7baa9c6b00e3a40f18e042b18ca5d7edc1b \
+                    size    11046
 supported_archs     noarch
 
 test.run            yes
