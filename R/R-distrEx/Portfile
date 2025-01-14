@@ -3,7 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             r-forge r-project distrEx 2.9.5
+# Unfortunately, R-Forge may not have a tarball on time.
+R.setup             cran r-project distrEx 2.9.6
 revision            0
 categories-append   math
 maintainers         nomaintainer
@@ -12,9 +13,9 @@ description         Extends R-distr by functionals, distances \
                     and conditional distributions
 long_description    {*}${description}
 homepage            https://distr.r-forge.r-project.org
-checksums           rmd160  3b24bd50a10400bf8b944de20437c52883fe88bd \
-                    sha256  e54c22a2457778098f12772b00a9dcecd72132447a704a40890b34735d584288 \
-                    size    2246019
+checksums           rmd160  b817e0d968cc78bae45c8bdeaaa8d301e829c5d8 \
+                    sha256  e4f0f245ebbe19f5c98cc7a562d1facad455ccd7c4f260281c36cc800b67a061 \
+                    size    2239142
 
 depends_lib-append  port:R-distr \
                     port:R-startupmsg
