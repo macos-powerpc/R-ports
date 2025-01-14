@@ -3,20 +3,21 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github ThinkR-open fusen 0.6.0 v
+# Revert to GitHub once updated there.
+R.setup             cran ThinkR-open fusen 0.7.0 v
 revision            0
 categories-append   devel
+platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Build a package from Rmarkdown files
 long_description    {*}${description}
 homepage            https://thinkr-open.github.io/fusen
-checksums           rmd160  5f2057df18cd6f617a46660c4631a304e17eac52 \
-                    sha256  a755362e9069f56c00575a06eb11801f667654aaed9d70058516a11790f592d7 \
-                    size    934197
-github.tarball_from archive
+checksums           rmd160  0c2f38cba6e66a7e34ae8148a640f6113cedd4d4 \
+                    sha256  14cafd634dbc6cd31b096c82e197e9263c3c0c0ee4ea19205af9c8722f185b5a \
+                    size    951988
+# github.tarball_from archive
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-attachment \
                     port:R-cli \
@@ -26,6 +27,7 @@ depends_lib-append  port:R-attachment \
                     port:R-here \
                     port:R-lightparser \
                     port:R-magrittr \
+                    port:R-pkgload \
                     port:R-roxygen2 \
                     port:R-stringi \
                     port:R-tibble \
@@ -33,9 +35,9 @@ depends_lib-append  port:R-attachment \
                     port:R-usethis \
                     port:R-yaml
 
-depends_test-append port:R-gert \
+depends_test-append port:R-covr \
+                    port:R-gert \
                     port:R-knitr \
-                    port:R-pkgload \
                     port:R-rcmdcheck \
                     port:R-rmarkdown \
                     port:R-rstudioapi \
