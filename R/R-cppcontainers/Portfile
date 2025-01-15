@@ -4,16 +4,16 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Switch to GitHub once updated there.
-R.setup             cran cdueben cppcontainers 1.0.3
+R.setup             cran cdueben cppcontainers 1.0.4
 revision            0
 categories-append   devel
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         C++ standard template library containers
 long_description    {*}${description}
-checksums           rmd160  3e4ad5f3ccd0c4faee7d2bbe9c01d5c552fd705f \
-                    sha256  4e9dd2c1ff77deb0ec8532e3f726f14b7e1e038bdfd90c640411ad61dcea6c42 \
-                    size    234073
+checksums           rmd160  03a5a15026d699ef99d22ea46a06825d6721d4f1 \
+                    sha256  874ddf07e0112f8fcf3177d9e00c28d654dd0dcf78d518c590811b73532db605 \
+                    size    234170
 # github.tarball_from archive
 
 depends_lib-append  port:R-Rcpp
