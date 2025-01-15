@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github easystats parameters 0.24.0 v
+R.setup             github easystats parameters 0.24.1 v
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             GPL-3
 description         Processing of model parameters
 long_description    {*}${description}
 homepage            https://easystats.github.io/parameters
-checksums           rmd160  d58c2e1c7e9042a752bfae3fc3906be426c7d6e1 \
-                    sha256  77a54afabd7f9a9c4036c959024add475d7eb94345c2fa860e985fff74176420 \
-                    size    1117251
+checksums           rmd160  01c3a907d11aae7e3f52481e210c3cb92be3f090 \
+                    sha256  ff01b287878356443d378560b960201d09e01a86293ad48949e1b300e6820bc8 \
+                    size    1119444
 github.tarball_from archive
 supported_archs     noarch
 
