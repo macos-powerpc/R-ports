@@ -3,16 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran tnagler wdm 0.2.4
-revision            1
+R.setup             cran tnagler wdm 0.2.6
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Weighted Dependence Measures
 long_description    {*}${description}
-checksums           rmd160  82d1cf6c4f9bea5ab528bd898fdcbcf2565c06b6 \
-                    sha256  e2d19c04ea2fb9394cc2b61899c7fd21ae7c6d5825bfdcb74822c7243cd335d3 \
-                    size    29137
+homepage            https://github.com/tnagler/wdm-r
+checksums           rmd160  52bfa0847ba8842ae864469762c01a22fabdb4d4 \
+                    sha256  9f2e68308be2cab11f03020d55660d091f7d6d55209eb826d3e38d6d530f7b12 \
+                    size    31235
 
 # If GitHub repo is used, then fetch from it:
 # https://github.com/tnagler/wdm-r/issues/9#issuecomment-1433323245
