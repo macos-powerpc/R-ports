@@ -4,18 +4,18 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Switch to the released version with the next update.
-R.setup             github junlingm ABM cd4ab44bb443f5b65b127de26797af953b190705
-version             0.4.1
-revision            1
+R.setup             github junlingm ABM 0.4.2 v
+revision            0
 categories-append   economics
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Agent-Based Model simulation framework
 long_description    {*}${description}
 homepage            https://github.com/junlingm/ABM
-checksums           rmd160  9321416ebe597648a01256e2032b4448d953f9c4 \
-                    sha256  91a01a715cdc5a9c05b24a41e937e428279f2b0aba0693d5f4918cfc380d6f6c \
-                    size    45422
+checksums           rmd160  6a60c28a01e34be5ac067fb69046901ed0054ebf \
+                    sha256  82bde0fe3e3c5f15678789ea91a7288bb3bb0b92e7061d53676ea7fdb1add955 \
+                    size    45740
+github.tarball_from archive
 
 depends_lib-append  port:R-R6 \
                     port:R-Rcpp
