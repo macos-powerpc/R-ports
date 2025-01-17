@@ -3,18 +3,21 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran truecluster bit64 4.5.2
+R.setup             cran r-lib bit64 4.6.0-1
 revision            0
 categories-append   devel
 maintainers         nomaintainer
 license             {GPL-2 GPL-3}
 description         S3 class for vectors of 64-bit integers
 long_description    {*}${description}
-homepage            https://github.com/truecluster/bit64
-checksums           rmd160  00ab99104ab57ab78d336ae39e3207de624bac9f \
-                    sha256  a321563fd8830800ad51697055a2e580cda4fb84102420e4caeae44a5b6ac72e \
-                    size    135341
+homepage            https://github.com/r-lib/bit64
+checksums           rmd160  4ed42b21d7a2d2ea95fda777b9fbd6b9cd981088 \
+                    sha256  fbc0ce142fc22c9a9fdcbac930a814dfb648563d4b6a77dff739c23cc81319b7 \
+                    size    142045
 
 depends_lib-append  port:R-bit
+
+depends_test-append port:R-testthat \
+                    port:R-withr
 
 test.run            yes
