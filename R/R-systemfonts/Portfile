@@ -3,23 +3,27 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github r-lib systemfonts 1.1.0 v
+# Revert to GitHub once updated there.
+R.setup             cran r-lib systemfonts 1.2.0 v
 revision            0
 categories-append   sysutils
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
-description         System Native Font Handling in R
-long_description    {*}${description}
+description         System native font handling
+long_description    {*}${description} in R.
 homepage            https://systemfonts.r-lib.org
-checksums           rmd160  98c3674e39a654851e746cb2d56f8f8ae42586e4 \
-                    sha256  93f2365532e6560ae9a90d9137d932674b4bb6628fb5e4217d843c1b364fd237 \
-                    size    77595
-github.tarball_from archive
+checksums           rmd160  503f669779b0a530db3945b9a1c90407e330a7c9 \
+                    sha256  1bad43e1b5497dba3e27701f20c99cb39642c92e59e4abfcea9ecdd18b77f54e \
+                    size    101294
+# github.tarball_from archive
 
 depends_build-append \
-                    port:pkgconfig
+                    path:bin/pkg-config:pkgconfig
+
 depends_lib-append  port:freetype \
+                    port:fontconfig \
                     port:R-cpp11 \
+                    port:R-jsonlite \
                     port:R-lifecycle
 
 platform darwin {
@@ -29,8 +33,6 @@ platform darwin {
         # https://trac.macports.org/ticket/67174
         patchfiles-append \
                     patch-older-macos.diff
-        depends_lib-append \
-                    port:fontconfig
     }
 }
 
@@ -38,6 +40,7 @@ configure.env-append \
                     RBIN=${r.cmd}
 
 depends_test-append port:R-covr \
+                    port:R-farver \
                     port:R-knitr \
                     port:R-rmarkdown \
                     port:R-testthat
