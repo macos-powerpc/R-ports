@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github Paul-Haimerl PAGFL 1.1.1 v
+R.setup             github Paul-Haimerl PAGFL 1.1.2 v
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             AGPL-3+
 description         Joint estimation of latent groups and group-specific coefficients \
                     in panel data models
 long_description    {*}${description}
-checksums           rmd160  962e7596fbacf5fa8b10be53dfb577727c1a6a4d \
-                    sha256  bce9c7b8a8a962b2c76d2e2d8232b0d175a16acd08806a1cc8209f7e55d784df \
-                    size    481785
+checksums           rmd160  2bedff21e281ac80688aaf848959dd1d94e11450 \
+                    sha256  a94b8a7ecaf42e37fc4848fece16641173edf152d0a9814d7d60d5e89ae63095 \
+                    size    483302
 github.tarball_from archive
 
 depends_lib-append  port:R-ggplot2 \
