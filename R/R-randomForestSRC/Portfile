@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Keep this with CRAN.
-R.setup             cran kogalur randomForestSRC 3.3.2
+R.setup             cran kogalur randomForestSRC 3.3.3
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             GPL-3+
 description         Fast unified random forests for survival, regression and classification (RF-SRC)
 long_description    {*}${description}
 homepage            https://www.randomforestsrc.org
-checksums           rmd160  458f6f7fc414b7e3d4122c2bc72a8dfdd3869b53 \
-                    sha256  27e1d75b82167298a54de8b5b60813ed9f6237b3f30a587e2bb91cfbd98922dd \
-                    size    1330385
+checksums           rmd160  bfde99a3674382d8fdb0b22d621e35c1b26d2e46 \
+                    sha256  3f1be6451b2ba92189d6fc90a996a4a97d41abc803b0cdb7ed5b03c819083a2b \
+                    size    1330210
 
 depends_lib-append  port:R-data.tree \
                     port:R-DiagrammeR
