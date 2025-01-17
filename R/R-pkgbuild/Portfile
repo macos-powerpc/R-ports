@@ -3,7 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github r-lib pkgbuild 1.4.5 v
+# Revert to GitHub once updated there.
+R.setup             cran r-lib pkgbuild 1.4.6 v
 revision            0
 categories-append   devel
 platforms           {darwin any}
@@ -12,10 +13,10 @@ license             MIT
 description         Find tools needed to build R packages
 long_description    {*}${description}
 homepage            https://pkgbuild.r-lib.org
-checksums           rmd160  e2de355f3d902d25b28d944ef942d7e00ed5a364 \
-                    sha256  a672c59ec0ea400da89af1c25cf29e0f94b291ee7e13e5116bb1b7096b4aa62b \
-                    size    51005
-github.tarball_from archive
+checksums           rmd160  d1e309007005b93b39c2094b0f80823739f0cbb0 \
+                    sha256  057fb31d0dff459063b0579d2abba8a66de74d19ae3f3e8bfb9eeb0a3cd18fbf \
+                    size    48195
+# github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-callr \
