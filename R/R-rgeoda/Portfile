@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is outdated.
-R.setup             cran geodacenter rgeoda 0.0.10-4
-revision            1
-categories-append   math
+R.setup             cran geodacenter rgeoda 0.0.11-1
+revision            0
+categories-append   gis
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         R library for spatial data analysis
 long_description    {*}${description}
 homepage            https://geodacenter.github.io/rgeoda
-checksums           rmd160  9bd718b28865c78029a3a3380b41ddc7aace584e \
-                    sha256  a023d32067ecd2d8152708534ebb1ffe5d8e5838b07a0692db58c50015cd2ca3 \
-                    size    752880
+checksums           rmd160  0b44e0d65aec3b59c0308035198992807914abf1 \
+                    sha256  af7e507760e41ca1194fdf7a03af6efa5e197a60d3c2da979590b1cb0945395d \
+                    size    751318
 
 depends_lib-append  port:R-BH \
                     port:R-digest \
