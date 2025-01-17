@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran rspatial raster 3.6-30
+R.setup             cran rspatial raster 3.6-31
 revision            0
 categories-append   gis
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             GPL-3+
 description         Geographic data analysis and modelling
 long_description    {*}${description}
 homepage            https://rspatial.org/raster
-checksums           rmd160  54d91cc09a792d87a1bbd299a26c8fa8e6587ddd \
-                    sha256  bb7f634a52d6b02639bc9fa5719862a814b51d5b2798472d6dd28612844a3070 \
-                    size    575562
+checksums           rmd160  0f8daf5f99b6511b9261e4acfa1a9cbda11d1e16 \
+                    sha256  1b73040fb468430c4594076fdabec786c262740e4d21e3d1b45dd6f5942ada2f \
+                    size    575608
 
 depends_lib-append  port:R-Rcpp \
                     port:R-sp \
