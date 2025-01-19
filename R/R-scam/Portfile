@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran nat.pya scam 1.2-17
+R.setup             cran nat.pya scam 1.2-18
 revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-2+
 description         Shape-Constrained Additive Models
 long_description    {*}${description}
-checksums           rmd160  511acb9373fe1f0ee436bf44ae83fb4c8ea6e6b5 \
-                    sha256  b33de62a18da930ceee2db73cd951fb47d5855bb58c80331eee2730437e30502 \
-                    size    177734
+checksums           rmd160  7fcd06a7fb5e8b5a924fccd6e8e33eaca270ed72 \
+                    sha256  1d0f2fd40e10100fae212cd18cfc23a7d6412b0f29e0039d45d80d5547c92d29 \
+                    size    181381
 
 compilers.setup     require_fortran
 
