@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran jpfitzinger tidyfit 0.7.2
+R.setup             cran jpfitzinger tidyfit 0.7.3
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             GPL-3
 description         Regularized linear modelling with tidy data
 long_description    {*}${description}
 homepage            https://tidyfit.residualmetrics.com
-checksums           rmd160  2e3d86908ca2011b398d36c752fa56eda106a95c \
-                    sha256  8676b2e2347f2e721fd7da5f43ec77470f749166d42c7fd63d17d7584ff6fa83 \
-                    size    1953545
+checksums           rmd160  cc5790e3ac54fce0b2af94f27735e627c3453c03 \
+                    sha256  655263e630ed3908fe44e94de0cd8feb893edd861ec798880777bdafb96c1eb1 \
+                    size    1955032
 supported_archs     noarch
 
 depends_lib-append  port:R-broom \
