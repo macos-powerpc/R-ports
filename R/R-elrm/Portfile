@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran elrm 1.2.5
-revision            1
+R.setup             cran zamar.david elrm 1.2.6
+revision            0
 categories-append   math
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+maintainers         nomaintainer
 license             GPL-2+
 description         Exact Logistic Regression via MCMC
 long_description    {*}${description}
-checksums           rmd160  c03cd22c8a6d4f3498547a339f7a8fb6320b932b \
-                    sha256  8d3e6fb563f78277e71841e2230fd74ca736895024dc00601267d9ea2cc81ccf \
-                    size    317943
+checksums           rmd160  4d1cfa0697a9f550cd082b34e32988fd040c0b51 \
+                    sha256  69ba9a6bc890f0a0a1a64a54b001a74f657c7bdb704c61ff5d269826e5c41cf7 \
+                    size    318277
 
 depends_lib-append  port:R-coda
 
