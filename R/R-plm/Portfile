@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github ycroissant plm 2.6-4 v
-revision            1
+R.setup             github ycroissant plm 2.6-5 v
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Linear models for panel data
 long_description    {*}${description}
-checksums           rmd160  f417309c73d0937cd367197b3ae0ae25794f6de9 \
-                    sha256  34a337b9632f5644b404e5b60df650a0c08c3c63fd949a1b12710eafd5f612a1 \
-                    size    1645206
+checksums           rmd160  8c95d28b5c75773ea4190a05a99472b8da73c492 \
+                    sha256  f6e64fc49347a47eb3846f2b42a5e2ddfecf22d1b9f5dcff68da4e6448ba7b95 \
+                    size    1658297
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-bdsmatrix \
                     port:R-collapse \
