@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran r-quantities errors 0.4.2 v
+R.setup             cran r-quantities errors 0.4.3 v
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -13,9 +13,9 @@ license             MIT
 description         Uncertainty propagation for R vectors
 long_description    {*}${description}
 homepage            https://r-quantities.github.io/errors
-checksums           rmd160  6330cf8bd302f230bfc607609b91522cff4b0b59 \
-                    sha256  2fff9fae763859cbacd2a36fe395291a200186636df289d003d8d09cc0ac549d \
-                    size    242926
+checksums           rmd160  6fa00ae01933dd96e51666e747ebced7ab433108 \
+                    sha256  c521160b4d2629c8fa6c5cd69c00a09acd1bab113f657e4c998a0681863d7aea \
+                    size    243309
 supported_archs     noarch
 
 depends_test-append port:R-dplyr \
