@@ -3,16 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran kaifenglu lrstat 0.2.10
+R.setup             cran kaifenglu lrstat 0.2.12
 revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-2+
-description         Power and sample size calculation for non-proportional hazards
+description         Power and sample size calculation \
+                    for non-proportional hazards
 long_description    {*}${description}
-checksums           rmd160  dd7d575cd3abd23538e150d3d88f138f431a6e88 \
-                    sha256  e530409d3c40a085d7ea672a8c538bcd81ef2bd4f49a4b0555daa48f6fe475eb \
-                    size    716243
+checksums           rmd160  31bc69a2c345698b7196027fba89b3a6f45e3eda \
+                    sha256  cbf5eb008b194d69a5189c419ab64ea59e9c76dd235bb70473db6760bef039e5 \
+                    size    717651
 
 depends_lib-append  port:R-lpSolve \
                     port:R-mvtnorm \
