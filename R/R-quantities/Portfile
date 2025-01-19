@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github r-quantities quantities 0.2.2 v
+R.setup             github r-quantities quantities 0.2.3 v
 revision            0
 categories-append   math
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             MIT
 description         Quantity calculus for R vectors
 long_description    {*}${description}
 homepage            https://r-quantities.github.io/quantities
-checksums           rmd160  1d5045ec0ca4bcf47296160f842668ecfe1c8614 \
-                    sha256  5fd91cc25a08303da1591fa9e113328091d110ca93ed839b5412f7e50546b6e4 \
-                    size    135941
+checksums           rmd160  20436d744d8d8e7a77deec97c6ae2a9553fe8f24 \
+                    sha256  7ef2ab266d3f00f223c9f93f879d366943121c32ca8d24731cb27d2b6331ea95 \
+                    size    136058
 github.tarball_from archive
 
 depends_lib-append  port:R-errors \
