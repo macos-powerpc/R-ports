@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github mikeblazanin gcplyr 1.10.0 v
+R.setup             github mikeblazanin gcplyr 1.11.0 v
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             MIT
 description         Manipulate and analyze growth curve data
 long_description    {*}${description}
 homepage            https://mikeblazanin.github.io/gcplyr
-checksums           rmd160  1dfc3ec69a99259fbb9c3dfd4283a843490735d1 \
-                    sha256  7755b9a4ed6f243e1713790714d63213309b38e5022925f634aa32852b2a69e9 \
-                    size    3817583
+checksums           rmd160  e9069814bce8f269e86ab9e14306a626de6663b7 \
+                    sha256  9b041cc63ff5e44f3e71caf99d74c831190efbbf4ffdfb1e436edc2149b1abfc \
+                    size    4613245
 github.tarball_from archive
 supported_archs     noarch
 
