@@ -3,18 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-# Revert to GitHub once updated there.
-R.setup             cran JorisChau gslnls 1.3.2 v
-revision            1
+R.setup             github JorisChau gslnls 1.4.1 v
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             LGPL-3
 description         GSL Non-linear Least-Squares Fitting
 long_description    {*}${description}
-checksums           rmd160  38e585e4fe767c49035235844db95ebf8cf2e16d \
-                    sha256  0255882d9a8baedb4ae3316249c3aa9541461348f10a976aa90a478d536bdfe5 \
-                    size    134842
-# github.tarball_from archive
+checksums           rmd160  fb294644da407e60e4a9fd5edaa1d2484fcb477a \
+                    sha256  c918989b0735d2bad017bf7bb9cd1aade3a910bed57d6742fa818ff6c412457d \
+                    size    363152
+github.tarball_from archive
 
 depends_lib-append  port:gsl
 
