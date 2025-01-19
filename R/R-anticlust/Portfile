@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github m-Py anticlust 0.8.7 v
+R.setup             github m-Py anticlust 0.8.9 v
 revision            0
 categories-append   math
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             MIT
 description         Subset partitioning via anticlustering
 long_description    {*}${description}
 homepage            https://m-py.github.io/anticlust
-checksums           rmd160  e23fee9fc7af0d016990d21c07a0c9aeb8cc9f37 \
-                    sha256  7ad57ef1f7491836f5d6ed1ef38da7e6092e6b24e800d81cacfa01a3878cd108 \
-                    size    360343
+checksums           rmd160  0a299f101955e911bb5c2064f4bb1df6ae5c4755 \
+                    sha256  03237290731d19ca2963f0c655dac66cba346a46987919d7dc5cdec224080549 \
+                    size    383036
 github.tarball_from archive
 
 depends_lib-append  port:R-lpSolve \
