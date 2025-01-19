@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran harrelfe rms 6.9-0
+R.setup             cran harrelfe rms 7.0-0
 revision            0
 categories-append   math economics
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             GPL-2+
 description         Regression Modelling Strategies
 long_description    {*}${description}
 homepage            https://hbiostat.org/R/rms
-checksums           rmd160  5ef0f03202d2779a0b416d36410a573ad8da6855 \
-                    sha256  9f63d6e23c6da8d0bec6fca3f29d13befae60f44815a8e018317a4e0de6a7ce0 \
-                    size    620028
+checksums           rmd160  3b4227041c3c95110dbb937728738971e46bb27e \
+                    sha256  f72c6a798e649258aa4d9421113fef168563f26c7864a90bccfec7b4a43761a2 \
+                    size    639989
 
 depends_lib-append  port:R-colorspace \
                     port:R-digest \
