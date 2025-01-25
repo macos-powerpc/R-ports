@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-project LBI 0.2.1
+R.setup             cran r-project LBI 0.2.2
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -11,9 +11,9 @@ maintainers         nomaintainer
 license             GPL-3
 description         Likelihood-Based Inference
 long_description    {*}${description}
-checksums           rmd160  0b39ac47c22103639a94ba8a8af1344565834594 \
-                    sha256  cfd1bb4710818a9c153bfda7449f3a0b97a25d0214f68ff35a408e2298bc9329 \
-                    size    115741
+checksums           rmd160  aadda136b7ace4d144ae6d4d07a3716ac1cedee2 \
+                    sha256  28ed377a7f06fa80321c80b6de0d7a6acc79175a52d3d3d77ddb8c1b152b46bc \
+                    size    116011
 supported_archs     noarch
 
 test.run            yes
