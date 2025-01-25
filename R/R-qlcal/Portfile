@@ -3,16 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran qlcal qlcal 0.0.12
+R.setup             cran qlcal qlcal 0.0.14
 revision            0
+categories-append   finance
 maintainers         nomaintainer
 license             GPL-2+
 description         R bindings to the calendaring functionality of QuantLib
 long_description    {*}${description}
 homepage            https://dirk.eddelbuettel.com/code/qlcal-r.html
-checksums           rmd160  3b1c540d96715309bb4a2af5089d489bd4a3fb52 \
-                    sha256  e23ecefcd54436a7a0cd20aae1af1c1ae85a43b8676a4d7d688d8ffd142109e1 \
-                    size    124208
+checksums           rmd160  551cfef14d4408eb501c1c1061626d3cb2480b01 \
+                    sha256  73a2351fab0fe621bb8cb60f4211c4e9bb5241adb33a8e8c154bc2e7dce89b28 \
+                    size    124610
 
 depends_lib-append  port:R-BH \
                     port:R-Rcpp
