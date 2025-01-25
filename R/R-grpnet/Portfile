@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran helwig grpnet 0.6
+R.setup             cran helwig grpnet 0.7
 revision            0
 categories-append   math
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             GPL-2+
 description         Group elastic net-regularized GLM
 long_description    Efficient algorithms for fitting generalized linear models \
                     with group elastic net penalties.
-checksums           rmd160  72ca99b4e94d1aef831af1e69fe2274e5edd3dab \
-                    sha256  02866fa7303bd745ae05ad7bdb238b2f7992be356fae8f5785ef319f8c997347 \
-                    size    78037
+checksums           rmd160  f2514c329fe48f3567bdbc1459eaea97ec3c78c3 \
+                    sha256  e2a9ba9921f2a2e2d98cc1a665f8f290a15f371b7469186817cdb15fab98929f \
+                    size    81963
 
 compilers.setup     require_fortran
 
