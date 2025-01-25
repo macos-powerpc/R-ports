@@ -3,16 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github poissonconsulting chk 0.9.2.9000 v
+R.setup             github poissonconsulting chk 0.10.0 v
 revision            0
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Check user-supplied function arguments
 long_description    {*}${description}
-checksums           rmd160  19d9c058a701e9615790a4bc2b7ba639b8149a1e \
-                    sha256  50089458f6269659e175f438c4ee05a56890868902fb42185f291329af459c10 \
-                    size    94811
+homepage            https://poissonconsulting.github.io/chk
+checksums           rmd160  5a5831afa4f73735463ce67bfd0736dcb86c3c9f \
+                    sha256  8816e428c0622cc4f9438092ce77bf938f3dc8a0f706d66896be153f3063411e \
+                    size    402539
 github.tarball_from archive
 supported_archs     noarch
 
