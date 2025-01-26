@@ -3,16 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cenwu pqrBayes 1.0.2
-revision            1
+R.setup             cran cenwu pqrBayes 1.0.4
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         Bayesian penalized quantile regression
 long_description    {*}${description}
-checksums           rmd160  0fa3e1327777f44140fc10792a35befe43e3f4fd \
-                    sha256  83ff7a88ef8786efd04064e09db0b18c1a64c0d27e8479272cd3e394149c7055 \
-                    size    26437
+homepage            https://github.com/cenwu/pqrBayes
+checksums           rmd160  45fb78192f29618ee4a98665e7a3d3ef32574929 \
+                    sha256  6f35dcb7fe862531667313f9d13d849fb998228be70de187e93a1469a384bd3c \
+                    size    30457
 
 depends_lib-append  port:R-glmnet \
                     port:R-Rcpp \
