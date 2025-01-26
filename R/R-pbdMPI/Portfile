@@ -6,7 +6,7 @@ PortGroup           R 1.0
 
 # GitHub version lags behind.
 R.setup             cran snoweye pbdMPI 0.5-2
-revision            0
+revision            1
 categories-append   parallel
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MPL-2
@@ -17,18 +17,8 @@ checksums           rmd160  4e672b2544e8a7409da46b5a78bdf5f411bc8646 \
                     sha256  213da272b6c9d8075b8c5cb703777c724b16c1b13f82d04a7e57a91935646b77 \
                     size    421132
 
-if {[string match macports-clang-* ${configure.compiler}]} {
-    set mpi_suffix  mp
-    set mpi_port    mpich-default
-} elseif {[string match macports-gcc-* ${configure.compiler}]} {
-    set gcc_v [
-        string range ${configure.compiler} [
-            string length macports-gcc-
-        ] end
-    ]
-    set mpi_suffix  gcc${gcc_v}
-    set mpi_port    mpich-${mpi_suffix}
-}
+set mpi_suffix      mp
+set mpi_port        mpich-default
 
 depends_lib-append  port:${mpi_port} \
                     port:R-float
