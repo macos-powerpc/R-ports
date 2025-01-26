@@ -4,15 +4,15 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran mhahslerc dbscan 1.2-0
+R.setup             cran mhahslerc dbscan 1.2.2
 revision            0
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+maintainers         nomaintainer
 license             GPL-2+
 description         Density-Based Spatial Clustering of Applications with Noise
 long_description    {*}${description}
-checksums           rmd160  56b9502920cf24f3e7499956924d86330da86440 \
-                    sha256  7209ba2c18171af62a0fddccd9e2ee0f2640dd955739baf89b3ba65162816267 \
-                    size    2437577
+checksums           rmd160  dbf4eb3d6d5344fefd76b25ac11a8793848134c5 \
+                    sha256  0c3abdd122521d9be8cbdb3589a91a18ef18a3d00493fdb140fd932bae0fe343 \
+                    size    2796284
 
 depends_lib-append  port:R-generics \
                     port:R-Rcpp
