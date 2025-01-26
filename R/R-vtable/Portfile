@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran NickCH-K vtable 1.4.6
-revision            1
+R.setup             cran NickCH-K vtable 1.4.8
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         An R package for creating variable documentation files
 long_description    {*}${description}
 homepage            https://nickch-k.github.io/vtable
-checksums           rmd160  77a4a508e1c9967bfdbe39124274993bce5c6df7 \
-                    sha256  b9dd8fe2cdaafbef47c8d27d1f0bdb12d3bff04ef929552017804f6f7e342aee \
-                    size    145345
+checksums           rmd160  ff27188fc05142076bf42d58451b9bad74e8efbf \
+                    sha256  32f742ec7825c8ce55092f4102ae03469a8453b2593c49c947e7f01203c92659 \
+                    size    147719
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-haven \
                     port:R-kableExtra \
