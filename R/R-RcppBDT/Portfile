@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran eddelbuettel RcppBDT 0.2.6
-revision            2
+R.setup             cran eddelbuettel RcppBDT 0.2.7
+revision            0
 categories-append   devel
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
-license             {GPL-2 GPL-3}
+license             GPL-2+
 description         Rcpp bindings for Boost Date_Time
 long_description    {*}${description}
-checksums           rmd160  ee1fcd94c81d05d5aa3403bfb85aa79596233b94 \
-                    sha256  487bb1646b6b9834af64d14746efbeeefea64c42e369325efd5d3caf68068786 \
-                    size    40235
+checksums           rmd160  eccac7fba03d396e08d1f36507eb84c0d6966155 \
+                    sha256  926b9975f592cb3eeaef7603d7b01ea567d1d84293bff5fb6b6c6b420daecba8 \
+                    size    41044
 
 depends_lib-append  port:R-BH \
                     port:R-Rcpp
