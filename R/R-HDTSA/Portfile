@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran Linc2021 HDTSA 1.0.5
+R.setup             cran Linc2021 HDTSA 1.0.5-1
 revision            0
 categories-append   math
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             GPL-3
 description         High-Dimensional Time Series Analysis Tools
 long_description    {*}${description}
 homepage            https://github.com/Linc2021/HDTSA
-checksums           rmd160  66fd6ca56f0e106ba025187b214002e00bb376cd \
-                    sha256  3f68aaeec03808f7b463c96d03ad5fc84f1a50e05852d35ea74d5151899a95dc \
-                    size    767280
+checksums           rmd160  57a075cc5ffd7f00aaf0cfdbf1ebf1a08b482bb2 \
+                    sha256  2859708e860bc0e6e525a8be15ca0a3e0d9002ba651953a1af169787b0a31f2a \
+                    size    767284
 
 depends_lib-append  port:R-clime \
                     port:R-forecast \
