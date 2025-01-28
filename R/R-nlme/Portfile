@@ -6,7 +6,7 @@ PortGroup           R 1.0
 R.recommended       yes
 
 # This is a recommended package. Keep it CRAN-sourced.
-R.setup             cran r-project nlme 3.1-166
+R.setup             cran r-project nlme 3.1-167
 revision            0
 categories-append   math economics
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -14,9 +14,9 @@ license             GPL-2+
 description         Fit and compare Gaussian linear and nonlinear mixed-effects models
 long_description    {*}${description}. Recommended package.
 homepage-append     https://svn.r-project.org/R-packages/trunk/nlme
-checksums           rmd160  7f24cb4b0ae75f16935e5c0cae9fe67322a3f129 \
-                    sha256  237a14ee8d78755b11a7efe234b95be40b46fbdd1b4aaf463f6d532be1909762 \
-                    size    847668
+checksums           rmd160  3bf985f8a32ca3fa74844bd9fac607371028683a \
+                    sha256  dadc9ccb9b2089a533547437edd256a29a0e059365f11a81e7390bf48f2a8a49 \
+                    size    849418
 
 # Notice that recommended packages must have all hard dependencies set explicitly.
 depends_lib-append  port:R-lattice
