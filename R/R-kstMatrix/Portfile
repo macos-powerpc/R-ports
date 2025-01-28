@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cord.hockemeyer kstMatrix 1.0-1
+R.setup             cran cord.hockemeyer kstMatrix 1.1-0
 revision            0
 categories-append   economics
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             GPL-3
 description         Basic functions in knowledge space theory \
                     using matrix representation
 long_description    {*}${description}
-checksums           rmd160  d4b2782609a1b4f8d28c776cd027128d9f01fb1b \
-                    sha256  1b4e63bb9d04594e552638a8e5364df6c2ba08634c3138e272c689ed10f850d8 \
-                    size    67148
+checksums           rmd160  362db22eee8d52896e8c5aa662a1362d7a97d350 \
+                    sha256  96025be87556635e0bbcb2ec395fd8d8c09382c163075fc5f286edc6ce96ad3e \
+                    size    70118
 
 depends_lib-append  port:R-igraph \
                     port:R-pks \
