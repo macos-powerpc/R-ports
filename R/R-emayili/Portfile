@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is outdated.
-R.setup             cran datawookie emayili 0.9.1
+R.setup             cran datawookie emayili 0.9.2
 revision            0
 categories-append   mail
 platforms           {darwin any}
@@ -13,9 +13,9 @@ license             GPL-3
 description         Light, simple tool for sending e-mails with minimal dependencies
 long_description    {*}${description}
 homepage            https://datawookie.github.io/emayili
-checksums           rmd160  07219bdea21c151f51d1b10d8d5942e55bff3df4 \
-                    sha256  d79e7fd73af67bcd30e283d611446340677a4e19ab689e51c2cfc4e98ef2b411 \
-                    size    281823
+checksums           rmd160  51a8ce869463f602c301eefe14021580d6741c9c \
+                    sha256  e3da5103b1b9c9e449a430b8f36f8672a03d38af1581b35fcc27b34b18cadfec \
+                    size    281967
 supported_archs     noarch
 
 depends_lib-append  port:R-base64enc \
@@ -40,7 +40,9 @@ depends_lib-append  port:R-base64enc \
                     port:R-xml2
 
 # Some optional deps are omitted.
-depends_test-append port:R-gpg \
+depends_test-append port:R-cld2 \
+                    port:R-cld3 \
+                    port:R-gpg \
                     port:R-here \
                     port:R-jinjar \
                     port:R-lintr \
