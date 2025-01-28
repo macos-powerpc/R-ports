@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github davidhodge931 ggblanket 10.0.0 v
+R.setup             github davidhodge931 ggblanket 12.1.0 v
 revision            0
 categories-append   graphics
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             MIT
 description         Simplify R-ggplot2 visualisation with ${name} wrapper functions
 long_description    {*}${description}
 homepage            https://davidhodge931.github.io/ggblanket
-checksums           rmd160  8c72c3c05b1692fd29edf453ace520212cf7025a \
-                    sha256  d797406a77e5813e851512a20cae807010f307fd558725c3789b03c0eb5434bc \
-                    size    3197171
+checksums           rmd160  9784b1cc9067533750a70f26d4e3165689d89315 \
+                    sha256  3980c66156b00e1026358da2641d0553d962748aff3559b6d52092e9540692a2 \
+                    size    3256634
 github.tarball_from archive
 supported_archs     noarch
 
@@ -22,11 +22,11 @@ depends_lib-append  port:R-colorspace \
                     port:R-dplyr \
                     port:R-farver \
                     port:R-forcats \
+                    port:R-ggblend \
                     port:R-ggplot2 \
                     port:R-hms \
                     port:R-labelled \
                     port:R-lubridate \
-                    port:R-magrittr \
                     port:R-purrr \
                     port:R-rlang \
                     port:R-scales \
