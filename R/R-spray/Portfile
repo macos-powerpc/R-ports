@@ -3,16 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github RobinHankin spray 1.0-26
+R.setup             github RobinHankin spray 1.0-27
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Sparse arrays and multivariate polynomials
 long_description    {*}${description}
-checksums           rmd160  d07796a111cafbe02fbe381888681ffb4177010f \
-                    sha256  e68806df878287973c58925b5cb1c3c573a6fb64f822daad86764ca9e59f43bb \
-                    size    88209
+homepage            https://robinhankin.github.io/spray
+checksums           rmd160  5bd2368b43c57da005cecc8e03b60094a591f62f \
+                    sha256  b80e439256e6c833ca4b6e8e66f647bc96aa2756346489844e55044fd3f018a5 \
+                    size    89828
 github.tarball_from archive
 
 depends_lib-append  port:R-disordR \
