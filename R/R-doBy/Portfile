@@ -3,7 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github hojsgaard doBy 4.6.24 v
+# Revert to GitHub once updated there.
+R.setup             cran hojsgaard doBy 4.6.25 v
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -12,10 +13,10 @@ license             GPL-2+
 description         Groupwise statistics, ls-means, linear estimates, \
                     utilities
 long_description    {*}${description}
-checksums           rmd160  aaaec0f6daee857e5cc2972c4a4e38fb4971ad44 \
-                    sha256  a7ad44855f1fdb33919cdd308b08225e330d5b05d629710a990ec20b4410efd4 \
-                    size    9184813
-github.tarball_from archive
+checksums           rmd160  571ebffa521249add8b1d183212d9a3c273b7bf5 \
+                    sha256  2e1f5b4311eb8a52efb83f947fb583a8e63ac53cc8dff8859938c072d4b8dd6b \
+                    size    4556919
+# github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-broom \
