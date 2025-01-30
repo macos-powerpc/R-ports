@@ -4,22 +4,23 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran ropensci ijtiff 2.3.4
-revision            1
+R.setup             cran ropensci ijtiff 2.3.5
+revision            0
 categories-append   graphics
 maintainers         nomaintainer
 license             GPL-3
 description         Comprehensive TIFF I/O with full support for ImageJ TIFF files
 long_description    {*}${description}
 homepage            https://docs.ropensci.org/ijtiff
-checksums           rmd160  ad49ac99dc62710daa7ee36647f22ff04e38f304 \
-                    sha256  6937b59a1dd257b7fab2a866f2d7656410ccf69defc5cd62ff18fced8c6f71a9 \
-                    size    2432698
+checksums           rmd160  f687558e2ca1e4def7a29612376ee3109c6b274e \
+                    sha256  d471e87f9043987e3056ecc07ae241e91d92cc21219e1c061f819c51f36848ca \
+                    size    2430832
 
 depends_build-append \
-                    port:pkgconfig
+                    path:bin/pkg-config:pkgconfig
 
 depends_lib-append  port:bzip2 \
+                    port:fftw-3 \
                     port:libdeflate \
                     path:include/turbojpeg.h:libjpeg-turbo \
                     port:lzma \
@@ -27,6 +28,7 @@ depends_lib-append  port:bzip2 \
                     port:R-cli \
                     port:R-dplyr \
                     port:R-fs \
+                    port:R-imager \
                     port:R-magrittr \
                     port:R-purrr \
                     port:R-readr \
@@ -37,6 +39,7 @@ depends_lib-append  port:bzip2 \
                     port:R-zeallot \
                     port:tiff \
                     port:webp \
+                    port:xorg-libX11 \
                     port:zlib \
                     port:zstd
 
