@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github easystats report 0.5.9 v
+R.setup             github easystats report 0.6.0 v
 revision            0
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
-license             GPL-3
+license             MIT
 description         Automated reporting of results and statistical models
 long_description    {*}${description}
 homepage            https://easystats.github.io/report
-checksums           rmd160  69b1d85335549e6d59693ecfd1102430e6a2ef7e \
-                    sha256  e4d81ded4b30077b007bdba2f70fd8c6ea953dd597f181f6d9654953b3b90796 \
-                    size    2085910
+checksums           rmd160  b333866e4819705228e5b787521ae37d96c947ca \
+                    sha256  abaf72d124d5687b1579a340f9e8fd119e533611f75714ea9ce8e4bd3d52533d \
+                    size    2096077
 github.tarball_from archive
 supported_archs     noarch
 
@@ -25,6 +25,7 @@ depends_lib-append  port:R-bayestestR \
                     port:R-performance
 
 depends_test-append port:R-BayesFactor \
+                    port:R-BH \
                     port:R-brms \
                     port:R-dplyr \
                     port:R-emmeans \
@@ -32,7 +33,9 @@ depends_test-append port:R-BayesFactor \
                     port:R-knitr \
                     port:R-lavaan \
                     port:R-lme4 \
+                    port:R-marginaleffects \
                     port:R-modelbased \
+                    port:R-RcppEigen \
                     port:R-rmarkdown \
                     port:R-rstanarm \
                     port:R-testthat
