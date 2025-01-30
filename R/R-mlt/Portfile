@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to R-forge once updated there.
-R.setup             cran r-project mlt 1.6-1
+R.setup             cran r-project mlt 1.6-2
 revision            0
 categories-append   math
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             GPL-2
 description         Most Likely Transformations
 long_description    Likelihood-based estimation of conditional transformation models \
                     via the most likely transformation approach.
-checksums           rmd160  f4189fbf86e51cb912af035462923eed6f0d6040 \
-                    sha256  5948c47b7c6051e0df6f34dbb22535ea485ce2bdba89a742c45491a815537b7e \
-                    size    73760
+checksums           rmd160  e13aa34f5601415fe1b2f8968e58e70b5c1a5d04 \
+                    sha256  25d603560fc315db26656fa2930de4c5bfcdf41886075a19a15860e83c718bf7 \
+                    size    73854
 
 depends_lib-append  port:R-alabama \
                     port:R-basefun \
@@ -23,6 +23,7 @@ depends_lib-append  port:R-alabama \
                     port:R-mvtnorm \
                     port:R-nloptr \
                     port:R-numDeriv \
+                    port:R-quadprog \
                     port:R-sandwich \
                     port:R-variables
 
