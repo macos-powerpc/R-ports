@@ -4,15 +4,16 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             github stephenslab mashr 0.2.79
-revision            2
+revision            3
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             BSD
 description         Multivariate Adaptive Shrinkage
 long_description    {*}${description}
-checksums           rmd160  ebe9d589f7538b04519242acde6a19d1e68edf34 \
-                    sha256  2be5247963c0da9f983e2cb702b8458bf62a85f574f178eb2e527209f6dc69ed \
-                    size    5613373
+checksums           rmd160  c059badfd8198b8fa28dba6f98ab56277aff0cd0 \
+                    sha256  f23afd133923d87fa55eacc94b84b0fd62e89bc94cb63d91bd9d01ecf7b451a8 \
+                    size    5613221
+github.tarball_from archive
 
 # Dependents of R-RcppGSL link directly to gsl:
 # https://github.com/eddelbuettel/rcppziggurat/issues/21

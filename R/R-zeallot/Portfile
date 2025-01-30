@@ -4,16 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             github r-lib zeallot 0.1.0 v
-revision            2
+revision            3
+platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Variable assignment with zeal
 long_description    {*}${description}
-checksums           rmd160  6307b0df242e07e0cb0a5894369e3ed6f07dc5e9 \
-                    sha256  8c29613d5f760347078410008cdbc79bff7e30d92acf43e0bfe0998a7583bf4d \
-                    size    20697
+checksums           rmd160  09bdfd1c69cf493423f1f5acb8ff785708b1f084 \
+                    sha256  dee06c89f772735cb58ce439f3adb4452f301ebac820a6f23081d3acabd4f56e \
+                    size    20685
+github.tarball_from archive
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_test-append port:R-knitr \
                     port:R-magrittr \

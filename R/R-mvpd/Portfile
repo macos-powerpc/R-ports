@@ -4,17 +4,18 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             github swihart mvpd 0.0.4 v
-revision            1
+revision            2
 categories-append   math
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Multivariate product distributions for elliptically-contoured distributions
 long_description    {*}${description}
-checksums           rmd160  c20e24e49e21050207404b7c486ad2a884af533a \
-                    sha256  ba765d35df71fbba108bb042b7bb46eb468d9aa8b2832932c2e8dacee5215d91 \
-                    size    41963
+checksums           rmd160  f86aea0a1885820c9328fd09c3b2e378d1d4ce91 \
+                    sha256  8d96ae36114c4dfd7effc4acbaeb979dec7abb69955d1400119ba3498aedc154 \
+                    size    41967
+github.tarball_from archive
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-cubature \
                     port:R-libstable4u \
