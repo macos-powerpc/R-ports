@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran ropensci av 0.9.3
+R.setup             cran ropensci av 0.9.4
 revision            0
 categories-append   multimedia
 maintainers         nomaintainer
@@ -13,16 +13,17 @@ description         Bindings to FFmpeg AV library for working \
                     with audio and video in R
 long_description    {*}${description}
 homepage            https://docs.ropensci.org/av
-checksums           rmd160  f07189a968ca1fb391551d9383966f28d93862c7 \
-                    sha256  fc7af9cab104848e73fce5599562121f7cb87045edf4c6446bbd1b05c123a68f \
-                    size    755974
+checksums           rmd160  abaf4f45e85ee8e9ece87ce22abdc6ef95bcf24a \
+                    sha256  6dd79bcafcddb92569da8e57821961956119a1584a078dbf3709f6960b92a178 \
+                    size    756860
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
 
 depends_lib-append  port:ffmpeg
 
-depends_test-append port:R-gapminder \
+depends_test-append port:R-curl \
+                    port:R-gapminder \
                     port:R-ggplot2 \
                     port:R-ps \
                     port:R-testthat
