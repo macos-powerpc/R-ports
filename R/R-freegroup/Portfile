@@ -3,25 +3,27 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github RobinHankin freegroup 1.1-8
-revision            1
+R.setup             github RobinHankin freegroup 1.1-9
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         The free group in R, juxtaposition is represented by a plus
 long_description    {*}${description}
-checksums           rmd160  176373a184ca86afd45f6025227ad5f5cb15774d \
-                    sha256  b8ccc9885955233a7f801703991bf9718b4b2edb91151474d93868cb35950790 \
-                    size    131557
+checksums           rmd160  c55ead386cc87b52f1363cd1047624934e536313 \
+                    sha256  455cc824b21f5151a6f4cdd0072242a1c486f70e953d0a53f7b34ed5f9fcc451 \
+                    size    133416
+github.tarball_from archive
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-freealg \
                     port:R-magic \
                     port:R-magrittr \
                     port:R-plyr
 
-depends_test-append port:R-knitr \
+depends_test-append port:R-covr \
+                    port:R-knitr \
                     port:R-permutations \
                     port:R-rmarkdown \
                     port:R-testthat
