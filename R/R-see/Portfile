@@ -3,8 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-# Revert to GitHub once updated there.
-R.setup             cran easystats see 0.9.0
+R.setup             github easystats see 0.10.0 v
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -13,10 +12,10 @@ license             GPL-3
 description         Model visualisation toolbox for R-easystats and R-ggplot2
 long_description    {*}${description}
 homepage            https://easystats.github.io/see
-checksums           rmd160  61ff5274adc083eda4676b66cc9c45fb0fec18c3 \
-                    sha256  91a34caf7bdb55b7db8238ac89b3c17ce96ddceaee42bc78df8f4fafffd74c00 \
-                    size    131505
-# github.tarball_from archive
+checksums           rmd160  7454fafd401977f9fbb366857a0336d5887e7259 \
+                    sha256  68deafaca999b71c9f6fa18982f2bfd064754dda3c4b2accf1efc63852951c8a \
+                    size    1201335
+github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-bayestestR \
@@ -26,11 +25,14 @@ depends_lib-append  port:R-bayestestR \
                     port:R-ggplot2 \
                     port:R-insight \
                     port:R-modelbased \
+                    port:R-patchwork \
                     port:R-parameters \
                     port:R-performance
 
 # Some optional deps are omitted.
-depends_test-append port:R-brms \
+depends_test-append port:R-BH \
+                    port:R-brms \
+                    port:R-collapse \
                     port:R-curl \
                     port:R-DHARMa \
                     port:R-emmeans \
@@ -46,12 +48,13 @@ depends_test-append port:R-brms \
                     port:R-lavaan \
                     port:R-lme4 \
                     port:R-logspline \
+                    port:R-marginaleffects \
+                    port:R-mclogit \
                     port:R-mclust \
                     port:R-merDeriv \
                     port:R-metafor \
                     port:R-NbClust \
                     port:R-nFactors \
-                    port:R-patchwork \
                     port:R-poorman \
                     port:R-psych \
                     port:R-randomForest \
