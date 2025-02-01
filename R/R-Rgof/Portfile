@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran wolfgang.rolke Rgof 1.2.2
-revision            1
+R.setup             cran wolfgang.rolke Rgof 3.0.0
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-2+
 description         1d goodness of fit tests
 long_description    {*}${description}
-checksums           rmd160  2c10fa0728d903d532fd971e9afa63d881010004 \
-                    sha256  204685b64814b31d804ebff4ebaccb07287b82de0a3c93f90d7c483929525e33 \
-                    size    59632
+checksums           rmd160  ac2dfb02b3e8365f3cf426cb45295146acf9134e \
+                    sha256  cda7ce7dbea8da01f2163d8705a309f0740bfc1ed2c4c2612a095edb709ca80b \
+                    size    121359
 
 depends_lib-append  port:R-ggplot2 \
                     port:R-Rcpp
