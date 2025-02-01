@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran artemklevtsov RcppUUID 1.1.1
-revision            2
+R.setup             cran eddelbuettel RcppUUID 1.1.2
+revision            0
 maintainers         nomaintainer
-license             {GPL-2 GPL-3}
+license             GPL-2+
 description         Generate Universally Unique Identificators
 long_description    {*}${description}
-homepage            https://artemklevtsov.gitlab.io/rcppuuid
-checksums           rmd160  7de35e26e17edc6fb0d122f506632a66db61fe59 \
-                    sha256  68a1a60718ed859b552a291d0630a0a8fa206c1832fec8875e2182e45591ad6b \
-                    size    7449
+homepage            https://github.com/eddelbuettel/rcppuuid
+checksums           rmd160  4485191333903ef369feeb9166f9504d7904c514 \
+                    sha256  ae0a072213de0c088fd9d88fca2436b2c569307d2bbb37146998e4cab790767e \
+                    size    7559
 
 depends_lib-append  port:R-BH \
                     port:R-Rcpp
