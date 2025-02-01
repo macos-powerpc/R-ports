@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is outdated.
-R.setup             cran tidyverts tsibble 1.1.5 v
+R.setup             cran tidyverts tsibble 1.1.6 v
 revision            0
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             GPL-3
 description         Tidy temporal data frames and tools
 long_description    {*}${description}
 homepage            https://tsibble.tidyverts.org
-checksums           rmd160  3d57bb4c51540487f1cb958cff2086950ac38d02 \
-                    sha256  e63183cd0914d4a9ac59d036ba3f6ce03b9af6529a181a04141ea0c1688ac4ab \
-                    size    1333981
+checksums           rmd160  1ab9793af4d1f1f96b6f9330d95d06240c70cdd9 \
+                    sha256  cd711a95cf12d3edc6900a33bb3a9bb49c4e3bf6c413d8821bd84c03143bb7bb \
+                    size    1335501
 supported_archs     noarch
 
 depends_lib-append  port:R-anytime \
