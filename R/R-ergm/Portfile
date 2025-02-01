@@ -3,17 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github statnet ergm 4.6.0
-revision            1
+# Revert to GitHub once updated there.
+R.setup             cran statnet ergm 4.8.1
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Fit, simulate and diagnose exponential-family models for networks
 long_description    An integrated set of tools to analyze and simulate networks \
                     based on exponential-family random graph models (ERGMs).
-checksums           rmd160  b33f2ffde5e0df3fd8495bbe4da97d22c9360897 \
-                    sha256  4e53e6612fa835cdd68ec4e89c57059e4e4416b80355782f50ffab1d06feccba \
-                    size    863285
+checksums           rmd160  df5187702b7e7eb79ac16e9628d4c7aae4c38c56 \
+                    sha256  872b069f7574f2530b8e9996acbe66e3fd4f38a3b272a776f7cc5258af35c7e0 \
+                    size    1836063
+# github.tarball_from archive
 
 depends_lib-append  port:R-coda \
                     port:R-lpSolveAPI \
