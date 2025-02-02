@@ -3,24 +3,25 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-# Revert to GitHub once updated there.
-R.setup             cran tidymodels hardhat 1.4.0 v
+R.setup             github tidymodels hardhat 1.4.1 v
 revision            0
 categories-append   devel
 platforms           {darwin any}
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+maintainers         nomaintainer
 license             MIT
 description         Construct modelling packages
 long_description    {*}${description}
 homepage            https://hardhat.tidymodels.org
-checksums           rmd160  2c72df2cff91b1e27b15af3e94e90a814c35f547 \
-                    sha256  46d023ddfc8f940cd889478fa91c42e894a0df58a10f3b6c0eb688a500b2b3ad \
-                    size    611157
+checksums           rmd160  55cc6b1a7878f7ee0453a86d24c879048c669b8f \
+                    sha256  9d5dc2febeb6fbfeb1f1eab845075513e58814a9e1aea761c8eedb9fd22cfef7 \
+                    size    1319139
+github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
                     port:R-glue \
                     port:R-rlang \
+                    port:R-sparsevctrs \
                     port:R-tibble \
                     port:R-vctrs
 
@@ -33,6 +34,7 @@ depends_test-append port:R-covr \
                     port:R-rmarkdown \
                     port:R-roxygen2 \
                     port:R-testthat \
-                    port:R-usethis
+                    port:R-usethis \
+                    port:R-withr
 
 test.run            yes
