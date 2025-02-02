@@ -4,15 +4,16 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             github swihart rmutil 1.1.10 v
-revision            2
+revision            3
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
-license             {GPL-2 GPL-3}
+license             GPL-2+
 description         Utilities for non-linear regression and repeated measurements models
 long_description    {*}${description}
-checksums           rmd160  531ac17cc6dd8316c96d129a6d1b005bf72ed1d5 \
-                    sha256  dda9545d3e217772abdaf1ea4b5666584b194b291e953a392590b1f423a33641 \
-                    size    114635
+checksums           rmd160  9364c05f53b65fbf07f00b869e0a4c6d96f8a8da \
+                    sha256  22a5e84758b6c4e134f0f4ba3b27f04d5e3b3377a88c7f30299676e1bc5f3405 \
+                    size    114581
+github.tarball_from archive
 
 compilers.setup     require_fortran
 

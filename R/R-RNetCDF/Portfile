@@ -4,14 +4,15 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             github mjwoods RNetCDF 2.9-2 v
-revision            1
+revision            2
 maintainers         nomaintainer
 license             GPL-2+
 description         Interface to NetCDF file formats
 long_description    {*}${description}
-checksums           rmd160  628f6a9cbf35787941ef172ce18ed27089da0f4d \
-                    sha256  84587fce4349afc51f1cbb293b61896a9302f241e96dc453748d8aa22ad0a590 \
-                    size    159478
+checksums           rmd160  21ec9ac93d1dccdb61c66d33e5de7c30e395aa30 \
+                    sha256  40f240c45fd61f9fe89084674b9de9881714d9bd074ef6f75dbcb2a938efb6fb \
+                    size    159370
+github.tarball_from archive
 
 depends_lib-append  port:netcdf \
                     port:udunits2
