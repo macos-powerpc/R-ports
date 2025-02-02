@@ -5,6 +5,7 @@ or its forks, [MacStrop](https://github.com/RJVB/macstrop) and [PowerPC Ports](h
 
 Current maintenace is moved here; while most of these ports are also present in the official MacPorts ports repo,
 they are not updated there anymore. Consider using this repo to stay up-to-date.
+Despite macos-powerpc umbrella, ports here are not specific to PowerPC and can be used on x86 and aarch64.
 
 To use this, clone the repository to a location of choice. For example, to the root of MacPorts prefix, /opt/local/R-ports:
 
