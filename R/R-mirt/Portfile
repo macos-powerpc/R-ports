@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran philchalmers mirt 1.42 v.
+R.setup             cran philchalmers mirt 1.44.0
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             GPL-3+
 description         Multidimensional Item Response Theory
 long_description    {*}${description}
 homepage            https://github.com/philchalmers/mirt/wiki
-checksums           rmd160  b584f066b2c26c36b0d89a17fe67dc8f09083682 \
-                    sha256  9e5213942fa0c4724d17808158fb9c554d068fb889f16e5ddefc9474e07ddf97 \
-                    size    550283
+checksums           rmd160  aac91541482c1148644fa36c632ec598e37e9177 \
+                    sha256  cee4282b81e24d4e0f68b2536467a8ec35501d609f5183f3b04cad644cd916e5 \
+                    size    720587
 
 depends_lib-append  port:R-dcurver \
                     port:R-Deriv \
@@ -37,6 +37,7 @@ depends_test-append port:R-directlabels \
                     port:R-plink \
                     port:R-Rsolnp \
                     port:R-shiny \
-                    port:R-sirt
+                    port:R-sirt \
+                    port:R-testthat
 
 test.run            yes
