@@ -3,18 +3,21 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github r-lib zip 2.3.1 v
-revision            1
+# Revert to GitHub once updated there.
+R.setup             cran r-lib zip 2.3.2 v
+revision            0
 categories-append   archivers
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Cross-platform zip compression
 long_description    {*}${description}
-checksums           rmd160  6b7a974c9a2e3ed7cf96d7e07bab99b4a94450eb \
-                    sha256  c0d880b22420b246cf55857268e926f9ef627f20bfc79e286e004221a0ce2713 \
-                    size    112623
+checksums           rmd160  8086b882ef53f8c508731268b5b5d2ba75c8371f \
+                    sha256  9675e62b2bcfbde8c4a1c88abe0d9f2ec9e56d4ac180e1b7c975c65f96232591 \
+                    size    113313
+# github.tarball_from archive
 
 depends_test-append port:R-covr \
+                    port:R-pillar \
                     port:R-processx \
                     port:R-R6 \
                     port:R-testthat \
