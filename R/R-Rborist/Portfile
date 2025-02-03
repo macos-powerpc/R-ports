@@ -3,17 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran suiji Rborist 0.3-7
-revision            1
+R.setup             cran suiji Rborist 0.3-11
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             {GPL-2+ MPL-2}
-description         Extensible, parallelizable implementation of the random forest algorithm
+description         Extensible, parallelizable implementation \
+                    of the random forest algorithm
 long_description    {*}${description}
 homepage            https://github.com/suiji/Arborist
-checksums           rmd160  0e51f7e8ce2047e5bbda65d1eb0b6fef0c9231b4 \
-                    sha256  011efef9e6f304f752bd5013627dc8482f0e9d4cf1ec49503e97d3718f542596 \
-                    size    199072
+checksums           rmd160  f7df36be5415b2afd2a3f10760a69f083c9d576e \
+                    sha256  53db5641283bd61259b5726abd369686c48dec8f8fc4b7f49b8e26802211091c \
+                    size    200068
 
 depends_lib-append  port:R-data.table \
                     port:R-digest \
