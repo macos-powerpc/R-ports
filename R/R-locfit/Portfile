@@ -3,20 +3,20 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran andy_liaw locfit 1.5-9.10
+R.setup             cran andy_liaw locfit 1.5-9.11
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Local regression, likelihood and density estimation
 long_description    {*}${description}
-checksums           rmd160  d8f1c69f9a81f44243fbbc35cd27cb4d0a4ecb88 \
-                    sha256  4c20661814993a87ca435f42b0814bacb87c5a9ccc2ff55e4cae718cb176ac06 \
-                    size    200817
+checksums           rmd160  308759fb7f2a7053e565203b036beba498ff9353 \
+                    sha256  9a964b68fb135f1b0b2c18485bca06f3979c55b339d898dd8a75433314c4e3b9 \
+                    size    203836
 
 depends_test-append port:R-gam \
                     port:R-interp
 
-compiler.cxx_standard 2017
+compiler.c_standard 2017
 
 test.run            yes
