@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran vincentarelbundock modelsummary 2.2.0
+R.setup             cran vincentarelbundock modelsummary 2.3.0
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             GPL-3
 description         Summary tables and plots for statistical models and data
 long_description    {*}${description}
 homepage            https://vincentarelbundock.github.io/modelsummary
-checksums           rmd160  5356f95e08bec6fafe5a0450073be6a2e077a36c \
-                    sha256  16ffe975da625c0bbe9bec1ca2f89d1b6bcaf26b13dcef5484d6e13dbfb2b6a0 \
-                    size    3482602
+checksums           rmd160  1f9fba8319facc1b4a6dbe16e82955bad04dce43 \
+                    sha256  0974d96223e04037b4912e0e62b30b203d68a350bc7f3bd85ff123f00a8f0bae \
+                    size    3488530
 supported_archs     noarch
 
 depends_lib-append  port:R-checkmate \
