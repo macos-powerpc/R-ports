@@ -3,15 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran bgreenwell pdp 0.8.1
-revision            2
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
-license             {GPL-2 GPL-3}
+R.setup             cran bgreenwell pdp 0.8.2
+revision            0
+maintainers         nomaintainer
+license             GPL-2+
 description         Partial Dependence Plots
 long_description    {*}${description}
-checksums           rmd160  6db4375055ef8af302f0d0aa73de5bd915707af1 \
-                    sha256  e23db66e5d575337d5c8fd664ccd0548cc85da2aca6613d90ce187be1dca376c \
-                    size    3797059
+homepage            https://bgreenwell.github.io/pdp
+checksums           rmd160  a3e0fc228847a2edf52057a417a510f87b6db3ca \
+                    sha256  143afd7340f7b1fb38753d485371e7c590593530d9d43e33bb6e2bebd194ab1b \
+                    size    3782528
 
 depends_lib-append  port:R-foreach \
                     port:R-ggplot2 \
