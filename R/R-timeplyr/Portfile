@@ -3,24 +3,27 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran NicChr timeplyr 0.8.2
+R.setup             cran NicChr timeplyr 1.0.0
 revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Fast tidy tools for date and date-time manipulation
 long_description    {*}${description}
 homepage            https://github.com/NicChr/timeplyr
-checksums           rmd160  5ec32d7147d55a6766857c6ff6b59b0bea88d6a9 \
-                    sha256  0a67a095ff5e0f264ec241a6e40addffc6bb90c79b443135c73ab08347fe8cb9 \
-                    size    370018
+checksums           rmd160  8deda21059f27d0a7dcb6b8298fe6cdf8ba0d425 \
+                    sha256  955a38838a7373191ca7105689c7be106edfcc8f9b6a2595d5a7e652c5bdaa04 \
+                    size    283544
 
 depends_lib-append  port:R-cheapr \
+                    port:R-cli \
                     port:R-collapse \
                     port:R-cpp11 \
                     port:R-cppdoubles \
                     port:R-data.table \
                     port:R-dplyr \
+                    port:R-fastplyr \
                     port:R-ggplot2 \
+                    port:R-lifecycle \
                     port:R-lubridate \
                     port:R-pillar \
                     port:R-rlang \
