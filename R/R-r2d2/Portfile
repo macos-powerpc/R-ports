@@ -3,18 +3,20 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran r2d2 1.0.1
-revision            2
+R.setup             cran arni-magnusson r2d2 1.0.2
+revision            0
 categories-append   math
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
-license             GPL-3
-description         Bivariate (two-dimensional) confidence region and frequency distribution
-long_description    {*}${description}
-checksums           rmd160  7902267d31572a934f3e410106f64b24476cbf10 \
-                    sha256  d82fad4354289bf2b153b72803bf632a0fad7cd3ceb4710cd948ab947bbaa6a4 \
-                    size    22647
-supported_archs     noarch
 platforms           {darwin any}
+maintainers         nomaintainer
+license             GPL-3
+description         Bivariate (two-dimensional) confidence region \
+                    and frequency distribution
+long_description    {*}${description}
+homepage            https://github.com/arni-magnusson/r2d2
+checksums           rmd160  9d1c11ca531ff7141edde08b17d15d11c8fd64cc \
+                    sha256  164680c738138d57026956a325abb71659a4098cd0b849b89becc3f08830c539 \
+                    size    22640
+supported_archs     noarch
 
 depends_lib-append  port:R-sp
 
