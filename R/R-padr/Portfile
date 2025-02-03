@@ -4,16 +4,16 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is outdated.
-R.setup             cran EdwinTh padr 0.6.2
-revision            2
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+R.setup             cran EdwinTh padr 0.6.3
+revision            0
+maintainers         nomaintainer
 license             MIT
 description         Quickly get date–time data ready for analysis
 long_description    {*}${description}
 homepage            https://edwinth.github.io/padr
-checksums           rmd160  3bcec2f25c384d9efc054c160ec2a803fa3da4e1 \
-                    sha256  27f14a461d7bed2fa45865090066849fb0c08777ea25a36f0535492fd46ef255 \
-                    size    2993930
+checksums           rmd160  44463ed24429ab7b2bf80b1de9354c4b72fde095 \
+                    sha256  4637b26226fca7835b417764a5ef950dba8c539ed746b5b04f337fce3823204b \
+                    size    2994985
 
 depends_lib-append  port:R-dplyr \
                     port:R-lubridate \
