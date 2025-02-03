@@ -3,23 +3,23 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran CecileProust-Lima lcmm 2.1.0
-revision            1
+R.setup             cran CecileProust-Lima lcmm 2.2.0
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Extended mixed models using latent classes and latent processes
 long_description    {*}${description}
 homepage            https://cecileproust-lima.github.io/lcmm
-checksums           rmd160  6a4c34105a1cc023c31ef7953920115884501fda \
-                    sha256  cda2140af5bca08ec375f5c272dc19e8589269264b74ec8ac8670180486c3095 \
-                    size    711668
+checksums           rmd160  8c7687d90c97b20201b59ec093ac56523ec0b25d \
+                    sha256  bcfa116617eb24999510e1811a19c4bfe322c648e7afbb3d1d1427f1066fd34e \
+                    size    726047
 
 depends_lib-append  port:R-doParallel \
                     port:R-marqLevAlg \
                     port:R-mvtnorm \
                     port:R-numDeriv \
-                    port:R-randtoolbox
+                    port:R-spacefillr
 
 compilers.setup     require_fortran
 
