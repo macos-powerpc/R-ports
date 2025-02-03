@@ -4,16 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             github IRkernel repr 1.1.7
-revision            1
+revision            2
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3+
 description         Serializable representations
 long_description    {*}${description}
-checksums           rmd160  6a7e3029d64837a9b263e49492064a26feb63894 \
-                    sha256  ad978a28b453728af25b44069c6fbfb94389b2cced055988a50be9646107eb93 \
-                    size    43905
+checksums           rmd160  990e42b5dca51fa104773ff3a96ff8b2e626d87e \
+                    sha256  6593387874bc7f52c61449d0d872e73daae5593ea03406ec4742da2b7f9a1f35 \
+                    size    43895
+github.tarball_from archive
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-base64enc \
                     port:R-htmltools \

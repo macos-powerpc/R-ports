@@ -5,16 +5,17 @@ PortGroup           R 1.0
 
 R.setup             github stla tessellation d0b04c48c0c56adf9d4a0aa2a473448cd35110a9
 version             2.3.0
-revision            1
+revision            2
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Delaunay and Voronoï tessellations
 long_description    {*}${description}
 homepage            https://stla.github.io/tessellation
-checksums           rmd160  49d2f33d5236e9dad45591c74618b06f3efdd3dc \
-                    sha256  623af6f74695b5b1d5b17a9802affcec1e0a81b5a59e886068bdbd6ba88f8ed5 \
-                    size    87618491
+checksums           rmd160  d6f820597923e20ec3d0dcbddc090535bc3f3a14 \
+                    sha256  17fdce406325d3ed79e1c1e805407f5f7b87e704b6a6942a7848e93d5ed4b1a1 \
+                    size    87619502
+github.tarball_from archive
 
 depends_lib-append  port:R-colorsGen \
                     port:R-cxhull \

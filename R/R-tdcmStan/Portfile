@@ -4,18 +4,19 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             github atlas-aai tdcmStan 3.0.0 v
-revision            1
+revision            2
 categories-append   math
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Automating the creation of Stan code for TDCMs
 long_description    {*}${description}
 homepage            https://github.com/atlas-aai/tdcmStan
-checksums           rmd160  7c55b994fab1ac567c2e337e6b80b208d7498179 \
-                    sha256  0e88a082a5340d83c9b30d410647c6ac01c3d470fc79324d51ae87f7f343e410 \
-                    size    21193
+checksums           rmd160  f6c6f82645e2f60593b027cc650472942bcbc07b \
+                    sha256  a4a4c4334a66ffde9affba645b3c9e5b7547eb2f8548f70e1783b474852d5aab \
+                    size    21202
+github.tarball_from archive
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-dplyr \
                     port:R-glue \
