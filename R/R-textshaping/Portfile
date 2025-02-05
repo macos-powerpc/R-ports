@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github r-lib textshaping 0.4.1 v
+R.setup             github r-lib textshaping 1.0.0 v
 revision            0
 categories-append   graphics
 maintainers         nomaintainer
 license             MIT
 description         Bindings to the HarfBuzz and Fribidi libraries
 long_description    {*}${description} for text shaping.
-checksums           rmd160  8d9414485476185822d435db68e9606607f69ef6 \
-                    sha256  be11f09d323ab75dbe45f91e767fd52770f66fdd77b0cfe911598ca1a21a2d45 \
-                    size    36505
+checksums           rmd160  ad8d957a6a278ddcd07ccf3b9cce9464dd0ee895 \
+                    sha256  3ee4eb7354928114dc53e13dec1b30a0031d8a37ecfc424fb45e2c29d5a42e75 \
+                    size    73299
 github.tarball_from archive
 
 depends_build-append \
@@ -23,10 +23,12 @@ depends_lib-append  port:freetype \
                     path:lib/pkgconfig/harfbuzz.pc:harfbuzz \
                     port:R-cpp11 \
                     port:R-lifecycle \
+                    port:R-stringi \
                     port:R-systemfonts
 
 depends_test-append port:R-covr \
                     port:R-knitr \
-                    port:R-rmarkdown
+                    port:R-rmarkdown \
+                    port:R-testthat
 
 test.run            yes
