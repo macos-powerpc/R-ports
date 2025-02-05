@@ -4,15 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             github swihart stable 1.1.6 v
-revision            2
+revision            3
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
-license             {GPL-2 GPL-3}
-description         Probability functions and generalized regression models for stable distributions
+license             GPL-2+
+description         Probability functions and generalized regression models \
+                    for stable distributions
 long_description    {*}${description}
-checksums           rmd160  9ef4c5099458bd104bc6209d3ad25327b6fc5333 \
-                    sha256  3e6ac11bbb573d29e1715e330ad1556fa7fb5aa926ea8d17be8aa2f218415b0a \
-                    size    749621
+checksums           rmd160  509f874fb2bcc71f219421d43273ef1b84d58066 \
+                    sha256  93fdc7642aac48b6589654df709cd63a4eadc1e4cfa24fadc5b1c9bc47333fad \
+                    size    749589
+github.tarball_from archive
 
 depends_lib-append  port:R-rmutil
 

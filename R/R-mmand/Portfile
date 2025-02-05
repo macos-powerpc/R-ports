@@ -4,15 +4,16 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             github jonclayden mmand 1.6.3 v
-revision            1
+revision            2
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         Mathematical Morphology in Any Number of Dimensions
 long_description    {*}${description}
-checksums           rmd160  2c0c61582cec9f35909e322d10b71096a1dea3e5 \
-                    sha256  1ddf87ddf16e7060dd4a81890eea2e887c7541e5a3e2f1270ad261c4d3ff7ffd \
-                    size    3136090
+checksums           rmd160  ad3254c323004e167d7943c56b72d693d49270df \
+                    sha256  4471431582b58f6515a3d58149d589197f373b37864d9e69b796447e1e32dd7a \
+                    size    3135753
+github.tarball_from archive
 
 depends_lib-append  port:R-Rcpp
 
