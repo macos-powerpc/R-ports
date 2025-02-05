@@ -4,16 +4,18 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran schochastics netrankr 1.2.3 v
-revision            1
+R.setup             cran schochastics netrankr 1.2.4 v
+revision            0
 categories-append   math
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+maintainers         {@barracuda156 gmail.com:vital.had} openmaintainer
 license             MIT
 description         Analyze partial rankings in networks
 long_description    {*}${description}
-checksums           rmd160  e6fdd2675d7fd3f39c45f398159ef0d948eff86e \
-                    sha256  9bd4f561b0890272cc813b0a510063f13781a19ad88369884b4c0c0be46bbb2a \
-                    size    2165892
+homepage            https://schochastics.github.io/netrankr
+checksums           rmd160  45256a95fc98cb72eedbfbe089af8726b1d9501c \
+                    sha256  a1ed687cd497627c7f2be665e135cbf7fb18272aecedbc80b364113bc8112b03 \
+                    size    2268181
+# github.tarball_from archive
 
 depends_lib-append  port:R-igraph \
                     port:R-Rcpp \
