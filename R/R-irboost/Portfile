@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran zhuwang46 irboost 0.1-1.5
-revision            1
+R.setup             cran zhuwang46 irboost 0.2-1.0
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3+
 description         Iteratively reweighted boosting for robust analysis
 long_description    {*}${description}
-checksums           rmd160  50e174cd51f6091a48ab9a547b7de62b1dded852 \
-                    sha256  6a6793a382b701e0690cf7b50b2f371140e0fcbbc6e111667f4cadf36c3dc22e \
-                    size    1064729
+checksums           rmd160  3017a01d82b937f6322fb0b3176b1329d1b65b1f \
+                    sha256  8b15ab122707257afb74503497a2550d90df8de291ba01ead0809eae2961d7b0 \
+                    size    744886
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-mpath \
                     port:R-xgboost
