@@ -3,16 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran ironholds primes 1.6.0
-revision            1
+R.setup             cran ironholds primes 1.6.1
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Fast functions for prime numbers
 long_description    {*}${description}
-checksums           rmd160  789f0d249b704c0002353037ebf8a6d97017c823 \
-                    sha256  ad906dc9380ed1eac53a62345837d71020726a843c0172f1e8666b28303cf2ca \
-                    size    24686
+homepage            https://github.com/ironholds/primes
+checksums           rmd160  453db511b944159556e47a9c455664297940fe16 \
+                    sha256  1e4eb4865eff81215fd7dbb5a7ea5f8def192ddef61a5ce5318c727583b18eb8 \
+                    size    22073
 
 depends_lib-append  port:R-Rcpp
 
