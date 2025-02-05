@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran zeileis ivreg 0.6-4
+R.setup             cran zeileis ivreg 0.6-5
 revision            0
 platforms           {darwin any}
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+maintainers         nomaintainer
 license             GPL-2+
-description         2SLS Regression with Diagnostics in R
-long_description    {*}${description}
+description         2SLS regression with diagnostics
+long_description    {*}${description} in R.
 homepage            https://zeileis.github.io/ivreg
-checksums           rmd160  71588517b27bf75824aea21f276de92295f42c3d \
-                    sha256  e2290f07b0dd28b7cf501b8429e77ddf724f91d6ce845474c93bc260d1deca82 \
-                    size    1137390
+checksums           rmd160  e125f72a76277ef9b8d242de723a6f6a4fda8bc9 \
+                    sha256  1341e661863b0ece5379ee1c20bfb47a212fd996cfe67d89aef5ade087d81c7d \
+                    size    1141543
 supported_archs     noarch
 
 depends_lib-append  port:R-car \
