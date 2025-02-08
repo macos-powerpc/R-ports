@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github easystats easystats 0.7.3 v
+R.setup             github easystats easystats 0.7.4 v
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -13,9 +13,9 @@ description         Framework for easy statistical modelling, \
                     visualization and reporting
 long_description    {*}${description}
 homepage            https://easystats.github.io/easystats
-checksums           rmd160  6f0de552f6674f04d72612e04fae002ca8df52a3 \
-                    sha256  c6ed944f161bbce5c30c9c4fbe3471dd1294079082a55124d3db59f847e6f275 \
-                    size    158442351
+checksums           rmd160  63357667cde547308a22846f5ec8fb9de3b176ea \
+                    sha256  0696844821c414669917966c4cb9b30f119a5f9f9e8a63dbec155bd73e7487af \
+                    size    159054727
 github.tarball_from archive
 supported_archs     noarch
 
@@ -30,14 +30,19 @@ depends_lib-append  port:R-bayestestR \
                     port:R-report \
                     port:R-see
 
-depends_test-append port:R-DHARMa \
+depends_test-append port:R-collapse \
+                    port:R-DHARMa \
                     port:R-DT \
                     port:R-flexdashboard \
+                    port:R-Formula \
+                    port:R-ggplot2 \
                     port:R-glmmTMB \
                     port:R-httr \
                     port:R-jsonlite \
                     port:R-knitr \
+                    port:R-marginaleffects \
                     port:R-mockery \
+                    port:R-pak \
                     port:R-patchwork \
                     port:R-rmarkdown \
                     port:R-testthat \
