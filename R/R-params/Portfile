@@ -4,19 +4,19 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is outdated.
-R.setup             cran sahilseth params 0.7.3
-revision            2
+R.setup             cran sahilseth params 0.7.7
+revision            0
 categories-append   devel
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+platforms           {darwin any}
+maintainers         nomaintainer
 license             GPL-2
 description         Interface to simplify organizing parameters used in a package \
                     via external configuration files.
 long_description    {*}${description}
-checksums           rmd160  fe5ca2895f60b73d610a722c55f743be49d38ab1 \
-                    sha256  b2d90477b85cdc4ace643fdee5c92820ad58659b800a8bfd36e40bfaba4d317e \
-                    size    253554
+checksums           rmd160  d611c59a2bf5edadba61eca06e7ee6e6f9f347a8 \
+                    sha256  6397aac3b638d352de443ae2684e1ce9b6ae72b55f64efb233b20b63f5e626cb \
+                    size    260181
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-glue \
                     port:R-purrr \
@@ -26,6 +26,7 @@ depends_lib-append  port:R-glue \
 
 depends_test-append port:R-knitr \
                     port:R-openxlsx \
+                    port:R-readxl \
                     port:R-testthat \
                     port:R-utf8
 
