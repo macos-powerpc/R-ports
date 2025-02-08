@@ -3,17 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github Non-Contradiction JuliaCall 0.17.5 v
-revision            1
+# Revert to GitHub once updated there.
+R.setup             cran Non-Contradiction JuliaCall 0.17.6 v
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Seamless integration between R and Julia
 long_description    {*}${description}
 homepage            https://non-contradiction.github.io/JuliaCall/index.html
-checksums           rmd160  a9a2a3310de36f32d503f7641b795cf6cc4d9aea \
-                    sha256  c2588e08cc8acf2c4ee117dbef3bcfccd0750e6e1abcf9969b45c92260041d77 \
-                    size    2826735
+checksums           rmd160  a54c81d356d0587bad5edfde7e771dc855d9f802 \
+                    sha256  c1800d9ec0cf4def7fd969374afc2ec371dfa1b5eb0602301b13fb75264a9a63 \
+                    size    1437383
+# github.tarball_from archive
 
 depends_lib-append  port:R-knitr \
                     port:R-Rcpp \
@@ -28,7 +30,7 @@ depends_test-append port:R-rappdirs \
 # for the build or tests. Since it is broken on PowerPC, add a note.
 notes "
 To use ${name}, it is recommended to install julia port.\
-Notice that julia is not supported on some platforms.
+Notice that julia is not supported on some platforms presently.
 "
 
 test.run            yes
