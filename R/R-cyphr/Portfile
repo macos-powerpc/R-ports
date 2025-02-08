@@ -4,19 +4,19 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran ropensci cyphr 1.1.4
-revision            1
+R.setup             cran ropensci cyphr 1.1.7
+revision            0
+platforms           {darwin any}
 categories-append   crypto
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         High-level encryption wrappers
 long_description    {*}${description}
 homepage            https://docs.ropensci.org/cyphr
-checksums           rmd160  b10fe05537af87440152cb98fe533cffc8c1c646 \
-                    sha256  3d2567030f065a0acb296ef9764dc621988dfca559342ed12fba3932579d9f9e \
-                    size    927763
+checksums           rmd160  508f0f09b22d55fe73a70dc0e3c744f358a93501 \
+                    sha256  eacd75b6932217c2b8fdf43acac9a7669ea640cb174aa505d5e582f0e20c6a7f \
+                    size    926652
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-getPass \
                     port:R-openssl \
