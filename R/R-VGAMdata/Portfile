@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran t.yee VGAMdata 1.1-12
+R.setup             cran t.yee VGAMdata 1.1-13
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2
-description         Data supporting the VGAM package
+description         Data supporting the R-VGAM package
 long_description    {*}${description}
 homepage            https://www.stat.auckland.ac.nz/~yee/VGAMdata
-checksums           rmd160  76f8e05bdc94eeb23eae574707a125c7ec566d89 \
-                    sha256  7ecfb9e9029cda7abf419fe0faabc028fb352a8c0dd0f9b7e4695dfe6d944083 \
-                    size    1400238
+checksums           rmd160  e397cedaae5b6147d4cf9250d5d5863d629facfd \
+                    sha256  33d91b282f2d144a7214ed70397f3c05814a8779d7a87db1dbf5f8f2307a538c \
+                    size    1402388
 supported_archs     noarch
 
 depends_lib-append  port:R-VGAM
