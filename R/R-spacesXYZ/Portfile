@@ -3,18 +3,20 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran gdavis spacesXYZ 1.3-0
-revision            1
+R.setup             cran gdavis spacesXYZ 1.5-1
+revision            0
 categories-append   graphics
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3+
 description         CIE XYZ and some of its derived color spaces
 long_description    {*}${description}
-checksums           rmd160  5a354e32f1e10bf84b6769ce998c2d360a4b1adf \
-                    sha256  fb221274379e5b9cc8cf5177a45e9d8706345de384e8321d772fc837b5abf582 \
-                    size    310031
+checksums           rmd160  4f231b538de0a388beee2a9f36526840c3f5ea2c \
+                    sha256  28aa5c46fa2b7f283af4e5371f253a9940643cece1af8c8777799f4c41283fa0 \
+                    size    310439
 supported_archs     noarch
-platforms           {darwin any}
+
+depends_lib-append  port:R-logger
 
 depends_test-append port:R-knitr \
                     port:R-microbenchmark \
