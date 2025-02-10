@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran dicook nullabor 0.3.12
+R.setup             cran dicook nullabor 0.3.15
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             MIT
 description         Tools for graphical inference
 long_description    {*}${description}
 homepage            https://dicook.github.io/nullabor
-checksums           rmd160  3ad1988d991ca9fbb305dbc027c03a3f8d5f2d89 \
-                    sha256  26ed134c82b8fc17fc5e1c8fe3ed99f6f5fa01690534f62d010276d30fe0ad7a \
-                    size    1180136
+checksums           rmd160  fdbc7af8cc0c9f46828459be9c289a48f9f719a7 \
+                    sha256  683cb873939dde383d25ce0ef593a8f03105f636cd5c0acdbbc346bc9df8aa8a \
+                    size    1858311
 supported_archs     noarch
 
 depends_lib-append  port:R-dplyr \
