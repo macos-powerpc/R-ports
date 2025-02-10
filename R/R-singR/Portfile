@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran liangkang_wang singR 0.1.2
-revision            1
+R.setup             cran liangkang_wang singR 0.1.3
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
-description         Simultaneous non-gaussian component analysis
+description         Simultaneous non-Gaussian component analysis
 long_description    {*}${description}
-checksums           rmd160  004a562109e815127855dc1d091e8ae6e685cd4a \
-                    sha256  6c9ddd19c026b61d6bac37a65492174eb7ed474f739fa20aab7198cab67ad5f5 \
-                    size    2570614
+checksums           rmd160  268b6cc41ae4abe0843ab3998baa388b3ac3755f \
+                    sha256  1f26cc7925a39305f2e4f5cb0b1cd0f434d757b427377b0f85eb47c8fb10fdad \
+                    size    2570954
 
 depends_lib-append  port:R-clue \
                     port:R-gam \
