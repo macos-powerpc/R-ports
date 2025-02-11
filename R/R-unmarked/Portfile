@@ -4,21 +4,22 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is archaic.
-R.setup             cran kaskr unmarked 1.4.3
+R.setup             cran kaskr unmarked 1.5.0
 revision            0
 maintainers         nomaintainer
 license             GPL-3+
 description         Models for data from unmarked animals
 long_description    {*}${description}
 homepage            https://rbchan.github.io/unmarked
-checksums           rmd160  628efb247030a5009466430125761af2e7e7c70a \
-                    sha256  21af910d35c17d9103224a2f75e56083c14f93f3c63ec0e630a2940322ddda88 \
-                    size    1234401
+checksums           rmd160  95f643a3582129796ad3869840d244fa0fc2863b \
+                    sha256  1357e811193a4911c7c64fbcacb730740d4d46b7788321188bf558d5a55b594e \
+                    size    1418873
 
 depends_lib-append  port:R-lme4 \
                     port:R-Rcpp \
                     port:R-RcppArmadillo \
                     port:R-RcppEigen \
+                    port:R-reformulas \
                     port:R-TMB
 
 compilers.setup     require_fortran
