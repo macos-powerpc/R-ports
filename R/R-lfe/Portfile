@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is outdated.
-R.setup             cran MatthieuStigler lfe 3.1.0
+R.setup             cran MatthieuStigler lfe 3.1.1
 revision            0
 categories-append   economics
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             MIT
 description         Linear Group Fixed Effects
 long_description    {*}${description}
 homepage            https://github.com/r-econometrics/lfe
-checksums           rmd160  b31032a3ceb7b0f393ebf7976cbfd351dacf5678 \
-                    sha256  887b78cd7457be44538638edd6f4ef7e6862ae5a343b7f4b747ac354cbef4452 \
-                    size    1126449
+checksums           rmd160  a8ccf7e8e94d474c1fb71b0ec60383bf87f945d3 \
+                    sha256  c007bffb02feaa395163e9ea28dfe3fb479cb8cf26427569e2b91fe4becc6a91 \
+                    size    1126380
 
 depends_lib-append  port:R-Formula \
                     port:R-sandwich \
