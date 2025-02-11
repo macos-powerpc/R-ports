@@ -3,16 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github statnet ergm.multi 0.2.1
-revision            1
+R.setup             github statnet ergm.multi 0.2.1.1
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
-description         Fit, simulate and diagnose exponential-family models for multiple or multilayer networks
+description         Fit, simulate and diagnose exponential-family models \
+                    for multiple or multilayer networks
 long_description    {*}${description}
-checksums           rmd160  796f50b01661df997c0e870ff323492ad2c276d2 \
-                    sha256  226f7a48cfd6fac20d4f304879f85b6d6a567e56bb0ac21d94d42b19d02f5e54 \
-                    size    170606
+checksums           rmd160  579808069dee4afdb847dafe7e79134a44da08ae \
+                    sha256  23d9f9a98e893875d935d61c0c71f89b67d5b9da86c1345dd2a1e28c28f5c08d \
+                    size    170604
+github.tarball_from archive
 
 depends_lib-append  port:R-ergm \
                     port:R-glue \
