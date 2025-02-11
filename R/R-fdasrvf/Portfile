@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran jdtuck fdasrvf 2.3.4
+R.setup             cran jdtuck fdasrvf 2.3.5
 revision            0
 categories-append   math
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             GPL-3
 description         Elastic functional data analysis
 long_description    {*}${description}
 homepage            https://github.com/jdtuck/fdasrvf_R
-checksums           rmd160  84ef0d6b7e7b4d45b8f2618586310d97a702ec43 \
-                    sha256  fc31fc6f5bcedf80c72bdb92518241769c837a3355a56b015bcf5da9e8b92863 \
-                    size    3135409
+checksums           rmd160  76ff242be75cb17c5f40996dc287ed122de86284 \
+                    sha256  8432b61a1f9b287aa0cdedf6e46dfb60acab1772cbc24a920957f6caa1032f78 \
+                    size    3137890
 
 depends_lib-append  port:R-cli \
                     port:R-coda \
