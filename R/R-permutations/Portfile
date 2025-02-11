@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github RobinHankin permutations 1.1-5
+R.setup             github RobinHankin permutations 1.1-6
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -11,9 +11,9 @@ maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         The symmetric group: permutations of a finite set
 long_description    {*}${description}
-checksums           rmd160  a58c2e79f4ddc4882ae51a306c93e5b7b12f25fd \
-                    sha256  9210146a49f9ba02d0ac276129b4fb3c8ca8e3387cd188c380d8d38f1d4ea084 \
-                    size    446822
+checksums           rmd160  382b2f698b60936e73462b0677d7ccda413ce0e2 \
+                    sha256  bc4d4bac2ce5325c9a535f00ffd9242747c7993d63b3eebc0bcbfc598b8accbd \
+                    size    457034
 github.tarball_from archive
 supported_archs     noarch
 
