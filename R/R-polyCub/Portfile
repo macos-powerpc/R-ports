@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github bastistician polyCub 0.9.1 v
+R.setup             github bastistician polyCub 0.9.2 v
 revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-2
 description         Cubature over polygonal domains
 long_description    {*}${description}
-checksums           rmd160  287b292b1d14ba907ce2c0fdb3a0f8155222e53f \
-                    sha256  937c6dcaf3d2876fa33b589ad9c6b0e73c412b17440c9b5981c971a16ead4f5f \
-                    size    102127
+checksums           rmd160  3b8533e3ad208d7efb5d78b7b6f3d550d4b36c13 \
+                    sha256  475832fd41d5ce76058d54d64d52a6595c392b3a6d275d7aa898dcf33a5ba087 \
+                    size    102196
 github.tarball_from archive
 
 depends_lib-append  port:R-sp
