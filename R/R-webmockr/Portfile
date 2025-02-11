@@ -3,30 +3,32 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github ropensci webmockr 1.0.0 v
+R.setup             github ropensci webmockr 2.0.0 v
 revision            0
 categories-append   net
 platforms           {darwin any}
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+maintainers         nomaintainer
 license             MIT
 description         R library for stubbing and setting expectations on HTTP requests
 long_description    {*}${description}
-checksums           rmd160  97cef7ad0bb7addad72f834b4dfe73abef4ba0c5 \
-                    sha256  cabf3de728c78183f40b442d0a54d25e1e19bbe07f19dab515635c2aaa5a33a2 \
-                    size    99198
+checksums           rmd160  350ca279275e00bea5b04df70222b37c80b3a0fb \
+                    sha256  22dee95a2070e2a630e326d3f5f9c9e26e59b8f85376707564f9aa5daf9f210d \
+                    size    112024
 github.tarball_from archive
 supported_archs     noarch
 
-depends_lib-append  port:R-base64enc \
+depends_lib-append  port:R-cli \
                     port:R-crul \
                     port:R-curl \
                     port:R-fauxpas \
                     port:R-jsonlite \
                     port:R-magrittr \
                     port:R-R6 \
+                    port:R-rlang \
                     port:R-urltools
 
-depends_test-append port:R-httr \
+depends_test-append port:R-diffobj \
+                    port:R-httr \
                     port:R-httr2 \
                     port:R-testthat \
                     port:R-vcr \
