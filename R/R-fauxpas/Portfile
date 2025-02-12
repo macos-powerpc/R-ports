@@ -4,18 +4,19 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             github ropensci-archive fauxpas 0.5.2 v
-revision            1
+revision            2
 categories-append   net
+platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         HTTP status code helper
 long_description    {*}${description}
 homepage            https://sckott.github.io/fauxpas
-checksums           rmd160  9bd1d9038da61db9da9041f964b40d6e3f674ce7 \
-                    sha256  5b20a5a4290e38fe567241a97e4395a0ae77c8f49bd2cc4562d8d4a6df2089df \
-                    size    36424
+checksums           rmd160  ae5b928e4be08f79b26620c45a407d539fc8ee20 \
+                    sha256  5168af73ab0f8e343d2a3b00f9df6d5ff2ffad2e9e58781145122d156fe18baa \
+                    size    36385
+github.tarball_from archive
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-httpcode \
                     port:R-R6 \

@@ -4,18 +4,19 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             github krlmlr bindr 0.1.1 v
-revision            1
+revision            2
 categories-append   devel
+platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Parametrized active bindings
 long_description    {*}${description}
 homepage            https://krlmlr.github.io/bindr
-checksums           rmd160  33b9f3e8ed57cc17005ae64142dacdd85c370290 \
-                    sha256  e288868cec5c5e68f745616365010b40ad2684d28514bc59bc7c768fd41bab5e \
-                    size    7929
+checksums           rmd160  aac9d20baac9edf427bff68033fcc710a14eaff4 \
+                    sha256  a0503e0faac1042da6e63ebd0211ed2de22987dd3b244c5e507593fafa755743 \
+                    size    7915
+github.tarball_from archive
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_test-append port:R-testthat
 
