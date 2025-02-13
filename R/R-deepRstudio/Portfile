@@ -4,18 +4,19 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             github kumeS deepRstudio 0.0.9 v
-revision            1
+revision            2
 categories-append   textproc
+platforms           {darwin any}
 maintainers         nomaintainer
 license             Artistic-2
 description         Seamless language translation in RStudio using DeepL API and Rstudioapi
 long_description    {*}${description}
 homepage            https://kumes.github.io/deepRstudio
-checksums           rmd160  a4dea94a656b6f2105f466f19ab190ae3bbcd9d4 \
-                    sha256  96cf112b71e1c26cbf94124e4eb04f7dc901ba0255439b550059697538745052 \
-                    size    794934
+checksums           rmd160  f2a40859a73fbd086c30125cb4ad0c83cf66f0c3 \
+                    sha256  7b3fc8b9c0ad7d1566219a552395585784ddb58284bb4d118eba2d08c196dee4 \
+                    size    794904
+github.tarball_from archive
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-assertthat \
                     port:R-clipr \

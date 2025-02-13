@@ -4,16 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             github hypertidy decido 0.3.0 v
-revision            1
+revision            2
 categories-append   math
 maintainers         nomaintainer
 license             MIT
 description         Bindings for Mapbox ear cutting triangulation library
 long_description    {*}${description}
 homepage            https://hypertidy.github.io/decido
-checksums           rmd160  2f3c0c9f485ef72fa64f7ca47b612ebc4ae23999 \
-                    sha256  2bd3a4f8e6e782dc2dce733e4b3d2df3f9c5b8b4dcaa48643cd93e54822c0e4d \
-                    size    941055
+checksums           rmd160  006b5f7110cfe474f3840b5fbea3b115c0c97a5e \
+                    sha256  1300ef35527a14a322a3f92305836124d385e4867430c0722e96d795fa5965a7 \
+                    size    941025
+github.tarball_from archive
 
 depends_lib-append  port:R-Rcpp
 
