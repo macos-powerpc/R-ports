@@ -3,22 +3,23 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github r-lib lintr 3.1.2 v
-revision            1
+R.setup             github r-lib lintr 3.2.0 v
+revision            0
 categories-append   devel textproc
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+platforms           {darwin any}
+maintainers         nomaintainer
 license             MIT
 description         Linter for R code
 long_description    {*}${description}
 homepage            https://lintr.r-lib.org
-checksums           rmd160  1590703f6e0f2ef30212fad3afc579e4df8f6974 \
-                    sha256  7d2b745dd98d6289bbcc6ba62586cb5ce6a3ab7c5929cc1f9af684562662d159 \
-                    size    3480709
+checksums           rmd160  6228fc4f6ddfc815b00414cbe20926921643f9a5 \
+                    sha256  31a9f2795a81bec361e1f20c9bf58e13c522e1dd38f2c569901bb80965458b83 \
+                    size    9398013
+github.tarball_from archive
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-backports \
-                    port:R-cyclocomp \
+                    port:R-cli \
                     port:R-digest \
                     port:R-glue \
                     port:R-knitr \
@@ -28,10 +29,10 @@ depends_lib-append  port:R-backports \
 
 depends_test-append port:R-bookdown \
                     port:R-crayon \
+                    port:R-cyclocomp \
                     port:R-data.table \
                     port:R-httr \
                     port:R-jsonlite \
-                    port:R-mockery \
                     port:R-patrick \
                     port:R-rlang \
                     port:R-rmarkdown \
