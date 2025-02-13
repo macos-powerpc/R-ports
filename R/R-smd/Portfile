@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran bsaul smd 0.7.0
+R.setup             cran bsaul smd 0.8.0
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             MIT
 description         Compute standardized mean differences
 long_description    {*}${description}
 homepage            https://bsaul.github.io/smd
-checksums           rmd160  c514baabdf52416e11232f98bea7ff4170fd30e5 \
-                    sha256  a5a95ea24b6d2afbe494793ddd9843104edfdb1ee60318336a9b76fb9d8bd796 \
-                    size    20309
+checksums           rmd160  2ced015edb151ee1fba4c713195f22722018c841 \
+                    sha256  5a8a7005d8ea88ddf66ae9f758aa7c2011cead6a1d6c5f57094b227106bcb7b8 \
+                    size    20786
 supported_archs     noarch
 
 depends_test-append port:R-dplyr \
