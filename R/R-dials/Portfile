@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github tidymodels dials 1.3.0 v
+R.setup             github tidymodels dials 1.4.0 v
 revision            0
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             MIT
 description         Tools for creating tuning parameter values
 long_description    {*}${description}
 homepage            https://dials.tidymodels.org
-checksums           rmd160  ff80dd3b1cc30e1eb7462998d3271c64c037b732 \
-                    sha256  9bb76d0126e435824d83a0d2aaf6f4b52aa6966d77f52897d78fa9f7323a7cab \
-                    size    240869
+checksums           rmd160  3306f7929a7e20328765a7dc6e13f3f217dc43d1 \
+                    sha256  de1ef40c6ad57ec2d148351c1187fa8e9fdd6f9f5316c06d3bee37b7bb503991 \
+                    size    243766
 github.tarball_from archive
 supported_archs     noarch
 
