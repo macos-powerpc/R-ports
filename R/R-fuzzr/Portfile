@@ -4,16 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             github mdlincoln fuzzr 0.2.2 v
-revision            1
+revision            2
+platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Fuzz-test R functions
 long_description    {*}${description}
-checksums           rmd160  dbcdce1891a31898863a39800733ef011152c1e7 \
-                    sha256  2bd8a71172e95b3cb8fc937f937607a6f7a4c3f8d327b81af892b25061853815 \
-                    size    15785
+checksums           rmd160  8e22cd368de4c3f146e438689faddf88edd7f0a4 \
+                    sha256  7cf84fcaefe5b29adc158bb06e9e2c4a4818f4163b253d05b08c7183e3fd7519 \
+                    size    15766
+github.tarball_from archive
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-assertthat \
                     port:R-progress \

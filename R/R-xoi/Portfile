@@ -4,14 +4,15 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             github kbroman xoi 0.72
-revision            1
+revision            2
 maintainers         nomaintainer
 license             GPL-3
 description         Tools for analyzing crossover interference
 long_description    {*}${description}
-checksums           rmd160  9476884bf6801c3c19d0c9c4bd87918410910458 \
-                    sha256  61192785a025a099ac69c22821b556c0dc234df4b9c558546d09d710b96a4835 \
-                    size    149151
+checksums           rmd160  07334b514a822b8249c1f2b40ea2b6a4adea8d25 \
+                    sha256  f7a71343c7d0983f5afad7adc6bbf53c0721ca953d838cc6cd09f3bc2c19516e \
+                    size    149089
+github.tarball_from archive
 
 depends_lib-append  port:R-qtl
 

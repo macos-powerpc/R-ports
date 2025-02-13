@@ -4,17 +4,18 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             github gagolews FuzzyNumbers 0.4-7 v
-revision            1
+revision            2
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             LGPL-3+
 description         Tools to deal with fuzzy numbers
 long_description    {*}${description}
-checksums           rmd160  9a7bacacc1c3af304ad80bffbbc9e1a6be61d86b \
-                    sha256  9d9014f9a7dfe65113090e410389864c7284a45b600ad45458441c829f74efb4 \
-                    size    391410
+checksums           rmd160  fb42176db433919f52164d274551a87731f6e38c \
+                    sha256  e5df7d79910020174a8c8c050bbb785786d7073e5d2a1afb53322423bfff3b05 \
+                    size    391422
+github.tarball_from archive
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_test-append port:R-digest \
                     port:R-knitr
