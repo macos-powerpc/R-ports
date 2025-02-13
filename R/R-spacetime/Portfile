@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran edzer spacetime 1.3-2
+R.setup             cran edzer spacetime 1.3-3
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             GPL-2+
 description         Classes and methods for spatio-temporal data
 long_description    {*}${description}
 homepage            https://github.com/edzer/spacetime
-checksums           rmd160  97dda74b87000e1bd905643fa8ef7ee068c89042 \
-                    sha256  d6819eb7162b65638a5faad77a102cb8fb5934a5a19d02b6acfbd4e3128cbb05 \
-                    size    2499973
+checksums           rmd160  23e5b338c75ffc1a16dbcc7afda0eede001e63b7 \
+                    sha256  215ec4276e10c067e51221760e0d98d5e785bc39172e00ebdb0b269cefa581ae \
+                    size    2504538
 supported_archs     noarch
 
 depends_lib-append  port:R-intervals \
@@ -34,6 +34,7 @@ depends_test-append port:R-gstat \
                     port:R-rmarkdown \
                     port:R-RPostgreSQL \
                     port:R-sf \
-                    port:R-sftime
+                    port:R-sftime \
+                    port:R-spdep
 
 test.run            yes
