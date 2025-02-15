@@ -4,17 +4,18 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             github kkondo1981 aglm 0.4.0 v
-revision            1
+revision            2
 categories-append   math
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         Accurate Generalized Linear Model
 long_description    {*}${description}
-checksums           rmd160  5d7d3b6441451c77d42433fa0c7df8b023e1d87c \
-                    sha256  b3e7eccfc6bd9c9ebe4f2ce0380539b346ccea976ca417e9ebaf737b218e5b16 \
-                    size    39875
+checksums           rmd160  fb38fd133604bdde476c805cb8ce3d64fdf68c5d \
+                    sha256  ab5875741a7b2c2f22fe6353b54341aa0076eaf3b3e8e05537ea9b9353d33e54 \
+                    size    39853
+github.tarball_from archive
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-assertthat \
                     port:R-glmnet \
