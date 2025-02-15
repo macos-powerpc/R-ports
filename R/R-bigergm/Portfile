@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran corneliusfritz2010 bigergm 1.2.1
+R.setup             cran corneliusfritz2010 bigergm 1.2.3
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             GPL-3
 description         Hierarchical exponential-family models for big networks
 long_description    A toolbox for analyzing and simulating large networks based \
                     on hierarchical exponential-family random graph models (HERGMs).
-checksums           rmd160  d0ca43c2937fd081af48661f34c88ab31b57e92a \
-                    sha256  688250b7a20a8ec12bf01fc3ce636368772ab70788c97f4250f3b628a33a1e75 \
-                    size    1754339
+checksums           rmd160  81e41003581ed1ce1a000f53315d9699b7578d12 \
+                    sha256  5dacf2fac8995799af5b267c7861b0d759de4f286866275f47cf5dcdf03e97b3 \
+                    size    1750133
 
 depends_lib-append  port:R-cachem \
                     port:R-dplyr \
