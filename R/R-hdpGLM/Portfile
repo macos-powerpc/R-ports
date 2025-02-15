@@ -4,16 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             github DiogoFerrari hdpGLM 1.0.3 v
-revision            1
+revision            2
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Hierarchical Dirichlet process generalized linear models
 long_description    {*}${description}
 homepage            http://www.diogoferrari.com/hdpGLM/index.html
-checksums           rmd160  100f10e12e243eaba45b8215482a54cfeae66d57 \
-                    sha256  4b811534f3f039a7226d9817354d0c7bcc7ec16f55901f2a40411fceed49f509 \
-                    size    9438782
+checksums           rmd160  af384b787f549e5a93158e5f4f149a6f056ba3b2 \
+                    sha256  d9b30c7e2874ae837671b779a2747080a11131012ea86020d2b58cb1cc4cd1ed \
+                    size    9434658
+github.tarball_from archive
 
 depends_lib-append  port:R-coda \
                     port:R-data.table \
