@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran ruibarrigana ebmstate 0.1.4
-revision            1
+R.setup             cran ruibarrigana ebmstate 0.1.5
+revision            0
 categories-append   math
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+maintainers         nomaintainer
 license             GPL-3+
 description         Empirical Bayes Multi-state Cox model
 long_description    {*}${description}
-checksums           rmd160  cdbcbdfb1aa1c3daf2357ecf7571497cfbaf59ae \
-                    sha256  1bd173c3c06c39495a3c5fe188c211c82653f6d8337906c2938420fb8ffb73c9 \
-                    size    182498
+checksums           rmd160  39ac0f23327714c0c2828c3b66b3b8cc6fbf27b4 \
+                    sha256  ccedd7ccae8f998aae83b4c78eda957e5a055d7afe3af94e1850d7fbab5939b8 \
+                    size    186931
 
 depends_lib-append  port:R-HDInterval \
                     port:R-mstate \
