@@ -4,17 +4,18 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             github terrytangyuan lfda 1.1.3 v
-revision            1
+revision            2
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Local Fisher Discriminant Analysis
 long_description    {*}${description}
-checksums           rmd160  8224e9327f1d3bf857c86725a126816574ad547a \
-                    sha256  66a37bef0930c2273e817853a695f10ef89de9f97a31b9c028ce60a34b660754 \
-                    size    18234
+checksums           rmd160  6c68a7fe9e1f4b7048110d63d2ac83070cf51203 \
+                    sha256  55d280c0e57ce6e83d0a4c885b50c124e3facf21d78dedbc8fb289468a24c042 \
+                    size    18228
+github.tarball_from archive
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-plyr \
                     port:R-rARPACK

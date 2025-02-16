@@ -4,16 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             github TomKellyGenetics leiden 0.4.3.1
-revision            1
+revision            2
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
 description         R implementation of Leiden clustering algorithm
 long_description    {*}${description}
-checksums           rmd160  be4a2d8459e7afd372dececd70a1304c63779fd4 \
-                    sha256  b6e3243ffa467c5d4456b8ae573e6f5e863ce709e18980b9d4f0bfaa5744041a \
-                    size    2516458
+checksums           rmd160  1d584fae3205b7c35a6afbaf22d07f63adcf6c1d \
+                    sha256  047ebfc09c32119cce43309a3fbb9529674c9e469e4fb7c0e5331ff25955988a \
+                    size    2515991
+github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-igraph \
