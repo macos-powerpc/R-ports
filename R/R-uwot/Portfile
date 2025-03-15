@@ -4,8 +4,8 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran jlmelville uwot 0.2.2
-revision            1
+R.setup             cran jlmelville uwot 0.2.3
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3+
@@ -13,9 +13,9 @@ description         Uniform manifold approximation and projection (umap) \
                     method for dimensionality reduction
 long_description    {*}${description}
 homepage            https://jlmelville.github.io/uwot
-checksums           rmd160  4287f9e80c83ef60bd7697225c8933a437bf9daf \
-                    sha256  d9938c43d29530d4b36d1b2649cc679b09945a740db2cd3a266242b1aa9a6cd1 \
-                    size    602996
+checksums           rmd160  9b71a0d035775a6997648ac0d0bac7cee666ecc2 \
+                    sha256  eeb9e49e1765db61d462577b0c8426de4c52761180e8104ae70d3631b3672ecc \
+                    size    614317
 
 depends_lib-append  port:R-dqrng \
                     port:R-FNN \
