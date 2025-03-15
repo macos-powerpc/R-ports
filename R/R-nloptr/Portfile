@@ -7,7 +7,7 @@ PortGroup           R 1.0
 # strnlen
 legacysupport.newest_darwin_requires_legacy 10
 
-R.setup             cran astamm nloptr 2.1.1
+R.setup             cran astamm nloptr 2.2.0
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -15,13 +15,12 @@ license             LGPL-3+
 description         R Interface to NLopt
 long_description    {*}${description}
 homepage            https://astamm.github.io/nloptr
-checksums           rmd160  49031472462e3c48a2972322676ecf302318cbbb \
-                    sha256  4cdaf55dfdeb090119f2c2ca77f617962524654da4511bacd650f62bb6dad8ea \
-                    size    2236635
+checksums           rmd160  eed19bb6aea9b5bbf5eb5414bf5ab5e8b9c39239 \
+                    sha256  257e897c87e2df6bc5e6d6b077cde06bd3c9704319f56822d170a7a33ea5b788 \
+                    size    2231644
 
 depends_build-append \
                     path:bin/cmake:cmake
-depends_lib-append  port:R-testthat
 
 if {${os.platform} eq "darwin" && ${os.major} < 11} {
     patchfiles-append \
