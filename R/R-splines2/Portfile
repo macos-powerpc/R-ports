@@ -3,8 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-# Revert to GitHub once updated there.
-R.setup             cran wenjie2wang splines2 0.5.3 v
+R.setup             github wenjie2wang splines2 0.5.4 v
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,15 +11,10 @@ license             GPL-3+
 description         Regression spline functions and classes
 long_description    {*}${description}
 homepage            https://wwenjie.org/splines2
-checksums           rmd160  cdbb3484af06968eec75e129e2d95f416a0589c1 \
-                    sha256  c27e7bd12d615095f765f4c1ed3cb9e39b922653aabbe88c4ca3ac31e6a01ddc \
-                    size    933326
-# github.tarball_from archive
-
-# Remove this with the next update. It is a one-time fix.
-if {${os.platform} eq "darwin" && ${configure.cxx_stdlib} eq "libc++"} {
-    incr revision
-}
+checksums           rmd160  646b54a1ec546eb1d0265657833b93da9965caf1 \
+                    sha256  32cc6dbedfd3ff7b6ad92d790212a1a01538005521c0b0ee88ac20086a49ca10 \
+                    size    95180
+github.tarball_from archive
 
 depends_lib-append  port:R-Rcpp \
                     port:R-RcppArmadillo
