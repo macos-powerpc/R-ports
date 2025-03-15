@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-lib cpp11 0.5.1
+R.setup             github r-lib cpp11 0.5.2 v
 revision            0
 categories-append   devel
 platforms           {darwin any}
@@ -13,9 +13,10 @@ description         ${name} helps you to interact with R objects \
                     using C++ code
 long_description    {*}${description}
 homepage            https://cpp11.r-lib.org
-checksums           rmd160  25829390c4774ea9d470977ac831ccd4f2a9d11d \
-                    sha256  3d1ea475bc2dc2e9d4ee3ce41edeb96370f5417fbd77c48a085e5ed6f379afd4 \
-                    size    291870
+checksums           rmd160  37d88613381d4dd1a127d3eaa4fd4aeae7c5e870 \
+                    sha256  e3452b0a19aa6345d4c61963a5eea72d939a2f7c4d83ca161dc4202b6534a2ff \
+                    size    205267
+github.tarball_from archive
 supported_archs     noarch
 
 depends_test-append port:R-bench \
