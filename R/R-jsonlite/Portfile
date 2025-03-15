@@ -3,17 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-# Revert to GitHub once updated there.
-R.setup             cran jeroen jsonlite 1.8.9
+R.setup             cran jeroen jsonlite 1.9.1
 revision            0
 categories-append   devel
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Robust, high-performance JSON parser and generator
 long_description    {*}${description} for R.
-checksums           rmd160  a1127b95cbc5d751dfe6413126934b5d93926ec7 \
-                    sha256  89f130e0e1163328c01decd54e7712b5ebf3d0a667da0052833722cb9a6e90b0 \
-                    size    1055633
+checksums           rmd160  b9db68f9ef1f1ff4490a073e809730e96410964e \
+                    sha256  a7c204449a1432b845628b3e408492a3345a4fdbc1a9aba962a96a22ae0ade2e \
+                    size    1055503
 
 depends_test-append port:R-httr \
                     port:R-knitr \
