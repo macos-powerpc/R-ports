@@ -4,16 +4,16 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran r-quantities units 0.8-5
-revision            1
+R.setup             cran r-quantities units 0.8-7
+revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         Measurement units for R vectors
 long_description    {*}${description}
 homepage            https://r-quantities.github.io/units
-checksums           rmd160  b4108540937afa8d041c0ae99f290e2ddef0d267 \
-                    sha256  d95e80af760b053e10a1e33ce1f0c1280a84e84bd4b1d9c34d1fe9fc153603b1 \
-                    size    247974
+checksums           rmd160  ffd9dbb33e34529921ed7a29637be870f5b9783b \
+                    sha256  38bddb6d0b593a5e1589b0260da075b3fec03f91e5ca0ce690310ce092927b64 \
+                    size    351160
 
 depends_lib-append  port:expat \
                     port:udunits2 \
