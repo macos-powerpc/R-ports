@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran shikokuchuo ichimoku 1.5.5
+R.setup             cran shikokuchuo ichimoku 1.5.6
 revision            0
 categories-append   finance
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             GPL-3+
 description         Visualization and tools for Ichimoku Kinko Hyo strategies
 long_description    {*}${description}
 homepage            https://shikokuchuo.net/ichimoku
-checksums           rmd160  436db2239cc529235bd4c8488f69ba8c42b72cba \
-                    sha256  aebfc7bfbdd75f2456b0ac7762420703fe082cd36bab312a6715df14f43d8cd2 \
-                    size    811573
+checksums           rmd160  3c275a5c17fc1aba4769c128bf7c186915cfd70e \
+                    sha256  dd40a0bfe8fc0f0ffb232b995e67ef39f7189e44449443f7bdd5ac44669ff7de \
+                    size    831848
 
 depends_lib-append  port:R-ggplot2 \
                     port:R-mirai \
