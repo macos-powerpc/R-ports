@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran stan-dev posterior 1.6.0
+R.setup             cran stan-dev posterior 1.6.1
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             BSD
 description         Tools for working with posterior distributions
 long_description    {*}${description}
 homepage            https://mc-stan.org/posterior
-checksums           rmd160  1e9c0128730cd46d278f06c5f3af7c92b209d0c6 \
-                    sha256  34612a39fb15a8e3ba6ef5c32a041a4b5f77554216dd774563f46db1150bf40c \
-                    size    452353
+checksums           rmd160  86b6644b26a01e22f1779ff747ad4d3461af7df0 \
+                    sha256  e507d7bd3f4c9f542cb2ec89bc38d01bd05f9864461533fe4ba8bb8a9e7ba799 \
+                    size    454046
 supported_archs     noarch
 
 depends_lib-append  port:R-abind \
