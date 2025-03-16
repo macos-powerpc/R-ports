@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran apolloChoiceModelling apollo 0.3.4
+R.setup             cran apolloChoiceModelling apollo 0.3.5
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             GPL-2
 description         Tools for choice model estimation and application
 long_description    {*}${description}
 homepage-append     http://www.apolloChoiceModelling.com
-checksums           rmd160  6c5e145a297f003adcf820837cf297170554143e \
-                    sha256  fb3f9c55c41b346ed00c1cf0039906feddab55b8e35ebb9def1b7310815b2db5 \
-                    size    535562
+checksums           rmd160  423350a558130115862125fd7af4144148732d59 \
+                    sha256  b66ffb70a4aa562c5e4e349f677f243620fcb7730f3413c4006f1e8839cfd656 \
+                    size    543886
 
 depends_lib-append  port:R-bgw \
                     port:R-cli \
@@ -30,6 +30,7 @@ depends_lib-append  port:R-bgw \
                     port:R-RcppEigen \
                     port:R-RSGHB \
                     port:R-Rsolnp \
+                    port:R-rstudioapi \
                     port:R-stringr \
                     port:R-tibble
 
