@@ -3,22 +3,24 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran tomoakin RPostgreSQL 0.7-6
-revision            1
+R.setup             cran tomoakin RPostgreSQL 0.7-7
+revision            0
 categories-append   databases
 maintainers         nomaintainer
 license             GPL-3
 description         R interface to the PostgreSQL database system
 long_description    {*}${description}
-checksums           rmd160  52feb056225ee009d595ae3de733f4f8f033342f \
-                    sha256  385939708b6a3657663409f91e165ded0ff5268d1dc6225e0f9b34764baf2d2c \
-                    size    576636
+checksums           rmd160  6be69b7258ec5fb3520f060ee23f0d6296ab2a83 \
+                    sha256  f0593aa325cbabe7d7f984869e87cd86d350aeb9b9bf589191c9ebbb986c7d1c \
+                    size    565639
 
-set pgsql           postgresql15
+# Keep in sync with R-RPostgres, so that we do not need multiple postgresql ports.
+# Make sure a chosen version is supported for all archs, including powerpc.
+set pgsql_v         16
 
-depends_lib-append  port:${pgsql} \
+depends_lib-append  port:postgresql${pgsql_v} \
                     port:R-DBI
 
-build.env-append    PG_CONFIG=${prefix}/lib/${pgsql}/bin/pg_config
+build.env-append    PG_CONFIG=${prefix}/lib/postgresql${pgsql_v}/bin/pg_config
 
 test.run            no
