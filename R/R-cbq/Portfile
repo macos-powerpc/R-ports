@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran cbq 0.2.0.3
-revision            2
+R.setup             cran xiao.lu.research cbq 0.2.0.4
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Conditional Binary Quantile models
 long_description    {*}${description}
-checksums           rmd160  733966184d14aa29c9f945aa525455caed71ed2a \
-                    sha256  677b1a79e9b2b9d6fc2a5f6758440acf52fd0b66d85473c6803413bd2b303d8a \
-                    size    60197
+checksums           rmd160  209884d4152c0ebdd3dbdce273a8d81e3482c81c \
+                    sha256  9246a98d26c28bec1021636c30d42fa296dae4def757414abacaec262e167104 \
+                    size    62772
 
 depends_lib-append  port:R-BH \
                     port:R-Formula \
