@@ -4,14 +4,15 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             github ironholds humaniformat 0.6.0
-revision            1
+revision            2
 maintainers         nomaintainer
 license             MIT
 description         Parser for human names
 long_description    {*}${description}
-checksums           rmd160  aaee1786d99fe6aca4932e659f048d656518cbd2 \
-                    sha256  a48695d810ac09133b6fa04cbcbd33b99734a3bf7e872cc6c72372d5d9b65ca8 \
-                    size    16599
+checksums           rmd160  497c84b728f5169fa63de3082594d8bb8ef3ec47 \
+                    sha256  894047e3bc305b92cbdd69b388524ef36cf9ceb165b2191ba5002880b943d1bb \
+                    size    16596
+github.tarball_from archive
 
 depends_lib-append  port:R-Rcpp
 
