@@ -3,7 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github yihui knitr 1.49 v
+# Revert to GitHub once updated there.
+R.setup             cran yihui knitr 1.50 v
 revision            0
 categories-append   devel
 platforms           {darwin any}
@@ -12,10 +13,10 @@ license             GPL
 description         General-purpose literate programming engine
 long_description    {*}${description}
 homepage            https://yihui.org/knitr
-checksums           rmd160  c33d2b6de4aba6d082dd6b1bd39afdb2e4eca1dd \
-                    sha256  bd9afc84dbadd164daa045edd6d0d36fd8f385496420cb66a3be095fd7f9763b \
-                    size    341765
-github.tarball_from archive
+checksums           rmd160  08727f7b36e1ed1d71deb9788f878f7db031881c \
+                    sha256  105f5e8420ad766c94b96a787cb3ce368d12ef8702f867d0515c4fce728e2f41 \
+                    size    534264
+# github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-evaluate \
