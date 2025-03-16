@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran stan-dev rstan 2.32.6
-revision            2
+R.setup             cran stan-dev rstan 2.32.7
+revision            0
 categories-append   lang math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         R interface to Stan
 long_description    {*}${description}
 homepage            https://mc-stan.org/rstan
-checksums           rmd160  db7d066d44869c7ac9b62e24b770ae687d01c3d7 \
-                    sha256  3390d00191bbd3b0739dd19fe437b99a041a6b04be208877b48419d1348a1a70 \
-                    size    1555968
+checksums           rmd160  468275eba992850321572fd9a998da84831742a8 \
+                    sha256  5931cf77fb01672f962c203c49bb4508f86f55553cac97f58ff0c7a55b72174a \
+                    size    1557831
 
 depends_lib-append  port:R-BH \
                     port:R-ggplot2 \
