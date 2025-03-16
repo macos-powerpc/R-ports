@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-dbi RPostgres 1.4.7
+R.setup             cran r-dbi RPostgres 1.4.8
 revision            0
 categories-append   databases
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,18 +11,18 @@ license             GPL-3
 description         Rcpp Interface to PostgreSQL
 long_description    {*}${description}
 homepage            https://rpostgres.r-dbi.org
-checksums           rmd160  d51a723837e8079ebcb7a4e62b601d6eb4b94b95 \
-                    sha256  3dd1f1d83bd8a25a0a86532c6971072fccea7b1769f601ad9daa8c9aa8f66924 \
-                    size    1476313
+checksums           rmd160  8e7f061e69fcdbca90ce3b2bea95978face7502c \
+                    sha256  0c6c829aee387593dcf4ec0a66f2edd3b96c67d4acea19079f1dd7e4dd1768a4 \
+                    size    1473330
 
 # Keep in sync with R-RPostgreSQL, so that we do not need multiple postgresql ports.
 # Make sure a chosen version is supported for all archs, including powerpc.
-set pgsql           postgresql15
+set pgsql_v         16
 
 # configure script is fancy but totally defunct; fix it:
 patchfiles          patch-unbreak-configure.diff
 
-depends_lib-append  port:${pgsql} \
+depends_lib-append  port:postgresql${pgsql_v} \
                     port:R-bit64 \
                     port:R-blob \
                     port:R-cpp11 \
@@ -33,8 +33,8 @@ depends_lib-append  port:${pgsql} \
                     port:R-withr
 
 build.args-append   --configure-vars=' \
-                        INCLUDE_DIR=${prefix}/include/${pgsql} \
-                        LIB_DIR=${prefix}/lib/${pgsql} '
+                        INCLUDE_DIR=${prefix}/include/postgresql${pgsql_v} \
+                        LIB_DIR=${prefix}/lib/postgresql${pgsql_v} '
 
 depends_test-append port:R-callr \
                     port:R-covr \
