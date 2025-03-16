@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran myles-lewis nestedcv 0.7.12
+R.setup             cran myles-lewis nestedcv 0.8.0
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -13,15 +13,16 @@ license             MIT
 description         Nested cross-validation with R-glmnet and R-caret
 long_description    {*}${description}
 homepage            https://github.com/myles-lewis/nestedcv
-checksums           rmd160  4b3e19521c765a16381b8efc751a2fda302d826c \
-                    sha256  375c7f69320071875384b940ba381fe6a97f7621c216706f0ff8078c9aadbc38 \
-                    size    2603565
+checksums           rmd160  b2a2dce9d6620b2e4e1434e6627b5b66786f3cfa \
+                    sha256  9874d6aa077cdcbc001544f0ee4a522dfd1851c4d689d9847a89b1154cfad5b3 \
+                    size    2604954
 supported_archs     noarch
 
 depends_lib-append  port:R-caret \
                     port:R-data.table \
                     port:R-doParallel \
                     port:R-foreach \
+                    port:R-future.apply \
                     port:R-ggplot2 \
                     port:R-glmnet \
                     port:R-matrixStats \
