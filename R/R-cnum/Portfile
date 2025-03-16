@@ -3,16 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github elgarteo cnum 0.1.3 v
-revision            1
+R.setup             github elgarteo cnum 0.1.5 v
+revision            0
 categories-append   textproc
 maintainers         nomaintainer
 license             MIT
 description         Chinese numerals processing
 long_description    {*}${description}
-checksums           rmd160  dba358a9e8a1ad32da7a22f4cb4fe1325410fd7c \
-                    sha256  959ea3caca5cbb1a8c140392942ef5ac7562f2946a4f6f30248a758102f9a37d \
-                    size    16792
+checksums           rmd160  3cde00e0e268f41b273402693eada4869a2be590 \
+                    sha256  b0af90baa2f9317843b6439cc39d6bd5ae103d563cf6d83bec9c40b4d7441972 \
+                    size    16983
+github.tarball_from archive
 
 depends_lib-append  port:R-BH \
                     port:R-Rcpp \
