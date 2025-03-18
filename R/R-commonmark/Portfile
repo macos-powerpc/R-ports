@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran r-lib commonmark 1.9.2
+R.setup             cran r-lib commonmark 1.9.4
 revision            0
 categories-append   devel
 maintainers         nomaintainer
@@ -13,9 +13,9 @@ description         High-performance CommonMark and GitHub markdown \
                     rendering in R
 long_description    {*}${description}
 homepage            https://docs.ropensci.org/commonmark
-checksums           rmd160  454c01af3f5b5042fd9f85a6ac982fab6cdb3ad6 \
-                    sha256  1d6adcfbe8e2b8f7302bef80e2364ba4f186238e4e5593511908ade57eb486eb \
-                    size    144970
+checksums           rmd160  a1aaa2e26e47a0663d9d0fe58e67ccdd665c44c8 \
+                    sha256  d6c7e27df8b30b32444549bc2367427d1b20a6d8621592a3846d9e187cdd3091 \
+                    size    145849
 
 depends_test-append port:R-curl \
                     port:R-testthat \
