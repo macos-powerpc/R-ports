@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-project crch 1.2-1
+R.setup             cran r-project crch 1.2-2
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             {GPL-2 GPL-3}
 description         Censored Regression with Conditional Heteroscedasticity
 long_description    {*}${description}
 homepage            https://topmodels.R-Forge.R-project.org/crch
-checksums           rmd160  42167073e57437625aa7ee8f343d2cec10a651bf \
-                    sha256  f6e32625c42e9ef1ee98a045102d1d820449853145e77b433bdc2623e6673ea0 \
-                    size    1599735
+checksums           rmd160  a8b32b29f815dd3192da1e82f89e4f812860ee65 \
+                    sha256  3d661ef57970bebf2fd88a9fa86903d7b1073cc8031d9cd1129151e71f72a884 \
+                    size    1599780
 
 depends_lib-append  port:R-Formula \
                     port:R-ordinal \
