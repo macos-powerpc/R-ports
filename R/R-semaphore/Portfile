@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cmmr semaphore 1.0.2
+R.setup             cran cmmr semaphore 1.1.0
 revision            0
 categories-append   devel
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             MIT
 description         Shared memory atomic operations
 long_description    {*}${description}
 homepage            https://cmmr.github.io/semaphore
-checksums           rmd160  4b4a7f7879e3adef004e12571c63351d53202151 \
-                    sha256  017443979225724eeb7060bf8c6effa0b89abef2040acfdff83bf1fd0f0675e6 \
-                    size    5573
+checksums           rmd160  3665a562a9d8ee6ac1260914eb1959deba940597 \
+                    sha256  f9e1b83d72725757244e2d46081439a3a028113ed6594e1b94804965182d2b76 \
+                    size    6245
 
 depends_lib-append  port:R-BH \
                     port:R-Rcpp
