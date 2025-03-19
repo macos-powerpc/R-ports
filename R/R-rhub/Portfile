@@ -4,19 +4,19 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran r-hub rhub 2.0.0 v
-revision            1
+R.setup             cran r-hub rhub 2.0.1 v
+revision            0
 categories-append   devel
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+platforms           {darwin any}
+maintainers         nomaintainer
 license             MIT
 description         R-hub API client
 long_description    {*}${description}
 homepage            https://r-hub.github.io/rhub
-checksums           rmd160  1d0ab5a49f373adb9b97bdc87377395878e095a2 \
-                    sha256  87683c0bdb90226e6460d286361aabf86f1d198427347196d60950c1ce960117 \
-                    size    149216
+checksums           rmd160  f38af2191eb42c11566db4a789089d2a48b8e197 \
+                    sha256  3854b130b1d6a45f39afc158033fecf478d2ab94ba70775935fdfee35f488239 \
+                    size    160432
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-callr \
                     port:R-cli \
