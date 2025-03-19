@@ -3,20 +3,20 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran jhlee1408 assessor 1.1.0
-revision            1
+R.setup             cran jhlee1408 assessor 1.1.1
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Assessment tools for regression models \
                     with discrete and semicontinuous outcomes
 long_description    {*}${description}
 homepage            https://jhlee1408.github.io/assessor
-checksums           rmd160  4c636da200695186bd46b93a028ac2904ca97d82 \
-                    sha256  a98f871c528ad97454f03894549c92a482428dccaa42467a49634a159a13eae2 \
-                    size    255107
+checksums           rmd160  035216a4d1479c45eb072941ddb4c2edb1b2bdc7 \
+                    sha256  7472cf1da44ab6fdde732c175808bcb8f633b6598f5572d0884bf9526a64e81f \
+                    size    278916
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-np \
                     port:R-tweedie \
