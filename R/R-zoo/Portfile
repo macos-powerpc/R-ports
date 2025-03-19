@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran zoo 1.8-12
-revision            2
+R.setup             cran r-project zoo 1.8-13
+revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             {GPL-2 GPL-3}
-description         S3 infrastructure for regular and irregular time series.
-long_description    {*}${description}
+description         S3 infrastructure for regular and irregular time series
+long_description    {*}${description}.
 homepage            https://zoo.R-Forge.R-project.org
-checksums           rmd160  02d87024ff3647da13608c86f8ec637f117617d0 \
-                    sha256  e6c3862668f9e3422bced3b6fba485c76a1e91b48f5d6153822d6a61863b2fb8 \
-                    size    782344
+checksums           rmd160  2bf83e2d67cc65fbf405a675dfba9ad8bc4d8291 \
+                    sha256  5315d26ba98da05d134aded588f6aeeb6cb17f3798ea3652a6b16f958ac4f697 \
+                    size    773356
 
 depends_test-append port:R-AER \
                     port:R-coda \
