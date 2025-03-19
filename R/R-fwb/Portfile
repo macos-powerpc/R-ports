@@ -3,25 +3,28 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran ngreifer fwb 0.2.0
-revision            1
+R.setup             cran ngreifer fwb 0.3.0
+revision            0
 categories-append   math
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+platforms           {darwin any}
+maintainers         nomaintainer
 license             GPL-2+
 description         Fractional Weighted Bootstrap
 long_description    {*}${description}
 homepage            https://ngreifer.github.io/fwb
-checksums           rmd160  453ce79dc62fcf9fd589d0a4d4f93cef5a62688c \
-                    sha256  535d2ce1d6ffb817055dc71c7cad779116804b059715106e1c959a3299b8260b \
-                    size    391288
+checksums           rmd160  a0c02f35a3438c9d28a6e536a56e7eb98841880d \
+                    sha256  2ff1baa7b6d87f2a65c49eb831faadcd4fde095b18702fff9b3b2f65f1b02b4c \
+                    size    343518
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-chk \
                     port:R-pbapply \
                     port:R-rlang
 
-depends_test-append port:R-lmtest \
-                    port:R-sandwich
+depends_test-append port:R-knitr \
+                    port:R-lmtest \
+                    port:R-rmarkdown \
+                    port:R-sandwich \
+                    port:R-testthat
 
 test.run            yes
