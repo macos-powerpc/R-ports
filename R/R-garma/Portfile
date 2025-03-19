@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran rlph50 garma 0.9.23
+R.setup             cran rlph50 garma 0.9.24
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -12,9 +12,10 @@ license             GPL-3
 description         Fitting and forecasting Gegenbauer ARMA \
                     time series models
 long_description    {*}${description}
-checksums           rmd160  eb99c9299c74837b0515a364e3779478933d93bf \
-                    sha256  6df98915a758126dc874678276c361158d51062cc3fc124ecbd7ab8b5e3ca766 \
-                    size    1087362
+homepage            https://github.com/rlph50/garma
+checksums           rmd160  86320e8d5e11469f2da6bcc49ebcf0b657398fb6 \
+                    sha256  624cf84931700d486c9908a3e5a15c6d0c9c8d8ad7c2b4a548ca26e57dff484d \
+                    size    1087710
 supported_archs     noarch
 
 depends_lib-append  port:R-crayon \
