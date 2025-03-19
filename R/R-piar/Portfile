@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran marberts piar 0.8.1
+R.setup             cran marberts piar 0.8.2
 revision            0
 categories-append   economics finance
 platforms           {darwin any}
@@ -13,16 +13,18 @@ license             MIT
 description         Price Index Aggregation
 long_description    {*}${description}
 homepage            https://marberts.github.io/piar
-checksums           rmd160  32283cf0c8b23707f092508b07228b12a9861262 \
-                    sha256  66162a47fd57224d0f68dd74daf8825968a8a35460ce27eace971d6e9d67a304 \
-                    size    125211
+checksums           rmd160  13776573e9faa497caaec6478ecc313a56dc2ffd \
+                    sha256  5d544040125b8ed081ee8849d8da76b23ca13ba5bef0e19a5e1eb985cf5538c1 \
+                    size    163876
 supported_archs     noarch
 
 depends_lib-append  port:R-gpindex
 
-depends_test-append port:R-knitr \
+depends_test-append port:R-data.tree \
+                    port:R-knitr \
                     port:R-rmarkdown \
                     port:R-sps \
-                    port:R-testthat
+                    port:R-testthat \
+                    port:R-treemap
 
 test.run            yes
