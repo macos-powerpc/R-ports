@@ -3,19 +3,20 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github jeksterslab betaNB 1.0.4 v
-revision            1
+R.setup             github jeksterslab betaNB 1.0.5 v
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Bootstrap for regression effect sizes
 long_description    {*}${description}
 homepage            https://jeksterslab.github.io/betaNB
-checksums           rmd160  627dbcf5ced7d55545369f5c32ff6b84f53d575d \
-                    sha256  17ef4aa9a3fb73a80f40a4a81d896f26ec33c432eff4717ea5cb10980993872e \
-                    size    489762
+checksums           rmd160  0a9a16afae84060e0b4199cbfa94951e0531f85b \
+                    sha256  7244a2683750756f856c8fb0d26ecc37765b690815a26327d2a22a4d61a92071 \
+                    size    627751
+github.tarball_from archive
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_test-append port:R-knitr \
                     port:R-rmarkdown \
