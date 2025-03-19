@@ -3,20 +3,20 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran pmszulc bigstep 1.1.1
-revision            1
+R.setup             cran pmszulc bigstep 1.1.2
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Stepwise selection for large data sets
 long_description    Selecting linear and generalized linear models for large data sets \
                     using modified stepwise procedure and modern selection criteria \
                     (like modifications of Bayesian Information Criterion).
-checksums           rmd160  b5d493340a2133be3542b3b07927826b02c3ca8e \
-                    sha256  5741872af1bce9c7b75c730a3e66454f8e19d6a389a72d5848d5dc5356dcf7ae \
-                    size    35549
+checksums           rmd160  dcb5ffd463b8c549709edfeef04e60d3b5444962 \
+                    sha256  b0f61ca86b49399a87db363ead448d34bbcf34356500bf0cbf3874ba25e214d8 \
+                    size    55612
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-bigmemory \
                     port:R-magrittr \
