@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran traversc qs2 0.1.4
+R.setup             cran traversc qs2 0.1.5
 revision            0
 categories-append   devel
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             GPL-3
 description         Quick Serialization of R objects
 long_description    {*}${description}
 homepage            https://github.com/traversc/qs2
-checksums           rmd160  4419b2f26ce3bdb2173d49f9fa430a8293068c80 \
-                    sha256  c2dec8a8643db08ae6e496fd775fe723aba86742d9fb3fc93b65aa640e162f04 \
-                    size    955282
+checksums           rmd160  52112246a42eb43ac621121edbc968ff80139dd6 \
+                    sha256  ad0c1d27e6a021fe8c8f410169b140f953eb012b25e5b8cd11efe409536d031a \
+                    size    958702
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
