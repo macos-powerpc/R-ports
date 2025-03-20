@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran rexyai RestRserve 1.2.3
+R.setup             cran rexyai RestRserve 1.2.4
 revision            0
 categories-append   net devel
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             GPL-2+
 description         Framework for building HTTP API
 long_description    {*}${description}
 homepage            https://github.com/rexyai/RestRserve
-checksums           rmd160  a4f496acd5bf026052b8d6cb0d5bd88027e735be \
-                    sha256  4cd0179337b5e5feb6630e4f48e15d4e5deec985b45f1d62dbef62a5d5bbb734 \
-                    size    800634
+checksums           rmd160  97b811674566701e7a5efa7c05eaee939829ee3f \
+                    sha256  3d6ae6135c958bd42adf3ad9b14a9880245e4b53bb604922bef4e58b8639d48f \
+                    size    800626
 
 depends_lib-append  port:R-checkmate \
                     port:R-digest \
