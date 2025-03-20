@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-project relations 0.6-14
+R.setup             cran r-project relations 0.6-15
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -11,9 +11,9 @@ maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         Data structures and algorithms for relations
 long_description    {*}${description}
-checksums           rmd160  1f598b1287b3beb5e239ac6331edd4d78ed47bcd \
-                    sha256  024fb2b5f572018777119eca9b9b6eb258053befc66f8f57de54d06bd8f2d89c \
-                    size    304689
+checksums           rmd160  eea5d1f892f8528255c9725bf925dd61488b870f \
+                    sha256  178fe3ea99b85c8eebba5fad084a09591a012c5abe6d1609def0d4b019f9a1e2 \
+                    size    304790
 supported_archs     noarch
 
 depends_lib-append  port:R-sets \
