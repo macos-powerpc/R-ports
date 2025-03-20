@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran traversc qs 0.27.2
+R.setup             cran traversc qs 0.27.3
 revision            0
 categories-append   devel
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             GPL-3
 description         Quick Serialization of R objects
 long_description    {*}${description}
 homepage            https://github.com/traversc/qs
-checksums           rmd160  ad1341277be7bc682b652292e4ad2309bfa40485 \
-                    sha256  ed27ebee27f37289ec1cc141134e785aeba61a2c8b9c83b463597bc17e9fab01 \
-                    size    2155029
+checksums           rmd160  45e0f36ed5cbf9ae747ff9a1d607e9ed33082763 \
+                    sha256  6e0b375d0a24828c542a9be8b2b3eacc5626fe3acdeaa09c6ebd5ba1dfd34468 \
+                    size    2154523
 
 # This is again broken in upstream: https://github.com/traversc/qs/issues/98
 if {[string match macports-gcc* ${configure.compiler}]} {
