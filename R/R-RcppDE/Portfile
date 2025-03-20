@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran eddelbuettel RcppDE 0.1.7
-revision            2
+R.setup             cran eddelbuettel RcppDE 0.1.8
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
-license             {GPL-2 GPL-3}
+license             GPL-2+
 description         Global optimization by differential evolution in C++
 long_description    {*}${description}
 homepage            https://dirk.eddelbuettel.com/code/rcpp.de.html
-checksums           rmd160  a6ef3d4066c1ec360395dda4ef9dde29f77badd2 \
-                    sha256  4a238ee97e574cb44b12e4962b9927dd811f087fc13fc777637ec6fe12bd86a0 \
-                    size    284329
+checksums           rmd160  f21e6e509eb6f1c1e8697047afc2b616f5ee12ee \
+                    sha256  8e4a7916a387f06a96efeec77741113efbea5bdda2e065f4f782b536ef76191e \
+                    size    280822
 
 depends_lib-append  port:R-Rcpp \
                     port:R-RcppArmadillo
