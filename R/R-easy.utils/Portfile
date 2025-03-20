@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran ycli1995 easy.utils 0.0.5
+R.setup             cran ycli1995 easy.utils 0.1.0
 revision            0
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,18 +11,14 @@ license             MIT
 description         Frequently used functions for easy R programming
 long_description    {*}${description}
 homepage            https://github.com/ycli1995/easy.utils
-checksums           rmd160  c3f88b9671be19df7a2b02577edbaa11011cb399 \
-                    sha256  b5083c32d792c46f3e303edb187a26bfeb3d97b31585ab118d8a2cad25f931b9 \
-                    size    17010
+checksums           rmd160  941c2e08ac8afe872397e64f850cfe85fb9ca380 \
+                    sha256  86e3ece6f692868113ca444c3261c73c6d1be5db7dfea6634bf32ca9ce85e606 \
+                    size    9901
 supported_archs     noarch
 
 depends_lib-append  port:R-dplyr \
                     port:R-fastmatch \
-                    port:R-Polychrome \
                     port:R-rlang \
                     port:R-scales
-
-# https://github.com/ycli1995/easy.utils/issues/1
-patchfiles          patch-no-randomcoloR.diff
 
 test.run            yes
