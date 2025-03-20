@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran flexmix 2.3-19
-revision            2
+R.setup             cran r-project flexmix 2.3-20
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
-license             {GPL-2 GPL-3}
+license             GPL-2+
 description         Flexible mixture modeling
 long_description    {*}${description}
-checksums           rmd160  4f0440d65dbc4c6257c961bdbe91786bcd7f91eb \
-                    sha256  adf5a40cbb6d45e3652c1666cb3ccdb9654e501fd685c091cad0686e62bc12e9 \
-                    size    1144153
+checksums           rmd160  727d44026a4e162d7a2e5a186b01bd4a747314c1 \
+                    sha256  4198437d875fbabbfa52e23612e617448638171b0a3880b798bce985e20726e8 \
+                    size    1160772
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-modeltools
