@@ -3,17 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github r-lib clock 0.7.1 v
+# Revert to GitHub once updated there.
+R.setup             cran r-lib clock 0.7.3 v
 revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Date–Time types and tools
 long_description    {*}${description}
 homepage            https://clock.r-lib.org
-checksums           rmd160  18b1df25f5f48d86cadb839dce833dddbfb27335 \
-                    sha256  b7a1246bdfdaf569d66d1a37fa4284298bade1df242a4c9252d0a7cc6b3096ab \
-                    size    535685
-github.tarball_from archive
+checksums           rmd160  e5b941e08a16d449aa2c50af1d6477294d1b5551 \
+                    sha256  5aa09e27b8786c6647ae50e1ccfbb5bae98c5b516c6502028caa7814198a566e \
+                    size    559846
+# github.tarball_from archive
 
 depends_lib-append  port:R-cli \
                     port:R-cpp11 \
