@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-project tm 0.7-15
+R.setup             cran r-project tm 0.7-16
 revision            0
 categories-append   textproc
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             GPL-3
 description         Text Mining
 long_description    A framework for text mining applications within R.
 homepage            https://tm.r-forge.r-project.org
-checksums           rmd160  5b0b770f1f8d3861cdc3429dc454e72e4f90dba9 \
-                    sha256  7ca52b47f6d8958dfe40499a87add5f20063b08c686685f4ff773ad5076a5be5 \
-                    size    320466
+checksums           rmd160  1fa35ef96f24161a3e59fa2c0f6cf36aa1348a34 \
+                    sha256  08860c858a447a36f39fb67fb74f1bc601d167c5346d3bfcd17cd9a8ee839688 \
+                    size    320814
 
 depends_lib-append  port:R-BH \
                     port:R-NLP \
