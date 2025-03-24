@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is old.
-R.setup             cran ropensci cld2 1.2.5
+R.setup             cran ropensci cld2 1.2.6
 revision            0
 categories-append   devel
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             Apache-2
 description         Google Compact Language Detector 2
 long_description    {*}${description}
 homepage            https://docs.ropensci.org/cld2
-checksums           rmd160  857a952c5ea07cbaffe61a2c25ab04fb1905f192 \
-                    sha256  dbb3d4ddb1faa246e07ec22b60deeb2afa0a4be37378346e997b435cb3c9fad7 \
-                    size    3674598
+checksums           rmd160  b04b6854c3fc6687635603a114b8cfed7a65e397 \
+                    sha256  cff551bce849e44a83c2013bcdbfb2e53c6b46dd32f7eb9764fd86b3af06e4fd \
+                    size    3674600
 
 depends_lib-append  port:R-Rcpp
 
