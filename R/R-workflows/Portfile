@@ -3,18 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github tidymodels workflows 1.1.4 v
-revision            1
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+R.setup             github tidymodels workflows 1.2.0 v
+revision            0
+platforms           {darwin any}
+maintainers         nomaintainer
 license             MIT
 description         Modelling workflows
 long_description    {*}${description}
 homepage            https://workflows.tidymodels.org
-checksums           rmd160  9ce2474ef5364a31e4e8e3768af077b18d667079 \
-                    sha256  f03d0ed0b468316a9e6e57876a5a64067e9086c4b5ae962feeecc620a6b7efca \
-                    size    158048
+checksums           rmd160  c887039f14095596629dfd8d93b2b59c025a3a28 \
+                    sha256  1b5f2b43a041b9fdef25c412144bdc5ffd97b521823b02aa6e72a0e1178f7ea7 \
+                    size    169775
+github.tarball_from archive
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-cli \
                     port:R-generics \
@@ -23,17 +24,22 @@ depends_lib-append  port:R-cli \
                     port:R-lifecycle \
                     port:R-modelenv \
                     port:R-parsnip \
+                    port:R-recipes \
                     port:R-rlang \
+                    port:R-sparsevctrs \
                     port:R-tidyselect \
-                    port:R-vctrs
+                    port:R-vctrs \
+                    port:R-withr
 
 depends_test-append port:R-butcher \
                     port:R-covr \
                     port:R-dials \
+                    port:R-glmnet \
                     port:R-knitr \
                     port:R-magrittr \
                     port:R-modeldata \
-                    port:R-recipes \
+                    port:R-probably \
+                    port:R-rsample \
                     port:R-rmarkdown \
                     port:R-testthat
 
