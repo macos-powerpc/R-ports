@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran ropensci magick 2.8.5
+R.setup             cran ropensci magick 2.8.6
 revision            0
 categories-append   graphics
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             MIT
 description         Advanced graphics and image-processing in R
 long_description    {*}${description}
 homepage            https://docs.ropensci.org/magick
-checksums           rmd160  38105e157cdb2fd987f809c4ad78aeb2a1539989 \
-                    sha256  eaed903c16515794f18208f1e646322fa89b4bd7e16066b885fde94d0da11c5a \
-                    size    4596590
+checksums           rmd160  56234a22383a16970a280fafc84f12bf675071d9 \
+                    sha256  3039beaa5b028d032c1c7206b1d7eac979e7ededf7a63d74b2159649578ad4a5 \
+                    size    4602769
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
@@ -35,6 +35,7 @@ if {${os.platform} eq "darwin" && ${configure.cxx_stdlib} ne "libc++"} {
                     patch-cxx11.diff
 }
 
+# Dependency on R-gifski is dropped.
 depends_test-append port:R-av \
                     port:R-gapminder \
                     port:R-ggplot2 \
