@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran ropensci hunspell 3.0.5
+R.setup             cran ropensci hunspell 3.0.6
 revision            0
 categories-append   sysutils textproc
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             {GPL-2 LGPL-2.1 MPL-1.1}
 description         High-performance stemmer, tokenizer and spell-checker
 long_description    {*}${description}
 homepage            https://docs.ropensci.org/hunspell
-checksums           rmd160  d88fcfa450b972561862b55d6b54520b7ba30c0d \
-                    sha256  bcceadda94f5c87ffe1c8695f9d4cc561c2618b4ac7432aa56b833567d90fc3a \
-                    size    3214026
+checksums           rmd160  d796f2e5df3a131a55a1f9a7de26f860183876df \
+                    sha256  4023df2eef4e081eac52efa1ecccc4b31f7941439ce276f4094b9d5a02787535 \
+                    size    3214078
 
 depends_lib-append  port:R-digest \
                     port:R-Rcpp
