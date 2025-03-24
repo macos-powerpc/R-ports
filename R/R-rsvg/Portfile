@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran ropensci rsvg 2.6.1
+R.setup             cran ropensci rsvg 2.6.2
 revision            0
 categories-append   graphics
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             MIT
 description         Render SVG images into PDF, PNG, EPS or Bitmap
 long_description    {*}${description}
 homepage            https://docs.ropensci.org/rsvg
-checksums           rmd160  e440fbf7f5b769388d5ca7f40733895e37eff4c8 \
-                    sha256  7e6ab0685c37fa2074f44fddcca407989c8bc15fdee2f319c317662b4d48c955 \
-                    size    259999
+checksums           rmd160  4ca8ba1eeef390bc833fd971586998facbf3c72e \
+                    sha256  2b0a261c751025948d46c56b234b6d257a4936b75233131a281ddd84b932d76b \
+                    size    259950
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
