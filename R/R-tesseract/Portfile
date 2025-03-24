@@ -4,16 +4,16 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran ropensci tesseract 5.2.2
+R.setup             cran ropensci tesseract 5.2.3
 revision            0
 categories-append   textproc
 maintainers         nomaintainer
 license             Apache-2
 description         Open Source OCR Engine
 long_description    {*}${description}
-checksums           rmd160  7d21eebda7bf3fda45286f555a3060f58c2a1dc8 \
-                    sha256  3ac22cfd9376832664d4df8f4c9b290c4fb07fe324e89ea161a157275b507a55 \
-                    size    461663
+checksums           rmd160  3ca27d948754260308b7e9fb6adc13c8fa2be3cf \
+                    sha256  68dbe5d67f68c4cd01fe60e0ffc6515d3fb7a0ea79c27b4c96b46388c35e2ea0 \
+                    size    461559
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
