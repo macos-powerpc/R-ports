@@ -3,19 +3,20 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran rstudio markdown 1.13
+R.setup             cran rstudio markdown 2.0
 revision            0
 platforms           {darwin any}
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+maintainers         nomaintainer
 license             GPL-2
 description         Render markdown with commonmark
 long_description    {*}${description}
-checksums           rmd160  f29dc8286bbfd49a0a3821d8b01afb4278413ca1 \
-                    sha256  385421c674cf5bf2ba04d1df7c16bb5d857bec03755a36321999ac37f5b3cfd9 \
-                    size    39609
+homepage            https://github.com/rstudio/markdown
+checksums           rmd160  e09468abe8de76bb8a2644773c4dc28ad6a33c7c \
+                    sha256  a560de75fb6878901e38febfef3ea8d21cb63af63de0e583019867d189bf9541 \
+                    size    23664
 supported_archs     noarch
 
-depends_lib-append  port:R-commonmark \
+depends_lib-append  port:R-litedown \
                     port:R-xfun
 
 depends_test-append port:R-knitr \
