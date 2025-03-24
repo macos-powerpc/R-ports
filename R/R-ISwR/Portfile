@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran ISwR 2.0-8
-revision            1
+R.setup             cran pd.mes ISwR 2.0-10
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Introductory Statistics with R (2nd ed.)
 long_description    {*}${description}
-checksums           rmd160  cb386f829808cfa3406e4165484f015181516af3 \
-                    sha256  eabbe6346930bf0a30d5718cd7446ca389db1d83bc09c41732982b64943d5ead \
-                    size    164076
+checksums           rmd160  c2c69c79f0b973a5d145751fa80685398159544b \
+                    sha256  6a08a53da2411650b2c1a9efa701eca90c22d53d729800d0cebe995e8f8feddc \
+                    size    214178
 supported_archs     noarch
-platforms           {darwin any}
 
 test.run            yes
