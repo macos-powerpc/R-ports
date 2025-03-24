@@ -4,15 +4,16 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             github tmsalab simcdm 0.1.2
-revision            1
+revision            2
 maintainers         nomaintainer
 license             GPL-2+
 description         Simulate cognitive diagnostic model (CDM) data
 long_description    {*}${description}
 homepage            https://tmsalab.github.io/simcdm
-checksums           rmd160  30d87dce7e4068df8d40f71364c8abcc5a0caac2 \
-                    sha256  ca14432ae4dfa5456145a84b26c71740598b18acb7b180b892ba945c4d36499f \
-                    size    25502
+checksums           rmd160  671b2228e41bfd50c811e02f1cd45f3c82b59b6c \
+                    sha256  c605ddbdca5972eda314de4d9742a7e7d6aa97791fe1e0df6dc98e99115f4f5b \
+                    size    25487
+github.tarball_from archive
 
 depends_lib-append  port:R-Rcpp \
                     port:R-RcppArmadillo
