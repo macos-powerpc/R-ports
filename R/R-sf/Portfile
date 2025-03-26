@@ -5,17 +5,17 @@ PortGroup           openssl 1.0
 PortGroup           R 1.0
 
 # GitHub version is old.
-R.setup             cran r-spatial sf 1.0-19
-revision            1
+R.setup             cran r-spatial sf 1.0-20
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             {GPL-2 MIT}
 description         Simple features for R
 long_description    {*}${description}
 homepage            https://r-spatial.github.io/sf
-checksums           rmd160  fd96d0eb4e7016c604070e0a058a738920e41f20 \
-                    sha256  c8848521a13f833fbb3444776b9af8146af976527c1ed74551b9af567b3d2767 \
-                    size    3808024
+checksums           rmd160  94cbda73a303e5cff6caef16919653585f600a06 \
+                    sha256  b335a924a600b0e24a61a38550c5587a0ee54bfa2669cfb7adc6111b4551f7ee \
+                    size    4492197
 
 set proj_v          proj9
 
@@ -69,7 +69,6 @@ depends_test-append port:R-blob \
                     port:R-tidyr \
                     port:R-tidyselect \
                     port:R-vctrs \
-                    port:R-widgetframe \
                     port:R-wk
 
 # A number of dependencies are not in Macports yet.
