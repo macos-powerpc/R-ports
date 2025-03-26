@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran plfjohnson devEMF 4.5
+R.setup             cran plfjohnson devEMF 4.5-1
 revision            0
 categories-append   graphics
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             GPL-3
 description         EMF Graphics Output Device
 long_description    {*}${description}
 homepage            https://github.com/plfjohnson/devEMF
-checksums           rmd160  35c24f0730e7cf98ae68af744e1d9253339adeaa \
-                    sha256  ead1cb3dbb41bf4caacc77335452c6575b1b5e620aac1205c3a80467a0a13c0e \
-                    size    214479
+checksums           rmd160  0e96ce5dd478d66c1842f87a651788e183d80ca8 \
+                    sha256  cbb0f832dd59cea7c546ad0cdec100f49a7310694b3b32ef1c188bfa19dcf8e7 \
+                    size    214620
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
