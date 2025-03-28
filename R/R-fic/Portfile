@@ -3,18 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github chjackson fic 1.0.0 v
-revision            1
+R.setup             github chjackson fic 1.0.1 v
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Focused information criteria for model comparison
 long_description    {*}${description}
-checksums           rmd160  17779b4f238305cac31b9b173b64e273abdad0b7 \
-                    sha256  590882c5157c11de203084809718aa588f02a2a3debd8566b35b373df096b788 \
-                    size    1723406
+checksums           rmd160  61ef71b268e4165a501948e6bf7c8fac4166c237 \
+                    sha256  69ab2f856c16673b763c74c84c2c7cd1abf7886db39f001df51b8232c2229903 \
+                    size    214319
+github.tarball_from archive
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-abind \
                     port:R-ggplot2 \
