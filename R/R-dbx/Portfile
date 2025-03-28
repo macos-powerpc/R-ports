@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github ankane dbx 0.3.2 v
+R.setup             github ankane dbx 0.4.0 v
 revision            0
 categories-append   databases
 platforms           {darwin any}
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+maintainers         nomaintainer
 license             MIT
 description         Fast and easy-to-use database interface for R
 long_description    Provides select, insert, update, upsert and delete database operations.
 homepage            https://ggforce.data-imaginist.com
-checksums           rmd160  e12be1a650f3b68864283b1145344bf16b285544 \
-                    sha256  fcbcf9600cea960076619b2e246a52b9b15efe830617aecc3d79e5e6a17dca69 \
-                    size    20776
+checksums           rmd160  95403a4729a6bd05e77de7f75ff92f2ab357ed9d \
+                    sha256  15a052fd819f0654329a27f33928c5f3e2b6f975b9a56aac3a5962253a4a411f \
+                    size    22232
 github.tarball_from archive
 supported_archs     noarch
 
