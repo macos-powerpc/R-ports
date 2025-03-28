@@ -4,18 +4,19 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is archaic.
-R.setup             cran docopt docopt 0.7.1
-revision            1
+R.setup             cran docopt docopt 0.7.2
+revision            0
 categories-append   devel
+platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Command-line interface specification language
 long_description    {*}${description}
-checksums           rmd160  62bbcddbd8e8228b2a9ebaf67e7abd572f5c4692 \
-                    sha256  9f473887e4607e9b21fd4ab02e802858d0ac2ca6dad9e357a9d884a47fe4b0ff \
-                    size    29465
+homepage            https://github.com/docopt/docopt.R
+checksums           rmd160  c3c42495182570bde35434233657d49821952a80 \
+                    sha256  783692117346074cc8860cc16f7e8b328b05fd040e5c206a869ee351e704e917 \
+                    size    29467
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_test-append port:R-testthat
 
