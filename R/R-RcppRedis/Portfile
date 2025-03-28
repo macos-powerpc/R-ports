@@ -3,25 +3,25 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran eddelbuettel RcppRedis 0.2.4
-revision            2
+R.setup             cran eddelbuettel RcppRedis 0.2.5
+revision            0
 categories-append   devel
 maintainers         nomaintainer
 license             GPL-2+
 description         MsgPack C++ header files and interface functions for R
 long_description    {*}${description}
 homepage            https://dirk.eddelbuettel.com/code/rcpp.redis.html
-checksums           rmd160  f5fb4eef06fa4b79c398c92ec46a3af747932db4 \
-                    sha256  c91f9c2625e48901324c93789412c4dbde12bc61f4f610ffb8a4fddeb12ee0d8 \
-                    size    1067941
+checksums           rmd160  0247d2563f320a6913f5381e3f2650b655bb7028 \
+                    sha256  f94846d806f9f00d8ad8aa894665201b45a596936c5f37bae1f4bbbf98117028 \
+                    size    1069820
 
 # RcppMsgPack is optional, but desirable.
 # Configure script checks for its presence.
 depends_lib-append  port:hiredis \
                     port:R-RApiSerialize \
-                    port:R-Rcpp \
-                    port:R-RcppMsgPack
+                    port:R-Rcpp
 
-depends_test-append port:R-tinytest
+depends_test-append port:R-RcppMsgPack \
+                    port:R-tinytest
 
 test.run            yes
