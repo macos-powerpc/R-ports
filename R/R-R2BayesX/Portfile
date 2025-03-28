@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran Nikolaus.Umlauf R2BayesX 1.1-5
-revision            1
+R.setup             cran Nikolaus.Umlauf R2BayesX 1.1-6
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             {GPL-2 GPL-3}
 description         Estimate structured additive regression models with BayesX
 long_description    {*}${description}
-checksums           rmd160  d146e920327d95f20aa3e88369a4528b2c56b7ba \
-                    sha256  6a63a67f639c3a2986b5ac5b1e73b9f980ef3637b34e7c48e49ec0e91ad870f4 \
-                    size    787544
+checksums           rmd160  244ce62aea3d91352ca1c6ba7bb7fb8687325d4e \
+                    sha256  43f0a01024855f18fc5a9552356e47763911befea4b8b0c9a18897d8a0040038 \
+                    size    784869
 
 depends_lib-append  port:R-BayesXsrc \
                     port:R-colorspace
