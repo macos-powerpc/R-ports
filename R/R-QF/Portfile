@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran aldo.gardini2 QF 0.0.6
-revision            2
+R.setup             cran aldo.gardini2 QF 0.0.9
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Density, cumulative and quantile functions of quadratic forms
 long_description    {*}${description}
-checksums           rmd160  022a3ae3cf9777bfe159f2318e3b0541b6753b79 \
-                    sha256  741d615c7659d824a65e05c4d2112e132fedcef71200c88b89230924e4dd704f \
-                    size    19512
+checksums           rmd160  9907dac373082ceebc99dec2b7bc509bdd1a9ff7 \
+                    sha256  82e6e8a6b9bef7050d579f43aecee8fbb801aa7fb2681d6848122225d09ecb29 \
+                    size    49816
 
 depends_lib-append  port:gsl \
                     port:R-Rcpp \
