@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           openssl 1.0
 PortGroup           R 1.0
 
-R.setup             github ropensci git2r 0.35.0 v
+R.setup             github ropensci git2r 0.36.2 v
 revision            0
 categories-append   devel
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             GPL-2
 description         R bindings to the libgit2 library
 long_description    {*}${description}
 homepage            https://docs.ropensci.org/git2r
-checksums           rmd160  92385e0cbe9e6380a037d18fc11d6a8d1c52066d \
-                    sha256  05aefc4d286223b6457cce0609050ea1bc8fb91c528e3206bce79d00bfba5d67 \
-                    size    237262
+checksums           rmd160  d7ad125a8124a1755a832b39dc5736c5a1b8dd66 \
+                    sha256  0fa7415f4ff0ca443629ca8a0d4a2cb719fdcae40f381198502d199eb8a300a8 \
+                    size    239729
 github.tarball_from archive
 
 depends_build-append \
