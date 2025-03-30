@@ -3,18 +3,20 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github jonclayden reportr 1.3.0 v
-revision            1
+# Revert to GitHub once updated there.
+R.setup             cran jonclayden reportr 1.3.1 v
+revision            0
 categories-append   sysutils
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+platforms           {darwin any}
+maintainers         nomaintainer
 license             GPL-2
 description         General message and error reporting system
 long_description    {*}${description}
-checksums           rmd160  3f8b089b05c519cadd635c7a9de37d18b819838d \
-                    sha256  e11d2201b3d2ed738d3993023c7d4ad3d0240cb8337b73fc5bee6959afa2ae8d \
-                    size    10870
+checksums           rmd160  d096ef65ffc05a0ef24f937b78ea8a1f775c3c3e \
+                    sha256  5fa5d573c28b4aa001dd1a43a0248a7cdf05221063a8ec4c3ace9dff20b7f905 \
+                    size    13002
+# github.tarball_from archive
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-ore
 
