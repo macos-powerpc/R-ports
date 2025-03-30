@@ -3,21 +3,26 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran SSGL 1.0
-revision            1
+R.setup             cran raybaistat SSGL 2.0
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
 description         Spike-and-Slab Group Lasso for group-regularized generalized linear models
 long_description    {*}${description}
-checksums           rmd160  22b30cd9954955490ce5f0395f45aee27b20a1ba \
-                    sha256  42adfab660caa9f9593b472a237fa607f625d2b7327975b035f1af110ed3c5b8 \
-                    size    16859
+checksums           rmd160  caf531b9725dc0f8eb8118fcc128cb414e7cfee7 \
+                    sha256  76f3df51f0a9dda94eea335aaf1886e197d46b1855acd8e93d015156a2ed9a53 \
+                    size    13492
 # Yes, CRAN is lying.
 supported_archs     noarch
-platforms           {darwin any}
 
-depends_lib-append  port:R-grpreg \
-                    port:R-pracma
+depends_lib-append  port:R-BayesLogit \
+                    port:R-caret \
+                    port:R-doParallel \
+                    port:R-doRNG \
+                    port:R-foreach \
+                    port:R-GIGrvg \
+                    port:R-grpreg
 
 test.run            yes
