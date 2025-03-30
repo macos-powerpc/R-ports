@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran lgarch 0.6-2
-revision            2
+R.setup             cran genaro.sucarrat lgarch 0.7
+revision            0
 categories-append   finance
 maintainers         nomaintainer
 license             GPL-2
 description         Simulation and estimation of Log-GARCH models
 long_description    {*}${description}
-checksums           rmd160  df64c57130dd7bdf37d6353eb42d9adcdd1cc015 \
-                    sha256  30431f7453cf658216426ab79367742945dfd3bc4f384a342d6e35d308d3b317 \
-                    size    21982
+checksums           rmd160  8431f6827ef88a037c1edf46b1e383e57855a4cc \
+                    sha256  b252500de9b600ba66a66038eb5f2d8a1904dc49eae794b3905a86a1b78037c8 \
+                    size    23189
 
 depends_lib-append  port:R-zoo
 
