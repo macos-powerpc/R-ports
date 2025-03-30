@@ -4,16 +4,17 @@ PortSystem          1.0
 PortGroup           conflicts_build 1.0
 PortGroup           R 1.0
 
-R.setup             cran juliuspfadt Bayesrel 0.7.7
-revision            2
+R.setup             cran juliuspfadt Bayesrel 0.7.8
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Bayesian reliability estimation
 long_description    {*}${description}
-checksums           rmd160  19360a42269db0b708e34e58b8673417c1f6ca0f \
-                    sha256  ed41d6dcf3adf55fc65dad7aec91fec2dfedfc2340bcc0bbfd4d4728e9bcdb30 \
-                    size    570104
+homepage            https://github.com/juliuspfadt/Bayesrel
+checksums           rmd160  9c3257cbe625bf4bb0888cf9050efef8d3a09499 \
+                    sha256  133a8a3b03cf817a7838ee19297f1335447fc3f7166162c1cf57af208f7d2837 \
+                    size    79619
 
 # https://github.com/juliuspfadt/Bayesrel/issues/28
 conflicts_build     mpeg4ip
@@ -21,12 +22,10 @@ conflicts_build     mpeg4ip
 depends_lib-append  port:R-coda \
                     port:R-LaplacesDemon \
                     port:R-lavaan \
+                    port:R-psych \
                     port:R-Rcpp \
                     port:R-RcppArmadillo \
                     port:R-Rdpack
-
-patchfiles-append   0001-Fix-ar-flags-for-static-lib.patch \
-                    0002-fix-includes.patch
 
 compilers.setup     require_fortran
 
