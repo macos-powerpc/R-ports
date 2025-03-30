@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran DistributionUtils 0.6-1
-revision            1
+R.setup             cran d.scott DistributionUtils 0.6-2
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-2+
 description         Distribution Utilities
 long_description    {*}${description}
-checksums           rmd160  8605b4bdede6b32ecfbcb08ece27804ce638f549 \
-                    sha256  31e79eaa8871b0b9fb8ac63a3fbd852f9ed3047bc584c233ac030b50e1b963d7 \
-                    size    41857
+checksums           rmd160  125d1662fc94a86737cb981afabb90723e46ad1e \
+                    sha256  808e1525c9efd501d1069a4ff9a81cdca35462cc8d2a9b42d9dafe504eb3ca05 \
+                    size    41363
 
 compilers.setup     require_fortran
 
