@@ -4,16 +4,16 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran tnagler kdecopula 0.9.2
-revision            1
+R.setup             cran tnagler kdecopula 0.9.3
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Kernel smoothing for bivariate copula densities
 long_description    {*}${description}
-checksums           rmd160  b38a67416bab92abe840e09a07c4b43093214f6d \
-                    sha256  9eb85f80ad1ad63ae4401d3e4c6e244ebf94caee3545d42023cdaf51b908ac3c \
-                    size    698546
+checksums           rmd160  1c81f8865db42c28cb610b50ae80f1e83076fa13 \
+                    sha256  7e1843e28d6103d9e19e7d7991eb6c798746bfe39d9d7b9e035ab16b73c67cb6 \
+                    size    698851
 
 depends_lib-append  port:R-locfit \
                     port:R-qrng \
