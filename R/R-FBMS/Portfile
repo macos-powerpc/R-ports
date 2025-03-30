@@ -3,19 +3,20 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran lachmann.nu FBMS 1.0
-revision            1
+R.setup             cran lachmann.nu FBMS 1.1
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         Flexible Bayesian Model Selection and model averaging
 long_description    {*}${description}
-checksums           rmd160  0fe870e0e2f02af54109197e6095eeac7c4af77d \
-                    sha256  cdef70de85b27ea68c70a4acdeddb8d1bd4dc0f79f64f8289b42479ca932f207 \
-                    size    162839
+checksums           rmd160  835699684d56ca45b5de72aa4c6d318a5ae5d210 \
+                    sha256  48275cca8e0a81a403492b104dbb32b72df3dc0b816b278fe8a08c504e275c14 \
+                    size    3119346
 
 depends_lib-append  port:R-fastglm \
                     port:R-GenSA \
+                    port:R-r2r \
                     port:R-Rcpp
 
 depends_test-append port:R-knitr \
