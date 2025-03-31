@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran keyatm keyATM 0.5.2
+R.setup             cran keyatm keyATM 0.5.3
 revision            0
 categories-append   textproc
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             GPL-3
 description         Keyword Assisted Topic Models
 long_description    {*}${description}
 homepage            https://keyatm.github.io/keyATM
-checksums           rmd160  b79771d5af2ec5f5b102f09e840a99b460730ba6 \
-                    sha256  db06ab508e7b7241f0ed8898c6a5e6b0437907c854d884546cab7a5381bea5f5 \
-                    size    147696
+checksums           rmd160  1138187968f99249f683669cde66df5bfbf10f0c \
+                    sha256  d706ca7abe2e2dbac01bcfbb68c3e7045d3feb424f7bc8d0538ca736fee0e9f6 \
+                    size    152675
 
 depends_lib-append  port:R-cli \
                     port:R-dplyr \
