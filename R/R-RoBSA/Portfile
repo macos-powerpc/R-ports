@@ -3,17 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github FBartos RoBSA 1.0.2 v
-revision            1
+R.setup             github FBartos RoBSA 1.0.3 v
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Robust Bayesian survival analysis
 long_description    {*}${description}
 homepage            https://fbartos.github.io/RoBSA
-checksums           rmd160  bcfd60e523fcc3fe915fe49c8cc2421bcec7d3e9 \
-                    sha256  7b5ff4f8e226e415584fdd84cbd74400a33e973fe405e83943dec2923f00d2ef \
-                    size    42531298
+checksums           rmd160  abd7750ee4af07698915f16c1f60272fa6b9e914 \
+                    sha256  a5b54f0e650012d99a80ec7e3d299ba29a140c064c36d33a7f4aed0698b03cbb \
+                    size    42529677
+github.tarball_from archive
 
 depends_lib-append  port:jags \
                     port:R-BayesTools \
@@ -24,7 +25,7 @@ depends_lib-append  port:jags \
                     port:R-runjags \
                     port:R-scales
 
-if {${os.platform} eq "darwin" && ${os.major} < 16} {
+if {${os.platform} eq "darwin" && ${configure.cxx_stdlib} ne "libc++"} {
     # Symbol not found: __ZNK4jags12Distribution5aliasB5cxx11Ev
     patchfiles-append \
                     patch-Makevars.diff
