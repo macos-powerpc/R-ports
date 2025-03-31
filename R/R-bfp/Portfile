@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran daniel.sabanesbove bfp 0.0-48
-revision            1
+R.setup             cran daniel.sabanesbove bfp 0.0-49
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Bayesian Fractional Polynomials
 long_description    Implements the Bayesian paradigm for fractional polynomial models \
                     under the assumption of normally distributed error terms.
-checksums           rmd160  590c179cd88d6c8a8f5f0bd9d2f113dc267d2bd3 \
-                    sha256  7633e694e3f28bc5a2b0a886976e5c476ee73d80dab3be60275b4fa78f9a7154 \
-                    size    254818
+checksums           rmd160  6bf11adda44f5d12d08c455064707dec1c419388 \
+                    sha256  83a05ec5a6cc51f2ae9b29098f82af175a45363a07c20cf17a0bb751e52b1b8b \
+                    size    254968
 
 depends_lib-append  port:R-Rcpp
 
