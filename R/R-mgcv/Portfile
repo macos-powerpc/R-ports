@@ -6,16 +6,16 @@ PortGroup           R 1.0
 R.recommended       yes
 
 # This is a recommended package. Keep it CRAN-sourced.
-R.setup             cran r-project mgcv 1.9-1
-revision            1
+R.setup             cran r-project mgcv 1.9-3
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Mixed GAM Computation Vehicle with automatic smoothness estimation
 long_description    {*}${description}. Recommended package.
-checksums           rmd160  0eaaf10f76ca496a0b1129d66d31bdfa0f6d9f71 \
-                    sha256  700fbc37bedd3a49505b9bc4949faee156d9cfb4f669d797d06a10a15a5bdb32 \
-                    size    1083217
+checksums           rmd160  06b8c953b53b0f065200f0681a9f2b00445c8681 \
+                    sha256  43f0ccdba176890a1d7bbe9a0a0859222e1fbcc97064c6e6ad7a3f545fd82f1d \
+                    size    1127049
 
 # Notice that recommended packages must have all hard dependencies set explicitly.
 depends_lib-append  port:R-Matrix \
