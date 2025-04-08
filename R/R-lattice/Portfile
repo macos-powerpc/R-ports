@@ -6,17 +6,17 @@ PortGroup           R 1.0
 R.recommended       yes
 
 # This is a recommended package. Keep it CRAN-sourced.
-R.setup             cran deepayan lattice 0.22-6
-revision            1
+R.setup             cran deepayan lattice 0.22-7
+revision            0
 categories-append   graphics
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Trellis graphics for R
 long_description    {*}${description}. Recommended package.
 homepage            https://lattice.r-forge.r-project.org
-checksums           rmd160  5c7f53f3c34be49c09d68b7fe878c4f0e90fb3fc \
-                    sha256  4b377211e472ece7872b9d6759f9b9c660b09594500462eb6146312a1d4d00f7 \
-                    size    598581
+checksums           rmd160  338441fe50acb9bbc9346898ef7617e59f0b2c95 \
+                    sha256  400fa62b95e90410d52a36cee2ddeb025dd49695e55fe3db709fe60886bff9f7 \
+                    size    598622
 
 depends_test-append port:R-chron \
                     port:R-colorspace \
