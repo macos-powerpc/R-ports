@@ -3,20 +3,22 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran patrick.brown skellam 0.2.3
-revision            1
+R.setup             cran patrick.brown skellam 0.2.4
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Densities and sampling for the Skellam distribution
 long_description    {*}${description}
-checksums           rmd160  c29ac02aa60c8e6a9a3879aafd8ea8fb3e5e7d19 \
-                    sha256  4d62b53fb0e25603e59836587879c48c5982bb94b4b387cdfdf5ec048ed1b542 \
-                    size    118325
+homepage            https://github.com/monty-se/skellam
+checksums           rmd160  6d84b9e51959f5925fc66c7bca49979bf0f699fd \
+                    sha256  e1788889f4989e2a3a605b919a4e5a117e7b657af715488715b69a81f3e3dd83 \
+                    size    39714
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_test-append port:R-knitr \
+                    port:R-rmarkdown \
                     port:R-VGAM
 
 test.run            yes
