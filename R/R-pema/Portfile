@@ -3,17 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cjvanlissa pema 0.1.3
-revision            4
+R.setup             cran cjvanlissa pema 0.1.4
+revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3+
 description         Penalized Meta-Analysis
 long_description    {*}${description}
-checksums           rmd160  a3a4f8b3468c7463236453892f19616379131300 \
-                    sha256  7ecacecaae13d0a15e1236fc4b641a4a897b066c18e11798d2277d8374c1bf7a \
-                    size    692818
+homepage            https://cjvanlissa.github.io/pema
+checksums           rmd160  0fe4973d7b79685144a788fc506851356d68d76b \
+                    sha256  d1e63498d4130dfcfe32986a1cbf2942858e19697581aa805011f81adc9917b6 \
+                    size    1318740
 
 depends_lib-append  port:R-BH \
+                    port:R-cli \
                     port:R-ggplot2 \
                     port:R-Rcpp \
                     port:R-RcppEigen \
@@ -24,7 +26,10 @@ depends_lib-append  port:R-BH \
                     port:R-sn \
                     port:R-StanHeaders
 
-depends_test-append port:R-knitr \
+# Some optional deps are omitted.
+depends_test-append port:R-bain \
+                    port:R-knitr \
+                    port:R-metafor \
                     port:R-mice \
                     port:R-rmarkdown \
                     port:R-testthat
