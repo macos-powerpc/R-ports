@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran robjhyndman forecast 8.23.0
+R.setup             cran robjhyndman forecast 8.24.0
 revision            0
 categories-append   math finance
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,14 +11,9 @@ license             GPL-3
 description         Forecasting functions for time series and linear models
 long_description    {*}${description}
 homepage            https://pkg.robjhyndman.com/forecast
-checksums           rmd160  5f67452bc3e462c0a1e7cbd1bf2d93ee586b0800 \
-                    sha256  ffc3d41138f498fb286f0ebfeb72d15f9f7a8e953abf3c351ebf95fc188a1880 \
-                    size    590865
-
-# Remove this with the next update. It is a one-time fix.
-if {${os.platform} eq "darwin" && ${configure.cxx_stdlib} eq "libc++"} {
-    incr revision
-}
+checksums           rmd160  1a61792070704137b6933bff926b3de2ca682278 \
+                    sha256  fb0bf1f1bfa3e3df379d6a1ebce9e64d92829eefedde5400d13578f37bd61646 \
+                    size    581947
 
 depends_lib-append  port:R-colorspace \
                     port:R-fracdiff \
@@ -31,6 +26,18 @@ depends_lib-append  port:R-colorspace \
                     port:R-timeDate \
                     port:R-tseries \
                     port:R-urca \
+                    port:R-withr \
                     port:R-zoo
 
 compilers.setup     require_fortran
+
+# Test dep on R-seasonal is dropped.
+depends_test-append port:R-forecTheta \
+                    port:R-knitr \
+                    port:R-rmarkdown \
+                    port:R-rticles \
+                    port:R-scales \
+                    port:R-testthat \
+                    port:R-uroot
+
+test.run            yes
