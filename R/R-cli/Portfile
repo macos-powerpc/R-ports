@@ -3,8 +3,9 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github r-lib cli 3.6.4 v
-revision            1
+# Revert to GitHub once updated there.
+R.setup             cran r-lib cli 3.6.5 v
+revision            0
 categories-append   devel
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
@@ -12,10 +13,10 @@ description         Tools for making beautiful & useful command line interfaces
 long_description    A suite of tools to build attractive command line interfaces (CLIs) \
                     from semantic elements: headings, lists, alerts, paragraphs etc.
 homepage            https://cli.r-lib.org
-checksums           rmd160  f92d966096e0e3030433d8a4d4327c58c6eb62a2 \
-                    sha256  6bb40f8d103c6eb3b2d2f7e6e4bf4adad7095f1da55b4dc46c3652bf8e68a8b7 \
-                    size    636554
-github.tarball_from archive
+checksums           rmd160  c682d9850f33e998b84bc71be188a62690862c7c \
+                    sha256  8ebe3146e66a285d8ad6ddcff87e2a9790ea7c9cdfce7fdd8bf13095fa459679 \
+                    size    640240
+# github.tarball_from archive
 
 depends_test-append port:R-callr \
                     port:R-covr \
