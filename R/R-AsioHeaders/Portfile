@@ -3,16 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran eddelbuettel AsioHeaders 1.22.1-2
-revision            3
+R.setup             cran eddelbuettel AsioHeaders 1.28.2-1
+revision            0
 categories-append   devel
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             Boost-1
 description         Asio C++ headers
 long_description    {*}${description}
 homepage            https://dirk.eddelbuettel.com/code/asioheaders.html
-checksums           rmd160  fe8c395439661d572b48692a628a35d613f9e60b \
-                    sha256  1629c0ea78b8c63231ca62fcc39fce5d29919864050a8c331720ee9bbdea58a4 \
-                    size    719689
+checksums           rmd160  18456b3ea1bdde3ef9cf8feac9c6d5b1eb851831 \
+                    sha256  a39bb16e4fb8a77f9f9e6f0683c74e8acf8f76a6e1e9e56db4e1a0700023b380 \
+                    size    773644
 supported_archs     noarch
-platforms           {darwin any}
+
+test.run            yes
