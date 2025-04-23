@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran FlorianSchwendinger lpSolveAPI 5.5.2.0-17.12
-revision            1
+R.setup             cran FlorianSchwendinger lpSolveAPI 5.5.2.0-17.14
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             LGPL-2
 description         R interface to lp_solve v. 5.5.2.0
 long_description    {*}${description}
-checksums           rmd160  f6562c8a6c3a91f625665ea1c8340cf4484a8647 \
-                    sha256  4f00a9d27055ddf3e2a4b0a529b720861b9f916f2ceb1fe0b71e4c52da5b70ef \
-                    size    493266
+checksums           rmd160  85123caab1707a0e4f07ed3c76349e7b0db50c68 \
+                    sha256  56405bc6695259f414a5d9cae332f67ec975ea9161cf34efc15885c563c4bd4f \
+                    size    493135
 
 # Do not redefine MYBOOL on ppc. Despite the source suggests
 # that using int is fine and that would match ppc ABI,
