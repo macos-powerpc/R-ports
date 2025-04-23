@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran hypertidy PROJ 0.5.0
-revision            1
+R.setup             cran hypertidy PROJ 0.6.0
+revision            0
 categories-append   gis
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Generic coordinate system transformations using PROJ
 long_description    {*}${description}
 homepage            https://hypertidy.github.io/PROJ
-checksums           rmd160  97bbcd256564451bc5db0aec2300b255e21825d8 \
-                    sha256  fa6316693289a65d53a764b422f15072c34f440375264b822f2ddd2c6ec88c9b \
-                    size    187657
+checksums           rmd160  cf692cd22626dcc31b977191d68e8c2a46fb7977 \
+                    sha256  a66925d2b23e9373af55e98a3457542e2130dddf741dabdf9f9bf335710c098e \
+                    size    187629
 
 set proj_v          proj9
 
