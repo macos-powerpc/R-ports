@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran ArcadeAntics this.path 2.6.0
-revision            1
+R.setup             cran ArcadeAntics this.path 2.7.0
+revision            0
 categories-append   sysutils
 maintainers         nomaintainer
 license             MIT
 description         Determine the path of the executing script
 long_description    {*}${description}
 homepage            https://github.com/ArcadeAntics/this.path
-checksums           rmd160  b06682e706dc0497a6d3a000f56be3f4a66dd71d \
-                    sha256  a178529fa7f8eca03a2ba87956a7fac9baa18534945b9164dbf29f3dfe496aa4 \
-                    size    372137
+checksums           rmd160  813cbf33d9c169b697db94dbed1e5bef7edeb737 \
+                    sha256  7159e5b0e929711f0c58b736324e847199b2e67ddee0539937b4090efd0ee571 \
+                    size    373607
 
 depends_test-append port:R-box \
                     port:R-jsonlite \
