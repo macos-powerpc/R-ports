@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran eddelbuettel AsioHeaders 1.28.2-1
+R.setup             cran eddelbuettel AsioHeaders 1.30.2-1
 revision            0
 categories-append   devel
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             Boost-1
 description         Asio C++ headers
 long_description    {*}${description}
 homepage            https://dirk.eddelbuettel.com/code/asioheaders.html
-checksums           rmd160  18456b3ea1bdde3ef9cf8feac9c6d5b1eb851831 \
-                    sha256  a39bb16e4fb8a77f9f9e6f0683c74e8acf8f76a6e1e9e56db4e1a0700023b380 \
-                    size    773644
+checksums           rmd160  d6eb0947b36c5b9c653df84f771870283c0d6638 \
+                    sha256  1be43b48a4cc704ef84b5673b4fc78323709fd0d61c18dbd364ac89a38e2ab31 \
+                    size    699604
 supported_archs     noarch
 
 test.run            yes
