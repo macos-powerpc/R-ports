@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github easystats insight 1.1.0 v
-revision            1
+R.setup             github easystats insight 1.2.0 v
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             GPL-3
 description         Easy access to model information for various model objects
 long_description    {*}${description}
 homepage            https://easystats.github.io/insight
-checksums           rmd160  dfcdc263aec791d6d480350355a863d8cb068a93 \
-                    sha256  42e9170ea3c3080003e235c3f4cbd71a4f2d443ec8e1f0b5caebb4457ace7e04 \
-                    size    1662329
+checksums           rmd160  989db4dd5c4bb5b23b852875e9325f122f25c683 \
+                    sha256  0c96f7d9cd4a985a4fce0a0065b67b76e43be0e9a42b3bf618c556e691b323fb \
+                    size    1694261
 github.tarball_from archive
 supported_archs     noarch
 
@@ -124,6 +124,7 @@ depends_test-append port:R-AER \
                     port:R-speedglm \
                     port:R-statmod \
                     port:R-survey \
+                    port:R-svylme \
                     port:R-testthat \
                     port:R-tinytable \
                     port:R-TMB \
