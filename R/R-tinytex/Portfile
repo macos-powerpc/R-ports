@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github rstudio tinytex 0.56 v
-revision            1
+R.setup             github rstudio tinytex 0.57 v
+revision            0
 categories-append   tex
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -13,9 +13,9 @@ description         Helper functions to install and maintain TeX Live, \
                     and compile LaTeX documents
 long_description    {*}${description}
 homepage            https://github.com/rstudio/tinytex
-checksums           rmd160  7f804b03aa24fcf4360094dead3f1d58a5139789 \
-                    sha256  6473b0b9113f085fb5a7e2b2d6ce216e2a9894b91cd34053a91c38e1389e74a1 \
-                    size    58047
+checksums           rmd160  1be15584d44e8182c146cd05defe8b4bf9867f5a \
+                    sha256  34677e3fe11551240d9065167e251956028a73724de132a6901d37963b1431c2 \
+                    size    58201
 github.tarball_from archive
 supported_archs     noarch
 
