@@ -19,7 +19,7 @@ depends_lib-append  port:R-fs \
                     port:R-rappdirs \
                     port:R-rlang
 
-if {[string match *gcc* ${configure.compiler}]} {
+if {${configure.cxx_stdlib} ne "libc++"} {
     # error: unrecognized command-line option '-stdlib=libc++'
     post-patch {
         reinplace "s|-stdlib=libc++||g" ${worksrcpath}/src/libsass/Makefile
