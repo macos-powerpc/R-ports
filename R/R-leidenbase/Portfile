@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is outdated.
-R.setup             cran cole-trapnell-lab leidenbase 0.1.32
-revision            1
+R.setup             cran cole-trapnell-lab leidenbase 0.1.35
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         R and C/C++ wrappers to run the Leiden find_partition() function
 long_description    {*}${description}
 homepage            https://github.com/cole-trapnell-lab/leidenbase
-checksums           rmd160  ce673cd1c34541c84dfbc5070b2e54c21472f4ca \
-                    sha256  22770b3d1f6a0e78a9de1adadd0aa6a4e2d8a47defaf75c83751885aeefdc490 \
-                    size    3754496
+checksums           rmd160  f9440ea3bcd440d0aa5022b4b3686b65c802009a \
+                    sha256  0339e1fa967b6decc222b0aaecd8190c5697458c2a7034b0348490cdfc9f807d \
+                    size    3783694
 
 depends_lib-append  port:glpk \
                     port:gmp \
