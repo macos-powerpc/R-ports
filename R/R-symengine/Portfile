@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran symengine symengine 0.2.6
-revision            4
+R.setup             cran symengine symengine 0.2.10
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Interface to the SymEngine library
 long_description    {*}${description}
 homepage            https://github.com/symengine/symengine.R
-checksums           rmd160  08aab009c241e7fd5de7c737a03159f1c8e56e25 \
-                    sha256  897f2878690d6aec35ce45bc61f1a1c2c3e08a71b62364821e8969cad6688fef \
-                    size    810906
+checksums           rmd160  ee7707cb8b8bfdb96993c7c704d0b46cb47ee5f5 \
+                    sha256  039cb0409063f39891e29119be1db796796347bb30bf82ef7b00bdb5e09c2c9b \
+                    size    663390
 
 depends_lib-append  path:bin/cmake:cmake \
                     port:gmp \
@@ -31,7 +31,6 @@ post-patch {
 
 depends_test-append port:R-crayon \
                     port:R-knitr \
-                    port:R-odeintr \
                     port:R-pracma \
                     port:R-rmarkdown \
                     port:R-testthat
