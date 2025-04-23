@@ -3,16 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran dann 1.0.0
-revision            2
+R.setup             cran gmcmacran dann 1.0.2
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Discriminant-Adaptive Nearest Neighbor classification
 long_description    {*}${description}
-checksums           rmd160  6d105dab6ee1c2c4b99f96e8bfaa4cd2f6bcc9e7 \
-                    sha256  9dac5ae77911b2b060f7f55903e9520681fe4f290848f626a21e6036f69fb542 \
-                    size    57500
+homepage            https://github.com/gmcmacran/dann
+checksums           rmd160  ab1a25f93055032c120b046282908fefc89cdcdd \
+                    sha256  71da0f6415bf0c1ba7434ca63989e3034d0c3ece4d54b12aae96d32328ef222e \
+                    size    121861
 
 depends_lib-append  port:R-ellipsis \
                     port:R-fpc \
