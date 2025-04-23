@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github rstudio bookdown 0.42 v
-revision            1
+R.setup             github rstudio bookdown 0.43 v
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
 description         Authoring books and technical documents with R markdown
 long_description    {*}${description}
 homepage            https://pkgs.rstudio.com/bookdown
-checksums           rmd160  20572ed89bbab0b5face33580c316dddf06cb758 \
-                    sha256  8cae78460f30f7925d2aa3ba14786214bdd232cef0be2e4dccfe6eecac2449d2 \
-                    size    1475693
+checksums           rmd160  5415bd135f8a774ed951ff63308a4c4cf7ba1ad9 \
+                    sha256  cbbcd3225e5446ed76af8d0ec04a4a901bd03d3719f6c3afdff0d9538fc08b5f \
+                    size    1476948
 github.tarball_from archive
 supported_archs     noarch
 
