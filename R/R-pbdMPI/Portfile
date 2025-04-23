@@ -5,17 +5,17 @@ PortGroup           compilers 1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran snoweye pbdMPI 0.5-2
-revision            2
+R.setup             cran snoweye pbdMPI 0.5-3
+revision            0
 categories-append   parallel
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MPL-2
 description         Interface to MPI
 long_description    {*}${description}
 homepage            https://github.com/snoweye/pbdMPI
-checksums           rmd160  4e672b2544e8a7409da46b5a78bdf5f411bc8646 \
-                    sha256  213da272b6c9d8075b8c5cb703777c724b16c1b13f82d04a7e57a91935646b77 \
-                    size    421132
+checksums           rmd160  43496047ec4c67c2b39528c594988aca48678fa8 \
+                    sha256  0b547a04decd83a7825cb07eeae869a476ca2735e3973d226a5a7633010cf208 \
+                    size    421138
 
 set mpi_suffix      mp
 set mpi_port        mpich-default
