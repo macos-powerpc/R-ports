@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran marco.bee LNPar 1.1.0
-revision            1
+R.setup             cran marco.bee LNPar 1.1.1
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Estimation and testing for a Lognormal-Pareto mixture
 long_description    {*}${description}
-checksums           rmd160  cbb52112e66d4aad72a8e524f5923ae76dfdd669 \
-                    sha256  fca1af1f36b5ae15cb01f0716badc4c9d430b12d10583d38670a9ee561552a3a \
-                    size    28082
+checksums           rmd160  1350e02426ac4002926d6cb67662bc4ccc709fd7 \
+                    sha256  c3807fc00b42c98fafb1b26b66baab9f1370ff8839a62e9db711e205f52c5b78 \
+                    size    28124
 supported_archs     noarch
 
 depends_lib-append  port:R-Rdpack
