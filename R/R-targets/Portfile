@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github ropensci targets 1.10.1
-revision            1
+R.setup             github ropensci targets 1.11.1
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Dynamic function-oriented make-like declarative workflows
 long_description    {*}${description}
 homepage            https://docs.ropensci.org/targets
-checksums           rmd160  54e73fc6443940c66f5ea74a5acbc36cb6efa50d \
-                    sha256  27adf866673f90d5012675e1102af4c087ff60f253b81ead8a5896e408eda0f7 \
-                    size    820659
+checksums           rmd160  d3e2836b227f9adc29aa45f0cce68d78fc25fbde \
+                    sha256  457241ef7bdb191be645f1c42aa864c8dbc75f8a000e8b32e0c99a916ad8c1ce \
+                    size    828510
 github.tarball_from archive
 supported_archs     noarch
 
@@ -23,6 +23,7 @@ depends_lib-append  port:R-base64url \
                     port:R-data.table \
                     port:R-igraph \
                     port:R-knitr \
+                    port:R-prettyunits \
                     port:R-ps \
                     port:R-R6 \
                     port:R-rlang \
