@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 R.setup             github cloudyr bigQueryR 13c63072992d032a3412cdebd5a009398e8a1495
 version             0.5.0.9000
-revision            0
+revision            1
 categories-append   www
 platforms           {darwin any}
 maintainers         nomaintainer

@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             bioconductor Bioconductor KEGGREST 1.44.1
-revision            0
+revision            1
 categories-append   bioconductor www
 platforms           {darwin any}
 maintainers         nomaintainer

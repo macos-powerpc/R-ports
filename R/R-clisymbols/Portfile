@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             cran r-lib clisymbols 1.2.0
-revision            2
+revision            3
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Unicode symbols for CLI applications, with fallbacks

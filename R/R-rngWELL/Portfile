@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             cran dutangc rngWELL 0.10-10
-revision            0
+revision            1
 maintainers         nomaintainer
 license             BSD
 description         Toolbox for WELL random number generators

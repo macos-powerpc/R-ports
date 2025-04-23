@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # GitHub version lags behind.
 R.setup             cran bayesiandemography rvec 0.0.7 v
-revision            0
+revision            1
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT

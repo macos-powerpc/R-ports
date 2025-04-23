@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
 R.setup             cran VNNikolaidis nnlib2Rcpp 0.2.9
-revision            0
+revision            1
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT

@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             github HenrikBengtsson startup 0.23.0
-revision            0
+revision            1
 categories-append   sysutils
 maintainers         nomaintainer
 license             LGPL-2.1+

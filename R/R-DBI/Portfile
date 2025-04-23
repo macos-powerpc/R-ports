@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             github r-dbi DBI 1.2.3.9027 v
-revision            0
+revision            1
 categories-append   databases
 platforms           {darwin any}
 maintainers         {@krlmlr cynkra.com:kirill} \

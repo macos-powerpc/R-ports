@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 R.setup             github patperry r-utf8 1.2.4 v
 set R.package       utf8
-revision            1
+revision            2
 categories-append   textproc
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             Apache-2

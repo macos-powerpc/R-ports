@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 R.setup             github PIK-LPJmL lpjmlkit a4c72de475cfa36f39f2dfa7e80d22cb68e10cfe
 version             1.6.0
-revision            0
+revision            1
 categories-append   gis
 platforms           {darwin any}
 maintainers         nomaintainer

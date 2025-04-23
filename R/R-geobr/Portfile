@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # Use CRAN tarball here.
 R.setup             cran ipeaGIT geobr 1.9.1 v
-revision            0
+revision            1
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT

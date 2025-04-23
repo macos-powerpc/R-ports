@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # Unfortunately, R-Forge may not have a tarball on time.
 R.setup             cran r-project distrEx 2.9.6
-revision            0
+revision            1
 categories-append   math
 maintainers         nomaintainer
 license             LGPL-3

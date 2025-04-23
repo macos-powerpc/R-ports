@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 R.setup             github xoopR set6 a901255c26614a0ece317dc849621420f9393d42
 version             0.2.6
-revision            0
+revision            1
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT

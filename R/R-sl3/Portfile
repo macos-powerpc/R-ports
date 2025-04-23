@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             github tlverse sl3 1.4.4 v
-revision            2
+revision            3
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3

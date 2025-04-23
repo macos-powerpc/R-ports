@@ -7,7 +7,7 @@ R.recommended       yes
 
 # This is a recommended package. Keep it CRAN-sourced.
 R.setup             cran therneau survival 3.8-3
-revision            0
+revision            1
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             LGPL-2+
 description         Survival analysis

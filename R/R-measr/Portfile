@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
 R.setup             cran wjakethompson measr 1.0.0
-revision            2
+revision            3
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Bayesian psychometric measurement using RStan

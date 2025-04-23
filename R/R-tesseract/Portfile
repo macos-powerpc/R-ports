@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # GitHub version lags behind.
 R.setup             cran ropensci tesseract 5.2.3
-revision            0
+revision            1
 categories-append   textproc
 maintainers         nomaintainer
 license             Apache-2

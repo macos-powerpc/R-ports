@@ -5,7 +5,7 @@ PortGroup           openssl 1.0
 PortGroup           R 1.0
 
 R.setup             bioconductor lawremi rtracklayer 1.64.0
-revision            0
+revision            1
 categories-append   bioconductor
 maintainers         nomaintainer
 license             Artistic-2

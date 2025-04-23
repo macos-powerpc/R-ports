@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             github posit-dev shinychat 0.1.1 v
-revision            0
+revision            1
 categories-append   llm
 platforms           {darwin any}
 maintainers         nomaintainer

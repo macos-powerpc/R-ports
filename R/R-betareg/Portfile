@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # Revert to r-forge once updated there.
 R.setup             cran r-project betareg 3.2-2
-revision            0
+revision            1
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer

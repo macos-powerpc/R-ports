@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # GitHUb version is outdated.
 R.setup             cran pi-kappa-devel diseq 0.4.6
-revision            5
+revision            6
 categories-append   economics
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3+

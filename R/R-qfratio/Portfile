@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 R.setup             github watanabe-j qfratio a2ccd27726910cf7b86e997ad975c032f70cb7d8
 version             1.1.1.9000
-revision            0
+revision            1
 categories-append   math
 maintainers         nomaintainer
 license             GPL-3+

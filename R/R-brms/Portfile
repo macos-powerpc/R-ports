@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 R.setup             github paul-buerkner brms 315c7874d6e1b58eb9082e5e07521682f0dc2ca9
 version             2.22.11
-revision            0
+revision            1
 categories-append   math economics
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer

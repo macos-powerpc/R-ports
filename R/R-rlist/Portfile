@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             cran renkun-ken rlist 0.4.6.2
-revision            2
+revision            3
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Toolbox for non-tabular data manipulation

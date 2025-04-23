@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # GitHub version is outdated.
 R.setup             cran gesistsa rio 1.2.3
-revision            0
+revision            1
 categories-append   devel
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer

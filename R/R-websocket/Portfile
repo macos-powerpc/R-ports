@@ -6,7 +6,7 @@ PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
 R.setup             cran rstudio websocket 1.4.2 v
-revision            0
+revision            1
 categories-append   devel net
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2

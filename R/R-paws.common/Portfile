@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # Installing from GitHub source is a mess, use CRAN.
 R.setup             cran paws-r paws.common 0.8.1 paws.common-v
-revision            0
+revision            1
 categories-append   www
 maintainers         nomaintainer
 license             Apache-2

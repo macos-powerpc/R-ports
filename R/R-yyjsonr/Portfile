@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 R.setup             github coolbutuseless yyjsonr 07655b5183802ad27746cf35041f023561984aff
 version             0.1.20.9001
-revision            0
+revision            1
 categories-append   devel
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT

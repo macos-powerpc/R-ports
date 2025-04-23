@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # GitHub version lags behind.
 R.setup             cran olafmersmann sendmailR 1.4-0
-revision            2
+revision            3
 categories-append   net
 maintainers         nomaintainer
 license             GPL-2

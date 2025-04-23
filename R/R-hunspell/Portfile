@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # GitHub version lags behind.
 R.setup             cran ropensci hunspell 3.0.6
-revision            0
+revision            1
 categories-append   sysutils textproc
 maintainers         nomaintainer
 license             {GPL-2 LGPL-2.1 MPL-1.1}

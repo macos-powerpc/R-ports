@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # GitHub version lags behind.
 R.setup             cran crsh papaja 0.1.2 v
-revision            0
+revision            1
 maintainers         nomaintainer
 license             MIT
 description         Prepare American Psychological Association Journal articles \

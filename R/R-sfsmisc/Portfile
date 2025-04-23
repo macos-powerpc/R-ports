@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             cran mmaechler sfsmisc 1.1-20
-revision            0
+revision            1
 categories-append   graphics sysutils
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer

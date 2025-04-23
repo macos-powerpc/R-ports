@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             github alexanderrobitzsch CDM 8.3-1
-revision            2
+revision            3
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             {GPL-2 GPL-3}
 description         Cognitive Diagnosis Modelling

@@ -7,7 +7,7 @@ R.recommended       yes
 
 # This is a recommended package. Keep it CRAN-sourced.
 R.setup             cran r-project spatial 7.3-18
-revision            0
+revision            1
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             {GPL-2 GPL-3}
 description         Functions for Kriging and point pattern analysis

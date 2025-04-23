@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # GitHub version is outdated.
 R.setup             cran statistikat VIM 6.2.2 v
-revision            0
+revision            1
 maintainers         nomaintainer
 license             GPL-2+
 description         Visualization and imputation of missing values

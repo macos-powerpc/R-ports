@@ -7,7 +7,7 @@ R.recommended       yes
 
 # This is a recommended package. Keep it CRAN-sourced.
 R.setup             cran r-project KernSmooth 2.23-26
-revision            0
+revision            1
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             Permissive
 description         Functions for kernel smoothing (and density estimation)

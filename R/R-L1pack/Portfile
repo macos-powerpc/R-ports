@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             cran faosorios L1pack 0.52
-revision            0
+revision            1
 categories-append   math
 maintainers         nomaintainer
 license             GPL-3

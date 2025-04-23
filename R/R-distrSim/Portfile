@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # Revert to r-forge once updated there.
 R.setup             cran r-project distrSim 2.8.3
-revision            0
+revision            1
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer

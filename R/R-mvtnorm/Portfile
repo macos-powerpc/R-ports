@@ -6,7 +6,7 @@ PortGroup           R 1.0
 # Unfortunately, r-forge is unreliable in having the tarball.
 # Use CRAN for now.
 R.setup             cran r-project mvtnorm 1.3-3
-revision            0
+revision            1
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2

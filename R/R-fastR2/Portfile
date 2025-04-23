@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             github rpruim fastR2 1.2.4 v
-revision            1
+revision            2
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+

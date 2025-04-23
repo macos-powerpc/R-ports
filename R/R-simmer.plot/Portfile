@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             cran r-simmer simmer.plot 0.1.18
-revision            1
+revision            2
 maintainers         nomaintainer
 license             MIT
 description         Plotting methods for R-simmer

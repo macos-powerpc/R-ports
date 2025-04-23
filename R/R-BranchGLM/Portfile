@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
 R.setup             cran JacobSeedorff21 BranchGLM 3.0.1 v
-revision            0
+revision            1
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             Apache-2+

@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # GitHub version lags behind.
 R.setup             cran reichlab dttr2 0.5.2 v
-revision            0
+revision            1
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT

@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # GitHub version lags behind.
 R.setup             cran mariusbarth tinylabels 0.2.4 v
-revision            0
+revision            1
 maintainers         nomaintainer
 license             MIT
 description         Light-weight variable labels

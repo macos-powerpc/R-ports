@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 R.setup             github Naidantu fcirt 0.1.0 v
 version             0.1.0.9000
-revision            5
+revision            6
 maintainers         nomaintainer
 license             GPL-3+
 description         Forced choice in item response theory

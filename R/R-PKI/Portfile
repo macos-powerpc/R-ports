@@ -6,7 +6,7 @@ PortGroup           R 1.0
 
 R.setup             github s-u PKI 13aa0f9bff4772df4dd598f6808bbed4efb66602
 version             0.1-14
-revision            1
+revision            2
 categories-append   crypto
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             {GPL-2 GPL-3}

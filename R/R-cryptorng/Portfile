@@ -8,7 +8,7 @@ PortGroup           R 1.0
 legacysupport.newest_darwin_requires_legacy 10
 
 R.setup             cran coolbutuseless cryptorng 0.1.4
-revision            0
+revision            1
 categories-append   crypto
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT

@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             cran graysonwhite gglm 1.0.3
-revision            0
+revision            1
 maintainers         nomaintainer
 license             public-domain
 description         Grammar of graphics for linear model diagnostic plots

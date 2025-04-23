@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 R.setup             github chris-prener areal 07bda84887d9f2272babe91c2ccc1e438f27f162
 version             0.1.8.9000
-revision            0
+revision            1
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3

@@ -6,7 +6,7 @@ PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
 R.setup             cran r-spatial s2 1.1.7
-revision            0
+revision            1
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             Apache-2

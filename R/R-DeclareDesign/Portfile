@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # GitHub version is outdated.
 R.setup             cran DeclareDesign DeclareDesign 1.0.10
-revision            0
+revision            1
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer

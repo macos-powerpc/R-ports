@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             cran gdavis spacesRGB 1.7-0
-revision            0
+revision            1
 categories-append   graphics
 platforms           {darwin any}
 maintainers         nomaintainer

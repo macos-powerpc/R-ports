@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
 R.setup             cran rstudio reticulate 1.42.0
-revision            0
+revision            1
 categories-append   python
 maintainers         nomaintainer
 license             Apache-2

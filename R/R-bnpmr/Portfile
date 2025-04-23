@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             cran bbnkmp bnpmr 1.2
-revision            3
+revision            4
 categories-append   math
 maintainers         nomaintainer
 license             GPL

@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             cran rvlenth rsm 2.10.5
-revision            0
+revision            1
 maintainers         nomaintainer
 platforms           {darwin any}
 license             MIT

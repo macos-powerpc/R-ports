@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             cran cellocgw cgwtools 4.1
-revision            1
+revision            2
 maintainers         nomaintainer
 license             LGPL-3
 description         Functions for performing quick observations or evaluations of data

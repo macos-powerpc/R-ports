@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # GitHub version has a wrong number.
 R.setup             cran MSKCC-Epi-Bio tidycmprsk 1.1.0 v
-revision            0
+revision            1
 platforms           {darwin any}
 maintainers         nomaintainer
 license             AGPL-3+

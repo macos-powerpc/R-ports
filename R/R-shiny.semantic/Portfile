@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # GitHub version lags behind.
 R.setup             cran Appsilon shiny.semantic 0.5.1
-revision            1
+revision            2
 maintainers         nomaintainer
 license             MIT
 description         Semantic UI support for Shiny

@@ -7,7 +7,7 @@ PortGroup           R 1.0
 legacysupport.newest_darwin_requires_legacy 15
 
 R.setup             cran andrjohns QuickJSR 1.7.0
-revision            0
+revision            1
 categories-append   devel
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT

@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
 R.setup             cran cynkra constructive 1.0.1 v
-revision            0
+revision            1
 maintainers         nomaintainer
 license             MIT
 description         Display idiomatic code to construct most R objects

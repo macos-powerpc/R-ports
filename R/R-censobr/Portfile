@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # GitHub tarball lies about its version.
 R.setup             cran ipeaGIT censobr 0.4.0 v
-revision            0
+revision            1
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
