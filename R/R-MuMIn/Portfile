@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran kamil.barton MuMIn 1.48.4
-revision            1
+R.setup             cran kamil.barton MuMIn 1.48.11
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         Tools for performing model selection and model averaging
 long_description    {*}${description}
-checksums           rmd160  bbd1e3a4f6c0551f1f2eed698169dd9f5b4ccc6a \
-                    sha256  2002e1c6e22fc5ad63e797b9d4aa7ae0f502f142d0516a096128886df530f613 \
-                    size    182961
+checksums           rmd160  518b89c3b39b5aef7d5d3f744859708dd870bbd4 \
+                    sha256  c1f3520694f37f7c96625c8baeb27c3af6a10baa2cad9905c94c3b6febb3fae7 \
+                    size    189517
 supported_archs     noarch
 
 depends_lib-append  port:R-insight
