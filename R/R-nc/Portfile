@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran tdhock nc 2025.1.21
-revision            1
+R.setup             cran tdhock nc 2025.3.24
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
 description         Named capture to data tables
 long_description    {*}${description}
 homepage            https://github.com/tdhock/nc
-checksums           rmd160  d4885a1ad736e4256c398842a51d704f576dc3c2 \
-                    sha256  b7080bd843741ca0991dbea1b2dd4086d70257e1fd03399d4be7c96aa6217b7c \
-                    size    664020
+checksums           rmd160  d2de3876ae8d6b7acdf9cad440609afabc793a99 \
+                    sha256  b808665d41a478ea9268379a13097bb062bcfbe877851c4619ee862483e8ba8a \
+                    size    607346
 supported_archs     noarch
 
 depends_lib-append  port:R-data.table
