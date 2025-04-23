@@ -9,9 +9,10 @@ maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         Pry open the covers of R
 long_description    Useful tools to pry back the covers of R and understand the language at a deeper level.
-checksums           rmd160  284c19727a79814bb242d02ced168785a5fbabb1 \
-                    sha256  6370ade9d2a42abc1f34b74346e4d527509b3f752a168dd60c9e6a870fdab10a \
-                    size    67795
+checksums           rmd160  ac7488f4e7cf02c438976836adcd0f59df92b1e4 \
+                    sha256  e53e5db26846f40061ce9b8a3957ab05832db05c0beb47a02e0ad8a4ac973020 \
+                    size    67744
+github.tarball_from archive
 
 depends_lib-append  port:R-lobstr \
                     port:R-Rcpp \

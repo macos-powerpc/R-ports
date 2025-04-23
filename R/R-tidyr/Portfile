@@ -10,9 +10,10 @@ license             MIT
 description         Tidy messy data
 long_description    {*}${description}
 homepage            https://tidyr.tidyverse.org
-checksums           rmd160  27c6cfcfc9c6008e1939356ad832a5bb0db085d6 \
-                    sha256  8485eb17bf09a46a1ad984771744386781b8ef94626685b87b5f8513a53f9441 \
-                    size    2427106
+checksums           rmd160  41beb890e63b556cd60c2dfe463ed7ef0a7f0536 \
+                    sha256  f287a722873df0465ec86834383972d1c34256a95faa28b4752811b8531562b3 \
+                    size    2426815
+github.tarball_from archive
 
 depends_lib-append  port:R-cpp11 \
                     port:R-cli \

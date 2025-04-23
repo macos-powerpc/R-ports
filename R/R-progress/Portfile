@@ -6,15 +6,16 @@ PortGroup           R 1.0
 R.setup             github r-lib progress 1.2.3 v
 revision            2
 categories-append   sysutils
+platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Progress bar in your R terminal
 long_description    An R package to show ASCII progress bars.
-checksums           rmd160  8a04647b1c82ef0fe8030563757fb7f1046f0c8c \
-                    sha256  568a50cb74b7bca8e4fc56c45c2b6d7f51212618ed15a0e156a3ea4cf84d8ab6 \
-                    size    34627
+checksums           rmd160  6765833282be604522b9c08175df5b8bba49edf4 \
+                    sha256  295cbd533b428df2dc56cab949dbb3d4efc18d249000909bdc5bdf17253e28fa \
+                    size    34609
+github.tarball_from archive
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-crayon \
                     port:R-hms \

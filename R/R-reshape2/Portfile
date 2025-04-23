@@ -11,10 +11,11 @@ maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Flexibly reshape data: a reboot of the reshape package
 long_description    {*}${description}
-checksums           rmd160  9f1173e7b01be955c429ebca0da03c6ea40a3109 \
-                    sha256  4db5c49cc21fd856fad433f035bd62bd4e3a53db7b2e8779f084b5ee4c486908 \
-                    size    1942748
-                    
+checksums           rmd160  c60c5072a52a7129e1ee33a0b06e11206cb3de04 \
+                    sha256  88514444575ac67d357bc34c2142aa6d4dd01e8acc018321cd2b213574024558 \
+                    size    1942712
+github.tarball_from archive
+
 depends_lib-append  port:R-plyr \
                     port:R-Rcpp \
                     port:R-stringr

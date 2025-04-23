@@ -13,9 +13,10 @@ long_description    The ellipsis is a powerful tool for extending functions. \
                     Unfortunately this power comes at a cost: misspelled arguments will be silently ignored. \
                     The ellipsis package provides a collection of functions to catch problems and alert the user.
 homepage            https://ellipsis.r-lib.org
-checksums           rmd160  b114d47b46c0c54d6f3bd1a46e60854c84c3389a \
-                    sha256  ff2ab7b5bc4a03d77faf2026fe209bbe410f9963b5852eb41edff01c4b0f347d \
-                    size    11234
+checksums           rmd160  fc745bd0674b0bbf90bed04a62ffd36c4c715a2e \
+                    sha256  335f02305af181442c97c55372bbfe7523f7d5b59631633d53a1f4a35d351f92 \
+                    size    11220
+github.tarball_from archive
 
 depends_lib-append  port:R-rlang
 

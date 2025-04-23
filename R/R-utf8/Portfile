@@ -13,9 +13,10 @@ description         UTF-8 text processing
 long_description    R package for manipulating and printing UTF-8 text \
                     that fixes multiple bugs in R’s UTF-8 handling.
 homepage            https://ptrckprry.com/r-utf8
-checksums           rmd160  11ed611b3a4434b835d41a8114585e46f26e9c8a \
-                    sha256  05adf9662c38223d5da1a3204175cf8f52e30254b885f64f350b5fd2860c7e8d \
-                    size    1340198
+checksums           rmd160  f311732dcaec76e8012edda31fe9e60cc18d268b \
+                    sha256  ea59c1e8e656731728d3a0ab8e3c3f9ba1b3b8d85eb1c35be02de208163574a3 \
+                    size    1339990
+github.tarball_from archive
 
 depends_test-append port:R-cli \
                     port:R-covr \

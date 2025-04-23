@@ -6,15 +6,16 @@ PortGroup           R 1.0
 R.setup             github HenrikBengtsson profmem 0.6.0
 revision            3
 categories-append   devel
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             {LGPL-2.1 LGPL-3}
 description         Simple memory profiling for R
 long_description    {*}${description}
-checksums           rmd160  1c4e400a778e599ff48df1d20121f91c6c5d6131 \
-                    sha256  3bae9341ac09ab1c4a306acb762576689ab4c6eb3c0ee9efcef1f24df3da0f75 \
-                    size    52619
+checksums           rmd160  34e95f8b510451d4963d6e3a2e676d6fc64c33e2 \
+                    sha256  fc40277f987870bf8070d23a4e29c3fb1627362afa08c0a19279b3ea79ec64c7 \
+                    size    52572
+github.tarball_from archive
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_test-append port:R-markdown \
                     port:R-microbenchmark \

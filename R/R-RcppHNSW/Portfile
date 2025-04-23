@@ -10,9 +10,10 @@ maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3+
 description         Rcpp bindings for the approximate nearest neighbors library hnswlib
 long_description    {*}${description}
-checksums           rmd160  3707be9869fcc0295f302fcdee38d993094012f0 \
-                    sha256  01dd3ef67b3db3dd0fe9592092d591e3ddcd63dd5a988036ab5cf8665c7d4d21 \
-                    size    55178
+checksums           rmd160  92fa7cfbd3edcdcb9fce2a907fa0d94453940ce5 \
+                    sha256  82de5a3ab983c0bd7a5bbe71ba91bb88f417f1e4df2e6dc5b449ff562bc44a39 \
+                    size    55145
+github.tarball_from archive
 
 depends_lib-append  port:R-Rcpp
 

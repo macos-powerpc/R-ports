@@ -5,17 +5,18 @@ PortGroup           R 1.0
 
 R.setup             github r-lib scales 1.3.0 v
 revision            2
+platforms           {darwin any}
 categories-append   graphics
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Scale functions for visualization
 long_description    {*}${description}
 homepage            https://scales.r-lib.org
-checksums           rmd160  679204a6c3efa49910e015b2e3199e2e918eef17 \
-                    sha256  ddc940f03d73bb5d8d065fdddf3856eba38dc618f87b49b9b22b09952814eba0 \
-                    size    379795
+checksums           rmd160  e54c5455ff89ae70b79aabd89d1a9cd1a2b048be \
+                    sha256  7368ca4a74ba82af0f493ada3b827b36698c029c01e684ac94a464b0477ca02e \
+                    size    379734
+github.tarball_from archive
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-cli \
                     port:R-farver \

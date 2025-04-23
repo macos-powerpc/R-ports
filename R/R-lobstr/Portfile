@@ -10,9 +10,10 @@ license             MIT
 description         Visualize R data structures with trees
 long_description    {*}${description}
 homepage            https://lobstr.r-lib.org
-checksums           rmd160  bd3a57734ef94359b4ac46fad25ea27ca7693dce \
-                    sha256  c17f2e756ee2879f81f9570f319387913b287edd7d9ebcbd7472e99a98b783a2 \
-                    size    126014
+checksums           rmd160  c7c5b10f570f14a7e602330d55c1fc9a11fcc1ed \
+                    sha256  032d5894014778dcc6e2af24449265c297bf11b96f3c6437025756c013a64e08 \
+                    size    125995
+github.tarball_from archive
 
 depends_lib-append  port:R-cpp11 \
                     port:R-crayon \

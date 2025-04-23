@@ -5,16 +5,17 @@ PortGroup           R 1.0
 
 R.setup             github const-ae ggsignif 0.6.4
 revision            3
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
-description         Significance brackets for ggplot2
+description         Significance brackets for R-ggplot2
 long_description    {*}${description}
 homepage            https://const-ae.github.io/ggsignif
-checksums           rmd160  b08755c637cfaceba3161b0626ea68dce4451c57 \
-                    sha256  daef69fb92ef040295edf5b7ae9e25c081ac3f066bf4d983889fbb1cfd06e9ae \
-                    size    1057468
+checksums           rmd160  a83ebc8e9e5297a7d53556524680c177c4e130ca \
+                    sha256  b93bd882a16912845cfaf45a131774ed0d43e832c6836994bc04c939d0e1a510 \
+                    size    1057405
+github.tarball_from archive
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-ggplot2
 

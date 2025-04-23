@@ -8,12 +8,14 @@ revision            3
 categories-append   devel
 maintainers         nomaintainer
 license             MIT
-description         Application directories: determine where to save data, caches and logs.
+description         Application directories: determine where to save data, \
+                    caches and logs.
 long_description    {*}${description}
 homepage            https://rappdirs.r-lib.org
-checksums           rmd160  d0e773a61e0822e1d51d0499f857db3dfa399527 \
-                    sha256  c5bd00a59d0dc6d9ecc416ce1f6532baf8379644ac0408d6c1dfdec117c57cbe \
-                    size    14168
+checksums           rmd160  a7cf5299d370ddc3ae88ee5169cd5525ebcd5dbb \
+                    sha256  8b845a4a12a403fe8b20bfb0125aef19e8baddd5b1f6664e4d1c013c712ff752 \
+                    size    14153
+github.tarball_from archive
 
 depends_test-append port:R-covr \
                     port:R-roxygen2 \

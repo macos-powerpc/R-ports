@@ -6,16 +6,17 @@ PortGroup           R 1.0
 R.setup             github xoopR dictionar6 0.1.3 v
 revision            3
 categories-append   devel
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         R6 dictionary interface
 long_description    {*}${description}
 homepage            https://xoopR.github.io/dictionar6
-checksums           rmd160  00f64c20b9c22c5eed35530e8901208f6dbfe503 \
-                    sha256  366395e7edc305e53a97036f14a5ca85f0d70e22382c5bd7858c2af95a00dc7a \
-                    size    87677
+checksums           rmd160  8fe5bc35f8c7dd7c5789846b04061c55409490e3 \
+                    sha256  6841f1a777274d93dc46da0ba085a56764996405be15b4ae20dc450dc45acb3c \
+                    size    87654
+github.tarball_from archive
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-ooplah \
                     port:R-R6

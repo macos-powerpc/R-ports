@@ -5,15 +5,16 @@ PortGroup           R 1.0
 
 R.setup             github yihui testit 0.13 v
 revision            3
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Simple package for testing R packages
 long_description    {*}${description}
-checksums           rmd160  6d9b429c7495f2f48ba9da37a09e31712fb97947 \
-                    sha256  19878d341ff2641f59c35d45628a5136e6b155506782294ef7c882f7d47d18a4 \
-                    size    11916
+checksums           rmd160  10bc4da269cedc534de0ff81efe7dd14444b9128 \
+                    sha256  e12cb147fb5d9b46bec67aca9a5b97d07b63c1f8bc1680202848fab5950d03ef \
+                    size    11910
+github.tarball_from archive
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_test-append port:R-covr \
                     port:R-rstudioapi

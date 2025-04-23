@@ -5,17 +5,18 @@ PortGroup           R 1.0
 
 R.setup             github tidyverse modelr 0.1.11 v
 revision            3
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Modelling functions that work with the pipe
 long_description    Functions for modelling that help you seamlessly integrate modelling \
                     into a pipeline of data manipulation and visualisation.
 homepage            https://modelr.tidyverse.org
-checksums           rmd160  2461015086b7c7baedae4db9c75e1aa3ce321b82 \
-                    sha256  93d10fdeb1c0d7ccb8b8602da0486dec4e74eea7f9feb4487563fe15c0a7f0f5 \
-                    size    360658
+checksums           rmd160  97b6596dc305478bce51c433e642b38d668791d9 \
+                    sha256  3410d354796fa12cde1875dce265225f6c5d5bc7edb4bef18d090e4393b81f1e \
+                    size    360604
+github.tarball_from archive
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-broom \
                     port:R-magrittr \
