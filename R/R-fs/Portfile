@@ -9,8 +9,8 @@ PortGroup           R 1.0
 legacysupport.newest_darwin_requires_legacy 14
 
 # Revert to GitHub once updated there.
-R.setup             cran r-lib fs 1.6.5
-revision            1
+R.setup             cran r-lib fs 1.6.6
+revision            0
 # libuv version used:
 set uv_ver          1.44.2
 categories-append   sysutils
@@ -22,9 +22,9 @@ long_description    fs provides a cross-platform, uniform interface to file syst
                     which brings the benefit of extensive real-world use and rigorous cross-platform testing. \
                     The name, and some of the interface, is partially inspired by Rust’s fs module.
 homepage            https://fs.r-lib.org
-checksums           rmd160  3939e37843360e980cbccefe7b81f50ba1a4ae06 \
-                    sha256  0e3b4d40215bee77b52d158a2e4967f4408721576aaf39bc6a77024522c70b34 \
-                    size    1200455
+checksums           rmd160  43f404c641631d55491087b879299f973941ff92 \
+                    sha256  57d3a0844e2fec28e6fe9901d18e07d32a437dfe43c4b547757eb07360f5850a \
+                    size    1201011
 
 patch.pre_args-replace  -p0 -p1
 patchfiles          0001-fs-fix-libuv-for-10.7.patch \
