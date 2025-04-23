@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran tidymodels recipes 1.2.1
-revision            1
+R.setup             cran tidymodels recipes 1.3.0
+revision            0
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Preprocessing and feature engineering steps for modelling
 long_description    {*}${description}
 homepage            https://recipes.tidymodels.org
-checksums           rmd160  a558c4d04b7200c7267b767e26eeebc06a23829d \
-                    sha256  464da24f48e411dee59737473cf04da276bbebc6d8b3f1e9da7db452fa1a1e43 \
-                    size    872346
+checksums           rmd160  c347ef3b06902604a34c6086e161bcfd674d6296 \
+                    sha256  d4b76f1640993eb12b9e712e3b1323a48063ffc705cd22e6754d6b8cedf12dd3 \
+                    size    889723
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
