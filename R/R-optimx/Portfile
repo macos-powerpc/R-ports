@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran nashjc optimx 2024-12.2
-revision            1
+R.setup             cran nashjc optimx 2025-4.9
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             GPL-2
 description         Expanded replacement and extension of the optim function
 long_description    {*}${description}
 homepage            https://github.com/nashjc/optimx
-checksums           rmd160  ebd1bc3905aff8e08a9eefcad35627e6268581e5 \
-                    sha256  b2a5dda261ba556da34223add599ea38044174fe311c5751ebaefe0817ba2a2f \
-                    size    2259525
+checksums           rmd160  a4587d9ce8c0a1b2b5a8e878c833061f640dec2c \
+                    sha256  10b68ab371e3f29fd0c2f4c3b8569ce1f10a99a6bef84a7c4161431c631d1854 \
+                    size    2259553
 supported_archs     noarch
 
 depends_lib-append  port:R-nloptr \
