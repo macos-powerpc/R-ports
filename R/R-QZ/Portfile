@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran QZ 0.2-3
-revision            2
+R.setup             cran wccsnow QZ 0.2-4
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MPL-2
 description         Generalized eigenvalues and QZ decomposition
 long_description    {*}${description}
-checksums           rmd160  d2dc5b33d910a3e44b5d3fc48ecac30a7d10acd4 \
-                    sha256  ad74d7877d776b1e445a1188a349bb62cfbf5041b48c46ace4258cedd1bd5f93 \
-                    size    248957
+checksums           rmd160  973f005fa74a850b292a43f73923f6a5f59215d3 \
+                    sha256  0713ba76c0b8cda66de2fbebc54f9829366736bcf55f1d3af5012dd1d8bdfab3 \
+                    size    246083
 
 compilers.setup     require_fortran
 
