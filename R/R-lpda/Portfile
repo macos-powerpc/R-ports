@@ -1,0 +1,26 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+PortGroup           R 1.0
+
+R.setup             cran mj.nueda lpda 1.2.0
+revision            0
+categories-append   math
+platforms           {darwin any}
+maintainers         nomaintainer
+license             GPL-2+
+description         Linear Programming Discriminant Analysis
+long_description    Classification method obtained through linear programming.
+checksums           rmd160  4ef115d927ab0701658d262d49488b538ac61f1e \
+                    sha256  c70e225d5f5098a3d7b2927d3cf6a6664f5059f24ff1a63351b656763e241042 \
+                    size    414723
+supported_archs     noarch
+
+depends_lib-append  port:R-multiway \
+                    port:R-Rglpk
+
+depends_test-append port:R-knitr \
+                    port:R-rmarkdown \
+                    port:R-testthat
+
+test.run            yes
