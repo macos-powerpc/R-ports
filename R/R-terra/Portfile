@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran rspatial terra 1.8-21
-revision            1
+R.setup             cran rspatial terra 1.8-42
+revision            0
 categories-append   gis
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3+
 description         Spatial data analysis
 long_description    {*}${description}
 homepage            https://rspatial.org/terra
-checksums           rmd160  57da75141ae0c3a80a3d6782c8457bcda1278a74 \
-                    sha256  6a55ac8ef3f428f540be102e3b220392c41a325753528894d0346218c2551d7f \
-                    size    1015212
+checksums           rmd160  dacf69b75fe55bfa233ba758ec489554c63b8b10 \
+                    sha256  d4590ce7cbc9421cc4008a487a0f66f7c326b6420978d5361b9481fba4d4342e \
+                    size    1030778
 
 set proj_v          proj9
 
