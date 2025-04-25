@@ -5,16 +5,17 @@ PortGroup           openssl 1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran rstudio websocket 1.4.2 v
-revision            1
+R.setup             cran rstudio websocket 1.4.4
+revision            0
 categories-append   devel net
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         WebSocket client library
-long_description    {*}${description}
-checksums           rmd160  543b28f62f0f3c9b66ff6d171364586a885d3b68 \
-                    sha256  9c686a513bce5b15faf51b8654349252108b59add1a02b992e35ce793d571310 \
-                    size    201780
+long_description    ${name} provides a WebSocket client interface for R.
+homepage            https://github.com/rstudio/websocket
+checksums           rmd160  7e2d1c38413d149cb029b49f90ec376c4d305144 \
+                    sha256  9fcd00271e461ec9deda4aef83155f9f8c9125490123fc11121df48e11f4142e \
+                    size    201849
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
