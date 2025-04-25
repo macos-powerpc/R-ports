@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran larmarange broom.helpers 1.19.0
-revision            1
+R.setup             cran larmarange broom.helpers 1.21.0
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3+
 description         Helpers for model coefficients tibbles
 long_description    {*}${description}
 homepage            https://larmarange.github.io/broom.helpers
-checksums           rmd160  6cebe9aeae0afb7c2fa71d694f304db3216edcdd \
-                    sha256  c24b99de71e9f4a1bcdff9f9a8b0a97f09ea9f7aa1166934ca8c54f4f467443a \
-                    size    202614
+checksums           rmd160  8c4471496f9ecb9045115c24adba0ca3d20d1c1e \
+                    sha256  4afe0cc299df4f4eadd85780bc713cd05e45a3ca1c01e516526b72374c987fac \
+                    size    207172
 supported_archs     noarch
 
 depends_lib-append  port:R-broom \
@@ -26,4 +26,5 @@ depends_lib-append  port:R-broom \
                     port:R-rlang \
                     port:R-stringr \
                     port:R-tibble \
-                    port:R-tidyr
+                    port:R-tidyr \
+                    port:R-tidyselect
