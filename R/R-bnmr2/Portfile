@@ -6,6 +6,7 @@ PortGroup           R 1.0
 R.setup             github sjl-sjtu bnmr2 8e98922f408ef24c88301265d5757d3beb280d2a
 version             0.3.1
 revision            2
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL
 description         R package to conduct causal estimation between exposure and outcome on GWAS data
@@ -15,7 +16,6 @@ checksums           rmd160  3edf75f03ac42cfc6ea47f6ff3eb3c63891e4d96 \
                     size    474375
 github.tarball_from archive
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-AER \
                     port:R-bnlearn \

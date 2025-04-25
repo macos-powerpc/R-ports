@@ -5,6 +5,7 @@ PortGroup           R 1.0
 
 R.setup             github hypertidy crsmeta 0.3.0 v
 revision            3
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
 description         Extract coordinate system metadata
@@ -13,8 +14,8 @@ homepage            hypertidy.github.io/crsmeta
 checksums           rmd160  c1c59cae65b5eff301fb827f5a318948ad423075 \
                     sha256  fde8c0c16dc965f6b8931069ca65c574a338c785067d5a601f7a782a77b4677b \
                     size    78502
+github.tarball_from tarball
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_test-append port:R-spelling \
                     port:R-testthat

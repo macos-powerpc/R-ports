@@ -5,15 +5,16 @@ PortGroup           R 1.0
 
 R.setup             github jasonhilton ggfan 0.1.3 v
 revision            3
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+platforms           {darwin any}
+maintainers         nomaintainer
 license             GPL-2
 description         Summarise a distribution through colored intervals
 long_description    {*}${description}
 checksums           rmd160  c36d8e2a8aa2cf22f21de986f8069b9a760ef407 \
                     sha256  8bd27d1650ac01923887c68ddead97806798ac812c9706c01c9b007210bd936f \
                     size    7028150
+github.tarball_from tarball
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-colorspace \
                     port:R-dplyr \

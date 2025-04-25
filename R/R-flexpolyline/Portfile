@@ -13,6 +13,7 @@ homepage            https://munterfi.github.io/flexpolyline
 checksums           rmd160  9b7d06027e8846a53105c7c124eb6487f70e954d \
                     sha256  aa3dcb0f7ea0a5db339d443c0fc430117d37f58147ea2b9021737cc4d4779f55 \
                     size    815419
+github.tarball_from tarball
 
 depends_lib-append  port:R-Rcpp \
                     port:R-sf

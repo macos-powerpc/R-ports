@@ -9,6 +9,7 @@ set R.package       rkeops
 version             2.1.0
 revision            2
 categories-append   math
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Kernel Operations on GPU or CPU, with autodiff, without memory overflows
@@ -17,8 +18,8 @@ homepage            https://www.kernel-operations.io
 checksums           rmd160  0cab23db9a016a641fdbf465c007cdd017fc2a9e \
                     sha256  f128275fa966d7c20970f9782bc36c84ceaf196a369ebb42451bf8697ed02341 \
                     size    4227936
+github.tarball_from tarball
 supported_archs     noarch
-platforms           {darwin any}
 
 worksrcdir          ${worksrcpath}/rkeops
 

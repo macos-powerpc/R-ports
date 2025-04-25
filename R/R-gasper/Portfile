@@ -15,6 +15,7 @@ long_description    Provides the standard operations for signal processing on gr
 checksums           rmd160  8823c66550a8bc4263be58a2c27cb095f0bd7737 \
                     sha256  043c6b582e8c675d1a0d53ad369ec51b846f2e7ee036262cd8385ab4bd135276 \
                     size    12981129
+github.tarball_from tarball
 
 depends_lib-append  port:R-curl \
                     port:R-ggplot2 \

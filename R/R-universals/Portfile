@@ -6,6 +6,7 @@ PortGroup           R 1.0
 R.setup             github poissonconsulting universals 0.0.5.9000 v
 revision            2
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         S3 generics for Bayesian analyses
@@ -14,8 +15,8 @@ homepage            https://poissonconsulting.github.io/universals
 checksums           rmd160  57b3101241bf14a79e29732e0a38c3a4169242a5 \
                     sha256  a91ffb5a85ba94ee7bc62e68ab7265dfdbbef6f4d09e62a60b9166e512945ebb \
                     size    55811
+github.tarball_from tarball
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_test-append port:R-covr \
                     port:R-nlist \

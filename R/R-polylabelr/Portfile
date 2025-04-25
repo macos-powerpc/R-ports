@@ -15,6 +15,7 @@ homepage            https://jolars.github.io/polylabelr
 checksums           rmd160  2319b498a1dcccdbcbfd801cb922ff5308bbb351 \
                     sha256  f4dde8d310cdf80d05340c8ef9ba0ade36fca4c6f6e68c931e8f26a34a8531de \
                     size    29433
+github.tarball_from tarball
 
 depends_lib-append  port:R-Rcpp
 

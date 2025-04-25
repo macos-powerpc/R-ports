@@ -13,6 +13,7 @@ long_description    {*}${description}
 checksums           rmd160  fbaae3d1ee7f2455b1d1d2c9516570883b24bdab \
                     sha256  c69259bb7ed99b0542b5c5ecc28bc17e4fba954ded41cf5ff91f75b500d5ea21 \
                     size    903838
+github.tarball_from tarball
 
 depends_lib-append  port:R-future \
                     port:R-future.apply \

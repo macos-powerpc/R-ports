@@ -12,6 +12,7 @@ long_description    {*}${description}
 checksums           rmd160  59f6e2a8bca484dfb87ca300782b9d03864e59d8 \
                     sha256  2806bd9cca8d420acbad8b0d84facbcfb2dac9c0cf0c98e6d8b8731a2baab42a \
                     size    19721
+github.tarball_from tarball
 
 depends_lib-append  port:R-Rcpp \
                     port:R-ResistorArray

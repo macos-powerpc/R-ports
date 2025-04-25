@@ -7,12 +7,14 @@ R.setup             github tmsalab rrum 0.2.1
 revision            2
 maintainers         nomaintainer
 license             GPL-2+
-description         Bayesian estimation of the reduced reparameterized unified model with Gibbs sampling
+description         Bayesian estimation of the reduced reparameterized unified model \
+                    with Gibbs sampling
 long_description    {*}${description}
 homepage            https://tmsalab.github.io/rrum
 checksums           rmd160  efba8282b8b65c5e92d77dc935410b73da55f9f6 \
                     sha256  bfa8170eee6874f4aad2da19597697c348baa2319bd22de471c865a4e27c1809 \
                     size    14284
+github.tarball_from tarball
 
 depends_lib-append  port:R-Rcpp \
                     port:R-RcppArmadillo \

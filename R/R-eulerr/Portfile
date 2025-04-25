@@ -14,6 +14,7 @@ homepage            https://jolars.github.io/eulerr
 checksums           rmd160  9e86593d91e3236af2424a718be51def2ede436d \
                     sha256  398c3a18b18ca33115f1791d1505d293972faf9be28b4f8471f6012af4c9950e \
                     size    437395
+github.tarball_from tarball
 
 depends_lib-append  port:R-GenSA \
                     port:R-polyclip \

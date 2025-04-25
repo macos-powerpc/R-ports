@@ -14,6 +14,7 @@ homepage            https://calculus.guidotti.dev
 checksums           rmd160  c3f09e2ba5990eafd22d725bdbd1d1756d7e2e53 \
                     sha256  141053eef660e41fb8468e7d53ead9755fefcc0db1a9401fb96d789f24aeb4c9 \
                     size    104652
+github.tarball_from tarball
 
 depends_lib-append  port:R-Rcpp
 

@@ -12,6 +12,7 @@ long_description    {*}${description}
 checksums           rmd160  42f392d3b8352771983f20a16f99ec9d467e16ed \
                     sha256  b63225ab941bcbccb17fbdf48015076b75497ef7e937294ad065f23dc73097c3 \
                     size    377267
+github.tarball_from tarball
 
 depends_lib-append  port:R-BH \
                     port:R-circular \

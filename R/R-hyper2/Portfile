@@ -13,6 +13,7 @@ long_description    {*}${description}
 checksums           rmd160  b663f984a27776bb36d76ab581d48c985b5c5b04 \
                     sha256  c3f21691cbcf6c2c852670a6f4a2a9194a0b562acfc2f07de8fe72855472f8b8 \
                     size    1580779
+github.tarball_from tarball
 
 depends_lib-append  port:R-alabama \
                     port:R-calibrator \

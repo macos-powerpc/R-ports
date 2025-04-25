@@ -14,6 +14,7 @@ homepage            https://r-prof.github.io/winch
 checksums           rmd160  c3b10f598949b957814aa8cdf795d0f3f7f7fc5c \
                     sha256  3f651ed45bd5a7a4a940ae82b77c84671cc217b665b499fae5f42a90c4ef9898 \
                     size    672497
+github.tarball_from tarball
 
 depends_lib-append  port:R-lifecycle \
                     port:R-procmaps

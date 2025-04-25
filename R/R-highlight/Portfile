@@ -15,5 +15,6 @@ long_description    Syntax highlighter for R code based on the results of the R 
 checksums           rmd160  c5167340d34d9b756cababb3d6b7ec3fce4ceaad \
                     sha256  c66a9d389d190176af6ea87b9fb69cf97aabd0018d5ea427f24effd5d20c6ca4 \
                     size    353117
+github.tarball_from tarball
 
 test.run            yes

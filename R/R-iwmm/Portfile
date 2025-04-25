@@ -15,6 +15,7 @@ long_description    ${name} provides functions for adaptive importance sampling.
 checksums           rmd160  ff607d7e2900f7a34772bb39c9c9c61568f2a3f4 \
                     sha256  ec0dbe57dbb1765ef39be28a84f1f256727f72453d5083a94ef11117660f32f7 \
                     size    333821
+github.tarball_from tarball
 supported_archs     noarch
 
 depends_lib-append  port:R-checkmate \

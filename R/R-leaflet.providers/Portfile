@@ -5,6 +5,7 @@ PortGroup           R 1.0
 
 R.setup             github rstudio leaflet.providers 2.0.0 v
 revision            2
+platforms           {darwin any}
 maintainers         nomaintainer
 license             BSD
 description         Leaflet providers
@@ -13,8 +14,8 @@ homepage            https://rstudio.github.io/leaflet.providers
 checksums           rmd160  2dd5af47935f6193f72e2cfa19d64138c74e22b6 \
                     sha256  7c5002bfb4a421779f220de5486b0144e0073b8262db92af0fe42449e8a9094f \
                     size    38953
+github.tarball_from tarball
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-htmltools
 

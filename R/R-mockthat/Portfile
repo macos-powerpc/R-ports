@@ -6,6 +6,7 @@ PortGroup           R 1.0
 R.setup             github nbenn mockthat 0.2.8 v
 revision            3
 categories-append   devel
+platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Function mocking for unit testing
@@ -14,8 +15,8 @@ homepage            https://nbenn.github.io/mockthat
 checksums           rmd160  70aba5e74659cdc650a6a55cf5627c00f3f7a2b3 \
                     sha256  fd38d5dfd1824eeab4b32130095020f41e51db713b01a74dee36effda487f870 \
                     size    15985
+github.tarball_from tarball
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-rlang
 

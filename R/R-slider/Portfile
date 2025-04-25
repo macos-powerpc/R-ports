@@ -13,6 +13,7 @@ homepage            https://slider.r-lib.org
 checksums           rmd160  d5c83462071edafd18b735bd6dfb1a6daae21dae \
                     sha256  84b621b47adafcbe920d05f6a061f3d1f86130c16a6b329dad86c859213ba308 \
                     size    109439
+github.tarball_from tarball
 
 depends_lib-append  port:R-cli \
                     port:R-rlang \

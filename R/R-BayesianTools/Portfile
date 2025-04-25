@@ -13,6 +13,7 @@ long_description    {*}${description}
 checksums           rmd160  1efbbc71d3894b0576886a71a54d98defc7c4203 \
                     sha256  ac16a87958e01cea36caec4c363b0f85c0fe969e7655678c454a2d1edd99adfb \
                     size    1634802
+github.tarball_from tarball
 
 worksrcdir          ${worksrcpath}/BayesianTools
 

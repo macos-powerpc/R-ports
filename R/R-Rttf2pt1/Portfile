@@ -12,5 +12,6 @@ long_description    {*}${description}
 checksums           rmd160  d73a2c46d0eeecd1a4d0031b5dfb7748ea9a0b89 \
                     sha256  070bc62d5104325e3c8d80f687bec525ca70941393376462def7e509c01f68c0 \
                     size    217964
+github.tarball_from tarball
 
 test.run            yes

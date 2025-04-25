@@ -18,6 +18,7 @@ homepage            https://readr.tidyverse.org
 checksums           rmd160  47b3997ca7731cc510866ae5f7ac4dad3e8ff5a7 \
                     sha256  79d287737e97e6055852b2a4f3a9ad41ebb1fabc2a7723bf9213f5d1b808c83e \
                     size    332274
+github.tarball_from tarball
 
 depends_lib-append  port:R-cli \
                     port:R-clipr \

@@ -17,6 +17,7 @@ long_description    Fitting Bayesian multiple and mixed-effect regression models
 checksums           rmd160  29eea195d0e4db357ed19e7b36bb1bfce03702ac \
                     sha256  de6807ad8f4c2045be72c94cbcf1c24472fe88fd5a8f234de0ac1fb40720675f \
                     size    255497
+github.tarball_from tarball
 
 depends_lib-append  port:R-BH \
                     port:R-haven \

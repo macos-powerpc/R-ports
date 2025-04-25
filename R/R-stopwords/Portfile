@@ -6,6 +6,7 @@ PortGroup           R 1.0
 R.setup             github quanteda stopwords 2.3 v
 revision            3
 categories-append   textproc
+platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Multilingual stopword lists
@@ -14,8 +15,8 @@ homepage            https://quanteda.io
 checksums           rmd160  c39ed70e5c3cd15ea0d7f258d2c440df520ee16b \
                     sha256  7ef180a9a53cb00fec985f91311a0de7b11af829aedda0f014fdd8d7d371afe2 \
                     size    282685
+github.tarball_from tarball
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-ISOcodes
 

@@ -13,6 +13,7 @@ homepage            https://genieclust.gagolewski.com
 checksums           rmd160  6b2a6dade2af51871c31ff4708f21b5380a70fbe \
                     sha256  3c50980ff01b5bd4b34dccf6a9553567b1b19be73463ff9831281a3842348204 \
                     size    30610
+github.tarball_from tarball
 
 depends_lib-append  port:R-genieclust \
                     port:R-Rcpp

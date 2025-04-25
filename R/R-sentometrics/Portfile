@@ -14,6 +14,7 @@ homepage            https://sentometrics-research.com/sentometrics
 checksums           rmd160  a3cd4ca5d1c0dfc74e145c250cccabe68fb3647b \
                     sha256  33bae3efc8af96ee0367681726c3944f571cc63a01c2a921d797946e2e679ace \
                     size    16386087
+github.tarball_from tarball
 
 depends_lib-append  port:R-caret \
                     port:R-data.table \

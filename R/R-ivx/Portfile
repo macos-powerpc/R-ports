@@ -14,6 +14,7 @@ homepage            https://kvasilopoulos.github.io/ivx
 checksums           rmd160  0a356afdcb94e1f09f69edf5c63bf9a16cca0015 \
                     sha256  7a03ea9c9a1b64085441b9b26567d2ab5d388b7c64a7c0319aed5ef62d896641 \
                     size    1593427
+github.tarball_from tarball
 
 depends_lib-append  port:R-Rcpp \
                     port:R-RcppArmadillo

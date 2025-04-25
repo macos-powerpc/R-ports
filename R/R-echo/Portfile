@@ -6,16 +6,18 @@ PortGroup           R 1.0
 R.setup             github jmbarbone echo 0.1.0 v
 revision            2
 categories-append   sysutils
+platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
-description         Capture code evaluations and script executions by expressions, outputs and condition calls for logging
+description         Capture code evaluations and script executions by expressions, \
+                    outputs and condition calls for logging
 long_description    {*}${description}
 homepage            https://jmbarbone.github.io/echo
 checksums           rmd160  bcd5a614b49b4d9dd7ecbb70d3b33b139aaaff77 \
                     sha256  9b61f330a9d9cc1968cb6f1e8321d3f42cbc5b596b7d059b7672cb59305f9599 \
                     size    8119
+github.tarball_from tarball
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_test-append port:R-covr \
                     port:R-spelling \

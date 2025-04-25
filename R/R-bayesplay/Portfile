@@ -6,6 +6,7 @@ PortGroup           R 1.0
 R.setup             github bayesplay bayesplay 0.9.3 v
 revision            3
 categories-append   math
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Bayes factor playground
@@ -14,8 +15,8 @@ homepage            https://bayesplay.github.io/bayesplay
 checksums           rmd160  7c09401de1ad5bc5c126d444d1ad97e0a5f24eed \
                     sha256  459136ee93a3559325c17b3937cf3eb0b2aad3d1581859b6d5b98934b104c622 \
                     size    65094
+github.tarball_from tarball
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-gginnards
 

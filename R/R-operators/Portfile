@@ -5,6 +5,7 @@ PortGroup           R 1.0
 
 R.setup             github romainfrancois operators 0.1-8 v
 revision            3
+platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Additional binary operators
@@ -12,8 +13,8 @@ long_description    {*}${description}
 checksums           rmd160  f47e1fca91c05aa81b3a9fbdc351a46f7a126c1f \
                     sha256  e354a05b2dd213e692b54a808e3c5e62873e8af6ba8e93e3aab1a0482e58f749 \
                     size    11143
+github.tarball_from tarball
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_test-append port:R-testthat
 

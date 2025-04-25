@@ -15,6 +15,7 @@ homepage            https://www.nopredict.com/packages/tsmethods
 checksums           rmd160  75b34164388d85feeebba1a967cd964688d58869 \
                     sha256  57247cc7f80264e5b07def87d2dbdeef19583422cc1697116e58899792701dbf \
                     size    712479
+github.tarball_from tarball
 
 depends_lib-append  port:R-xts \
                     port:R-zoo

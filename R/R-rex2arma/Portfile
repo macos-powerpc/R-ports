@@ -15,6 +15,7 @@ long_description    Automatic conversion of basic R code (linear algebra and ali
 checksums           rmd160  7fcfb5904a4d031c636a06b1bc1892b2462d9842 \
                     sha256  bc021258d378dcd7655ceda4ca7623fd7a02061c231c9f2e4468be2ce1dd8cac \
                     size    31007
+github.tarball_from tarball
 
 depends_test-append port:R-expm \
                     port:R-Rcpp \

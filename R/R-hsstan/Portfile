@@ -12,6 +12,7 @@ long_description    {*}${description}
 checksums           rmd160  873250a71ba8fe23029f2070dda1e6dded5d63c3 \
                     sha256  65756e128738a6061e4a4aa3b2a1b97f78ce508266624563b69597281348dc1c \
                     size    221023
+github.tarball_from tarball
 
 depends_lib-append  port:R-BH \
                     port:R-ggplot2 \

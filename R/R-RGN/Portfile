@@ -13,6 +13,7 @@ long_description    {*}${description}
 checksums           rmd160  6a5d9b2ed531ba21193c82448e4eb7042a101fa2 \
                     sha256  73eb32258afd644f902584588851e06cf31ea4fece6e6408d76a43281895b704 \
                     size    59817
+github.tarball_from tarball
 
 compilers.setup     require_fortran
 

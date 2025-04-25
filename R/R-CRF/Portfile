@@ -13,6 +13,7 @@ long_description    {*}${description}
 checksums           rmd160  ce20b29813e5e1f1c3f6a414b47b6b26dbe931c1 \
                     sha256  07cc01573d016bd676de469eefa44110baec64c609921ad66ccc126658e69fec \
                     size    166336
+github.tarball_from tarball
 
 depends_test-append port:R-knitr \
                     port:R-Rglpk \

@@ -6,6 +6,7 @@ PortGroup           R 1.0
 R.setup             github jakobdambon varycoef 0.3.4 v
 revision            2
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2
 description         Model spatially varying coefficients
@@ -13,8 +14,8 @@ long_description    {*}${description}
 checksums           rmd160  5411fd8e01e5048e5c67c6febbc4377b9acef582 \
                     sha256  f6abcc153d2bc500a7effdbe5151c7ab947b569bbc97c034e43da02057cd0041 \
                     size    1451084
+github.tarball_from tarball
 supported_archs     noarch
-platforms           {darwin any}
 
 worksrcdir          ${worksrcpath}/R-pkg
 

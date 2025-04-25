@@ -5,6 +5,7 @@ PortGroup           R 1.0
 
 R.setup             github r-quantities constants 1.0.1 v
 revision            2
+platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Reference on constants, units and uncertainty
@@ -13,8 +14,8 @@ homepage            https://r-quantities.github.io/constants
 checksums           rmd160  03c20e2726ad0481b66e37661ae5fea6554b0324 \
                     sha256  25de28203bae933a168aa004930510d95818eccc7ae543b6d71c1830b93f9538 \
                     size    57935
+github.tarball_from tarball
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_test-append port:R-errors \
                     port:R-quantities \

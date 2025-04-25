@@ -13,6 +13,7 @@ long_description    {*}${description}
 checksums           rmd160  f28da8b7f4ac64f724c5b7238fdc1854e97e0228 \
                     sha256  f0be13b9402309aee791b501ca8b915479b6c2011791ca250ed5e7d5eb76dea0 \
                     size    31845297
+github.tarball_from tarball
 
 depends_lib-append  port:R-maxLik \
                     port:R-numDeriv \

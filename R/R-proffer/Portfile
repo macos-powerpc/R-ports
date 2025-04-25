@@ -6,6 +6,7 @@ PortGroup           R 1.0
 R.setup             github r-prof proffer 0.1.6
 revision            2
 categories-append   devel
+platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Profile R code and visualize with Pprof
@@ -14,8 +15,8 @@ homepage            https://r-prof.github.io/proffer
 checksums           rmd160  a541c2ef50fd42b2860dea2ca0dfabd71331ee69 \
                     sha256  aa10ec004c066baed527b7aa3eb4a95fa66b8c19a57098b352ada3e4feb7978d \
                     size    10854520
+github.tarball_from tarball
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-cli \
                     port:R-parallelly \

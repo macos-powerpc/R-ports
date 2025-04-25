@@ -5,6 +5,7 @@ PortGroup           R 1.0
 
 R.setup             github hafen housingData 0.3.0 v
 revision            3
+platforms           {darwin any}
 maintainers         nomaintainer
 license             public-domain
 description         U.S. housing data from 2008 to 2016
@@ -12,7 +13,7 @@ long_description    {*}${description}
 checksums           rmd160  2392bdec411eb6c07c37481d4108dce9fc3d8074 \
                     sha256  8e6a4275b92e6f88e381ee4b7bfd4e2071607071159fda603f024275cf58b39d \
                     size    1528003
+github.tarball_from tarball
 supported_archs     noarch
-platforms           {darwin any}
 
 test.run            yes

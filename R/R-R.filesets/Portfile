@@ -6,6 +6,7 @@ PortGroup           R 1.0
 R.setup             github HenrikBengtsson R.filesets 2.15.1
 revision            2
 categories-append   sysutils
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             LGPL-2.1+
 description         Easy handling of and access to files organized in structured directories
@@ -13,8 +14,8 @@ long_description    {*}${description}
 checksums           rmd160  094fcd26f2fdfd6d29a69e7855cf821ef9432405 \
                     sha256  9f90babd7621937422d8fa582aa2023586438d59eb267362dd6dd7b316598cc2 \
                     size    112316
+github.tarball_from tarball
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-digest \
                     port:R-R.cache \

@@ -6,6 +6,7 @@ PortGroup           R 1.0
 R.setup             github jeksterslab semmcci 1.1.4 v
 revision            1
 categories-append   math
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Monte Carlo confidence intervals in structural equation modelling
@@ -14,6 +15,7 @@ homepage            https://jeksterslab.github.io/semmcci
 checksums           rmd160  c69ed4ca821a6cfa7ad971f420e01002ce277f72 \
                     sha256  0e25d346d86b06df370c71aa62e496c72cf0e8505decb75558cdef65d26e854a \
                     size    1612318
+github.tarball_from tarball
 supported_archs     noarch
 
 depends_lib-append  port:R-lavaan \

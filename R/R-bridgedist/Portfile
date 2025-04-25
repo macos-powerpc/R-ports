@@ -6,6 +6,7 @@ PortGroup           R 1.0
 R.setup             github swihart bridgedist 0.1.2 v
 revision            2
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Implementation of the Bridge distribution with logit-link
@@ -13,8 +14,8 @@ long_description    {*}${description}
 checksums           rmd160  84a1244ed9783aa0dafa1199921e3d2f251cdadf \
                     sha256  3fafabbaa5cb4593c43ce6905562fed8901d90f7e1ea4463de7fa7b4a282cf30 \
                     size    6798
+github.tarball_from tarball
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_test-append port:R-ggplot2 \
                     port:R-knitr \

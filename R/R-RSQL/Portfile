@@ -6,6 +6,7 @@ PortGroup           R 1.0
 R.setup             github rOpenStats RSQL 0.2.2
 revision            2
 categories-append   databases
+platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Database-agnostic package to generate and process SQL queries in R
@@ -13,8 +14,8 @@ long_description    {*}${description}
 checksums           rmd160  59dd6b5442e06d830c04af280f3e789dc38b91ea \
                     sha256  253be173adabf5c229487e053a78c62efad670782ea9c070f5266172d99f11ba \
                     size    32651
+github.tarball_from tarball
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-DBI \
                     port:R-lgr \

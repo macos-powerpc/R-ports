@@ -5,6 +5,7 @@ PortGroup           R 1.0
 
 R.setup             github daattali shinyalert 3.1.0
 revision            1
+platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Easily create pretty pop-up messages (modals)
@@ -13,9 +14,8 @@ homepage            https://daattali.com/shiny/shinyalert-demo
 checksums           rmd160  3c3e13b45e19fd96301390d9ea1e94230322956e \
                     sha256  d4e19e16069412acbcbec3cb6f28794dc1f2264e79bae8c30b3382c96a3ef55f \
                     size    439121
-supported_archs     noarch
-platforms           {darwin any}
 github.tarball_from archive
+supported_archs     noarch
 
 depends_lib-append  port:R-htmltools \
                     port:R-shiny \

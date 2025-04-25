@@ -15,6 +15,7 @@ long_description    Provides functions to switch the BLAS/LAPACK optimized backe
 checksums           rmd160  5e07a59730fad4385a900de89e61b077951b78c2 \
                     sha256  81ce899913f0807e3ea41764ff2caffadc5e6f5b7740a749f0fe058a35eee7b4 \
                     size    11948
+github.tarball_from tarball
 
 depends_run-append  port:flexiblas
 

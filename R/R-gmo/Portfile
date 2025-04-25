@@ -14,6 +14,7 @@ long_description    {*}${description}
 checksums           rmd160  9249cf2737b19e2a172f6dd0a1be3d42c00a19ec \
                     sha256  fc8a5c7df4a0856a5d20def0eaccc69124ab1442c31738a2a7e0d19edd2a88ab \
                     size    93843
+github.tarball_from tarball
 
 depends_lib-append  port:R-lme4 \
                     port:R-loo \

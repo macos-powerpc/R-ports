@@ -6,6 +6,7 @@ PortGroup           R 1.0
 R.setup             github mayer79 splitTools 1.0.1
 revision            2
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Tools for data splitting
@@ -13,8 +14,8 @@ long_description    {*}${description}
 checksums           rmd160  0a89826316d09048d408bf8134874ed01b5adb55 \
                     sha256  36f08ea1ebf83d05d33b5cdfcf0112d2a69f779b957bb08499f82cccb8a441d9 \
                     size    91267
+github.tarball_from tarball
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_test-append port:R-knitr \
                     port:R-rmarkdown \

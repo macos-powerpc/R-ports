@@ -14,6 +14,7 @@ homepage            https://braunm.github.io/trustOptim
 checksums           rmd160  7c34b71c3729c9508180d3f2129f48cc9b738a75 \
                     sha256  0ab574ec6b0addad6b69c02eb5cd2d4153022be64b0ba348222c638034e1463d \
                     size    84765
+github.tarball_from tarball
 
 depends_lib-append  port:R-Rcpp \
                     port:R-RcppEigen

@@ -9,16 +9,17 @@ R.setup             github ggobi ggally 2.2.1 v
 set R.package       GGally
 revision            2
 categories-append   graphics
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+platforms           {darwin any}
+maintainers         nomaintainer
 license             GPL-2+
-description         Extension to ggplot2
+description         Extension to R-ggplot2
 long_description    {*}${description}
 homepage            https://ggobi.github.io/ggally
 checksums           rmd160  474cfb802c8fc7516c2677dc7bd7627e862c5711 \
                     sha256  430d641bf2e6373635ca9e9545947c2290fcd0b788423e78428a8ef680bf2bad \
                     size    3272386
+github.tarball_from tarball
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-dplyr \
                     port:R-ggplot2 \

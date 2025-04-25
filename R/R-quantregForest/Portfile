@@ -13,6 +13,7 @@ long_description    {*}${description}
 checksums           rmd160  f2f7ab2bffdf22b80169970aaef83a3cd045f3ea \
                     sha256  f6692b793b795b1118f0f3de5526526bd96c9403521774cc5ac635abcce00a47 \
                     size    134040
+github.tarball_from tarball
 
 depends_lib-append  port:R-randomForest \
                     port:R-RColorBrewer

@@ -8,11 +8,13 @@ revision            2
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
-description         Fast generators and iterators for permutations, combinations, integer partitions and compositions
+description         Fast generators and iterators for permutations, combinations, \
+                    integer partitions and compositions
 long_description    {*}${description}
 checksums           rmd160  9ccc75ac6e2606819263edc541c071f4bb0b8076 \
                     sha256  a69891a6fb085ce698a4233fdb8e9fc8f124c305953a137eaedca445ae9d825d \
                     size    705046
+github.tarball_from tarball
 
 depends_lib-append  port:gmp \
                     port:R-gmp \

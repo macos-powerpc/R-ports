@@ -14,6 +14,7 @@ homepage            https://davisvaughan.github.io/warp
 checksums           rmd160  4491e201f39028d038547def2fd1e9b6096b2dc3 \
                     sha256  b12354b959564c951718f51d3fda0bab65a2d3ccab7388760c5d7e58d60e63c7 \
                     size    49292
+github.tarball_from tarball
 
 depends_test-append port:R-covr \
                     port:R-knitr \

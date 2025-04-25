@@ -6,6 +6,7 @@ PortGroup           R 1.0
 R.setup             github ThinkR-open lightparser 0.1.0 v
 revision            1
 categories-append   devel
+platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         From Rmarkdown and R-quarto files to R-tibble and back
@@ -16,7 +17,6 @@ checksums           rmd160  3378be32a52e16181246204f8fd9e78beb9877a6 \
                     size    22654
 github.tarball_from archive
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-knitr \
                     port:R-rlang \

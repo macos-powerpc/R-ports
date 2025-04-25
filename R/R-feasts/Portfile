@@ -14,6 +14,7 @@ homepage            https://feasts.tidyverts.org
 checksums           rmd160  c53ad0b6a4520e694eae3d47e21d5401f8d732f4 \
                     sha256  1996c491ae092d6cb172c6383793c1852e49462b0c30c2987e7dab6c687ba0e2 \
                     size    688498
+github.tarball_from tarball
 supported_archs     noarch
 
 depends_lib-append  port:R-dplyr \

@@ -13,6 +13,7 @@ long_description    {*}${description}
 checksums           rmd160  7efdd153afad58b8891239bbb3d8aa98c9adca92 \
                     sha256  dcc6bf5a758e26ea730254c92c789020ab52816dbee009f4d4bd08d04c2399d2 \
                     size    14815
+github.tarball_from tarball
 
 depends_lib-append  port:R-DistributionUtils \
                     port:R-mixtools \

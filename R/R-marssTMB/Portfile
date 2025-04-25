@@ -14,6 +14,7 @@ long_description    {*}${description}
 checksums           rmd160  740124aba1e8f2bbae9772c4a3e5e3f86e348a0d \
                     sha256  349ff03e6247e20062e3087af296285088475bfc9a34079241f9f248bcd09673 \
                     size    9960593
+github.tarball_from tarball
 
 depends_lib-append  port:R-MARSS \
                     port:R-TMB

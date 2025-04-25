@@ -13,6 +13,7 @@ long_description    {*}${description}
 checksums           rmd160  7fda0b5c063a608670ea263e98cf8c5e393dcb93 \
                     sha256  a159b5ba11c27ed8673ca40d2ead8590efa1d973b022972b6ac943b62699f7cd \
                     size    121236
+github.tarball_from tarball
 
 depends_test-append port:R-covr \
                     port:R-tinytest

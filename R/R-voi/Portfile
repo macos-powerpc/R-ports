@@ -16,6 +16,7 @@ homepage            https://chjackson.github.io/voi
 checksums           rmd160  148c1f67b318dc6d10ae9a416e8f6f57d3160b6b \
                     sha256  b0c9a14c53a0a3629deb07090a3153dfcdb807a76b5cd919d4b9794cd88e2a67 \
                     size    3552826
+github.tarball_from tarball
 supported_archs     noarch
 
 depends_lib-append  port:R-dbarts \

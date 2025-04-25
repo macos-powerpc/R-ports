@@ -14,6 +14,7 @@ homepage            https://r-prof.github.io/procmaps
 checksums           rmd160  9ba8087fcc041d2ab993e66cc5989f6806de8830 \
                     sha256  9ff74015f28f4f38315019e6ca834cc4fdf41dad071e56d3d43904f91d90aba0 \
                     size    55958
+github.tarball_from tarball
 
 depends_test-append port:R-covr \
                     port:R-testthat \

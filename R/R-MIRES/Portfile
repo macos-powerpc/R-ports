@@ -13,6 +13,7 @@ long_description    {*}${description}
 checksums           rmd160  ff12a2709ac235f2fec95aaf680b6152d206fc37 \
                     sha256  0acecde02cc7267382e4a3038b4db7ebc6bdb306e932c9df4a6a9cb8d25512bf \
                     size    147868
+github.tarball_from tarball
 
 depends_lib-append  port:R-BH \
                     port:R-cubature \

@@ -15,6 +15,7 @@ homepage            https://isciences.gitlab.io/exactextractr
 checksums           rmd160  e12a4e3f7cd2e30978006f8eee8bd7f281b873a1 \
                     sha256  290782fa5e5ff7bd9c14c11c2036a6d461d76e355bb41a06f003d77c32468e0f \
                     size    484022
+github.tarball_from tarball
 
 depends_lib-append  port:geos \
                     port:R-raster \

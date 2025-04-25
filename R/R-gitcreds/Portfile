@@ -6,6 +6,7 @@ PortGroup           R 1.0
 R.setup             github r-lib gitcreds 0.1.2 v
 revision            3
 categories-append   devel
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Query git credentials from R
@@ -14,8 +15,8 @@ homepage            https://gitcreds.r-lib.org
 checksums           rmd160  abc48330a515e7dcbde68045969970a104ba4de5 \
                     sha256  10d5a4051794ee34a3702b3ac23ec6d95d0a30d957dc066d26e716bbbb04c84f \
                     size    42843
+github.tarball_from tarball
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:git
 

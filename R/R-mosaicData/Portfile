@@ -5,6 +5,7 @@ PortGroup           R 1.0
 
 R.setup             github ProjectMOSAIC mosaicData 0.20.4 v
 revision            2
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Project MOSAIC data sets
@@ -12,8 +13,8 @@ long_description    {*}${description}
 checksums           rmd160  f71ec784b2c23b0aa7e3be7a7bd976d239b1e994 \
                     sha256  454ae2130bea5da579b36ed929b1ffbafa639a43d3896a74e33445e5d1518dc0 \
                     size    3494729
+github.tarball_from tarball
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_test-append port:R-dplyr \
                     port:R-ggformula \

@@ -14,6 +14,7 @@ homepage            https://davidchall.github.io/ggip
 checksums           rmd160  171cd7ec3ba6bf8ff6362bd27f8b23745b378460 \
                     sha256  18a0c09b3188e2fd72ebf8af2b2aced94f4768aee81da190102ebe1d8806b910 \
                     size    900610
+github.tarball_from tarball
 
 depends_lib-append  port:R-cli \
                     port:R-dplyr \

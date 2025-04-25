@@ -13,6 +13,7 @@ long_description    {*}${description}
 checksums           rmd160  3405e23766b3b3dd92223e1517285f56d6187738 \
                     sha256  0893097112c38102efbb80f013aa2d0b2631465fd4e759a9ceafac3b4505375f \
                     size    26466
+github.tarball_from tarball
 
 depends_lib-append  port:R-ellipsis \
                     port:R-glue \

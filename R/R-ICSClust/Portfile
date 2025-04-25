@@ -13,6 +13,7 @@ long_description    {*}${description}
 checksums           rmd160  56fdaa3214b4b8047189a494c53300382a1e1c29 \
                     sha256  37ca748f27120671c5fa20a8c0b09c1ff83667c8a590331d8411eac737598a48 \
                     size    328565
+github.tarball_from tarball
 
 depends_lib-append  port:R-fpc \
                     port:R-GGally \

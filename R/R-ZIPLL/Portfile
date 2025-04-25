@@ -13,6 +13,7 @@ long_description    {*}${description}
 checksums           rmd160  f253f89a51fb7911333de1f19a9348738c0e930f \
                     sha256  ee10fee73d4858b508039a95ef51005fc3f94d1395a6222af3013f4af3d4d185 \
                     size    47622
+github.tarball_from tarball
 
 # https://github.com/AnderWilson/ZIPLL/issues/1
 post-extract {

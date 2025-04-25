@@ -16,6 +16,7 @@ homepage            https://rundel.github.io/diffmatchpatch
 checksums           rmd160  018fb33244b731eccbd24901781c944979167611 \
                     sha256  395e99a2c9e7236dd89df84398a0626d1f1a54fe6b2beeb2de5538934f0a6cef \
                     size    42646
+github.tarball_from tarball
 
 depends_lib-append  port:R-cli \
                     port:R-Rcpp

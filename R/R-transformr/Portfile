@@ -13,6 +13,7 @@ long_description    {*}${description}
 checksums           rmd160  d195cd5306b03be35af7ae9dc84bc853b52b458c \
                     sha256  6c154d1b44340e7c7ac5977f622a3b160ee88323eef7ed7644af4454707f5aac \
                     size    1939923
+github.tarball_from tarball
 
 depends_lib-append  port:R-cpp11 \
                     port:R-lpSolve \

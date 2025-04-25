@@ -14,6 +14,7 @@ long_description    {*}${description}
 checksums           rmd160  616099dc3d222e94d6ca6698fe8b653f047f293c \
                     sha256  1b556e66f90b27bf36aec0abd4a5a3b7a95bed3f72465d3972d451400021303c \
                     size    127738
+github.tarball_from tarball
 
 depends_lib-append  port:R-filematrix \
                     port:R-fstcore \

@@ -15,6 +15,7 @@ homepage            https://matthewheun.github.io/matsbyname
 checksums           rmd160  9bec91db692af0e4652646a53c4efd7437120029 \
                     sha256  ee10773a7d3030f5829fdd7f4f20792c91da25128bde8671cb7e1091673dd11c \
                     size    11193858
+github.tarball_from tarball
 supported_archs     noarch
 
 depends_lib-append  port:R-assertthat \

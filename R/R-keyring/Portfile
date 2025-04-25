@@ -14,6 +14,7 @@ homepage            https://r-lib.github.io/keyring/index.html
 checksums           rmd160  fadc793deee736c30c37ea43138dc620a27a347b \
                     sha256  4f1aadfce944a17c99ea71cc3d36b03e4f3c5ec0e11192dbcf67670d245438bb \
                     size    49606
+github.tarball_from tarball
 
 depends_lib-append  port:R-askpass \
                     port:R-assertthat \

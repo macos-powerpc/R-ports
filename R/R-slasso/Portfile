@@ -13,6 +13,7 @@ long_description    {*}${description}
 checksums           rmd160  356fe0674322c463984b34304161669969fa61a5 \
                     sha256  85e629b57af3bc906f786076278ae33ac1be80b2bcf22d91d7d109eed71e83a0 \
                     size    926697
+github.tarball_from tarball
 
 depends_lib-append  port:R-cxxfunplus \
                     port:R-fda \

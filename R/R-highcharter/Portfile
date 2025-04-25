@@ -5,6 +5,7 @@ PortGroup           R 1.0
 
 R.setup             github jbkunst highcharter 0.9.4 v
 revision            3
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Wrapper for the Highcharts library
@@ -13,8 +14,8 @@ homepage            https://jkunst.com/highcharter
 checksums           rmd160  bec42999ecba67c5ce2bc9dffb089666068cd039 \
                     sha256  ed75c19b736e2c9615a21696516e1b16a54144df11f43726fff4486077dc69a7 \
                     size    17656289
+github.tarball_from tarball
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-assertthat \
                     port:R-broom \

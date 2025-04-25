@@ -5,7 +5,8 @@ PortGroup           R 1.0
 
 R.setup             github renkun-ken formattable 0.2.1 v
 revision            3
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+platforms           {darwin any}
+maintainers         nomaintainer
 license             MIT
 description         Create formattable data structures
 long_description    {*}${description}
@@ -13,8 +14,8 @@ homepage            https://renkun-ken.github.io/formattable
 checksums           rmd160  8df5a80957bc8ba91811bcdb6284fa645cadf3d3 \
                     sha256  36b71482930ce56f989a4b6c61bea6164cada882696cd9166940c5ccf5d358fe \
                     size    205998
+github.tarball_from tarball
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-htmltools \
                     port:R-htmlwidgets \

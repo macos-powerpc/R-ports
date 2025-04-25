@@ -7,6 +7,7 @@ R.setup             github talegari safer 7e08b0ba5cf783f7672c7ab0b994c31a7641c0
 version             0.2.2
 revision            2
 categories-append   crypto
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
 description         Encrypt and decrypt strings, R objects and files
@@ -15,8 +16,8 @@ homepage            https://talegari.github.io/safer
 checksums           rmd160  2488fdfb026f3b5ab2807757eab747f7972b46ea \
                     sha256  1a2211c3217b36a5210e02fe5d829ca4daec53821df8e6e0205b52a0ba08bbea \
                     size    30663
+github.tarball_from tarball
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-assertthat \
                     port:R-base64enc \

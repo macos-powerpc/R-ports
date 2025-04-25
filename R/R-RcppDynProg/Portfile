@@ -14,6 +14,7 @@ homepage            https://winvector.github.io/RcppDynProg
 checksums           rmd160  526ad83255be9e28011cbd94d61d481142d797fb \
                     sha256  918c4c91d02ce95e029e01c6241bd81c6c9855eed023147cf09bf40591dbe174 \
                     size    5503553
+github.tarball_from tarball
 
 depends_lib-append  port:R-Rcpp \
                     port:R-RcppArmadillo \

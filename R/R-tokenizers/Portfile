@@ -14,6 +14,7 @@ homepage            https://docs.ropensci.org/tokenizers
 checksums           rmd160  cd14e26229948f48a599f7810454a1f3cde32770 \
                     sha256  be70aaeb85683fd9215228e8ad3ad886adb41df94165e5fa4c388b1ee4f40f27 \
                     size    973352
+github.tarball_from tarball
 
 depends_lib-append  port:R-Rcpp \
                     port:R-SnowballC \

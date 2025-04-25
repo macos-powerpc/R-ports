@@ -14,6 +14,7 @@ homepage            https://bigrquery.r-dbi.org
 checksums           rmd160  1bccef2e4ff8b1418de167bf0de33edb17c3e2d1 \
                     sha256  8374e7a8481a0cd1c9ac62b3890a28c9345e8f36b6112f57fb9c9b833bc7f1f0 \
                     size    103010
+github.tarball_from tarball
 
 depends_lib-append  port:R-bit64 \
                     port:R-brio \

@@ -6,6 +6,7 @@ PortGroup           R 1.0
 R.setup             github quanteda nsyllable 1.0.1 v
 revision            2
 categories-append   textproc
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
 description         Count syllables in character vectors
@@ -13,8 +14,8 @@ long_description    {*}${description}
 checksums           rmd160  95943e13143da1daaa06f25941d6bacada5d512a \
                     sha256  99a6fb677195fcd1b0e0789d1ba4476375d71f844329674ee3ee80ff72470199 \
                     size    530069
+github.tarball_from tarball
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_test-append port:R-knitr \
                     port:R-spelling \

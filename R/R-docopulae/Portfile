@@ -9,10 +9,12 @@ categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Optimal designs for copula models
-long_description    A direct approach to optimal designs for copula models based on the Fisher’s information.
+long_description    A direct approach to optimal designs for copula models \
+                    based on the Fisher’s information.
 checksums           rmd160  4087f7432b4b8c8125649a0d01d02263b67562a0 \
                     sha256  d18ea2c4040828630ca2e27794ee306078b858464648f5943423d7c743a760fb \
                     size    104343
+github.tarball_from tarball
 
 depends_test-append port:R-copula \
                     port:R-cubature \

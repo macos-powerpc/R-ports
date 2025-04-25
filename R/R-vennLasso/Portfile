@@ -14,6 +14,7 @@ long_description    Provides variable selection and estimation routines for mode
 checksums           rmd160  a560796fe4d6c30ed6a002e790c05b168ae326fd \
                     sha256  4cde74367ea2d1f32078553c23d27e67279d8a8d31aa3d6d12dab0c563dfdfc7 \
                     size    2897838
+github.tarball_from tarball
 
 depends_lib-append  port:R-foreach \
                     port:R-igraph \

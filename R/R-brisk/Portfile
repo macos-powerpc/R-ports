@@ -6,6 +6,7 @@ PortGroup           R 1.0
 R.setup             github rich-payne brisk 0.1.0 v
 revision            2
 categories-append   math
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Bayesian benefit–risk analysis
@@ -15,8 +16,8 @@ homepage            https://rich-payne.github.io/brisk
 checksums           rmd160  21bb433fa052e82766e356ba28658206691e4ef1 \
                     sha256  1992b1c4085cdf27e1f72e4b6e92932e8befbbdc11923076567d0ecd8dd459e8 \
                     size    483514
+github.tarball_from tarball
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-dplyr \
                     port:R-ellipsis \

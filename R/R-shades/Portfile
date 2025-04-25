@@ -6,6 +6,7 @@ PortGroup           R 1.0
 R.setup             github jonclayden shades 1.4.0 v
 revision            2
 categories-append   graphics
+platforms           {darwin any}
 maintainers         nomaintainer
 license             BSD
 description         Simple color manipulation in R
@@ -13,8 +14,8 @@ long_description    {*}${description}
 checksums           rmd160  d927e9e7afc5b3e5177523e8e1f0a41be41b2c9b \
                     sha256  8990be561ac560f9ea2ac74636ea4ac7f316149718b3072f72d09988d50d892c \
                     size    45259
+github.tarball_from tarball
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_test-append port:R-colorspace \
                     port:R-covr \

@@ -14,6 +14,7 @@ homepage            https://rpruim.github.io/fastR2
 checksums           rmd160  bf2ff7105c734ff96e200628e929c75f58baa2e6 \
                     sha256  cd7a81a0fc2d79f88bf51e88b9812b1ddde67edc0faeabff7bcc45e9f5154aaf \
                     size    7027626
+github.tarball_from tarball
 supported_archs     noarch
 
 depends_lib-append  port:R-dplyr \

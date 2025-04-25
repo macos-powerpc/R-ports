@@ -6,6 +6,7 @@ PortGroup           R 1.0
 R.setup             github ropensci assertr 3.0.1 v
 revision            2
 categories-append   devel
+platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Assertive programming for R analysis pipelines
@@ -14,8 +15,8 @@ homepage            https://docs.ropensci.org/assertr
 checksums           rmd160  0eef91e0baa975a0ad29474d2e5cd3f596670e2c \
                     sha256  6b93b2b9d4c669a09e76263ea2f8302b30a51b6e6a577c30005ff38554f8c06d \
                     size    59263
+github.tarball_from tarball
 supported_archs     noarch
-platforms           {darwin any}
 
 # Avoid stealth update of 3.0.1 due to GitHub owner change
 master_sites        macports_distfiles

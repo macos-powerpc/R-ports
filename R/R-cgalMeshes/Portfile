@@ -14,6 +14,7 @@ long_description    {*}${description}
 checksums           rmd160  a20c5d55560655fd77fd7f7d70168313a3a5f993 \
                     sha256  f98818a9ada2b409a094505dc2b65d1efd52db7cf86b7c6d75152776597a12f8 \
                     size    35929305
+github.tarball_from tarball
 
 depends_build-append \
                     port:pkgconfig

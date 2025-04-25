@@ -12,6 +12,7 @@ long_description    {*}${description}
 checksums           rmd160  d7117efc99e713a40287a5d63c26e0d1d328147a \
                     sha256  f6894c76b2b39b3ac823df4f8ff021e3403c6fde3d842670e6f09622d126344d \
                     size    755341
+github.tarball_from tarball
 
 depends_lib-append  port:R-cpp11 \
                     port:R-farver \

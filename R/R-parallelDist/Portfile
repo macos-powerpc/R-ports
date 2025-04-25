@@ -13,6 +13,7 @@ long_description    {*}${description}
 checksums           rmd160  71a8d482525ce94fc086560b7635b3b11b5c0220 \
                     sha256  dc4744d620a02987ae9a754095df9ba2d3c4e4a8a79b278f61d319c1d1e24782 \
                     size    39735
+github.tarball_from tarball
 
 depends_lib-append  port:R-Rcpp \
                     port:R-RcppArmadillo \

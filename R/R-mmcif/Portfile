@@ -16,6 +16,7 @@ long_description    Fits the mixed cumulative incidence functions model, which d
 checksums           rmd160  e7201135945f9365e7f7269ab796bd7cc28418dc \
                     sha256  8ae9ca4d57ae6900714d4437a7083d237577e40a3dacac55d13b25cf19c94626 \
                     size    1693482
+github.tarball_from tarball
 
 depends_lib-append  port:R-alabama \
                     port:R-psqn \

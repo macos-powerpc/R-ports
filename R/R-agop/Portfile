@@ -13,6 +13,7 @@ long_description    {*}${description}
 checksums           rmd160  03620990b5d3f82d8b57e7a2fd2c9f85481ac6f3 \
                     sha256  f5479e3950e86bfa9529ea8545f0b6ffe25ca1ca35bb0a968e2c67e42a367473 \
                     size    1395762
+github.tarball_from tarball
 
 depends_test-append port:R-igraph
 

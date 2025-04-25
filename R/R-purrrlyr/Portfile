@@ -12,6 +12,7 @@ long_description    {*}${description}
 checksums           rmd160  dd0c7233fd86efc330bad24d67e5066303d7f670 \
                     sha256  ff6737ce996d3cecbd86445a16a74ab496370006ea700296f4e9aac6a2e8669b \
                     size    34883
+github.tarball_from tarball
 
 depends_lib-append  port:R-dplyr \
                     port:R-magrittr \

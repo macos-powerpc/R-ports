@@ -13,6 +13,7 @@ homepage            https://alexanderrobitzsch.github.io/CDM
 checksums           rmd160  79b8beaed80f053d28387b29bed66de0f4a3a5b0 \
                     sha256  987fc901d9d2cf94c0df4a7b2771067a741aedc8b8bdc61cf332479a9f6daaeb \
                     size    1312399
+github.tarball_from tarball
 
 depends_lib-append  port:R-mvtnorm \
                     port:R-polycor \

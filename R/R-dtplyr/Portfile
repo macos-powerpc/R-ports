@@ -5,16 +5,17 @@ PortGroup           R 1.0
 
 R.setup             github tidyverse dtplyr 1.3.1 v
 revision            3
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
-description         Data table back-end for dplyr
+description         Data table back-end for R-dplyr
 long_description    {*}${description}
 homepage            https://dtplyr.tidyverse.org
 checksums           rmd160  2bd6cdbddf60e33eda358afb61500874cfec26fc \
                     sha256  20ae65c74d81a51cbb81cfa6e31d0fd68b22949915679df823e25f655a4ebaae \
                     size    272159
+github.tarball_from tarball
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-cli \
                     port:R-data.table \

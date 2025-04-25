@@ -14,6 +14,7 @@ homepage            https://paulnorthrop.github.io/exdex
 checksums           rmd160  611376e5f05755fb94e05d0537d12dc8ecdff0fc \
                     sha256  99f8981a13767e9c8cd80a77244d4dda2fe0c2c592079e613be04ce74004f518 \
                     size    2662500
+github.tarball_from tarball
 
 depends_lib-append  port:R-chandwich \
                     port:R-Rcpp \
