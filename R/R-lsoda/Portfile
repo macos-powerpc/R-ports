@@ -1,0 +1,25 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+PortGroup           R 1.0
+
+R.setup             cran mclements lsoda 1.1
+revision            0
+categories-append   math
+maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+license             MIT
+description         C++ header library for ordinary differential equations
+long_description    {*}${description}
+homepage            https://github.com/mclements/lsoda
+checksums           rmd160  04f081c186ac2d97c9e113e34f0cfa9728cd736a \
+                    sha256  f9b34a614d372e34eb02b1134177d40bc9d8c2609affc9a6438167f06f642b70 \
+                    size    24079
+
+depends_lib-append  port:R-Rcpp
+
+depends_test-append port:R-deSolve \
+                    port:R-microbenchmark \
+                    port:R-RcppArmadillo \
+                    port:R-RcppEigen
+
+test.run            yes
