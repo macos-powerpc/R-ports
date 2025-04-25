@@ -4,25 +4,28 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran hturner BradleyTerry2 1.1-2
-revision            3
+R.setup             cran hturner BradleyTerry2 1.1.3
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             {GPL-2 GPL-3}
 description         Bradley–Terry models in R
 long_description    {*}${description}
-checksums           rmd160  da28cc6d41b3af2b8d90af5923c8581b44c07e6b \
-                    sha256  5128a262ac72e34ce6d63e74e295f849c2c715a53b57a782fde23372561c5a6f \
-                    size    573916
+checksums           rmd160  7359e1bcb608a668f54986a7bf7522ce0b61ed2b \
+                    sha256  066f061c6fae8cace18a4bae8d4eebec12be06f6dbc38d4f65f355ae586112f2 \
+                    size    470411
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-brglm \
                     port:R-gtools \
                     port:R-lme4 \
                     port:R-qvcalc
 
-depends_test-append port:R-gnm \
+depends_test-append port:R-bookdown \
+                    port:R-gnm \
+                    port:R-knitr \
+                    port:R-litedown \
                     port:R-prefmod \
                     port:R-testthat
 
