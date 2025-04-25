@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran koheiw proxyC 0.5.0
+R.setup             cran koheiw proxyC 0.5.2
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             GPL-3
 description         Computes proximity between rows or columns \
                     of large matrices efficiently in C++
 long_description    {*}${description}
-checksums           rmd160  f91b6ddd9f4a37587e1e4d8236e4754f050c7463 \
-                    sha256  cd139cc9deff357d7ca185265bd6f6efef4dc9adb8b02c31333dbd42fcf12768 \
-                    size    88796
+checksums           rmd160  a0a052796a1804b4a2de5352947f59416a37fe3f \
+                    sha256  7251540e4db04e4fc4a89acc73c88f2c2396d5af19354df4b895bc4bca8f87a0 \
+                    size    88924
 
 # Notice that 0.4.0 has switched to using OneTBB
 # instead of R-RcppParallel. Make sure our OneTBB
