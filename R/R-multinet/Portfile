@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran matteo.magnani multinet 4.2.1
-revision            1
+R.setup             cran matteo.magnani multinet 4.2.2
+revision            0
 categories-append   economics
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             Apache-2
 description         Analysis and mining of multilayer social networks
 long_description    {*}${description}
-checksums           rmd160  08a1cb0f76a95b5e7c36d28813ca80b5cba33640 \
-                    sha256  72bd3b3c17dbaf694b41b1741542edca056566ea93b8ca96166b95a54af19d5b \
-                    size    2603933
+checksums           rmd160  ad5be96bad8ef727258c8b42269d1d0c9bad66ba \
+                    sha256  12133eed822b35a7dc60e21fcb4c7e2086acd86a111756611d238a7b6fca52ec \
+                    size    2376006
 
 depends_lib-append  port:R-igraph \
                     port:R-RColorBrewer \
