@@ -1,0 +1,40 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+PortGroup           R 1.0
+
+R.setup             github JBGruber rollama 0.2.1 v
+revision            0
+categories-append   llm
+platforms           {darwin any}
+maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+license             GPL-3+
+description         Communicate with Ollama to run large language models locally
+long_description    {*}${description}
+homepage            https://jbgruber.github.io/rollama
+checksums           rmd160  29b8c00a3b987e4cfa64d214ba83e83604038d45 \
+                    sha256  a5dd165c0009f6a021cda8a5c371564a3b65772236b67627db751e5901130278 \
+                    size    3362301
+github.tarball_from archive
+supported_archs     noarch
+
+depends_lib-append  port:R-callr \
+                    port:R-cli \
+                    port:R-dplyr \
+                    port:R-httr2 \
+                    port:R-jsonlite \
+                    port:R-prettyunits \
+                    port:R-purrr \
+                    port:R-rlang \
+                    port:R-tibble \
+                    port:R-withr
+
+depends_test-append port:R-base64enc \
+                    port:R-covr \
+                    port:R-glue \
+                    port:R-knitr \
+                    port:R-rmarkdown \
+                    port:R-spelling \
+                    port:R-testthat
+
+test.run            yes
