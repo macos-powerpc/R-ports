@@ -3,19 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran teunbrand ggh4x 0.2.8
-revision            2
+R.setup             cran teunbrand ggh4x 0.3.0
+revision            0
 categories-append   graphics
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+platforms           {darwin any}
+maintainers         nomaintainer
 license             MIT
 description         Hacks for ggplot2
 long_description    {*}${description}
 homepage            https://teunbrand.github.io/ggh4x
-checksums           rmd160  c23d50fa5a8b3dbd2bd39f59a681adedbdadcaf9 \
-                    sha256  a84e9e9553afc7b4cd107c576f93ba99eaa14c71e36ceb25f09f841a1cee62ee \
-                    size    1308196
+checksums           rmd160  d7ae3de8dd84b52fe8eb0a0816129a955376cce3 \
+                    sha256  e618640da1ae35787e2c5c8f52f743b0e959cf51d70016ae0a0a7f28cd053877 \
+                    size    1104370
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-cli \
                     port:R-ggplot2 \
