@@ -3,18 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran john.braun MiscMath 1.0
-revision            1
+R.setup             cran john.braun MiscMath 1.1
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-2+
 description         Miscellaneous Mathematical Tools
 long_description    {*}${description}
-checksums           rmd160  30662cfa29a3f44b0b3997d852d3a738130d39aa \
-                    sha256  213a2f3c9fffcc4987376a99a037fd904f916f5ca6be09611acf0e44d5a69b2b \
-                    size    6574
+checksums           rmd160  d07b0dc1c94020d97b61bcaa4564b31be369dd1d \
+                    sha256  a88b41d92ce81c9c7ce39b0cebbaaa317374f4b9c706b7440e8da286ca87ad71 \
+                    size    10161
 
-depends_lib-append  port:R-randomForest
+depends_lib-append  port:R-numbers \
+                    port:R-randomForest
 
 compilers.setup     require_fortran
 
