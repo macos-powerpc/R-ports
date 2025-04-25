@@ -3,21 +3,27 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github sjewo readstata13 0.10.1 v
-revision            4
+R.setup             github sjewo readstata13 0.11.0 v
+revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         Import Stata data files
 long_description    {*}${description}
-checksums           rmd160  03ca2b4fef771785929aa35e1d790daea4f6a176 \
-                    sha256  506a05bfabf941baf960ce467878f460c3bd3211602a751e1477171242825651 \
-                    size    62564
+checksums           rmd160  6c8523a49fceef79f27b859799264b1ab6b82f0c \
+                    sha256  913c6fa830fa1ff1dfa8930c11748e15171e66a814171adde2e172b6795e6506 \
+                    size    113103
 github.tarball_from archive
 
 depends_lib-append  port:R-Rcpp
 
 compilers.setup     require_fortran
 
-depends_test-append port:R-testthat
+depends_test-append port:R-curl \
+                    port:R-expss \
+                    port:R-knitr \
+                    port:R-labelled \
+                    port:R-png \
+                    port:R-rmarkdown \
+                    port:R-testthat
 
 test.run            yes
