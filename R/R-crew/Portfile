@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github wlandau crew 1.0.0
-revision            1
+R.setup             github wlandau crew 1.1.0
+revision            0
 categories-append   parallel
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             MIT
 description         Distributed worker launcher
 long_description    {*}${description}
 homepage            https://wlandau.github.io/crew
-checksums           rmd160  fb2587f41f868107504597321683e5720fb9ecea \
-                    sha256  1d873ecabd50f4cf04b9e3701351060e93c3e8750a38c77610b1858920287cc5 \
-                    size    1048112
+checksums           rmd160  92ce89b69e56c3cbe537abe142c1ca1ab2f24038 \
+                    sha256  f24d49107032a526fb864d32dcaff18f067ae3ca0d8924df291de31df99b4978 \
+                    size    1048193
 github.tarball_from archive
 supported_archs     noarch
 
