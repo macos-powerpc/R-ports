@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran roigrp highs 1.9.0-1
-revision            1
+R.setup             cran roigrp highs 1.10.0-1
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
@@ -12,9 +12,9 @@ description         HiGHS optimization solver
 long_description    R interface to HiGHS, an optimization solver for solving mixed integer optimization \
                     problems with quadratic or linear objective and linear constraints.
 homepage            https://gitlab.com/roigrp/solver/highs
-checksums           rmd160  4102ef39730a391d0f7a585bf8dbc64cae45be09 \
-                    sha256  660b76822799da748b1bc60e8a5db60c27062ff72eec96926d6a29a349c3a4e0 \
-                    size    1552081
+checksums           rmd160  de08668fc35fc8f85948f3450f96616e7d991d6e \
+                    sha256  b727e1383b1538d0561ba5b0c6fada2342b359dd10d8914a9d0cb99bea01eaed \
+                    size    1191809
 
 depends_build-append \
                     path:bin/cmake:cmake \
