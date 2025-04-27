@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github mjskay ggdist 3.3.2 v
-revision            2
+R.setup             github mjskay ggdist 3.3.3 v
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3+
 description         Visualizations of distributions and uncertainty
 long_description    {*}${description}
 homepage            https://mjskay.github.io/ggdist
-checksums           rmd160  f2a7e38f587b2ecc0c1fa89a4afa2e7ebe9e0747 \
-                    sha256  0dff5387da5c3557551d012023ab3c9056b1dff376f3f34e735aecac6177f044 \
-                    size    39283395
+checksums           rmd160  24eabc178d4553b3aa0ea4f548665cebc263687f \
+                    sha256  0cb631ed9db3f8f1286db07f9cb638dbb837f47c3856f9ceb28eb6ae4c39764a \
+                    size    36590767
 github.tarball_from archive
 
 depends_lib-append  port:R-cli \
