@@ -4,20 +4,20 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is old.
-R.setup             cran DRJP nimbleAPT 1.0.6
-revision            1
+R.setup             cran DRJP nimbleAPT 1.0.7
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             BSD
 description         Adaptive parallel tempering for R-nimble
 long_description    Functions for adaptive parallel tempering (APT) \
                     with NIMBLE models.
 homepage            https://github.com/DRJP/nimbleAPT
-checksums           rmd160  670ee4ba0c3d58922a95e920a031c8bbb21f6700 \
-                    sha256  268a37201294acc30af912dee8ec4ea7f1ade3d021bfb31d1ee366db8a0b5b9f \
-                    size    211428
+checksums           rmd160  12a5552cbabcceffa6b98d3c5454558e4049de41 \
+                    sha256  0affdbe0e9c428de7565fb056cb90b115c334a5b405fc6ddc14289893c5aea2b \
+                    size    197872
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-nimble
 
