@@ -4,26 +4,30 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran jinseob2kim jstable 1.3.4 v
-revision            1
+R.setup             cran jinseob2kim jstable 1.3.12 v
+revision            0
 maintainers         nomaintainer
 license             Apache-2
 description         Create tables from different types of regression
 long_description    {*}${description}
 homepage            https://github.com/jinseob2kim/jstable
-checksums           rmd160  7ea5b62f3d3f801461ce04b0d295bc1c65c6003f \
-                    sha256  fda6c7786c7021496f719443dff7a24acef5133925097f6680ddc322afd19b8d \
-                    size    401726
+checksums           rmd160  5fb14a84a76ffd770ad754ea3235235332f8800a \
+                    sha256  746260f9234d969d19017093ba9f5cd0fa3d2b23fbb3452b64f57ad64f1b47c0 \
+                    size    440843
 supported_archs     noarch
 
-depends_lib-append  port:R-coxme \
+depends_lib-append  port:R-car \
+                    port:R-coxme \
                     port:R-data.table \
                     port:R-dplyr \
                     port:R-geepack \
                     port:R-labelled \
                     port:R-lme4 \
+                    port:R-lmerTest \
                     port:R-magrittr \
+                    port:R-nortest \
                     port:R-purrr \
+                    port:R-rlang \
                     port:R-survey \
                     port:R-tableone \
                     port:R-tibble
