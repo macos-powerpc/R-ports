@@ -3,8 +3,9 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github growthcharts brokenstick 2.5.0 v
-revision            2
+# Revert to GitHub once updated there.
+R.setup             cran growthcharts brokenstick 2.6.0 v
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,10 +13,10 @@ license             MIT
 description         Broken stick model for irregular longitudinal data
 long_description    {*}${description}
 homepage            https://growthcharts.org/brokenstick
-checksums           rmd160  8baa5d936588a716df4f4983d6cd0dc2a938a269 \
-                    sha256  5b7f7655603f09eb8573120c989186bce4ce7709ce418210b7260ed8f78e06f7 \
-                    size    12486804
-github.tarball_from tarball
+checksums           rmd160  085a5a5d86695fa4782397f12319c240eb580bb8 \
+                    sha256  cee1460a24967e2d57d1d04e69db2d02fb07977fd1191945d07bdcd06aebfec6 \
+                    size    1144369
+# github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-coda \
@@ -24,3 +25,17 @@ depends_lib-append  port:R-coda \
                     port:R-matrixsampling \
                     port:R-rlang \
                     port:R-tidyr
+
+depends_test-append port:R-AGD \
+                    port:R-bookdown \
+                    port:R-ggplot2 \
+                    port:R-gridExtra \
+                    port:R-knitr \
+                    port:R-mice \
+                    port:R-mvtnorm \
+                    port:R-plyr \
+                    port:R-rmarkdown \
+                    port:R-svglite \
+                    port:R-testthat
+
+test.run            yes
