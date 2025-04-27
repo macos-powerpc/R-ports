@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github dieghernan tidyterra 0.7.0 v
-revision            1
+R.setup             github dieghernan tidyterra 0.7.2 v
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -13,9 +13,9 @@ description         R-tidyverse methods and R-ggplot2 helpers \
                     for R-terra objects
 long_description    {*}${description}
 homepage            https://dieghernan.github.io/tidyterra
-checksums           rmd160  be2e60579b33633746c793ed70189bbf6bad6b20 \
-                    sha256  30f7f6756f67cfd7810fa2f0552165d0cfa9321ae3923e93d16153762911ad3b \
-                    size    39185104
+checksums           rmd160  494d57e979bad1755539e67d74c3de29314a9003 \
+                    sha256  0dffccaa6771178992a295c60e6f60881a0684bd3d714ef524311a7600c7549d \
+                    size    40721639
 github.tarball_from archive
 supported_archs     noarch
 
@@ -36,7 +36,6 @@ depends_test-append port:R-hexbin \
                     port:R-knitr \
                     port:R-lifecycle \
                     port:R-maptiles \
-                    port:R-metR \
                     port:R-rmarkdown \
                     port:R-s2 \
                     port:R-testthat \
