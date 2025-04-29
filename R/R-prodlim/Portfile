@@ -3,20 +3,26 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran tagteam prodlim 2024.06.25
-revision            1
+R.setup             cran tagteam prodlim 2025.04.28
+revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Product-limit estimation for censored event history analysis
 long_description    {*}${description}
 homepage            https://github.com/tagteam/prodlim
-checksums           rmd160  58e5385cb4358c76eba9c639477ab216caaa5027 \
-                    sha256  46961f654171aa7ef0ff94b23508ed59f6a438c3a3ba0d338cc3730224406764 \
-                    size    129011
+checksums           rmd160  d85563d19da51f9a69006e5dfc63eeb5452d41a4 \
+                    sha256  62b7049aeb947dd54f1ccb210c111ae50eb7461b8c9942601e09a1a10721fc3a \
+                    size    135526
 
 depends_lib-append  port:R-data.table \
                     port:R-diagram \
+                    port:R-ggplot2 \
                     port:R-lava \
-                    port:R-Rcpp
+                    port:R-Rcpp \
+                    port:R-rlang
+
+depends_test-append port:R-ggthemes \
+                    port:R-pammtools \
+                    port:R-tibble
 
 test.run            yes
