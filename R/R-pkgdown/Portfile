@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github r-lib pkgdown 2.1.1 v
-revision            1
+R.setup             github r-lib pkgdown 2.1.2 v
+revision            0
 categories-append   devel
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             MIT
 description         Make static HTML documentation for a package
 long_description    {*}${description}
 homepage            https://pkgdown.r-lib.org
-checksums           rmd160  2180402ff6c643b71018a327012f2c9b54961035 \
-                    sha256  90ed71f868236ff1a6ef764360f52e718ddf771c303b88b63cb3d17f1ced7390 \
-                    size    754487
+checksums           rmd160  dcd246bbe03e52febe3cc4bebaf3f1f25af5bb71 \
+                    sha256  79a843db991ed54ca4beea055da49602b9fb84c924b3173569889d097889d9d1 \
+                    size    852694
 github.tarball_from archive
 supported_archs     noarch
 
@@ -22,7 +22,6 @@ depends_lib-append  port:R-bslib \
                     port:R-callr \
                     port:R-cli \
                     port:R-desc \
-                    port:R-digest \
                     port:R-downlit \
                     port:R-fontawesome \
                     port:R-fs \
@@ -43,6 +42,7 @@ depends_test-append port:R-covr \
                     port:R-diffviewer \
                     port:R-evaluate \
                     port:R-gert \
+                    port:R-gt \
                     port:R-htmltools \
                     port:R-htmlwidgets \
                     port:R-knitr \
@@ -53,7 +53,6 @@ depends_test-append port:R-covr \
                     port:R-rsconnect \
                     port:R-rstudioapi \
                     port:R-rticles \
-                    port:R-rvest \
                     port:R-sass \
                     port:R-testthat
 
