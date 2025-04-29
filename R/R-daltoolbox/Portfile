@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cefet-rj-dal daltoolbox 1.1.727
-revision            1
+R.setup             cran cefet-rj-dal daltoolbox 1.1.747
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Leveraging experiment lines to data analytics
 long_description    {*}${description}
 homepage            https://github.com/cefet-rj-dal/daltoolbox
-checksums           rmd160  9054aeadf417d44513432e3df06bd5f37a5893d0 \
-                    sha256  f439fea6c5e45f9459d6fa40e4c8a5101d6ef872e14be7c36e5c40f27c551153 \
-                    size    141126
+checksums           rmd160  ab04c498e5ec3365bf9f4e3e52cba51078181912 \
+                    sha256  69d64cde734cbc1b7a5b8467902f9c49487a398516c9673c6bc34d1a69d08a38 \
+                    size    138944
 supported_archs     noarch
 
 depends_lib-append  port:R-caret \
