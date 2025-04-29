@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github easystats bayestestR 0.15.2 v
-revision            1
+R.setup             github easystats bayestestR 0.15.3 v
+revision            0
 categories-append   math economics
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             GPL-3
 description         Understand and describe Bayesian models and posterior distributions
 long_description    {*}${description}
 homepage            https://easystats.github.io/bayestestR
-checksums           rmd160  0bf834d48cb1979ca3ff13d0ff753a20af941331 \
-                    sha256  091e6d94a0e5df074acc30b4a996ab74f693acb412bf982f1c762c7383355b41 \
-                    size    2246371
+checksums           rmd160  0e5ff6e648972f69a5afb99102413a6604143db3 \
+                    sha256  77256decf2b48b24f8ed19e9f66009143f53c5ce9587b0a98d7c0cdd7d2489f5 \
+                    size    2248621
 github.tarball_from archive
 supported_archs     noarch
 
@@ -36,12 +36,12 @@ depends_test-append port:R-BayesFactor \
                     port:R-ggdist \
                     port:R-ggplot2 \
                     port:R-glmmTMB \
-                    port:R-httr \
                     port:R-httr2 \
                     port:R-knitr \
                     port:R-lavaan \
                     port:R-lme4 \
                     port:R-logspline \
+                    port:R-marginaleffects \
                     port:R-mclust \
                     port:R-mediation \
                     port:R-modelbased \
@@ -49,8 +49,8 @@ depends_test-append port:R-BayesFactor \
                     port:R-parameters \
                     port:R-patchwork \
                     port:R-performance \
-                    port:R-quadprog \
                     port:R-posterior \
+                    port:R-quadprog \
                     port:R-RcppEigen \
                     port:R-rmarkdown \
                     port:R-rstan \
