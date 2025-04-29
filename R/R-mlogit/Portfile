@@ -3,19 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran mlogit 1.1-1
-revision            3
+R.setup             cran yves.croissant mlogit 1.1-2
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
-license             {GPL-2 GPL-3}
+license             GPL-2+
 description         Multinomial logit models
 long_description    Maximum likelihood estimation of random utility discrete choice models.
 homepage            https://r-forge.r-project.org/projects/mlogit
-checksums           rmd160  b5ca779e2f17ea6763846fc8358737197c407884 \
-                    sha256  6f3ea97db410be929a3078422f3d354d2f17855a21bbdc7c2c09d901e233d143 \
-                    size    723281
+checksums           rmd160  f8e462ecb602fd85c60475be0b08704b003125f1 \
+                    sha256  899a394a1fbc6653a43a3ba1797ff6dd6a1b1662e5338d664d66e0f9c88f1cc5 \
+                    size    735520
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-dfidx \
                     port:R-Formula \
