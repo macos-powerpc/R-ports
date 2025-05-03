@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github HenrikBengtsson R.cache 0.16.0
-revision            3
+R.setup             github HenrikBengtsson R.cache 0.17.0
+revision            0
 categories-append   devel
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,10 +12,10 @@ license             {LGPL-2.1 LGPL-3}
 description         Fast and light-weight caching (memoization) of objects and results \
                     to speed up computations.
 long_description    {*}${description}
-checksums           rmd160  ac02074acc81fd9308702b7bf8ff31a64fecc413 \
-                    sha256  63ff57b3203262ed0cef2fbed03b31b50a707e05412e6b67e24eeba3e02c0bb0 \
-                    size    48270
-github.tarball_from tarball
+checksums           rmd160  c617e8e949177f4e032bf2a64325fc5747f9b2e1 \
+                    sha256  b2b426efd69ac3bb11c4a0df1ef4a11dd86245bdaf5865df3fa186043b6e6d0e \
+                    size    48789
+github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-digest \
