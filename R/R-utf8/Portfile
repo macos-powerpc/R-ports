@@ -3,9 +3,9 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github patperry r-utf8 1.2.4 v
+R.setup             github patperry r-utf8 1.2.5 v
 set R.package       utf8
-revision            2
+revision            0
 categories-append   textproc
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             Apache-2
@@ -13,9 +13,9 @@ description         UTF-8 text processing
 long_description    R package for manipulating and printing UTF-8 text \
                     that fixes multiple bugs in R’s UTF-8 handling.
 homepage            https://ptrckprry.com/r-utf8
-checksums           rmd160  f311732dcaec76e8012edda31fe9e60cc18d268b \
-                    sha256  ea59c1e8e656731728d3a0ab8e3c3f9ba1b3b8d85eb1c35be02de208163574a3 \
-                    size    1339990
+checksums           rmd160  0d2fe594a229ed8584b488703bb11a411e456f06 \
+                    sha256  b4f0dde19e9abd70d332ce5b225ffd8963b8fdb213e7e3922c4dd53327b22085 \
+                    size    1352148
 github.tarball_from archive
 
 depends_test-append port:R-cli \
