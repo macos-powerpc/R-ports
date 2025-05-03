@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran stkpp rtkore 1.6.12
-revision            1
+R.setup             cran stkpp rtkore 1.6.13
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-2+
 description         STK++ core library integration with R via Rcpp
 long_description    {*}${description}
 homepage            https://sourceforge.net/projects/stkpp
-checksums           rmd160  ddd6b5d2130201eaf57b98639e5f81baab0fdcf7 \
-                    sha256  d532a66181545384e2889bbdee3f9c928fe49d19eb9fbe8732edaa6b6a51bc82 \
-                    size    1085741
+checksums           rmd160  fd092978db33d3d9f38102bf4b33fe497b6c5df5 \
+                    sha256  a09b603cc55c69f022cc20a892f57f0ebc259c7a34929395117edb4a74bcdb7e \
+                    size    1075255
 
 depends_lib-append  port:R-inline \
                     port:R-Rcpp
