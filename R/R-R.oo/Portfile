@@ -3,16 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github HenrikBengtsson R.oo 1.27.0
-revision            1
+R.setup             github HenrikBengtsson R.oo 1.27.1
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             LGPL-2.1+
 description         R object-oriented programming with or without references
 long_description    {*}${description}
-checksums           rmd160  15b58b008218200ce20df16ae269390dfa73cffb \
-                    sha256  2a2f17ec494b57ca186e6443730238c66ea9d629b1af43cdf98d18d0a23ccba5 \
-                    size    392656
+homepage            https://henrikbengtsson.github.io/R.oo
+checksums           rmd160  4a57ce63703eb48acf662d4e4c7ae08ab74de55d \
+                    sha256  b8549df7bfcb7cc7f6acb93eb74932182aa97090dad4f409ea5c5fd249890f9b \
+                    size    392784
 github.tarball_from archive
 supported_archs     noarch
 
