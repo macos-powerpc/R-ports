@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-project partykit 1.2-22
-revision            1
+R.setup             cran r-project partykit 1.2-24
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             {GPL-2 GPL-3}
 description         Toolkit for recursive partytioning
 long_description    {*}${description}
 homepage            http://partykit.r-forge.r-project.org/partykit
-checksums           rmd160  889db7c09a80f157d2c043c026ccaec6b610c386 \
-                    sha256  0f0015aa970b10a85d1fabfd2fcf35a6552e292fe151766e348c105f7f5c0adb \
-                    size    2072945
+checksums           rmd160  545183829128e801ced1e01b73ddf34c60f20886 \
+                    sha256  40c06b75458f100f3e203fb47f80d5be6f632628bfafa2704d27250a7914c9ff \
+                    size    2044723
 
 depends_lib-append  port:R-Formula \
                     port:R-inum \
