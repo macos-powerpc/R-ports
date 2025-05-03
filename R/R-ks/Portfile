@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran tarn.duong ks 1.14.3
-revision            1
+R.setup             cran tarn.duong ks 1.15.0
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             {GPL-2 GPL-3}
 description         Kernel Smoothing
 long_description    {*}${description}
-checksums           rmd160  62c0a185ff05f6c00c980be5204598004591dd95 \
-                    sha256  5108cb699647b3cf2b10bcfefb9544042f8546c2527dde792db1e33b5eb44036 \
-                    size    1120759
+checksums           rmd160  f0a53715b297c7851e7f4159dd1e0a6026d6a45b \
+                    sha256  da5ba3b24015071563c51a82a6e322631f2ce0112f5a3103d40f65e7e487a1f2 \
+                    size    1125580
 
 depends_lib-append  port:R-FNN \
                     port:R-kernlab \
