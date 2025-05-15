@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran pachadotdev cpp11armadillo 0.4.6
-revision            1
+R.setup             cran pachadotdev cpp11armadillo 0.5.0
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -15,9 +15,9 @@ long_description    ${name} provides function declarations and inline function \
                     and the Armadillo C++ library for linear algebra \
                     and scientific computing.
 homepage            https://pacha.dev/cpp11armadillo
-checksums           rmd160  b0ac6745c11f48a7aa6dd0c9c49d6b8ecc0b292e \
-                    sha256  c4bbe94f60e39e3f408901c268c9ab3632351c3fb970c6c008bbc156c17244c5 \
-                    size    1075750
+checksums           rmd160  fc2e438ddf4038a130756cab007135dde1d7d9ed \
+                    sha256  9ab5bde7b936430903bc675ef58de28ea6f78703401c6d70368fb4ebc706d56f \
+                    size    1081663
 supported_archs     noarch
 
 depends_lib-append  port:R-cpp11
