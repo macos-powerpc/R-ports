@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran hpages Rtwobitlib 0.3.9
-revision            1
+R.setup             cran hpages Rtwobitlib 0.3.10
+revision            0
 categories-append   devel
 maintainers         nomaintainer
 license             MIT
 description         2bit C Library
 long_description    {*}${description}
 homepage            https://github.com/hpages/Rtwobitlib
-checksums           rmd160  b4220828b9c433805d1732db00e49f13595345ff \
-                    sha256  78a2d0c8fe887994fceb8503032927d46aa437433dd8289533a9fe2106d576b3 \
-                    size    3280723
+checksums           rmd160  7bbf59e71fc9256244411ddf8d2ba0d690222386 \
+                    sha256  16977cdd27fbf2ba5e4d81f1766bce616a26605c9ba79a230d7815848cf23dd9 \
+                    size    3281063
 
 depends_test-append port:R-knitr \
                     port:R-rmarkdown \
