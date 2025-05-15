@@ -4,18 +4,18 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran HenrikBengtsson globals 0.16.3
-revision            2
+R.setup             cran HenrikBengtsson globals 0.18.0
+revision            0
 categories-append   devel
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+platforms           {darwin any}
+maintainers         nomaintainer
 license             LGPL-2.1+
 description         Identify global objects in R expressions
 long_description    {*}${description}
 homepage            https://globals.futureverse.org
-checksums           rmd160  63ac8e3c367253a4443c4be417845af059b2d254 \
-                    sha256  d73ced94248d8b81d29d774bdfc41496274d7da683a5d84440aed6a501a18c5b \
-                    size    37475
+checksums           rmd160  7f81f4aa7999eb15863feb8d34e3f06b1c6a7972 \
+                    sha256  8fa3bdafff38cc5997f9e7235c8f8359825ed8f9a0ec06c6fe75c9f798ed9fec \
+                    size    51920
 supported_archs     noarch
-platforms           {darwin any}
 
 test.run            yes
