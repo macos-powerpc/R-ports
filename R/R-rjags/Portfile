@@ -3,6 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
+# On the next update drop `incr revision` below.
 R.setup             cran martyn.plummer rjags 4-17
 revision            1
 categories-append   math
@@ -20,6 +21,10 @@ depends_build-append \
 depends_lib-append  port:jags \
                     port:R-coda
 
-patchfiles-append   patch-fix-linking.diff
+if {${os.platform} eq "darwin" && ${configure.cxx_stdlib} ne "libc++"} {
+    patchfiles-append   patch-fix-linking.diff
+} else {
+    incr revision
+}
 
-test.run        yes
+test.run            yes
