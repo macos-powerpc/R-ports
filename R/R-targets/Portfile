@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github ropensci targets 1.11.1
+R.setup             github ropensci targets 1.11.3
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             MIT
 description         Dynamic function-oriented make-like declarative workflows
 long_description    {*}${description}
 homepage            https://docs.ropensci.org/targets
-checksums           rmd160  d3e2836b227f9adc29aa45f0cce68d78fc25fbde \
-                    sha256  457241ef7bdb191be645f1c42aa864c8dbc75f8a000e8b32e0c99a916ad8c1ce \
-                    size    828510
+checksums           rmd160  362381e1e194ec6dbd87228b65341b31cdc2067c \
+                    sha256  020e3eb30c5187e22b7b0366eb106b2aafda4b49c0a943307512f2150e65b8f7 \
+                    size    832738
 github.tarball_from archive
 supported_archs     noarch
 
