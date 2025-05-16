@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran fharrell rmsb 1.1-1
-revision            1
+R.setup             cran fharrell rmsb 1.1-2
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3+
 description         Bayesian Regression Modelling Strategies
 long_description    {*}${description}
 homepage            https://hbiostat.org/R/rmsb
-checksums           rmd160  5009f325fd4181952984f82ae72740c2b9d885f4 \
-                    sha256  778b53f6a94f7dd33bbe5c6b4bd9f89d6cd8271b0cfda6494ee562b9cae663b8 \
-                    size    115722
+checksums           rmd160  af1eaab1080e319faf7a7e455432321918509f94 \
+                    sha256  a6db5b99b5a54761e8787a2c087e0734573148210fe07119dd4055e6dca2bf00 \
+                    size    112346
 
 depends_lib-append  port:R-BH \
                     port:R-digest \
