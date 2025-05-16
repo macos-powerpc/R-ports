@@ -1,0 +1,8 @@
+--- a/src/Makevars.in	2025-01-07 19:51:24.000000000 +0800
++++ b/src/Makevars.in	2025-05-16 15:31:18.000000000 +0800
+@@ -1,4 +1,4 @@
+-PKG_CPPFLAGS = -I../src -DSTRICT_R_HEADERS
++PKG_CPPFLAGS = -I../src -DSTRICT_R_HEADERS -D_GLIBCXX_USE_CXX11_ABI=0
+ PKG_LIBS = -Ls2 -ls2static @libs@ -latomic
+ PKG_CXXFLAGS = @cflags@ -pthread
+ 

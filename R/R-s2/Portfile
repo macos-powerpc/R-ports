@@ -5,31 +5,39 @@ PortGroup           openssl 1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran r-spatial s2 1.1.7
-revision            1
-categories-append   math
+R.setup             cran r-spatial s2 1.1.8
+revision            0
+categories-append   math geometry
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             Apache-2
 description         Spherical geometry operators using the S2 geometry library
 long_description    {*}${description}
 homepage            https://r-spatial.github.io/s2
-checksums           rmd160  b2ca3bfa17736f3e0c97dce40c79c7a8dd17770a \
-                    sha256  30762c7150dd72e2f4a3d50e64b8b73b2d59b73275687ba3eea7a6e07f786878 \
-                    size    2381288
+checksums           rmd160  bd4aeb6430c4f697c5522069821c739aeda2a077 \
+                    sha256  4366c00a58471544d34b1ab405206d23c9cfc305468316961fab45f9912a8191 \
+                    size    2966956
 
-depends_lib-append  port:R-Rcpp \
+depends_build-append \
+                    path:bin/pkg-config:pkgconfig
+
+depends_lib-append  port:abseil \
+                    port:R-Rcpp \
                     port:R-wk
 
 patch.pre_args-replace  -p0 -p1
-patchfiles          0001-Misc-PPC-additions.patch \
-                    0002-examine_stack.cc-fix-ppc-for-macOS.patch \
-                    0003-Some-PPC-fix-ups.patch \
-                    0004-patch-fix-bool-error.diff \
-                    MAP_ANON.patch
+patchfiles          0001-patch-constexpr.diff \
+                    0002-patch-fix-bool-error.diff
 
 if {[string match *gcc* ${configure.compiler}]} {
     patchfiles-append \
-                    0005-patch-libatomic.diff
+                    0003-patch-libatomic.diff
+}
+
+# dlopen(/opt/local/var/macports/build/_opt_local_ppcports_R_R-s2/R-s2/work/build/00LOCK-s2/00new/s2/libs/s2.so, 6):
+# Symbol not found: __ZN4absl12lts_2024072212log_internal17MakeCheckOpStringIPKhS4_EEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEET_T0_PKc
+if {${os.platform} eq "darwin" && ${configure.cxx_stdlib} ne "libc++"} {
+    patchfiles-append \
+                    0004-patch-cxx11.diff
 }
 
 depends_test-append port:R-bit64 \
