@@ -3,18 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github kkondo1981 aglm 0.4.0 v
-revision            3
+# Revert to GitHub once updated there.
+R.setup             cran kkondo1981 aglm 0.4.1 v
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         Accurate Generalized Linear Model
 long_description    {*}${description}
-checksums           rmd160  fb38fd133604bdde476c805cb8ce3d64fdf68c5d \
-                    sha256  ab5875741a7b2c2f22fe6353b54341aa0076eaf3b3e8e05537ea9b9353d33e54 \
-                    size    39853
-github.tarball_from archive
+checksums           rmd160  747616a67cd23e128e5aa6cb497893566bf17012 \
+                    sha256  ec9267fe085f338ceff84e829c693f63d39d2e6e552550261ea1bf7a14de5901 \
+                    size    44907
+# github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-assertthat \
