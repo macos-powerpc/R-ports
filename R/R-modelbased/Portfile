@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github easystats modelbased 0.9.0 v
-revision            1
+R.setup             github easystats modelbased 0.11.0 v
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             GPL-3
 description         Methods for correlation analysis
 long_description    {*}${description}
 homepage            https://easystats.github.io/modelbased
-checksums           rmd160  ff59a2fd85993f050bce27068ed2b5462393afd1 \
-                    sha256  a6e1dd469d3453440502929d911452b7fcc11e256ed68c26196087091841d6c1 \
-                    size    859671
+checksums           rmd160  53b75af0449686ac338090f0183cde1ea07b1a4a \
+                    sha256  ccd0c03b2ca415af22863f705cda7fec5fb595cd823c32c11840ecc9be60fbd4 \
+                    size    1215260
 github.tarball_from archive
 supported_archs     noarch
 
@@ -53,6 +53,7 @@ depends_test-append port:R-BH \
                     port:R-rmarkdown \
                     port:R-rstanarm \
                     port:R-rtdists \
+                    port:R-RWiener \
                     port:R-see \
                     port:R-testthat \
                     port:R-vdiffr \
