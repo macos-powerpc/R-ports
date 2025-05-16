@@ -3,18 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github swihart gnlm 1.1.1 v
-revision            2
+# Revert to GitHub once updated there.
+R.setup             cran swihart gnlm 1.1.2 v
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-2+
 description         Generalized non-linear regression models
 long_description    A variety of functions to fit linear and non-linear regression \
                     with a large selection of distributions.
-checksums           rmd160  5fe68696235df3ed2da91b71cc4c158706d8a4f3 \
-                    sha256  5061ee111497a931b1393fb94c0eb692ae33f28955c1eb5b90bd4d095a81d025 \
-                    size    81255
-github.tarball_from tarball
+checksums           rmd160  0679d03714990dc2105716fb25ef5b365140b0c7 \
+                    sha256  6d28502f57dffbfa206e967e50ec423f73f61821387b4758840d53b58888f956 \
+                    size    78011
+# github.tarball_from archive
 
 depends_lib-append  port:R-rmutil
 
