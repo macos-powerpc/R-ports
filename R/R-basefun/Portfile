@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-project basefun 1.2-2
-revision            1
+R.setup             cran r-project basefun 1.2-3
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-2
 description         Infrastructure for computing with basis functions
 long_description    {*}${description}
-checksums           rmd160  81b32eaedbece78809e0fb0dd86e03e9b73e22a2 \
-                    sha256  98d8b932258aaee24370f2c779272fdaae022dcd1f7ac72e823850fbaba1de8c \
-                    size    23344
+checksums           rmd160  45d6e7107a5c69c014e42e26ff47859bfa5fac39 \
+                    sha256  e0895190ec92ec340e88ec89a96aa428224f6e8ba73d5bfd945615a4c80842ef \
+                    size    23406
 
 depends_lib-append  port:R-orthopolynom \
                     port:R-polynom \
