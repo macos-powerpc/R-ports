@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran madsyair neojags 0.1.5
-revision            1
+R.setup             cran madsyair neojags 0.1.6
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         Neo-normal distributions family for Markov Chain Monte Carlo \
                     (MCMC) models in JAGS
 long_description    {*}${description}
-checksums           rmd160  3a4e0e152acef5131d5078bd71290f5e64721233 \
-                    sha256  d8a7387e95597ba5fc1be8766fe803c369f92c0e5003ae3c41fc56aac608b524 \
-                    size    190191
+checksums           rmd160  a68cc29e24612344d336b0ccec034c8da9205a65 \
+                    sha256  d30e29479cda2ca9cf8998aa9248af753913963139213804a6ce62b8bef8af26 \
+                    size    507811
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
@@ -24,7 +24,9 @@ depends_lib-append  port:jags \
                     port:R-runjags
 
 # Notice, JAGS 4.x is assumed.
-patchfiles          patch-fix-Makevars.diff
+if {${os.platform} eq "darwin" && ${configure.cxx_stdlib} ne "libc++"} {
+    patchfiles-append   patch-fix-Makevars.diff
+}
 
 depends_test-append port:R-knitr \
                     port:R-markdown \
