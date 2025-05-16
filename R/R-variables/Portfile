@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran variables 1.1-1
-revision            2
+R.setup             cran r-project variables 1.1-2
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2
 description         Abstract descriptions of (yet) unobserved variables
 long_description    {*}${description}
-checksums           rmd160  720598f9fe62973dbefc73cf0b4b687f9a190eef \
-                    sha256  ce5376383ab7dfb2e0ce97551366e31dcaa2360e7f918bd8cd67d9540789128e \
-                    size    7525
+checksums           rmd160  3156a9e1d1ff7f595b3db3a15de3e84dddeddb02 \
+                    sha256  77ae435e9eef4381649339081b4d03ab8628d50ade1129c52eae94d09b35ec28 \
+                    size    7560
 supported_archs     noarch
-platforms           {darwin any}
 
 test.run            yes
