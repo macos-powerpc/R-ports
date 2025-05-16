@@ -3,28 +3,30 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-# Revert to GitHub once updated there.
-R.setup             cran hypertidy vapour 0.10.0 v
-revision            2
+R.setup             github hypertidy vapour 0.11.0 v
+revision            0
 categories-append   gis
 maintainers         nomaintainer
 license             GPL-3
 description         Access to the Geospatial Data Abstraction Library (GDAL)
 long_description    {*}${description}
 homepage            https://hypertidy.github.io/vapour
-checksums           rmd160  3b844f35d979593eb39006a836f61e33775a1e8a \
-                    sha256  90ed59308ac5777eeeabbb3cb5c78fbf077ca3df3a057faccb52de2a8ce52ca2 \
-                    size    1729425
-# github.tarball_from archive
+checksums           rmd160  8ea487b0871b87c9b16e69332e6e635fba94dfed \
+                    sha256  3b4427e16c4b955569af725784de5c4fb64513c5601f0d91699b77725ebea451 \
+                    size    2571685
+github.tarball_from archive
 
 set proj_v          proj9
 
 depends_build-append \
-                    port:pkgconfig
+                    path:bin/pkg-config:pkgconfig
+
 depends_lib-append  path:lib/${proj_v}/lib/pkgconfig/proj.pc:${proj_v} \
                     port:gdal \
                     port:R-jsonlite \
-                    port:R-Rcpp
+                    port:R-nanoarrow \
+                    port:R-Rcpp \
+                    port:R-wk
 
 # configure fails to do its job: https://github.com/r-spatial/sf/issues/2292
 build.env-append    CPPFLAGS=-I${prefix}/lib/${proj_v}/include
