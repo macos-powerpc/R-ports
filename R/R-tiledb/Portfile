@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran TileDB-Inc tiledb 0.30.2
-revision            1
+R.setup             cran TileDB-Inc tiledb 0.32.0
+revision            0
 categories-append   databases
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Universal storage engine for sparse and dense multidimensional arrays
 long_description    {*}${description}
 homepage            https://tiledb-inc.github.io/TileDB-R
-checksums           rmd160  910db71856a945473075f89b766ed8fa16eb9138 \
-                    sha256  649cdddd626e47d73043bcdb7573f984b4bce3823f23725661f7a6013c18c12c \
-                    size    554990
+checksums           rmd160  5aabf4e029defdf4676c23ee38a783e4cac70ccc \
+                    sha256  9619ef364b3bac3c90c6d064074ab455606652621b4c258331c09cdebc57f6e8 \
+                    size    559867
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
