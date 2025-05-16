@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran ku-awdc runjags 2.2.2-4
-revision            2
+R.setup             cran ku-awdc runjags 2.2.2-5
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
@@ -12,18 +12,21 @@ description         Interface utilities, model templates, parallel computing met
                     and additional distributions for MCMC models in JAGS
 long_description    {*}${description}
 homepage            https://github.com/ku-awdc/runjags
-checksums           rmd160  06d972a1f394848651f7dc4f4a9abf6f3e16ac0e \
-                    sha256  6f656e4d0620c0806e596ddb4bfec3934534ec17c02da699fcbfd6720a6f424f \
-                    size    1115780
+checksums           rmd160  90572a1dc36b2bdb859348a34c3c550fa90c87c8 \
+                    sha256  0eb4c686b815a4a7b23fd0b21811abbdb0188d6b5d1502280d5c04632f4d3851 \
+                    size    1106856
 
 depends_build-append \
-                    port:pkgconfig
+                    path:bin/pkg-config:pkgconfig
+
 depends_lib-append  port:jags \
                     port:R-coda
 
 # The issue is not as obvious as with other JAGS-related ports,
 # but shows up in tests.
-patchfiles          patch-fix-cxx11.diff
+if {${os.platform} eq "darwin" && ${configure.cxx_stdlib} ne "libc++"} {
+    patchfiles      patch-fix-cxx11.diff
+}
 
 depends_test-append port:R-knitr \
                     port:R-markdown \
