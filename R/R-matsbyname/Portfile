@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github MatthewHeun matsbyname 0.6.11 v
-revision            1
+R.setup             github MatthewHeun matsbyname 0.6.13 v
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             MIT
 description         Implementation of matrix mathematics
 long_description    {*}${description}
 homepage            https://matthewheun.github.io/matsbyname
-checksums           rmd160  9bec91db692af0e4652646a53c4efd7437120029 \
-                    sha256  ee10773a7d3030f5829fdd7f4f20792c91da25128bde8671cb7e1091673dd11c \
-                    size    11193858
+checksums           rmd160  f78251fdb07e6b65bbbee2b797bc3d9ae9f29f31 \
+                    sha256  6f2fe020eba8fa875ca18bbef8d19ce3e30f429e5fd68b5aa360fa0874cd3201 \
+                    size    11196239
 github.tarball_from tarball
 supported_archs     noarch
 
