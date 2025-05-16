@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github DyfanJones urlparse 0.2.0 v
-revision            1
+R.setup             github DyfanJones urlparse 0.2.1 v
+revision            0
 categories-append   www
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Fast simple URL parser
 long_description    {*}${description}
-checksums           rmd160  b7fee2c170af6d32f11df6b6294af5041ef190b9 \
-                    sha256  a4923903df11a4d3a63f50990c8d1d18a4c77dd6da35fe4d3f6ab001206a0225 \
-                    size    116857
+checksums           rmd160  1b0df80aa544e9fdd273a6ec1e953d186cfa5305 \
+                    sha256  01b5c034c4d95986351f479bd6452354f0865460456e6a8a40399e581988f167 \
+                    size    125458
 github.tarball_from archive
 
 depends_lib-append  port:R-Rcpp
