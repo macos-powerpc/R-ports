@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran rspatial terra 1.8-42
+R.setup             cran rspatial terra 1.8-50
 revision            0
 categories-append   gis
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             GPL-3+
 description         Spatial data analysis
 long_description    {*}${description}
 homepage            https://rspatial.org/terra
-checksums           rmd160  dacf69b75fe55bfa233ba758ec489554c63b8b10 \
-                    sha256  d4590ce7cbc9421cc4008a487a0f66f7c326b6420978d5361b9481fba4d4342e \
-                    size    1030778
+checksums           rmd160  bb5d005c4b3999ba62d102562353bf76b57725bc \
+                    sha256  5e207c138da9623b536e5f478811196a5930cb132f894df0cd249e62c54654ef \
+                    size    1034549
 
 set proj_v          proj9
 
@@ -23,6 +23,7 @@ depends_build-append \
 depends_lib-append  path:lib/${proj_v}/lib/pkgconfig/proj.pc:${proj_v} \
                     port:gdal \
                     port:geos \
+                    port:onetbb \
                     port:R-Rcpp \
                     port:sqlite3
 
