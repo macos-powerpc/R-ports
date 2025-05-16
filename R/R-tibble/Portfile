@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github tidyverse tibble 3.2.1.9048 v
+R.setup             github tidyverse tibble 3.2.1.9054 v
 revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
@@ -12,9 +12,9 @@ long_description    Provides a 'tbl_df' class (the 'tibble') \
                     with stricter checking and better formatting \
                     than the traditional data frame.
 homepage            https://tibble.tidyverse.org
-checksums           rmd160  4180e5921b0495fb7957f6bf9e81fe763f58dae0 \
-                    sha256  e9d0912cef0f975abfb5fb9d144a152aeaf77b93bdcb9a15c25309f5f0212f4a \
-                    size    5183834
+checksums           rmd160  beb1ba441976e7a443de1852d352ce0f2d22200d \
+                    sha256  bd68dcced6996448f1d3b6785b7e60923cfc4e60ee12574bddc24fd0230287ff \
+                    size    5184753
 github.tarball_from archive
 
 depends_lib-append  port:R-fansi \
