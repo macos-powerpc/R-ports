@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran harrelfe rms 7.0-0
-revision            1
+R.setup             cran harrelfe rms 8.0-0
+revision            0
 categories-append   math economics
 maintainers         nomaintainer
 license             GPL-2+
 description         Regression Modelling Strategies
 long_description    {*}${description}
 homepage            https://hbiostat.org/R/rms
-checksums           rmd160  3b4227041c3c95110dbb937728738971e46bb27e \
-                    sha256  f72c6a798e649258aa4d9421113fef168563f26c7864a90bccfec7b4a43761a2 \
-                    size    639989
+checksums           rmd160  d11c45530517f0e2426f1b4764fe0fed0b6ea3ff \
+                    sha256  278146d28b006fc0959b4a234f9c54fe9f052fe40e5d927a99bdd801a37c664a \
+                    size    692308
 
 depends_lib-append  port:R-colorspace \
                     port:R-digest \
@@ -25,11 +25,13 @@ depends_lib-append  port:R-colorspace \
                     port:R-multcomp \
                     port:R-polspline \
                     port:R-quantreg \
+                    port:R-scales \
                     port:R-SparseM
 
 compilers.setup     require_fortran
 
-depends_test-append port:R-kableExtra \
+depends_test-append port:R-icenReg \
+                    port:R-kableExtra \
                     port:R-mice \
                     port:R-plotly \
                     port:R-rmsb \
