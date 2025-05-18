@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran hojsgaard doBy 4.6.26 v
+R.setup             cran hojsgaard doBy 4.6.27 v
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -13,9 +13,9 @@ license             GPL-2+
 description         Groupwise statistics, ls-means, linear estimates, \
                     utilities
 long_description    {*}${description}
-checksums           rmd160  dc046aeb5c435e973ca38b1b9dfc011a4cb9cd2d \
-                    sha256  e574dc958c6bf6924b9efa8d61f24dad68486833805ff588e284c1eddb78fa36 \
-                    size    4580190
+checksums           rmd160  fe154e7dc78387330725798e89da76497d27b14a \
+                    sha256  e175e80da373ddc31b7f38102e3f6690cccea39394b5816688c99ed60e4860bd \
+                    size    4583797
 # github.tarball_from archive
 supported_archs     noarch
 
