@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran sgsokol rmumps 5.2.1-30
-revision            2
+R.setup             cran sgsokol rmumps 5.2.1-35
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Wrapper for MUMPS library
 long_description    {*}${description}
 homepage            https://github.com/sgsokol/rmumps
-checksums           rmd160  3a6917d960432e61f09c10a80c8b5e3ee89f22a8 \
-                    sha256  8445b5770ddb08589f1b6cf71133b9cb51c9819c3189e6a9bba83513566de657 \
-                    size    2304989
+checksums           rmd160  d4bc867a9e204024df5999cea8dab6824dd5540c \
+                    sha256  bda71e056f0d5710d1a3df0e480485a7a89d96b444e09c3b8f5916f8ced3362a \
+                    size    2355195
 
 depends_lib-append  port:metis \
                     port:mumps \
