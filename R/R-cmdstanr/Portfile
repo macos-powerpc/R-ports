@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github stan-dev cmdstanr 0.8.1 v
-revision            1
+R.setup             github stan-dev cmdstanr 0.9.0 v
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             BSD
 description         R interface to CmdStan
 long_description    {*}${description}
 homepage            https://mc-stan.org/cmdstanr
-checksums           rmd160  dc35f517649155939189c17d72590b59de92d015 \
-                    sha256  d151ad183a9aa340bd444ccf3e75e133f0ce4cb9502a917b98406f4f593209f5 \
-                    size    1960785
+checksums           rmd160  e6ed3839ea216df257abfb180c115b0c0451a941 \
+                    sha256  55e1d9f7d2dba08771850243944606020c9ca4e682ff53ab6a4e9fbc3032a003 \
+                    size    1917458
 github.tarball_from archive
 supported_archs     noarch
 
