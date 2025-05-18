@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran dmlc xgboost 1.7.10.1
+R.setup             cran dmlc xgboost 1.7.11.1
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             Apache-2
 description         Extreme Gradient Boosting
 long_description    {*}${description}
-checksums           rmd160  c57863b038a7644dc65ad5a98f437876cfbd7d30 \
-                    sha256  3dfb4df64eeff4ffcf0ba0ca84067413e449f691b1d49690b12a85254fb0927e \
-                    size    1087247
+checksums           rmd160  321f932d3bdd8a2a43a00bb7b2e9f04050b8d6b1 \
+                    sha256  c15b631be77ae17fef46166abffb3336738a812c219d82c601bc70664a88d7c5 \
+                    size    1085939
 
 depends_build-append \
                     path:bin/cmake:cmake
