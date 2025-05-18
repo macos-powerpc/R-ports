@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran QRM 0.4-31
-revision            2
-categories-append   math
+R.setup             cran bernhard QRM 0.4-35
+revision            0
+categories-append   math finance
 maintainers         nomaintainer
 license             GPL-2+
 description         Quantitative Risk Management: Concepts, Techniques and Tools
 long_description    {*}${description}
-checksums           rmd160  328ca794d39a79c00a81b76880f000e652a3a556 \
-                    sha256  4ad8bd22eff5048d4718d598120cc46879866b818d006f3b915b24effe98be95 \
-                    size    859074
+checksums           rmd160  074011b3d4efe8b7a43b7b9031a98af6415dc59d \
+                    sha256  327ff1acb478c0a47554c930ffd5c44ab9150e1617aea00b99f8b450c8956415 \
+                    size    861150
 
 depends_lib-append  port:R-gsl \
                     port:R-mvtnorm \
