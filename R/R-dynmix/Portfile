@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran kdrachal dynmix 2.1
-revision            1
+R.setup             cran kdrachal dynmix 2.2
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Estimation of dynamic finite mixtures
 long_description    {*}${description}
-checksums           rmd160  2e4c28bc43d1dedaf9770bc91df90e020e502ec4 \
-                    sha256  0f8f4b29e4df7c38e954301fd17bc4d1e5ecd909eaf1b18a27425e05f3d621c9 \
-                    size    30345
+checksums           rmd160  a7b43c75a5a3d912730e803b58d125204289e248 \
+                    sha256  74e7a7aa526f4e0aff04ffdc7ad8bd44405e20f22983475e140a2c2a70b5e909 \
+                    size    30473
 
 depends_lib-append  port:R-Rcpp \
                     port:R-RcppArmadillo \
