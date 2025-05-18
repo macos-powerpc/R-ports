@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran sheffersonlab lefko3 6.3.1
-revision            1
+R.setup             cran sheffersonlab lefko3 6.5.0
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-2+
 description         Historical and ahistorical population projection \
                     matrix analysis
 long_description    {*}${description}
-checksums           rmd160  669db36e74d07845a2bb9eb15a2a1c0d7b421b38 \
-                    sha256  5454014252f6128ef0e35951ea9c5dc641fe2475dffcbc2ba025ef6711987cab \
-                    size    3142906
+checksums           rmd160  db7366a2792b80d7aec7c8ead4444c30df744fa9 \
+                    sha256  98ca3a2936d6c50b3b697b62cc8d7e6349ac8a54e9bac39c539bffda23d1f4f5 \
+                    size    3134189
 
 depends_lib-append  port:R-BH \
                     port:R-glmmTMB \
@@ -22,6 +22,7 @@ depends_lib-append  port:R-BH \
                     port:R-pscl \
                     port:R-Rcpp \
                     port:R-RcppArmadillo \
+                    port:R-rlang \
                     port:R-VGAM
 
 compilers.setup     require_fortran
