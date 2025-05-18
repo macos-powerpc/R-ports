@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran marcindubel bdsm 0.1.1
-revision            1
+R.setup             cran marcindubel bdsm 0.2.1
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Bayesian Dynamic Systems Modelling
 long_description    {*}${description}
-checksums           rmd160  1c5d530c287a519968b0f03947d22ecaadc3173b \
-                    sha256  a19b86d0ca575be853fe25928a142d2a7eeb1b278c8577dc192c807636f80ee5 \
-                    size    939010
+checksums           rmd160  1a2b7a10f6a8d32d933180e09f3d0c1abde6d9cb \
+                    sha256  59be76b347fa5f0546e9be0a3df462ba4fd730fe50a324e53e718e1ce6aac30e \
+                    size    1249139
 supported_archs     noarch
 
 depends_lib-append  port:R-dplyr \
@@ -22,13 +22,15 @@ depends_lib-append  port:R-dplyr \
                     port:R-gridExtra \
                     port:R-magrittr \
                     port:R-optimbase \
+                    port:R-pbapply \
                     port:R-rje \
                     port:R-rlang \
                     port:R-rootSolve \
                     port:R-tidyr \
                     port:R-tidyselect
 
-depends_test-append port:R-spelling \
+depends_test-append port:R-rmarkdown \
+                    port:R-spelling \
                     port:R-testthat
 
 # Quite a number of tests fail, but most of errors
