@@ -3,17 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran pablo-najera cdmTools 1.0.5
-revision            2
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+R.setup             cran pablo-najera cdmTools 1.0.6
+revision            0
+platforms           {darwin any}
+maintainers         nomaintainer
 license             GPL-3
 description         Useful tools for cognitive diagnosis modelling
 long_description    {*}${description}
-checksums           rmd160  09c7d1a8b59ea47befb9b958a1ec53fe7929c60f \
-                    sha256  fafcc8f58b878e22261b5d929ad310d1ed1cc1f18a4fdf2d46363688322da159 \
-                    size    55623
+homepage            https://github.com/pablo-najera/cdmTools
+checksums           rmd160  49d9de86bd046245687934fefca5857939daaef3 \
+                    sha256  5b9a188e33077a84f2f40ffd4ee79ac2d40676e4bcffdf00753d6ce54cd8bbf5 \
+                    size    67342
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-combinat \
                     port:R-doSNOW \
@@ -22,6 +23,7 @@ depends_lib-append  port:R-combinat \
                     port:R-GDINA \
                     port:R-ggplot2 \
                     port:R-GPArotation \
+                    port:R-plyr \
                     port:R-psych \
                     port:R-sirt
 
