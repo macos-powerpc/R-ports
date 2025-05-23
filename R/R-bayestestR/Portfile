@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github easystats bayestestR 0.15.3 v
+R.setup             github easystats bayestestR 0.16.0 v
 revision            0
 categories-append   math economics
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             GPL-3
 description         Understand and describe Bayesian models and posterior distributions
 long_description    {*}${description}
 homepage            https://easystats.github.io/bayestestR
-checksums           rmd160  0e5ff6e648972f69a5afb99102413a6604143db3 \
-                    sha256  77256decf2b48b24f8ed19e9f66009143f53c5ce9587b0a98d7c0cdd7d2489f5 \
-                    size    2248621
+checksums           rmd160  66c591f9a276a4bd0b90e0715b1fdde30a750ec5 \
+                    sha256  d550ad15b3d97367a6952d3cef34286d758e549f0846647d8922e2fcf8711e1e \
+                    size    2249302
 github.tarball_from archive
 supported_archs     noarch
 
