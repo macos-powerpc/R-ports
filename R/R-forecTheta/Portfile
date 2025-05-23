@@ -3,18 +3,24 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran jafiorucci forecTheta 2.6.2
-revision            3
+R.setup             cran jafiorucci forecTheta 3.0
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
-license             {GPL-2 GPL-3}
+license             GPL-2+
 description         Forecasting time series by Theta models
 long_description    {*}${description}
-checksums           rmd160  9f993ab6909b17c792f2ab24a557dfd19aa79384 \
-                    sha256  8d4bbcff6e313e13ae1708e0beab9f548089df464e0c858ce7a057e50ced8577 \
-                    size    14490
+homepage            https://github.com/jafiorucci/forecTheta
+checksums           rmd160  1b90ce22c474389a76c6cc7ec61308a83dce36c1 \
+                    sha256  f374e75c264b882e0d2774531847fd01f4a8a142db3e96f2cc058074f56f55db \
+                    size    21559
 supported_archs     noarch
-platforms           {darwin any}
 
-depends_lib-append  port:R-forecast \
+depends_lib-append  port:R-foreach \
+                    port:R-forecast \
                     port:R-tseries
+
+depends_test-append port:R-testthat
+
+test.run            no
