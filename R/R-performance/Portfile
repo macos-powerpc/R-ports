@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github easystats performance 0.12.4 v
-revision            1
+R.setup             github easystats performance 0.14.0 v
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             GPL-3
 description         Assessment of regression models performance
 long_description    {*}${description}
 homepage            https://easystats.github.io/performance
-checksums           rmd160  e5425445b8cd8230e711fd965829db6c05034ca9 \
-                    sha256  72e5be06f5ffcc7c3395ba0b745b49f3c6ece0a7597abdbe89c455ce5aa6430c \
-                    size    4283525
+checksums           rmd160  7d5d15b6db33f59f2d32157c934e9985b01b8518 \
+                    sha256  10680aaf646863e47e9d5b4d679e704c727d2137bb0d23bd424c28bdcc24eaaf \
+                    size    4301698
 github.tarball_from archive
 supported_archs     noarch
 
@@ -36,6 +36,7 @@ depends_test-append port:R-AER \
                     port:R-CompQuadForm \
                     port:R-correlation \
                     port:R-cplm \
+                    port:R-curl \
                     port:R-dbscan \
                     port:R-DHARMa \
                     port:R-estimatr \
@@ -44,10 +45,9 @@ depends_test-append port:R-AER \
                     port:R-forecast \
                     port:R-ftExtra \
                     port:R-gamm4 \
-                    port:R-ggplot2 \
                     port:R-glmmTMB \
                     port:R-Hmisc \
-                    port:R-httr \
+                    port:R-httr2 \
                     port:R-ICS \
                     port:R-ICSOutlier \
                     port:R-ISLR \
@@ -61,6 +61,7 @@ depends_test-append port:R-AER \
                     port:R-metadat \
                     port:R-metafor \
                     port:R-mlogit \
+                    port:R-modelbased \
                     port:R-multimode \
                     port:R-nestedLogit \
                     port:R-nonnest2 \
@@ -73,6 +74,7 @@ depends_test-append port:R-AER \
                     port:R-qqplotr \
                     port:R-randomForest \
                     port:R-RcppEigen \
+                    port:R-reformulas \
                     port:R-rempsyc \
                     port:R-rmarkdown \
                     port:R-rstanarm \
