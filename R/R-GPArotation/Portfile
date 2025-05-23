@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-forge GPArotation 2024.3-1
-revision            2
+R.setup             cran r-forge GPArotation 2025.3-1
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Gradient Projection Algorithm Rotation for factor analysis
 long_description    {*}${description}
 homepage            https://optimizer.r-forge.r-project.org/GPArotation_www
-checksums           rmd160  56cba6df5f3ffa0e07f55a68a8e8cc7564834ae6 \
-                    sha256  88f657af29789591d581e0c529fd50ef1307abfb33e0403209bd3e591e2654da \
-                    size    313398
+checksums           rmd160  35e515ff070fa5bb7cf8920e9264d0d84faab84a \
+                    sha256  bf2bd7ee40069abd343e1ab3598a7dcf6ef01d051271a5687569524a0123828b \
+                    size    496413
 supported_archs     noarch
-platforms           {darwin any}
 
 test.run            yes
