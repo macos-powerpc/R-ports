@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github tidymodels probably 1.0.3 v
-revision            2
+R.setup             github tidymodels probably 1.1.0 v
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             MIT
 description         Tools for post-processing class probability estimates
 long_description    {*}${description}
 homepage            https://probably.tidymodels.org
-checksums           rmd160  045ebec33bd14ad79f04d70d7c996139c55078ca \
-                    sha256  fe2b408886181981a363dc787ebb650131dfd33453f3602b64c3c499c6d87cdc \
-                    size    1158366
+checksums           rmd160  6ba4c9df770d1212db332821ce228641a12403a7 \
+                    sha256  c82f24741b1eb75c29c5b23d9ded94e40c2485c1f4226c4663027fc9a0c07aa1 \
+                    size    1170364
 github.tarball_from tarball
 supported_archs     noarch
 
