@@ -4,19 +4,19 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran tidymodels finetune 1.2.0 v
-revision            2
+R.setup             cran tidymodels finetune 1.2.1 v
+revision            0
 categories-append   economics math
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Additional functions for model tuning
 long_description    {*}${description}
 homepage            https://finetune.tidymodels.org
-checksums           rmd160  716514d608d3a45526be82cb1c4a0619cd55de25 \
-                    sha256  d72ebfddd33a70d9d6078265094e08ab8f90e827b0ce4597f75a5197a3432c00 \
-                    size    131276
+checksums           rmd160  eba3abc927f8158568ed8a53e2aaab42d5d299d6 \
+                    sha256  81ac2a446f16d72e885d6d0fde93c9f4c43a42a18d65697287f3a3cd45c76c1f \
+                    size    130894
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-cli \
                     port:R-dials \
