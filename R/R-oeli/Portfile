@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran loelschlaeger oeli 0.7.2
+R.setup             cran loelschlaeger oeli 0.7.3
 revision            0
 categories-append   devel
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             GPL-3+
 description         Utilities for developing data science software
 long_description    {*}${description}
 homepage            https://github.com/loelschlaeger/oeli
-checksums           rmd160  a9de8bb5f5075e19693def9998f1e6524a896897 \
-                    sha256  3923e8c07f8826cb3d6b6792484645c324cd5071cfef368a1c5caf2219b93021 \
-                    size    101162
+checksums           rmd160  ee17171b99f2ee201622d8dec6799b79eaa7f84b \
+                    sha256  41056ccea39d33e713380ad4a0e9c89e7648b5d347ae5db372ce80782c64c14a \
+                    size    101466
 
 depends_lib-append  port:R-benchmarkme \
                     port:R-checkmate \
@@ -21,12 +21,10 @@ depends_lib-append  port:R-benchmarkme \
                     port:R-ggplot2 \
                     port:R-hexSticker \
                     port:R-latex2exp \
+                    port:R-R6 \
                     port:R-Rcpp \
                     port:R-RcppArmadillo \
-                    port:R-rprojroot \
-                    port:R-showtext \
                     port:R-SimMultiCorrData \
-                    port:R-sysfonts \
                     port:R-testthat
 
 compilers.setup     require_fortran
