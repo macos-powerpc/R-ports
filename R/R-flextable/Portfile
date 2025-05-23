@@ -4,18 +4,18 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran davidgohel flextable 0.9.6
-revision            1
+R.setup             cran davidgohel flextable 0.9.8
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
 description         Functions for tabular reporting
 long_description    {*}${description}
 homepage            https://davidgohel.github.io/flextable
-checksums           rmd160  d5c38510c9630c7035e76205105193c5d9c03eda \
-                    sha256  232e050bec231b5d58ca8ad54116c476d2dd683ac2824b3688c06250338f9229 \
-                    size    2222285
+checksums           rmd160  8b0924fcdc4c5504e9f6f475b995e5dfec3042c1 \
+                    sha256  9672e14f108c087383c01981f7f36a63a68dcf6ab72630a603fca427cf51735f \
+                    size    1335602
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-data.table \
                     port:R-gdtools \
@@ -33,6 +33,7 @@ depends_test-append port:R-bookdown \
                     port:R-broom \
                     port:R-broom.mixed \
                     port:R-commonmark \
+                    port:R-doconv \
                     port:R-ggplot2 \
                     port:R-lme4 \
                     port:R-magick \
