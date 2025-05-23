@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran davidbolin MetricGraph 1.4.0
-revision            1
+R.setup             cran davidbolin MetricGraph 1.5.0
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
@@ -14,9 +14,9 @@ long_description    Facilitates creation and manipulation of metric graphs, such
                     of a large class of random fields and stochastic partial differential equations on such spaces. \
                     These random fields can be used for simulation, prediction and inference.
 homepage            https://davidbolin.github.io/MetricGraph
-checksums           rmd160  257ac6e894fb17507368c4097d3f103d967d865f \
-                    sha256  3d956c68dad7af3642152de1ca86f6460f99ec40906a6e49a7f83600d501bd0d \
-                    size    504443
+checksums           rmd160  9baa791e889bdba4064c7f6bb8a0ec9240c248f0 \
+                    sha256  23d9bc1e8e7602213af9d8782193c8b617d741adf2f4541ce1d9a40fd8f5ec12 \
+                    size    531708
 
 depends_lib-append  port:R-broom \
                     port:R-dplyr \
