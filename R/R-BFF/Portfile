@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran rshudde BFF 4.2.1
-revision            1
+R.setup             cran rshudde BFF 4.4.2
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             GPL-2+
 description         Bayes Factor Functions
 long_description    {*}${description}
 homepage            https://github.com/rshudde/BFF
-checksums           rmd160  f63dfbb72211eed08913cdc0a1a73a0cc93261a7 \
-                    sha256  cadcf8d6b5a00558f9ac83c5f78aa0fd4e55569d4558a544ed90880e654d8ee8 \
-                    size    269561
+checksums           rmd160  00a8be6f498eed9da92cdc557cde516c2749bc3e \
+                    sha256  8d4d177464399c4e36dae12212408fc50e66e8eb901c7f1283c86e2f4a415123 \
+                    size    254698
 supported_archs     noarch
 
 depends_lib-append  port:R-ggplot2 \
