@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran topepo C50 0.1.8
-revision            2
+R.setup             cran topepo C50 0.2.0
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         C5.0 decision trees and rule-based models
 long_description    {*}${description}
 homepage            https://topepo.github.io/C5.0
-checksums           rmd160  355d1dafbd45915fd9877dfd9458dd0f9a7195ad \
-                    sha256  bbd1bd5ed0ed5257529396697bea2a5841c8159470ba09d2066411d4aeda9c15 \
-                    size    276140
+checksums           rmd160  3c6e6490898014af41f772e16ecc5f61ad1a6c78 \
+                    sha256  4670b7d465499166163d2b2519ca6f900e8d2b6abe02a3a8ab0be0ec6d3415e6 \
+                    size    273556
 
 depends_lib-append  port:R-Cubist \
                     port:R-partykit
