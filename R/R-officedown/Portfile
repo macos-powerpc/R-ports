@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran davidgohel officedown 0.4.0
-revision            1
+R.setup             cran davidgohel officedown 0.4.1
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Enhanced R Markdown format for Word and PowerPoint
 long_description    {*}${description}
 homepage            https://davidgohel.github.io/officedown
-checksums           rmd160  f78b27eb7f88e233c9622995e4f000322f59f9c9 \
-                    sha256  e1e1322a9c2879c6c41f346292cd845cb14ec44aa6707e620f4c90165b22cba5 \
-                    size    571386
+checksums           rmd160  3f2f720bddbe69ee1b9fc7650fc58f58011344b0 \
+                    sha256  657506465b047d782c88e60d0104dbcf5b53e53375ae408350292f2a358e9989 \
+                    size    571175
 supported_archs     noarch
 
 depends_lib-append  port:R-knitr \
@@ -27,8 +27,8 @@ depends_lib-append  port:R-knitr \
                     port:R-xml2 \
                     port:R-yaml
 
-# Some optional deps are omitted.
 depends_test-append port:R-bookdown \
+                    port:R-doconv \
                     port:R-flextable \
                     port:R-ggplot2 \
                     port:R-testthat
