@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran KlausVigo kknn 1.4.0
+R.setup             cran KlausVigo kknn 1.4.1
 revision            0
 categories-append   math
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             GPL-2+
 description         Weighted k-nearest neighbors
 long_description    {*}${description}
 homepage            https://klausvigo.github.io/kknn
-checksums           rmd160  fa2d3f1706463c4fb4601c9121f6f3aee1580193 \
-                    sha256  953da321a81faf34a38526a4bd8f468dc3e1856b2f2a20306c560cdb3f58ad79 \
-                    size    396570
+checksums           rmd160  ef27f123507dadca4ccfed5abfd434af32bbb31e \
+                    sha256  5232ddc268c0f9d691b613c8767a9ce079dade75ee22051a3b928024ada46f34 \
+                    size    396633
 
 depends_lib-append  port:R-igraph
 
