@@ -6,7 +6,8 @@ PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
 R.setup             cran r-spatial s2 1.1.8
-revision            0
+# Revbump upon updates of abseil.
+revision            1
 categories-append   math geometry
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             Apache-2
