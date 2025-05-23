@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran dipterix dipsaus 0.3.0
-revision            1
+R.setup             cran dipterix dipsaus 0.3.1
+revision            0
 categories-append   devel
 maintainers         nomaintainer
 license             GPL-3
 description         Dipping sauce for data analysis and visualizations
 long_description    {*}${description}
 homepage            https://dipterix.org/dipsaus
-checksums           rmd160  40763cc610926bc55bbbe8600cbfadb83c7b91e7 \
-                    sha256  33f60d443485192e58d36b62c7aac6d47a09ffdf622398789d2853728d511f77 \
-                    size    411376
+checksums           rmd160  78eff6391cb3923735198ad9f69a80a20f471750 \
+                    sha256  5d65dd29925f9307db48d837b1e9bc33e745acde1d204b2f2fb2552de79b1e4c \
+                    size    412810
 
 depends_lib-append  port:R-base64enc \
                     port:R-cli \
