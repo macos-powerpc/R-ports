@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github shikokuchuo mirai 2.2.0 v
-revision            1
+R.setup             github shikokuchuo mirai 2.3.0 v
+revision            0
 categories-append   devel
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             GPL-3+
 description         Minimalist async evaluation framework
 long_description    {*}${description} for R.
 homepage            https://shikokuchuo.net/mirai
-checksums           rmd160  f9bd020f9afacc9bfb414c2914d7b4a3ea0b6093 \
-                    sha256  f458bc7536e230a371d131b159075f9200da9b90fa74830392cb90b7943775d3 \
-                    size    377363
+checksums           rmd160  0ec0a609f026bc81cfbc5db96e524101f34cd8d0 \
+                    sha256  148bb8c5a44b4d9ada2b9676e5da6eaeaf96af02eb647e47aaab25d6e4302aaf \
+                    size    380204
 github.tarball_from archive
 supported_archs     noarch
 
