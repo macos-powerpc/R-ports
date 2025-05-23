@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-project Unicode 15.1.0-1
-revision            2
+R.setup             cran r-project Unicode 16.0.0-1
+revision            0
 categories-append   textproc
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
 description         Unicode data and utilities
-long_description    Data from Unicode 15.1.0 and related utilities.
-checksums           rmd160  da0f59b10166a20f4a5e3009c3a23a1472d3da75 \
-                    sha256  5384697bdefd040bf100cb252f4f8538d75e45cc6b7124349dc9b13aed6e99f8 \
-                    size    240532
+long_description    Data from Unicode 16.0.0 and related utilities.
+checksums           rmd160  6092edd99903c68bf8fb6fd7b6d08b8ffb039d8d \
+                    sha256  3f5c4690066f4a441266235e309cf6da6b4d7c4083854e3d7428ded281c52960 \
+                    size    252028
 supported_archs     noarch
-platforms           {darwin any}
 
 test.run            yes
