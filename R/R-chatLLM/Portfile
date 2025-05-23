@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran knowusuboaky chatLLM 0.1.1
+R.setup             cran knowusuboaky chatLLM 0.1.2
 revision            0
 categories-append   llm www
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             GPL-3+
 description         Flexible interface for LLM API interactions
 long_description    {*}${description}
 homepage            https://github.com/knowusuboaky/chatLLM
-checksums           rmd160  a1666059e8347a993b4fd615c9cecababa6a10be \
-                    sha256  fe7b24d2675f1a9f8d938c506007085b43b33623aed5e12f4a136e5cbc02bed2 \
-                    size    7245
+checksums           rmd160  15f1a923092be9c62d369c4f52118d0a1ebfe3f7 \
+                    sha256  481924d82d4ab176d84a490e7d8f7da3d7251b66eaf4b8575c5d442164246d52 \
+                    size    1301686
 supported_archs     noarch
 
 depends_lib-append  port:R-httr \
