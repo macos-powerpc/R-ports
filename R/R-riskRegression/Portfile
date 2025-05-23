@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran tagteam riskRegression 2025.05.15
+R.setup             cran tagteam riskRegression 2025.05.20
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             {GPL-2 GPL-3}
 description         risk regression and prediction with censored data
 long_description    R package for {*}${description}.
 homepage            https://github.com/tagteam/riskRegression
-checksums           rmd160  d1cb3bd28c2418c8b4e6faa8672744817217f718 \
-                    sha256  4f9acecc018d13cfc8419da6dde1e121149d6d87e1e779c1f753e93fd22306f7 \
-                    size    459446
+checksums           rmd160  766ac877293d8562ae03091d6ab9f01d7386286e \
+                    sha256  fbdd0039de3989dcbb8111cbca67ba88d6385d4556ba02496789661bea9752c8 \
+                    size    459443
 
 depends_lib-append  port:R-cmprsk \
                     port:R-data.table \
