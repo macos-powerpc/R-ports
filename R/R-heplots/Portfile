@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran friendly heplots 1.7.3
-revision            1
+R.setup             cran friendly heplots 1.7.5
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Visualizing hypothesis tests in multivariate linear models
 long_description    {*}${description}
 homepage            https://friendly.github.io/heplots
-checksums           rmd160  318e98942416ca54f46049f98358f6a506bd152f \
-                    sha256  6431872dfe504bb933c77d980eff16feb79ec2a67be4b9fa097d1702a313aba7 \
-                    size    2978393
+checksums           rmd160  3de5980c4805720323b675a5f184db963cce3d33 \
+                    sha256  8bd13e2c15f3335eba9dcf535646612125e9ae2de0ce1f304788a786700b2555 \
+                    size    2990287
 supported_archs     noarch
 
 depends_lib-append  port:R-broom \
@@ -27,6 +27,7 @@ depends_lib-append  port:R-broom \
 # CRAN is silent on R-archdata and R-qqtest,
 # but the package checks for those.
 depends_test-append port:R-animation \
+                    port:R-aplpack \
                     port:R-archdata \
                     port:R-bookdown \
                     port:R-candisc \
