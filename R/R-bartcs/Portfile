@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran yooyh bartcs 1.2.2
-revision            1
+R.setup             cran yooyh bartcs 1.3.0
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3+
 description         Bayesian Additive Regression Trees for Confounder Selection
 long_description    {*}${description}
 homepage            https://github.com/yooyh/bartcs
-checksums           rmd160  48d4130f65570ee33036da82233a63c90fc73a87 \
-                    sha256  39b3be6e5b679a391361f587b57d320312c11a1e6e9dc5699cbbfa096fe1524d \
-                    size    88518
+checksums           rmd160  84132c255ba2409caaf01be2cc5ea2ed7d3000f5 \
+                    sha256  24aba949191588988c1fc1a22abcac6a59ff7a831887b92de4b466155adaeb7b \
+                    size    1691537
 
 depends_lib-append  port:R-coda \
                     port:R-ggcharts \
