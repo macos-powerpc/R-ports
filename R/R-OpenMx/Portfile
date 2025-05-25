@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran OpenMx OpenMx 2.22.6
+R.setup             cran OpenMx OpenMx 2.22.7
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             Apache-2
 description         Extended structural equation modelling
 long_description    {*}${description}
 homepage            http://openmx.ssri.psu.edu
-checksums           rmd160  1536859600be9bad0dedc653aa228edbc76b7de9 \
-                    sha256  26f0a8225ef990b90a3686ca8ff4e3e74b741381c2a292280b26d4b8a1def891 \
-                    size    3913656
+checksums           rmd160  00955fd95426d6c65f32d7424e2d36370105affa \
+                    sha256  36d7268b12c1edbd042dd86fa186d20a2fc1a5b53772aa1211cad1e5fc0f8c43 \
+                    size    3914499
 
 depends_lib-append  port:R-BH \
                     port:R-digest \
