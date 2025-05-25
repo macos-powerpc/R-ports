@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran doccstat fastcpd 0.16.1
-revision            1
+R.setup             cran doccstat fastcpd 0.16.2
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3+
 description         Fast change point detection via sequential gradient descent
 long_description    {*}${description}
 homepage            https://fastcpd.xingchi.li
-checksums           rmd160  03220d805ada47906dac0f4481ec995916bae693 \
-                    sha256  862ef9ffaef56d4b02be51510ea5ffe0c8319b73e121e7bf69cbaa42ab30fc4b \
-                    size    4996922
+checksums           rmd160  8c90aa94c30a9a1cfcad6ea0481875b05ea769cb \
+                    sha256  429dfed5339d4fc8b7771507002f31ad8eeb206ad8604938f0dddc5cb43d82e2 \
+                    size    4996957
 
 depends_lib-append  port:R-glmnet \
                     port:R-progress \
