@@ -5,18 +5,18 @@ PortGroup           openssl 1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran r-spatial s2 1.1.8
+R.setup             cran r-spatial s2 1.1.9
 # Revbump upon updates of abseil.
-revision            1
+revision            0
 categories-append   math geometry
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             Apache-2
 description         Spherical geometry operators using the S2 geometry library
 long_description    {*}${description}
 homepage            https://r-spatial.github.io/s2
-checksums           rmd160  bd4aeb6430c4f697c5522069821c739aeda2a077 \
-                    sha256  4366c00a58471544d34b1ab405206d23c9cfc305468316961fab45f9912a8191 \
-                    size    2966956
+checksums           rmd160  6c256921e6ef0a78b50b37ad2cc573ef864d8058 \
+                    sha256  4dcd2bff738be5a89b925fed29acb6e224e0f514b4530dc9987a0a72c5a99b55 \
+                    size    2967364
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
