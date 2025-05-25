@@ -3,23 +3,31 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran csurvey 1.9
-revision            2
+R.setup             cran xliao csurvey 1.12
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Constrained regression for survey data
-long_description    {*}${description}
-checksums           rmd160  9c721d83b4c8efbcb681de9f1aa11a0c4b173fce \
-                    sha256  05ead6242cf70dad483a3f2c8ed4bead36142b7c43ddcefb00ae463106ac813c \
-                    size    70733
+long_description    Domain mean estimation with monotonicity \
+                    or block monotone constraints.
+checksums           rmd160  981de2ee4dd9b6f4c081485354a2414c81b69b7d \
+                    sha256  01095a67b0f3637435458405d27f76bffc136e96333eee792223f606298d76fb \
+                    size    90043
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-cgam \
                     port:R-coneproj \
+                    port:R-data.table \
+                    port:R-dplyr \
+                    port:R-ggplot2 \
                     port:R-igraph \
                     port:R-purrr \
-                    port:R-survey
+                    port:R-survey \
+                    port:R-tibble \
+                    port:R-zeallot
+
+depends_test-append port:R-NHANES
 
 test.run            yes
