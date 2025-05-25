@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran extremefit 1.0.2
-revision            2
+R.setup             cran kevin.jaunatre extremefit 1.0.3
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2
 description         Estimation of extreme conditional quantiles and probabilities
 long_description    {*}${description}
-checksums           rmd160  e96842d5e754b4dbbd0aafcc5746ed2e6bf6368f \
-                    sha256  5ae0529c41aa715b76fa0dbe03a923f14c63e1dc4e4390ac0c9efc096e33fd1d \
-                    size    4570226
+checksums           rmd160  b22457fa0a57ae87bd00da46793266485511c6a0 \
+                    sha256  a17f8d6785f8725c4304671d4093fb26767eed9b7eb3fc299a2ab5bf9b11fbaa \
+                    size    4574877
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_test-append port:R-R.rsp
 
