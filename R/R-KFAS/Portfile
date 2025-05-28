@@ -4,16 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is outdated.
-R.setup             cran helske KFAS 1.5.1
-revision            2
+R.setup             cran helske KFAS 1.6.0
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-2+
 description         Kalman filter and smoother for exponential family state space models
 long_description    {*}${description}
-checksums           rmd160  c2a577825f973445cc566ea54411206b20b8538d \
-                    sha256  1292dc07d5f0509a0506ffdb7e9fa616734f0ae981dad0a044cf9e06d5f05ccf \
-                    size    481940
+homepage            https://github.com/helske/KFAS
+checksums           rmd160  181c8287fb7a989c86613c50e1d854973e7a03d5 \
+                    sha256  48268eb44fd548cacd93bdb16473d0869e4b87947b6c582c0fd8118bacf1e987 \
+                    size    482313
 
 compilers.setup     require_fortran
 
