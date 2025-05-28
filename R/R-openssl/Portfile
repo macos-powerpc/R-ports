@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           openssl 1.0
 PortGroup           R 1.0
 
-R.setup             cran jeroen openssl 2.3.2
-revision            1
+R.setup             cran jeroen openssl 2.3.3
+revision            0
 categories-append   crypto net security
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Toolkit for encryption, signatures and certificates \
                     based on OpenSSL
 long_description    {*}${description}
-checksums           rmd160  d6d2f763881d324a618327b4dec073758455c0dc \
-                    sha256  9925ca6abc3c55809322e12458a15c49cccc01b85f9cac9475a64e9d1e6584db \
-                    size    1204775
+checksums           rmd160  31a245ed6f281174a707ee1ffa95b5f38dee4222 \
+                    sha256  b6b709a98dc3de47ec59adc234d8f0864c4f5b31c5e65478ec5e49c80ba7bf59 \
+                    size    1206720
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
