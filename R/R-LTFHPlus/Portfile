@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran EmilMiP LTFHPlus 2.1.2 v
-revision            1
+R.setup             cran EmilMiP LTFHPlus 2.1.4 v
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-3
@@ -12,9 +12,9 @@ description         Implementation of LT-FH++
 long_description    {*}${description}, an extension of the liability-threshold \
                     family history (LT-FH) model.
 homepage            https://emilmip.github.io/LTFHPlus
-checksums           rmd160  0fba8b696e2e8aae20c9da5338974cfc5e8083ed \
-                    sha256  238c3b38dc80814948a04b0d5fe2914b1b1bfbcd752a41864807a93fd91d3ae4 \
-                    size    78925
+checksums           rmd160  3035e372025b5837d68ab947ca847f01d1089966 \
+                    sha256  e888fbde0c5b05a7c70f020a98d3642051d9d273d97c9780edb3a2a0255b7c01 \
+                    size    72957
 
 depends_lib-append  port:R-batchmeans \
                     port:R-dplyr \
@@ -31,7 +31,8 @@ depends_lib-append  port:R-batchmeans \
                     port:R-tmvtnorm \
                     port:R-xgboost
 
-depends_test-append port:R-knitr \
+depends_test-append port:R-kinship2 \
+                    port:R-knitr \
                     port:R-rmarkdown \
                     port:R-testthat
 
