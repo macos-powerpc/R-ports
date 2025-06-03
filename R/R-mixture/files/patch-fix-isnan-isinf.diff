@@ -129,6 +129,15 @@
          inter_zigs.row(i) = zi_gs.row(i);
          ss = arma::sum(inter_zigs.row(i));
        }
+@@ -2154,7 +2154,7 @@
+ 
+   m->set_E_step(stochastic_check); 
+   
+-  if(isnan(in_l_tol)){
++  if(std::isnan(in_l_tol)){
+     m->tol_l = 1e-6;
+   }
+   else{
 
 --- src/ghpcm_arma.hpp.orig	2022-09-20 22:04:13.000000000 +0700
 +++ src/ghpcm_arma.hpp	2023-09-16 04:55:37.000000000 +0700
