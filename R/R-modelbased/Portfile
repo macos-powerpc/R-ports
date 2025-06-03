@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github easystats modelbased 0.11.0 v
+R.setup             github easystats modelbased 0.11.2 v
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             GPL-3
 description         Methods for correlation analysis
 long_description    {*}${description}
 homepage            https://easystats.github.io/modelbased
-checksums           rmd160  53b75af0449686ac338090f0183cde1ea07b1a4a \
-                    sha256  ccd0c03b2ca415af22863f705cda7fec5fb595cd823c32c11840ecc9be60fbd4 \
-                    size    1215260
+checksums           rmd160  62f8b952d84cb59c9f31a2fa60f698bcf337b07a \
+                    sha256  25c7559e369e714b5f91c675bfb72adc4f9cae9c9aac1eb77fd89110c6bad4d2 \
+                    size    1227565
 github.tarball_from archive
 supported_archs     noarch
 
@@ -44,16 +44,21 @@ depends_test-append port:R-BH \
                     port:R-lmerTest \
                     port:R-logspline \
                     port:R-marginaleffects \
+                    port:R-mice \
+                    port:R-ordinal \
+                    port:R-palmerpenguins \
                     port:R-patchwork \
                     port:R-pbkrtest \
                     port:R-performance \
                     port:R-poorman \
+                    port:R-pscl \
                     port:R-RcppEigen \
                     port:R-report \
                     port:R-rmarkdown \
                     port:R-rstanarm \
                     port:R-rtdists \
                     port:R-RWiener \
+                    port:R-sandwich \
                     port:R-see \
                     port:R-testthat \
                     port:R-vdiffr \
