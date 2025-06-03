@@ -3,20 +3,20 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran tcltk2 1.2-11
-revision            2
+R.setup             cran SciViews tcltk2 1.6.1
+revision            0
 categories-append   graphics
+platforms           {darwin any}
 maintainers         nomaintainer
 license             LGPL-3
 description         A series of additional Tcl commands and Tk widgets \
-                    with style and various functions to supplement the tcltk package
+                    with style and various functions to supplement the R-tcltk package
 long_description    {*}${description}
-homepage            https://www.sciviews.org/SciViews-R
-checksums           rmd160  d58176bf9d53b592702e901b7b05a0e3a8350cab \
-                    sha256  ad183ae3b7190501504a0589e0b3be480f04267303e3384fef00987446a37dc5 \
-                    size    833846
+homepage            https://github.com/SciViews/tcltk2
+checksums           rmd160  4760845804a75ee13003430865ecb7acf1cb2eb7 \
+                    sha256  dc1cc00ce973df1ce98b830aa70998e455119d89961ce9a368e8a688e6845c6a \
+                    size    1177801
 supported_archs     noarch
-platforms           {darwin any}
 
 pre-fetch {
     if {![catch {set result [active_variants R "tcltk"]}]} {
