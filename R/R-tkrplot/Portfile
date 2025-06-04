@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran tkrplot 0.0-27
-revision            2
+R.setup             cran luke-tierney tkrplot 0.0-30
+revision            0
 categories-append   graphics
 maintainers         nomaintainer
-license             {GPL-2 GPL-3}
+license             GPL
 description         Simple mechanism for placing R graphics in a Tk widget
 long_description    {*}${description}
-checksums           rmd160  6487d3279b05a0a36085ce7455f669285d17dc0b \
-                    sha256  c99211919414400b0f579e1354407f2e154cfe85533d324bcf9c68172c2772a5 \
-                    size    33104
+checksums           rmd160  4bf0d9bf40aca9fc9423ab9436dfe28cac408d4a \
+                    sha256  cc6c997a1f4102fed2ce75d4c6dd057c4017c2ae1c930c8b37ca51a9a22ccbe1 \
+                    size    33492
 
 depends_lib-append  port:xorg-libX11
 
