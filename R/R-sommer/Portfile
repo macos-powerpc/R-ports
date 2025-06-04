@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran covaruber sommer 4.4.1
+R.setup             cran covaruber sommer 4.4.2
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             GPL-2+
 description         Solving Mixed Model Equations in R
 long_description    {*}${description}
 homepage            https://github.com/covaruber/sommer
-checksums           rmd160  5b7796f44a81a59b54f76c3f1202f07790990e2e \
-                    sha256  1bc07105741e7b62420dd784f2c32e23dc5449972902ca4f19084b9c63a3acc8 \
-                    size    1948711
+checksums           rmd160  a23b9259fa920ebcaec8cab54a7889b8d606c225 \
+                    sha256  5ba5920a29f9711af386b03b464a78d2a291f22377e5159f95debb5b2aba3149 \
+                    size    1950716
 
 depends_lib-append  port:R-crayon \
                     port:R-Rcpp \
