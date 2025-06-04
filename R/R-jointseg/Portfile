@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran mpierrejean jointseg 1.0.2
-revision            2
+R.setup             cran mpierrejean jointseg 1.0.3
+revision            0
 maintainers         nomaintainer
 license             LGPL-2.1+
 description         Joint segmentation of multivariate (copy number) signals
 long_description    {*}${description}
 homepage            https://github.com/mpierrejean/jointseg
-checksums           rmd160  be4ea601c06695e71c5a179c6c8667875235ae45 \
-                    sha256  83241dc122ccdde065966b3094f47b52c75afcdd4fd719794d747030669f347e \
-                    size    946631
+checksums           rmd160  e64084f4ca59db3309d299839fd29ff2a220e221 \
+                    sha256  0e2545f197130ac3636ed368afcdae808957d7fb538f7bf6a964448cdb985cb7 \
+                    size    961661
 
 depends_lib-append  port:R-acnr \
                     port:R-DNAcopy \
