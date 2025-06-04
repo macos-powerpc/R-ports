@@ -3,7 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran rspatial terra 1.8-50
+R.setup             github rspatial terra 43126ab0fabc2757564bb05994cc683ce70710e5
+version             1.8-55
 revision            0
 categories-append   gis
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +12,10 @@ license             GPL-3+
 description         Spatial data analysis
 long_description    {*}${description}
 homepage            https://rspatial.org/terra
-checksums           rmd160  bb5d005c4b3999ba62d102562353bf76b57725bc \
-                    sha256  5e207c138da9623b536e5f478811196a5930cb132f894df0cd249e62c54654ef \
-                    size    1034549
+checksums           rmd160  7377b43ccec37312b48d5bfd721206fd5e10ccf5 \
+                    sha256  77b1888ed947046c0e22bbd1cbfd4ed0b9d71cd2154a6ff2081f81f3f90f9df7 \
+                    size    1069189
+github.tarball_from archive
 
 set proj_v          proj9
 
@@ -29,8 +31,21 @@ depends_lib-append  path:lib/${proj_v}/lib/pkgconfig/proj.pc:${proj_v} \
 
 compiler.cxx_standard 2017
 
+# configure borrowed from quanteda, and in result is incapable of handling TBB.
+patchfiles-append   patch-Makevars.in.diff
+
+if {${configure.build_arch} in [list arm i386 ppc]} {
+    patchfiles-append \
+                    patch-tbb32.diff
+}
+
+post-patch {
+    reinplace "s,@PREFIX@,${prefix},g" ${worksrcpath}/src/Makevars.in
+}
+
 # configure fails to do its job: https://github.com/r-spatial/sf/issues/2292
-build.env-append    CPPFLAGS=-I${prefix}/lib/${proj_v}/include
+build.env-append    CPPFLAGS=-I${prefix}/lib/${proj_v}/include \
+                    PKG_CONFIG_PATH=${prefix}/libexec/onetbb/lib/pkgconfig
 
 build.args-append   --configure-args="--with-proj-include=${prefix}/lib/${proj_v}/include \
                         --with-proj-lib=${prefix}/lib/${proj_v}/lib \
