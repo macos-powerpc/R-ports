@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran NicChr cheapr 1.2.0
+R.setup             cran NicChr cheapr 1.3.1
 revision            0
 categories-append   devel
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             MIT
 description         Simple functions to save time and memory
 long_description    {*}${description}
 homepage            https://github.com/NicChr/cheapr
-checksums           rmd160  b5d8b4ca8545d431d04c97f8afd80f661933ceb4 \
-                    sha256  a4a5ff0f55df99f5c41fc42a3bc5af07cea963ad61384cf8d30803832fbb602a \
-                    size    494036
+checksums           rmd160  31ee53fd943bb37bf9c8b5cf0f6694c6930e2808 \
+                    sha256  b6f9868e45f397520d4876360f9fef231d66cbdde2eb1dc8ecb3782aab08a3fe \
+                    size    503520
 
 depends_lib-append  port:R-collapse \
                     port:R-cpp11
