@@ -3,17 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github maiermarco DirichletReg 0.7-1 v
-revision            1
+# Revert to GitHub once updated there.
+R.setup             cran maiermarco DirichletReg 0.7-2 v
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Dirichlet Regression
 long_description    ${name} implements Dirichlet regression models.
-checksums           rmd160  5cba02d953a0808ce89a448af24e283bbd7378aa \
-                    sha256  44b42c0da32bba34c64d17a239eaf110b529d92ff86abb53eb03051671a60242 \
-                    size    152644
-github.tarball_from archive
+homepage            https://github.com/maiermarco/DirichletReg
+checksums           rmd160  9d85cd1e45babe256daa03ab831b96cf2840448b \
+                    sha256  088b4c8cf4c87e661c741a87791f8bbbbe55175d76d4ed0a7b24e7fe76782d9b \
+                    size    248756
+# github.tarball_from archive
 
 depends_lib-append  port:R-Formula \
                     port:R-maxLik
