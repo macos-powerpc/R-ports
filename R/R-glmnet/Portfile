@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran glmnet 4.1-8
-revision            2
+R.setup             cran hastie glmnet 4.1-9
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
@@ -14,9 +14,9 @@ long_description    Extremely efficient procedures for fitting the entire lasso 
                     and multinomial regression models, Poisson regression, Cox model, \
                     multiple-response Gaussian and the grouped multinomial regression.
 homepage            https://glmnet.stanford.edu
-checksums           rmd160  ce6a9ba8325d06231bb9788c0142e68ddcad98f5 \
-                    sha256  1ddbe5ce07076d1bdf58b0202ebd0ceac8eeb4796c5175681adb9e58c30ddcfe \
-                    size    2439515
+checksums           rmd160  b75fcf659b358945dd4853ba587ae2606d696ede \
+                    sha256  15756727ff5a2063be37f2a7b97953b048ba3f4bb3057893973b469291462dfd \
+                    size    2419035
 
 depends_lib-append  port:R-foreach \
                     port:R-Rcpp \
