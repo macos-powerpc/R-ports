@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran teunbrand ggh4x 0.3.0
+R.setup             cran teunbrand ggh4x 0.3.1
 revision            0
 categories-append   graphics
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             MIT
 description         Hacks for ggplot2
 long_description    {*}${description}
 homepage            https://teunbrand.github.io/ggh4x
-checksums           rmd160  d7ae3de8dd84b52fe8eb0a0816129a955376cce3 \
-                    sha256  e618640da1ae35787e2c5c8f52f743b0e959cf51d70016ae0a0a7f28cd053877 \
-                    size    1104370
+checksums           rmd160  52800aef86df3740900a537f8b0c10bbf2f21531 \
+                    sha256  d8fcc030ee7508126c22ad846228e49067c4764293bb12cc606b08c665705f87 \
+                    size    1073670
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
@@ -22,6 +22,7 @@ depends_lib-append  port:R-cli \
                     port:R-gtable \
                     port:R-lifecycle \
                     port:R-rlang \
+                    port:R-S7 \
                     port:R-scales \
                     port:R-vctrs
 
