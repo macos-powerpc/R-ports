@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 R.setup             github eddelbuettel digest e1de340adc76c9c138364b46c6d1b5606ed9915e
 version             0.6.37.2
-revision            0
+revision            1
 categories-append   devel
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
@@ -17,14 +17,14 @@ checksums           rmd160  6a5fe4ef4dfd8a1490e5b3a7559442c84d077a64 \
                     size    1122896
 github.tarball_from archive
 
+# https://github.com/eddelbuettel/digest/pull/232
+patchfiles-append   0001-Fix-endianness-handling.patch \
+                    0002-Fix-xxh3_128bits.patch
+
 depends_test-append port:R-simplermarkdown \
                     port:R-tinytest
 
 # On Big-endian platforms spooky hash works fine, but computes different values.
 # Therefore it is disabled.
 # https://github.com/eddelbuettel/digest/issues/182
-
-# FIXME, v0.6.37.2: a few tests fail in the updated version:
-# Error: 7 out of 310 tests failed
-# https://github.com/eddelbuettel/digest/issues/231
 test.run            yes

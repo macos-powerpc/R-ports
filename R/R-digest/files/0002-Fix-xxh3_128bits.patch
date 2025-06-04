@@ -1,0 +1,47 @@
+From 14b691c969c07e22506a9a799e259286802894dc Mon Sep 17 00:00:00 2001
+From: Sergey Fedorov <barracuda@macos-powerpc.org>
+Date: Wed, 4 Jun 2025 10:07:12 +0800
+Subject: [PATCH 2/3] Fix xxh3_128bits
+
+---
+ src/digest.c | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+
+diff --git src/digest.c src/digest.c
+index 5ea29c9..c0a7307 100644
+--- src/digest.c
++++ src/digest.c
+@@ -324,12 +324,12 @@ SEXP digest(SEXP Txt, SEXP Algo, SEXP Length, SEXP Skip, SEXP Leave_raw, SEXP Se
+ 
+         XXH128_hash_t val =  XXH3_128bits_withSeed(txt, nChar, seed);
+ 
+-        // need something a bit fancier here
+         if (leaveRaw) {
+-          rev_memcpy(output, &val.high64, 8);
+-          rev_memcpy(output + 8, &val.low64, 8);
++            XXH128_canonical_t canon;
++            XXH128_canonicalFromHash(&canon, val);
++            memcpy(output, &canon, 16);
+         } else {
+-          snprintf(output, 128, "%016" PRIx64 "%016" PRIx64, val.high64, val.low64);
++            snprintf(output, 128, "%016" PRIx64 "%016" PRIx64, val.high64, val.low64);
+         }
+         break;
+     }
+@@ -647,10 +647,10 @@ SEXP digest(SEXP Txt, SEXP Algo, SEXP Length, SEXP Skip, SEXP Leave_raw, SEXP Se
+         XXH128_hash_t val =  XXH3_128bits_digest(state);
+         XXH3_freeState(state);
+ 
+-        // need something a bit fancier here
+         if (leaveRaw) {
+-            rev_memcpy(output, &val.high64, 8);
+-            rev_memcpy(output + 8, &val.low64, 8);
++            XXH128_canonical_t canon;
++            XXH128_canonicalFromHash(&canon, val);
++            memcpy(output, &canon, 16);
+         } else {
+             snprintf(output, 128, "%016" PRIx64 "%016" PRIx64, val.high64, val.low64);
+         }
+-- 
+2.48.0
+
