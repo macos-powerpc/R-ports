@@ -3,28 +3,31 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github posit-dev shinychat 0.1.1 v
-revision            1
+R.setup             cran posit-dev shinychat 0.2.0 v
+revision            0
 categories-append   llm
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Chat UI component for R-shiny
 long_description    {*}${description}
-homepage            https://jcheng5.github.io/shinychat
-checksums           rmd160  ecd2b108504f066e02bc8ceac5e4a5723ea42037 \
-                    sha256  442d9b213cb798cb164bbbd7997ae4e92e3713d138e308d7f5e15b7f06f2f372 \
-                    size    359714
-github.tarball_from archive
+homepage            https://posit-dev.github.io/shinychat
+checksums           rmd160  924d35b2d0a72ab3a0a44cfdb873cb62301247e4 \
+                    sha256  70b5d8adf5700b442817cdb3219bcb65f4ad3e133cfd9dcdc2a69d701c84bce1 \
+                    size    500000
 supported_archs     noarch
 
 depends_lib-append  port:R-bslib \
                     port:R-coro \
+                    port:R-ellmer \
+                    port:R-fastmap \
                     port:R-htmltools \
+                    port:R-jsonlite \
                     port:R-promises \
                     port:R-rlang \
                     port:R-shiny
 
-depends_test-append port:R-testthat
+depends_test-append port:R-later \
+                    port:R-R-testthat
 
 test.run            yes
