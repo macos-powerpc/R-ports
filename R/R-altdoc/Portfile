@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github etiennebacher altdoc 0.4.0 v
-revision            1
+R.setup             github etiennebacher altdoc 0.5.0 v
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Tools to generate package documentation
 long_description    {*}${description}
 homepage            https://altdoc.etiennebacher.com
-checksums           rmd160  8be6d1a0e4d98d8e44c9cb1ef97b8a0fb227819c \
-                    sha256  6a5e23658ba15d30e14f5bf32d2067f160132ace87e3ea42356bdc4a23c07fd0 \
-                    size    11744856
+checksums           rmd160  636218c945ae849f646074deaba3fd040990d883 \
+                    sha256  7b6057d7d4f7a9d687bc74f83f25e1951f4d3e9d6720247e4048ff34443dd913 \
+                    size    11744740
 github.tarball_from archive
 supported_archs     noarch
 
