@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran tidyverse ellmer 0.2.0
+R.setup             cran tidyverse ellmer 0.2.1
 revision            0
 categories-append   llm
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             MIT
 description         Chat with Large Language Models
 long_description    {*}${description}
 homepage            https://ellmer.tidyverse.org
-checksums           rmd160  f4b8b54dfd48ef65f557af99e7575c60a26d3617 \
-                    sha256  764e7f01f926a41c3c17fe1778010a737bb6d6d30514021acc77d832085fc388 \
-                    size    792534
+checksums           rmd160  1a1de6f7b27b559795e1271f716c506fc3e93903 \
+                    sha256  2e71f0ad0548297ad14b2f0a00d8b3fcbb87eb45e3633abd2a3bbd4363b4582c \
+                    size    797230
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
