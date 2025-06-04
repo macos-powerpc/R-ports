@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran mark.stevenson1 epiR 2.0.80
-revision            1
+R.setup             cran mark.stevenson1 epiR 2.0.84
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Tools for the analysis of epidemiological data
 long_description    {*}${description}
-checksums           rmd160  d48988372c4c81c0a2880f23af97a715c0ff0361 \
-                    sha256  a28307ad9765012785643881e4fae871da74b3000d596d144b9260644abcb42d \
-                    size    1170750
+checksums           rmd160  fd92b96a6c54b3c2fdd7bdbfd3b145545fb66f75 \
+                    sha256  7226d399767feecdf79800d8d143010c068fa67e911803dce97e7db6b4b34a3a \
+                    size    1173570
 supported_archs     noarch
 
 depends_lib-append  port:R-BiasedUrn \
