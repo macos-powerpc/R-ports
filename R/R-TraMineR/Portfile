@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran gilbert.ritschard TraMineR 2.2-10
-revision            1
+R.setup             cran gilbert.ritschard TraMineR 2.2-11
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Trajectory miner – a toolbox for exploring and rendering sequences
 long_description    {*}${description}
 homepage            http://traminer.unige.ch
-checksums           rmd160  572ca2901e10b4a0fbc8380fd08e5cfbf4f7810a \
-                    sha256  8b1689fe6a0f4ff3493e6b430592705be34f12ac6a24aae1735e5262e50e85a6 \
-                    size    1264417
+checksums           rmd160  a6e5402068bbdad9fb0cb923f694f5bd9afca427 \
+                    sha256  3d8952e0e52521588a8d14cf4b41a8fdf2c51b417793fcec61588dcf032fcb15 \
+                    size    1264706
 
 depends_lib-append  port:R-colorspace \
                     port:R-RColorBrewer \
