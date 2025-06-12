@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 R.setup             github rspatial terra 43126ab0fabc2757564bb05994cc683ce70710e5
 version             1.8-55
-revision            0
+revision            1
 categories-append   gis
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3+
