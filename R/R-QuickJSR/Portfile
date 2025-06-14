@@ -6,8 +6,10 @@ PortGroup           R 1.0
 
 legacysupport.newest_darwin_requires_legacy 15
 
+# !Do not update to 1.8.x until this is fixed!
+# https://github.com/andrjohns/QuickJSR/issues/88
 R.setup             cran andrjohns QuickJSR 1.7.0
-revision            1
+revision            2
 categories-append   devel
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
