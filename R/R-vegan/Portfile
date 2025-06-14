@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # What can we do about this ill-picked name…
-R.setup             cran vegandevs vegan 2.6-10
-revision            1
+R.setup             cran vegandevs vegan 2.7-1
+revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         R package for community ecologists: popular ordination methods, \
                     ecological null models & diversity analysis
 long_description    {*}${description}
 homepage            http://vegandevs.github.io/vegan
-checksums           rmd160  a18ea6d31654133032d5abde7e4dd400216bf8cd \
-                    sha256  afb4b90481b7e82e6beb29f14064f0389ddb377e64c9e92f4d22f455f5c7bcb7 \
-                    size    1502105
+checksums           rmd160  09044eb3b784bccc889842c7dcef2400627874ee \
+                    sha256  d911cd422641dd412c483baf5acaa1dc3dcf2b0fe915a26266f04c0ccd69198b \
+                    size    1456742
 
 depends_lib-append  port:R-permute
 
