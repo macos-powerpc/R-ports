@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran csampling 1.2-2.1
-revision            3
+R.setup             cran alessandra.brazzale csampling 1.2-4.1
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
-license             {GPL-2 GPL-3}
+license             GPL-2+
 description         Functions for conditional simulation in regression-scale models
 long_description    {*}${description}
-checksums           rmd160  e29bdf517c6b4bd49db920d04b4feb681966a94c \
-                    sha256  63ebb77a205f18a4ab148adf8f685f8aadc92f76a194cf52c4da296f923c1d4f \
-                    size    29609
+checksums           rmd160  ae84ed1a7f86780c0816c0b14b93e62f9f02093f \
+                    sha256  d0a5e26e8a31997469d5f0f84e17cee9577e60f82221d6e0bfb45c04cc5b2255 \
+                    size    30033
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-marg \
                     port:R-statmod
