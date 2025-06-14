@@ -3,18 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-# Revert to GitHub once updated there.
-R.setup             cran vinecopulib rvinecopulib 0.7.2.1.0 v
-revision            1
+R.setup             github vinecopulib rvinecopulib 0.7.3.1.0 v
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         High-performance algorithms for vine copula modelling
 long_description    {*}${description}
-checksums           rmd160  90604d2d8e96043b592b2926e033bc51071addf9 \
-                    sha256  eda8e911ffd730283aff67e1786fd09ad78fac5ec0d6f206ef718c245068d06e \
-                    size    1417845
-# github.tarball_from archive
+checksums           rmd160  34725efcb1dd47c4359667e639759481bef8cfb6 \
+                    sha256  aab3948dd6b3257d979809749cd29804b3a7605930cc4ee6f1996883c67a7d36 \
+                    size    9223806
+github.tarball_from archive
 
 depends_lib-append  port:R-assertthat \
                     port:R-BH \
