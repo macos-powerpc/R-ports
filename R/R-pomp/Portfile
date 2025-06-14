@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran kingaa pomp 6.1
-revision            1
+R.setup             cran kingaa pomp 6.3
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Statistical inference for partially observed Markov processes
 long_description    {*}${description}
 homepage            https://kingaa.github.io/pomp
-checksums           rmd160  f19122e1614050b7e09fc856ffb69875643a1ba9 \
-                    sha256  3604a2f6b682947625cd1fb3af633cc22a868acea5e6c59ee3e4fa37b249cbfa \
-                    size    417431
+checksums           rmd160  1c2e0357fecf74104fd91ca5b2bd5bdf95bf7973 \
+                    sha256  ac6f2b36a92884924b20f0b38807c080c15d5500084b5eae77265ed67d04d3e6 \
+                    size    418021
 
 depends_lib-append  port:R-coda \
                     port:R-data.table \
