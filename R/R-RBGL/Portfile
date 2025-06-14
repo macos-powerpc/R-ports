@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             bioconductor Bioconductor RBGL 1.80.0
-revision            1
+R.setup             bioconductor Bioconductor RBGL 1.84.0
+revision            0
 categories-append   bioconductor devel
 maintainers         nomaintainer
 license             Artistic-2
 description         Interface to the graph algorithms contained in the Boost library
 long_description    {*}${description}
-checksums           rmd160  be0bb5cde0442e4de44d20ce0b49543e88ac8da2 \
-                    sha256  63376ec40804f76035ef64dfe6f697ae179071b43a6d33feaf263eba5976d9d8 \
-                    size    3075056
+checksums           rmd160  88702ebae2cdd258a5bf7e966ce5d4647755ec48 \
+                    sha256  42e06ce0bb2f8c213d4400cc977b52b4a9a2cd6f321b1aaf60c5cdb3c5ece356 \
+                    size    4026186
 
 depends_lib-append  port:R-BH \
                     port:R-graph
