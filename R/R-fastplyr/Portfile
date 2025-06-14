@@ -3,26 +3,27 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-# Revert to GitHub once udpated there.
-R.setup             cran NicChr fastplyr 0.5.1 v
-revision            1
+R.setup             github NicChr fastplyr 0.9.0 v
+revision            0
 categories-append   textproc
 maintainers         nomaintainer
 license             MIT
 description         Fast alternatives to tidyverse functions
 long_description    {*}${description}
 homepage            https://github.com/NicChr/fastplyr
-checksums           rmd160  45e62e510ccf8276e148b668da3bde0cd812ccd1 \
-                    sha256  012294ed761a5e940664b3bf8009b5e7075239dd584be8251d4b61d9026cd1fc \
-                    size    83308
-# github.tarball_from archive
+checksums           rmd160  d2ff3c73d436ee93cf77e48cc73381af591594af \
+                    sha256  c2f8767ae7b3aeacf584d7fdb7f69de32a7724f2be50cd7fa9afd401f0595cb8 \
+                    size    97896
+github.tarball_from archive
 
 depends_lib-append  port:R-cheapr \
+                    port:R-cli \
                     port:R-collapse \
                     port:R-cpp11 \
                     port:R-dplyr \
                     port:R-lifecycle \
                     port:R-magrittr \
+                    port:R-purrr \
                     port:R-rlang \
                     port:R-stringr \
                     port:R-tidyselect \
