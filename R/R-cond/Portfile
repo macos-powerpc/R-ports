@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran cond 1.2-3.1
-revision            3
+R.setup             cran alessandra.brazzale cond 1.2-4
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
-license             {GPL-2 GPL-3}
+license             GPL-2+
 description         Approximate conditional inference for logistic and loglinear models
 long_description    {*}${description}
-checksums           rmd160  3456f5a8eeb056731cf54614b13f7580f3c03f3b \
-                    sha256  de0aa570ff63104e974676131412138b861e973066da813454468a5791700fc8 \
-                    size    406758
+checksums           rmd160  7383ca669417cbcb82cf9aa6548181c31d111d77 \
+                    sha256  5c5bb64bfd33da422f7ae46935da4ee063bb90db99a891ca746c2f416e2ec871 \
+                    size    242854
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-statmod
 
