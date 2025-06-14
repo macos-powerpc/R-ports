@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran kaifenglu eventPred 0.2.7
-revision            1
+R.setup             cran kaifenglu eventPred 0.2.9
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Event Prediction
 long_description    {*}${description}
 homepage            https://github.com/kaifenglu/eventPred
-checksums           rmd160  4ebab65f81ebb8070b26052b71b4567baa946a1f \
-                    sha256  f44db4d4c621f6e2dd74d67c248bbb0c4485e8d4d0bcdec1eb52c1f9c1cff830 \
-                    size    407297
+checksums           rmd160  ead8a2d03eb592572f1cb8110ef8797b8d7f067c \
+                    sha256  ea3a43a7c9d7a7892cc58481f494ae8ae0d2a4054553987ad672a1ae1c084d96 \
+                    size    415934
 supported_archs     noarch
 
 depends_lib-append  port:R-data.table \
