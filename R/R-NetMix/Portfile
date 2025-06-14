@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran solivella NetMix 0.2.0.2
-revision            2
+R.setup             cran solivella NetMix 0.2.0.3
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Dynamic mixed-membership network regression model
 long_description    {*}${description}
 homepage            https://github.com/solivella/NetMix
-checksums           rmd160  9fd7270f115c8f589d8f79f8b4170cfd4da02242 \
-                    sha256  65e5eb9208b3fd122ff9298beb1a5de97dd1b8fadb9c19028157d31c69ff85c8 \
-                    size    55285
+checksums           rmd160  07fe875209e5f41b92a87a44f95795b5308397fe \
+                    sha256  af416872646d469c136d0507b7d57b137aa2f5537d145263f862093b91b5b101 \
+                    size    56283
 
 depends_lib-append  port:R-clue \
                     port:R-gtools \
