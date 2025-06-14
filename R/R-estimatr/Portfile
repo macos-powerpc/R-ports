@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is old.
-R.setup             cran DeclareDesign estimatr 1.0.4
-revision            2
+R.setup             cran DeclareDesign estimatr 1.0.6
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Fast estimators for design-based inference
 long_description    {*}${description}
 homepage            https://declaredesign.org/r/estimatr
-checksums           rmd160  3b16884397a2ddb7d7a9cd1df7d750acf97de057 \
-                    sha256  6cdfd1d59f7ebe572d0c079d0dbb6e6650973027964ed1c0591411782efe2eed \
-                    size    128061
+checksums           rmd160  24ea8dc36f90b1353eda2f625292d3286bbe10d8 \
+                    sha256  4d43e10e56fe4b46304be0660e379369efb642e6fed5c024005250ed77d6c6f9 \
+                    size    130127
 
 depends_lib-append  port:R-Formula \
                     port:R-generics \
