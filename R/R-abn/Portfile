@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran matteo.delucchi abn 3.1.1
-revision            1
+R.setup             cran matteo.delucchi abn 3.1.7
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Modelling multivariate data with additive Bayesian networks
 long_description    {*}${description}
 homepage            https://git.math.uzh.ch/reinhard.furrer/abn
-checksums           rmd160  6817fa160a48159bb1af87e6012e6ea9b1386fc1 \
-                    sha256  3b42bf47fc3c0a202ae710c051c1c7523189eac2b1bf1e63f4027926a17a3dea \
-                    size    5002599
+checksums           rmd160  9253788d81cd42a189eb9fa7a73408ce63a67e40 \
+                    sha256  8aeb433f359e873223887a2d3fb6ec5499a5ba9e556ce7abc16816e4e74e1c61 \
+                    size    5058018
 
 depends_lib-append  port:gsl \
                     port:R-doParallel \
@@ -41,6 +41,7 @@ depends_test-append port:R-bookdown \
                     port:R-MatrixModels \
                     port:R-microbenchmark \
                     port:R-moments \
+                    port:R-R6 \
                     port:R-R.rsp \
                     port:R-RhpcBLASctl \
                     port:R-rmarkdown \
