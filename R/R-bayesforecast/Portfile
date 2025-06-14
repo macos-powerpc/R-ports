@@ -3,19 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran bayesforecast 1.0.1
-revision            5
+R.setup             cran asael.alonzo bayesforecast 1.0.5
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         Bayesian time series modeling with Stan
 long_description    {*}${description}
-checksums           rmd160  6e675ef85b3d362672df05eae156492ed516a0e7 \
-                    sha256  316add09efdb2d9fd1c8e99c59b3affb119d21251a18242f3d2b8e4a1736df72 \
-                    size    524419
+checksums           rmd160  100740d795f5db6a9a02d1c887fcf80309311112 \
+                    sha256  89d5b3adf3cec44f64211bc6854b8fc95db794b35e355d159d3c28e960472c5d \
+                    size    1836333
 
-depends_lib-append  port:R-astsa \
-                    port:R-bayesplot \
+depends_lib-append  port:R-bayesplot \
                     port:R-BH \
                     port:R-bridgesampling \
                     port:R-forecast \
@@ -31,3 +30,10 @@ depends_lib-append  port:R-astsa \
                     port:R-rstantools \
                     port:R-StanHeaders \
                     port:R-zoo
+
+depends_test-append port:R-ggfortify \
+                    port:R-knitr \
+                    port:R-rmarkdown \
+                    port:R-StanHeaders
+
+test.run            yes
