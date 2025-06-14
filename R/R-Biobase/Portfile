@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             bioconductor Bioconductor Biobase 2.64.0
-revision            1
+R.setup             bioconductor Bioconductor Biobase 2.68.0
+revision            0
 categories-append   bioconductor
 maintainers         nomaintainer
 license             Artistic-2
 description         Base functions for Bioconductor
 long_description    {*}${description}
-checksums           rmd160  821f629260b6c9acc2cdc79941fa65e4ac936f4c \
-                    sha256  a21e35cdf4eeb71fc144712bb619d4ea5124c4013ceb14034a4d638231a0b627 \
-                    size    1792985
+checksums           rmd160  7d099e1c65a9cd381efed3431509fbdde783aef3 \
+                    sha256  993b30779a3e5043151db876d771b2913b69f26778cc93d2cb7571544dd57f0f \
+                    size    1977543
 
 depends_lib-append  port:R-BiocGenerics
 
