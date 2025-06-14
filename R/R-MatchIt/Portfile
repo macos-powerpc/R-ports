@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is archaic.
-R.setup             cran kosukeimai MatchIt 4.7.1
-revision            1
+R.setup             cran kosukeimai MatchIt 4.7.2
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Non-parametric preprocessing for parametric causal inference
 long_description    {*}${description}
 homepage            https://kosukeimai.github.io/MatchIt
-checksums           rmd160  5baa373426f66622a99ec2dadd2e6ff9b6bb6e79 \
-                    sha256  57b86ff34211c279a4b22cf09d0a1160bc12f05c8bb471279cd07562bfcb9989 \
-                    size    1502128
+checksums           rmd160  c4aeccf7ab845354660ef3ff0b2a9747e3f68167 \
+                    sha256  f1b5ea251d1095c40afbd3c7d6af2922e2fd3c76885dfd4441459c4a158178ad \
+                    size    1505060
 
 depends_lib-append  port:R-backports \
                     port:R-chk \
