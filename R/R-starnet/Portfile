@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran rauschenberger starnet 0.0.7
-revision            1
+R.setup             cran rauschenberger starnet 1.0.0
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             GPL-3
 description         Stacked elastic net
 long_description    {*}${description}
 homepage            https://rauschenberger.github.io/starnet
-checksums           rmd160  3de76ae47ecfbf5327b0f5fefdfb09f4a5d1a478 \
-                    sha256  d2f27eb70c75e21d3754192932c610b8524acfdc092932a1767a05f9c2d7fae7 \
-                    size    255377
+checksums           rmd160  b12837d548804e5ec7775611a96ddd0df4a121d4 \
+                    sha256  593b81e47fd041c2eefcfa2545dfadec019adc2580084505fe28b5a1f6a0e447 \
+                    size    257370
 supported_archs     noarch
 
 depends_lib-append  port:R-cornet \
