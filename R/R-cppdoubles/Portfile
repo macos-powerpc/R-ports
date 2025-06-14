@@ -3,17 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran NicChr cppdoubles 0.3.0
-revision            1
+# GitHub version lags behind.
+R.setup             cran NicChr cppdoubles 0.4.0 v
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Fast relative comparisons of floating point numbers in C++
 long_description    {*}${description}
 homepage            https://github.com/NicChr/cppdoubles
-checksums           rmd160  bf00e7102cb598f3e9fa8fa546e3e25dbeafa0c0 \
-                    sha256  7a5f9a5e82124298ecc73c66b0f5c912126cba55cf5691e80eb9aa47046e8e38 \
-                    size    9498
+checksums           rmd160  901931ca38668544b2cecdb4a804a4b4c6ec3786 \
+                    sha256  2d521b32fd2647938aa91b8e5f0af503ad62983d30990a354e7f4fcab48a7367 \
+                    size    11234
 
 depends_lib-append  port:R-cpp11
 
