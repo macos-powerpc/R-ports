@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran slupphaugkjell modsem 1.0.8
+R.setup             cran slupphaugkjell modsem 1.0.10
 revision            0
 categories-append   math economics
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ description         Latent interaction analysis in structural equation models
 long_description    Latent interaction (and moderation) analysis \
                     in structural equation models (SEM).
 homepage            https://modsem.org
-checksums           rmd160  d5c0ed62952ceaef02d57babf536b085649c48ac \
-                    sha256  492174bd839d9a890a58c94d795b2b737d9e39dbd9acb35e7232b5f8e44c0e16 \
-                    size    1179232
+checksums           rmd160  35c8fe910568abfaa2b6e4e323b4d4d227654628 \
+                    sha256  8cc015cb212b128f466fd0fd0b60231a73c97c30271edc9d3f089eeb8cdf1952 \
+                    size    1211176
 
 depends_lib-append  port:R-dplyr \
                     port:R-fastGHQuad \
