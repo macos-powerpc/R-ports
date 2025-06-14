@@ -3,24 +3,23 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             bioconductor Bioconductor BiocParallel 1.38.0
-revision            2
+R.setup             bioconductor Bioconductor BiocParallel 1.42.1
+revision            0
 categories-append   bioconductor parallel
 maintainers         nomaintainer
-license             {GPL-2 GPL-3}
+license             {Boost-1 GPL-2 GPL-3}
 description         Bioconductor facilities for parallel evaluation
 long_description    {*}${description}
-checksums           rmd160  2e14674a9189d3db1f723ddf88a4f8510e3e61cb \
-                    sha256  7e96e07beb4e59ab08d8064aaf6b4e414c9ccd7657e9949d7d9b2325b2113cd6 \
-                    size    995485
+checksums           rmd160  2bc61f4882c565ada6047674dcca4371b8ef2e2a \
+                    sha256  afb7b5dece2633a5e00a81d787b2ec819197a18a52f9947868c351e5f06f5635 \
+                    size    1102058
 
 depends_lib-append  port:R-BH \
                     port:R-cpp11 \
                     port:R-futile.logger \
                     port:R-snow
 
-patchfiles-append   patch-remove-unavailable-suggests.diff
-
+# Some optional deps are dropped.
 depends_test-append port:R-batchtools \
                     port:R-BBmisc \
                     port:R-BiocGenerics \
