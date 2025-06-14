@@ -3,20 +3,21 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran jomulder BFpack 1.4.2
-revision            1
+R.setup             cran jomulder BFpack 1.5.0
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3+
 description         Flexible Bayes factor testing of scientific expectations
 long_description    {*}${description}
 homepage            https://github.com/jomulder/BFpack
-checksums           rmd160  f676ad85b69b7ee6d0f4336676d6c84d2fc6248c \
-                    sha256  40261ceaaea124615edf2f6693fcd3be345a6ff3e8e3c7635ef893d4a035d7f0 \
-                    size    453787
+checksums           rmd160  511d1e97a8f81da60802abb9001a9364428e8843 \
+                    sha256  25bd057015e43c4e84d0118fad251d2ef6b801cc78353963d904a2cd5be396af \
+                    size    459810
 
 depends_lib-append  port:R-bain \
                     port:R-Bergm \
+                    port:R-berryFunctions \
                     port:R-coda \
                     port:R-ergm \
                     port:R-extraDistr \
