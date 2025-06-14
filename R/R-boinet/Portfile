@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran yamagubed boinet 1.1.0
-revision            1
+R.setup             cran yamagubed boinet 1.3.0
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,15 +12,21 @@ license             MIT
 description         Conduct simulation study of Bayesian optimal interval \
                     design with BOIN-ET family
 long_description    {*}${description}
-checksums           rmd160  912a416108f6588187fb9e59f304f4a9eac5f8c8 \
-                    sha256  9689a945ac635fb250271d6761e10b660dc9aa8b8affa630d2edfe42de8b614a \
-                    size    24863
+checksums           rmd160  a29b4b86363abea4449be8a75fb10a5afa235f11 \
+                    sha256  62159cc6ba9e7c2f8277becf75b90f3f74206f99b23c63bbdf27d76242a9eab6 \
+                    size    191089
 supported_archs     noarch
 
 depends_lib-append  port:R-copula \
+                    port:R-gt \
                     port:R-Iso \
-                    port:R-mfp
+                    port:R-mfp \
+                    port:R-tibble
 
-depends_test-append port:R-testthat
+depends_test-append port:R-dplyr \
+                    port:R-ggplot2 \
+                    port:R-knitr \
+                    port:R-rmarkdown \
+                    port:R-testthat
 
 test.run            yes
