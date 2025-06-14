@@ -4,16 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Use CRAN version for this port.
-R.setup             cran GeomScale volesti 1.1.2-8
-revision            1
+R.setup             cran GeomScale volesti 1.1.2-9
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             LGPL-3
 description         Volume approximation and sampling of convex polytopes
 long_description    {*}${description}
-checksums           rmd160  088e49381ec57baeb3957d78c38ae23933e28c43 \
-                    sha256  7624232013db41de9b686d3cfe20fdecb529340f496a069f75bd49ae8217173d \
-                    size    590764
+homepage            https://github.com/GeomScale/volesti
+checksums           rmd160  a722c7d70d6207a0df351f5fec93af524f157c60 \
+                    sha256  1e0f1011fa2f3e2560be43be6775c05e952d42f3178d39a449c07c34c00193d4 \
+                    size    585505
 
 depends_lib-append  port:R-BH \
                     port:R-Rcpp \
