@@ -4,16 +4,16 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran jvbraun AlgDesign 1.2.1.1 v
-revision            1
+R.setup             cran jvbraun AlgDesign 1.2.1.2 v
+revision            0
 maintainers         nomaintainer
 license             GPL-2+
 description         Algorithmic experimental design
 long_description    {*}${description}
 homepage            https://github.com/jvbraun/AlgDesign
-checksums           rmd160  5ea42c931547bcf53dbff13022aa6e30e3d31a75 \
-                    sha256  f6caef6e86feb88eea60c0400acaf145c2445c09fd608a47e66694cc6f02cc54 \
-                    size    420332
+checksums           rmd160  affde5dbce76c05d8273bfb330ed556734ac4671 \
+                    sha256  692dc7a02a6c5eb2421a7398488e9fb8700174187bda37ff820548654d0b7625 \
+                    size    509327
 # github.tarball_from archive
 
 test.run            yes
