@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran YinanZheng HIMA 2.3.1
-revision            1
+R.setup             cran YinanZheng HIMA 2.3.2
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
 description         High-Dimensional Mediation Analysis
 long_description    {*}${description}
 homepage            https://github.com/YinanZheng/HIMA
-checksums           rmd160  af1e83978aba7c0d89bc04e93c9623aace51b73b \
-                    sha256  f7a234880f1f07e14f268792d91279e59aa165e652db3521795b9c958ce56279 \
-                    size    1709723
+checksums           rmd160  86387e228bb276620689ae83c056e1b1a1ef5fbe \
+                    sha256  1bd5fceffaa15e1ba4198daf8f46421c26a2d63de8702124bf0fd61735a306b2 \
+                    size    1711019
 supported_archs     noarch
 
 depends_lib-append  port:R-conquer \
@@ -28,6 +28,7 @@ depends_lib-append  port:R-conquer \
                     port:R-quantreg
 
 depends_test-append port:R-knitr \
-                    port:R-rmarkdown
+                    port:R-rmarkdown \
+                    port:R-testthat
 
 test.run            yes
