@@ -4,20 +4,21 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is archaic.
-R.setup             cran asgr imager 1.0.2
-revision            1
+R.setup             cran asgr imager 1.0.3
+revision            0
 categories-append   graphics
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             LGPL-3
 description         Image processing library based on CImg
 long_description    {*}${description}
 homepage            https://asgr.github.io/imager
-checksums           rmd160  f9be48d124f8958c1ab40d4e12caaa9ebf3d94f6 \
-                    sha256  7c849086cb17d6c5aefc106217363e14afbcda2a9e0120687d40805b5e1c566a \
-                    size    4510042
+checksums           rmd160  41dc0bc20ff716160e07dc3f01cc58a188b669fe \
+                    sha256  a350b999a5fa39d7b7bb2472dfa66227b658bcb23f565ec674d7503dbf05e200 \
+                    size    4525106
 
 depends_build-append \
-                    port:pkgconfig
+                    path:bin/pkg-config:pkgconfig
+
 depends_lib-append  port:fftw-3 \
                     port:R-downloader \
                     port:R-igraph \
@@ -31,8 +32,6 @@ depends_lib-append  port:fftw-3 \
                     port:tiff \
                     port:xorg-libx11
 
-patchfiles          patch-no-spatstat.geom.diff
-
 depends_test-append port:R-Cairo \
                     port:R-dplyr \
                     port:R-ggplot2 \
@@ -41,6 +40,8 @@ depends_test-append port:R-Cairo \
                     port:R-raster \
                     port:R-rmarkdown \
                     port:R-scales \
-                    port:R-testthat
+                    port:R-spatstat.geom \
+                    port:R-testthat \
+                    port:R-webp
 
 test.run            yes
