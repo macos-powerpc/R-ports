@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github tidyverse tibble 3.2.1.9054 v
+R.setup             github tidyverse tibble 3.3.0 v
 revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
@@ -12,12 +12,12 @@ long_description    Provides a 'tbl_df' class (the 'tibble') \
                     with stricter checking and better formatting \
                     than the traditional data frame.
 homepage            https://tibble.tidyverse.org
-checksums           rmd160  beb1ba441976e7a443de1852d352ce0f2d22200d \
-                    sha256  bd68dcced6996448f1d3b6785b7e60923cfc4e60ee12574bddc24fd0230287ff \
-                    size    5184753
+checksums           rmd160  b86627572a34689b5fe50055b40f883598c32e61 \
+                    sha256  f3aee24d072206b98ad0cb073a05a9c42b211bf0ae25d9fcaf54c5ef6d820cc0 \
+                    size    1257662
 github.tarball_from archive
 
-depends_lib-append  port:R-fansi \
+depends_lib-append  port:R-cli \
                     port:R-lifecycle \
                     port:R-magrittr \
                     port:R-pillar \
@@ -30,9 +30,6 @@ depends_test-append port:R-bench \
                     port:R-blob \
                     port:R-brio \
                     port:R-callr \
-                    port:R-cli \
-                    port:R-covr \
-                    port:R-crayon \
                     port:R-DiagrammeR \
                     port:R-dplyr \
                     port:R-evaluate \
@@ -45,7 +42,6 @@ depends_test-append port:R-bench \
                     port:R-lubridate \
                     port:R-mockr \
                     port:R-nycflights13 \
-                    port:R-pkgbuild \
                     port:R-pkgload \
                     port:R-purrr \
                     port:R-rmarkdown \
