@@ -3,19 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran dkahle mpoly 1.1.1
-revision            3
+R.setup             cran dkahle mpoly 1.1.2
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         Symbolic computation and more with multivariate polynomials
 long_description    {*}${description}
 homepage            https://dkahle.github.io/mpoly
-checksums           rmd160  c63d1e07f4793acd26d773c180f2b6fe249a8043 \
-                    sha256  201e77e3913f637482e4d82a8a6a6e628d4ffc7660f6c1310b6a0aa167323a82 \
-                    size    1873549
+checksums           rmd160  1b42c90350e494716d30dfb1690b9a926d46367d \
+                    sha256  dbef5aff839d567c5a7e697dfb70f116832501aec79364779caf827796b50cca \
+                    size    1879213
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-ggplot2 \
                     port:R-orthopolynom \
