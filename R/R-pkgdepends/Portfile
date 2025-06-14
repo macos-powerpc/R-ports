@@ -3,9 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-# Revert to GitHub once updated there.
-R.setup             cran r-lib pkgdepends 0.8.0 v
-revision            1
+R.setup             github r-lib pkgdepends 0.9.0 v
+revision            0
 categories-append   devel
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -13,10 +12,10 @@ license             MIT
 description         Package dependency resolution and downloads
 long_description    {*}${description}
 homepage            https://r-lib.github.io/pkgdepends
-checksums           rmd160  1fa71ec0cee81fe151aa441b762c7b694df08c2b \
-                    sha256  359d48222c6717a2f442c2dfa5d6fb7e08fb8e9a37396574570eef9f4a8ab608 \
-                    size    548909
-# github.tarball_from archive
+checksums           rmd160  3e52312a2534fd0b8f51bf745e6d57335ce1d7eb \
+                    sha256  4316ce54cece82eeded1aaa24e5942878dc06f76acfb14ed57a3e79841558f95 \
+                    size    1459943
+github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-callr \
@@ -38,6 +37,8 @@ depends_test-append port:R-covr \
                     port:R-debugme \
                     port:R-fansi \
                     port:R-fs \
+                    port:R-gh \
+                    port:R-gitcreds \
                     port:R-glue \
                     port:R-htmlwidgets \
                     port:R-mockery \
