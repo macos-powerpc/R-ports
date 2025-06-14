@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github wlandau crew.cluster 0.3.4
-revision            1
+R.setup             github wlandau crew.cluster 0.3.8
+revision            0
 categories-append   parallel
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             MIT
 description         Crew launcher plugins for traditional high-performance computing clusters
 long_description    {*}${description}
 homepage            https://wlandau.github.io/crew.cluster
-checksums           rmd160  0cbfd4c7833c942d8d8711f3fe133eb90b09af4c \
-                    sha256  9d04d145982e9451bf2d17156a528a3942e3f45b8bd76787cb589cc0c70a0c0f \
-                    size    298264
+checksums           rmd160  6a40321c53e2f56469fda8d190aeaa4d631bd417 \
+                    sha256  7840243bf0876d12838d714fd531da193336f9bce89760092dbbb63ec7538c5c \
+                    size    298743
 github.tarball_from archive
 supported_archs     noarch
 
