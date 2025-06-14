@@ -3,27 +3,32 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran nicolas-robette descriptio 1.3
-revision            2
+R.setup             cran nicolas-robette descriptio 1.4.1
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Descriptive statistical analysis
 long_description    {*}${description}
 homepage            https://nicolas-robette.github.io/descriptio
-checksums           rmd160  9cb5ba3210e59f75e72439153f1f5cfbce2f6423 \
-                    sha256  28f4472193d74c7d87141e65785ad85a3edc33715ce95f0e30da9fa8e9228445 \
-                    size    186577
+checksums           rmd160  17198dfa441b286d77385380d8a9f499b5a88f1b \
+                    sha256  2d8454501078a1ce80c385ebde854aea56ddede83bfd690b4e7b0b74e3ef7ce0 \
+                    size    198073
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-ggplot2 \
                     port:R-rlang
 
-depends_test-append port:R-GGally \
+depends_test-append port:R-broom.helpers \
+                    port:R-cardx \
+                    port:R-GGally \
                     port:R-ggpattern \
-                    port:R-knitr \
+                    port:R-gt \
+                    port:R-gtsummary \
+                    port:R-marginaleffects \
                     port:R-paletteer \
-                    port:R-rmarkdown \
-                    port:R-rmdformats
+                    port:R-parameters \
+                    port:R-scales \
+                    port:R-survey
 
 test.run            yes
