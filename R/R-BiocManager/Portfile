@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran Bioconductor BiocManager 1.30.25
-revision            1
+R.setup             cran Bioconductor BiocManager 1.30.26
+revision            0
 categories-append   bioconductor
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             Artistic-2
 description         Access the Bioconductor project package repository
 long_description    {*}${description}
 homepage            https://bioconductor.github.io/BiocManager
-checksums           rmd160  56554b385cbdb3d13a6f4cbcad1cbcfd17d32b3b \
-                    sha256  83ef8b57dcc7350fe1e8c62590a60d3ad3e1f9c8660930c946b20340a4a81e15 \
-                    size    593414
+checksums           rmd160  808dff54112cee31e7807107d93990d057b7ce42 \
+                    sha256  db9a67556f8f46f41a86dc2abb2c19d354cdf537d4a1b48132896946eb45a23e \
+                    size    594489
 supported_archs     noarch
 
 depends_test-append port:R-BiocVersion \
