@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github wlandau crew 1.1.2
+R.setup             github wlandau crew 1.2.1
 revision            0
 categories-append   parallel
 platforms           {darwin any}
@@ -12,15 +12,14 @@ license             MIT
 description         Distributed worker launcher
 long_description    {*}${description}
 homepage            https://wlandau.github.io/crew
-checksums           rmd160  b617ad5fa677ecfdf894222297401888df5b7bc7 \
-                    sha256  57068eea59e76352a4a148441afbffd83e15d90ae5d1d808cd6c9aafb0f927b4 \
-                    size    1051421
+checksums           rmd160  15af81ac0ce00fc36353bd5ff1c5d4a93632d0f4 \
+                    sha256  68f51bd4e0623697c882cf2f885bfbb658c51bd867e045fca4f32fbde4c3a2e5 \
+                    size    1053113
 github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
                     port:R-data.table \
-                    port:R-getip \
                     port:R-later \
                     port:R-mirai \
                     port:R-nanonext \
