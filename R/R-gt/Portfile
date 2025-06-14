@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github rstudio gt 0.11.1 v
-revision            1
+R.setup             github rstudio gt 1.0.0 v
+revision            0
 categories-append   office
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -13,9 +13,9 @@ description         Build display tables from tabular data \
                     with an easy-to-use set of functions
 long_description    {*}${description}
 homepage            https://gt.rstudio.com
-checksums           rmd160  4ee93bed97e9aff00ee53865f89864b5f2b1e11e \
-                    sha256  78855b2cd56c625d745586826335f0daf7bdf2673ff71bdf539457176b97af43 \
-                    size    136657327
+checksums           rmd160  07b6503c1fd53fce0e88ac64772225279ccdd0c7 \
+                    sha256  767352c0e7b53642e95ed23a205343db69390eaab0753abe2c676f87d3511924 \
+                    size    136665417
 github.tarball_from archive
 supported_archs     noarch
 
