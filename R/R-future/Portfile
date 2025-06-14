@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github HenrikBengtsson future 1.49.0
+R.setup             github HenrikBengtsson future 1.58.0
 revision            0
 platforms           {darwin any}
 categories-append   devel parallel
@@ -12,9 +12,9 @@ license             LGPL-2.1+
 description         Unified parallel and distributed processing in R
 long_description    {*}${description} for everyone.
 homepage            https://future.futureverse.org
-checksums           rmd160  f8b09a6a2c5b000273b487414fdae64f37e6c5d5 \
-                    sha256  62825a9966d61fcb48f1b9f92be3f14c1127eff776774c6f647f97d9cb4b4149 \
-                    size    533529
+checksums           rmd160  98bc497dd16ee7d5ee0adfad994c9737ceb689e9 \
+                    sha256  809241e6dd5719b7ca808bd2a42c2e1d508aead4def7097ba389bf23e2cf5a40 \
+                    size    541379
 github.tarball_from archive
 supported_archs     noarch
 
