@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran nctingwang merDeriv 0.2-4
-revision            3
+R.setup             cran nctingwang merDeriv 0.2-5
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
-license             {GPL-2 GPL-3}
+license             GPL-2+
 description         Case-wise and cluster-wise derivatives for mixed effects models
 long_description    {*}${description}
-checksums           rmd160  a68cb207feb8d714dc480d224c20fc98f1914d63 \
-                    sha256  8c256a829ce6e8501568580670de475cd71b9f875655a8431123e64349e43ade \
-                    size    33835
+checksums           rmd160  05bdfd51a1162c85251a2e36abf65233687374c8 \
+                    sha256  ce190cad5e8fc5185cae3fbc67ccc3c9e2e2f494510c8b6be040941aa9be84fd \
+                    size    14742
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-lavaan \
                     port:R-lme4 \
