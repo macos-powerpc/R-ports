@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran nlreg 1.2-2.2
-revision            3
+R.setup             cran alessandra.brazzale nlreg 1.2-4
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
-license             {GPL-2 GPL-3}
+license             GPL-2+
 description         Higher-order inference for non-linear heteroscedastic models
 long_description    {*}${description}
-checksums           rmd160  fdd0f654f4889708c2ee5078b73e5f8c3c2f52e1 \
-                    sha256  10efcd19f3602702f3083ac41816845cb5b88df01d003a37ecea2051cbeb6c3e \
-                    size    290497
+checksums           rmd160  d8d742d2b0aa08a5de6a8641320792e4de44cd4e \
+                    sha256  b3c08a9e8e9306cdb7700b930da09a22be3fb14e1b32ff6ac2d99539ea68c517 \
+                    size    288653
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-statmod
 
