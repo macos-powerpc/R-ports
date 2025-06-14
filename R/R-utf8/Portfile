@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github patperry r-utf8 1.2.5 v
+R.setup             github krlmlr r-utf8 1.2.6 v
 set R.package       utf8
 revision            0
 categories-append   textproc
@@ -12,10 +12,10 @@ license             Apache-2
 description         UTF-8 text processing
 long_description    R package for manipulating and printing UTF-8 text \
                     that fixes multiple bugs in R’s UTF-8 handling.
-homepage            https://ptrckprry.com/r-utf8
-checksums           rmd160  0d2fe594a229ed8584b488703bb11a411e456f06 \
-                    sha256  b4f0dde19e9abd70d332ce5b225ffd8963b8fdb213e7e3922c4dd53327b22085 \
-                    size    1352148
+homepage            https://krlmlr.github.io/utf8
+checksums           rmd160  2cd1176ebffa679944bfcf95a280597cce114e8f \
+                    sha256  be572223bef1584030bfebd344983098ae7af356637cfef5b1c6766b50551824 \
+                    size    1351998
 github.tarball_from archive
 
 depends_test-append port:R-cli \
