@@ -3,8 +3,9 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github strengejacke ggeffects 2.1.0 v
-revision            1
+# Revert to GitHub once updated there.
+R.setup             cran strengejacke ggeffects 2.3.0 v
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
@@ -12,10 +13,10 @@ description         Create tidy data frames of marginal effects \
                     for R-ggplot from model outputs
 long_description    {*}${description}
 homepage            https://strengejacke.github.io/ggeffects
-checksums           rmd160  bf7e31041488dea0353e41f3e083535dfc170abe \
-                    sha256  08024096f13c1f0e3560ff6506d1b6c2f074c4c19a2c279f45dfb1922f55d375 \
-                    size    1113390
-github.tarball_from archive
+checksums           rmd160  2db49a73e3a02b3188d3580011adb12fb0ebc63f \
+                    sha256  a08ebb0c5cd3d7dc338f1ceb13d0a6664d980a58e3e0b03491ccf999361c8d8f \
+                    size    375356
+# github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-datawizard \
@@ -50,20 +51,20 @@ depends_test-append port:R-AER \
                     port:R-gt \
                     port:R-haven \
                     port:R-htmltools \
-                    port:R-httr \
+                    port:R-httr2 \
                     port:R-jsonlite \
                     port:R-knitr \
                     port:R-lme4 \
                     port:R-logistf \
                     port:R-logitr \
                     port:R-magrittr \
-                    port:R-margins \
                     port:R-marginaleffects \
-                    port:R-mice \
-                    port:R-MCMCglmm \
-                    port:R-MuMIn \
                     port:R-mclogit \
+                    port:R-MCMCglmm \
+                    port:R-mice \
                     port:R-mlogit \
+                    port:R-modelbased \
+                    port:R-MuMIn \
                     port:R-nestedLogit \
                     port:R-ordinal \
                     port:R-parameters \
