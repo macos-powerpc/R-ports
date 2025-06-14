@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github HenrikBengtsson future.apply 1.11.3
-revision            1
+R.setup             github HenrikBengtsson future.apply 1.20.0
+revision            0
 categories-append   parallel
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             GPL-2+
 description         Apply function to elements in parallel using futures
 long_description    {*}${description}
 homepage            https://future.apply.futureverse.org
-checksums           rmd160  32dd80988bfc6ae8333d06bc18e3dd898c852300 \
-                    sha256  b8d07141726aa028f6d7e2118ba5d3ec8787ddb5ce37f319e94b2acd7d02da56 \
-                    size    125039
+checksums           rmd160  2d20828675ec2684ac730d33c6f4c6087c8b59df \
+                    sha256  955ed3056563bed1bebd41a00416640f669405114ae02f5ebee8c99a6dc478ca \
+                    size    135841
 github.tarball_from archive
 supported_archs     noarch
 
