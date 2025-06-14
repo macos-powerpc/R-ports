@@ -3,17 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran lucadanese BayesChange 1.1.1
-revision            1
+# Do not upgrade to 2.x unless this is addressed:
+# https://github.com/lucadanese/BayesChange/issues/6
+R.setup             cran lucadanese BayesChange 1.1.2
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3+
 description         Bayesian methods for change points analysis
 long_description    {*}${description}.
 homepage            https://github.com/lucadanese/BayesChange
-checksums           rmd160  a79ed1f27d1f01b814c14db8743e237f67378288 \
-                    sha256  70dafde5dfc5a00b48f01b490ee0423ffe1597b46283f3646c451b6d81475ab4 \
-                    size    43649
+checksums           rmd160  c5dc2fbd3d58f2c9da6b8e8953e779f45d136ade \
+                    sha256  48dd7a1a87ada9359aad60b315d37aabae15426a221acfd512d495c0299ff1a4 \
+                    size    43691
 
 depends_lib-append  port:R-Rcpp \
                     port:R-RcppArmadillo \
