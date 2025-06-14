@@ -1,0 +1,25 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+PortGroup           R 1.0
+
+R.setup             cran pachadotdev kendallknight 0.7.0
+revision            0
+categories-append   math
+maintainers         nomaintainer
+license             Apache-2
+description         Efficient implementation of Kendall's correlation coefficient computation
+long_description    {*}${description}
+homepage            https://pacha.dev/kendallknight
+checksums           rmd160  e85937eceaf2a7ab8d7ada6710f26e11f50793bc \
+                    sha256  30433615846005eb928a8b4802293268446c29e25a4f8c101248f4d7b4b8d656 \
+                    size    30902
+
+depends_lib-append  port:R-cpp11
+
+depends_test-append port:R-knitr \
+                    port:R-rmarkdown \
+                    port:R-spelling \
+                    port:R-testthat
+
+test.run            yes
