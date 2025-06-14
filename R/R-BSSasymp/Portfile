@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran BSSasymp 1.2-3
-revision            3
+R.setup             cran klausnordhausenr BSSasymp 1.2-4
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
-license             {GPL-2 GPL-3}
+license             GPL-2+
 description         Asymptotic covariance matrices of some BSS mixing and unmixing matrix estimates
 long_description    {*}${description}
-checksums           rmd160  34ebe963f82a6a292be329586d1d0c58e26344a8 \
-                    sha256  d1703378fbf7c06b827eb05d736a98f1383722cce14af86553147a1a114712db \
-                    size    19749
+checksums           rmd160  1cc155bea88adace0c686206663fc241e0da4d85 \
+                    sha256  77ac272442219a6f6c3d2d31ec631e2083fa7ca1f33dc6bba38330a5514d8edb \
+                    size    25071
 
 depends_lib-append  port:R-fICA \
                     port:R-JADE
