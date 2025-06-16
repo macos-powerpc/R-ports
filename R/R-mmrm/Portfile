@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran openpharma mmrm 0.3.14 v
-revision            1
+R.setup             cran openpharma mmrm 0.3.15 v
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             Apache-2
 description         Mixed Models for Repeated Measures
 long_description    {*}${description}
 homepage            https://openpharma.github.io/mmrm
-checksums           rmd160  abd3c4612010e3f4ab99cee600e765402e50839a \
-                    sha256  c5e8400ca7d1b0b1b63a9be021226cee835eee34a133ced5b52d23ce57583f13 \
-                    size    781546
+checksums           rmd160  765401548905ac994a81719577b76d49e346115f \
+                    sha256  132dd1e5400dd748ff9280f9d95056dd570bb137a5b44221d53cbb4835d8b030 \
+                    size    785473
 
 depends_lib-append  port:R-checkmate \
                     port:R-generics \
@@ -50,6 +50,7 @@ depends_test-append port:R-broom.helpers \
                     port:R-rmarkdown \
                     port:R-sasr \
                     port:R-scales \
+                    port:R-testthat \
                     port:R-tidymodels \
                     port:R-withr \
                     port:R-xml2
