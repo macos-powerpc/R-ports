@@ -3,7 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github r-lib keyring 1.4.0 v
+# Revert to GitHub once updated there.
+R.setup             cran r-lib keyring 1.4.1 v
 revision            0
 categories-append   security
 maintainers         nomaintainer
@@ -11,10 +12,10 @@ license             MIT
 description         Access the system credential store from R
 long_description    {*}${description}
 homepage            https://r-lib.github.io/keyring/index.html
-checksums           rmd160  f38975713589893cd8c78e72992a2613548aace9 \
-                    sha256  fc031cffae861ed406bab03cfa7f0a56ab9ae258932ebf4280fb7d722e0675bb \
-                    size    211002
-github.tarball_from archive
+checksums           rmd160  c9b856ea769a4d52c4b0f85e754b7192aa38372e \
+                    sha256  fba2451fc8cd4494fc0025264b67be49a58e020e01c65e5d5d2c43f84f53ce84 \
+                    size    214959
+# github.tarball_from archive
 
 depends_lib-append  port:R-askpass \
                     port:R-filelock \
