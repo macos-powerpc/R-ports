@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran agnesdeng mixgb 1.5.2 v
-revision            1
+R.setup             cran agnesdeng mixgb 1.5.3 v
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3+
 description         Multiple imputation via xgboost
 long_description    {*}${description}
 homepage            https://agnesdeng.github.io/mixgb
-checksums           rmd160  549442c0640bd26329a6eee23b698418fa757c93 \
-                    sha256  d3d303b7b2ed8391f1dbd4103c28a50d37bd6301ba74dc0dd4306c594fd55948 \
-                    size    688030
+checksums           rmd160  cb4c29ac1a8be59b1184613bbed0d60c6f4bc952 \
+                    sha256  df2f9cbfc61507f98354e0d16c1ce74c91b5659be5e8b2068bae4a79b6097dc5 \
+                    size    688211
 
 depends_lib-append  port:R-data.table \
                     port:R-magrittr \
@@ -27,6 +27,7 @@ depends_lib-append  port:R-data.table \
 compilers.setup     require_fortran
 
 depends_test-append port:R-knitr \
-                    port:R-rmarkdown
+                    port:R-rmarkdown \
+                    port:R-testthat
 
 test.run            yes
