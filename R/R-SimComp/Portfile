@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran SimComp 3.3
-revision            2
+R.setup             cran hasler SimComp 3.6
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL
 description         Simultaneous comparisons for multiple endpoints
 long_description    {*}${description}
-checksums           rmd160  7afddda2ce62aa33411698f927c3e3c675cf84a1 \
-                    sha256  2542f02e314841a03491ef081981077ef14bb173f65bb297201fcc0f848e1313 \
-                    size    32305
+checksums           rmd160  627924b649084ec218965efdc14f9efb28af1803 \
+                    sha256  0317f9780b49aa86cc071681cf7f3f0106d0e1d3f9d99d6c4916c230f1e479d2 \
+                    size    31077
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-mratios \
                     port:R-multcomp \
