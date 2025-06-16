@@ -18,3 +18,12 @@ checksums           rmd160  a6de544146d989487208593b028558a57bdde588 \
 
 depends_lib-append  port:R-data.table \
                     port:R-ggplot2
+
+depends_test-append port:R-directlabels \
+                    port:R-future \
+                    port:R-future.apply \
+                    port:R-jointseg \
+                    port:R-neuroblastoma \
+                    port:R-testthat
+
+test.run            yes
