@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran Novartis RBesT 1.8-0
-revision            1
+R.setup             cran Novartis RBesT 1.8-2
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3+
 description         R Bayesian Evidence Synthesis Tools
 long_description    {*}${description}
 homepage            https://opensource.nibr.com/RBesT
-checksums           rmd160  c03d75c66123e241a5f996f89a8bff17949b491a \
-                    sha256  f83e80c2312d77e535c23177d3063bf2b873791c712de0522b56f86791b2e17f \
-                    size    762499
+checksums           rmd160  8e257cc22be1781ba2735852babf94efcb2dadb5 \
+                    sha256  246950672dd7c5453c94ba1619f2ac93fa648c7e9608b6f802a396bcbac41156 \
+                    size    531771
 
 depends_lib-append  port:R-abind \
                     port:R-assertthat \
@@ -24,6 +24,8 @@ depends_lib-append  port:R-abind \
                     port:R-dplyr \
                     port:R-Formula \
                     port:R-ggplot2 \
+                    port:R-jsonlite \
+                    port:R-lifecycle \
                     port:R-matrixStats \
                     port:R-mvtnorm \
                     port:R-Rcpp \
@@ -47,6 +49,7 @@ depends_test-append port:R-brms \
                     port:R-rstanarm \
                     port:R-scales \
                     port:R-testthat \
-                    port:R-tidyr
+                    port:R-tidyr \
+                    port:R-withr
 
 test.run            yes
