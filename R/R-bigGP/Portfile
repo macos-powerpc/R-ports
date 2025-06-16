@@ -3,39 +3,29 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran paciorek bigGP 0.1.8
-revision            2
+R.setup             cran paciorek bigGP 0.1.9
+revision            0
 categories-append   math parallel
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Distributed Gaussian process calculations
 long_description    {*}${description}
-checksums           rmd160  2422b9e2158e776959b7dd16a8bc9fae9c9f1441 \
-                    sha256  3f07ed5075764e08e4431d148cecdecc1063f4e78fbac330a5a6f8d9eed49a2b \
-                    size    1054037
+checksums           rmd160  ddfcdb00274682eb25dc7e6acb347e031170fe04 \
+                    sha256  6e2a48d3a82cdcd465eba76a6a600b4f50edfabcef2b84ea3a9f2f654e3c16bc \
+                    size    1047529
 
 # We borrow these settings from R-Rmpi port:
-if {[string match macports-clang-* ${configure.compiler}]} {
-    set mpi_suffix  mp
-    set mpi_port    openmpi-default
-} elseif {[string match macports-gcc-* ${configure.compiler}]} {
-    set gcc_v [
-        string range ${configure.compiler} [
-            string length macports-gcc-
-        ] end
-    ]
-    set mpi_suffix  gcc${gcc_v}
-    set mpi_port    openmpi-${mpi_suffix}
-}
+set mpi_suffix      mp
+set mpi_port        mpich-default
 
 depends_lib-append  port:${mpi_port} \
                     port:R-Rmpi
 
 compilers.setup     require_fortran
 
-build.args-append   --configure-args="--with-mpi-include=${prefix}/include/openmpi-${mpi_suffix} \
-                        --with-mpi-libpath=${prefix}/lib/openmpi-${mpi_suffix} \
-                        --with-mpi-type=OPENMPI"
+build.args-append   --configure-args="--with-mpi-include=${prefix}/include/mpich-${mpi_suffix} \
+                        --with-mpi-libpath=${prefix}/lib/mpich-${mpi_suffix} \
+                        --with-mpi-type=MPICH2"
 
 depends_test-append port:R-fields \
                     port:R-rlecuyer
