@@ -3,19 +3,32 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran tdhock binsegRcpp 2023.8.31
-revision            2
+R.setup             cran tdhock binsegRcpp 2025.5.13
+revision            0
 categories-append   devel
 maintainers         nomaintainer
 license             GPL-3
 description         Efficient implementation of binary segmentation
 long_description    {*}${description}
-checksums           rmd160  89029e5f2393a1cd051179ca0d460c09eda5c452 \
-                    sha256  234d8beb1d1549aedb043f50f36828af0055ed05c7dd67fa928b38f95fcfa8e7 \
-                    size    78781
+homepage            https://github.com/tdhock/binsegRcpp
+checksums           rmd160  db04fef45cff63083fe2dcdea0925e398d9f99da \
+                    sha256  eb715bf56f3a5be0c9f832c9f925382d174b135a18c3d074cef84fbbc152d097 \
+                    size    59597
 
 depends_lib-append  port:R-data.table \
                     port:R-Rcpp
 
-# https://github.com/tdhock/binsegRcpp/pull/18
-patchfiles          patch-isfinite.diff
+depends_test-append port:R-changepoint \
+                    port:R-covr \
+                    port:R-directlabels \
+                    port:R-ggplot2 \
+                    port:R-knitr \
+                    port:R-markdown \
+                    port:R-neuroblastoma \
+                    port:R-penaltyLearning \
+                    port:R-quadprog \
+                    port:R-testthat
+
+# FIXME: few test cases fail on PowerPC [ FAIL 6 | WARN 0 | SKIP 0 | PASS 184 ]
+# https://github.com/tdhock/binsegRcpp/issues/28
+test.run            yes
