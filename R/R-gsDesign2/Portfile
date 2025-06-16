@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github Merck gsDesign2 1.1.2 v
-revision            2
+R.setup             github Merck gsDesign2 1.1.4 v
+revision            0
 maintainers         nomaintainer
 license             GPL-3
 description         Group sequential design with non-constant effect
 long_description    {*}${description}
 homepage            https://merck.github.io/gsDesign2
-checksums           rmd160  a9923a9953d1f1183da6db3975685d08cd4fedf3 \
-                    sha256  8ffe7d2ea6ded232fc8403b806aee34e92ed01aca338a27b4f2f8053c8302af9 \
-                    size    26027331
-github.tarball_from tarball
+checksums           rmd160  844a43d9e4a742d68a822e0cffee3f2c865155f8 \
+                    sha256  ca43fa6c643e07dddf25ef58abb17f6790b592f14e94cb3a2c7efb17de523d49 \
+                    size    26051006
+github.tarball_from archive
 
 depends_lib-append  port:R-corpcor \
                     port:R-data.table \
