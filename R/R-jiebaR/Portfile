@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is old.
-R.setup             cran qinwf jiebaR 0.11
-revision            2
+R.setup             cran qinwf jiebaR 0.11.1
+revision            0
 categories-append   textproc chinese
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Chinese text segmentation, keyword extraction and speech tagging
 long_description    {*}${description}
 homepage            https://qinwenfeng.com/jiebaR
-checksums           rmd160  6337cee184a150ad939d63cdd586e4faf22b8430 \
-                    sha256  adde8b0b21c01ec344735d49cd33929511086719c99f8e10dce4ca9479276623 \
-                    size    78369
+checksums           rmd160  05cc7100663b152849782955ba0c86d7836c8a51 \
+                    sha256  b52a896c59e5443fc16b9501ef5a6454fb60f9b7690dca012f06f58bed8d33b7 \
+                    size    78547
 
 depends_lib-append  port:R-jiebaRD \
                     port:R-Rcpp
