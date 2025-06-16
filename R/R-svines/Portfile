@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is outdated.
-R.setup             cran tnagler svines 0.2.4
-revision            1
+R.setup             cran tnagler svines 0.2.7
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Stationary Vine copula models
 long_description    {*}${description}
 homepage            https://github.com/tnagler/svines
-checksums           rmd160  08d5ac2abc62c86df69bea69f67a915bd19392ae \
-                    sha256  7ac98fec9d020f202be370b58831a7048f1ee94aaa705aeebebd88bf2232ee0c \
-                    size    282669
+checksums           rmd160  86dc6a1c6554248dfd55175c736da4b80018d477 \
+                    sha256  5615dc736860aca2c41b8e89d1cf2987cf180d4924644de74cd23fae5a3b5a04 \
+                    size    282710
 
 depends_lib-append  port:R-assertthat \
                     port:R-BH \
