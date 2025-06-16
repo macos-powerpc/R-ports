@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran rolkra explore 1.3.3
-revision            1
+R.setup             cran rolkra explore 1.3.4
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Exploratory data analysis simplified
 long_description    {*}${description}
 homepage            https://rolkra.github.io/explore
-checksums           rmd160  94e9b059f933022736edee5629e7536c7871b374 \
-                    sha256  ff14c1452ce83deee75983f8b35c8050b13e4837b01e1899459926b16d410fdd \
-                    size    2717849
+checksums           rmd160  6119724868a9189a660afb863ce171d67d21ed3d \
+                    sha256  e0c03c7fa316620b9fb8a769f73f2a40cfa1d9d778907c90b6cc46a12782dbe2 \
+                    size    2720230
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
