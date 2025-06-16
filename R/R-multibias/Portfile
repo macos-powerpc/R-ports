@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran pcbrendel multibias 1.7.1
+R.setup             cran pcbrendel multibias 1.7.2
 revision            0
 platforms           {darwin any}
 categories-append   math
@@ -12,13 +12,14 @@ license             MIT
 description         Simultaneous multi-bias adjustment
 long_description    {*}${description}
 homepage            https://github.com/pcbrendel/multibias
-checksums           rmd160  e997d11ef0338363914a054b95e2a506b0a11db0 \
-                    sha256  7edb259f095cb4d037513eacd26a142a21cb4a48499ba5bb5ae18ba694ff6efa \
-                    size    3043886
+checksums           rmd160  55e34af3038935aff2196d6b12d27120475690ac \
+                    sha256  b8beb0854599e247b6dc78c2adc286fdd80dfa7011df5f5f55f9195787e25461 \
+                    size    3098062
 supported_archs     noarch
 
 depends_lib-append  port:R-broom \
                     port:R-dplyr \
+                    port:R-ggplot2 \
                     port:R-lifecycle \
                     port:R-magrittr \
                     port:R-rlang
