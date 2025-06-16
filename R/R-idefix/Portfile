@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran traets idefix 1.0.3
-revision            2
+R.setup             cran traets idefix 1.1.0
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Efficient designs for discrete choice experiments
 long_description    {*}${description}
-checksums           rmd160  35e5cf8a24e84819618f8648cfbe690f0513fb2a \
-                    sha256  da6be80883091f0b82b41e95fb7afbda760d9fbc1c988cfa2a327e87c1cb124b \
-                    size    98578
+checksums           rmd160  cb2aee67bc42b137d025d678494a3aa1a419413f \
+                    sha256  16e01082b16bdeb26e79708b1e3ffb72110d325673da52039f6fd69e0f748520 \
+                    size    135431
 
 depends_lib-append  port:R-dfidx \
                     port:R-dplyr \
@@ -21,11 +21,15 @@ depends_lib-append  port:R-dfidx \
                     port:R-Rdpack \
                     port:R-scales \
                     port:R-shiny \
+                    port:R-shinyjs \
+                    port:R-tableHTML \
                     port:R-tmvtnorm
 
 compilers.setup     require_fortran
 
 depends_test-append port:R-bayesm \
+                    port:R-ChoiceModelR \
+                    port:R-Rchoice \
                     port:R-RSGHB \
                     port:R-testthat
 
