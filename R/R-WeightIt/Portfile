@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran ngreifer WeightIt 1.3.0
-revision            1
+R.setup             cran ngreifer WeightIt 1.4.0
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Weighting for covariate balance in observational studies
 long_description    {*}${description}
-homepage            https://ngreifer.github.io/WeightIt/
-checksums           rmd160  1a3de4a546c3d7e323ea02c9a8e7b234356d8c61 \
-                    sha256  b86cd67a36627b0c1de1f2595344e50ea187b1961269a01dc514de9f87e99cb6 \
-                    size    942038
+homepage            https://ngreifer.github.io/WeightIt
+checksums           rmd160  8449685aa7450fc2793ce168fe55332e1972573c \
+                    sha256  6c1f836125d63c015d034525e3ca3f4d8e084519e5c3f2868c1f3e08cf62dd8d \
+                    size    1007213
 supported_archs     noarch
 
 depends_lib-append  port:R-chk \
@@ -21,4 +21,30 @@ depends_lib-append  port:R-chk \
                     port:R-crayon \
                     port:R-generics \
                     port:R-ggplot2 \
-                    port:R-rlang
+                    port:R-rlang \
+                    port:R-sandwich
+
+depends_test-append port:R-brglm2 \
+                    port:R-broom \
+                    port:R-CBPS \
+                    port:R-dbarts \
+                    port:R-dfidx \
+                    port:R-enrichwith \
+                    port:R-fwb \
+                    port:R-gbm \
+                    port:R-knitr \
+                    port:R-logistf \
+                    port:R-marginaleffects \
+                    port:R-mclogit \
+                    port:R-misaem \
+                    port:R-mlogit \
+                    port:R-MNP \
+                    port:R-optweight \
+                    port:R-osqp \
+                    port:R-rmarkdown \
+                    port:R-rootSolve \
+                    port:R-SuperLearner \
+                    port:R-testthat \
+                    port:R-waldo
+
+test.run            yes
