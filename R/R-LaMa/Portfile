@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran janoleko LaMa 2.0.4
+R.setup             cran janoleko LaMa 2.0.5
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,12 +12,11 @@ description         Fast numerical maximum likelihood estimation \
                     for latent Markov models
 long_description    {*}${description}
 homepage            https://janoleko.github.io/software
-checksums           rmd160  58932aab5e17a2007c4a02125671e717c176d6a0 \
-                    sha256  1a04736689cabe3424c93438e55ded2f550275242f1b073ba93e91da6802405c \
-                    size    3583500
+checksums           rmd160  8fcc5966a0b19ccf33652b9e7aaebb106be5b8e5 \
+                    sha256  f29a3be287ed2b63a6bb3562e0bdee510c2f8326f856e7b4ab5c8b93d97163fc \
+                    size    3586895
 
-depends_lib-append  port:R-CircStats \
-                    port:R-circular \
+depends_lib-append  port:R-circular \
                     port:R-mvtnorm \
                     port:R-numDeriv \
                     port:R-Rcpp \
