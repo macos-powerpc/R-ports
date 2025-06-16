@@ -4,16 +4,16 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran amices mice 3.17.0
-revision            1
+R.setup             cran amices mice 3.18.0
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Multivariate Imputation by Chained Equations
 long_description    {*}${description}
-checksums           rmd160  8a3f02a2dc0dff59d4b6790486294136999bb6a7 \
-                    sha256  a3d913fa5adccbeabb7ccce8d68250baf0c3337aa18ee123fa57f183512836ae \
-                    size    612263
+checksums           rmd160  225540a653157287a41c7092f080482529b9467e \
+                    sha256  c0ce097a7f68edd2f4d6a3e6bfb133886e709513299dafdac79ec549c93edfa2 \
+                    size    615668
 
 depends_lib-append  port:R-broom \
                     port:R-cpp11 \
