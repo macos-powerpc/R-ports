@@ -1,0 +1,25 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+PortGroup           R 1.0
+
+R.setup             cran noah.greifer optweight 0.2.5
+revision            0
+categories-append   math
+platforms           {darwin any}
+maintainers         nomaintainer
+license             GPL
+description         Targeted stable balancing weights using optimization
+long_description    {*}${description}
+checksums           rmd160  72099bbb9eb545ff25699bed8720dff869d3da9a \
+                    sha256  021fe33836a75de08e22bafb35130615c99042b9910b73e2c198ba43ae4ed3d5 \
+                    size    75053
+supported_archs     noarch
+
+depends_lib-append  port:R-ggplot2 \
+                    port:R-osqp
+
+depends_test-append port:R-cobalt \
+                    port:R-twang
+
+test.run            yes
