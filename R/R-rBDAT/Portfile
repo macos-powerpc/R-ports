@@ -4,16 +4,16 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitLab once updated there.
-R.setup             cran vochr rBDAT 1.0.0 v
-revision            2
+R.setup             cran vochr rBDAT 1.1.0 v
+revision            0
 maintainers         nomaintainer
 license             BSD
 description         Implementation of BDAT tree taper Fortran functions
 long_description    {*}${description}
 homepage            https://gitlab.com/vochr/rbdat
-checksums           rmd160  00f926d1009003694d1c18182b34824e815bca95 \
-                    sha256  46a461fa988931eee1fc35775d46310ff03f2c55e5e84d1d1f75f56dcd0d490b \
-                    size    220405
+checksums           rmd160  c2d04127e7b8d658b0215856f96e9be4c91f5e3c \
+                    sha256  ef54ec12e5d855dcadbb61c4e6d03d344352a6993c26c31196e61bb059c757ea \
+                    size    218904
 
 compilers.setup     require_fortran
 
