@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran giampiero.marra GJRM 0.2-6.5
-revision            2
+R.setup             cran giampiero.marra GJRM 0.2-6.7
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
-license             GPL-3+
+license             GPL-2+
 description         Generalised Joint Regression Modelling
 long_description    {*}${description}
-checksums           rmd160  e062ab2b1cbffa41d0580eb295b511a866b3ae00 \
-                    sha256  5ca310337acc4539aea9dafc4200abccb9476bd0c73cbe8c7c95b50511a4c948 \
-                    size    837754
+checksums           rmd160  1dde5c4b54854c4b546df3f73b932155a29ec92b \
+                    sha256  0fe7db9f3cd2dd1fb9a8dd5956ed189ddc77f7cc8e17423072d5ba0eb496ebff \
+                    size    536279
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-copula \
                     port:R-distrEx \
