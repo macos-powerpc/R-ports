@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github davidchall jinjar 0.3.1 v
-revision            2
+R.setup             github davidchall jinjar 0.3.2 v
+revision            0
 categories-append   textproc
 maintainers         nomaintainer
 license             MIT
 description         Template engine inspired by Jinja
 long_description    {*}${description}
 homepage            https://davidchall.github.io/jinjar
-checksums           rmd160  ab72561c9a26b5ab222010077d4e3206c4c7901c \
-                    sha256  94e07336d937010e0764af55027b835dc198f9c56cf78fe0536651837b80d78c \
-                    size    286640
-github.tarball_from tarball
+checksums           rmd160  1b9040bb24ddb1475cf707f6ef808d8d6a0c6cb5 \
+                    sha256  6ede0c345caba35bd129ae855a279c44c2eef2a5a1212617efc373725a9a756c \
+                    size    286852
+github.tarball_from archive
 
 depends_lib-append  port:R-cli \
                     port:R-cpp11 \
