@@ -4,18 +4,25 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran r-lib pak 0.8.0.1
-revision            1
+R.setup             cran r-lib pak 0.9.0
+revision            0
 categories-append   devel
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Another approach to package installation
 long_description    {*}${description}
 homepage            https://pak.r-lib.org
-checksums           rmd160  94d4afa54d13242b76ae7cf8cc9b703301903b3d \
-                    sha256  ae25355331e926a38afefa67c7f5d4fcb3143a8678f15f391fd3a7bea0f78946 \
-                    size    2047653
+checksums           rmd160  348a6dcfbfb168bf60caca6f2174394e22e7595d \
+                    sha256  45a8a182fad9821766107f70b238d05a1129fad33afbb8f7b4cd99ec75aa1180 \
+                    size    3324011
 # github.tarball_from archive
+
+# A bug in the bundled R-ps:
+# arch/macos/apps.m:40:3: error: 'for' loop initial declarations are only allowed in C99 or C11 mode
+patchfiles-append   0001-patch-ps-diff
+# A bug in the bundled R-keyring:
+# keyring_macos.c:257:31: error: 'kSecMatchLimit' undeclared (first use in this function)
+patchfiles-append   0002-patch-keyring.diff
 
 depends_test-append port:R-callr \
                     port:R-cli \
