@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran faosorios fastmatrix 0.5-7721
-revision            1
+R.setup             cran faosorios fastmatrix 0.5-9017
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-3
 description         Fast computation of some matrices useful in statistics
 long_description    {*}${description}
 homepage            https://faosorios.github.io/fastmatrix
-checksums           rmd160  a239f528108fd252c39153000b80a3c3222626c5 \
-                    sha256  5baabe975804853a4c21c7c1dd324750d0f8a220ac1f7ca28f50282088e21ae0 \
-                    size    92572
+checksums           rmd160  fe1b35f60d6044ba1c89a08d7f8ba8a16f652eea \
+                    sha256  68223e5387a604f2f10b21898d9ce52e4e6f2db8bb87f70f937d0e068465ab2d \
+                    size    95792
 
 compilers.setup     require_fortran
 
