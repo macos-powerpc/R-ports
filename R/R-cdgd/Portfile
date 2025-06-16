@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github ang-yu cdgd 0.3.5 v
-revision            2
+R.setup             github ang-yu cdgd 1.0.0 v
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Causal decomposition of group disparities
 long_description    {*}${description}
-checksums           rmd160  476dc82bf3dd84edea1f53da9e468dac98a4eec3 \
-                    sha256  3d03fa10156024883e8206f4c9638734701c2097e5726e90562ca66182e84fc9 \
-                    size    47552
+checksums           rmd160  3fe8cef1b7423ede32a159fc1f0af8bb3a3a6e43 \
+                    sha256  74b3d36bcf5294e96ef3f8eb0efe6b9a2f41bc40e52b78bf2ce8e33c0709e077 \
+                    size    48707
 github.tarball_from tarball
 supported_archs     noarch
 
