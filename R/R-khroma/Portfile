@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github tesselle khroma 1.15.0 v
-revision            1
+R.setup             github tesselle khroma 1.16.0 v
+revision            0
 categories-append   graphics
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             GPL-3+
 description         Color schemes for scientific data visualization
 long_description    {*}${description}
 homepage            https://packages.tesselle.org/khroma
-checksums           rmd160  3259eebf557417e3150846ec666e626531c6033a \
-                    sha256  aaa0973522d2aabd4c77a7edc2a8625a0be7dbda090c7ed1ae375c8671eb60b3 \
-                    size    518071
+checksums           rmd160  5ac9307e01a841ccb4cc5c57bba7951066eec03a \
+                    sha256  81fdaf66506c19d0e7db223686f6201b4b501920eef70c3c8d6a10883368dca2 \
+                    size    519547
 github.tarball_from archive
 supported_archs     noarch
 
