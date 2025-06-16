@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran apache adbcpostgresql 0.16.0
-revision            1
+R.setup             cran apache adbcpostgresql 0.18.0
+revision            0
 categories-append   databases
 maintainers         nomaintainer
 license             Apache-2
 description         Arrow Database Connectivity (ADBC) SQLite driver
 long_description    {*}${description}
 homepage            https://github.com/apache/arrow-adbc
-checksums           rmd160  40dad9c8d8a2e61c20bee312fbd920d97f6a1fe9 \
-                    sha256  cf40167f753b18728d444943e28357304fe03aba453bd83e2b4a7cfa0896dab2 \
-                    size    397694
+checksums           rmd160  2f75dddd6bbab82df517ba066c9cff17a4d22dfa \
+                    sha256  154588228a4eecc6774925228bd136e07c24c3ce9c6c9d22a3bf007b19ccca9f \
+                    size    380610
 
 # Keep in sync with R-RPostgreSQL, so that we do not need multiple postgresql ports.
 # Make sure a chosen version is supported for all archs, including powerpc.
