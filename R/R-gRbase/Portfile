@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran hojsgaard gRbase 2.0.2
-revision            1
+R.setup             cran hojsgaard gRbase 2.0.3
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Graphical modelling in R
 long_description    {*}${description}
 homepage            https://people.math.aau.dk/~sorenh/software/gR
-checksums           rmd160  2c399b3a596268dc6e996bc81ea93d89614acba9 \
-                    sha256  36720e49b82e360166386c9b3bf17838aeb6d9b921e7e01d48f8a115f9a02e97 \
-                    size    4329145
+checksums           rmd160  aa50cdbd57ac76aca068b69bb8fd9e5786655a59 \
+                    sha256  2ac60cbf683f1bebd3fbc50f3e71d76ff9e0b1daa441c397b0b7c43b326f1ba2 \
+                    size    2688864
 
 # Keep Bioconductor deps: https://people.math.aau.dk/~sorenh/software/gR/#installation
 depends_lib-append  port:R-BiocManager \
