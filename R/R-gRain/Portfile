@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran sorenh gRain 1.4.2
-revision            1
+R.setup             cran sorenh gRain 1.4.5
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Graphical Independence Networks
 long_description    {*}${description}
 homepage            https://people.math.aau.dk/~sorenh/software/gR
-checksums           rmd160  569e9f1444bf200f68898b10dc733e25d2dc0610 \
-                    sha256  487d5287e1d8b473e8dd96317744ffc77366a4a9f3056376f0bb766898acce74 \
-                    size    304900
+checksums           rmd160  b5962a78ecbd62076aa4adbe2ff587173beee648 \
+                    sha256  b31b46dab12ca071d67c480ec70106ef05afdc7142f68c0af5c8cff3384d900b \
+                    size    443397
 
 depends_lib-append  port:R-broom \
                     port:R-gRbase \
