@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github dmphillippo multinma 0.8.0 v
-revision            1
+R.setup             github dmphillippo multinma 0.8.1 v
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Bayesian network meta-analysis of individual and aggregate data
 long_description    {*}${description}
 homepage            https://dmphillippo.github.io/multinma
-checksums           rmd160  27021570a8d68fc7ba1394b542f4d5ddac406896 \
-                    sha256  1fe73000e8fcef22715951a4084bbdb712f81efde2b6ea53715e808b579931f5 \
-                    size    3734246
+checksums           rmd160  03f844d63c7f57379b090a9a4754b913ff3c02a8 \
+                    sha256  be61a9d5d85319027215712061a337d237b79e8d1a77d59939decd312c80d485 \
+                    size    3732579
 github.tarball_from archive
 
 depends_lib-append  port:R-bayesplot \
