@@ -3,21 +3,20 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran ngreifer cobalt 4.5.5
-revision            2
+R.setup             cran ngreifer cobalt 4.6.0
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Covariate balance tables and plots
 long_description    {*}${description}
 homepage            https://ngreifer.github.io/cobalt
-checksums           rmd160  ff177476e181d077c6cd77b435ad14f148ce792f \
-                    sha256  076c1956e1a24d3ded5ac6227bf05cb294e103dc0d02d825e65b72d2c5f62ec0 \
-                    size    2533733
+checksums           rmd160  66c724a05c86fd5fedb76a61a1a06cd9131d3504 \
+                    sha256  495c0c7dbb372af3cf3d72669a4bd8e9baa96bb28f24502224521abf00ffc529 \
+                    size    2106521
 supported_archs     noarch
-platforms           {darwin any}
 
-depends_lib-append  port:R-backports \
-                    port:R-chk \
+depends_lib-append  port:R-chk \
                     port:R-crayon \
                     port:R-ggplot2 \
                     port:R-gridExtra \
@@ -27,11 +26,14 @@ depends_lib-append  port:R-backports \
 # Several packages are omitted, since they are not in MacPorts atm.
 depends_test-append port:R-brglm2 \
                     port:R-caret \
+                    port:R-CBPS \
                     port:R-ebal \
                     port:R-gbm \
                     port:R-knitr \
                     port:R-MatchIt \
                     port:R-mice \
+                    port:R-optweight \
                     port:R-rmarkdown \
                     port:R-testthat \
-                    port:R-twang
+                    port:R-twang \
+                    port:R-WeightIt
