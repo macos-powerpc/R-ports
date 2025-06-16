@@ -3,17 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran takeshiemura compound.Cox 3.30
-revision            2
+R.setup             cran takeshiemura compound.Cox 3.33
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2
 description         Univariate feature selection and compound covariate for predicting survival
-long_description    Univariate feature selection and compound covariate methods under the Cox model with high-dimensional features.
-checksums           rmd160  80f2493c29ee1f9aa34d03f86ff431f2ce6691ca \
-                    sha256  e05a28e44f3ae18fa33d57d6342126fe0cc9b0f24c85ad4091021b3a4361827a \
-                    size    45101
+long_description    Univariate feature selection and compound covariate methods under the Cox model \
+                    with high-dimensional features.
+checksums           rmd160  6072a70f820dd614bca49c0dbbd90622a760ae09 \
+                    sha256  30c0a67b67e1ae5cf943ec24afbf42707859c62852527c976a039d7d7c7f9150 \
+                    size    45546
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-numDeriv
 
