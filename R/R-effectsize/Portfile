@@ -4,8 +4,8 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran easystats effectsize 1.0.0
-revision            1
+R.setup             cran easystats effectsize 1.0.1
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -13,9 +13,9 @@ license             MIT
 description         Indices of effect size
 long_description    {*}${description}
 homepage            https://easystats.github.io/effectsize
-checksums           rmd160  8e7de4d0530ca350da6ed36486e57d52bac9d411 \
-                    sha256  3f90b79e64aeefdeeaed97db5dcbc651c3b382b0c79a6cd820ab2572dbe933e5 \
-                    size    384701
+checksums           rmd160  f3c01aa1c8ec86cda09ce4ed583a9f20eddb8248 \
+                    sha256  2dff59201dc8281650041f8b8ef2e08fd9b4026c293ba8d2a144796b911e02d3 \
+                    size    387694
 supported_archs     noarch
 
 depends_lib-append  port:R-bayestestR \
