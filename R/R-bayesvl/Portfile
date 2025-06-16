@@ -3,23 +3,24 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran sshpa bayesvl 0.8.5
-revision            3
+R.setup             cran sshpa bayesvl 1.0.0
+revision            0
 categories-append   math
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
-license             GPL-3+
-description         Visually learning the graphical structure of Bayesian networks and performing MCMC with Stan
-long_description    {*}${description}
-checksums           rmd160  6ae01071f36c58b049d14cee40e91b4b40d06638 \
-                    sha256  f943f3a069a36602ffa8b9cf400c17d7c4344cb0f09a8f551b0b4709918d62bd \
-                    size    26391
-supported_archs     noarch
 platforms           {darwin any}
+maintainers         nomaintainer
+license             GPL-3+
+description         Visually learn the graphical structure of Bayesian networks \
+                    and perform MCMC with RStan
+long_description    {*}${description}
+homepage            https://github.com/sshpa/bayesvl
+checksums           rmd160  6c8f639ff2c5110c0e7a96386008fccf145e934b \
+                    sha256  e6a852da7730f6c3aef179f3e3ae3cc8f7a87ec1cd39d5b8c9b92016bbfec6dc \
+                    size    139708
+supported_archs     noarch
 
 depends_lib-append  port:R-bayesplot \
                     port:R-bnlearn \
                     port:R-coda \
-                    port:R-dplyr \
                     port:R-ggplot2 \
                     port:R-reshape2 \
                     port:R-rstan \
