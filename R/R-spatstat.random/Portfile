@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran spatstat spatstat.random 3.3-2
-revision            1
+R.setup             cran spatstat spatstat.random 3.4-1
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Random generation functionality
 long_description    {*}${description} for the R-spatstat family.
 homepage            https://github.com/spatstat/${R.package}
-checksums           rmd160  f3e230aa19bf7c37c7ef2f40f01c2acadebebbaa \
-                    sha256  c6d67be13f827b76328374b8bc28806605fe968618ed53c19cda166dae850ebe \
-                    size    264896
+checksums           rmd160  39b351ab43f3127bb7a6d4681f288aced363526d \
+                    sha256  bfa5a522ddc2a2be953b2f5ce2d06e29fee81c70f50cdfc330336dbca1c95c4b \
+                    size    272390
 
 depends_lib-append  port:R-spatstat.data \
                     port:R-spatstat.geom \

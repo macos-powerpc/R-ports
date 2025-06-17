@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran spatstat spatstat 3.3-0
-revision            1
+R.setup             cran spatstat spatstat 3.3-3
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             GPL-2+
 description         Spatial point pattern analysis, model fitting, simulation, tests
 long_description    {*}${description}
 homepage            https://github.com/spatstat/${R.package}
-checksums           rmd160  ae8897cd05fa4bf149835affaf08f710541d39ec \
-                    sha256  7508ad4f6df4913f7772046949253d66b17d6293da15e14dc55e13db9fc527f7 \
-                    size    4228881
+checksums           rmd160  20c3c0216b63f0b24595c52d13a4d50b10c60674 \
+                    sha256  06beb09ef246e3cf79856cf5677c6fac0e5dc65f5b733bda1143a5fc1b4ce0e9 \
+                    size    4307608
 # CRAN is lying.
 supported_archs     noarch
 
