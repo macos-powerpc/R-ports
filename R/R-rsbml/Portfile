@@ -3,19 +3,20 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             bioconductor Bioconductor rsbml 2.62.0
-revision            1
+R.setup             bioconductor Bioconductor rsbml 2.66.0
+revision            0
 categories-append   bioconductor
 maintainers         nomaintainer
 license             Artistic-2
 description         R support for SBML, using libsbml
 long_description    {*}${description}
-checksums           rmd160  caddc5dd6bc4cf7471ff5160d55fbce694334494 \
-                    sha256  7a91f571e74fb1fafa58423a3402261c5e213dae7384cbb4d42af87bc1ebf50a \
-                    size    565386
+checksums           rmd160  ac5732c72c1b135e04f0d07ca0dfe8fb448a7dcf \
+                    sha256  e0ad4d628869342aacae5b5b9dc3d64fe8f7cd4822472a74b386d3aa786c0e0b \
+                    size    678292
 
 depends_build-append \
-                    port:pkgconfig
+                    path:bin/pkg-config:pkgconfig
+
 depends_lib-append  port:libsbml \
                     port:R-BiocGenerics \
                     port:R-graph
