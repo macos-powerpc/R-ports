@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-project AER 1.2-14
-revision            1
+R.setup             cran r-project AER 1.2-15
+revision            0
 categories-append   economics
 platforms           {darwin any}
 maintainers         nomaintainer
 license             {GPL-2 GPL-3}
 description         Applied Econometrics with R
 long_description    {*}${description}
-checksums           rmd160  5877238f589e3530b321f9cd3be7c31028ab0cdf \
-                    sha256  46a86156d819a1ba3ac82b7f81d9d416bf9a0e5a73ab5e3a3c0030df5e80871a \
-                    size    2231950
+checksums           rmd160  381b1ab748785976f8cf63c84792bf4583c87b90 \
+                    sha256  b04c8ab3eea443315f9d30dbea379b54e4683234f3f8528066d0c7a6edc81f45 \
+                    size    2241698
 supported_archs     noarch
 
 depends_lib-append  port:R-car \
