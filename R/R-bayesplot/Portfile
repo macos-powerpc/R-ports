@@ -3,7 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github stan-dev bayesplot 1.12.0 v
+# Revert to GitHub once updated there.
+R.setup             cran stan-dev bayesplot 1.13.0 v
 revision            0
 categories-append   graphics math
 platforms           {darwin any}
@@ -12,10 +13,10 @@ license             GPL-3+
 description         Plotting for Bayesian Models
 long_description    {*}${description}
 homepage            https://mc-stan.org/bayesplot
-checksums           rmd160  92fa1c1784f7664b56b28304f9cdd02aebbaa471 \
-                    sha256  dd5964bdab3f24065abfe9be49885704db8c41ae07f2756758dd763ad5c1c02c \
-                    size    10044112
-github.tarball_from archive
+checksums           rmd160  62b6f44609b5b8b5efc42c713a397ef5ba53d54f \
+                    sha256  bdeba8c1cfdf6737a5fddb3932b854323bcae82582e370278d57ef9266de50f7 \
+                    size    5114058
+# github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-dplyr \
@@ -26,6 +27,7 @@ depends_lib-append  port:R-dplyr \
                     port:R-reshape2 \
                     port:R-rlang \
                     port:R-tibble \
+                    port:R-tidyr \
                     port:R-tidyselect
 
 depends_test-append port:R-ggfortify \
