@@ -3,21 +3,26 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-# Revert to GitHub once updated there.
-R.setup             cran loelschlaeger ino 1.0.2
-revision            2
+R.setup             github loelschlaeger ino b25c3928ad892f6b71eadf8e9f69ef56b4777832
+version             1.0.2
+revision            3
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3+
 description         Initialization of Numerical Optimization
 long_description    Analysis of the initialization for numerical optimization of real-valued functions, \
                     including likelihood functions of statistical models.
 homepage            https://loelschlaeger.de/ino
-checksums           rmd160  0fef2f840c6cf0397c73344ae363ac0bcfa07834 \
-                    sha256  136210012f2e0e4e24f991efbe10ba7ce3932fcd5b4f914307bf53f4980ef4a2 \
-                    size    1123858
+checksums           rmd160  e34314e729484993d4f6821fc4518d91c4b8d147 \
+                    sha256  a7071d2b83aed2f93abc059ac9a80f3eef0da26ef7421221a72262cc18f27aaa \
+                    size    1239491
+github.tarball_from archive
 supported_archs     noarch
-platforms           {darwin any}
+
+# Error: object ‘apply_optimizer’ is not exported by 'namespace:optimizeR'
+# Error: object ‘optimizer_nlm’ is not exported by 'namespace:optimizeR'
+patchfiles-append   patch-NAMESPACE.diff
 
 depends_lib-append  port:R-cli \
                     port:R-crayon \
