@@ -3,18 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github eguidotti calculus 1.0.1
-revision            3
+# Revert to GitHub once updated there.
+R.setup             cran eguidotti calculus 1.1.0
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         High-dimensional numerical and symbolic calculus
 long_description    {*}${description}
 homepage            https://calculus.guidotti.dev
-checksums           rmd160  c3f09e2ba5990eafd22d725bdbd1d1756d7e2e53 \
-                    sha256  141053eef660e41fb8468e7d53ead9755fefcc0db1a9401fb96d789f24aeb4c9 \
-                    size    104652
-github.tarball_from tarball
+checksums           rmd160  d4386e5fc3a51a30a197ede664406d653a1ab134 \
+                    sha256  175e90360b2e5085e956d3714ab4d6fbf2710402b04be83079e2a0b324133198 \
+                    size    165274
+# github.tarball_from archive
 
 depends_lib-append  port:R-Rcpp
 
