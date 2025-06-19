@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran kzs 1.4
-revision            2
+R.setup             cran cyr.derek kzs 1.4.1
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Kolmogorov–Zurbenko spatial smoothing and applications
 long_description    {*}${description}
-checksums           rmd160  77bd7a021489d95a3fa0529e0e07ab9412046ae7 \
-                    sha256  89877e2f9b1b210c97c6d78757a8c4015ce105cb4243c340ff485ff01c772eeb \
-                    size    3447112
+checksums           rmd160  78f71b7de4be6c7d111e8897ef786d546a7d796a \
+                    sha256  f91eb302c72ffcdaf5f7fd95fb14eeb7ed041017a5d479241f2c14ce4b697cb9 \
+                    size    3450393
 supported_archs     noarch
-platforms           {darwin any}
 
 test.run            yes
