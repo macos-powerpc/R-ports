@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github r-lib evaluate 1.0.3 v
-revision            1
+R.setup             github r-lib evaluate 1.0.4 v
+revision            0
 categories-append   devel
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             MIT
 description         Parsing and evaluation tools
 long_description    {*}${description} that provide more details than the default.
 homepage            https://evaluate.r-lib.org
-checksums           rmd160  fcb3069dc50b9cfdd242f853a1b78647f7504ac8 \
-                    sha256  2d2997d084a0af53b4f8b8c57bed3038331a8c331a5855838b01e2445b072fad \
-                    size    42523
+checksums           rmd160  a0ff1d092fb95fbe5b84ac70ad2a95a07df0fb3b \
+                    sha256  f9af63f85a6e5e90b41bac3de9e918670ecd7902bfadfeb7eabf4f96cd70740f \
+                    size    43841
 github.tarball_from archive
 supported_archs     noarch
 
@@ -23,6 +23,7 @@ depends_test-append port:R-callr \
                     port:R-ggplot2 \
                     port:R-knitr \
                     port:R-pkgload \
+                    port:R-ragg \
                     port:R-rlang \
                     port:R-testthat \
                     port:R-withr
