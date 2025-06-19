@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-project tram 1.2-2
+R.setup             cran r-project tram 1.2-3
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             GPL-2
 description         R-Formula-based user-interfaces to specific \
                     transformation models
 long_description    {*}${description} implemented in R-mlt.
-checksums           rmd160  49fb79d8bf0ac27ab16422681d0d2287a0fdf7db \
-                    sha256  7e7392c7633bd30b90c03b638661437e4d90844f09c2cbc5dd8bcabb033d7745 \
-                    size    1539119
+checksums           rmd160  9b74c344d149a42c7ffded098da7110b76a919e3 \
+                    sha256  32baf591d815ea64aabbc9ef643e446dc7f7acf8cbba4e3aa9ec334431b503ab \
+                    size    1685235
 supported_archs     noarch
 
 depends_lib-append  port:R-basefun \
