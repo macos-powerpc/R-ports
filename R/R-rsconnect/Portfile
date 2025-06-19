@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github rstudio rsconnect 1.4.1 v
+R.setup             github rstudio rsconnect 1.4.2 v
 revision            0
 categories-append   devel
 platforms           {darwin any}
@@ -13,9 +13,9 @@ description         Deployment interface for R-rmarkdown documents \
                     and R-shiny applications
 long_description    {*}${description}
 homepage            https://github.com/rstudio/rsconnect
-checksums           rmd160  f3f850b5953e488b0761f6ef7578a9caa5453e91 \
-                    sha256  70f17f919837f4a9fdf2bf6d9c51944acfbee2a0d010111eb7e701a3c8783a2b \
-                    size    532975
+checksums           rmd160  3a70e503863b0558752086a005775f5b856a22cf \
+                    sha256  27f5863edf5bfa0125054dee264f92bc01457fb71b316e0ba42e074de372d6b9 \
+                    size    535872
 github.tarball_from archive
 supported_archs     noarch
 
