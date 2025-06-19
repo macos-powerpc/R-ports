@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran tensor 1.5
-revision            3
+R.setup             cran j.c.rougier tensor 1.5.1
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
-license             {GPL-2 GPL-3}
+license             GPL-2+
 description         Tensor product of arrays
 long_description    {*}${description}
-checksums           rmd160  12cd7985464e537fb1f241ab6a6d7ce6e7004c02 \
-                    sha256  e1dec23e3913a82e2c79e76313911db9050fb82711a0da227f94fc6df2d3aea6 \
-                    size    2518
+checksums           rmd160  b9dbe89a8daf38c65cba8f0a3827bfc55473966a \
+                    sha256  6edb07024eaaadec1f83694f5012c2355aced3e589c2c3c659021b5f03168b58 \
+                    size    2541
 supported_archs     noarch
-platforms           {darwin any}
 
 test.run            yes
