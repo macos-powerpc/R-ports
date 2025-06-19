@@ -4,18 +4,18 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran samhforbes eyetrackingR 0.2.1
-revision            2
+R.setup             cran samhforbes eyetrackingR 0.2.2
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Eye-tracking data analysis
 long_description    {*}${description}
 homepage            https://samforbes.me/eyetrackingR
-checksums           rmd160  0df3720bc47fdc7da97838baf41a3a0a30c905ce \
-                    sha256  a924a91864c2d76f077482d8c07c1596f4e7495e758578097055424f6e920a78 \
-                    size    808901
+checksums           rmd160  a8bf505f344b6efc448436fa72d48b0b10358c85 \
+                    sha256  5901e102bfe722aa6bbdcad59180fcc2f99186ec284facc8d751843eb604aa31 \
+                    size    804546
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-broom \
                     port:R-broom.mixed \
