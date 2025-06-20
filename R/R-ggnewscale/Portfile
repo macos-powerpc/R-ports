@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github eliocamp ggnewscale 0.5.0 v
-revision            1
+R.setup             github eliocamp ggnewscale 0.5.2 v
+revision            0
 categories-append   graphics
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             GPL-3
 description         Multiple fill and colour scales in R-ggplot2
 long_description    {*}${description}
 homepage            https://eliocamp.github.io/ggnewscale
-checksums           rmd160  863158b426d8cef8f9c504d0aa23e7e6186200fc \
-                    sha256  33bb8506b4df63da89725e20e3652c482ae18dde708439cf2462a4d415672eeb \
-                    size    496703
+checksums           rmd160  57b8b4ad33a8eb0f93d8f167326be016ae71f142 \
+                    sha256  a38cde4fdd13cc5206b2db645706d060d537e4995c7d6af01548e09f3503d78b \
+                    size    514331
 github.tarball_from archive
 supported_archs     noarch
 
