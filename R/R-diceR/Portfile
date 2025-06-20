@@ -4,23 +4,22 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran AlineTalhouk diceR 3.0.0
-revision            1
+R.setup             cran AlineTalhouk diceR 3.1.0
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
-license             GPL-2+
+license             MIT
 description         Diverse Cluster Ensemble in R
 long_description    {*}${description}
 homepage            https://alinetalhouk.github.io/diceR
-checksums           rmd160  160e04963b75635119c466547f5bb17d2a2bd9e6 \
-                    sha256  8ca87bf3a19e06c51cdc615e71c94a76d2c2b30c5ae8f593a711d0171960afa4 \
-                    size    798470
+checksums           rmd160  28e8346c6c7606e2dcdebccafcffe5016be5f92a \
+                    sha256  7ad6e33dee6bc9e3e50365242f566a209c47f22f866b533127ef78f5115d734d \
+                    size    797248
 
 depends_lib-append  port:R-abind \
                     port:R-assertthat \
                     port:R-clue \
                     port:R-clusterCrit \
-                    port:R-clv \
                     port:R-clValid \
                     port:R-dplyr \
                     port:R-ggplot2 \
