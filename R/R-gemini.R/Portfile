@@ -3,7 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github jhk0530 gemini.R 0.12.0 v
+# Revert to GitHub once updated there.
+R.setup             cran jhk0530 gemini.R 0.15.0 v
 revision            0
 categories-append   llm
 platforms           {darwin any}
@@ -11,16 +12,17 @@ maintainers         nomaintainer
 license             MIT
 description         Interface to Google Gemini API
 long_description    {*}${description}
-checksums           rmd160  be51959bd6f999f7749ccede9004b3ac4d75cbe6 \
-                    sha256  b7f911bd0a7cfccfbf37aef5f960b7a53c41abfa861e4c17956bcf61e6f1c9c8 \
-                    size    12298092
-github.tarball_from archive
+checksums           rmd160  6c86fcc7bce9c2d42a4631267d5bb3b913bf4503 \
+                    sha256  bf2ca7dc55abe7c6044db866878481e862bd27abac883d17f1245911af085c0a \
+                    size    5023177
+# github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-base64enc \
                     port:R-cli \
                     port:R-httr2 \
                     port:R-jsonlite \
+                    port:R-knitr \
                     port:R-rstudioapi
 
 depends_test-append port:R-testthat
