@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran statisticsnorway SSBtools 1.7.5
-revision            1
+R.setup             cran statisticsnorway SSBtools 1.8.0
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             MIT
 description         Statistics Norway’s miscellaneous tools
 long_description    {*}${description}
 homepage            https://github.com/statisticsnorway/SSBtools
-checksums           rmd160  a0d0865e1ccd78101a9e98e91123432d7753ac79 \
-                    sha256  5e6ab829a9a458252d9a6e8ac2f22eff1420107b1ceeef97de1c5af2636892ec \
-                    size    263932
+checksums           rmd160  b35ced584ebd42710ea09d71cea5a45a47fc0028 \
+                    sha256  1f5877e94fce2887448d23b048bcaf483d8c7c519862a9578e01a68934e736c9 \
+                    size    271223
 supported_archs     noarch
 
 depends_test-append port:R-data.table \
