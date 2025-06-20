@@ -4,8 +4,8 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran joshuaulrich quantmod 0.4.27
-revision            1
+R.setup             cran joshuaulrich quantmod 0.4.28
+revision            0
 categories-append   finance
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -13,9 +13,9 @@ license             GPL-3
 description         Quantitative financial modelling framework
 long_description    {*}${description}
 homepage            https://www.quantmod.com
-checksums           rmd160  7fdab9414b660d0ef992023026c5bb92019cd9a1 \
-                    sha256  71d3c02b61c22eb1ab2c3b17ad9e493b601af97dd47c43c2263914c964620141 \
-                    size    156321
+checksums           rmd160  170b73ac136e471ea579df3bcf7328e360060991 \
+                    sha256  d1d4215ae0caba96ecf16e5ff8bbef047e88d1b1e60bb3e9e42e7c26b26ed338 \
+                    size    156731
 supported_archs     noarch
 
 depends_lib-append  port:R-curl \
