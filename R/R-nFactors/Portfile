@@ -3,17 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran nFactors 2.4.1.1
-revision            2
+R.setup             cran raiche.gilles nFactors 2.4.1.2
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
-description         Parallel analysis and other non-graphical solutions to the Cattell scree test
+description         Parallel analysis and other non-graphical solutions \
+                    to the Cattell scree test
 long_description    {*}${description}
-checksums           rmd160  bdea91f15f767d184bf4445835c96c3297b92735 \
-                    sha256  bb376621d870c52ac9c29bfe4d22f71ffc5a9885a3996be3e032fe30c46cfe21 \
-                    size    65694
+checksums           rmd160  debc596d55576bad0cd31713474113f16a91145b \
+                    sha256  1de7fdecc9ca18f90c5b66f9bfad0b965aeb8220296f081dc1dc6108c4031cc8 \
+                    size    65232
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-psych
 
