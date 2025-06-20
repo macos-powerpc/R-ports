@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran saviviro gmvarkit 2.1.4
-revision            1
+R.setup             cran saviviro gmvarkit 2.2.0
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             GPL-3
 description         Estimate Gaussian and Student t mixture vector autoregressive models
 long_description    {*}${description}
 homepage            https://github.com/saviviro/gmvarkit
-checksums           rmd160  58c48c3330055f71bf4a78fb5d6603ebfcdc567a \
-                    sha256  b29c28f676b4e24e805317c14204fd70d35f547419ed0604a33aea617173fa4e \
-                    size    912248
+checksums           rmd160  af6be544441441b73957beb6a172eee059b0915d \
+                    sha256  81123ba85f826796e424610a9ba0222613ebe074a6b97e5e3abc0522dd27ee26 \
+                    size    902474
 supported_archs     noarch
 
 depends_lib-append  port:R-Brobdingnag \
