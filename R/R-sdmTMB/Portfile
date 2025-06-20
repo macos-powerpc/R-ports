@@ -4,19 +4,20 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran pbs-assess sdmTMB 0.6.0 v
-revision            1
+R.setup             cran pbs-assess sdmTMB 0.7.2 v
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-3
 description         Spatial and spatio-temporal SPDE-based GLMMs
 long_description    {*}${description} with R-TMB.
 homepage            https://pbs-assess.github.io/sdmTMB
-checksums           rmd160  d473c265f12f3219a3a8c79b071cdcab2eb7fa62 \
-                    sha256  8845fd1b66954f0b09daf105948b917d26b24d15f44429c30bae7475afaf536c \
-                    size    1839772
+checksums           rmd160  1afcd5cb138934a10b524fd92a7e477c1d4a9755 \
+                    sha256  89820abd7a22723b200ab86c420dab9c8a4cf43d72d801b88e59958669d76f97 \
+                    size    793913
 
-depends_lib-append  port:R-assertthat \
+depends_lib-append  port:R-abind \
+                    port:R-assertthat \
                     port:R-cli \
                     port:R-clisymbols \
                     port:R-fishMod \
@@ -45,6 +46,7 @@ depends_test-append port:R-DHARMa \
                     port:R-knitr \
                     port:R-rmarkdown \
                     port:R-sf \
+                    port:R-spatstat.data \
                     port:R-splancs \
                     port:R-testthat \
                     port:R-tibble \
