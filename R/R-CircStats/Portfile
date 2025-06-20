@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran CircStats 0.2-6
-revision            3
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+R.setup             cran claudio.agostinelli CircStats 0.2-7
+revision            0
+platforms           {darwin any}
+maintainers         nomaintainer
 license             GPL-2
 description         Circular Statistics
 long_description    {*}${description}
-checksums           rmd160  c3786a429468706683d651ecb6ee7d70ffd4efd2 \
-                    sha256  8efed93b75b314577341effea214e3dd6e0a515cfe1212eb051047a1f3276f1d \
-                    size    36305
+checksums           rmd160  0c21cab544397e4e2d7d3b12fd4cd629e95fb20b \
+                    sha256  9f6dabe94c21cdc3c5330779e5a50a2cefb03cfc925a095bdc3ffa7af830e456 \
+                    size    36756
 supported_archs     noarch
-platforms           {darwin any}
 
 test.run            yes
