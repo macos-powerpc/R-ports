@@ -3,6 +3,10 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
+# FIXME: the build fails now with R 4.5.1:
+# In file included from init.c:3:
+# rgeos.h:59:10: fatal error: sp.h: No such file or directory
+
 R.setup             cran r-forge rgeos 0.6-4
 revision            2
 categories-append   math
