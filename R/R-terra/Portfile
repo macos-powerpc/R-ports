@@ -3,6 +3,11 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
+# FIXME: 1.8-56 fails to build due to C++ ABI conflict.
+# Possibly we will need separate GEOS and GDAL just for R ports...
+# See comments in: https://github.com/rspatial/terra/issues/1846
+# Also: https://github.com/USDAForestService/gdalraster/issues/713
+
 R.setup             github rspatial terra 43126ab0fabc2757564bb05994cc683ce70710e5
 version             1.8-55
 revision            1
