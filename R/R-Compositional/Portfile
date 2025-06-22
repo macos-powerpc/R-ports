@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran mtsagris Compositional 7.5
+R.setup             cran mtsagris Compositional 7.6
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -11,9 +11,9 @@ maintainers         nomaintainer
 license             GPL-2+
 description         Compositional data analysis
 long_description    {*}${description}
-checksums           rmd160  677a84b6e23c8756243dfd1c609d7f8af2e243d3 \
-                    sha256  c7c65955d56d246f86a8f687e49870448d24e301c772184e99048e706f020396 \
-                    size    211414
+checksums           rmd160  c061beee89d2bd67ef84702e935fd7fa0c6a9e4e \
+                    sha256  ce7a4b0a981aae40f5a3d871400e772f82706153e4a11176079c22befbcef73b \
+                    size    211406
 supported_archs     noarch
 
 depends_lib-append  port:R-bigstatsr \
