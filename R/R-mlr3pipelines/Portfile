@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran mlr-org mlr3pipelines 0.7.0 v
-revision            1
+R.setup             cran mlr-org mlr3pipelines 0.8.0 v
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             LGPL-3
 description         Preprocessing operators and pipelines for R-mlr3
 long_description    {*}${description}
 homepage            https://mlr3pipelines.mlr-org.com
-checksums           rmd160  8a22790443da8164e30e2511f7287c353ee1d4ad \
-                    sha256  a323f016c5b7846352ceb61a20db98cd9b92b0126c30e356ab320acdcf32c66f \
-                    size    754875
+checksums           rmd160  a20a91cd5c06dcf9a29eb876e1e7b00164d53ee3 \
+                    sha256  b2cebdc7706cf55fe2915e61c3442a54c86112bd151626377e41ddd9d6d2d95f \
+                    size    800662
 # github.tarball_from archive
 supported_archs     noarch
 
