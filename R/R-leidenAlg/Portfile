@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github kharchenkolab leidenAlg 1.1.4
-revision            1
+R.setup             github kharchenkolab leidenAlg 1.1.5
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         R interface to the Leiden algorithm, \
                     an iterative community detection algorithm on networks
 long_description    {*}${description}
-checksums           rmd160  2df8ce2d99f60c0988e607cf5880bdcfd4c611c9 \
-                    sha256  a85764f1239d0e75713b7625728fc97b142fa2f3a384f70841bff9617fbdd0ca \
-                    size    1637693
+checksums           rmd160  64559f143a31606ead3868fbc6d8fd86cae50622 \
+                    sha256  1a0e54f6dbcaebe6a854c64383b5f3061595a709b41cbe4ec8f6216b8693a060 \
+                    size    1638140
 github.tarball_from archive
 
 depends_lib-append  port:glpk \
