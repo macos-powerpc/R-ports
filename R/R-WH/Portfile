@@ -4,19 +4,19 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran GuillaumeBiessy WH 1.1.2
-revision            1
+R.setup             cran GuillaumeBiessy WH 2.0.0
+revision            0
 categories-append   math
-platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3+
 description         Enhanced implementation of Whittaker–Henderson smoothing
 long_description    {*}${description}
 homepage            https://github.com/GuillaumeBiessy/WH
-checksums           rmd160  73739d38861ae3043190e2749b1e1c4d5127fdbd \
-                    sha256  9eec032f23600f803cc4315a469b435d167d810748e26dac269392b5c7f27443 \
-                    size    193511
-supported_archs     noarch
+checksums           rmd160  e47a933b8dd8ce087fa6c8d9783918ed895ba65b \
+                    sha256  7919c194654dc03f4ee2f93e93d6bdc345580e3d385a8491f969ef999f090e54 \
+                    size    174483
+
+depends_lib-append  port:R-Rcpp
 
 depends_test-append port:R-knitr \
                     port:R-rmarkdown \
