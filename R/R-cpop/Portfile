@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran dan.grose cpop 1.0.7
-revision            1
+R.setup             cran dan.grose cpop 1.0.8
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Detection of multiple changes in slope \
                     in univariate time series
 long_description    {*}${description}
-checksums           rmd160  3fca37ed7a483924f7d1c4dac72c54989053e86f \
-                    sha256  81759856075b1bef8001db7af7168c6b64f392fb9e4471d72c9f0f780ff25620 \
-                    size    280886
+checksums           rmd160  d55f658a8c51f25ae10384aac4a759580ff84a88 \
+                    sha256  ac3631d56fe67a5b82d5b78b7e33823ea0e3bcfb647d456cb5e2308214d85e26 \
+                    size    281863
 
 depends_lib-append  port:R-crops \
                     port:R-ggplot2 \
