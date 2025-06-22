@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github mlr-org mlr3learners 0.7.0 v
-revision            1
+R.setup             github mlr-org mlr3learners 0.12.0 v
+revision            0
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             LGPL-3
 description         Recommended Learners for R-mlr3
 long_description    {*}${description}
 homepage            https://mlr3learners.mlr-org.com
-checksums           rmd160  94b4f6dcd7089ce30e1a8b87461b20e1927c649f \
-                    sha256  3c3b4bbcdd77da66f8e58cac601830470148131b2bdb863b3d0481575352b3ec \
-                    size    76210
+checksums           rmd160  6179956b40ed2bf4a71e0ab9e8b3f87e99f5e7bc \
+                    sha256  df6b681c1ad00d2aedf3e5e8409e2e6a565a17fe979ae2c2d315600d21f2a4fd \
+                    size    84738
 github.tarball_from archive
 supported_archs     noarch
 
