@@ -1,0 +1,44 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+PortGroup           R 1.0
+
+R.setup             cran gforge Greg 2.0.2
+revision            0
+platforms           {darwin any}
+maintainers         nomaintainer
+license             GPL-3+
+description         Regression helper functions
+long_description    {*}${description}
+homepage            https://github.com/gforge/Greg
+checksums           rmd160  32910cec4f4fc0bb1c7a16d97b065bd13b06e8c9 \
+                    sha256  1a8ca523aaca6e5a377a772f803e43e26ca4b0f78ac292e7e54827b711543a8f \
+                    size    205024
+supported_archs     noarch
+
+depends_lib-append  port:R-broom \
+                    port:R-dplyr \
+                    port:R-Epi \
+                    port:R-forestplot \
+                    port:R-glue \
+                    port:R-Gmisc \
+                    port:R-Hmisc \
+                    port:R-htmlTable \
+                    port:R-knitr \
+                    port:R-purrr \
+                    port:R-rlang \
+                    port:R-rms \
+                    port:R-sandwich \
+                    port:R-stringr \
+                    port:R-tibble \
+                    port:R-tidyr \
+                    port:R-tidyselect
+
+depends_test-append port:R-cmprsk \
+                    port:R-ggplot2 \
+                    port:R-rmarkdown \
+                    port:R-rmeta \
+                    port:R-testthat \
+                    port:R-tidyverse
+
+test.run            yes
