@@ -1,12 +1,13 @@
 # -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
+PortGroup           conflicts_build 1.0
 PortGroup           openssl 1.0
 PortGroup           R 1.0
 
 # GitHub version is old.
 R.setup             cran r-spatial sf 1.0-21
-revision            1
+revision            2
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             {GPL-2 MIT}
@@ -17,14 +18,17 @@ checksums           rmd160  0e059ad0ceadecb98842023197cb55ec8a4ad6fe \
                     sha256  70c28a826387a56b5f270d48cbb42999f6fb59ec0e6984c84df920dbe0206e99 \
                     size    4491745
 
-set proj_v          proj9
+# The build may opportunistically pick wrong libs, in violation of configure args.
+conflicts_build     gdal geos
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
 
-depends_lib-append  path:lib/${proj_v}/lib/pkgconfig/proj.pc:${proj_v} \
-                    port:gdal \
-                    port:geos \
+set deproot         ${prefix}/libexec/R
+
+depends_lib-append  port:gdal-R \
+                    port:geos-R \
+                    port:proj-R \
                     port:R-classInt \
                     port:R-DBI \
                     port:R-magrittr \
@@ -34,11 +38,15 @@ depends_lib-append  path:lib/${proj_v}/lib/pkgconfig/proj.pc:${proj_v} \
                     port:sqlite3
 
 # configure fails to do its job: https://github.com/r-spatial/sf/issues/2292
-build.env-append    CPPFLAGS=-I${prefix}/lib/${proj_v}/include
+build.env-append    CPPFLAGS=-I${deproot}/proj/include \
+                    DYLD_LIBRARY_PATH=${prefix}/lib/libgcc:${deproot}/proj/lib \
+                    PKG_CONFIG_PATH=${deproot}/proj/lib/pkgconfig
 
-build.args-append   --configure-args="--with-proj-include=${prefix}/lib/${proj_v}/include \
-                        --with-proj-lib=${prefix}/lib/${proj_v}/lib \
-                        --with-proj-share=${prefix}/lib/${proj_v}/share/proj \
+build.args-append   --configure-args="--with-gdal-config=${deproot}/gdal/bin/gdal-config \
+                        --with-geos-config=${deproot}/geos/bin/geos-config \
+                        --with-proj-include=${deproot}/proj/include \
+                        --with-proj-lib=${deproot}/proj/lib \
+                        --with-proj-share=${deproot}/proj/share/proj \
                         --with-sqlite3-lib=${prefix}/lib"
 
 # Some optional deps are omitted.
