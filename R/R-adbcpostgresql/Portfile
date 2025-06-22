@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             cran apache adbcpostgresql 0.18.0
-revision            0
+revision            1
 categories-append   databases
 maintainers         nomaintainer
 license             Apache-2
@@ -15,18 +15,18 @@ checksums           rmd160  2f75dddd6bbab82df517ba066c9cff17a4d22dfa \
                     sha256  154588228a4eecc6774925228bd136e07c24c3ce9c6c9d22a3bf007b19ccca9f \
                     size    380610
 
-# Keep in sync with R-RPostgreSQL, so that we do not need multiple postgresql ports.
+# Keep in sync with R-RPostgres and R-RPostgreSQL, so that we do not need multiple postgresql ports.
 # Make sure a chosen version is supported for all archs, including powerpc.
-set pgsql           postgresql15
+set pgsql_v         17
 
-depends_lib-append  port:${pgsql} \
+depends_lib-append  port:postgresql${pgsql_v} \
                     port:R-adbcdrivermanager
 
 # PKG_LIBS is not redundant here:
 build.args-append   --configure-vars=' \
                         PKG_LIBS=-lpq \
-                        INCLUDE_DIR=${prefix}/include/${pgsql} \
-                        LIB_DIR=${prefix}/lib/${pgsql} '
+                        INCLUDE_DIR=${prefix}/include/postgresql${pgsql_v} \
+                        LIB_DIR=${prefix}/lib/postgresql${pgsql_v} '
 
 depends_test-append port:R-nanoarrow \
                     port:R-testthat
