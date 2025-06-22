@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran jeroen curl 6.3.0
+R.setup             cran jeroen curl 6.4.0
 revision            0
 categories-append   net
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             MIT
 description         Modern and flexible web client for R
 long_description    {*}${description}
 homepage            https://jeroen.r-universe.dev/curl
-checksums           rmd160  ad3f9c7d28cdf970e3c6e598b077d045483a3bea \
-                    sha256  6ba26e26a56ed9fc2a6d0da7296c5be95665b055f3abd35bb3bbcddf42bc0663 \
-                    size    934046
+checksums           rmd160  bd26bdf82d2fc300626b98eaf222386dfc3459d3 \
+                    sha256  3bb4dbf892d2c3b4449d67553f2b3b31d9fa23c71fa6af0a287930ae8377ecdb \
+                    size    935843
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
