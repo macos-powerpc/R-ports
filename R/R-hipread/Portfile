@@ -3,15 +3,15 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran ipums hipread 0.2.4
-revision            2
+R.setup             cran ipums hipread 0.2.5
+revision            0
 maintainers         nomaintainer
 license             GPL-2+
 description         Read hierarchical fixed width files
 long_description    {*}${description}
-checksums           rmd160  4579168908a16997b54667121daf11143b466d0d \
-                    sha256  375eb91322d4a261c340e13f9f788f4a4788fb71ce4cb914d2b02aaefb04e21b \
-                    size    40608
+checksums           rmd160  076b2ce1546815eebd1e622f3058f7c47f234e8f \
+                    sha256  3cba58317f35bb4870fb0aaf9907c4bed3113fd68e1ecfe9dc1baa349d829d5c \
+                    size    41169
 
 depends_lib-append  port:R-BH \
                     port:R-R6 \
