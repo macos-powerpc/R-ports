@@ -3,38 +3,31 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-# FIXME: 1.8-56 fails to build due to C++ ABI conflict.
-# Possibly we will need separate GEOS and GDAL just for R ports...
-# See comments in: https://github.com/rspatial/terra/issues/1846
-# Also: https://github.com/USDAForestService/gdalraster/issues/713
-
-R.setup             github rspatial terra 43126ab0fabc2757564bb05994cc683ce70710e5
-version             1.8-55
-revision            1
+R.setup             github rspatial terra 7810acbf7bab84711629ec41183d18285e0a9517
+version             1.8-56
+revision            0
 categories-append   gis
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3+
 description         Spatial data analysis
 long_description    {*}${description}
 homepage            https://rspatial.org/terra
-checksums           rmd160  7377b43ccec37312b48d5bfd721206fd5e10ccf5 \
-                    sha256  77b1888ed947046c0e22bbd1cbfd4ed0b9d71cd2154a6ff2081f81f3f90f9df7 \
-                    size    1069189
+checksums           rmd160  00966754bea7aa33f21df2b1e6188894d4ae3957 \
+                    sha256  8952a56817b094bc8954209494a8bb26fb93e2bf526f48202d678373e62355da \
+                    size    1069248
 github.tarball_from archive
-
-set proj_v          proj9
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
 
-depends_lib-append  path:lib/${proj_v}/lib/pkgconfig/proj.pc:${proj_v} \
-                    port:gdal \
-                    port:geos \
+set deproot         ${prefix}/libexec/R
+
+depends_lib-append  port:gdal-R \
+                    port:geos-R \
                     port:onetbb \
+                    port:proj-R \
                     port:R-Rcpp \
                     port:sqlite3
-
-compiler.cxx_standard 2017
 
 # configure borrowed from quanteda, and in result is incapable of handling TBB.
 patchfiles-append   patch-Makevars.in.diff
@@ -49,12 +42,15 @@ post-patch {
 }
 
 # configure fails to do its job: https://github.com/r-spatial/sf/issues/2292
-build.env-append    CPPFLAGS=-I${prefix}/lib/${proj_v}/include \
-                    PKG_CONFIG_PATH=${prefix}/libexec/onetbb/lib/pkgconfig
+build.env-append    CPPFLAGS=-I${deproot}/proj/include \
+                    DYLD_LIBRARY_PATH=${prefix}/lib/libgcc:${deproot}/proj/lib \
+                    PKG_CONFIG_PATH=${prefix}/libexec/onetbb/lib/pkgconfig:${deproot}/proj/lib/pkgconfig
 
-build.args-append   --configure-args="--with-proj-include=${prefix}/lib/${proj_v}/include \
-                        --with-proj-lib=${prefix}/lib/${proj_v}/lib \
-                        --with-proj-share=${prefix}/lib/${proj_v}/share/proj"
+build.args-append   --configure-args="--with-gdal-config=${deproot}/gdal/bin/gdal-config \
+                        --with-geos-config=${deproot}/geos/bin/geos-config \
+                        --with-proj-include=${deproot}/proj/include \
+                        --with-proj-lib=${deproot}/proj/lib \
+                        --with-proj-share=${deproot}/proj/share/proj"
 
 depends_test-append port:R-deldir \
                     port:R-htmlwidgets \
