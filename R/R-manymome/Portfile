@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github sfcheung manymome 0.2.8 v
+R.setup             github sfcheung manymome 0.2.9 v
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -13,9 +13,9 @@ description         Mediation, moderation and moderated mediation \
                     after model fitting
 long_description    {*}${description}
 homepage            https://sfcheung.github.io/manymome
-checksums           rmd160  8a6143c50b86945dbc96a8580d37d345c40e9232 \
-                    sha256  9a00153c76469ff8d987bf1b37e497f6dda397e479b66f20913fbe46f9d58f50 \
-                    size    2435450
+checksums           rmd160  b7b7f63094ed9f4ebac6a1fc2b6c4471ae8b940f \
+                    sha256  a09bc24ffc99df83c3b470b9f45c4840f45cf988ee290156e1faca19072cb021 \
+                    size    2438579
 github.tarball_from archive
 supported_archs     noarch
 
