@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             cran hypertidy PROJ 0.6.0
-revision            0
+revision            1
 categories-append   gis
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
@@ -15,16 +15,16 @@ checksums           rmd160  cf692cd22626dcc31b977191d68e8c2a46fb7977 \
                     sha256  a66925d2b23e9373af55e98a3457542e2130dddf741dabdf9f9bf335710c098e \
                     size    187629
 
-set proj_v          proj9
-
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
 
-depends_lib-append  path:lib/${proj_v}/lib/pkgconfig/proj.pc:${proj_v} \
+set deproot         ${prefix}/libexec/R
+
+depends_lib-append  port:proj-R \
                     port:R-lifecycle \
                     port:R-wk
 
-build.env-append    PKG_CONFIG_PATH=${prefix}/lib/${proj_v}/lib/pkgconfig
+build.env-append    PKG_CONFIG_PATH=${deproot}/proj/lib/pkgconfig
 
 depends_test-append port:R-knitr \
                     port:R-rmarkdown \

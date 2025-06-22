@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             cran s-u proj4 1.0-15
-revision            1
+revision            2
 categories-append   gis
 maintainers         nomaintainer
 license             GPL-2
@@ -15,10 +15,11 @@ checksums           rmd160  0e66672eed6867ac6d1a382106084ed91da7f687 \
                     sha256  eecc7d049d91e150d80682f8b75494010ad7c7d219c6845ab91a73213e88d314 \
                     size    43463
 
-set proj_v          proj9
-
 depends_build-append \
-                    port:pkgconfig
-depends_lib-append  path:lib/${proj_v}/lib/pkgconfig/proj.pc:${proj_v}
+                    path:bin/pkg-config:pkgconfig
 
-build.env-append    PKG_CONFIG_PATH=${prefix}/lib/${proj_v}/lib/pkgconfig
+set deproot         ${prefix}/libexec/R
+
+depends_lib-append  port:proj-R
+
+build.env-append    PKG_CONFIG_PATH=${deproot}/proj/lib/pkgconfig
