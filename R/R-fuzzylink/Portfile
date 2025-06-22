@@ -1,0 +1,30 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+PortGroup           R 1.0
+
+R.setup             cran joeornstein fuzzylink 0.2.1
+revision            0
+categories-append   textproc
+platforms           {darwin any}
+maintainers         nomaintainer
+license             MIT
+description         Probabilistic record linkage using pretrained text embeddings
+long_description    {*}${description}
+homepage            https://github.com/joeornstein/fuzzylink
+checksums           rmd160  0711a7e44872e0d2d025003306b6d9ee4498d377 \
+                    sha256  cff2ecdbe89bd8a45223eb22c3c123f93d7e66530b269fafe9cff4abfac679e4 \
+                    size    23755
+supported_archs     noarch
+
+depends_lib-append  port:R-dplyr \
+                    port:R-httr \
+                    port:R-httr2 \
+                    port:R-jsonlite \
+                    port:R-ranger \
+                    port:R-reshape2 \
+                    port:R-Rfast \
+                    port:R-stringdist \
+                    port:R-stringr
+
+test.run            yes
