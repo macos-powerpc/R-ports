@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran gmonette cv 2.0.3
-revision            1
+R.setup             cran gmonette cv 2.0.4
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             GPL-2+
 description         Cross-Validation of regression models
 long_description    {*}${description}
 homepage            https://gmonette.github.io/cv
-checksums           rmd160  f5df4df78bd2f5fae97f900aedc7b159c7288a16 \
-                    sha256  91e208d5d530bfe409e85ee7007f50616a909831412644db986739e7b4d01234 \
-                    size    2477647
+checksums           rmd160  b762021ac0dd789fdb4fe251e838e1ff025e978a \
+                    sha256  d9c78baefc1846a5056ec6df727eec8525948ed042ab847ac1cbc12fe2253b41 \
+                    size    2483804
 supported_archs     noarch
 
 depends_lib-append  port:R-car \
