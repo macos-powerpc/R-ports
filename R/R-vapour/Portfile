@@ -1,10 +1,11 @@
 # -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
+PortGroup           conflicts_build 1.0
 PortGroup           R 1.0
 
 R.setup             github hypertidy vapour 0.11.0 v
-revision            1
+revision            2
 categories-append   gis
 maintainers         nomaintainer
 license             GPL-3
@@ -16,24 +17,30 @@ checksums           rmd160  8ea487b0871b87c9b16e69332e6e635fba94dfed \
                     size    2571685
 github.tarball_from archive
 
-set proj_v          proj9
+# The build may opportunistically pick wrong libs, in violation of configure args.
+conflicts_build     gdal geos
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
 
-depends_lib-append  path:lib/${proj_v}/lib/pkgconfig/proj.pc:${proj_v} \
-                    port:gdal \
+set deproot         ${prefix}/libexec/R
+
+depends_lib-append  port:gdal-R \
+                    port:proj-R \
                     port:R-jsonlite \
                     port:R-nanoarrow \
                     port:R-Rcpp \
                     port:R-wk
 
 # configure fails to do its job: https://github.com/r-spatial/sf/issues/2292
-build.env-append    CPPFLAGS=-I${prefix}/lib/${proj_v}/include
+build.env-append    CPPFLAGS=-I${deproot}/proj/include \
+                    DYLD_LIBRARY_PATH=${prefix}/lib/libgcc:${deproot}/proj/lib \
+                    PKG_CONFIG_PATH=${deproot}/proj/lib/pkgconfig
 
-build.args-append   --configure-args="--with-proj-include=${prefix}/lib/${proj_v}/include \
-                        --with-proj-lib=${prefix}/lib/${proj_v}/lib \
-                        --with-proj-share=${prefix}/lib/${proj_v}/share/proj"
+build.args-append   --configure-args="--with-gdal-config=${deproot}/gdal/bin/gdal-config \
+                        --with-proj-include=${deproot}/proj/include \
+                        --with-proj-lib=${deproot}/proj/lib \
+                        --with-proj-share=${deproot}/proj/share/proj"
 
 depends_test-append port:R-knitr \
                     port:R-markdown \
