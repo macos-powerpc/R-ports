@@ -3,22 +3,22 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran RobinHankin lorentz 1.1-1
-revision            2
+R.setup             cran RobinHankin lorentz 1.1-2
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
 description         The Lorentz transform in relativistic physics
 long_description    {*}${description}
 homepage            https://robinhankin.github.io/lorentz
-checksums           rmd160  0c3b0b4d3b81a2d45b9c5375c7d8ad62fdf74811 \
-                    sha256  c3eac27c0ecb8ca5cf5ab01c08a636d1bbb500a9e05789bc2c7063596fc7b3c5 \
-                    size    453600
+checksums           rmd160  bdb5ef8633ddea4e52143f86663929578fc8e0e4 \
+                    sha256  a6cf7921e81cb966d6eeb7c3bee49c3e3c9599f1a9f4ce3c945cc2ab72cd1ab0 \
+                    size    452064
 supported_archs     noarch
-platforms           {darwin any}
 
-depends_lib-append  port:R-emulator \
-                    port:R-magic \
+depends_lib-append  port:R-magic \
                     port:R-magrittr \
+                    port:R-quadform \
                     port:R-tensor
 
 depends_test-append port:R-covr \
