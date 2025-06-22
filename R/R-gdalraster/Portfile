@@ -3,43 +3,35 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-# FIXME: update to 2.0.0 not possible until this is fixed:
-# https://github.com/USDAForestService/gdalraster/issues/713
-
-# Revert to GitHub once updated there.
-R.setup             cran USDAForestService gdalraster 1.12.0 v
-revision            3
+# See: https://github.com/USDAForestService/gdalraster/issues/713
+R.setup             github USDAForestService gdalraster 0362ea869c42b743b441c8d09d9a4b268d4b71e4
+version             2.0.0.9045
+revision            0
 categories-append   gis
 maintainers         nomaintainer
 license             MIT
 description         Bindings to the Geospatial Data Abstraction Library Raster API
 long_description    {*}${description}
 homepage            https://usdaforestservice.github.io/gdalraster
-checksums           rmd160  df093ee69fbc0b990f6f648cf9030159e0e294c5 \
-                    sha256  d3172e6e926698b225da2b9595243ca444165247a7d77b8cd49b2b7a3d1d33b6 \
-                    size    2139687
-# github.tarball_from archive
-
-set proj_v          proj9
+checksums           rmd160  f24a3504179ffb5260e9a9ee498b11bac858d827 \
+                    sha256  2d13addd3b2c68add8de6c811084ff56cc7231eb71a9da965da9e9e467c0a1c5 \
+                    size    16877622
+github.tarball_from archive
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
 
-depends_lib-append  port:gdal \
-                    port:libxml2 \
-                    path:lib/${proj_v}/lib/pkgconfig/proj.pc:${proj_v} \
+depends_lib-append  port:gdal-R \
                     port:R-bit64 \
+                    port:R-nanoarrow \
                     port:R-Rcpp \
                     port:R-RcppInt64 \
-                    port:R-xml2 \
-                    port:sqlite3
+                    port:R-wk \
+                    port:R-xml2
 
-# https://github.com/USDAForestService/gdalraster/issues/259
-build.env-append    CPPFLAGS=-I${prefix}/lib/${proj_v}/include
+set deproot         ${prefix}/libexec/R
 
-build.args-append   --configure-args="--with-proj-include=${prefix}/lib/${proj_v}/include \
-                        --with-proj-lib=${prefix}/lib/${proj_v}/lib \
-                        --with-proj-data=${prefix}/lib/${proj_v}/share/proj"
+build.args-append   --configure-args="--with-gdal-config=${deproot}/gdal/bin/gdal-config"
 
 depends_test-append port:R-gt \
                     port:R-knitr \
