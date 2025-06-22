@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran alexiosg rugarch 1.5-3
-revision            1
+R.setup             cran alexiosg rugarch 1.5-4
+revision            0
 categories-append   finance
 maintainers         nomaintainer
 license             GPL-3
 description         Univariate GARCH models
 long_description    {*}${description}
 homepage            https://github.com/alexiosg/rugarch
-checksums           rmd160  ac1953a255f3b73fb6ef03da0ae581bef7f032a7 \
-                    sha256  c0f9d35894f81c50962da67e79919c384b5226fe054b6e2fcc9975e7e1e11994 \
-                    size    2749131
+checksums           rmd160  5504c6dadf04a3eea6eacfffa3d1056e25e194ad \
+                    sha256  3baec37e208998136127dd7fa635b969082a50c9022a021f57c5bf9fa3a4e882 \
+                    size    2749112
 
 depends_lib-append  port:R-chron \
                     port:R-fracdiff \
