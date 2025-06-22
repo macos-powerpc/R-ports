@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran tdhock mlr3resampling 2024.9.6
-revision            1
+R.setup             cran tdhock mlr3resampling 2025.3.30
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             GPL-3
 description         Resampling algorithms for R-mlr3
 long_description    {*}${description} framework.
 homepage            https://github.com/tdhock/mlr3resampling
-checksums           rmd160  e91922391c95e301fcd2e975f6e98a87c18bc0a5 \
-                    sha256  47e69b3f35f836e61be9db649360ccf538afadad24d85e92c9440a1ba1078357 \
-                    size    549062
+checksums           rmd160  01a460a7137555af8b28b2cb6eb4c4e3af7a42df \
+                    sha256  5dd291e82bcb3498c2b8b92678df07cdb61b3d4fdf4a7cf60483ec4af0a1d806 \
+                    size    555302
 supported_archs     noarch
 
 depends_lib-append  port:R-checkmate \
