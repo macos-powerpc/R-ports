@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran eddelbuettel RcppRedis 0.2.5
-revision            1
+R.setup             cran eddelbuettel RcppRedis 0.2.6
+revision            0
 categories-append   devel
 maintainers         nomaintainer
 license             GPL-2+
 description         MsgPack C++ header files and interface functions for R
 long_description    {*}${description}
 homepage            https://dirk.eddelbuettel.com/code/rcpp.redis.html
-checksums           rmd160  0247d2563f320a6913f5381e3f2650b655bb7028 \
-                    sha256  f94846d806f9f00d8ad8aa894665201b45a596936c5f37bae1f4bbbf98117028 \
-                    size    1069820
+checksums           rmd160  f4c8772574c724a4c7c177d79194c8de9414f787 \
+                    sha256  28d91e55808ab9283aad7f77e745365e5a73d964c63c24ce32589a99a04d7dd8 \
+                    size    1075742
 
 # RcppMsgPack is optional, but desirable.
 # Configure script checks for its presence.
