@@ -1,0 +1,37 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+PortGroup           R 1.0
+
+# GitHub version is old.
+R.setup             cran jwb133 smcfcs 2.0.0
+revision            0
+categories-append   math
+platforms           {darwin any}
+maintainers         nomaintainer
+license             GPL-3
+description         Multiple imputation of covariates by Substantive Model \
+                    Compatible Fully Conditional Specification
+long_description    {*}${description}
+homepage            https://github.com/jwb133/smcfcs
+checksums           rmd160  07586850d1aa23b1a778ffb1f87c84d1bf3d8f71 \
+                    sha256  7141c127ee2898bf7d119a9302d9e8ee16ab5e7bd40aaf3acfff1e2144754088 \
+                    size    365603
+supported_archs     noarch
+
+depends_lib-append  port:R-abind \
+                    port:R-brglm2 \
+                    port:R-checkmate \
+                    port:R-rlang \
+                    port:R-VGAM
+
+depends_test-append port:R-flexsurv \
+                    port:R-ggplot2 \
+                    port:R-kmi \
+                    port:R-knitr \
+                    port:R-mice \
+                    port:R-mitools \
+                    port:R-rmarkdown \
+                    port:R-stringr
+
+test.run            yes
