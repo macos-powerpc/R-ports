@@ -4,16 +4,16 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is outdated.
-R.setup             cran PolMine RcppCWB 0.6.6
-revision            1
+R.setup             cran PolMine RcppCWB 0.6.7
+revision            0
 categories-append   textproc
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Rcpp bindings for the C code of the Corpus Workbench (CWB)
 long_description    {*}${description}
-checksums           rmd160  2a945ca9d13174d6fe47c64792995144a1207487 \
-                    sha256  4db7767df76680522b8fb6b2050a5535daa233b926178cfa55b2c23f3476d013 \
-                    size    1128512
+checksums           rmd160  39f743536ba8886b8c240bb3fdf95bc82c1e0e02 \
+                    sha256  ee97a8ac5597937715c8adac9ad3cd1b01ab48ef6ab8630c806c6f7672bb5658 \
+                    size    1128595
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
