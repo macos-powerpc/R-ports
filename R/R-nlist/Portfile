@@ -3,8 +3,9 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github poissonconsulting nlist 0.3.3.9000 v
-revision            2
+# Revert to GitHub once updated there.
+R.setup             cran poissonconsulting nlist 0.4.0 v
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,10 +13,10 @@ license             MIT
 description         Lists of numeric atomic objects
 long_description    {*}${description}
 homepage            https://poissonconsulting.github.io/nlist
-checksums           rmd160  364d3684a14594f511b6f5c3af0a0e3bcd4c55fb \
-                    sha256  6df6f65c2fbf01bdf4c5313f986cb105b493fb4fea86e2bd0c28d62ed6b4a5fe \
-                    size    43417
-github.tarball_from tarball
+checksums           rmd160  5e105a31ac1689b2abbd8d7770b3f28411c0aed1 \
+                    sha256  44a0ec355605a43108243f1e5468beb3d73bdaf10385ae02f3a3b40f6d5168f0 \
+                    size    63385
+# github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-abind \
@@ -30,7 +31,9 @@ depends_lib-append  port:R-abind \
                     port:R-universals
 
 depends_test-append port:R-covr \
-                    port:R-rlang \
+                    port:R-knitr \
+                    port:R-mcmcr \
+                    port:R-rmarkdown \
                     port:R-testthat
 
 test.run            yes
