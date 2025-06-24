@@ -4,15 +4,16 @@ PortSystem          1.0
 PortGroup           conflicts_build 1.0
 PortGroup           R 1.0
 
-R.setup             cran hcorrada Rcsdp 0.1.57.5
-revision            4
+R.setup             cran hcorrada Rcsdp 0.1.57.6
+revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             CPL-1
 description         R interface to the CSDP Semidefinite Programming Library
 long_description    {*}${description}
-checksums           rmd160  04e56b4204a2dac2d134043cc3c7db3d5a4bc726 \
-                    sha256  50048bcb4a8bb9f9b48c5e43a32126eda1d23d17876c7632e20b04953f3b1cd2 \
-                    size    498160
+homepage            https://github.com/hcorrada/rcsdp
+checksums           rmd160  42f25190388e3e07026b868138101932bc2fbc8e \
+                    sha256  c9759206299f63c0b4615b3968fb625275b1778098b807689cbd859910be5b30 \
+                    size    497142
 
 # https://github.com/juliuspfadt/Bayesrel/issues/28
 conflicts_build     mpeg4ip
