@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cboettig duckdbfs 0.0.8
-revision            1
+R.setup             cran cboettig duckdbfs 0.1.0
+revision            0
 categories-append   databases sysutils
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             MIT
 description         High-performance remote file system access using DuckDB
 long_description    {*}${description}
 homepage            https://cboettig.github.io/duckdbfs
-checksums           rmd160  77417876c3bc3d24ec8868a69da611c6ea7f4ce7 \
-                    sha256  ac43f709752c8fd11ad4823b5e94baa01c6a2bec05c7976666a5c3d05902ba55 \
-                    size    511631
+checksums           rmd160  fa1feb284091a9c6c1d1c026c9ec779b43692e8b \
+                    sha256  a9d024aa022d948163528b378cbca0dbc33ae6d0b9b5362590d35782ad5c58f1 \
+                    size    516052
 supported_archs     noarch
 
 depends_lib-append  port:R-DBI \
