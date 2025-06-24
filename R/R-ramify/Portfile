@@ -3,20 +3,22 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran bgreenwell ramify 0.3.3
-revision            2
+R.setup             cran bgreenwell ramify 0.4.0
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
-description         Additional matrix functionality for R
-long_description    {*}${description}
-checksums           rmd160  1302491456b1e7b5faafc7813c3190d9a47d81be \
-                    sha256  2236b830fa121684a32cd0961d29218e001823a9eb89a83acb1b3ca8619fb533 \
-                    size    179193
+description         Additional matrix functionality
+long_description    {*}${description} for R.
+homepage            http://bgreenwell.github.io/ramify
+checksums           rmd160  60742413babbdd6e549b996b8cebbc9d6aa0b56e \
+                    sha256  0464abe032aa218c3fcca381ea2728094b1b83fccf88c048393369547e1aac73 \
+                    size    221927
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_test-append port:R-knitr \
+                    port:R-rmarkdown \
                     port:R-testthat
 
 test.run            yes
