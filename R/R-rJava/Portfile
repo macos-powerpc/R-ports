@@ -1,0 +1,33 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+PortGroup           active_variants 1.1
+PortGroup           R 1.0
+
+R.setup             cran s-u rJava 1.0-11
+revision            0
+categories-append   java
+maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+license             LGPL-2.1
+description         Low-level R-to-Java interface
+long_description    ${name} is a low-level interface to Java VM.
+homepage            https://github.com/s-u/rJava
+checksums           rmd160  02249232534895d91cc795c33c7ce6af98490ed8 \
+                    sha256  9ea0ccf5553d86f7de8649a8324766c4f0810f35b7be561640dd87fd37986417 \
+                    size    634103
+
+require_active_variants R java
+
+if {${configure.build_arch} in [list ppc ppc64]} {
+    # It is easier to do this way rather than tweak the PG.
+    depends_lib-append  port:openjdk8
+    configure.env-append \
+                    JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk8/Contents/Home
+    build.env-append \
+                    JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk8/Contents/Home
+} else {
+    PortGroup   java 1.0
+
+}
+
+test.run            yes
