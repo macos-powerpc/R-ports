@@ -3,20 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran TheoMichelot hmmTMB 1.0.2
-revision            2
+R.setup             cran TheoMichelot hmmTMB 1.1.0
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Fit Hidden Markov Models using Template Model Builder
 long_description    {*}${description}
-checksums           rmd160  b284dca0dccef0e65c4c2fc9bae03a313c80ce9e \
-                    sha256  160237f9fd87a33e98479debf123b91662d4f4c1822354de961c9cbd0b9e32ef \
-                    size    221042
+homepage            https://github.com/TheoMichelot/hmmTMB
+checksums           rmd160  c3293e56f21efd59dc07ca534fb582fb21ab0665 \
+                    sha256  9204ffd8906fc1397b0248472e7e992e9721638230528b15d0210fe75865f67f \
+                    size    236353
 
-depends_lib-append  port:R-CircStats \
-                    port:R-ggplot2 \
-                    port:R-optimx \
+depends_lib-append  port:R-ggplot2 \
                     port:R-R6 \
                     port:R-RcppEigen \
                     port:R-TMB \
@@ -26,6 +25,7 @@ depends_lib-append  port:R-CircStats \
 depends_test-append port:R-knitr \
                     port:R-moveHMM \
                     port:R-MSwM \
+                    port:R-rmarkdown \
                     port:R-rstan \
                     port:R-scico \
                     port:R-testthat \
