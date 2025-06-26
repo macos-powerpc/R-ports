@@ -1,0 +1,36 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+PortGroup           R 1.0
+
+# GitHub version lags behind.
+R.setup             cran epiforecasts scoringutils 2.1.1 v
+revision            0
+platforms           {darwin any}
+maintainers         nomaintainer
+license             MIT
+description         Utilities for scoring and assessing predictions
+long_description    {*}${description}
+homepage            https://epiforecasts.io/scoringutils
+checksums           rmd160  150e95638401cb073608b2b56ba95a151571a28c \
+                    sha256  ecbdabe1f299a76101b37a20c4c8a3735474b44c2c8f216023c3f7b597c4f49e \
+                    size    3787880
+supported_archs     noarch
+
+depends_lib-append  port:R-checkmate \
+                    port:R-cli \
+                    port:R-data.table \
+                    port:R-ggplot2 \
+                    port:R-Metrics \
+                    port:R-purrr \
+                    port:R-scoringRules
+
+depends_test-append port:R-ggdist \
+                    port:R-kableExtra \
+                    port:R-knitr \
+                    port:R-magrittr \
+                    port:R-rmarkdown \
+                    port:R-testthat \
+                    port:R-vdiffr
+
+test.run            yes
