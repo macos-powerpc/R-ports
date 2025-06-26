@@ -4,8 +4,8 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran tidymodels bonsai 0.3.2 v
-revision            1
+R.setup             cran tidymodels bonsai 0.4.0 v
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -13,9 +13,9 @@ license             MIT
 description         Model wrappers for tree-based models
 long_description    {*}${description}
 homepage            https://bonsai.tidymodels.org
-checksums           rmd160  e6fae83f6411afb2b98020635f6d2d97d92a674c \
-                    sha256  672d68e3c8ff5455de2f66d4dbba0e6eaa7e842adccd7b8f24f9f693b9cb3f9c \
-                    size    131122
+checksums           rmd160  9d2cf834af2a4595392c7d9379fca213fdb8c90b \
+                    sha256  2b925142eb554ea047f0e51b43060ecc78e31f28bbef15c57b2568e50e1d9106 \
+                    size    135408
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
