@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran vincentarelbundock marginaleffects 0.27.0
+R.setup             cran vincentarelbundock marginaleffects 0.28.0
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -13,9 +13,9 @@ description         Predictions, comparisons, slopes, marginal means \
                     and hypothesis tests
 long_description    {*}${description}
 homepage            https://vincentarelbundock.github.io/marginaleffects
-checksums           rmd160  4da906c4a4068eba6c59189b23190bb47a0e7368 \
-                    sha256  3f764b6b6558c25aef68e3cc6f7ca46bc477df64aae856541d946add245545ba \
-                    size    1532163
+checksums           rmd160  4c59d5c9c24a603e38d920ad15815244bb7bdf28 \
+                    sha256  ccdcfba1db6e3325fcc63592ac0afdf0720b1b09992cafda9f7409c6971611f4 \
+                    size    1534907
 
 depends_lib-append  port:R-backports \
                     port:R-checkmate \
