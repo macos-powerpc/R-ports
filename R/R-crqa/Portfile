@@ -3,22 +3,21 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran moreno.cocoi crqa 2.0.6
-revision            1
+R.setup             cran moreno.cocoi crqa 2.0.7
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-2+
 description         Recurrence quantification analysis \
                     for categorical and continuous time series
 long_description    {*}${description}
-checksums           rmd160  e59b0e661d89afefa47f664df7c945937ecf7703 \
-                    sha256  972fc24a9a204c9d9592b9a648d9b786ddfc843fb934b48ed6f87b4263effa84 \
-                    size    216589
+checksums           rmd160  1a00d7b1f7037e04923fe18b673baab701b98e26 \
+                    sha256  a82ede3f306b2f9c8e6b8cbabfe309ff6dd70803997eb2a26924d51df50085c5 \
+                    size    216841
 
 depends_lib-append  port:R-dplyr \
                     port:R-ggplot2 \
                     port:R-gplots \
-                    port:R-plot3D \
                     port:R-pracma \
                     port:R-rdist \
                     port:R-tseriesChaos
