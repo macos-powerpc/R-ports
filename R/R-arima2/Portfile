@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is archaic.
-R.setup             cran jeswheel arima2 3.3.0
-revision            1
+R.setup             cran jeswheel arima2 3.4.0
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-3+
 description         Likelihood-based inference for ARIMA modelling
 long_description    {*}${description}
 homepage            https://github.com/jeswheel/arima2
-checksums           rmd160  fcf1985beb34a6ba244adf0cc012727ad71a92ee \
-                    sha256  9a53c4f669f49398d3db312f459094d64353328ffa445d3463a041f4467db184 \
-                    size    122018
+checksums           rmd160  3ac1daba9395151ae3c762fc4eb4c04832cbc1f2 \
+                    sha256  158723573762ce206da5b20946332da69bb73e31ce3f7ca091ab6edaa30eac64 \
+                    size    123871
 
 depends_lib-append  port:R-ggplot2
 
