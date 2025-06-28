@@ -4,36 +4,39 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is archaic.
-R.setup             cran davidbolin rSPDE 2.3.3
-revision            2
+R.setup             cran davidbolin rSPDE 2.5.1
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3+
 description         Rational approximations of fractional stochastic partial differential equations
 long_description    {*}${description}
 homepage            https://davidbolin.github.io/rSPDE
-checksums           rmd160  82b4aab1c436c97b6ea0377f97c0cf4f286f19bf \
-                    sha256  d89b872feb58bac5795780512de36b3a44eaefbefaa9e582e635413b51cb03d0 \
-                    size    2870386
+checksums           rmd160  ad72fe3a03daf082ed46fdadc9f163b40d22a03d \
+                    sha256  0e7ff92f8b67624f77cdb6f1d16b750707174a757c5676e3c0750ae210758112 \
+                    size    4836528
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-broom \
                     port:R-fmesher \
                     port:R-lifecycle
 
-patchfiles          patch-no-INLA.diff
-
+# Dependency on INLA is dropped until it gets a port.
 depends_test-append port:R-doParallel \
                     port:R-dplyr \
                     port:R-foreach \
+                    port:R-GeneralizedHyperbolic \
                     port:R-ggplot2 \
+                    port:R-gridExtra \
                     port:R-knitr \
+                    port:R-MetricGraph \
                     port:R-numDeriv \
                     port:R-optimParallel \
                     port:R-rmarkdown \
                     port:R-RSpectra \
                     port:R-scoringRules \
+                    port:R-sf \
                     port:R-sn \
                     port:R-splancs \
                     port:R-testthat \
