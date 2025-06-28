@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran rstudio shiny 1.10.0
-revision            1
+R.setup             cran rstudio shiny 1.11.0
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
 description         Web application framework for R
 long_description    {*}${description}
 homepage            https://shiny.posit.co
-checksums           rmd160  b041a2c827830c6c8aefee5a293faecefdb8d375 \
-                    sha256  6e700a176684b183e5a6ad4f637aaaae97bd58bfc8b3c7ac72c628412a344452 \
-                    size    3308738
+checksums           rmd160  840786b72f4e8230df95bf873aa265aa5d61b4f6 \
+                    sha256  9c3dabad4cd700528a8681be385b6b925f78389df68bd5604a55c31163b0424d \
+                    size    2668623
 supported_archs     noarch
 
 depends_lib-append  port:R-bslib \
@@ -52,6 +52,7 @@ depends_test-append port:R-Cairo \
                     port:R-sass \
                     port:R-showtext \
                     port:R-testthat \
+                    port:R-watcher \
                     port:R-yaml
 
 test.run            yes
