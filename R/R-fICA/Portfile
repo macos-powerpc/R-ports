@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran fICA 1.1-2
-revision            3
+R.setup             cran klausnordhausenr fICA 1.1-3
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             {GPL-2 GPL-3}
 description         Classical, reloaded and adaptive FastICA algorithms
 long_description    {*}${description}
-checksums           rmd160  00af779a920254bde4f358bd188712985ad4655f \
-                    sha256  8f66c32634b5e05167fd1fed0b77d7f0af100061d3c6021ddcb65dbb3c1e1c37 \
-                    size    14429
+checksums           rmd160  32f190234590954626850960ead486533a455e3d \
+                    sha256  463cf9cef9d404cace0b02d94501ac2a63f31aaed64b49a59bad9b63a722f645 \
+                    size    19093
 
 depends_lib-append  port:R-JADE \
                     port:R-Rcpp \
