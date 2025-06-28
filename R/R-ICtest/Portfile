@@ -3,16 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran ICtest 0.3-5
-revision            3
+R.setup             cran klausnordhausenR ICtest 0.3-6
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             {GPL-2 GPL-3}
-description         Estimating and testing the number of interesting components in linear dimension reduction
+description         Estimating and testing the number of interesting components \
+                    in linear dimension reduction
 long_description    {*}${description}
-checksums           rmd160  e6c6e4fffb00bf101a151574ba50597b0a06e9a4 \
-                    sha256  d7deaf65fb0dbbeab321a58da5443675a4d5cf244924fb37221d37e2a5fe278e \
-                    size    1009681
+checksums           rmd160  13404c4a7b24503bf8a1f69cc3a917be951c0b87 \
+                    sha256  b30475147e7debbbe3e740a22dbc1307f2cd3a708a57d5becd29fae79677edff \
+                    size    940176
 
 depends_lib-append  port:R-GGally \
                     port:R-ggplot2 \
