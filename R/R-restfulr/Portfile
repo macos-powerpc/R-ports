@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran restfulr 0.0.15
-revision            3
+R.setup             cran michafla restfulr 0.0.16
+revision            0
 categories-append   www
 maintainers         nomaintainer
 license             Artistic-2
 description         R interface to RESTful web services
 long_description    {*}${description}
-checksums           rmd160  dafe1b3a05e2263454482e66132548223bbd503b \
-                    sha256  40ff8f1fb2987af2223e1a855bb1680c5ce2143fbce7ebc42f1edb291f80e692 \
-                    size    15033
+checksums           rmd160  274228a0cec1ecc8d02a8cf30c9a5839db0771cf \
+                    sha256  574fd11a3f23f494ff8e94ce84d767f49d3399600d617ad26fb71b8332e93725 \
+                    size    14980
 
 depends_lib-append  port:R-RCurl \
                     port:R-rjson \
