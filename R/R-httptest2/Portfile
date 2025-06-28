@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github nealrichardson httptest2 1.1.0
-revision            1
+R.setup             github nealrichardson httptest2 1.2.0
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Test helpers for R-httr2
 long_description    {*}${description}
 homepage            https://enpiar.com/httptest2
-checksums           rmd160  d4576f5dd6c74fba693ac8da18acb67e8af05264 \
-                    sha256  648225c87d7daca1de3cf543abf2688ad69c331241817a0befed2a33a4b7b52e \
-                    size    64686
+checksums           rmd160  3a2295af1bbac07699a53a414ae0e46565970112 \
+                    sha256  eb6e335520c15fd0faccf31ba105fe4be6601b62bef23ba055a348ecd32ae3f0 \
+                    size    65076
 github.tarball_from archive
 supported_archs     noarch
 
