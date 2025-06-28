@@ -3,21 +3,20 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             bioconductor Bioconductor XVector 0.44.0
-revision            1
+R.setup             bioconductor Bioconductor XVector 0.48.0
+revision            0
 categories-append   bioconductor devel
 maintainers         nomaintainer
 license             Artistic-2
 description         Foundation of external vector representation and manipulation
 long_description    {*}${description} in Bioconductor.
-checksums           rmd160  25b07a5078bd5a6e68471b58a28a6aa6fab09605 \
-                    sha256  42a35e3056f4289369082b3f04f6fdd66ea8cccf2dddb7388117f074ea49bb3b \
-                    size    67826
+checksums           rmd160  b7330cfaae790c58c8f1e64a2bb3c86d73dacc7c \
+                    sha256  23a7971041f20734ca3b848cd7225dfbebb86f9952d3c6657db84a50a6409b57 \
+                    size    67893
 
 depends_lib-append  port:R-BiocGenerics \
                     port:R-IRanges \
-                    port:R-S4Vectors \
-                    port:R-zlibbioc
+                    port:R-S4Vectors
 
 patchfiles          patch-no-drosophila2probe.diff
 
