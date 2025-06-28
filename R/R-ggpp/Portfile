@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran aphalo ggpp 0.5.8-1
-revision            1
+R.setup             cran aphalo ggpp 0.5.9
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Grammar extensions to ggplot2
 long_description    {*}${description}
 homepage            https://docs.r4photobiology.info/ggpp
-checksums           rmd160  aef91ac8e333d5f71e4027a9317dc1af44cea55f \
-                    sha256  05e607a8522da8134fe3fc5e980f90164c5d784a5131125c1c72ee9c8ee963ca \
-                    size    2438202
+checksums           rmd160  b2fdab8d0269bb0d26c1ee57848f9b69c36c30a4 \
+                    sha256  0d3c700db82e764ca12304fa20ad874931c43fc5df59fb285a53d95996efa9c6 \
+                    size    2522826
 supported_archs     noarch
 
 depends_lib-append  port:R-dplyr \
