@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github rstudio rsconnect 1.4.2 v
+R.setup             github rstudio rsconnect 1.5.0 v
 revision            0
 categories-append   devel
 platforms           {darwin any}
@@ -13,25 +13,24 @@ description         Deployment interface for R-rmarkdown documents \
                     and R-shiny applications
 long_description    {*}${description}
 homepage            https://github.com/rstudio/rsconnect
-checksums           rmd160  3a70e503863b0558752086a005775f5b856a22cf \
-                    sha256  27f5863edf5bfa0125054dee264f92bc01457fb71b316e0ba42e074de372d6b9 \
-                    size    535872
+checksums           rmd160  20fdc0ab9555f0563444d2287c255d9580960eaa \
+                    sha256  07022e577cd01a9b28f64b4d52f0a4701ede9187c34874a5ab0b5edfc478b9c8 \
+                    size    529954
 github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
                     port:R-curl \
                     port:R-digest \
-                    port:R-jose \
                     port:R-jsonlite \
                     port:R-lifecycle \
                     port:R-openssl \
                     port:R-packrat \
                     port:R-PKI \
-                    port:R-RcppTOML \
                     port:R-renv \
                     port:R-rlang \
                     port:R-rstudioapi \
+                    port:R-snowflakeauth \
                     port:R-yaml
 
 depends_test-append port:R-Biobase \
