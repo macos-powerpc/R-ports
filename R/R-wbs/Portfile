@@ -3,14 +3,14 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran wbs 1.4
-revision            3
+R.setup             cran rbaranowski wbs 1.4.1
+revision            0
 maintainers         nomaintainer
 license             GPL-2
 description         Wild binary segmentation for multiple change-point detection
 long_description    {*}${description}
-checksums           rmd160  a5538a58d20a6c45f03cdf0911a38d79afb285ae \
-                    sha256  b2755a51d27e4a721aa0fa012344ead3d64720b73fbeaea0367eab98c1707945 \
-                    size    14147
+checksums           rmd160  ce5bd66a1a7ce9630f942908d28ee4b87c1cad3e \
+                    sha256  d4a64f694bedbd8826a1c0bd3ec492d50763e4d7a9378b480d31efdc438133f7 \
+                    size    14929
 
 test.run            yes
