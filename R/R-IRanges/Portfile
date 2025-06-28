@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             bioconductor Bioconductor IRanges 2.38.1
-revision            1
+R.setup             bioconductor Bioconductor IRanges 2.42.0
+revision            0
 categories-append   bioconductor math
 maintainers         nomaintainer
 license             Artistic-2
 description         Foundation of integer range manipulation
 long_description    {*}${description}
-checksums           rmd160  3ca07a21f555ace1841443340393d9ff5f368af5 \
-                    sha256  9b4c833c5ab674e9020ff466a51de9ee019912eb36802b50d9abbd9d0190091f \
-                    size    481399
+checksums           rmd160  e01fdc2b85ae76a18e162ba5f03a15b3bf26f23b \
+                    sha256  0abb01ee93111c5fc678f9aa2f93d00d8d1548263cb60daa52645a6061b603fc \
+                    size    483034
 
 depends_lib-append  port:R-BiocGenerics \
                     port:R-S4Vectors
