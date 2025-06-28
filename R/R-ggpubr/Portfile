@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github kassambara ggpubr 0.6.0 v
-revision            3
+R.setup             github kassambara ggpubr 0.6.1 v
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,10 +12,10 @@ license             {GPL-2 GPL-3}
 description         ggplot2-based publication-ready plots
 long_description    {*}${description}
 homepage            https://rpkgs.datanovia.com/ggpubr
-checksums           rmd160  ddcdb70d62578a661722b524bef32ad36cea71ed \
-                    sha256  c32b4d8bef26d8895239e2ce688b3cc332ab05e248ae35b5746aaca101a759fc \
-                    size    20553865
-github.tarball_from tarball
+checksums           rmd160  8204293c7952a583d64713619c3216aa424f8abb \
+                    sha256  0f40f542660e38c8b37a778eb6fa67021537d8074750b9a386109bc82e122e63 \
+                    size    20460985
+github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-cowplot \
