@@ -3,30 +3,33 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github spsanderson tidyAML 0.0.5 v
-revision            2
+R.setup             github spsanderson tidyAML 0.0.6 v
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Automatic machine learning with tidymodels
 long_description    {*}${description}
 homepage            https://www.spsanderson.com/tidyAML
-checksums           rmd160  1f53675e671af0beef9fe286601d19572b4b4be4 \
-                    sha256  df62579bc5d5563e2ec61e6164dd27ef13d136ef3cef945b12ba069d78fe2a2c \
-                    size    11252619
-github.tarball_from tarball
+checksums           rmd160  eafb98672f883e37c1727ee8c143448b58da4bbc \
+                    sha256  8e7540a7e372045bf31f73bae646b658c8fa84b51d0e94390c63c332dbd22afe \
+                    size    11833778
+github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-broom \
                     port:R-dplyr \
                     port:R-forcats \
+                    port:R-ggplot2 \
+                    port:R-magrittr \
                     port:R-parsnip \
                     port:R-purrr \
                     port:R-rlang \
                     port:R-rsample \
                     port:R-workflows \
                     port:R-workflowsets \
-                    port:R-tidyr
+                    port:R-tidyr \
+                    port:R-tune
 
 patchfiles          patch-no-brulee.diff
 
