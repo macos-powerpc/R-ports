@@ -4,16 +4,16 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran r-dbi RMySQL 0.11.0
-revision            1
+R.setup             cran r-dbi RMySQL 0.11.1
+revision            0
 categories-append   databases
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         Legacy R-DBI interface to MySQL/MariaDB
 long_description    {*}${description}
-checksums           rmd160  e9c61c468895b10f74f94c3a21645af326eb0d8e \
-                    sha256  47c64bd58668a3cc47c5beb0111381f13b8e58515729ef500bbce65bf652bbfc \
-                    size    53393
+checksums           rmd160  da8925d3778094ae6658cff42e13b516723b58f4 \
+                    sha256  868e7ae6f236ef05619bbd278af08caf9f5f681e28c0b34c642f1f985c683611 \
+                    size    53418
 
 set mariadb_ver     10.11
 
