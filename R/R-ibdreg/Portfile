@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran ibdreg 0.3.8
+R.setup             cran Sinnwell.Jason ibdreg 0.3.8
 revision            3
 categories-append   math
 maintainers         nomaintainer
@@ -17,6 +17,10 @@ checksums           rmd160  2ce122669b50585cccf736afbb4d186547b3544d \
 
 # Remove with a next update:
 dist_subdir         ${dist_subdir}/${version}_${revision}
+
+# lsConstrain.c:118:10: error: implicit declaration of function 'Free';
+# did you mean 'free'? [-Wimplicit-function-declaration]
+patchfiles-append   patch-Free-Calloc.diff
 
 depends_test-append port:R-R.rsp
 
