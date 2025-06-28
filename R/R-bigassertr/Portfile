@@ -3,18 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran privefl bigassertr 0.1.6
-revision            3
+R.setup             cran privefl bigassertr 0.1.7
+revision            0
 categories-append   devel
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
 description         Assertion and message functions
 long_description    {*}${description}
-checksums           rmd160  658b7c8298fae1768708ee764d92fa8102b2f08e \
-                    sha256  7780f02c0eee3941d430982f2a345a488c9834633561a54cdd2c306aa30c612e \
-                    size    6677
+homepage            https://github.com/privefl/bigassertr
+checksums           rmd160  3a3c6e0d5b74ea39cfb711816fa2bc9d7a65354e \
+                    sha256  cf543d6fe5962ba828aed9525f668535c089f7cd982d910f33b1b53352b6c85f \
+                    size    6759
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_test-append port:R-covr \
                     port:R-testthat
