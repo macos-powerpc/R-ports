@@ -3,33 +3,37 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             bioconductor seandavi BiocPkgTools 1.22.0
-revision            1
+R.setup             bioconductor seandavi BiocPkgTools 1.26.2
+revision            0
 categories-append   bioconductor
+platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Collection of simple tools for learning about Bioconductor packages
 long_description    {*}${description}
 homepage            https://github.com/seandavi/BiocPkgTools
-checksums           rmd160  28f1aeaeb7754c2e4ef6156158a230b431014831 \
-                    sha256  dd782d47fa834ebaefeada6ca2da6b3730fbd4b65084c19007b9982f7dc87fd9 \
-                    size    1508067
+checksums           rmd160  f336314ab2560b2c6b95721924ee8824489bc92b \
+                    sha256  dfcb6577218f50c4a36c4135cd4beac1d63f14d24c146d02cda13fbe0bd763fe \
+                    size    1530380
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-BiocFileCache \
                     port:R-BiocManager \
                     port:R-biocViews \
+                    port:R-curl \
                     port:R-dplyr \
                     port:R-DT \
                     port:R-gh \
+                    port:R-glue \
                     port:R-graph \
                     port:R-htmltools \
                     port:R-htmlwidgets \
                     port:R-httr \
                     port:R-igraph \
                     port:R-jsonlite \
+                    port:R-lubridate \
                     port:R-magrittr \
+                    port:R-purrr \
                     port:R-RBGL \
                     port:R-readr \
                     port:R-rlang \
@@ -37,4 +41,6 @@ depends_lib-append  port:R-BiocFileCache \
                     port:R-rorcid \
                     port:R-stringr \
                     port:R-tibble \
-                    port:R-xml2
+                    port:R-tidyr \
+                    port:R-xml2 \
+                    port:R-yaml
