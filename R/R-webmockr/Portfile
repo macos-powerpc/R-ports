@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github ropensci webmockr 2.0.0 v
-revision            1
+R.setup             github ropensci webmockr 2.1.0 v
+revision            0
 categories-append   net
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         R library for stubbing and setting expectations on HTTP requests
 long_description    {*}${description}
-checksums           rmd160  350ca279275e00bea5b04df70222b37c80b3a0fb \
-                    sha256  22dee95a2070e2a630e326d3f5f9c9e26e59b8f85376707564f9aa5daf9f210d \
-                    size    112024
+checksums           rmd160  7ff6bbc0a0bc9f57f5827cf9fcd859bce5ae6dec \
+                    sha256  c09b3d6579310182e37f557d63e8c422b242279c6eb86cc432fbf406ba9d3dfd \
+                    size    107956
 github.tarball_from archive
 supported_archs     noarch
 
