@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran tsungwu JFE 2.5.10
+R.setup             cran tsungwu JFE 2.5.11
 revision            0
 categories-append   economics finance
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             GPL-2+
 description         Tools for Analyzing Time Series Data \
                     of Just Finance and Econometrics
 long_description    {*}${description}
-checksums           rmd160  b0092843a311e0f67b1f0cde66b7a3964d97eb4c \
-                    sha256  562024ba8fe394a2e8bd022c77510d44a3992e22aed7b90a6155530439ad2f54 \
-                    size    611348
+checksums           rmd160  5e8c47d0b4038f363f70865b86b510e525c08c8d \
+                    sha256  37539867d582a5da65a963ca045e5ac8513075c718cbafb57ab8cf7a934af9cb \
+                    size    611376
 supported_archs     noarch
 
 depends_lib-append  port:R-xts
