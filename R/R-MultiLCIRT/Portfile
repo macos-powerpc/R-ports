@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran bart MultiLCIRT 2.11
-revision            2
+R.setup             cran bart MultiLCIRT 2.12
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Multidimensional Latent Class Item Response Theory models
 long_description    {*}${description}
-checksums           rmd160  001f679c6133b974482629c5f9d007b147f25170 \
-                    sha256  a462ad5164d882a2f54329d21fb71d31113ef7c0ff6e0a0a3c677c572e069ae2 \
-                    size    39357
+checksums           rmd160  b1ea1ac1cd3cf80e8c63cb44eb383b9927115231 \
+                    sha256  2aed4760093f0030fd1cb8e05bcc373f995ba94f62b2fc4a3fbde4875a39d7c8 \
+                    size    39944
 
 depends_lib-append  port:R-limSolve
 
