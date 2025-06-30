@@ -4,15 +4,24 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran vincentarelbundock countrycode 1.6.0
-revision            2
+R.setup             cran vincentarelbundock countrycode 1.6.1
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
 description         Convert country names and country codes
 long_description    {*}${description}
 homepage            https://vincentarelbundock.github.io/countrycode
-checksums           rmd160  1a605c02a7512f3fc9c11c17e9fd1053f4d56a26 \
-                    sha256  f9db110e32c0bcc90eed85303277660de37a777681bb78e8898b6fc5f2253db6 \
-                    size    526509
+checksums           rmd160  710a79d3537fd92dcf7a9e0c278461ad367c45c3 \
+                    sha256  45a38306941ea7c8a3bd6ebdaec7af62aed86d64da0e5292c3866c5cd43e3214 \
+                    size    527726
 supported_archs     noarch
-platforms           {darwin any}
+
+# Test dep on R-eurostat is omitted.
+depends_test-append port:R-altdoc \
+                    port:R-ISOcodes \
+                    port:R-testthat \
+                    port:R-tibble \
+                    port:R-utf8
+
+test.run            yes
