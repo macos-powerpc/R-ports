@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             bioconductor Bioconductor BiocCheck 1.40.0
-revision            1
+R.setup             bioconductor Bioconductor BiocCheck 1.44.2
+revision            0
 categories-append   bioconductor
+platforms           {darwin any}
 maintainers         nomaintainer
 license             Artistic-2
 description         Bioconductor-specific package checks
 long_description    {*}${description}
-checksums           rmd160  f193aae4052999471553abd374b583c3e3f12e8a \
-                    sha256  e885ee791975e4b69a94dbb1a6761370c4231de7dd8e90e43a395a551a327967 \
-                    size    4378887
+checksums           rmd160  09a5db0afbe78b514536f4d8cb470ff7d5062839 \
+                    sha256  96e231e661e3b1c03f3a86f7bbacbec90d7e04231352f2cd45f94939fe6a1645 \
+                    size    316743
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-BiocBaseUtils \
                     port:R-BiocFileCache \
