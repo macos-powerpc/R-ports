@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             bioconductor Bioconductor BiocIO 1.14.0
-revision            1
+R.setup             bioconductor Bioconductor BiocIO 1.18.0
+revision            0
 categories-append   bioconductor
+platforms           {darwin any}
 maintainers         nomaintainer
 license             Artistic-2
 description         Standard Input and Output for Bioconductor packages
 long_description    {*}${description}
-checksums           rmd160  80bef328f46c70e544afb3e2ffc12619dc05f406 \
-                    sha256  9010bd8bdf810f571825bc055464219365168c6daadb2d6b8c74ed616fa3fa5e \
-                    size    230564
+checksums           rmd160  2e8b5e05d3b56a81470fa294f23b7300e9605715 \
+                    sha256  3a377d8ebc135f928ba73e487a14866e436b42fcab7e68dd8b198310f8ef5b6a \
+                    size    231867
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-BiocGenerics \
                     port:R-S4Vectors
