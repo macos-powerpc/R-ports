@@ -3,17 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran alexios Rsolnp 2.0.0
+R.setup             cran alexios Rsolnp 2.0.1
 revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-2
 description         General non-linear optimization
 long_description    {*}${description}
-checksums           rmd160  fc3d27b17425731bb6ab5b2bb5874d6298b7b08d \
-                    sha256  afbbf007ab651e478063e2ac95b49e476f2a4c439fd1cab407223b78b64b9ba3 \
-                    size    97859
-supported_archs     noarch
+checksums           rmd160  9bce73d12a2c377fe656bf6390b0d019872c326c \
+                    sha256  3b221100abdd1dd5b8d2df9325cc4e28b2ad2a6bd5069594c83f04f331c36792 \
+                    size    107710
 
 depends_lib-append  port:R-future.apply \
                     port:R-numDeriv \
