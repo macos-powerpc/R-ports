@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran config-i1 smooth 4.2.0
-revision            1
+R.setup             cran config-i1 smooth 4.3.0
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             LGPL-2.1
 description         Forecasting using state space models
 long_description    {*}${description}
 homepage            https://github.com/config-i1/smooth
-checksums           rmd160  dc62becb4b85f0ad172f721dc56783dcde8cd0fc \
-                    sha256  fbd9099e1719edcdc9629f8f39a3803545914057d0ed38497c48faec0610c7f1 \
-                    size    3325665
+checksums           rmd160  a473a4a14e8dc71043c04d3982813218018eb2e2 \
+                    sha256  b2c1f95e4adbaabbce1f39fe490063c7aee535df71c7ab18ffef0b0ea04f1a19 \
+                    size    3358430
 
 depends_lib-append  port:R-generics \
                     port:R-greybox \
