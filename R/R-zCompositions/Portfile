@@ -1,0 +1,22 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+PortGroup           R 1.0
+
+R.setup             cran Japal zCompositions 1.5.0-5
+revision            0
+platforms           {darwin any}
+maintainers         nomaintainer
+license             GPL-2+
+description         Treatment of zeros, left-censored and missing values \
+                    in compositional data-sets
+long_description    {*}${description}
+homepage            https://github.com/Japal/zCompositions
+checksums           rmd160  f8d7bad24201d26635169a7ddbf8af58c1cb00a1 \
+                    sha256  a5e71c878ae1c8141851a456fee5aaebc83a19654bb4aef9cf7b92ef6799981f \
+                    size    54810
+supported_archs     noarch
+
+depends_lib-append  port:R-truncnorm
+
+test.run            yes
