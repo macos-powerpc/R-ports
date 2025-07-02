@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran config-i1 greybox 2.0.4
-revision            1
+R.setup             cran config-i1 greybox 2.0.5
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             LGPL-2.1
 description         Toolbox for model building and forecasting
 long_description    {*}${description}
 homepage            https://github.com/config-i1/greybox
-checksums           rmd160  ecfec24286d60f4d719edda1fafa544b3315e3f5 \
-                    sha256  dec77b54404a8d8dd307378d91d58a5ed001942efa517e8228d970217be5bc34 \
-                    size    2394618
+checksums           rmd160  d75364a248868b076235938c0f0221d80ec71dd3 \
+                    sha256  57d8ae14fb293ea04411792b53d4ac2bc69015429a2d630d1f21b3924a433ccf \
+                    size    2405889
 
 depends_lib-append  port:R-generics \
                     port:R-nloptr \
