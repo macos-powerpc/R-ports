@@ -5,7 +5,7 @@ PortGroup           active_variants 1.1
 PortGroup           R 1.0
 
 R.setup             cran s-u rJava 1.0-11
-revision            0
+revision            1
 categories-append   java
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             LGPL-2.1
@@ -19,14 +19,17 @@ checksums           rmd160  02249232534895d91cc795c33c7ce6af98490ed8 \
 require_active_variants R java
 
 if {${configure.build_arch} in [list ppc ppc64]} {
-    # It is easier to do this way rather than tweak the PG.
+    set javahome        /Library/Java/JavaVirtualMachines/openjdk8/Contents/Home
     depends_lib-append  port:openjdk8
-    configure.env-append \
-                    JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk8/Contents/Home
-    build.env-append \
-                    JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk8/Contents/Home
+    build.env-append    JAVA_HOME=${javahome}
+    build.args-append   --configure-args="--disable-dynload --enable-headless"
+    post-destroot {
+        system "install_name_tool -change @rpath/libjvm.dylib \
+            ${prefix}${javahome}/jre/lib/server/libjvm.dylib \
+            ${destroot}${packages}/rJava/libs/rJava.so"
+    }
 } else {
-    PortGroup   java 1.0
+    PortGroup           java 1.0
 
 }
 
