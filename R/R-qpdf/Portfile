@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran ropensci qpdf 1.4.0
+R.setup             cran ropensci qpdf 1.4.1
 revision            0
 categories-append   print
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             Apache-2
 description         Split, combine and compress PDF files
 long_description    {*}${description}
 homepage            https://docs.ropensci.org/qpdf
-checksums           rmd160  75834c53677208a8a8b0b39560d99ac39c69029b \
-                    sha256  2b476f75e6ff56eaa125cef250a9e6885204492e1ab30e352c136dfa02a0aeef \
-                    size    556933
+checksums           rmd160  aa5d1f271dd8db4da501774b421c5681114bc3a1 \
+                    sha256  3ab2c6f099b7f17e383ccb0c4fdd8c27a657ba629967d2edb3c768fc3dc315c6 \
+                    size    556946
 
 depends_lib-append  path:include/turbojpeg.h:libjpeg-turbo \
                     port:R-askpass \
