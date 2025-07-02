@@ -3,18 +3,20 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran spls 2.2-3
-revision            2
+R.setup             cran valentint spls 2.3-2
+revision            0
 categories-append   math
-maintainers         nomaintainer
-license             GPL-2+
-description         Sparse partial least squares (SPLS) regression and classification
-long_description    {*}${description}
-checksums           rmd160  b00e3dd5ada25eeee0cec0dd8d0fc170b52e3882 \
-                    sha256  bbd693da80487eef2939c37aba199f6d811ec289828c763d9416a05fa202ab2e \
-                    size    2438921
-supported_archs     noarch
 platforms           {darwin any}
+maintainers         nomaintainer
+license             GPL-3+
+description         Sparse partial least squares (SPLS) regression \
+                    and classification
+long_description    {*}${description}
+homepage            https://github.com/valentint/spls
+checksums           rmd160  e5bbd9117ae45613492ec921b619e037547ab8a9 \
+                    sha256  16c045555fa0cc27b3cc29a2c72310dc24b6ab5b26953ea7706fa1d675051184 \
+                    size    2440416
+supported_archs     noarch
 
 depends_lib-append  port:R-pls
 
