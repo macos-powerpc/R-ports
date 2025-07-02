@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-project cobs 1.3-9
-revision            1
+R.setup             cran r-project cobs 1.3-9-1
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-2+
 description         Qualitatively constrained (regression) smoothing splines \
                     via linear programming and sparse matrices
 long_description    {*}${description}
-checksums           rmd160  351e8bb5650c38d5dedf72f76a383a8fdf68e1d6 \
-                    sha256  2fdb34452b8fc39a49e6303f7f1e7ef7fcafceb849e6be05b5bf2a8c1ab7f9b3 \
-                    size    135057
+checksums           rmd160  5c717c9ed2f3f7c8ac965fc93d1823fe3f608f5b \
+                    sha256  f3615093eda3f5ef8e6537357b30ec790eb0a4c64e43175b8244ec8f431533ea \
+                    size    134318
 
 depends_lib-append  port:R-quantreg \
                     port:R-SparseM
