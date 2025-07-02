@@ -3,23 +3,26 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran YuLab-SMU ggbreak 0.1.2
-revision            2
+R.setup             cran YuLab-SMU ggbreak 0.1.5
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
 license             Artistic-2
-description         Implementation of scale functions for setting axis breaks of a ggplot
+description         Implementation of scale functions for setting axis breaks \
+                    of a ggplot
 long_description    {*}${description}
-checksums           rmd160  112f449c4b9189d056298b8d3c080292e10bff25 \
-                    sha256  843b715b67e804e0f6e324e00b8ffd81f0d5126e0945eea974a07563b6093d93 \
-                    size    168334
+homepage            https://github.com/YuLab-SMU/ggbreak
+checksums           rmd160  88cfddfafb403eb9192ddca48637dee50858c6e1 \
+                    sha256  3478c7fa23a597731a9a8551d7b3748002c902c8355cfb5cb221571d45716ff4 \
+                    size    168387
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-aplot \
                     port:R-ggfun \
                     port:R-ggplot2 \
                     port:R-ggplotify \
-                    port:R-rlang
+                    port:R-rlang \
+                    port:R-yulab.utils
 
 depends_test-append port:R-cowplot \
                     port:R-ggimage \
