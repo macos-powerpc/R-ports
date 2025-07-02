@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran sparklyr sparklyr 1.9.0
+R.setup             cran sparklyr sparklyr 1.9.1
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             Apache-2
 description         R Interface to Apache Spark
 long_description    {*}${description}
 homepage            https://spark.posit.co
-checksums           rmd160  2daa56c63b029d8dd23cc0c4b0a46eb14c256b76 \
-                    sha256  d4e687bd1cc38a13449d2770e1818857f71d56a2f6dec26fbda588e26cd0b1ae \
-                    size    3125946
+checksums           rmd160  9aff15864982d1fb37d147ced31595e48b7465f5 \
+                    sha256  bcaacfb0a5a9d3a3953578a203bb62a2411abafa0cef1896e4d51e736fb452f1 \
+                    size    3319594
 supported_archs     noarch
 
 depends_lib-append  port:R-config \
