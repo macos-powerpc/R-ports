@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github lbbe-software fitdistrplus 1.2-2 v
-revision            1
+R.setup             github lbbe-software fitdistrplus 1.2-3 v
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -13,9 +13,9 @@ description         Help to fit of a parametric distribution to non-censored \
                     or censored data
 long_description    {*}${description}
 homepage            https://lbbe-software.github.io/fitdistrplus
-checksums           rmd160  71e798e23100b608501b4df10d203046bae5e907 \
-                    sha256  cbfa343d54a70e200462599d48279ece0f9dd1bc1508d091f4d1e8b7574dda5f \
-                    size    6859325
+checksums           rmd160  89ed8a407aee91098771cf9406bab7a2d6287474 \
+                    sha256  476310e767786451d44c52fcd839dac5c3919a2b432692b9b788a376ad74ec30 \
+                    size    6867610
 github.tarball_from archive
 supported_archs     noarch
 
