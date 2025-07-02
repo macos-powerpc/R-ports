@@ -3,15 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran dkahle invgamma 1.1
-revision            3
+R.setup             cran dkahle invgamma 1.2
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         Inverse Gamma distribution
 long_description    {*}${description}
-checksums           rmd160  92497438bc0a767952105d42c94f9b4fe4171602 \
-                    sha256  aaa8de7c2a852fa6df30d8262086f6a3eb2b1fefbbc66dfe2f6c25c68917ea89 \
-                    size    123952
+homepage            https://www.kahle.io/invgamma
+checksums           rmd160  fda80f82d615c91fc15761aeb8c1150c217ae4d6 \
+                    sha256  f74229bad5f14cadb4e0b1acc85072a08dc8b6de1b93f1384fcb6c448ad56601 \
+                    size    2603382
 supported_archs     noarch
-platforms           {darwin any}
+
+test.run            yes
