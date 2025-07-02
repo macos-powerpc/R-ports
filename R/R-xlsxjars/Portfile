@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           active_variants 1.1
 PortGroup           R 1.0
 
-R.setup             cran adrian.dragulescu xlsxjars 0.6.1
+R.setup             cran cole.arendt xlsxjars 0.9.0
 revision            0
 categories-append   java
 platforms           {darwin any}
@@ -12,9 +12,9 @@ maintainers         nomaintainer
 license             GPL-3
 description         Package required POI jars for the R-xlsx package
 long_description    {*}${description}
-checksums           rmd160  1a3da05caf3d2de1114dcc44307fa0ee00fd4e1d \
-                    sha256  37c1517f95f8bca6e3514429394d2457b9e62383305eba288416fb53ab2e6ae6 \
-                    size    9477071
+checksums           rmd160  42d47a9ef748bb4632440faf771daa3c1cfb28d3 \
+                    sha256  4840093e9faf78b60540153ca9284a55e325bd0c7842aa66b6572af423eeebc0 \
+                    size    10264548
 supported_archs     noarch
 
 require_active_variants R java
