@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github cynkra dm 1.0.10.9900 v
-revision            1
+R.setup             github cynkra dm 1.0.12 v
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Relational Data Models
 long_description    {*}${description}
 homepage            https://dm.cynkra.com
-checksums           rmd160  40f987af832e63d110f1afc435ea44a5970b196b \
-                    sha256  0cbe31926ce52e35e431841ced12b5619790b0938695df5b5deb560906ffd92c \
-                    size    3755950
+checksums           rmd160  cc3d4f994f4e9d4ff4b049b3440f8ed52944e43a \
+                    sha256  606641b3221e30a39cc2a6ba3f4f01c4611a7798b87617ed9a348049000420af \
+                    size    3754702
 github.tarball_from archive
 supported_archs     noarch
 
@@ -26,7 +26,6 @@ depends_lib-append  port:R-backports \
                     port:R-lifecycle \
                     port:R-magrittr \
                     port:R-memoise \
-                    port:R-pillar \
                     port:R-purrr \
                     port:R-rlang \
                     port:R-tibble \
@@ -69,6 +68,7 @@ depends_test-append port:R-brio \
                     port:R-shinyAce \
                     port:R-shinydashboard \
                     port:R-testthat \
+                    port:R-tidyverse \
                     port:R-waldo \
                     port:R-withr
 
