@@ -3,20 +3,21 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran GuangchuangYu shadowtext 0.1.4
-revision            1
+R.setup             cran GuangchuangYu shadowtext 0.1.5
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             Artistic-2
 description         Shadow text grob and layer
 long_description    {*}${description}
 homepage            https://github.com/GuangchuangYu/shadowtext
-checksums           rmd160  3600a78127bf186a47f9e01aed47f2411c623329 \
-                    sha256  87d0bea90e0090dd40f7cd8c380d185a9d4112a32a729d31859eaeca0cd46ee8 \
-                    size    176442
+checksums           rmd160  5a94c701a2633b254e85cafa118e378e904e3e2c \
+                    sha256  b80a9b4ac064a0045de0720a33aaadd964b1ad48110dee647d79628cea8d723d \
+                    size    173227
 supported_archs     noarch
 
 depends_lib-append  port:R-ggplot2 \
+                    port:R-S7 \
                     port:R-scales
 
 depends_test-append port:R-knitr \
