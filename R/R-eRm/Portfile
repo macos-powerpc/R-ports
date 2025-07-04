@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran mair eRm 1.0-9
-revision            1
+R.setup             cran mair eRm 1.0-10
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-3
 description         Extended Rasch Modelling
 long_description    {*}${description}
-checksums           rmd160  7b30250aaa1dedea26c5c1f909e03dc117bcc47c \
-                    sha256  b16f161648fc3c45d6bd6663e23565b19fad5d579f83a27ec1706ee6c5db6560 \
-                    size    759753
+checksums           rmd160  7913bfd748d269196934a41bd8a05509ba4f34df \
+                    sha256  e745ed5c2ff0918ef2af85dcf9272495433af94cd4838fffbbfc9d79f3ded652 \
+                    size    759613
 
 depends_lib-append  port:R-colorspace \
                     port:R-psych
