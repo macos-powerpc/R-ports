@@ -1,0 +1,50 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+PortGroup           R 1.0
+
+R.setup             cran eddelbuettel RcppPlanc 2.0.12
+revision            0
+categories-append   math
+maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+license             GPL-2+
+description         Parallel low-rank approximation with nonnegativity constraints
+long_description    {*}${description}
+homepage            https://github.com/welch-lab/RcppPlanc
+checksums           rmd160  ee233404f242e4f1c0a3877a2b665aa1b9bfef48 \
+                    sha256  638c2ae47708f121d642e4a239e1fb5554d35e20924b8939c8521cec17931e91 \
+                    size    1529454
+
+# Adjust once this is merged: https://github.com/welch-lab/libplanc/pull/4
+patchfiles-append   patch-config.h.diff \
+                    patch-tensor.hpp.diff \
+                    patch-unbreak-configure.diff
+
+# If everything works as expected, git is unneeded, but anyway.
+depends_build-append \
+                    path:bin/cmake:cmake \
+                    path:bin/git:git \
+                    path:bin/pkg-config:pkgconfig
+depends_lib-append  port:hdf5 \
+                    port:hwloc \
+                    path:lib/libopenblas.dylib:OpenBLAS \
+                    port:R-hdf5r.Extra \
+                    port:libaec \
+                    port:R-Rcpp \
+                    port:R-RcppArmadillo \
+                    port:R-RcppProgress \
+                    port:zlib
+
+compilers.setup     require_fortran
+
+depends_test-append port:R-knitr \
+                    port:R-rmarkdown \
+                    port:R-testthat \
+                    port:R-withr
+
+# On PowerPC:
+# [ FAIL 0 | WARN 0 | SKIP 0 | PASS 104 ]
+# proc.time()
+# user  system elapsed 
+# 153.688 115.408  74.923 
+test.run            yes
