@@ -1,0 +1,27 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+PortGroup           R 1.0
+
+R.setup             cran jonathan.bartlett1 mlmi 1.1.2
+revision            0
+categories-append   math
+platforms           {darwin any}
+maintainers         nomaintainer
+license             GPL-3
+description         Maximum Likelihood Multiple Imputation
+long_description    {*}${description}
+checksums           rmd160  f58ef1898e6cf688ae0d06d2240944e68955c0d7 \
+                    sha256  5f973bdfac8b3f3e618c9e650c696726e3bc2fc3a8db6e7cdade8493013c6fda \
+                    size    39644
+supported_archs     noarch
+
+depends_lib-append  port:R-cat \
+                    port:R-gsl \
+                    port:R-mix \
+                    port:R-norm
+
+depends_test-append port:R-bootImpute \
+                    port:R-testthat
+
+test.run            yes
