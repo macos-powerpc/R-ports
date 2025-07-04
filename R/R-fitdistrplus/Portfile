@@ -3,7 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github lbbe-software fitdistrplus 1.2-3 v
+# Revert to GitHub once updated there.
+R.setup             cran lbbe-software fitdistrplus 1.2-4 v
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -13,10 +14,10 @@ description         Help to fit of a parametric distribution to non-censored \
                     or censored data
 long_description    {*}${description}
 homepage            https://lbbe-software.github.io/fitdistrplus
-checksums           rmd160  89ed8a407aee91098771cf9406bab7a2d6287474 \
-                    sha256  476310e767786451d44c52fcd839dac5c3919a2b432692b9b788a376ad74ec30 \
-                    size    6867610
-github.tarball_from archive
+checksums           rmd160  bb44a2dda060496a796c5bc4c4776d5ae67db7e8 \
+                    sha256  b2341b06747a3b9739e749d9570cc531366ba4b78c727d39c55b618d9ee3128f \
+                    size    2483646
+# github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-rlang
