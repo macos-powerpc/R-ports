@@ -4,8 +4,8 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran USEPA spmodel 0.10.0 v
-revision            1
+R.setup             cran USEPA spmodel 0.11.0 v
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -13,9 +13,9 @@ license             GPL-3
 description         Spatial statistical modelling and prediction
 long_description    {*}${description}
 homepage            https://usepa.github.io/spmodel
-checksums           rmd160  4fa351c51d12746f2a312b30c3c365f1c4edb090 \
-                    sha256  12a4fd63281bae9790e32446c5c23be9c13b39f5828db9b805c1d247530548e4 \
-                    size    3049012
+checksums           rmd160  f4970bb75318c93692c2314756e23ae8953a3e42 \
+                    sha256  4083c65b47cb7054d8e9dc9876d82b8565a763be0528eeda788e20872264e625 \
+                    size    3097680
 supported_archs     noarch
 
 depends_lib-append  port:R-generics \
