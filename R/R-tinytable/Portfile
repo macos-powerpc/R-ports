@@ -4,8 +4,8 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is outdated.
-R.setup             cran vincentarelbundock tinytable 0.8.0
-revision            1
+R.setup             cran vincentarelbundock tinytable 0.10.0
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3+
@@ -13,9 +13,9 @@ description         Simple and configurable tables
 long_description    Create highly customized tables \
                     with this simple and dependency-free package.
 homepage            https://vincentarelbundock.github.io/tinytable
-checksums           rmd160  7e0f3bbc49f5c17cc8b4f177783d17d6210dde48 \
-                    sha256  e10fb6ae5412b4b1eae71c2ad3d4e51e5d0d443a6133eb3fbfb068fd91a5cb52 \
-                    size    623690
+checksums           rmd160  1736958ba90c73207ca72cb232f1af3b531a9576 \
+                    sha256  ad74a5597194ae1c317268d988d3ec267aed8288e5dfa14fe4fda5dc6663e1b6 \
+                    size    636414
 supported_archs     noarch
 
 # Dependency on R-webshot2 is dropped.
@@ -30,7 +30,6 @@ depends_test-append port:R-base64enc \
                     port:R-litedown \
                     port:R-magrittr \
                     port:R-marginaleffects \
-                    port:R-markdown \
                     port:R-modelsummary \
                     port:R-pandoc \
                     port:R-quarto \
