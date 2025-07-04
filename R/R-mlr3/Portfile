@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran mlr-org mlr3 1.0.0 v
+R.setup             cran mlr-org mlr3 1.0.1 v
 revision            0
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             LGPL-3
 description         Machine Learning in R
 long_description    {*}${description} – next generation.
 homepage            https://mlr3.mlr-org.com
-checksums           rmd160  dc80010e1eab79a134b863b74ecff5acb5d025af \
-                    sha256  104b05905abffb46f9a20dd7c8f10a51f63fa471cb315dd01d7b4232d655e49b \
-                    size    976438
+checksums           rmd160  941a3c12b8027a11d1a9fcba28212f2a6bb595c6 \
+                    sha256  52fbbed421606ecf82c3ed84d0152f6f4a51ed7c2ee88eaf9476871d55cc3595 \
+                    size    977058
 # github.tarball_from archive
 supported_archs     noarch
 
