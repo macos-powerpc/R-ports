@@ -3,29 +3,29 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github insightsengineering cards 0.4.0 v
-revision            1
+R.setup             github insightsengineering cards 0.6.1 v
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             Apache-2
 description         Analysis Results Data
 long_description    {*}${description}
 homepage            https://insightsengineering.github.io/cards
-checksums           rmd160  b0b1f3c3804e343be98ec820fdb3d1eb2ee9e626 \
-                    sha256  cf7788e5c80216cbe8f7cfa76150e2cbdcef7a21e529cf93662e296c7d13482c \
-                    size    3704802
+checksums           rmd160  ddef2994b53b139606e38daa17d8677c95c49057 \
+                    sha256  bc63b1fbf53cf334305fe6f20d2e8994c1252a94ab9c162a42fe611d2c6bf8f4 \
+                    size    561203
 github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
                     port:R-dplyr \
                     port:R-glue \
+                    port:R-lifecycle \
                     port:R-rlang \
                     port:R-tidyr \
                     port:R-tidyselect
 
-depends_test-append port:R-spelling \
-                    port:R-testthat \
+depends_test-append port:R-testthat \
                     port:R-withr
 
 test.run            yes
