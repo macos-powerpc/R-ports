@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github sinhrks ggfortify 0.4.17 v
-revision            2
+R.setup             github sinhrks ggfortify 0.4.18 v
+revision            0
 categories-append   graphics
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Data visualization tools for statistical analysis results
 long_description    {*}${description}
-checksums           rmd160  8e4a07c06b32a856a3ef8672c1509b82f8f8e9e0 \
-                    sha256  838a9e38a0211287ef3c915fcf3f2a8eba0b7c81f97534af07a149dc49ba6f2e \
-                    size    91010
+checksums           rmd160  b672153962f6f7fdacace9393081eacca7b70757 \
+                    sha256  5bd54ded0c3f2b04a737908db83e7e7937c279747ee6cafdaa1d30cb57ff0a07 \
+                    size    91117
 github.tarball_from tarball
 supported_archs     noarch
 
