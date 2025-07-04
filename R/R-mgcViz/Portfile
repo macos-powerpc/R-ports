@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran mfasiolo mgcViz 0.1.11
-revision            1
+R.setup             cran mfasiolo mgcViz 0.2.1
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
 description         Visualisations for generalized additive models
 long_description    {*}${description}
 homepage            https://github.com/mfasiolo/mgcViz
-checksums           rmd160  3c2afab5e2a053a9251df676ec7290b18a4f37c6 \
-                    sha256  c383314e9624b7f26dcb4993ce7afc22ab9e66c5817b1a4e5636659641a0c992 \
-                    size    2629616
+checksums           rmd160  c4755792c15cd27af409b984360f9744ca390970 \
+                    sha256  82ec71ecd2453a35a757889d9b1ad95844517622fd138b2f7bde345f20b32973 \
+                    size    2861910
 supported_archs     noarch
 
 depends_lib-append  port:R-gamm4 \
@@ -21,7 +21,6 @@ depends_lib-append  port:R-gamm4 \
                     port:R-ggplot2 \
                     port:R-gridExtra \
                     port:R-matrixStats \
-                    port:R-miniUI \
                     port:R-plyr \
                     port:R-qgam \
                     port:R-shiny \
@@ -29,6 +28,7 @@ depends_lib-append  port:R-gamm4 \
 
 # Test dep on R-webshot2 is dropped.
 depends_test-append port:R-knitr \
+                    port:R-miniUI \
                     port:R-rgl \
                     port:R-rmarkdown \
                     port:R-testthat
