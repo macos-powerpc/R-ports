@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github larmarange ggstats 0.8.0 v
-revision            1
+R.setup             github larmarange ggstats 0.10.0 v
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
 description         Extension to ggplot2 for plotting stats
 long_description    {*}${description}
 homepage            https://larmarange.github.io/ggstats
-checksums           rmd160  a5be3514158f0117a9ce19799e267f491c5accce \
-                    sha256  8efb8ce1de0b46f98f7efe7f100a328c5d8dfece0e885e9a2c80e85d3241d0f5 \
-                    size    300510
+checksums           rmd160  d831f88877a6487048572bc9acbf7cf4f39f95a7 \
+                    sha256  b25c874ade8b66f9ecb43c889577506f03fd576ec556aab872fff9f23deb6075 \
+                    size    295842
 github.tarball_from archive
 supported_archs     noarch
 
