@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran apache nanoarrow 0.6.0-1
+R.setup             cran apache nanoarrow 0.7.0
 revision            0
 categories-append   devel
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,14 +11,16 @@ license             Apache-2
 description         Interface to the nanoarrow C library
 long_description    {*}${description}
 homepage            https://github.com/apache/arrow-nanoarrow
-checksums           rmd160  8920017a34d7c81a396669167128e13c254cf536 \
-                    sha256  95db323f86550b9690c80d28fe749c36fe593323e4892c9104f7e8dd65c7aa05 \
-                    size    426700
+checksums           rmd160  bd544bf892894411ae4660cac98e85db1781ea3f \
+                    sha256  ea0d6eed67e2bcafed93ace4ba3cae774435135b65ac928c554fa9bf15db8eed \
+                    size    439199
 
 depends_test-append port:R-arrow \
                     port:R-bit64 \
                     port:R-blob \
+                    port:R-dplyr \
                     port:R-hms \
+                    port:R-jsonlite \
                     port:R-rlang \
                     port:R-testthat \
                     port:R-tibble \
