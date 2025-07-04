@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran insightsengineering cardx 0.2.1
-revision            1
+R.setup             cran insightsengineering cardx 0.2.5
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             Apache-2
 description         Extra analysis results data (ARD) utilities
 long_description    {*}${description}
 homepage            https://github.com/insightsengineering/cardx
-checksums           rmd160  948296e1914994ad2424d0321770027dfc9b8966 \
-                    sha256  789b3a4637e7a04ea508ff8ff759e6a58ebea722d89b64afc5a7910542d5205c \
-                    size    167555
+checksums           rmd160  9e079e908499208ab80ab410faab0eed54a006a5 \
+                    sha256  565d4bc8b65d521164e06bc0662266c4e63bef57576f5b52adae2774bfff3c9d \
+                    size    191681
 supported_archs     noarch
 
 depends_lib-append  port:R-cards \
@@ -36,7 +36,6 @@ depends_test-append port:R-aod \
                     port:R-lme4 \
                     port:R-parameters \
                     port:R-smd \
-                    port:R-spelling \
                     port:R-survey \
                     port:R-testthat \
                     port:R-withr
