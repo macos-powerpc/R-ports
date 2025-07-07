@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran loelschlaeger normalize 0.1.0
-revision            2
+R.setup             cran loelschlaeger normalize 0.1.2
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3+
 description         Centering and scaling of numeric data
 long_description    {*}${description}
 homepage            https://github.com/loelschlaeger/normalize
-checksums           rmd160  c02c6ad23040b8dea6b493a3eef1d791ddcf2b77 \
-                    sha256  c783adbe331359b5d61bbecc087d5ced05766a8abbc1834b8240e64a0aae1b30 \
-                    size    14909
+checksums           rmd160  d81afe8e6b234a822e9ba6b0959f95b712578c7a \
+                    sha256  e7d0dd26f5d93e5249b89b1989a2954bd7827f57f0954c52f6e630d724fa92ef \
+                    size    14703
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_test-append port:R-testthat
 
