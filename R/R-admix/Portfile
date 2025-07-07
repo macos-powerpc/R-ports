@@ -1,0 +1,41 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+PortGroup           R 1.0
+
+R.setup             cran pachadotdev admix 2.4.2
+revision            0
+categories-append   math
+maintainers         nomaintainer
+license             GPL-3+
+description         Admixture (aka Contamination) models
+long_description    Package Admix for {*}${description}.
+homepage            https://github.com/XavierMilhaud/admix-Rpackage
+checksums           rmd160  8211a5ce6f0c30710da108faf8221048c9e2a5db \
+                    sha256  3868c201174171d8a63b146fc18f63f6718a54a81663fd67b0a7ab00884db8b2 \
+                    size    2247477
+
+depends_lib-append  port:R-cubature \
+                    port:R-EnvStats \
+                    port:R-fdrtool \
+                    port:R-Iso \
+                    port:R-orthopolynom \
+                    port:R-pracma \
+                    port:R-Rcpp \
+                    port:R-Rdpack
+
+depends_test-append port:R-doParallel \
+                    port:R-doRNG \
+                    port:R-evd \
+                    port:R-flexsurv \
+                    port:R-foreach \
+                    port:R-gridExtra \
+                    port:R-knitr \
+                    port:R-logitnorm \
+                    port:R-plyr \
+                    port:R-reshape2 \
+                    port:R-rmarkdown \
+                    port:R-rmutil \
+                    port:R-testthat
+
+test.run            yes
