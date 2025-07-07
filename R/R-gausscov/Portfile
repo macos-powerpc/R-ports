@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran pldavies44 gausscov 1.1.6
+R.setup             cran pldavies44 gausscov 1.1.7
 revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-3
 description         Gaussian covariate method for variable selection
 long_description    {*}${description}
-checksums           rmd160  fac1b04df07d7014d070eb2c9372c77fa22bfa9b \
-                    sha256  35c4e4828cef335040f41405c3a1e858e401612432d6ff4672843c73aa33eec6 \
-                    size    2687635
+checksums           rmd160  074da692e1a36831c45c56b8406f7183ba16a6a6 \
+                    sha256  6d12eff103e4720452bb1b87cb72497b83f565e640294fe1437cac4f32baf18c \
+                    size    2687451
 
 compilers.setup     require_fortran
 
