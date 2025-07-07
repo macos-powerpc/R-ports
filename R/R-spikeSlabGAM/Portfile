@@ -4,16 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran fabian-s spikeSlabGAM 1.1-19
-revision            2
+R.setup             cran fabian-s spikeSlabGAM 1.1-20
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             MIT
 description         Bayesian variable selection and model choice for generalized additive mixed models
 long_description    {*}${description}
-checksums           rmd160  59d50aaba4bd7f41356d2a775c367a5b272b1b7b \
-                    sha256  c2b9cad76307ad5bf184261953e00b724d31580b7185263f4705bcba89364162 \
-                    size    689653
+homepage            https://github.com/fabian-s/spikeSlabGAM
+checksums           rmd160  9a5be7de2be0a7c250df8f8a10978e38b83c1b2f \
+                    sha256  6e03efafdb73be94949dfe3995a033286c70d7a0b1d1b637ff15ecd8ce561682 \
+                    size    724308
 
 depends_lib-append  port:R-coda \
                     port:R-ggplot2 \
