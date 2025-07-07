@@ -16,3 +16,5 @@ checksums           rmd160  3f022ff0b4f431a5a07a6b8d33f24ffd5fb20dc5 \
                     size    1376705
 
 depends_lib-append  port:R-sp
+
+patchfiles          patch-fix-for-R-4.5.diff
