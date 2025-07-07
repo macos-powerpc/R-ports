@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran matthias.studer WeightedCluster 1.8-0
-revision            1
+R.setup             cran matthias.studer WeightedCluster 1.8-1
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-2+
 description         Clustering of weighted data
 long_description    {*}${description}
 homepage            http://mephisto.unige.ch/weightedcluster
-checksums           rmd160  19e5ad9821e0bbeba3c0b73e3f3c9ca21d4b4ae7 \
-                    sha256  a046c857f8bc5d8bf25d83feb18004f23b34121080692e328354779172f9eae9 \
-                    size    2023902
+checksums           rmd160  3b0bc8f7e143fd7be28e7e89dd15e509973227cc \
+                    sha256  daf9987cee5ac9e706a39e72f54a64e49e9fe91b0bc3cfb5e5a94d5076b2df5b \
+                    size    2850077
 
 depends_lib-append  port:R-doFuture \
                     port:R-fastcluster \
@@ -24,9 +24,13 @@ depends_lib-append  port:R-doFuture \
                     port:R-TraMineR \
                     port:R-vegclust
 
-depends_test-append port:R-isotone \
+depends_test-append port:R-betareg \
+                    port:R-Cairo \
+                    port:R-DirichletReg \
+                    port:R-isotone \
                     port:R-knitr \
                     port:R-progress \
+                    port:R-rmarkdown \
                     port:R-RUnit \
                     port:R-vegan
 
