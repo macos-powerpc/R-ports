@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran snodg031 cpfa 1.2-0
+R.setup             cran mattgress cpfa 1.2-1
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Classification with Parallel Factor Analysis
 long_description    {*}${description}
-checksums           rmd160  063e91209553b722f43fd8e1ca633199bccf7b21 \
-                    sha256  bd3f5cbf0cc06b9aa2019b8a21a66df17761c61b940f7243e328661126ccb5a7 \
-                    size    300390
+checksums           rmd160  ad99e8187df319100704bcdeab561502526441ba \
+                    sha256  69d666489dd15999dac1d0067898f4f4789935dc8a4becaca970677e09453a1e \
+                    size    301355
 supported_archs     noarch
 
 depends_lib-append  port:R-doParallel \
