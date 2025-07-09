@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran gsucarrat garchx 1.5
-revision            1
+R.setup             cran gsucarrat garchx 1.6
+revision            0
 categories-append   finance
 maintainers         nomaintainer
 license             GPL-2+
 description         Flexible and robust GARCH-X modelling
 long_description    {*}${description}
 homepage            https://github.com/gsucarrat/garchx
-checksums           rmd160  71ffa89167558b68a850d0240455774b4252933c \
-                    sha256  ab98f3b0a8ee302dece8d3b23eae99558e39f8c84080eb4d76dbb4a5732bcb7e \
-                    size    20582
+checksums           rmd160  93e5df0176cd310d7fb8ba935b0fe87f4db1f5e1 \
+                    sha256  d7f80d0b2595b5aff7b59e88a32b3e626c216b9f16ddf27453ffb3bd5929f1d5 \
+                    size    22240
 
 depends_lib-append  port:R-zoo
 
