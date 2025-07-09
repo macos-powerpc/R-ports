@@ -3,20 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-# Revert to GitHub once updated there.
-R.setup             cran gertvv gemtc 1.0-2
-revision            2
+# GitHub version is old.
+R.setup             cran gertvv gemtc 1.1-0
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Network meta-analysis using Bayesian methods
 long_description    {*}${description}
-checksums           rmd160  e7d710f22eb0ae7632d36998d368a1742214a0b2 \
-                    sha256  14a4efc62c7784712d7c26a1efca112fde942104dfa4876753458f7688d14a07 \
-                    size    890219
-
-# Needed only for GitHub version:
-# worksrcdir          ${worksrcpath}/gemtc
+homepage            https://github.com/gertvv/gemtc
+checksums           rmd160  1b38021240efc6e8ffa6ce1853136c0b8a9b25dd \
+                    sha256  31a6b6a18c16530328faf77b467f674bc8812e6956b9aa6c304db53d619a273b \
+                    size    891284
 
 depends_lib-append  port:R-coda \
                     port:R-forcats \
