@@ -4,17 +4,18 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to github once updated there:
-R.setup             cran easystats correlation 0.8.6
-revision            1
+R.setup             cran easystats correlation 0.8.8
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
 description         Methods for correlation analysis
 long_description    {*}${description}
-checksums           rmd160  cf3f52932c8444841ed6380a576ab7511cf3ad6b \
-                    sha256  ba5ebb31d6e5c4f426806acb9bc4badb77bcca7ce82dbe5ef7338c99723f5a6b \
-                    size    935059
+homepage            https://easystats.github.io/correlation
+checksums           rmd160  3518f281b3647b98b47771266b81fcd9acf4f882 \
+                    sha256  00cbc42d2310b5941a362feb7e81fb8f67d1e9548a5877117f798d67b867aad4 \
+                    size    348782
 supported_archs     noarch
 
 depends_lib-append  port:R-bayestestR \
