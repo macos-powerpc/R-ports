@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github paul-buerkner brms 0d295b0ca67fe65e6d8b6603ef028acd37c3c407
-version             2.22.12
+R.setup             github paul-buerkner brms 2746070ad9d29c2a9d132e8f19b4c5233c855f14
+version             2.22.13
 revision            0
 categories-append   math economics
 platforms           {darwin any}
@@ -13,9 +13,9 @@ license             GPL-2
 description         Bayesian applied regression modelling via RStan
 long_description    {*}${description}
 homepage            https://paul-buerkner.github.io/brms
-checksums           rmd160  370c088c035040c18bc4ddc93a35f45e5bd0a637 \
-                    sha256  6c0dfc7914fe4e44821a9bc4dd5c1028332187d2a27b61dbc48d987c0025f1c1 \
-                    size    5534132
+checksums           rmd160  786efa5eaadd33bee6013be44e119287e1a990b5 \
+                    sha256  ab23d96e4a618f3dd33e5a940c23095f80686b972279f4ea096cb680eb715bf0 \
+                    size    5536156
 github.tarball_from archive
 supported_archs     noarch
 
