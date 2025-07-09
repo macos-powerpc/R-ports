@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran vigou3 actuar 3.3-5
-revision            1
+R.setup             cran vigou3 actuar 3.3-6
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Actuarial functions and heavy-tailed distributions
 long_description    {*}${description}
 homepage            https://gitlab.com/vigou3/actuar
-checksums           rmd160  76bdb44d82b45a1eebb8798a39b872fd4aeb6bbf \
-                    sha256  155baf5ae3f85348dc253db5fb3fe8d232e9787fe1ddd4993a9c5e8bfa23b07a \
-                    size    983887
+checksums           rmd160  6dec0275c56953a07ce3db68faa498fff5e7fd9a \
+                    sha256  21a02443ca8647603cbee15c005ee5c8e06034d99584a55eca04b4407e2f8fe6 \
+                    size    985189
 
 depends_lib-append  port:R-expint
 
