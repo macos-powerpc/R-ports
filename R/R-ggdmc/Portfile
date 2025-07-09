@@ -3,16 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran yxlin ggdmc 0.2.6.0
-revision            2
+R.setup             cran yxlin ggdmc 0.2.6.2
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         Cognitive Models
-long_description    {*}${description}
-checksums           rmd160  655f2e7cc415d97b42fd639bdb0f3856cb2f3f27 \
-                    sha256  22f511773dc76b74d43b91ac6f6e2e967b5c1e7fa207d2fe9888147aedd9ccbe \
-                    size    4284389
+long_description    Hierarchical Bayesian models. The package provides tools to fit \
+                    two response time models, using the population-based Markov Chain Monte Carlo. 
+homepage            https://github.com/yxlin/ggdmc
+checksums           rmd160  3e05940efe910e4cdb5bc4164e33a545c7c23019 \
+                    sha256  a9a06afb43a8063afebe5bcc05bbff4c9cf9af02bccf7429f863a0b21293aeb6 \
+                    size    4158478
 
 depends_lib-append  port:R-coda \
                     port:R-data.table \
@@ -22,13 +24,6 @@ depends_lib-append  port:R-coda \
                     port:R-RcppArmadillo
 
 patchfiles          patch-fix-tests.diff
-
-# configure is broken for GCC: https://github.com/yxlin/ggdmc/issues/6
-if {[string match *gcc* ${configure.compiler}]} {
-    patchfiles-append \
-                    patch-gcc-configure.diff \
-                    patch-fix-openmp.diff
-}
 
 # Place testthat.R into a correct location so that it is actually found.
 post-patch {
