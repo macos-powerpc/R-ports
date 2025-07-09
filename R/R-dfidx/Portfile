@@ -3,22 +3,23 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran yves.croissant dfidx 0.1-2
+R.setup             cran yves.croissant dfidx 0.2-0
 revision            0
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Indexed data frames
 long_description    {*}${description}
-checksums           rmd160  387fc148eb52fa437bbaa208c299294ff84638d6 \
-                    sha256  9d2aa7869df3278b7df4df35720aa657e5ca19b5b87b7502cd9c5b86bbd7b1a4 \
-                    size    144764
+checksums           rmd160  fac4e50122e75d6f7d9c4ea8e5c82d283900a50a \
+                    sha256  65ba5e54515154a77410b65788f7e741bb706812d21acf2b20411c7d0e645ae0 \
+                    size    163138
 supported_archs     noarch
 
 depends_lib-append  port:R-Formula \
                     port:R-Rdpack
 
 depends_test-append port:R-knitr \
-                    port:R-quarto
+                    port:R-quarto \
+                    port:R-tinytest
 
 test.run            yes
