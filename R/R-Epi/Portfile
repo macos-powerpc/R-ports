@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran bendixcarstensen Epi 2.59
-revision            1
+R.setup             cran bendixcarstensen Epi 2.60
+revision            0
 maintainers         nomaintainer
 license             GPL-2
 description         Statistical analysis in epidemiology
 long_description    {*}${description}
 homepage            https://bendixcarstensen.com/Epi
-checksums           rmd160  8e1fed04618ce02436fe0dc838152e1a09e4fb5a \
-                    sha256  00d630908d1cd06a13d0df12d32e56840992021b6d3769e2b2b5d68078967637 \
-                    size    3198148
+checksums           rmd160  26e65e5839a71d12428feef6aa70213457dd5ad3 \
+                    sha256  29d6d91a7a0f04369852738fce009b3aefa59c65380174b6eec24ba7046aec57 \
+                    size    3976720
 
 depends_lib-append  port:R-cmprsk \
                     port:R-data.table \
