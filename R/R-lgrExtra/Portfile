@@ -3,18 +3,38 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran s-fleck lgrExtra 0.1.0
+R.setup             cran s-fleck lgrExtra 0.1.1
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Extra appenders for R-lgr
 long_description    {*}${description}
-checksums           rmd160  9f6f868a251f8ef5c45387ead0fdf234f3dcde7b \
-                    sha256  8246c0978048b578e7cc39f6ca0beb816ca1fce91f0cdbbc00a01a9bafd9ad77 \
-                    size    62189
+checksums           rmd160  0e43a4540ab9f13ac3d3642e1212976910f76605 \
+                    sha256  5fc750800b33e21659a2809711039c32fbcddf1bf011ba885626faf8a1dd189a \
+                    size    61869
 supported_archs     noarch
 
 depends_lib-append  port:R-data.table \
                     port:R-lgr \
                     port:R-R6
+
+depends_test-append port:R-covr \
+                    port:R-DBI \
+                    port:R-elastic \
+                    port:R-gmailr \
+                    port:R-httr2 \
+                    port:R-jsonlite \
+                    port:R-knitr \
+                    port:R-paws.management \
+                    port:R-pool \
+                    port:R-RMariaDB \
+                    port:R-rmarkdown \
+                    port:R-RPostgres \
+                    port:R-RPushbullet \
+                    port:R-RSQLite \
+                    port:R-rsyslog \
+                    port:R-sendmailR \
+                    port:R-testthat
+
+test.run            yes
