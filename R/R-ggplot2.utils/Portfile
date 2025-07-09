@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran insightsengineering ggplot2.utils 0.3.2 v
-revision            1
+R.setup             cran insightsengineering ggplot2.utils 0.3.3 v
+revision            0
 categories-append   graphics
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             Apache-2
 description         Select utilities extending R-ggplot2
 long_description    {*}${description}
 homepage            https://insightsengineering.github.io/ggplot2.utils
-checksums           rmd160  fdcdf904201a7fa93e568cc9f8a048cdbb7da632 \
-                    sha256  2f09159e5e428b712764ca260f483e4ea06c69bcbfb4f95c6883d5244d985b1f \
-                    size    67022
+checksums           rmd160  11df7d3234dccbcf8b0c3af1624678cf85a2d4ee \
+                    sha256  3d0a0a260423bfc77942d91c25a6354b6c568c4bbd3d8a31b622093ad60d612b \
+                    size    1163505
 supported_archs     noarch
 
 depends_lib-append  port:R-checkmate \
