@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran samuel-watson glmmrBase 0.11.2 v
-revision            1
+R.setup             cran samuel-watson glmmrBase 1.0.1 v
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Specification of generalised linear mixed models
 long_description    {*}${description}
 homepage            https://github.com/samuel-watson/glmmrBase
-checksums           rmd160  8b0e1e116bae8b1c5761decf77e5477d0ab2e221 \
-                    sha256  049d00ad5a21072e308e760ae3ef7a981e4d7799bf8b2a2f1b06f7a788a661cc \
-                    size    279116
+checksums           rmd160  7f40796d83d7a9ccbbf886e676ffd03196c9ee33 \
+                    sha256  47c03b2aa885c13322419e3c55c83f49aa0c3d090cef0067b080a58a2f4ecc7e \
+                    size    279857
 
 depends_lib-append  port:R-BH \
                     port:R-R6 \
