@@ -1,0 +1,25 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+PortGroup           R 1.0
+
+R.setup             cran lhvanegasp mtarm 0.1.5
+revision            0
+categories-append   math
+platforms           {darwin any}
+maintainers         nomaintainer
+license             {GPL-2 GPL-3}
+description         Bayesian estimation of multivariate threshold autoregressive models
+long_description    {*}${description}
+homepage            https://github.com/lhvanegasp/mtar
+checksums           rmd160  ac29d04c26edc7623dd25cc70a772a17ce6bef02 \
+                    sha256  f9cea5f3b813072241d9441efa49ddc85aa11f263be610b9de76212b1175bc0f \
+                    size    75810
+supported_archs     noarch
+
+depends_lib-append  port:R-coda \
+                    port:R-Formula \
+                    port:R-GIGrvg \
+                    port:R-mvtnorm
+
+test.run            yes
