@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cbergmeir Rlgt 0.2-2
-revision            1
+R.setup             cran cbergmeir Rlgt 0.2-3
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Bayesian exponential smoothing models with trend modifications
 long_description    {*}${description}
 homepage            https://github.com/cbergmeir/Rlgt
-checksums           rmd160  c4f78e6ba40f568ecbcfcd603e3c2defe856ebe9 \
-                    sha256  ffb75ed4e7008011ab055e2ffd50a274f00348814357f95a3063099e397543b0 \
-                    size    439869
+checksums           rmd160  6889f88647346208cb95649e8448673721bf3f37 \
+                    sha256  6862b1d78339a7d2bd3376df473f26e432f4296a2d915256d7e27a7b95f4090c \
+                    size    381188
 
 depends_lib-append  port:R-BH \
                     port:R-forecast \
@@ -27,8 +27,12 @@ depends_lib-append  port:R-BH \
                     port:R-truncnorm
 
 depends_test-append port:R-doParallel \
+                    port:R-dplyr \
                     port:R-foreach \
+                    port:R-ggplot2 \
                     port:R-knitr \
-                    port:R-rmarkdown
+                    port:R-Mcomp \
+                    port:R-rmarkdown \
+                    port:R-RODBC
 
 test.run            yes
