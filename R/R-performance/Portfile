@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github easystats performance 0.14.0 v
+R.setup             github easystats performance 0.15.0 v
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             GPL-3
 description         Assessment of regression models performance
 long_description    {*}${description}
 homepage            https://easystats.github.io/performance
-checksums           rmd160  7d5d15b6db33f59f2d32157c934e9985b01b8518 \
-                    sha256  10680aaf646863e47e9d5b4d679e704c727d2137bb0d23bd424c28bdcc24eaaf \
-                    size    4301698
+checksums           rmd160  f0deb5b9e68a82ded438b7d1fc9ecc276842dfe7 \
+                    sha256  a314c84a8a9085bda78b40c582218ead752c1fd7e5230145762945ea9422d8e2 \
+                    size    4316014
 github.tarball_from archive
 supported_archs     noarch
 
