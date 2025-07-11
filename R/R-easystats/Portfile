@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github easystats easystats 0.7.4 v
-revision            1
+R.setup             github easystats easystats 0.7.5 v
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -13,9 +13,9 @@ description         Framework for easy statistical modelling, \
                     visualization and reporting
 long_description    {*}${description}
 homepage            https://easystats.github.io/easystats
-checksums           rmd160  63357667cde547308a22846f5ec8fb9de3b176ea \
-                    sha256  0696844821c414669917966c4cb9b30f119a5f9f9e8a63dbec155bd73e7487af \
-                    size    159054727
+checksums           rmd160  6c3b18f05265c2e04c4dc523d575702c25ee6cc3 \
+                    sha256  6ca45c476b3077a0454421ca998cb95dae133fcdbff92b098e4bf9e750b0fbf7 \
+                    size    160343500
 github.tarball_from archive
 supported_archs     noarch
 
