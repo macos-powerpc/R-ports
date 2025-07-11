@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran maechler longmemo 1.1-3
-revision            1
+R.setup             cran maechler longmemo 1.1-4
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Statistics for long-memory processes
 long_description    {*}${description}
-checksums           rmd160  362a684744a7fd81e0656d04df5fe8eaa347ea73 \
-                    sha256  c8944d64fb2e0d8f4df421f152a23f2b0bbc6ee4d2fd54d905c3b84522838a30 \
-                    size    152073
+checksums           rmd160  32facecce187d8bb8c17bc11805a5d9a1d43a43f \
+                    sha256  390849c9c3ff648a9fb6f7b3610d58fc9081aadf5ca7793359678efc8934a0f9 \
+                    size    163943
 supported_archs     noarch
 
 depends_test-append port:R-fracdiff \
