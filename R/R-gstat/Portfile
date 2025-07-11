@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-spatial gstat 2.1-3
-revision            1
+R.setup             cran r-spatial gstat 2.1-4
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+	
@@ -12,9 +12,9 @@ description         Spatial and spatio-temporal geostatistical modelling, \
                     prediction and simulation
 long_description    {*}${description}
 homepage            https://r-spatial.github.io/gstat
-checksums           rmd160  f249d10826b1e880a69276e6da0b84ae3186955b \
-                    sha256  eedc77c030f5ef522ce339194bef054b15f2617ee1d1ba75c149a33dfb1e2ad2 \
-                    size    2282735
+checksums           rmd160  6ed69b805619bf61c32d55039333d13b0ecfa9d6 \
+                    sha256  fafcbd6c480f4e996a904f54b8efa64af2fad8fef2ec0f706e058ada4618c630 \
+                    size    2280083
 
 depends_lib-append  port:R-FNN \
                     port:R-sf \
