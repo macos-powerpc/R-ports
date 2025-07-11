@@ -3,27 +3,21 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github lorismichel quantregForest 1.3-7
-revision            2
+# GitHub version is old.
+R.setup             cran lorismichel quantregForest 1.3-7.1
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL
 description         Quantile Regression Forests
 long_description    {*}${description}
-checksums           rmd160  f2f7ab2bffdf22b80169970aaef83a3cd045f3ea \
-                    sha256  f6692b793b795b1118f0f3de5526526bd96c9403521774cc5ac635abcce00a47 \
-                    size    134040
-github.tarball_from tarball
+homepage            https://github.com/lorismichel/quantregForest
+checksums           rmd160  45264bda2f631bdde002c5644d1b516e19ce014d \
+                    sha256  57ff0266aed75abd5b18f0a33bd5193b05fc9e7ae1bd40e3692a73b099ac3d2c \
+                    size    43208
 
 depends_lib-append  port:R-randomForest \
                     port:R-RColorBrewer
-
-# https://github.com/lorismichel/quantregForest/issues/13
-post-extract {
-    delete ${worksrcpath}/.Rbuildignore
-    delete ${worksrcpath}/appveyor.yml
-    delete ${worksrcpath}/quantregForest.pdf
-}
 
 compilers.setup     require_fortran
 
