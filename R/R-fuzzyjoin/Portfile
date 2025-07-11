@@ -3,17 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github dgrtwo fuzzyjoin 0.1.6 v
-revision            4
+# Revert to GitHub once updated there.
+R.setup             cran dgrtwo fuzzyjoin 0.1.6.1 v
+revision            0
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Join tables together on inexact matching
 long_description    {*}${description}
-checksums           rmd160  dee9e6d707df5dee4a6a7e608eb666b05a473828 \
-                    sha256  95de626f79da502aee1b35e1184f36f233022b722cdde75cf2e2e0922af612f1 \
-                    size    322563
-github.tarball_from archive
+checksums           rmd160  9c34e4923d75f3fde481b890d0f80e4de0e78b25 \
+                    sha256  b9e7981a6ff3b8b689a35e267982cb14881751cce49b2da41967ad8fb295c77d \
+                    size    101888
+# github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-dplyr \
