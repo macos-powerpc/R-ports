@@ -3,7 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github grantmcdermott tinyplot 0.4.1 v
+# Revert to GitHub once updated there.
+R.setup             cran grantmcdermott tinyplot 0.4.2 v
 revision            0
 categories-append   graphics
 platforms           {darwin any}
@@ -12,10 +13,10 @@ license             Apache-2
 description         Lightweight extension of the base R graphics system
 long_description    {*}${description}
 homepage            https://grantmcdermott.com/tinyplot
-checksums           rmd160  d0000756a6e3d6e3dff52ab5de372f59c045bd5f \
-                    sha256  f8c51517dfee3556a422960d4c215c2817c26e5fc3b658cb7523934c45349af7 \
-                    size    3028448
-github.tarball_from archive
+checksums           rmd160  b4b5fb4a74eac83561b82302dc8c2c638b1113ee \
+                    sha256  029c675159811df930e1ca04e30760a1c38b84f7c83891c89c3d621b3243320a \
+                    size    939354
+# github.tarball_from archive
 supported_archs     noarch
 
 depends_test-append port:R-altdoc \
