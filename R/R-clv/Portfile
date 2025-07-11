@@ -3,15 +3,15 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran clv 0.3-2.4
-revision            2
+R.setup             cran wookashn clv 0.3-2.5
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-2+
 description         Cluster validation techniques
 long_description    {*}${description}
-checksums           rmd160  cf978fb7193089f1b0165ad10830de81f214f33b \
-                    sha256  baee506aa15cec3a13ac97f1280c7451fba4eb05506417e59cf06af04d2471fd \
-                    size    44507
+checksums           rmd160  381c58abd38d1b28d3f4316f5ee1766887204df7 \
+                    sha256  d8e622b67e64afdb9027a80bf332d8fd21b26e94f0cb814647f65130c84bc9df \
+                    size    46756
 
 test.run            yes
