@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is old.
-R.setup             cran emmekeaarts mHMMbayes 1.1.0
-revision            2
+R.setup             cran emmekeaarts mHMMbayes 1.1.1
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Multilevel Hidden Markov Models via Bayesian estimation
 long_description    {*}${description}
 homepage            https://github.com/emmekeaarts/mHMMbayes
-checksums           rmd160  fe89e2d97863167b729cfa9eaadd5ad0bf6bca9c \
-                    sha256  ea6862ae809817acd8dcb8f2d16b1f8d41ff03d2e8ae26d057538154e3ff23fc \
-                    size    2779945
+checksums           rmd160  e3609c8e099ee68c0a5715d5c1edbece75d8d0ad \
+                    sha256  9aef65612a7f4340714b07063c7bb06952bfe9ad8a9affcfca48a2aeb30ddeeb \
+                    size    2617267
 
 depends_lib-append  port:R-MCMCpack \
                     port:R-mvtnorm \
