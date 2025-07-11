@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github r-lib waldo 0.6.1 v
-revision            1
+R.setup             github r-lib waldo 0.6.2 v
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Find differences between R objects
 long_description    {*}${description}
 homepage            https://waldo.r-lib.org
-checksums           rmd160  3b8fedb22d9c1cb32ead8c9691dd967655b74151 \
-                    sha256  83bd6343f77793a7e133b63cc27c2a48d7b0e3352acdc011ab20e90a82ab0a2f \
-                    size    52349
+checksums           rmd160  447b2fb2a8aa6d6486fd6be502e593fc404dd013 \
+                    sha256  58e0c8973c59b308e18727ab1eff9386aa64d5e6aed160d507d6958e32b2ab2e \
+                    size    52021
 github.tarball_from archive
 supported_archs     noarch
 
