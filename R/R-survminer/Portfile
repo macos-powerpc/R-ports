@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github kassambara survminer 0.4.9 v
-revision            2
+R.setup             github kassambara survminer 0.5.0 v
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2
 description         Draw survival curves using R-ggplot2
 long_description    {*}${description}
 homepage            https://rpkgs.datanovia.com/survminer/index.html
-checksums           rmd160  b8377c637e480360b25927797caed6c725866644 \
-                    sha256  cb43b06e2c0e86bc428d8601beab2b453ba515a08f4f978240d5c1d098ba5ad5 \
-                    size    10215171
+checksums           rmd160  da619320c5cad927b51904bcdeefbb1b1aae6ee7 \
+                    sha256  5a4cfda05d6da396eb997dd0a62828b8e13026a3377522715182d90f6b3ea21b \
+                    size    1600964
 github.tarball_from tarball
 supported_archs     noarch
 
