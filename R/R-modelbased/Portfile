@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github easystats modelbased 0.11.2 v
+R.setup             github easystats modelbased 0.12.0 v
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             GPL-3
 description         Methods for correlation analysis
 long_description    {*}${description}
 homepage            https://easystats.github.io/modelbased
-checksums           rmd160  62f8b952d84cb59c9f31a2fa60f698bcf337b07a \
-                    sha256  25c7559e369e714b5f91c675bfb72adc4f9cae9c9aac1eb77fd89110c6bad4d2 \
-                    size    1227565
+checksums           rmd160  7b2947bf0f0770424c9d463bbe14b2c86acdf389 \
+                    sha256  5001ba5ec57d4468699ad9a050a01e69fdcef1e9e9dfa3ff6a49602fe8d0db50 \
+                    size    1246089
 github.tarball_from archive
 supported_archs     noarch
 
@@ -24,7 +24,11 @@ depends_lib-append  port:R-bayestestR \
                     port:R-parameters
 
 # R-nanoparquet is dropped for now due to being broken on BE platforms.
-depends_test-append port:R-BH \
+depends_test-append port:R-afex \
+                    port:R-betareg \
+                    port:R-BH \
+                    port:R-bootES \
+                    port:R-brglm2 \
                     port:R-brms \
                     port:R-coda \
                     port:R-collapse \
@@ -45,6 +49,7 @@ depends_test-append port:R-BH \
                     port:R-logspline \
                     port:R-marginaleffects \
                     port:R-mice \
+                    port:R-mvtnorm \
                     port:R-ordinal \
                     port:R-palmerpenguins \
                     port:R-patchwork \
