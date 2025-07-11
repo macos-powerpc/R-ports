@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran joelcuerrier cdid 0.1.0
-revision            1
+R.setup             cran joelcuerrier cdid 0.1.1
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -13,9 +13,9 @@ description         Chained Difference-in-Differences
 long_description    ${name} extends R-did package to improve efficiency \
                     and handling of unbalanced panel data.
 homepage            https://github.com/joelcuerrier/cdid
-checksums           rmd160  674454a52a288234c3a1bf5254143ca3caa101cc \
-                    sha256  09994393b3e696ddd6f00de6c244949578442ca85ec112f6553d3b9a35dd257e \
-                    size    47267
+checksums           rmd160  c680d6793157145dff3dd66acebb826e5079ab52 \
+                    sha256  c01c3bc2c2b2c91ccf86e4100045e35dc89fa8dedb4944f61955ab4d5390a218 \
+                    size    47556
 supported_archs     noarch
 
 depends_lib-append  port:R-BMisc \
