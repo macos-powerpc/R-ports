@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran szymon.urbas bplsr 1.0.2
-revision            1
+R.setup             cran szymon.urbas bplsr 1.0.4
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3+
 description         Bayesian partial least squares regression
 long_description    {*}${description}
-checksums           rmd160  9ca3ab28359f5fa1957f54e6fd328748bc93b053 \
-                    sha256  3313c370376d664980ff42e2020e1c5b6d2437743604b78c55fe24b21885c709 \
-                    size    1814809
+checksums           rmd160  c9d87ad9c27baf0e4e0aae80825d761f9a41ed29 \
+                    sha256  47832eebd95c770326acffafbf40e7b0e6e8ee2522cdee03e5f26a0922c07f70 \
+                    size    1814093
 supported_archs     noarch
 
 depends_lib-append  port:R-coda \
