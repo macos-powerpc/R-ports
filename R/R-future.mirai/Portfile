@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github HenrikBengtsson future.mirai 0.10.0
+R.setup             github HenrikBengtsson future.mirai 0.10.1
 revision            0
 categories-append   devel parallel
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             GPL-3+
 description         R-future API for parallel processing using R-mirai
 long_description    {*}${description}
 homepage            https://future.mirai.futureverse.org
-checksums           rmd160  ab8016639d02944d1003c08fa6c731c23b0c5a06 \
-                    sha256  35c6dee4059c40a67294cb588532c8623df56b937f54ba8ceab975df0f153058 \
-                    size    39395
+checksums           rmd160  17c6392334d1c546cca3449d969786da3966a00c \
+                    sha256  7ffe7095547f2dad98566559efe7e27a3629143c93b89bed9cd14b7c292f9b26 \
+                    size    40204
 github.tarball_from archive
 supported_archs     noarch
 
