@@ -4,16 +4,16 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran Rdatatable data.table 1.17.6
+R.setup             cran Rdatatable data.table 1.17.8
 revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MPL-2
 description         Extension of data.frame
 long_description    {*}${description}
 homepage            https://r-datatable.com
-checksums           rmd160  44c9b0cc4dfca172d65d56b1dc47f9382085545f \
-                    sha256  1da48e4843a1e10118bab06cd12f945055518f1519fd92e73a1364f5f2ace628 \
-                    size    5840031
+checksums           rmd160  dd2047927e6c6fe63ef26be5878141838ec2f3d3 \
+                    sha256  17f24496d548914fdac2b8ed00c7272f2e191ee32eb6bb8336f9beb6691330e0 \
+                    size    5808720
 # github.tarball_from archive
 
 depends_build-append \
