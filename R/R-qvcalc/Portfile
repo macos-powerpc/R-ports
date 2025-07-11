@@ -3,19 +3,21 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran qvcalc 1.0.3
-revision            2
+R.setup             cran davidfirth qvcalc 1.0.4
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
 license             {GPL-2 GPL-3}
 description         Quasi-variances for factor effects in statistical models
 long_description    {*}${description}
-homepage            https://warwick.ac.uk/fac/sci/statistics/staff/academic-research/firth/software/relimp
-checksums           rmd160  48dc26699d73cb86f3ee651c52ec7c5419204b5d \
-                    sha256  8a9e0fa0719dc40c0857de97f6bd322754e2bac4bb6bb4c095c547064020599f \
-                    size    10133
+homepage            https://davidfirth.github.io/qvcalc
+checksums           rmd160  d57286f00c761acce9623071ac032f59d2e80344 \
+                    sha256  90403cada56e82a6bbd067f397fab20c721850b50874345a6322619165dafb59 \
+                    size    13982
 supported_archs     noarch
-platforms           {darwin any}
 
-depends_test-append port:R-relimp
+depends_test-append port:R-psychotools \
+                    port:R-relimp \
+                    port:R-testthat
 
 test.run            yes
