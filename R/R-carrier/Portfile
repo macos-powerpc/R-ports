@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github r-lib carrier 0.1.1 v
-revision            3
+R.setup             github r-lib carrier 0.2.0 v
+revision            0
 categories-append   devel
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -15,9 +15,9 @@ long_description    Sending functions to remote processes can be wasteful of res
                     it is easy to create functions that are isolated from their environment. \
                     These isolated functions, also called crates, print at the console \
                     with their total size and can be easily tested locally before being sent to a remote.
-checksums           rmd160  543df4c1d5ad2a413235cb80691d34de451d97ee \
-                    sha256  5b18e3ec26b71cf305a7fd8376a03b0c6810b2fac89f678d3f848d9542efaa99 \
-                    size    12895
+checksums           rmd160  9506bca4de1f1c3b7ef9b508aa170c2f2443d46a \
+                    sha256  d2bb8c6d9c173d6d4125efea3d4227d9bb09a981232c72464baeadbffec02251 \
+                    size    14350
 github.tarball_from archive
 supported_archs     noarch
 
