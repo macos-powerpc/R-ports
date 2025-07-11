@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran quanteda quanteda 4.3.0
+R.setup             cran quanteda quanteda 4.3.1
 revision            0
 categories-append   textproc
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             GPL-3
 description         Quantitative Analysis of Textual Data
 long_description    {*}${description}
 homepage            https://quanteda.io
-checksums           rmd160  21c294404852b5f18ef0c1d9acbe565c8e08467d \
-                    sha256  2ba1c5caf510564df631758ca0626aa8d7c8c984b3fbb55954109459fbf50322 \
-                    size    4337819
+checksums           rmd160  466ba7c3fc5459b192e3965e0f9b7b365cdef5e1 \
+                    sha256  100d20bc47cf056bf2ca030eb9ae91c376cf575063d76126563acd3b1b6699f3 \
+                    size    4339667
 
 # Notice that 4.0.0 has switched to using OneTBB instead of R-RcppParallel
 # (which is an R interface to a legacy TBB). The last version to use
