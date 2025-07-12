@@ -17,6 +17,8 @@ checksums           rmd160  8d4797f273e2e14e1d25e855e61973f329a36316 \
 
 # https://github.com/reedacartwright/ironseed/pull/1
 patchfiles          db1a676814fe9c6ee0273c4b9426982654d80b4f.patch
+# https://github.com/reedacartwright/ironseed/pull/3
+patchfiles-append   compat.c-support-ppc-in-readcycle_entropy.patch
 
 depends_test-append port:R-tinytest
 

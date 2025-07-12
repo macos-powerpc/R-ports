@@ -1,0 +1,25 @@
+From 27158c7736dbb1fcbe95c98b1f9449bba2c955b6 Mon Sep 17 00:00:00 2001
+From: Sergey Fedorov <barracuda@macos-powerpc.org>
+Date: Sat, 12 Jul 2025 07:52:11 +0800
+Subject: [PATCH] compat.c: support ppc in readcycle_entropy
+
+---
+ src/compat.c | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git src/compat.c src/compat.c
+index bcf3283..9775de8 100644
+--- src/compat.c
++++ src/compat.c
+@@ -115,6 +115,8 @@ uint64_t readcycle_entropy(void) {
+   uint64_t u;
+   __asm __volatile("mrs %0, CNTVCT_EL0" : "=&r"(u));
+   return u;
++#elif defined(__GNUC__) && (defined(__POWERPC__) || defined(__powerpc__))
++  return __builtin_ppc_get_timebase();
+ #else
+   return 0;
+ #endif
+-- 
+2.48.0
+
