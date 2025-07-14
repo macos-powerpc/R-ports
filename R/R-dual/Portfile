@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran drwolf85 dual 0.0.5
-revision            2
+R.setup             cran drwolf85 dual 0.0.6
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Automatic differentiation with dual numbers
 long_description    {*}${description}
-checksums           rmd160  7155d69ce6c9648d70cfd309624d324653a1858f \
-                    sha256  0d7962f10e8c92699d3fe7b91a84b1a2f034b2d15367c4b2bc83e99dcbc72223 \
-                    size    38255
+checksums           rmd160  cc0009fb0e20001499ef7bb193cbf43f4e2d6881 \
+                    sha256  70b7db312c5f251c71426ed2278599566abc58cd73ac7dc093fc7d184825895a \
+                    size    32735
 # CRAN lies.
 supported_archs     noarch
-platforms           {darwin any}
 
 test.run            yes
