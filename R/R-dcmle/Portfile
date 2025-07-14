@@ -3,17 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran dcmle 0.4-1
-revision            2
+R.setup             cran datacloning dcmle 0.4-2
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2
 description         Hierarchical models made easy with data cloning
 long_description    {*}${description}
-checksums           rmd160  27f5ed51b376fb7e549d8b8c4ea2048cce95e699 \
-                    sha256  b7a0974ed022b1f20d55dcecf48caf059990102dc08368ca174308a0fc2002fe \
-                    size    19536
+homepage            https://github.com/datacloning/dcmle
+checksums           rmd160  414f3755a9981cee5b866d36ee52924e0b2f957a \
+                    sha256  dab6a7c87424c754ecfd3cbde38aeb5ea9de6f18d0d1875551c8d18e3c2490bd \
+                    size    19598
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-coda \
                     port:R-dclone
