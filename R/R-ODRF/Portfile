@@ -3,20 +3,21 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran liuyu-star ODRF 0.0.4
-revision            2
+R.setup             cran liuyu-star ODRF 0.0.5
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3+
 description         Oblique decision random forest for classification and regression
 long_description    {*}${description}
 homepage            https://liuyu-star.github.io/ODRF
-checksums           rmd160  db10b1c939f43d64a43940393c3511755ed61821 \
-                    sha256  a37cb606900d3d6c6e654b97c402c02f0b565f7724588f7767c4a04cb23fff04 \
-                    size    231702
+checksums           rmd160  a4dbfa8910c8f9cef8cb1a63871f1db1acced693 \
+                    sha256  19aab30eb262565e75c68af5c22bd0b91c0018b775e9cf41fbc27b7a436602cc \
+                    size    252954
 
 depends_lib-append  port:R-doParallel \
                     port:R-foreach \
+                    port:R-glmnet \
                     port:R-glue \
                     port:R-lifecycle \
                     port:R-magrittr \
@@ -24,6 +25,7 @@ depends_lib-append  port:R-doParallel \
                     port:R-Pursuit \
                     port:R-Rcpp \
                     port:R-RcppArmadillo \
+                    port:R-RcppEigen \
                     port:R-rlang
 
 depends_test-append port:R-knitr \
