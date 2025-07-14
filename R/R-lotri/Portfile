@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # GitHub version lags behind.
 R.setup             cran nlmixr2 lotri 1.0.0
-revision            2
+revision            3
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
@@ -20,12 +20,6 @@ depends_lib-append  port:R-checkmate \
                     port:R-cpp11 \
                     port:R-cpp11armadillo \
                     port:R-crayon
-
-# https://github.com/pachadotdev/capybara/issues/12
-if {${configure.build_arch} in [list arm i386 ppc]} {
-    patchfiles-append \
-                    patch-arma-32bit.diff
-}
 
 compilers.setup     require_fortran
 

@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             cran pachadotdev economiccomplexity 2.0.0
-revision            0
+revision            1
 categories-append   economics
 maintainers         nomaintainer
 license             Apache-2
@@ -19,12 +19,6 @@ depends_lib-append  port:R-cpp11 \
                     port:R-cpp11armadillo \
                     port:R-igraph \
                     port:R-Rdpack
-
-# https://github.com/pachadotdev/capybara/issues/12
-if {${configure.build_arch} in [list arm i386 ppc]} {
-    patchfiles-append \
-                    patch-arma-32bit.diff
-}
 
 compilers.setup     require_fortran
 
