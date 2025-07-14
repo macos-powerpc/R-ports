@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran spatstat spatstat.univar 3.1-3
+R.setup             cran spatstat spatstat.univar 3.1-4
 revision            0
 categories-append   math
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             GPL-2+
 description         One-dimensional probability distribution support
 long_description    {*}${description} for the R-spatstat family.
 homepage            https://github.com/spatstat/${R.package}
-checksums           rmd160  f678fe7d324cf295a2c90e6f157b1f5948cbd8be \
-                    sha256  6fecfd87aed497cbf344ae23af0915fda5fc0b36ee781010d3c9ad177a518151 \
-                    size    69769
+checksums           rmd160  2d6cb1606fa3824ae844263a5b3a1bc0ddb15d5d \
+                    sha256  884a7775567be58815f6de32c2bbd62bd554cde4542538ef420034a4c7022479 \
+                    size    72018
 
 depends_lib-append  port:R-spatstat.utils
 
