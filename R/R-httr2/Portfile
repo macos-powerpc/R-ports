@@ -3,8 +3,9 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github r-lib httr2 1.1.2 v
-revision            1
+# Revert to GitHub once updated there.
+R.setup             cran r-lib httr2 1.2.0 v
+revision            0
 categories-append   devel net
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,10 +13,10 @@ license             MIT
 description         Perform HTTP requests and process the responses
 long_description    {*}${description}
 homepage            https://httr2.r-lib.org
-checksums           rmd160  d039158679b302a39c42a497c6c8fc97eb9b3cc6 \
-                    sha256  c9fe85d8cb67be74e5bfdda8f4a3ba944a2a24990a161414dd48c15b285915e7 \
-                    size    355289
-github.tarball_from archive
+checksums           rmd160  1eba0a4625e236d75f6987d10b8fc1f15c8ad72e \
+                    sha256  6560030867b7a6eabc137aae7e4eff1ec525a7caa7a8b62698de6efeb4b787b5 \
+                    size    271515
+# github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
