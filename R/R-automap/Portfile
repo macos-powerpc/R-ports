@@ -3,17 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran jon.skoien automap 1.1-16
-revision            1
+R.setup             cran jon.skoien automap 1.1-20
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL
 description         Automatic interpolation package
 long_description    {*}${description}
-checksums           rmd160  dd187cf610cebe85a7e4784edadbad5b20b75b58 \
-                    sha256  ca7a72f996b17e75beabbedaad090847eca57c43cf18d471cc56c9769baa776f \
-                    size    23843
+homepage            https://github.com/jskoien/jskoien
+checksums           rmd160  c555a6572a866006544b8ca38fbc5cf89f1d1d61 \
+                    sha256  9f17322f57e5439df1a8cbaeacec605c6685558cf62f4dec0529bf900c6d98ed \
+                    size    24042
 supported_archs     noarch
 
 depends_lib-append  port:R-ggplot2 \
