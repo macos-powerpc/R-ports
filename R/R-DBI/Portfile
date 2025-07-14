@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github r-dbi DBI 1.2.3.9027 v
-revision            1
+R.setup             github r-dbi DBI 1.2.3.9029 v
+revision            0
 categories-append   databases
 platforms           {darwin any}
 maintainers         {@krlmlr cynkra.com:kirill} \
@@ -15,9 +15,9 @@ description         A database interface (DBI) definition for communication \
                     between R and RDBMSs
 long_description    {*}${description}
 homepage            https://dbi.r-dbi.org
-checksums           rmd160  a547f17885a0ee755fdd9a9a935542d6a6444801 \
-                    sha256  a4781344b6a2a4f34bb89c175d1625b73353ccc664c5a99a82ba6acf5e25d803 \
-                    size    287280
+checksums           rmd160  9327a9649ed9f5117090e181a6b6f145db071022 \
+                    sha256  ef687f2e1451b470c402b53a3be767a3a5d6ec1f9aafce6e9b777ad1911104c0 \
+                    size    304241
 github.tarball_from archive
 supported_archs     noarch
 
