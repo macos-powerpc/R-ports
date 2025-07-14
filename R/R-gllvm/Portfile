@@ -3,28 +3,29 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran JenniNiku gllvm 1.4.3
-revision            2
+R.setup             cran JenniNiku gllvm 2.0.5
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-2
 description         Generalized Linear Latent Variable Models
 long_description    {*}${description}
-checksums           rmd160  77b368d3e2ac3f3d930ac0369bf86487d48f74ec \
-                    sha256  63b77040e9cf2694882d1d80a3bc3030b3a348819ea38e6728417e4c5de07ecc \
-                    size    3903244
+homepage            https://jenniniku.github.io/gllvm
+checksums           rmd160  f957de7ceb087c3b008efdfed0fea97402a5ad5a \
+                    sha256  d77114375fec2a2e506f05bcf3d5a9b0066235ba552f56dbf9e658b33753502b \
+                    size    3153833
 
 depends_lib-append  port:R-alabama \
                     port:R-fishMod \
-                    port:R-mvabund \
                     port:R-nloptr \
                     port:R-RcppEigen \
-                    port:R-statmod \
                     port:R-TMB
 
-depends_test-append port:R-corrplot \
+depends_test-append port:R-ape \
+                    port:R-corrplot \
                     port:R-gclus \
                     port:R-knitr \
+                    port:R-mvabund \
                     port:R-rmarkdown \
                     port:R-testthat
 
