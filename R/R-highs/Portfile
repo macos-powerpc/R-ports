@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran roigrp highs 1.10.0-2
+R.setup             cran roigrp highs 1.10.0-3
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ description         HiGHS optimization solver
 long_description    R interface to HiGHS, an optimization solver for solving mixed integer optimization \
                     problems with quadratic or linear objective and linear constraints.
 homepage            https://gitlab.com/roigrp/solver/highs
-checksums           rmd160  168a2115ae7a6cfca4274a9a9fc6e6f08de95a76 \
-                    sha256  f88a47e07dd74d9d57ef54679d710181ceb9b57a80d404cc0273b0e4d9d8a8d6 \
-                    size    1191731
+checksums           rmd160  72722b6d2f242672f4ba6ab41ee4a48f50a719f9 \
+                    sha256  8813857e09dd1efee2b5e6affc36c5786f39a95e037972bdfb4f695c78381742 \
+                    size    1191826
 
 depends_build-append \
                     path:bin/cmake:cmake \
@@ -29,8 +29,6 @@ patchfiles          patch-use-Macports-highs.diff
 post-patch {
     reinplace "s,@PREFIX@,${prefix}," ${worksrcpath}/configure
 }
-
-compiler.cxx_standard   2017
 
 if {[string match *gcc* ${configure.compiler}]} {
     # To avoid multiplying patches, just apply this for gcc cases.
