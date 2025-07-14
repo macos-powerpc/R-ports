@@ -4,26 +4,28 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is archaic.
-R.setup             cran christophergandrud networkD3 0.4
-revision            3
+R.setup             cran christophergandrud networkD3 0.4.1
+revision            0
 categories-append   graphics
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+platforms           {darwin any}
+maintainers         nomaintainer
 license             GPL-3+
 description         D3 JavaScript network graphs from R
 long_description    {*}${description}
-checksums           rmd160  ebc80073d82b5c0430216387e411ef864f9501cb \
-                    sha256  33b82585f1eec6233303ec14033a703d0b17def441c7a0a67bf7e6764c9c9d0b \
-                    size    128302
+checksums           rmd160  3ab844519f06185326107e127a8366d98d445bae \
+                    sha256  5be36aa5dd3722b1cd52a149c50af2dbef0714b2dab2b4dbf7552c628925f64e \
+                    size    140079
 supported_archs     noarch
-platforms           {darwin any}
 
-depends_lib-append  port:R-htmlwidgets \
+depends_lib-append  port:R-data.tree \
+                    port:R-htmlwidgets \
                     port:R-igraph \
+                    port:R-jsonlite \
                     port:R-magrittr
 
 depends_test-append port:R-htmltools \
-                    port:R-jsonlite \
                     port:R-knitr \
-                    port:R-shiny
+                    port:R-shiny \
+                    port:R-tibble
 
 test.run            yes
