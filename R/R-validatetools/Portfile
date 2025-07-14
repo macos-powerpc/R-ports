@@ -3,17 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran data-cleaning validatetools 0.5.2
-revision            2
+R.setup             cran data-cleaning validatetools 0.6.1
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Checking and simplifying validation rule sets
 long_description    {*}${description}
-checksums           rmd160  45313a786a70c1ef75d424cbd968ebea90bf15ee \
-                    sha256  6092c34a333b6929a00e3982a8a6738eb0590d75336581f56be0ab66d2c4ef9a \
-                    size    29117
+homepage            https://github.com/data-cleaning/validatetools
+checksums           rmd160  59b2946a29bf6f3b59d4af4f3f87a8fcb0a7fffc \
+                    sha256  306d58bcf3cd3862a62101d9b6c4e2b9baa3a795f5af62d398dc846accd5888a \
+                    size    33608
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-lpSolveAPI \
                     port:R-validate
