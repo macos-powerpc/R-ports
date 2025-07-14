@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran bayesiandemography rvec 0.0.7 v
-revision            1
+R.setup             cran bayesiandemography rvec 0.0.8 v
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Vector representing a random variable
 long_description    {*}${description}
 homepage            https://bayesiandemography.github.io/rvec
-checksums           rmd160  a72b4558fcc047a88481fbf94046461c9bea3013 \
-                    sha256  b67b8d0755c3742be36417658e9309e61f5c1d3a414cc3305c94fb95bf976054 \
-                    size    352392
+checksums           rmd160  cf989d7a71b1dab3db38b0956baea56cdedcb902 \
+                    sha256  771e337198bd3d6088f6102f2c644cdb5de5d7c4488392ddc1bcc8d983da69cb \
+                    size    353962
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
@@ -34,7 +34,6 @@ depends_test-append port:R-bookdown \
                     port:R-posterior \
                     port:R-rmarkdown \
                     port:R-testthat \
-                    port:R-tidyr \
-                    port:R-vdiffr
+                    port:R-tidyr
 
 test.run            yes
