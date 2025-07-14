@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             bioconductor Bioconductor survcomp 1.54.0
-revision            1
+R.setup             bioconductor Bioconductor survcomp 1.58.0
+revision            0
 categories-append   bioconductor
 maintainers         nomaintainer
 license             Artistic-2
 description         Performance assessment and comparison for survival analysis
 long_description    {*}${description}
-checksums           rmd160  b7e57775b7fcc6fa2eba5aef28dc210422e25e45 \
-                    sha256  ec79816eed2bd76fc73f0bde33c18b5617d1238313ced0efb02c720650a10d24 \
-                    size    604517
+checksums           rmd160  0bb588acb275562dd28aefc3274a5bc2cbbdefb2 \
+                    sha256  70a0b1d17146c34cbac93072ad2bcef5e03d87107c3086f7162fc2a8f68cbd35 \
+                    size    654011
 
 depends_lib-append  port:R-bootstrap \
                     port:R-ipred \
