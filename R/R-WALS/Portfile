@@ -4,8 +4,8 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran kevhuy WALS 0.2.5 v
-revision            1
+R.setup             cran kevhuy WALS 0.2.6 v
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -13,9 +13,9 @@ license             {GPL-2 GPL-3}
 description         Weighted-average least squares model averaging
 long_description    {*}${description}
 homepage            https://github.com/kevhuy/WALS
-checksums           rmd160  d409f1e38bcda9b50c1849b7d9b9a80255e6a33c \
-                    sha256  c63932a4912f923f11552bd7bb55546d03551a24999b3a042f061444eb30687c \
-                    size    239222
+checksums           rmd160  6a1770de2918824107efdb6e9bd03268adb26b25 \
+                    sha256  fc39f8094cd971171498ab9fab7873b8c733ca92623b0a90d6403b2ccc0f6667 \
+                    size    237662
 supported_archs     noarch
 
 depends_lib-append  port:R-Formula \
