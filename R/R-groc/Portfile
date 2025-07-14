@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran lafaye groc 1.0.9
-revision            2
+R.setup             cran lafaye groc 1.0.10
+revision            0
 categories-append   math
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
-license             {GPL-2 GPL-3}
+maintainers         nomaintainer
+license             GPL-2+
 description         Generalized Regression on Orthogonal Components
 long_description    {*}${description}
-checksums           rmd160  08b12f2f5e33a0320f03c6cc25c2609075356924 \
-                    sha256  72880c346c91de1c19a66806fb55ed919cade636ceb9039363cb51c0534c71a6 \
-                    size    209117
+checksums           rmd160  9c6bd51e4161ddf1f5e8a39e2a97c2318f1e6b26 \
+                    sha256  95c7f989c6431ee377c8334f31d42b7e2210d308783efc0a29614774fd9125e1 \
+                    size    208545
 
 depends_lib-append  port:R-pls \
                     port:R-robustbase \
