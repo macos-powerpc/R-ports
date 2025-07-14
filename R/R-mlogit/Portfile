@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran yves.croissant mlogit 1.1-2
+R.setup             cran yves.croissant mlogit 1.1-3
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             GPL-2+
 description         Multinomial logit models
 long_description    Maximum likelihood estimation of random utility discrete choice models.
 homepage            https://r-forge.r-project.org/projects/mlogit
-checksums           rmd160  f8e462ecb602fd85c60475be0b08704b003125f1 \
-                    sha256  899a394a1fbc6653a43a3ba1797ff6dd6a1b1662e5338d664d66e0f9c88f1cc5 \
-                    size    735520
+checksums           rmd160  c87b9910ea7878127c4114b080710aa2632b230f \
+                    sha256  f40df38533ce29ad06e57fd754edd3c107c84ebd7d7384acf6ef321c50c058fd \
+                    size    725737
 supported_archs     noarch
 
 depends_lib-append  port:R-dfidx \
