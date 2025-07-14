@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github alexanderrobitzsch CDM 8.3-1
-revision            3
+R.setup             github alexanderrobitzsch CDM 8.4-2
+revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
-license             {GPL-2 GPL-3}
+license             GPL-2+
 description         Cognitive Diagnosis Modelling
 long_description    {*}${description}
 homepage            https://alexanderrobitzsch.github.io/CDM
-checksums           rmd160  79b8beaed80f053d28387b29bed66de0f4a3a5b0 \
-                    sha256  987fc901d9d2cf94c0df4a7b2771067a741aedc8b8bdc61cf332479a9f6daaeb \
-                    size    1312399
-github.tarball_from tarball
+checksums           rmd160  9ccdc4b8012fc87281f431815b1940782d3eef71 \
+                    sha256  392e3c2e8d87093fb252abcee28fa8d27b7cfcc8657508feb6f5bca992bb3169 \
+                    size    1318050
+github.tarball_from archive
 
 depends_lib-append  port:R-mvtnorm \
                     port:R-polycor \
@@ -21,3 +21,11 @@ depends_lib-append  port:R-mvtnorm \
                     port:R-RcppArmadillo
 
 compilers.setup     require_fortran
+
+# Missing deps are omitted.
+depends_test-append port:R-GDINA \
+                    port:R-miceadds \
+                    port:R-mirt \
+                    port:R-ROI \
+                    port:R-rrum \
+                    port:R-sfsmisc
