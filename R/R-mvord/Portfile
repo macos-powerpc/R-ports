@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran laura.vana mvord 1.2.5
-revision            1
+R.setup             cran laura.vana mvord 1.2.6
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Multivariate Ordinal regression models
 long_description    {*}${description}
 homepage            https://github.com/lauravana/mvord
-checksums           rmd160  f7637a92cfaed9b4f169588e078f2903d6f30b57 \
-                    sha256  4cf52179a8bd67b83b7d1d2cb3cab39d9053916881d32e280d2b60b7f2c16421 \
-                    size    2898610
+checksums           rmd160  a4ce604d8a1984cb0f93abc16374fd56fde44669 \
+                    sha256  adb239e4a87809865cc3206c3ade8ad0190be9dac7cb48716200a8e767572e45 \
+                    size    2637257
 
 depends_lib-append  port:R-BB \
                     port:R-dfoptim \
