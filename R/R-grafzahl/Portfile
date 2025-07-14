@@ -3,8 +3,9 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github chainsawriot grafzahl 0.0.11 cran-v
-revision            2
+# GitHub version lags behind.
+R.setup             cran chainsawriot grafzahl 0.0.12 cran-v
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,10 +13,10 @@ license             GPL-3+
 description         Supervised machine learning for textual data \
                     using transformers and Quanteda
 long_description    {*}${description}
-checksums           rmd160  662c672fc4b35b8d0be93a74f47e8f80f1d26fe4 \
-                    sha256  c187040ac2efe6f906b291f0549d63a3cb731d0889724bbe4596ab7324d45b24 \
-                    size    2379854
-github.tarball_from archive
+checksums           rmd160  beb3b1b6accea518fb2df7fada8726e82a36b50a \
+                    sha256  396441bb240b4f822b784e2a092397547b41c99afd3fe3fb2c8f957279f5f61f \
+                    size    881317
+# github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-jsonlite \
