@@ -4,9 +4,9 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Commit-based due to: https://github.com/pachadotdev/capybara/issues/12
-R.setup             github pachadotdev cpp11armadillo ae41f329bc15b68a6336d580c65cafd4ebd98916
+R.setup             github pachadotdev cpp11armadillo f15d5d13c97c2c99d6d9b992762341727777af54
 version             0.5.4
-revision            0
+revision            1
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -17,9 +17,9 @@ long_description    ${name} provides function declarations and inline function \
                     and the Armadillo C++ library for linear algebra \
                     and scientific computing.
 homepage            https://pacha.dev/cpp11armadillo
-checksums           rmd160  a87791065020526b6bc7747fe3b7af9944afc39b \
-                    sha256  af63b716c467580b46d3ebfa4b56ecb9a21b9dcdb287947d02fc2b7e858d39c5 \
-                    size    7312360
+checksums           rmd160  5d62dea750988c29efe05b6fce5bb806f1ffd32e \
+                    sha256  a954be8fed350ce22c791349de7fa5513c9732f6aeec72d190dec1d0d3763018 \
+                    size    7312478
 github.tarball_from archive
 supported_archs     noarch
 
