@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran YuLab-SMU ggfun 0.1.9
+R.setup             cran YuLab-SMU ggfun 0.2.0
 revision            0
 categories-append   graphics
 platforms           {darwin any}
@@ -12,15 +12,16 @@ license             Artistic-2
 description         Miscellaneous functions for R-ggplot2
 long_description    {*}${description}
 homepage            https://github.com/YuLab-SMU/ggfun
-checksums           rmd160  d313ec06d1ea626a0dec4f170d13b789df310e1e \
-                    sha256  7c3b8ef3b3c84713ca390aae742e119e62c1d73cebfb5b875a55c864a13caca1 \
-                    size    107505
+checksums           rmd160  baee6d17ae0843b1910c2769fedf080d6e17449f \
+                    sha256  c5d267d3152771842ac1fdd819ecb442670946b75d10e0b4866e342d441a1711 \
+                    size    110603
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
                     port:R-dplyr \
                     port:R-ggplot2 \
                     port:R-rlang \
+                    port:R-scales \
                     port:R-yulab.utils
 
 depends_test-append port:R-ggnewscale \
