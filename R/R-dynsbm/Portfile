@@ -3,19 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran vincent.miele dynsbm 0.7
-revision            2
+R.setup             cran vincent.miele dynsbm 0.8
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Dynamic Stochastic Block Models
 long_description    {*}${description}
-checksums           rmd160  d861b9ef0b26f2aea87eaa5439ef71aae452cf1e \
-                    sha256  3966c1247dd7efa2b9244ad7108745139eee061d7a1b9c905dd2fa9d46993e99 \
-                    size    158654
+checksums           rmd160  7dd4bee139da99ba856b7693e7fa0d2cfcddd7a0 \
+                    sha256  123a4b940a087c19599d245f7d63da5038ba43b644f5ac0e213f02a3fd0999f1 \
+                    size    158115
 
 depends_lib-append  port:R-RColorBrewer \
-                    port:R-Rcpp \
-                    port:R-riverplot
+                    port:R-Rcpp
 
 test.run            yes
