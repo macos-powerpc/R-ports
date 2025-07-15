@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is archaic.
-R.setup             cran talgalili dendextend 1.18.1
-revision            1
+R.setup             cran talgalili dendextend 1.19.1
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             {GPL-2 GPL-3}
 description         Extending R dendrogram functionality
 long_description    {*}${description}
 homepage            https://talgalili.github.io/dendextend
-checksums           rmd160  acbf8323060fd39ebeeb832112d7bc6a8753063c \
-                    sha256  9d87a293a73e9399210cad62a4afc24ef4ce71e80bff05d5e74315428dd5a517 \
-                    size    4685869
+checksums           rmd160  1042ac8a77e6015cedf2443e793052fd33a37ca8 \
+                    sha256  be3c150c0ca460bb9181a906215244da92fe556e6bbfe1a6841398b45b5d2701 \
+                    size    4704910
 supported_archs     noarch
 
 depends_lib-append  port:R-ggplot2 \
