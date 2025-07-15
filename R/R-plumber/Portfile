@@ -3,19 +3,20 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-# Revert to GitHub once updated there.
-R.setup             cran rstudio plumber 1.2.2 v
-revision            2
+R.setup             github rstudio plumber 1.3.0 v
+revision            0
 categories-append   devel
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+platforms           {darwin any}
+maintainers         nomaintainer
 license             MIT
 description         API generator for R
 long_description    {*}${description}
-checksums           rmd160  7d0e2ea51258fc089bcb678369d1d5a34d0f4094 \
-                    sha256  f92e700d0487256291fe8be89e800905642670ddcc96570034a6d33ce51c98f9 \
-                    size    1078844
+homepage            https://www.rplumber.io
+checksums           rmd160  bca15c63f3a6cba9c304f9f1541f95608017cb74 \
+                    sha256  58ea275307929fd446725f96082577415e97f20793661e98649ace9ffe5433e8 \
+                    size    3430786
+github.tarball_from archive
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-crayon \
                     port:R-ellipsis \
@@ -31,3 +32,30 @@ depends_lib-append  port:R-crayon \
                     port:R-stringi \
                     port:R-swagger \
                     port:R-webutils
+
+depends_test-append port:R-arrow \
+                    port:R-base64enc \
+                    port:R-coro \
+                    port:R-future \
+                    port:R-geojsonsf \
+                    port:R-htmlwidgets \
+                    port:R-later \
+                    port:R-mockery \
+                    port:R-rapidoc \
+                    port:R-ragg \
+                    port:R-readr \
+                    port:R-readxl \
+                    port:R-redoc \
+                    port:R-rmarkdown \
+                    port:R-rstudioapi \
+                    port:R-sf \
+                    port:R-spelling \
+                    port:R-svglite \
+                    port:R-testthat \
+                    port:R-visNetwork \
+                    port:R-writexl \
+                    port:R-yaml
+
+# FIXME: some tests fail [ FAIL 6 | WARN 0 | SKIP 15 | PASS 1907 ]
+# https://github.com/rstudio/plumber/issues/1004
+test.run            yes
