@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             bioconductor Bioconductor Icens 1.76.0
-revision            1
+R.setup             bioconductor Bioconductor Icens 1.80.0
+revision            0
 categories-append   bioconductor
+platforms           {darwin any}
 maintainers         nomaintainer
 license             Artistic-2
 description         NPMLE for censored and truncated data
 long_description    {*}${description}
-checksums           rmd160  5f03fca5787379076c478eda80d99c0463e5b2a4 \
-                    sha256  7f8ddee8ca6452401ef0c53184471bc16f241d05e3d6efbac2475e74fba46b99 \
-                    size    21053
+checksums           rmd160  1fa79bc16aef3929ad1a0ae67c515a7598906f87 \
+                    sha256  874a6b29f439e5670366e720677be5622c7595e7e078944227cd9d25da24b688 \
+                    size    21320
 supported_archs     noarch
-platforms           {darwin any}
 
 # https://github.com/Bioconductor/Icens/issues/2
 configure.post_args-append \
