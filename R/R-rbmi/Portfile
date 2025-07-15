@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran insightsengineering rbmi 1.4.0
-revision            1
+R.setup             cran insightsengineering rbmi 1.4.1
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -13,9 +13,9 @@ description         Reference-Based Multiple Imputation
 long_description    Implements standard and reference-based multiple imputation methods \
                     for continuous longitudinal endpoints.
 homepage            https://insightsengineering.github.io/rbmi
-checksums           rmd160  d84f7db1905b7bc3d98b9825700f7af1bf1067a3 \
-                    sha256  5792ec3621fb8e026cb44b9961077b972acbfa334df4ed6157da09f08b5363e6 \
-                    size    378834
+checksums           rmd160  1d69860411b9118727e9225fd33f802c35bb6fe2 \
+                    sha256  a823665fd2bb3840facd7d869510463448ef63ace81f8d942b2188bbbc43296f \
+                    size    379191
 supported_archs     noarch
 
 depends_lib-append  port:R-assertthat \

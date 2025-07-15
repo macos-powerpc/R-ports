@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran emeryyi gglasso 1.5.1
-revision            2
+R.setup             cran archer-yang-lab gglasso 1.6
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         Group lasso penalized learning using a unified BMD algorithm
 long_description    {*}${description}
-homepage            https://github.com/emeryyi/gglasso
-checksums           rmd160  76a59887917071853729f8b9c301d3639bed3a42 \
-                    sha256  2ee61c85b3ab5aa6f6bb4c32aaec972907f3948f64148626ae53917339745abd \
-                    size    212967
+homepage            https://github.com/archer-yang-lab/gglasso
+checksums           rmd160  f41a2ec3c4f68ebaf5ff1d564133d6c2dd9731ab \
+                    sha256  567bed6551c696fc5a04927c5d3180d9eca68a5bb00bc633bc8b2796bd5d3bec \
+                    size    143489
 
 compilers.setup     require_fortran
 
