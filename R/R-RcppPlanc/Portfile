@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran eddelbuettel RcppPlanc 2.0.12
+R.setup             cran eddelbuettel RcppPlanc 2.0.13
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,11 +11,12 @@ license             GPL-2+
 description         Parallel low-rank approximation with nonnegativity constraints
 long_description    {*}${description}
 homepage            https://github.com/welch-lab/RcppPlanc
-checksums           rmd160  ee233404f242e4f1c0a3877a2b665aa1b9bfef48 \
-                    sha256  638c2ae47708f121d642e4a239e1fb5554d35e20924b8939c8521cec17931e91 \
-                    size    1529454
+checksums           rmd160  75d25a9854fa00c2a97757e81872746d31a254fe \
+                    sha256  22a7515fdf9a1f425eb7b5e99b9dcc546498020831239652a67be2e7b29c2e91 \
+                    size    1531017
 
-# Adjust once this is merged: https://github.com/welch-lab/libplanc/pull/4
+# Deployment target is unneeded, but CRAN wants it.
+# https://github.com/welch-lab/RcppPlanc/issues/18
 patchfiles-append   patch-config.h.diff \
                     patch-tensor.hpp.diff \
                     patch-unbreak-configure.diff
@@ -27,9 +28,10 @@ depends_build-append \
                     path:bin/pkg-config:pkgconfig
 depends_lib-append  port:hdf5 \
                     port:hwloc \
+                    port:libaec \
                     path:lib/libopenblas.dylib:OpenBLAS \
                     port:R-hdf5r.Extra \
-                    port:libaec \
+                    port:R-HighFive \
                     port:R-Rcpp \
                     port:R-RcppArmadillo \
                     port:R-RcppProgress \
@@ -42,9 +44,12 @@ depends_test-append port:R-knitr \
                     port:R-testthat \
                     port:R-withr
 
-# On PowerPC:
+# FIXME: there are some overflow warnings:
+# https://github.com/welch-lab/RcppPlanc/issues/19
+
+# Tests on PowerPC, as of v. 2.0.12:
 # [ FAIL 0 | WARN 0 | SKIP 0 | PASS 104 ]
 # proc.time()
-# user  system elapsed 
-# 153.688 115.408  74.923 
+# user  system elapsed
+# 153.688 115.408  74.923
 test.run            yes
