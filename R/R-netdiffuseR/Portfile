@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github USCCANA netdiffuseR 1.22.6 v
-revision            1
+R.setup             github USCCANA netdiffuseR 1.23.0 v
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Analysis of diffusion and contagion processes on networks
 long_description    {*}${description}
 homepage            https://USCCANA.github.io/netdiffuseR
-checksums           rmd160  765ecedce021ead31d1b2b1640a0fee36eb43ff7 \
-                    sha256  be7186832f24e4535f8984bb05b25a0dc070e569d77326eb110c8d6eafd1ccbe \
-                    size    2558927
+checksums           rmd160  79270f14b14ba691f4520eb8a94d91a21f961589 \
+                    sha256  6f9dddd4756bc30900bf918e070569ac68d5d774f61f27efa3ea557296912df7 \
+                    size    2765699
 github.tarball_from archive
 
 depends_lib-append  port:R-igraph \
