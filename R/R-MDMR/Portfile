@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran dmcartor MDMR 0.5.1
-revision            1
+R.setup             cran dmcartor MDMR 0.5.2
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             GPL-2+
 description         Multivariate Distance Matrix Regression
 long_description    {*}${description}
 homepage            https://github.com/dmcartor/MDMR
-checksums           rmd160  7d12e09bcbe5f29951266b9bd2b1ea68630f9aa1 \
-                    sha256  5d18c3379ca6e7762f218c2c9fc8c9b49aa194acce5624c3ef58cb7b683f65df \
-                    size    227815
+checksums           rmd160  361af25bb0957810613abd717c4fcdd5c7f79888 \
+                    sha256  1cfe0494cf09659b27025f796f56d46444ec56d3d323645410f5ee8f94b49aba \
+                    size    228935
 supported_archs     noarch
 
 depends_lib-append  port:R-car \
