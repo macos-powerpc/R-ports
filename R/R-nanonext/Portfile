@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github shikokuchuo nanonext 1.6.1 v
+R.setup             github shikokuchuo nanonext 1.6.2 v
 revision            0
 categories-append   devel
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             GPL-3+
 description         NNG (Nanomsg Next Gen) lightweight messaging library
 long_description    {*}${description}
 homepage            https://shikokuchuo.net/nanonext
-checksums           rmd160  ea580bd1fbcb8979464584a76beeabb5f605e4be \
-                    sha256  e4443b5e53f300062b084ee92fa6dac12062fe46a6345aa71845264991e15e52 \
-                    size    940532
+checksums           rmd160  67037c2d33276c1e94a106be4f933ccbd69082ea \
+                    sha256  0ce70f9786d6afbed98a9d5a2b8d2578a6b3a6750857479b5a2c49885bab7c72 \
+                    size    946929
 github.tarball_from archive
 
 depends_build-append \
@@ -40,6 +40,6 @@ depends_test-append port:R-later \
                     port:R-promises
 
 # There are some errors with tests:
-# Error in socket(dial = "tls+tcp://127.0.0.1:5556", tls = tls) : 
+# Error in socket(dial = "tls+tcp://127.0.0.1:5556", tls = tls) :
 # 4 | Resource busy
 test.run            yes
