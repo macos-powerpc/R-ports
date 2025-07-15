@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran eddelbuettel anytime 0.3.11
-revision            1
+R.setup             cran eddelbuettel anytime 0.3.12
+revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Anything to POSIXct or Date Converter
 long_description    {*}${description}
 homepage            http://dirk.eddelbuettel.com/code/anytime.html
-checksums           rmd160  63938b18d93ff49c8fe2c2c34d6fef3ee14ff8b2 \
-                    sha256  ff508d514ae1efd9aab9f691f19b5ac14f4829125bff5210329ea5d491296be3 \
-                    size    199021
+checksums           rmd160  16052a88b8b2b789df4506ecb67c18b89d9b056d \
+                    sha256  5d41009a91d288c9ef89b73a6a157faedd43c8a07a8234a7c7c93731ace615eb \
+                    size    201692
 
 depends_lib-append  port:R-BH \
                     port:R-Rcpp
