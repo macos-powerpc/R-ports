@@ -4,8 +4,8 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran AnderWilson bdlim 0.4.2 v
-revision            1
+R.setup             cran AnderWilson bdlim 0.5.0 v
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -13,15 +13,13 @@ license             GPL-3+
 description         Bayesian Distributed Lag Interaction Models
 long_description    {*}${description}
 homepage            https://anderwilson.github.io/bdlim
-checksums           rmd160  6e7db8c7acc7ec528d598f9f2f9978966e9b4193 \
-                    sha256  1984b945114073620bfaf768129ab263c50fa603966c87675e0aa5b0acaa0f13 \
-                    size    1414453
+checksums           rmd160  3f39f670dd89cac37c6d720e36ab8708890a08b3 \
+                    sha256  00683bcf858730c201cc526f92781b7d8dc09ef6320755a0fc7ac862125487c4 \
+                    size    1416882
 supported_archs     noarch
 
 depends_lib-append  port:R-BayesLogit \
-                    port:R-dplyr \
                     port:R-ggplot2 \
-                    port:R-LaplacesDemon \
-                    port:R-tidyr
+                    port:R-LaplacesDemon
 
 test.run            yes
