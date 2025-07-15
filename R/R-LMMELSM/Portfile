@@ -4,16 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is outdated.
-R.setup             cran stephenSRMMartin LMMELSM 0.2.0
-revision            5
+R.setup             cran stephenSRMMartin LMMELSM 0.2.1
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Latent Multivariate Mixed Effects Location Scale Models
 long_description    {*}${description}
-checksums           rmd160  b984fa7c4930320d2c53ee650373cb3f05ff2c40 \
-                    sha256  9f6aaab7b280133f7ab9a1dfdc44d00a852d813817f7762b2d90f5779d86a754 \
-                    size    618508
+homepage            https://github.com/stephenSRMMartin/LMMELSM
+checksums           rmd160  e21156db7a238b1b4c99fbaf3c3f99630f6f266e \
+                    sha256  28185e1bfa2ebc26f55039788ba10b8a9e956f6f9df575865da3b792dbe687df \
+                    size    619574
 
 depends_lib-append  port:R-BH \
                     port:R-Formula \
