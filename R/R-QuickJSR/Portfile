@@ -6,19 +6,17 @@ PortGroup           R 1.0
 
 legacysupport.newest_darwin_requires_legacy 15
 
-# !Do not update to 1.8.x until this is fixed!
-# https://github.com/andrjohns/QuickJSR/issues/88
-R.setup             cran andrjohns QuickJSR 1.7.0
-revision            2
+R.setup             cran andrjohns QuickJSR 1.8.0
+revision            0
 categories-append   devel
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Interface for the QuickJS light-weight JavaScript engine
 long_description    {*}${description}
 homepage            https://github.com/andrjohns/QuickJSR
-checksums           rmd160  dc53182b0284eb6cf1bdf50d16e40f432c9270b5 \
-                    sha256  e8a99a72719a8812911c5207e6b7a483651488cc44e315af22f52c2b99d361e8 \
-                    size    659331
+checksums           rmd160  09f593b4f29754907a4722744ab0c3d305cf1386 \
+                    sha256  3ba0c4172652f53cf1be76842b2ba9cf847ac2d33c95c6a9f77e4fda218ab5f1 \
+                    size    624871
 
 # Native ppc build has been fixed in: https://github.com/andrjohns/QuickJSR/commit/07fb3893d29fa17658a8cb8b17ffd2aba4453280
 # See: https://github.com/andrjohns/QuickJSR/issues/1
@@ -29,6 +27,10 @@ if {[string match macports-gcc* ${configure.compiler}]} {
     patchfiles-append \
                     patch-libatomic.diff
 }
+
+# Provisional fix for regression in quickjs-ng 0.10.x
+# https://github.com/andrjohns/QuickJSR/issues/88
+patchfiles-append   patch-fix-type-for-is_detached.diff
 
 # https://trac.macports.org/ticket/68152
 if {${os.platform} eq "darwin" && ${os.major} < 16} {
