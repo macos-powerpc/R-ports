@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran txtplot 1.0-4
-revision            3
+R.setup             cran bbnkmp txtplot 1.0-5
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
 license             {LGPL-2 LGPL-2.1 LGPL-3}
 description         Text-based plots
 long_description    {*}${description}
-checksums           rmd160  e7bd785e4385a6862df5eca14cee04cc8f00d1f8 \
-                    sha256  44b1aa39978b996de1b86eea6f57406af4529d6e65882f5190e07844688d5903 \
-                    size    11632
+checksums           rmd160  d5ff7ecdd0c4e7fbee46dcf501790672109f488e \
+                    sha256  cebb49c9532b97ddfeef84c82445d8ca12117bf06f21060e692b8d6fd3cab205 \
+                    size    11899
 supported_archs     noarch
-platforms           {darwin any}
 
 test.run            yes
