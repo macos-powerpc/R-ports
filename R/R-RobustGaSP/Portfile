@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran mengyang RobustGaSP 0.6.6
-revision            2
+R.setup             cran mengyang RobustGaSP 0.6.8
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             {GPL-2 GPL-3}
 description         Robust Gaussian stochastic process emulation
 long_description    Robust parameter estimation and prediction \
                     of Gaussian stochastic process emulators.
-checksums           rmd160  f06c617e9b9c9cc96f649b1c7741afb93e2b6501 \
-                    sha256  d7ba431adfab6872e2390ffb42e092b9797c103935904758e212ea3c89059edd \
-                    size    266144
+checksums           rmd160  fc74d8bd2c87b1f09299e479887d223594af6757 \
+                    sha256  d49148d65713a60c65549d87cc9d3e07cdeb0f6c4fc14551c78c2809e594b062 \
+                    size    263088
 
 depends_lib-append  port:R-nloptr \
                     port:R-Rcpp \
