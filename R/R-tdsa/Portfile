@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github weehaong tdsa 1.1-0 v
-revision            2
+R.setup             github weehaong tdsa 1.1-1 v
+revision            0
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Time-Dependent Sensitivity Analysis
 long_description    {*}${description}
-checksums           rmd160  ec49f67052f795800f624ff8b23d92b2a976c110 \
-                    sha256  92a7547583e631442e2a4c56f5d7083163a27aa2b6768f8fb5c7a3a188a143b9 \
-                    size    1127499
-github.tarball_from tarball
+checksums           rmd160  a85bd5f6b8a0bfd6235ed8af43769be57d3b36b1 \
+                    sha256  e57892fcd09102b429a4491e4e354e94cf4637d4edf34855e75d02ed18b993c7 \
+                    size    1135492
+github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-deSolve \
