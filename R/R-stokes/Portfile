@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github RobinHankin stokes 1.2-1
-revision            1
+R.setup             github RobinHankin stokes 1.2-3
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,21 +12,19 @@ license             GPL-2
 description         Exterior Calculus
 long_description    Provides functionality for working with tensors, alternating forms, \
                     wedge products and related concepts from the exterior calculus.
-checksums           rmd160  9f49b60f1956720ac9af4d18cfd29b40076dbcfc \
-                    sha256  e5ea0edfdfeafc2379628b76f9b3a2d7c976fb17505dbcb751fdaa3c663f91b6 \
-                    size    106878
+checksums           rmd160  b0b5fd4c4ac2a1f8308d887fd97adc3f7e5bff1b \
+                    sha256  91fa876ab721b0c575d81d9976cf37ca7d53251d000f74a1cdb455118428be80 \
+                    size    113647
 github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-disordR \
-                    port:R-mathjaxr \
                     port:R-partitions \
                     port:R-permutations \
                     port:R-spray
 
 depends_test-append port:R-covr \
                     port:R-Deriv \
-                    port:R-emulator \
                     port:R-knitr \
                     port:R-magrittr \
                     port:R-markdown \
