@@ -3,27 +3,27 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran drkowal SeBR 1.0.0
-revision            2
+R.setup             cran drkowal SeBR 1.1.0
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Semi-parametric Bayesian regression analysis
 long_description    {*}${description}
 homepage            https://drkowal.github.io/SeBR
-checksums           rmd160  7dc4982b022bcca7633c29eb9259c918f51a95cc \
-                    sha256  975f923730bb38f2a490ea86b76bd1c23182c8fc832ec7ea70a5464bbc006076 \
-                    size    428852
+checksums           rmd160  c05e619ce7189d4622ecf1215136f17a19788b47 \
+                    sha256  e2774b9a2963e1ed5084209d21b6d8f0972a5312cc7b9aff57cb7f9e5e617026 \
+                    size    461923
 supported_archs     noarch
-platforms           {darwin any}
 
-depends_lib-append  port:R-fields \
+depends_test-append port:R-fields \
                     port:R-GpGp \
+                    port:R-knitr \
+                    port:R-plyr \
                     port:R-quantreg \
+                    port:R-rmarkdown \
                     port:R-spikeSlabGAM \
                     port:R-statmod
-
-depends_test-append port:R-knitr \
-                    port:R-rmarkdown
 
 test.run            yes
