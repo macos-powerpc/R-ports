@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github easystats datawizard 1.1.0 v
+R.setup             github easystats datawizard 1.2.0 v
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -11,14 +11,15 @@ license             MIT
 description         Easy data wrangling and statistical transformations
 long_description    {*}${description}
 homepage            https://easystats.github.io/datawizard
-checksums           rmd160  676368848015ebfff84ac2639620306198401c9b \
-                    sha256  aebe302bc78dd1efa6e9f79665b53fc3591ab98e77c0c16d58f7026e2b24bea0 \
-                    size    894003
+checksums           rmd160  2e00cdfb28ecaace3b58cece0af78fdaaa393975 \
+                    sha256  e07f678732eb5fbcf79628dd2532a58c04fbb502de76d1677abf62f936f8592f \
+                    size    895862
 github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-insight
 
+# Test dependency on R-nanoparquet is dropped.
 depends_test-append port:R-bayestestR \
                     port:R-BH \
                     port:R-brms \
@@ -38,6 +39,7 @@ depends_test-append port:R-bayestestR \
                     port:R-mediation \
                     port:R-modelbased \
                     port:R-parameters \
+                    port:R-performance \
                     port:R-poorman \
                     port:R-psych \
                     port:R-readr \
