@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             bioconductor hredestig pcaMethods 1.96.0
-revision            1
+R.setup             bioconductor hredestig pcaMethods 2.0.0
+revision            0
 categories-append   bioconductor
 maintainers         nomaintainer
 license             GPL-3+
 description         Collection of PCA methods
 long_description    {*}${description}
 homepage            https://github.com/hredestig/pcamethods
-checksums           rmd160  54a78e03edb36daade8ca1ac67d353b83e358afe \
-                    sha256  f15662bdd30fa86cde65a7a2bc17cbc271a80cca4953133d2c89867c6b0738c3 \
-                    size    608928
+checksums           rmd160  b04943db9c01b7e0dfc1db84d94488bb6f03892f \
+                    sha256  0475d7ecf7a3003884e37d8f8a94fe6aef1678a4bae870f6511f316555703f83 \
+                    size    1039215
 
 depends_lib-append  port:R-Biobase \
                     port:R-BiocGenerics \
