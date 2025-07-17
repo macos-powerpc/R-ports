@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran tswge 2.1.0
-revision            2
+R.setup             cran cran tswge 2.2.0
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         Time Series for Data Science
 long_description    {*}${description}
-checksums           rmd160  0c1f1f43903667b129408d909452fc2e963bd6d4 \
-                    sha256  7c7533b5a2dcf58d2d58458f010d2a32ca2a9953517e2470497f0b0e840581de \
-                    size    593571
+checksums           rmd160  88b2e515c9e2e5c2eedddb14167e77c7079bbc2a \
+                    sha256  bb64ad76606191a19a3508fd601d473df3c18f744e566184e3a10fa09a62500e \
+                    size    596195
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-astsa \
                     port:R-dplyr \
