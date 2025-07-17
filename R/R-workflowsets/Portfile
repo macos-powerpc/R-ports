@@ -3,26 +3,24 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-# Revert to github once updated there:
-R.setup             github tidymodels workflowsets 1.1.0 v
-revision            2
+R.setup             github tidymodels workflowsets 1.1.1 v
+revision            0
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Create a collection of tidymodels workflows
 long_description    {*}${description}
 homepage            https://workflowsets.tidymodels.org
-checksums           rmd160  b9a4ea4f587b8fcbd5fb7f2ea71a76df3bd4860e \
-                    sha256  89447b704c57ad27696ce0c83eceaa466f207b8f21129407cd68cda932f4ffc6 \
-                    size    273950
-github.tarball_from tarball
+checksums           rmd160  0eb278e6b4d06ef751c86ff5cb9122b96a74e2d9 \
+                    sha256  a789966800d88e443004695b065be41c95c7c1c011967f0176c3ac40e828bf4f \
+                    size    339348
+github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
                     port:R-dplyr \
                     port:R-generics \
                     port:R-ggplot2 \
-                    port:R-glue \
                     port:R-hardhat \
                     port:R-lifecycle \
                     port:R-parsnip \
