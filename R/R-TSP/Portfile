@@ -4,15 +4,15 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran mhahsler TSP 1.2-4
-revision            3
+R.setup             cran mhahsler TSP 1.2-5
+revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Traveling Salesperson Problem
 long_description    {*}${description}
-checksums           rmd160  8119614a99261ae28878623583657e0a83b7fc89 \
-                    sha256  30bd0bfe9a7ca3fdf4f91c131f251e2835640f7d61389b50fd5564d58657c388 \
-                    size    639259
+checksums           rmd160  918bfe7e3f318f595780c5a3574607b3ffbd8db9 \
+                    sha256  ab51ca1514d16ad488592918227f3333e9b0e7969f6d7757446b0d92f6aa4c20 \
+                    size    626125
 
 depends_lib-append  port:R-foreach
 
