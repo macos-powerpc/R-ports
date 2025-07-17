@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is outdated.
-R.setup             cran boettiger-lab sarsop 0.6.15
-revision            1
+R.setup             cran boettiger-lab sarsop 0.6.16
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         Approximate POMDP planning software
 long_description    {*}${description}
 homepage            https://github.com/boettiger-lab/sarsop
-checksums           rmd160  e4cc5815a50ab0f054f902cbf35d5a0fff9e6116 \
-                    sha256  76d7b49b127b41c278d1e5485f46667fef2ed2c9fcfe07aac6b6af46ddbe231d \
-                    size    562847
+checksums           rmd160  cc845180799406fe999c0f96a8bd157b89feb4ae \
+                    sha256  7892aa970f750c0e002e92bb0cd4d9e3209e5aab5d1f1841fb6f96d781e5a9ca \
+                    size    562756
 
 depends_lib-append  port:R-BH \
                     port:R-digest \
