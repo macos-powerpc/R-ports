@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github statnet tsna 0.3.5 v
-revision            3
+R.setup             cran statnet tsna 0.3.6 v
+revision            0
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Dynamic extensions for network objects
 long_description    {*}${description}
-checksums           rmd160  a4d4e06e9e5aaf02ac93bf251fb3dd93c6f32228 \
-                    sha256  b508373ab8072b0e9593ade7e3f3a1b4e57c6026726e67621c682c0c30c6c41b \
-                    size    1959901
-github.tarball_from tarball
+homepage            https://github.com/statnet/tsna
+checksums           rmd160  c3b20d65fba0df3ca4500ff3d0cb124efb9d7792 \
+                    sha256  c1dd9e5596f42ba742a40ec8fff8d820d9c75674c1976401aee18356a2109074 \
+                    size    2442855
 supported_archs     noarch
 
 depends_lib-append  port:R-network \
