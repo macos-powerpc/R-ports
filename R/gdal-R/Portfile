@@ -12,9 +12,9 @@ legacysupport.newest_darwin_requires_legacy 16
 
 set realname        gdal
 name                ${realname}-R
-version             3.11.2
+version             3.11.3
 revision            0
-categories          gis R science
+categories          R gis science
 license             MIT BSD
 maintainers         {@barracuda156 macos-powerpc.org:barracuda}
 description         GDAL – Geospatial Data Abstraction Library
@@ -23,9 +23,9 @@ homepage            https://www.gdal.org
 master_sites        https://download.osgeo.org/gdal/${version}
 distname            ${realname}-${version}
 use_xz              yes
-checksums           rmd160  258060e69492a6a86fd001c6ecf30c72ff0432e8 \
-                    sha256  bda41b7cf12f05995a00106ae0db1b784d9c307953d81c76d351c7dbeb121aeb \
-                    size    9313648
+checksums           rmd160  582b954e5b0720330ad6534cf10be5886ca50751 \
+                    sha256  ba0807729fa681eed55bb6d5588bb9e4bde2b691c46e8d6d375ff5eaf789b16a \
+                    size    9313768
 
 # Supported PostgreSQL versions
 set pg_suffixes     {15 16 17}
