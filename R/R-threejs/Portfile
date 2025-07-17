@@ -3,21 +3,27 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github bwlewis rthreejs 0.3.3 CRAN-version-
-set R.package       threejs
-revision            3
+# GitHub version lags behind.
+R.setup             cran bwlewis threejs 0.3.4 CRAN-version-
+revision            0
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Interactive 3D scatter plots, networks and globes
 long_description    {*}${description}
-checksums           rmd160  29a8a66ba33d737a638022d8e1ce031ea9d16fa8 \
-                    sha256  1750f5112e7f94f7514735464556227a717895e677f3795d11e503555e4482a8 \
-                    size    866690
-github.tarball_from tarball
+homepage            https://github.com/bwlewis/rthreejs
+checksums           rmd160  31a7f87d6b222d6b94089d070108d35af1066b63 \
+                    sha256  1c6ba5d78702051ee1dbbcff2866074ddc8ac49f2f3abd4418e608d7c86eb484 \
+                    size    735513
 supported_archs     noarch
 
 depends_lib-append  port:R-base64enc \
                     port:R-crosstalk \
                     port:R-htmlwidgets \
                     port:R-igraph
+
+depends_test-append port:R-knitr \
+                    port:R-maps \
+                    port:R-shiny
+
+test.run            yes
