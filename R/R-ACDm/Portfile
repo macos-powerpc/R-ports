@@ -3,19 +3,21 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran markus.belfrage ACDm 1.0.4.3
-revision            2
+R.setup             cran markus.belfrage ACDm 1.1.0
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-2+
 description         Tools for autoregressive conditional duration models
 long_description    {*}${description}
-checksums           rmd160  371bbb96f178ace709f5df6ac6742430bef024ab \
-                    sha256  fb6c131a944a705140375b57bb2d5acfffcef7b23f1c6a2ea5b696af8e40093d \
-                    size    1688606
+checksums           rmd160  717bafaee13e0427d7ecad5d4a0c980fb6b8423b \
+                    sha256  63127fd425d6b12a280cc994aa3ad0838217422695b9d6e1fefbab3afc3048c5 \
+                    size    1057071
 
-depends_lib-append  port:R-dplyr \
+depends_lib-append  port:R-broom \
+                    port:R-dplyr \
                     port:R-ggplot2 \
+                    port:R-numDeriv \
                     port:R-plyr \
                     port:R-Rsolnp \
                     port:R-zoo
