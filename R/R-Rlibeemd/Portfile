@@ -3,23 +3,24 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-# CRAN version lacks OpenMP support, stay with the GitHub one.
-R.setup             github helske Rlibeemd 1.4.3 v
-revision            3
+# Revert to GitHub once updated there.
+R.setup             cran helske Rlibeemd 1.4.4 v
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Ensemble Empirical Mode Decomposition (EEMD) and its complete variant (CEEMDAN)
 long_description    {*}${description}
-checksums           rmd160  752f7ce96115220ee009d1f016ae7d447794a15f \
-                    sha256  bc16c030a27ff761011b961561c98b02e49275a6bc9af6cc131a72f936e16eba \
-                    size    101734
-github.tarball_from tarball
+checksums           rmd160  1a5a3aec8cf7f245c8407e663cc4ac725ae0cbec \
+                    sha256  be2a7ec0b7400d7707ff1581d0eb62e9f6b61cd4f4967cd24aae7cebf744e84b \
+                    size    72755
+# github.tarball_from archive
 
 depends_lib-append  port:gsl \
                     port:R-Rcpp
 
 # https://github.com/helske/Rlibeemd/issues/10
+# https://github.com/helske/Rlibeemd/commit/18e267242faa3e8f5a567d6b3240726a5f0bede7
 patchfiles          patch-openmp.diff
 
 post-patch {
