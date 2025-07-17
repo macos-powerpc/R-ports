@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is old.
-R.setup             cran jwb133 smcfcs 2.0.0
+R.setup             cran jwb133 smcfcs 2.0.1
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -14,9 +14,9 @@ description         Multiple imputation of covariates by Substantive Model \
                     Compatible Fully Conditional Specification
 long_description    {*}${description}
 homepage            https://github.com/jwb133/smcfcs
-checksums           rmd160  07586850d1aa23b1a778ffb1f87c84d1bf3d8f71 \
-                    sha256  7141c127ee2898bf7d119a9302d9e8ee16ab5e7bd40aaf3acfff1e2144754088 \
-                    size    365603
+checksums           rmd160  adb5c92bd5601f3ef95d28bcdbd567f88fe0daca \
+                    sha256  788a7a933346e65041b8a7d955ee3d1cd5396950a0bb64dbd3e987adc657a141 \
+                    size    367758
 supported_archs     noarch
 
 depends_lib-append  port:R-abind \
