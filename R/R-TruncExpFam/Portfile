@@ -4,8 +4,8 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran ocbe-uio TruncExpFam 1.2.0
-revision            1
+R.setup             cran ocbe-uio TruncExpFam 1.2.1
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -13,9 +13,9 @@ license             GPL-3
 description         Truncated Exponential Family
 long_description    {*}${description}
 homepage            https://ocbe-uio.github.io/TruncExpFam
-checksums           rmd160  14894ffbf0ee72a49da43bab4c29e58be62a6323 \
-                    sha256  c6cbf67ffbe1bf04c11973f9ff41f41f4c9a69e63a13c54d07cb18f92f011d53 \
-                    size    59708
+checksums           rmd160  4848fa9be43f62680884582e57cf8060dadf457c \
+                    sha256  d2443cd2b89a341db1f540effd8986993cd574ce2816709f84e84b84ce2adcee \
+                    size    59637
 supported_archs     noarch
 
 depends_lib-append  port:R-invgamma \
