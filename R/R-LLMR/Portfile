@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran asanaei LLMR 0.4.2
+R.setup             cran asanaei LLMR 0.5.0
 revision            0
 categories-append   llm
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             MIT
 description         Interface for Large Language Model APIs
 long_description    {*}${description} in R.
 homepage            https://github.com/asanaei/LLMR
-checksums           rmd160  c03ad48aecd5d7a8c63254b4d9ce608822fb2399 \
-                    sha256  14a724ecc0fabb71acb04a1af5c575c51770627a6438b6214e19e69df5589857 \
-                    size    956759
+checksums           rmd160  d388aff3d164c7d8ede29e89ac31e4a52cc78f7e \
+                    sha256  4f22e923e06db7b051aba8578f272fb729d4d26d3e6d587b28858842f70b5912 \
+                    size    575367
 supported_archs     noarch
 
 depends_lib-append  port:R-base64enc \
