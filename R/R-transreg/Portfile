@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran lcsb-bds transreg 1.0.3
-revision            1
+R.setup             cran lcsb-bds transreg 1.0.4
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             GPL-3
 description         Penalised regression with multiple sets of prior effects
 long_description    {*}${description}
 homepage            https://lcsb-bds.github.io/transreg
-checksums           rmd160  10673f9bf4dcb0615a9ffd94e4543ce4708fddaf \
-                    sha256  152a031d749a8d3bdc1ca426c583b5b920d7a26b042647edecd0104485f4dbf7 \
-                    size    76862
+checksums           rmd160  02f3db332e1e41dd09243fd6c57a2e1e8887519f \
+                    sha256  82f217aca3938679ec136c72ce74ac15fab6243cb54ded79c7141d488045367c \
+                    size    77200
 supported_archs     noarch
 
 depends_lib-append  port:R-glmnet \
