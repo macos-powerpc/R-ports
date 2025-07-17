@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran marcellodo StatMatch 1.4.2
-revision            1
+R.setup             cran marcellodo StatMatch 1.4.3
+revision            0
 categories-append   math
 platforms           {darwin any}
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+maintainers         nomaintainer
 license             GPL-2+
 description         Statistical matching, or data fusion
 long_description    {*}${description}
 homepage            https://github.com/marcellodo/StatMatch
-checksums           rmd160  acc5c01b981e337780c62991a608c0647b279437 \
-                    sha256  852f9f923e18f528af86858e10142800182f87c216636b4d7de4345661ee954f \
-                    size    274657
+checksums           rmd160  2c3d0d11b220769f627a370dc1cb1831e4e386e8 \
+                    sha256  66bc9b4066dd49414f090f10a7812ff7e10f69b52eef7ffb3612ed3a512dc7fe \
+                    size    286020
 supported_archs     noarch
 
 depends_lib-append  port:R-dplyr \
@@ -24,8 +24,11 @@ depends_lib-append  port:R-dplyr \
                     port:R-survey
 
 depends_test-append port:R-clue \
+                    port:R-glmnet \
                     port:R-Hmisc \
                     port:R-mipfp \
+                    port:R-naivebayes \
+                    port:R-randomForest \
                     port:R-RANN
 
 test.run            yes
