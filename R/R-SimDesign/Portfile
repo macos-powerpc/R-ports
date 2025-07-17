@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran philchalmers SimDesign 2.19.2 v
+R.setup             cran philchalmers SimDesign 2.20.0 v
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             GPL-2+
 description         Structure for organizing Monte Carlo simulation designs
 long_description    {*}${description}
 homepage            https://philchalmers.github.io/SimDesign
-checksums           rmd160  53cb722a9026b61a1d155649ee43a15402fd83cd \
-                    sha256  bc1dd75c4b9e559796dd235fc789c3cd2a116f5d62026d005d0a9347f79c95dd \
-                    size    2523725
+checksums           rmd160  d472876f7ea8fc8575c9fa148daab0f77023c10a \
+                    sha256  90ec7e190e9b2b5ee89d2b4babcff3e2a14e6819800fcdace9b7bad91510d303 \
+                    size    2447798
 # github.tarball_from archive
 supported_archs     noarch
 
@@ -43,6 +43,7 @@ depends_test-append port:R-cli \
                     port:R-rmarkdown \
                     port:R-RPushbullet \
                     port:R-shiny \
+                    port:R-snow \
                     port:R-tidyr
 
 test.run            yes
