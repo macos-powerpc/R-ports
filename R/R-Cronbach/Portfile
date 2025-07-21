@@ -3,17 +3,20 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran Cronbach 0.1
-revision            2
+R.setup             cran mtsagris Cronbach 0.3
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Cronbach’s α and various formulas for confidence intervals
 long_description    {*}${description}
-checksums           rmd160  3e3d4a8df4bf26435d822b2b901d5753229d8dd7 \
-                    sha256  cee370b53a462960caa7aed5b3fe8be52f5259f1c3b5075be435b8774fbc6abe \
-                    size    3456
+checksums           rmd160  4a1b0747dbecc87fe648baa04f5e84ef01eee281 \
+                    sha256  9182be750e79b778896085e87924ccb2f19be9bd37a4538b46e166c77e6f803c \
+                    size    4048
 supported_archs     noarch
-platforms           {darwin any}
+
+depends_lib-append  port:R-Rfast \
+                    port:R-Rfast2
 
 test.run            yes
