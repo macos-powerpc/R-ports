@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran sorenh pbkrtest 0.5.4
+R.setup             cran sorenh pbkrtest 0.5.5
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -13,9 +13,9 @@ description         Parametric Bootstrap, Kenward–Roger and Satterthwaite \
                     based methods for test in mixed models
 long_description    {*}${description}
 homepage            https://people.math.aau.dk/~sorenh/software/pbkrtest
-checksums           rmd160  cf41c54ad3e3018aee0739660318d11bd2c4b139 \
-                    sha256  cd463ff5766c340f576366e45e7a44498e3017083df9c02f332510f8a423d822 \
-                    size    75868
+checksums           rmd160  70c64cc2d1c878846ae6511e5b77315cce241f3a \
+                    sha256  d26c8ef0a6fd73bba184bde8e3434439d62539d93aef0a0b5b480a0f309bc51b \
+                    size    77353
 supported_archs     noarch
 
 depends_lib-append  port:R-broom \
