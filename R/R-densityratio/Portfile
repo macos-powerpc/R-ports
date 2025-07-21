@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran thomvolker densityratio 0.2.1 v
+R.setup             cran thomvolker densityratio 0.2.2 v
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,11 +12,12 @@ license             GPL-3+
 description         Distribution comparison through density ratio estimation
 long_description    {*}${description}
 homepage            https://thomvolker.github.io/densityratio
-checksums           rmd160  f7f047983d32d654ea6bcf2a92bfa4f4c67508f6 \
-                    sha256  a74f21a77ca16d9e9dbb1fdafaeb4fe244a2267f7c206be9598529a99878b1df \
-                    size    1260510
+checksums           rmd160  abe699c75a30a3c1f4579d7b8bfcb40bdf6c5cd6 \
+                    sha256  165e1d418b1c2a502aa06473654566892ef1eb3add00e5b9dfc054328f625953 \
+                    size    1367785
 
-depends_lib-append  port:R-ggplot2 \
+depends_lib-append  port:R-ggh4x \
+                    port:R-ggplot2 \
                     port:R-osqp \
                     port:R-pbapply \
                     port:R-Rcpp \
