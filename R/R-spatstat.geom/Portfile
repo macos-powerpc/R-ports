@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran spatstat spatstat.geom 3.4-1
+R.setup             cran spatstat spatstat.geom 3.5-0
 revision            0
 categories-append   math geometry
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             GPL-2+
 description         Geometrical functionality of the R-spatstat family
 long_description    {*}${description}
 homepage            https://github.com/spatstat/${R.package}
-checksums           rmd160  9061140ae370cd88cfe6e27594f7b7a332cf9d8c \
-                    sha256  07b30facc5235be936a1354fb2b8ed2cfcd5b6e7a73d27ffb5f781a6e83fd9a2 \
-                    size    786172
+checksums           rmd160  8a48de4306a4dc133a9e1f3fe7a606994a18e850 \
+                    sha256  81e9f701cc0aa7f263bde00c06e00ca14bc5b3ebe96162cc3186b010309a543b \
+                    size    800337
 
 depends_lib-append  port:R-deldir \
                     port:R-polyclip \
@@ -22,6 +22,7 @@ depends_lib-append  port:R-deldir \
                     port:R-spatstat.utils
 
 depends_test-append port:R-fftwtools \
+                    port:R-spatial \
                     port:R-spatstat \
                     port:R-spatstat.explore \
                     port:R-spatstat.linnet \
