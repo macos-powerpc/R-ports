@@ -3,17 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran psolymos pbapply 1.7-2 v
-revision            2
+R.setup             cran psolymos pbapply 1.7-4 v
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Adding progress bar to *apply functions
 long_description    {*}${description}
-checksums           rmd160  fba7309167b6abcd31e878c4551a07e7abcfbaab \
-                    sha256  aeed8c8c308c7e3827daf10b01b8ed4b88c1d68cea57d72d67c600c0ce0dae13 \
-                    size    23980
+homepage            https://peter.solymos.org/pbapply
+checksums           rmd160  f2f13cf00c92d1ac5c0a9a745fd16d554b832983 \
+                    sha256  6a5c7110a6bf13735374d3b2e75b32ec0e0f0276ad95e928d2c802b53ff1302d \
+                    size    23759
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_test-append port:R-future \
                     port:R-future.apply \
