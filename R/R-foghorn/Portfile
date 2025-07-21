@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github fmichonneau foghorn 1.6.0 v
-revision            1
+R.setup             github fmichonneau foghorn 1.6.1 v
+revision            0
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         R package to summarize CRAN check results in the Terminal
 long_description    {*}${description}
 homepage            https://fmichonneau.github.io/foghorn
-checksums           rmd160  4f7eb061b5e8236ec1ad5e5d898e8bef5f9086ec \
-                    sha256  3ce3336c33c5abec6ced401ccdcd26aad893bd59cc34918854f2d735275269a1 \
-                    size    50777
+checksums           rmd160  db97ddbca3e772b8ca9ebb32033f8df29a2803a0 \
+                    sha256  f45b7aaba4e7dc6702c3b2ab4805b2dc7e7cc2737b850c3613313ef36b820a3e \
+                    size    51469
 github.tarball_from archive
 supported_archs     noarch
 
