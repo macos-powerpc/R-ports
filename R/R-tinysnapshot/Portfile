@@ -4,8 +4,8 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran vincentarelbundock tinysnapshot 0.0.6
-revision            1
+R.setup             cran vincentarelbundock tinysnapshot 0.2.0
+revision            0
 categories-append   devel
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -13,9 +13,9 @@ license             GPL-3+
 description         Snapshots for unit tests using the R-tinytest framework
 long_description    {*}${description}
 homepage            https://github.com/vincentarelbundock/tinysnapshot
-checksums           rmd160  58d25636602123282df8d5ca74b2bc4d565a48d4 \
-                    sha256  1c6d45a2bee736890e48155c3566ea49824a984eb26c92709da15386ee3d4f97 \
-                    size    72375
+checksums           rmd160  d262764d2c9c9b882ae097d4e882b13853705fe9 \
+                    sha256  167bfeb4a9de0df04e74024ca152dadc7da506e4abf4efd0045fc2483d884da5 \
+                    size    84575
 supported_archs     noarch
 
 depends_lib-append  port:R-diffobj \
