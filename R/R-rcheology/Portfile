@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github hughjonesd rcheology 4.5.0.0 v
+R.setup             github hughjonesd rcheology 4.5.1.0 v
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             public-domain
 description         Data on base packages for current and previous \
                     versions of R
 long_description    {*}${description}
-checksums           rmd160  37150f81b5fd576fa58e53362b78022cba950b16 \
-                    sha256  06a719a59d6c153443bbbecc02f35523848838195258fe50ff36fa8c6f3ac4a6 \
-                    size    9974731
+checksums           rmd160  b5978388e6b115b2303ad12ce46e570805aa555a \
+                    sha256  1e0def8fb3822430be9497e05e4f494eaeddc65b42fbb2014966b08c55a69cc5 \
+                    size    10063235
 github.tarball_from archive
 supported_archs     noarch
 
