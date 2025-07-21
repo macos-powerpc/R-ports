@@ -4,8 +4,8 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is old.
-R.setup             cran rcst rim 0.7.0
-revision            1
+R.setup             cran rcst rim 0.8.1
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3+
@@ -13,9 +13,9 @@ description         Interface to Maxima, enabling symbolic computation
 long_description    ${name} is an interface to the powerful and fairly complete \
                     computer algebra system Maxima.
 homepage            https://rcst.github.io/rim
-checksums           rmd160  cf44be77903d16cb158d54063975e8c510f9a918 \
-                    sha256  2e553e8c7c6bbfc7052e244ad7c7ba4bf1ce1056b46e59aa1d8dd7cc7f307115 \
-                    size    719757
+checksums           rmd160  9b8f497b00fe61b32ff5c20c4139ec510c7f259a \
+                    sha256  6fbf18b5148984b24c32b0b0f43fb62fc0b4fd3934d45c694e7f3d75f2ebe1c1 \
+                    size    723814
 
 depends_lib-append  port:R-GlobalOptions \
                     port:R-knitr \
