@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran dagHMM 0.1.0
-revision            2
+R.setup             cran prajwal.bende dagHMM 0.1.1
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Directed Acyclic Graph HMM- with TAN-structured emissions
 long_description    {*}${description}
-checksums           rmd160  b638b8fd9748cf6f3c597eac9d48996cb9e6f606 \
-                    sha256  1156c714c37884dfeacc631bd0b14fde48cf996ebe868f75a8339c2e366584b7 \
-                    size    12099
+checksums           rmd160  1194c8a1242ac276100dcfc64668aa2cf1d71e97 \
+                    sha256  d54beb1fe6d17cfed33da524c6ac347709238c55d8436386f4116690b9115141 \
+                    size    12607
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-bnclassify \
                     port:R-bnlearn \
