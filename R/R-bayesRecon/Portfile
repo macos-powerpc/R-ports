@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran IDSIA bayesRecon 0.3.2
-revision            1
+R.setup             cran IDSIA bayesRecon 0.3.3
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -13,9 +13,9 @@ description         Provides methods for probabilistic reconciliation \
                     of hierarchical forecasts of time series
 long_description    {*}${description}
 homepage            https://github.com/IDSIA/bayesRecon
-checksums           rmd160  5fd032a2d4f00033ab7fe2a4266a552d483772a2 \
-                    sha256  d4a3d1b1758c4564054c5106d45391d9d985c3287a91dae20da7a8d94aeaa617 \
-                    size    2262909
+checksums           rmd160  fe8ce2a113d638d606cfac31a7c6c973eb650e26 \
+                    sha256  0c029b50d7842d19af2cf10202911c14c5fbd469e0546e793e05ee347825be21 \
+                    size    2286749
 supported_archs     noarch
 
 depends_lib-append  port:R-lpSolve
