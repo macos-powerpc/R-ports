@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran EuanMcGonigle CptNonPar 0.2.1
-revision            2
+R.setup             cran EuanMcGonigle CptNonPar 0.3.0
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3+
 description         Non-parametric change point detection for multivariate time series
 long_description    {*}${description}
 homepage            https://github.com/EuanMcGonigle/CptNonPar
-checksums           rmd160  ebcf868e7438e2f8d49d86d8409b6029ef60727b \
-                    sha256  7ca2a3d0f222666b294859920adee8ede14c5201e385a2a65e4dedc88beff2d6 \
-                    size    20009
+checksums           rmd160  3bef26dde8720219b90c60efcd095f998db74548 \
+                    sha256  2ca4123ff96b10ec2e73d0e781307064ee4bd9c465e8c23d8bf3744592440ddc \
+                    size    21537
 
 depends_lib-append  port:R-doParallel \
                     port:R-foreach \
