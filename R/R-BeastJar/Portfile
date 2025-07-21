@@ -4,17 +4,18 @@ PortSystem          1.0
 PortGroup           active_variants 1.1
 PortGroup           R 1.0
 
-R.setup             cran beast-dev BeastJar 1.10.6
+R.setup             cran beast-dev BeastJar 10.5.0
 revision            0
+categories-append   java
 platforms           {darwin any}
 maintainers         nomaintainer
 license             Apache-2
-description         JAR Dependency for MCMC Using BEAST
+description         JAR dependency for MCMC using BEAST
 long_description    {*}${description}
 homepage            https://github.com/beast-dev/BeastJar
-checksums           rmd160  5c69b8141609abf4b0459e8c5123e5eda7887fcb \
-                    sha256  a753f8a2dc9476d01cd96a4fac852e1b73637718a2d12d420bc82c7a6ac20115 \
-                    size    7312067
+checksums           rmd160  b722a49357776b26b8f2b6f0e34a9535d0b3aeff \
+                    sha256  dcc1bc4f8f0e1b8513435358efa61b7d11df38453a770767443447e90c9aade1 \
+                    size    8052868
 supported_archs     noarch
 
 require_active_variants R java
