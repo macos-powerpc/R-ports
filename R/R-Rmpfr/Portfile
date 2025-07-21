@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             r-forge r-project Rmpfr 1.1-0
+R.setup             r-forge r-project Rmpfr 1.1-1
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             GPL-2+
 description         Multiple precision floating-point reliable
 long_description    {*}${description}
 homepage            https://rmpfr.r-forge.r-project.org
-checksums           rmd160  1e65758e0a84a20d24ea92a361d1f0da688da580 \
-                    sha256  6c7b1f318d0216685d34ecd86e15d2565e1165c88bf427b2e3b86091981146db \
-                    size    1616950
+checksums           rmd160  6e799101b534d1f0b37b7aebabca1306b9abafcc \
+                    sha256  3aea88dfc2accfefe1e163a6dad60f93ef8e50d151c0f97ddd711d55e88e0086 \
+                    size    1617301
 
 depends_lib-append  port:gmp \
                     port:mpfr \
