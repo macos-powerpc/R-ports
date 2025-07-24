@@ -3,7 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github HenrikBengtsson parallelly 1.45.0
+# Revert to GitHub once updated there.
+R.setup             cran HenrikBengtsson parallelly 1.45.1
 revision            0
 categories-append   parallel
 maintainers         nomaintainer
@@ -11,10 +12,10 @@ license             LGPL-2.1+
 description         Enhancing the parallel package
 long_description    {*}${description}
 homepage            https://parallelly.futureverse.org
-checksums           rmd160  37abcfa82443f8db224d442f3e1dc1a52c96edd5 \
-                    sha256  23c81c7adec537f761698e811613071793b294b2952bb844d89e902bcb329cf7 \
-                    size    361789
-github.tarball_from archive
+checksums           rmd160  22dc6763453ce42450d70d7a2f27f3fede70095a \
+                    sha256  6b5d3c0487fd8f9b05d98077c08919dc282bc9046c305efe49b34487ffbf485d \
+                    size    318137
+# github.tarball_from archive
 
 depends_test-append port:R-base64enc \
                     port:R-commonmark
