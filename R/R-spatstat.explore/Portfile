@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran spatstat spatstat.explore 3.4-3
+R.setup             cran spatstat spatstat.explore 3.5-2
 revision            0
 categories-append   math
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             GPL-2+
 description         Exploratory data analysis
 long_description    {*}${description} for the R-spatstat family.
 homepage            https://github.com/spatstat/${R.package}
-checksums           rmd160  9cf7a7b78b257abad804f765db956ce58197d8fc \
-                    sha256  7564fef85f2f654bfcf5fed349d8715e0b8af49aff9219de1736771efdc64e4a \
-                    size    691951
+checksums           rmd160  3517a5f9c9967fd33a7a82d9e3c17a4e6b51717c \
+                    sha256  cd7d60f140a405d03581b771594a0885dad6862e3c26ceaa303d8e8b781ec539 \
+                    size    705838
 
 depends_lib-append  port:R-abind \
                     port:R-goftest \
