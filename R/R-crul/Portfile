@@ -3,25 +3,27 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github ropensci crul 1.5.0 v
-revision            1
+R.setup             github ropensci crul 1.6.0 v
+revision            0
 categories-append   net
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         HTTP client
 long_description    {*}${description}
-checksums           rmd160  589c34671257810923cf6c6a7114104dd91ad702 \
-                    sha256  03459d5153d48b895a2c412cda1c819822b9dd28ae09f92a0c8aef94ba737db1 \
-                    size    490365
+checksums           rmd160  53d971fdb049228fb2b5762d40ddbd687170b763 \
+                    sha256  dd558acbcee7ac6ce0af1b0b7c8f623b9a05fa130243f717ea94973336e9dd76 \
+                    size    491698
 github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-curl \
                     port:R-httpcode \
                     port:R-jsonlite \
+                    port:R-lifecycle \
                     port:R-mime \
                     port:R-R6 \
+                    port:R-rlang \
                     port:R-urltools
 
 depends_test-append port:R-fauxpas \
@@ -29,6 +31,7 @@ depends_test-append port:R-fauxpas \
                     port:R-rmarkdown \
                     port:R-roxygen2 \
                     port:R-testthat \
-                    port:R-webmockr
+                    port:R-webmockr \
+                    port:R-withr
 
 test.run            yes
