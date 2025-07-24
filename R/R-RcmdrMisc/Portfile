@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-project RcmdrMisc 2.9-1
-revision            2
+R.setup             cran r-project RcmdrMisc 2.9-2
+revision            0
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         R Commander Miscellaneous functions
 long_description    Various statistical, graphics and data-management functions \
                     used by the Rcmdr package in the R Commander GUI for R.
-checksums           rmd160  cf696cf27707c53dbc525fcb8b6bd0a0c6d6822f \
-                    sha256  ac9e9c93a531397682652a5a94d64d12a62fbd67b2630b1796658f157843174e \
-                    size    38932
+checksums           rmd160  8bc5cd72c7784cd5269d03a216a648843eea851d \
+                    sha256  c8bc33c8d01e4ba283853036524e29a493d369d7075f36ca83738d9c396e571d \
+                    size    38409
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-abind \
                     port:R-car \
