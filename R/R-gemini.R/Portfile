@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran jhk0530 gemini.R 0.15.0 v
+R.setup             cran jhk0530 gemini.R 0.16.0 v
 revision            0
 categories-append   llm
 platforms           {darwin any}
@@ -12,9 +12,10 @@ maintainers         nomaintainer
 license             MIT
 description         Interface to Google Gemini API
 long_description    {*}${description}
-checksums           rmd160  6c86fcc7bce9c2d42a4631267d5bb3b913bf4503 \
-                    sha256  bf2ca7dc55abe7c6044db866878481e862bd27abac883d17f1245911af085c0a \
-                    size    5023177
+homepage            https://github.com/jhk0530/gemini.R
+checksums           rmd160  6297f61d2c543d05a3587e1a82509ebf599d38bc \
+                    sha256  b8708598fae86930fcb7dc496bc8198ede9620b589c4af548d96e384b0f30469 \
+                    size    5026199
 # github.tarball_from archive
 supported_archs     noarch
 
