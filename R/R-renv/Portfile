@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github rstudio renv 1.1.4 v
+R.setup             github rstudio renv 1.1.5 v
 revision            0
 categories-append   devel
 platforms           {darwin any}
@@ -15,9 +15,9 @@ long_description    A dependency management toolkit for R. Using renv, \
                     save the state of these libraries to a lockfile \
                     and later restore your library as required.
 homepage            https://rstudio.github.io/renv
-checksums           rmd160  9aaf7ac79e167c10082e6ebc84ae7887548e6ef9 \
-                    sha256  df159d3effbaa8ef16a286aa6433c42e5048e8584fd68cfc0ca82e7ce9c1dc60 \
-                    size    1069805
+checksums           rmd160  7d8ba107e6a8b934b5b09e04254c74c765af071e \
+                    sha256  48ce7b3335d267fb0cd98b2d94e9e8c3c32e81feddccf7590d809072a00c44d8 \
+                    size    1071685
 github.tarball_from archive
 supported_archs     noarch
 
@@ -27,6 +27,7 @@ depends_test-append port:R-BiocManager \
                     port:R-covr \
                     port:R-cpp11 \
                     port:R-devtools \
+                    port:R-generics \
                     port:R-gitcreds \
                     port:R-jsonlite \
                     port:R-knitr \
@@ -43,7 +44,7 @@ depends_test-append port:R-BiocManager \
                     port:R-testthat \
                     port:R-uuid \
                     port:R-waldo \
-                    port:R-yaml \
-                    port:R-webfakes
+                    port:R-webfakes \
+                    port:R-yaml
 
 test.run            yes
