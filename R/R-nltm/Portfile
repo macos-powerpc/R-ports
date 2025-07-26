@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran mclements nltm 1.4.5
-revision            2
+R.setup             cran mclements nltm 1.4.6
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-2
 description         Non-Linear Transformation Models
 long_description    {*}${description}
 homepage            https://github.com/mclements/nltm
-checksums           rmd160  5816d8a02bc5a152626ca3095e27ecdeeeac7215 \
-                    sha256  587151781ca2a58b35acec1cada0fd2db811387e5420b08b5b8c87b29eb28883 \
-                    size    35692
+checksums           rmd160  ade539aed1ba812e1d95cb1a97540a6e64467e62 \
+                    sha256  d0a29a2f343d9a88ab0b5c5a1660c431bda07315b991c9e096b5e0fdf4bbc15d \
+                    size    35970
 
 test.run            yes
