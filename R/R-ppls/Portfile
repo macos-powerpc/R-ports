@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran ppls 1.6-1.1	
-revision            2
+R.setup             cran vincent.guillemot ppls 2.0.0
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Penalized Partial Least Squares
 long_description    {*}${description}
-checksums           rmd160  297fac716c49c2c7d117f1689ff8ab93e14f1a1a \
-                    sha256  bda283ddd72920ca9011b8718f6ea28d9fe2743050ae204d429f1136bc8ed9ff \
-                    size    184094
+checksums           rmd160  c972b57952203deb1e9a38dfd5f37349c189ab12 \
+                    sha256  e9cd3a5de7f3c239423e96ccccce04555b86202ac80169c5e44cf49b5f534b79 \
+                    size    292620
 supported_archs     noarch
-platforms           {darwin any}
 
 test.run            yes
