@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran ModelOriented kernelshap 0.8.0
+R.setup             cran ModelOriented kernelshap 0.9.0
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -13,14 +13,14 @@ license             GPL-2+
 description         Kernel SHAP
 long_description    {*}${description}
 homepage            https://github.com/ModelOriented/kernelshap
-checksums           rmd160  39163f4df8b969365b7e7b925c304468771256a2 \
-                    sha256  092561aa80fefa155eca3ece8375308fb9b57a6f5b1b768dc88ce82e93304ada \
-                    size    192693
+checksums           rmd160  9759537049246e632810fcdeba3f7b8e0a8674d1 \
+                    sha256  28ae213904b00ef94664c6cd7358f25f6507dc6f8ea893a0e6c8f0abe42bb329 \
+                    size    193410
 supported_archs     noarch
 
-depends_lib-append  port:R-foreach
+depends_lib-append  port:R-doFuture \
+                    port:R-foreach
 
-depends_test-append port:R-doFuture \
-                    port:R-testthat
+depends_test-append port:R-testthat
 
 test.run            yes
