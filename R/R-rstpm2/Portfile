@@ -4,21 +4,22 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is old.
-R.setup             cran mclements rstpm2 1.6.6.1
-revision            1
+R.setup             cran mclements rstpm2 1.6.9
+revision            0
 maintainers         nomaintainer
 license             {GPL-2 GPL-3}
 description         Smooth survival models, including generalized survival models
 long_description    {*}${description}
 homepage            https://github.com/mclements/rstpm2
-checksums           rmd160  c031fd494b31825e32dd25295a748597360ceb5c \
-                    sha256  5a5c3499399af231a6750285f2b54186586efcb4ffc909fa291dfe3385aabfe7 \
-                    size    3782328
+checksums           rmd160  7b3c7c1ac7bc58eeebb95a83281f21dfb1710fbc \
+                    sha256  5004802d5f5caafb390bb541a8a2e4380814a68a34f7a055df383973ada2fa9b \
+                    size    1180833
 
 depends_lib-append  port:R-bbmle \
                     port:R-BH \
                     port:R-fastGHQuad \
                     port:R-mvtnorm \
+                    port:R-numDeriv \
                     port:R-Rcpp \
                     port:R-RcppArmadillo
 
