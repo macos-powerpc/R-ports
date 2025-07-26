@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Installing from GitHub source is a mess, use CRAN.
-R.setup             cran paws-r paws.common 0.8.4 paws.common-v
+R.setup             cran paws-r paws.common 0.8.5 paws.common-v
 revision            0
 categories-append   www
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             Apache-2
 description         Paws low-level Amazon Web Services API
 long_description    {*}${description}
 homepage            https://github.com/paws-r/paws
-checksums           rmd160  b94757fd2f804a0077c388c7a134ab29b9b58f31 \
-                    sha256  f5c90dd3363e634d7bbb627e1049bb538af9001d5157f2a0245d00c56eae9a87 \
-                    size    137229
+checksums           rmd160  dfe40141c866a1eb1dbd2ad90d9c9b09e06401c6 \
+                    sha256  cf129ee3188ed308b76e46041d84376d7f2ce5f398e2c660172494276102790b \
+                    size    138876
 
 depends_lib-append  port:R-base64enc \
                     port:R-curl \
