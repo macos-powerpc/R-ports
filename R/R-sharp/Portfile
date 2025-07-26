@@ -4,19 +4,19 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran barbarabodinier sharp 1.4.6
-revision            2
+R.setup             cran barbarabodinier sharp 1.4.8
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3+
 description         Stability-enhanced approaches using resampling procedures
 long_description    {*}${description}
 homepage            https://barbarabodinier.github.io/drat
-checksums           rmd160  1d81a312001a8f3e1917abf1e93a80ef319e2c73 \
-                    sha256  f45292015fca5d620b28493c04d57dcf2a1956f841d93a3da9abd26757a14069 \
-                    size    4766564
+checksums           rmd160  582a7015d5ff0e6b91ca72417d4c41e8b20a2bc6 \
+                    sha256  091d94be3851c6671a1f5403c2d07daf1053c5a983c83a6be5e59c7c414122b3 \
+                    size    1289938
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-abind \
                     port:R-beepr \
