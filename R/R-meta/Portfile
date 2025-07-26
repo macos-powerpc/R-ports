@@ -3,34 +3,39 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran guido-s meta 8.0-1
-revision            1
+R.setup             cran guido-s meta 8.2-0
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         General package for meta-analysis
 long_description    {*}${description}
 homepage            https://github.com/guido-s/meta
-checksums           rmd160  3772dd219d44e879ef0b45b2e546441a148273a4 \
-                    sha256  4453dbb45873dac74a561be04e57fe4c40398abeb0a533e1f9ae5202d8c2a726 \
-                    size    978774
+checksums           rmd160  37949f10fdde843d2fbbecd58889192518db83f3 \
+                    sha256  6dd6917b11a1c7adfa8f6693c39f6d673acd03df13c479eb35da9e7e4f9cc6ac \
+                    size    1002291
 supported_archs     noarch
 
 depends_lib-append  port:R-CompQuadForm \
                     port:R-dplyr \
+                    port:R-ggplot2 \
                     port:R-lme4 \
                     port:R-magrittr \
                     port:R-metadat \
                     port:R-metafor \
                     port:R-purrr \
                     port:R-readr \
+                    port:R-scales \
                     port:R-stringr \
+                    port:R-tibble \
                     port:R-xml2
 
 depends_test-append port:R-BiasedUrn \
                     port:R-brglm2 \
                     port:R-estmeansd \
-                    port:R-pimeta \
+                    port:R-ggpubr \
+                    port:R-gridExtra \
+                    port:R-netmeta \
                     port:R-knitr \
                     port:R-pimeta \
                     port:R-rmarkdown \
