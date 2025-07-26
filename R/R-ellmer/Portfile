@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran tidyverse ellmer 0.2.1
+R.setup             cran tidyverse ellmer 0.3.0
 revision            0
 categories-append   llm
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             MIT
 description         Chat with Large Language Models
 long_description    {*}${description}
 homepage            https://ellmer.tidyverse.org
-checksums           rmd160  1a1de6f7b27b559795e1271f716c506fc3e93903 \
-                    sha256  2e71f0ad0548297ad14b2f0a00d8b3fcbb87eb45e3633abd2a3bbd4363b4582c \
-                    size    797230
+checksums           rmd160  7cd3fa7e61a1e7eccb40e351c71f123960b6bd55 \
+                    sha256  d59a6d096e840362f8bc7f7e67cd7df5b8263578efdc8d73f2b70ac5213f2d67 \
+                    size    1044278
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
@@ -32,9 +32,7 @@ depends_lib-append  port:R-cli \
 # FIXME: one test fails: [ FAIL 1 | WARN 0 | SKIP 74 | PASS 97 ]
 # Error in `value[[3L]](cond)`: invalid graphics state
 # Vignettes need keys for LLM models, so will not work otherwise.
-depends_test-append port:R-base64enc \
-                    port:R-bslib \
-                    port:R-connectcreds \
+depends_test-append port:R-connectcreds \
                     port:R-curl \
                     port:R-gargle \
                     port:R-gitcreds \
@@ -46,6 +44,7 @@ depends_test-append port:R-base64enc \
                     port:R-shiny \
                     port:R-shinychat \
                     port:R-testthat \
+                    port:R-vcr \
                     port:R-withr
 
 test.run            yes
