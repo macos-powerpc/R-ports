@@ -4,19 +4,19 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran friendly vcdExtra 0.8-5
-revision            2
+R.setup             cran friendly vcdExtra 0.8-6
+revision            0
 categories-append   graphics
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Extensions and additions to vcd (Visualizing Categorical Data)
 long_description    {*}${description}
 homepage            https://friendly.github.io/vcdExtra
-checksums           rmd160  0e00d8f0f6ba0126b88b6f24fea25530adce3510 \
-                    sha256  515cc1ba34c34248abec34a0394fb5cd09671e9a231e673ab1fd6013bd757726 \
-                    size    971321
+checksums           rmd160  40f8a4aeaca87518cf6f679b6435de80611470cc \
+                    sha256  51cca108752d9a944964531bfa68607f7ecc2183d9e4d5a0d0bd639bcf333a0c \
+                    size    1316165
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-ca \
                     port:R-dplyr \
@@ -28,3 +28,22 @@ depends_lib-append  port:R-ca \
                     port:R-stringr \
                     port:R-tidyr \
                     port:R-vcd
+
+depends_test-append port:R-AER \
+                    port:R-car \
+                    port:R-coin \
+                    port:R-effects \
+                    port:R-Fahrmeir \
+                    port:R-ggplot2 \
+                    port:R-gmodels \
+                    port:R-Hmisc \
+                    port:R-knitr \
+                    port:R-lmtest \
+                    port:R-plyr \
+                    port:R-rgl \
+                    port:R-rmarkdown \
+                    port:R-seriation \
+                    port:R-Sleuth2 \
+                    port:R-VGAM
+
+test.run            yes
