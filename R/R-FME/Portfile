@@ -3,17 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-forge FME 1.3.6.3
-revision            2
+R.setup             cran r-forge FME 1.3.6.4
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
-description         Flexible modelling environment for inverse modelling, sensitivity, identifiability and Monte Carlo analysis
+description         Flexible modelling environment for inverse modelling, \
+                    sensitivity, identifiability and Monte Carlo analysis
 long_description    {*}${description}
 homepage            https://fme.r-forge.r-project.org
-checksums           rmd160  9a4bc903e15eab902b39da94c3834a753c775ce9 \
-                    sha256  83c4c28ad4f9197610be40fb66f1025f438a46e4085d64b736e83a0ab71e36a1 \
-                    size    3930009
+checksums           rmd160  bff3b8e2dc9c0a22c7c5bab864d155bef1ddb8e5 \
+                    sha256  4b6d39dc8df646d862d661014ea7d71e29b768943c13a5483788a46c67baeae9 \
+                    size    3845916
 
 depends_lib-append  port:R-coda \
                     port:R-deSolve \
