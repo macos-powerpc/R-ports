@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github JoFrhwld densityarea 0.1.0 v
-revision            2
+R.setup             github JoFrhwld densityarea 0.1.1 v
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,10 +12,10 @@ license             GPL-3+
 description         Polygons of bivariate density distributions
 long_description    {*}${description}
 homepage            https://jofrhwld.github.io/densityarea
-checksums           rmd160  6b4eb0dcee8f4ffdbb2f0d50e78af7940e7585e7 \
-                    sha256  aedea4199a0919800254328ed768b552b0134d0ed5be3409ecb88fed5beb7029 \
-                    size    1682475
-github.tarball_from tarball
+checksums           rmd160  3e2ffea97c0bfaf54371d530c97f2ad5197fd32c \
+                    sha256  3a9b365992898c6a25ebb6bcb7bd42de9e95db633d6e8a7252128f4c0a9db09f \
+                    size    1698958
+github.tarball_from archive
 supported_archs     noarch
 
 # https://github.com/JoFrhwld/densityarea/issues/37
