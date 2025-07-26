@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran MaudeWagner nlive 0.7.0
-revision            1
+R.setup             cran MaudeWagner nlive 0.8.0
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -13,9 +13,9 @@ description         Automated estimation of sigmoidal and piece-wise \
                     linear mixed models
 long_description    {*}${description}
 homepage            https://github.com/MaudeWagner/nlive
-checksums           rmd160  1fd0bcd10d71e2ce56754c66943e77c833cd1af6 \
-                    sha256  45da04d8b10457fb6de74187a9fa7574327714ce0d1da6fcee9e32e547f1af70 \
-                    size    92720
+checksums           rmd160  5c5f8b23d00e25102eab5ea34629369a567aeeb1 \
+                    sha256  e6f277da6ec70ae3ad1bc7735273cd6ba73e6d6c24a122260fac0482f8e84c30 \
+                    size    92708
 supported_archs     noarch
 
 depends_lib-append  port:R-dplyr \
