@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran karline.soetaert plot3D 1.4.1
-revision            2
+R.setup             cran karline.soetaert plot3D 1.4.2
+revision            0
 categories-append   graphics
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3+
 description         Plot multi-dimensional data
 long_description    {*}${description}
-checksums           rmd160  8862ecd6495db10b04b88cb3cd75cfdd95bada95 \
-                    sha256  db6df74844dda9177f2be024762b2f0e63182916e987a09480514d078d55d1f4 \
-                    size    1933353
+checksums           rmd160  ca8bdd35bc024699859f146ec8be58fc8d01aa8e \
+                    sha256  88b17af8b0eeb16e0ab69378c800eb843f5834acc100eb79e54338b9f1a5fd75 \
+                    size    1930761
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-misc3d
 
