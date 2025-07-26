@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is outdated.
-R.setup             cran fabsig gpboost 1.5.8
+R.setup             cran fabsig gpboost 1.6.1
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -13,9 +13,9 @@ description         Combining tree-boosting with Gaussian process \
                     and mixed effects models
 long_description    {*}${description}
 homepage            https://github.com/fabsig/GPBoost
-checksums           rmd160  47e5bee11ebe6f34505b64921a121df7b7677ea2 \
-                    sha256  4dd5205c4ee3af8de5c2dbd0e81184bc298e9a971c6d7ff54c6ee44c967b0174 \
-                    size    2238199
+checksums           rmd160  86b6aecde712b693167d13df1e7868201539a929 \
+                    sha256  d67a8e76f63a64e06646bad7a7b21be1bb92ca6182799ed6c3c2f8f5fd101800 \
+                    size    2256723
 
 depends_lib-append  port:R-data.table \
                     port:R-R6 \
@@ -29,3 +29,6 @@ test.run            yes
 
 # FIXME: linking on Rosetta may fail: https://github.com/fabsig/GPBoost/issues/97
 # No problem when building natively on PowerPC.
+
+# FIXME: OpenMP detection breaks down if clang is found in the environment:
+# https://github.com/fabsig/GPBoost/issues/163
