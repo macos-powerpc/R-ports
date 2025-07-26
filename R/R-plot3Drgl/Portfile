@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran plot3Drgl 1.0.4
-revision            2
+R.setup             cran karline.soetaert plot3Drgl 1.0.5
+revision            0
 categories-append   graphics
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3+
 description         The R-rgl implementation of R-plot3D functions
 long_description    {*}${description}
-checksums           rmd160  028f217cc4df27208d303e5ad0d0111ca229503a \
-                    sha256  6d87a9a32aba3aa64f751268cabd14dbd3e0eca2bd5f0a4b11366cd1e2f51bdd \
-                    size    18140
+checksums           rmd160  3503cae127edff9a626fac296cc5510690b19d9a \
+                    sha256  75ceeaef9b369f6b7bc8408dc9dcfff232ac127591b7d729b7bb6075cd01dc74 \
+                    size    18147
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-plot3D \
                     port:R-rgl
