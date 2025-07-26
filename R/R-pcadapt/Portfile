@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran bcm-uga pcadapt 4.4.0
-revision            1
+R.setup             cran bcm-uga pcadapt 4.4.1
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Fast principal component analysis for outlier detection
 long_description    {*}${description}
 homepage            https://github.com/bcm-uga/pcadapt
-checksums           rmd160  f7b99d1d6377b0b5de71f6880cd0cc9c9b9992df \
-                    sha256  5abd61bd9fb91bb3adaf8df9cee9f1334e1a62f0cc7b6c922d8684e29b99baac \
-                    size    1716088
+checksums           rmd160  dedd9f0792ce7e0319ed7617bdb53e9d3a7c327f \
+                    sha256  035a60210cc4afdfafe62c564eb90646273faad1424214b5c6312cf3feab6e70 \
+                    size    1716075
 
 depends_lib-append  port:R-bigutilsr \
                     port:R-data.table \
