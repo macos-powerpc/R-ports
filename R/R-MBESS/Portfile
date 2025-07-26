@@ -3,19 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran kkelley MBESS 4.9.3
-revision            2
+R.setup             cran kkelley MBESS 4.9.41
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             {GPL-2 GPL-3}
 description         The MBESS R package
 long_description    {*}${description}
 homepage            https://www3.nd.edu/~kkelley/site/MBESS.html
-checksums           rmd160  33c08c75be022c28a0e8a692cc340ba1bc5541df \
-                    sha256  a359f45dc4286a757125a7eebfb8725b6f19a586b86af43061c0f2177943f016 \
-                    size    221079
+checksums           rmd160  a9aeaff8457e178feb30735204747e6099588609 \
+                    sha256  a52b4a25503ef1c11ced8b5a65b2cfb145027b69613e0c43279af282e18936c9 \
+                    size    223018
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-lavaan \
                     port:R-mnormt \
