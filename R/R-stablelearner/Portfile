@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran stablelearner 0.1-5
-revision            2
+R.setup             cran r-project stablelearner 0.1-6
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
 license             {GPL-2 GPL-3}
 description         Stability assessment of statistical learning methods
 long_description    {*}${description}
-checksums           rmd160  664c69dd6ca2647808081fc7a29a1106338f18c9 \
-                    sha256  757ab941f76f44bb9fc6df874425b4fadb19b5a35435729d0f6c180793d72e28 \
-                    size    208322
+checksums           rmd160  d861a3318b4035897851e2eccd8a7865a61ed75b \
+                    sha256  3e81384ea5d40c12e452d14ef0c4d0d21ba619e2e05deb1bd8b27337f720555d \
+                    size    226481
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-e1071 \
                     port:R-party \
