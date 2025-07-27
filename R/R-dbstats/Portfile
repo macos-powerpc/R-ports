@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran evaboj dbstats 2.0.2
+R.setup             cran evaboj dbstats 2.0.3
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2
 description         Distance-Based Statistics
 long_description    {*}${description}
-checksums           rmd160  7d3b2d44fc7b81390dd2edcd8dc3006fb5a1d218 \
-                    sha256  26b1b201ef46cc8e1eaea9447eda1e71ea99b1ab6a4aa05cd23ea344e37fd2e6 \
-                    size    71883
+checksums           rmd160  7357ef3ccee9dc75a7699bc4428634cf4bde21c8 \
+                    sha256  3afa34bf846d8136596f3152585ddc45c222e1b69961e434568042afbecb9c8c \
+                    size    71094
 supported_archs     noarch
 
 depends_lib-append  port:R-pls
