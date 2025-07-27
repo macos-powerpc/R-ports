@@ -3,22 +3,24 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github IndrajeetPatil statsExpressions 1.6.0
-revision            1
+# Revert to GitHub once updated there.
+R.setup             cran IndrajeetPatil statsExpressions 1.7.1
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
 description         Tidy dataframes and expressions with statistical details
 long_description    {*}${description}
 homepage            https://indrajeetpatil.github.io/statsExpressions
-checksums           rmd160  545c9e862d82f357695776ab74702373c4e09b29 \
-                    sha256  dab5c32cd4e85f57a94f9b736c7e7bf00f25f1e9e2b1914a9c931923e3a64005 \
-                    size    12543292
-github.tarball_from archive
+checksums           rmd160  17169684311bd867e3069c3bce343b8910c6a987 \
+                    sha256  20d8e54bc4ca8cffefe828107d709ebb4131c4a6177cbd736612d1787e5ac92d \
+                    size    3410552
+# github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-afex \
                     port:R-BayesFactor \
+                    port:R-bayestestR \
                     port:R-correlation \
                     port:R-datawizard \
                     port:R-dplyr \
@@ -31,18 +33,19 @@ depends_lib-append  port:R-afex \
                     port:R-PMCMRplus \
                     port:R-purrr \
                     port:R-rlang \
+                    port:R-rstantools \
                     port:R-tibble \
                     port:R-tidyr \
                     port:R-withr \
                     port:R-WRS2 \
                     port:R-zeallot
 
-depends_test-append port:R-bayestestR \
-                    port:R-ggplot2 \
+depends_test-append port:R-ggplot2 \
                     port:R-knitr \
                     port:R-metaBMA \
                     port:R-metafor \
                     port:R-metaplus \
+                    port:R-patrick \
                     port:R-rmarkdown \
                     port:R-rstantools \
                     port:R-testthat
