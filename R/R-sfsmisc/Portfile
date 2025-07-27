@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran mmaechler sfsmisc 1.1-20
-revision            1
+R.setup             cran mmaechler sfsmisc 1.1-21
+revision            0
 categories-append   graphics sysutils
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             GPL-2+
 description         Utilities from Seminar für Statistik, ETH Zürich
 long_description    {*}${description}
 homepage            https://github.com/mmaechler/sfsmisc
-checksums           rmd160  efb9ef72fb51110a6359760cb214084f12208127 \
-                    sha256  44630fa1821c01d57b03b4d7d4b1db32e04b83c5b931ee452b5e18cc59c3776b \
-                    size    186522
+checksums           rmd160  74ef11180044abe6df8506d968ec0bb816d9c474 \
+                    sha256  14ca739233871c00429ee991f5b6259aabc670a39b6fb4d349e009db8fc6d470 \
+                    size    187050
 supported_archs     noarch
 
 depends_test-append port:R-e1071 \
@@ -25,6 +25,7 @@ depends_test-append port:R-e1071 \
                     port:R-pastecs \
                     port:R-polycor \
                     port:R-polynom \
+                    port:R-relevance \
                     port:R-Rmpfr \
                     port:R-robustbase \
                     port:R-sm \
