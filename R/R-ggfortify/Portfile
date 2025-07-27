@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github sinhrks ggfortify 0.4.18 v
+R.setup             github sinhrks ggfortify 0.4.19 v
 revision            0
 categories-append   graphics
 platforms           {darwin any}
@@ -11,10 +11,10 @@ maintainers         nomaintainer
 license             MIT
 description         Data visualization tools for statistical analysis results
 long_description    {*}${description}
-checksums           rmd160  b672153962f6f7fdacace9393081eacca7b70757 \
-                    sha256  5bd54ded0c3f2b04a737908db83e7e7937c279747ee6cafdaa1d30cb57ff0a07 \
-                    size    91117
-github.tarball_from tarball
+checksums           rmd160  cc9bcc854c1303ad2431322efe24dced8251d930 \
+                    sha256  4ba794ef548847674e77252d292407a688b1d51112fcc2dd1d3a604f0042db52 \
+                    size    93899
+github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-dplyr \
