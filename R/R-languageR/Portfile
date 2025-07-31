@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran languageR 1.5.0
-revision            3
+R.setup             cran harald.baayen languageR 1.6
+revision            0
 categories-append   textproc
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
-license             {GPL-2 GPL-3}
+platforms           {darwin any}
+maintainers         nomaintainer
+license             GPL-2+
 description         Analyzing Linguistic Data: A Practical Introduction to Statistics
 long_description    {*}${description}
-checksums           rmd160  0f0bea39f86b7efdda8b8ab89ef46d8497e3f3f6 \
-                    sha256  d629739bbfd8846ac4db62310a99eda59a22cb0170e58bc2e1a241b244b637c6 \
-                    size    1593524
+checksums           rmd160  0f2c2a4400a365f114cd1ddc8f3598dce9e84da1 \
+                    sha256  37e3e283b7d8226a1a7ebb5cb8dde32421c516f2ed4983834950de3c3640f974 \
+                    size    1593305
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_test-append port:R-e1071 \
                     port:R-Hmisc \
