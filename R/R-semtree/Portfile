@@ -3,18 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github brandmaier semtree 0.9.20 v
-revision            2
+# Revert to GitHub once updated there.
+R.setup             cran brandmaier semtree 0.9.22 v
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Recursive partitioning for structural equation models
 long_description    {*}${description}
-checksums           rmd160  ef5bb8bf5905360d2dc1773f303c239504628e7c \
-                    sha256  04a4ad88fabea4bc29c1b6c4341ccb7e9173b09b64bfae09318dbf2af9efdac4 \
-                    size    7026393
-github.tarball_from tarball
+checksums           rmd160  571fc81866672dafc9aef0186d258ef73fa966af \
+                    sha256  7960a063badc7bb8ac27f1f61b1b40a9a59da816207ce671bda8ca9af18c0d96 \
+                    size    414008
+# github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-crayon \
