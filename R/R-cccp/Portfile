@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran bernhard cccp 0.3-1
-revision            2
+R.setup             cran bernhard cccp 0.3-2
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3+
 description         Cone-Constrained Convex Problems
 long_description    {*}${description}
-checksums           rmd160  49081e796729c883e173565f4a058b01e11aeafe \
-                    sha256  f637900a3c694d49f4e7e7758c09291677b8c2dc97b15cd01b4f5452920bba19 \
-                    size    42569
+checksums           rmd160  97aabdf7e67a8bbfdd2cb6ac83322ba1136131e8 \
+                    sha256  48543edceddc20e0194fb92b6edafb94bbf506ffd3b2334a561816f027203bc5 \
+                    size    40967
 
 depends_lib-append  port:R-Rcpp \
                     port:R-RcppArmadillo
