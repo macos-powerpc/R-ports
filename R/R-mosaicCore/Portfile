@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran ProjectMOSAIC mosaicCore 0.9.4.0
-revision            2
+R.setup             cran ProjectMOSAIC mosaicCore 0.9.5
+revision            0
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Common utilities for other MOSAIC-family packages
 long_description    {*}${description}
-checksums           rmd160  888aa29ce3a61c7c7bdba091aef03aa445f031e5 \
-                    sha256  e25605d787d274eedd3de8584283c20204bcb7b94f4a409461304ce7cd867d6c \
-                    size    51049
+checksums           rmd160  056b064736cad7c8636216e995a2d5543115df02 \
+                    sha256  ff4b503bff84a005a05d66a0d3cbb7ad8964fcbb8627cd34e32fa353462c0a48 \
+                    size    50732
 supported_archs     noarch
 
 depends_lib-append  port:R-dplyr \
