@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran duckdblabs duckplyr 1.1.0
+R.setup             cran duckdblabs duckplyr 1.1.1
 revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 platforms           {darwin any}
@@ -11,9 +11,9 @@ license             MIT
 description         Drop-in replacement for R-dplyr
 long_description    {*}${description}, powered by DuckDB for performance.
 homepage            https://duckdblabs.github.io/duckplyr
-checksums           rmd160  a78730a6865d319991be6d76636ea6d3b910d01f \
-                    sha256  de3ebbb35b2fe4044df0d99808e992544e8d365f0426946a1f8e1f54a7d588b2 \
-                    size    892351
+checksums           rmd160  ba00eff0b68cd00eb79d39f35ed6a0943a9caf9b \
+                    sha256  71c9e60f4b6e4c7ea86c6b94531019d2bc938d33ea6f7e9d74c17bf6b84e890e \
+                    size    910320
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
