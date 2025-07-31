@@ -3,33 +3,53 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran quarto-dev quarto 1.4.4
-revision            1
+R.setup             cran quarto-dev quarto 1.5.0
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
-license             GPL-2+
+license             MIT
 description         R interface to Quarto markdown publishing system
 long_description    {*}${description}
 homepage            https://quarto-dev.github.io/quarto-r
-checksums           rmd160  53165ba6b626628ff3a8d0e4ad7243e7f759824c \
-                    sha256  4e59bb919da39b07819d4a27fcda81312e037b95e669964075a74038c01e80a0 \
-                    size    84369
+checksums           rmd160  9f0322997cdc7625e1b36bb7c4032ea2a87a5a2a \
+                    sha256  1553935c956ea207c13360c36f07bfa038b37d84833eda64418b561295a9748c \
+                    size    411234
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
+                    port:R-fs \
+                    port:R-htmltools \
                     port:R-jsonlite \
                     port:R-later \
+                    port:R-lifecycle \
                     port:R-processx \
                     port:R-rlang \
                     port:R-rmarkdown \
                     port:R-rstudioapi \
+                    port:R-xfun \
                     port:R-yaml
 
-depends_test-append port:R-curl \
+depends_test-append port:R-bslib \
+                    port:R-callr \
+                    port:R-curl \
+                    port:R-dplyr \
+                    port:R-flextable \
+                    port:R-ggiraph \
+                    port:R-ggplot2 \
+                    port:R-gt \
+                    port:R-heatmaply \
+                    port:R-kableExtra \
                     port:R-knitr \
+                    port:R-palmerpenguins \
+                    port:R-patchwork \
+                    port:R-pkgload \
+                    port:R-plotly \
                     port:R-rsconnect \
                     port:R-testthat \
-                    port:R-withr \
-                    port:R-xfun
+                    port:R-thematic \
+                    port:R-tidyverse \
+                    port:R-tinytable \
+                    port:R-whoami \
+                    port:R-withr
 
 test.run            yes
