@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran ProjectMOSAIC mosaic 1.9.1
-revision            2
+R.setup             cran ProjectMOSAIC mosaic 1.9.2
+revision            0
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Project MOSAIC statistics and mathematics teaching utilities
 long_description    {*}${description}
 homepage            https://www.mosaic-web.org/mosaic
-checksums           rmd160  ca29b7c77bee6657e4da5e7b36efe7bbd700f0c4 \
-                    sha256  94d3e200ea84aeffa15eae4a2be977aef1f59df9cfeae071ef25ff58de1ff050 \
-                    size    3596154
+checksums           rmd160  fd988231a56df3badfd4f0015aa1d07c6aa24d59 \
+                    sha256  1e56bca7f331bb2a2943a09ae9f36c35f6e69d71f6741d6dd56e8d370db75e1e \
+                    size    2752274
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-dplyr \
                     port:R-ggformula \
