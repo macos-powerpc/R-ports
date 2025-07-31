@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran brry berryFunctions 1.22.5
-revision            2
+R.setup             cran brry berryFunctions 1.22.13
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Functions collection related to plotting and hydrology
 long_description    {*}${description}
 homepage            https://github.com/brry/berryFunctions
-checksums           rmd160  afa7aef2a23dc2d8b187bfe334afb7974d4b9629 \
-                    sha256  3360bdc4c73d1d7daccc134e8b959b50bf58a67bbbf3186fc5efb5a020caa1cd \
-                    size    743376
+checksums           rmd160  dcf8bdfb1c9c60084ed67a18749d7fa728b8290f \
+                    sha256  a0f1d191622cc14c68e65100ed0e276975eb9960c8cdd4db18f18d167235df51 \
+                    size    1248838
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-abind
