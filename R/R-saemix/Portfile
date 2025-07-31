@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran emmanuelle.comets saemix 3.3
-revision            2
+R.setup             cran emmanuelle.comets saemix 3.4
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Stochastic approximation expectation maximization (SAEM) algorithm
 long_description    {*}${description}
-checksums           rmd160  80cbd2e8e504e66ba1d5ce9c6fe01825a0729d1e \
-                    sha256  9b2318e82924b41454a22b1881bc60087aeaa4a283ce3667569e1aa94911a6f7 \
-                    size    2540574
+checksums           rmd160  11b916e9f4be2261bec794e887f05a6e95c05757 \
+                    sha256  069f0667b2ebb972b53dcda8182bc8de92105230803d54f0942fb6c46be6e3ab \
+                    size    2542343
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-ggplot2 \
                     port:R-gridExtra \
