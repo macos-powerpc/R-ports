@@ -3,17 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran rstudio tufte 0.13
-revision            2
+R.setup             cran rstudio tufte 0.14.0
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
 description         Tufteʼs styles for Rmarkdown documents
 long_description    {*}${description}
-checksums           rmd160  3f38bd3e12ee1542a580d30520fd511a7bece837 \
-                    sha256  f1e3578afe85a006a11709471c84f9af71b439488d74f5398336de447e130f8c \
-                    size    251676
+homepage            https://github.com/rstudio/tufte
+checksums           rmd160  b627dd5ea55d5ac4a4507e8b4ee2d9bfa4b3034d \
+                    sha256  0b69dd5408858747e5180d0c2b06164583b66ae7c69e860dfe2f77740c48774a \
+                    size    251527
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-htmltools \
                     port:R-knitr \
