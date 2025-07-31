@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran FBartos RoBMA 3.5.0
+R.setup             cran FBartos RoBMA 3.5.1
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             GPL-3
 description         Robust Bayesian Meta-Analyses
 long_description    {*}${description}
 homepage            https://fbartos.github.io/RoBMA
-checksums           rmd160  df0b695b9fef6d35cba092e226ccd1666dbc38ed \
-                    sha256  6f4a70aabde224caffaed4b87b2fd8239921e93f091b9cedeb76b798e9762d30 \
-                    size    2183132
+checksums           rmd160  9d54026d7f2d3927b1a09f15baa8cd8b281e0bc2 \
+                    sha256  93c53a27580ca5cf0df69387f5f1ef8e436f178e76b9bda78efcdda84c86305a \
+                    size    2242663
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
