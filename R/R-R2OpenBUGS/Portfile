@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran R2OpenBUGS 3.2-3.2.1
-revision            3
+R.setup             cran ligges R2OpenBUGS 3.2-4
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2
 description         Running OpenBUGS from R
 long_description    {*}${description}
-checksums           rmd160  7bc6334789d782e2c690d1f2fe7263f3c702eac3 \
-                    sha256  6c94f0dae90bab59382e35b3a02a8931f729ad927a5443bc5fb3930114560919 \
-                    size    1151785
+checksums           rmd160  6ef35352d2b13d2aa0dc0bab999f70953331ab00 \
+                    sha256  ff2b0f8e5b19131f02e4ac1063b098cd32e61877d2d8cc6ba792fcfd37775947 \
+                    size    1314737
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-coda
