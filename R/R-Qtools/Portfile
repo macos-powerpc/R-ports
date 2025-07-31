@@ -3,18 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran marco.geraci Qtools 1.5.9
-revision            2
+R.setup             cran marco.geraci Qtools 1.6.0
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Utilities for quantiles
 long_description    {*}${description}
-checksums           rmd160  c769d26e35134a9d33c576195512ce6da6d45ef8 \
-                    sha256  f1296c0a1a4b907b0659fe9f24fc2cf87a0eed0b71c93c6a92c445205d45ec98 \
-                    size    334682
+checksums           rmd160  32b7592265977f328b2bb259a289b0bb778cadde \
+                    sha256  d4bb217512ac3260e9601a4c06a37deb7a058e8fc5e6cde2ef9325818e50cd0a \
+                    size    353184
 
 depends_lib-append  port:R-conquer \
+                    port:R-corpcor \
                     port:R-glmx \
                     port:R-gtools \
                     port:R-np \
