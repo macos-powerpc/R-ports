@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran tidymodels broom 1.0.8
-revision            1
+R.setup             cran tidymodels broom 1.0.9
+revision            0
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Convert statistical objects into tidy tibbles
 long_description    {*}${description}
 homepage            https://broom.tidymodels.org
-checksums           rmd160  f1f8a5923e8633a06f5eae041d9730e5712df643 \
-                    sha256  d4698542f6cadba9adbe2013b767226af479bb8374633012316025a137408b44 \
-                    size    651236
+checksums           rmd160  b6e78b96703650969ed7f7d3bee1ac0daf1f27d3 \
+                    sha256  c39a9bcbce010615d8a2285360bf158def2d9ffda46f7415d12409bf899b6e66 \
+                    size    651399
 supported_archs     noarch
 
 depends_lib-append  port:R-backports \
