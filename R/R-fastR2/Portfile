@@ -3,18 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github rpruim fastR2 1.2.4 v
-revision            2
+# Revert to GitHub once updated there.
+R.setup             cran rpruim fastR2 1.2.5 v
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Foundations and Applications of Statistics Using R (2nd Ed.)
 long_description    {*}${description}
 homepage            https://rpruim.github.io/fastR2
-checksums           rmd160  bf2ff7105c734ff96e200628e929c75f58baa2e6 \
-                    sha256  cd7a81a0fc2d79f88bf51e88b9812b1ddde67edc0faeabff7bcc45e9f5154aaf \
-                    size    7027626
-github.tarball_from tarball
+checksums           rmd160  de010a42f8b0ee3cd46663023538195b6ca92f88 \
+                    sha256  bac050333e392b36081a3d213c19dc2148e46b9407b75f9e710def55c208cce7 \
+                    size    831596
+# github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-dplyr \
