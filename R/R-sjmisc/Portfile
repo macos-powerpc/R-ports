@@ -4,18 +4,18 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is outdated.
-R.setup             cran strengejacke sjmisc 2.8.10
-revision            1
+R.setup             cran strengejacke sjmisc 2.8.11
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
 description         Data and variable transformation functions
 long_description    {*}${description}
 homepage            https://strengejacke.github.io/sjmisc
-checksums           rmd160  c567d0db039f6fc9a904612e10e198a5c03b8041 \
-                    sha256  2d64ab3551e6ac5993ade0dd269619063018decaa2fd34d56a2541209052c58b \
-                    size    222151
+checksums           rmd160  b3bf2cb18104bb04cc748ec45c2b1512447060b2 \
+                    sha256  8ed1d6a2fb1555d62a8135465b2af0dbf2ea343010b4eafe817121cbb172152c \
+                    size    219057
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-datawizard \
                     port:R-dplyr \
