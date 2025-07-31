@@ -3,21 +3,23 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran privefl bigutilsr 0.3.4
-revision            3
+R.setup             cran privefl bigutilsr 0.3.11
+revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Utility functions for large-scale data
 long_description    {*}${description}
 homepage            https://privefl.github.io/bigutilsr
-checksums           rmd160  602bfcd5bdf949e2792268b0cc86af5af37db26b \
-                    sha256  b44b458f4b540deff5af1f956d1dbd138f4fc138cd2d77e35e69d873c406d024 \
-                    size    916088
+checksums           rmd160  b01237b965a9e1c7c7ada667621d11f3d894dd47 \
+                    sha256  3cc7f2c390bbc498a0a156be2595d54a940d1685f1437603378b2b1d58433ef2 \
+                    size    922787
 
 depends_lib-append  port:R-bigassertr \
                     port:R-bigparallelr \
                     port:R-nabor \
                     port:R-Rcpp \
+                    port:R-RcppArmadillo \
+                    port:R-RcppEigen \
                     port:R-robustbase \
                     port:R-RSpectra
 
