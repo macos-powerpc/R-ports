@@ -4,8 +4,8 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran jepusto clubSandwich 0.5.11
-revision            1
+R.setup             cran jepusto clubSandwich 0.6.1
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -13,9 +13,9 @@ license             GPL-3
 description         Cluster-robust (sandwich) variance estimators with small-sample corrections
 long_description    {*}${description}
 homepage            https://jepusto.github.io/clubSandwich
-checksums           rmd160  c2e242fb8b6489aa7ffc763130c4d85ba166d7da \
-                    sha256  b87dbefe852f3d5a30b4a4a472cd413bd514df3e3aa62384f08010c10df231f9 \
-                    size    346830
+checksums           rmd160  452c54df8d5c34a21123bf1d400923a87f41f883 \
+                    sha256  66ace7618bb9c2293c143a728f602fc782a989db52439ae794ddc33b2cc25f78 \
+                    size    365820
 supported_archs     noarch
 
 depends_lib-append  port:R-lifecycle \
@@ -24,6 +24,8 @@ depends_lib-append  port:R-lifecycle \
 depends_test-append port:R-AER \
                     port:R-carData \
                     port:R-covr \
+                    port:R-estimatr \
+                    port:R-fixest \
                     port:R-Formula \
                     port:R-geepack \
                     port:R-ivreg \
