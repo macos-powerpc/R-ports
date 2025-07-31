@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran aldo.gardini2 BayesLN 0.2.10
-revision            2
+R.setup             cran aldo.gardini2 BayesLN 0.2.12
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Bayesian inference for log-normal data
 long_description    {*}${description}
-checksums           rmd160  0c312865670197253abb7934f626519212d859d4 \
-                    sha256  d68e065a773de309d3eae855d5f3a6492b9c308462cf494f96b67cfc09040f5d \
-                    size    82528
+checksums           rmd160  81267099d6a7864af2f13061c1bac20968d7e89b \
+                    sha256  80c2a77c3e12b1736ffeba2837ef514f3b10bca8123e4f1326d5e7f6c18958ec \
+                    size    82244
 
 depends_lib-append  port:R-coda \
                     port:R-data.table \
