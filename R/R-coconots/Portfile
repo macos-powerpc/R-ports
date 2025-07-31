@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran manuel.huth coconots 2.0.0
-revision            1
+R.setup             cran manuel.huth coconots 2.0.1
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Convolution-closed models for count time series
 long_description    {*}${description}
-checksums           rmd160  483160da8fe79c618e673aa702391baf4fd20ccb \
-                    sha256  562359cdef141120571e4d76115f95223069f0150bf470ebbcf4f6033137d2b3 \
-                    size    782557
+checksums           rmd160  e4499e8e0dc96cb9ae75529a1f9a95be56034d58 \
+                    sha256  18a4a9729aa2d8e9c4941f0cd7e0e1f2f01cd14da62f0c8c9ec8cdf6d6c01ad4 \
+                    size    785931
 
 depends_lib-append  port:R-forecast \
                     port:R-ggplot2 \
