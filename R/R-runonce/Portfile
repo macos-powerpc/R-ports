@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran privefl runonce 0.2.3
-revision            3
+R.setup             cran privefl runonce 0.3.2
+revision            0
 categories-append   devel
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
 description         Run once and save result
 long_description    {*}${description}
-checksums           rmd160  d495b2babb60eb36241947ef4a628d6637d30aa7 \
-                    sha256  d686d9735af28b987cb8858620c5194454155dae23ebc3da376bb04613ff9512 \
-                    size    5435
+checksums           rmd160  a3f002e04a8e49f2bd12ebf984fdac041d12f78d \
+                    sha256  75ba9310074e4c9c16fdd4289743fd90008c5e38c037131d33bba045410dc5c5 \
+                    size    5708
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-bigassertr \
                     port:R-urltools
