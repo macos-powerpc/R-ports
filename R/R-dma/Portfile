@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran hanas dma 1.4-0
+R.setup             cran hanas dma 1.4-1
 revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-2
 description         Dynamic Model Averaging
 long_description    {*}${description} for binary and continuous outcomes.
-checksums           rmd160  79fa4afb52090a451dc37bf12ce42e76b78f11df \
-                    sha256  251820926dad85421ed43443c71c7b309aef37da2bcb6d31fffa2b9840b67a00 \
-                    size    14322
+checksums           rmd160  2291bb7b99763c2c7420181c5dba198a3aeb945e \
+                    sha256  2c6118f429f252224ea16057d6f34e6de4e84c5fff5a712a716542a8f6e5f88a \
+                    size    14710
 supported_archs     noarch
 
 depends_test-append port:R-testthat
