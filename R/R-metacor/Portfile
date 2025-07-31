@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran ikerugr metacor 1.1.1
+R.setup             cran ikerugr metacor 1.1.2
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             MIT
 description         Meta-analysis of correlation coefficients
 long_description    Meta-analytic effect size calculation for pre-post designs \
                     with correlation imputation.
-checksums           rmd160  d2408c4f997406ecda3e33ff80cc030d6b2f502b \
-                    sha256  75dec9fc4f63856c1c24843d75a2863011360f94234a71b6d737deeeac4e4003 \
-                    size    18550
+checksums           rmd160  58f8fe7eb1dc36c7cf563e81e38d4d5ea38a2bbb \
+                    sha256  6437535e7167b9a008925e0811e6815d99354d87379b6df65290fd6364228c6a \
+                    size    18594
 supported_archs     noarch
 
 depends_lib-append  port:R-officer \
