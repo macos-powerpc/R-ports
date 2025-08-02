@@ -3,8 +3,9 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github tidymodels tidyposterior 1.0.1 v
-revision            2
+# Revert to GitHub once updated there.
+R.setup             cran tidymodels tidyposterior 1.0.2 v
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,10 +13,10 @@ license             MIT
 description         Bayesian analysis to compare models using resampling statistics
 long_description    {*}${description}
 homepage            https://tidyposterior.tidymodels.org
-checksums           rmd160  a92b199107aea227466a663ae0a320add1e948a8 \
-                    sha256  58bd6329e245cfa5bc1086a02034f9539bbacb8d574a7a543b269666c313652d \
-                    size    338689
-github.tarball_from tarball
+checksums           rmd160  cfc7d945b9c69ef46fae92af894e86d1c2c581b7 \
+                    sha256  0400b009939d2d527e1803f192d31ed8ffdbcc890a5931675359230cb873b2e1 \
+                    size    271820
+# github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-dplyr \
@@ -35,6 +36,7 @@ depends_test-append port:R-covr \
                     port:R-knitr \
                     port:R-parsnip \
                     port:R-rmarkdown \
+                    port:R-splines2 \
                     port:R-testthat \
                     port:R-yardstick
 
