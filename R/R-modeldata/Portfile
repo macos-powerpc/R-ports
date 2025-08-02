@@ -4,20 +4,21 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran tidymodels modeldata 1.4.0
-revision            1
+R.setup             cran tidymodels modeldata 1.5.0
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Data sets useful for modelling examples
 long_description    {*}${description}
 homepage            https://modeldata.tidymodels.org
-checksums           rmd160  798f74d0cb320d9cfc062d69a69ecb18e4b63fa3 \
-                    sha256  eb69b43143bf153a3170cdcc92810445a03fc94830e7d6ad521fb1e0e0de8e95 \
-                    size    5136513
+checksums           rmd160  6161b73292650da226acb12cf315637312735ce1 \
+                    sha256  abd72004512a93ce2773c0cba2d7c1c980e8e4d80a06820ede9558917a31b4ea \
+                    size    5143406
 supported_archs     noarch
 
-depends_lib-append  port:R-dplyr \
+depends_lib-append  port:R-cli \
+                    port:R-dplyr \
                     port:R-purrr \
                     port:R-rlang \
                     port:R-tibble
