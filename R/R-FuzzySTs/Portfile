@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran redina.berkachy FuzzySTs 0.3
-revision            1
+R.setup             cran redina.berkachy FuzzySTs 0.4
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Fuzzy Statistical Tools
 long_description    {*}${description}
-checksums           rmd160  bee2e47736afd414983f5977f90cdc923405b798 \
-                    sha256  5b770694b857fa7929bf2efdb2ee456608cd5034769bbf0f924e09a9129e7f05 \
-                    size    339541
+checksums           rmd160  ce2a43b5e9d3736837a8f9259a63a75995c9c1c9 \
+                    sha256  5eed2d65953b43b3705ef6d390345a92e2595a636c9f47d18510dd8856340c6a \
+                    size    353590
 supported_archs     noarch
 
 depends_lib-append  port:R-FuzzyNumbers \
