@@ -3,17 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran haghbinh Rfssa 3.1.0
-revision            2
+R.setup             cran haghbinh Rfssa 3.2.0
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-2+
 description         Functional Singular Spectrum Analysis
-long_description    Methods and tools for implementing functional singular spectrum analysis and related techniques.
+long_description    Methods and tools for implementing functional singular spectrum analysis \
+                    and related techniques.
 homepage            https://github.com/haghbinh/Rfssa
-checksums           rmd160  8b30ce46086f1e0f5cca2aea687fa816783b2d6b \
-                    sha256  b186acc6a716d355471bdfeb816ecd16eb077dc3326bb53a36f02601530adf4e \
-                    size    389133
+checksums           rmd160  6c7838c7e7de34234157bfdb2ab11c31618b73cf \
+                    sha256  cc0a94f376cb69227074bbaa9f1599fb7882d7cc216f6d54c76667fbc0f87531 \
+                    size    389895
 
 depends_lib-append  port:R-dplyr \
                     port:R-fda \
