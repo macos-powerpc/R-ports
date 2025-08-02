@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github gregorkastner stochvol 3.2.5 v
-revision            1
+R.setup             github gregorkastner stochvol 3.2.6 v
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Efficient Bayesian inference for stochastic volatility (SV) models
 long_description    {*}${description}
 homepage            https://gregorkastner.github.io/stochvol
-checksums           rmd160  6e81ab79dea68eb9a7adbc760606508e33cadb1d \
-                    sha256  60b43f4301d8c75437c1a53a5252c118cc8ac787dda7565b0e9d16c4f9fb041e \
-                    size    1135311
+checksums           rmd160  9d0bf5f50826ca9a622755774d00d6c9b7409f80 \
+                    sha256  f0687f739be66be1fa78305dcbe492a075cb26e7ba95f9943e75abe8e162706d \
+                    size    1135621
 github.tarball_from archive
 
 depends_lib-append  port:R-coda \
