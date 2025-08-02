@@ -3,15 +3,15 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran fso 2.1-2
-revision            3
+R.setup             cran droberts fso 2.1-4
+revision            0
 maintainers         nomaintainer
-license             {GPL-2 GPL-3}
+license             GPL-2+
 description         Fuzzy Set Ordination
 long_description    {*}${description}
-checksums           rmd160  e0d60632186dbcd067e3997bdeb26d1d0dafa901 \
-                    sha256  1c66472c4a830ec2d01a1003b3613fafb81cb25d1fa0ca78bcbc00390cc05b96 \
-                    size    14960
+checksums           rmd160  c519f3d966be76588df3a7fac1390f9197e45eeb \
+                    sha256  0a6f5b01b65799782f9b3dcb3d22b8828097e5420cc702f26379d0918bcd3652 \
+                    size    15035
 
 depends_lib-append  port:R-labdsv
 
