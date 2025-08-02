@@ -1,0 +1,29 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+PortGroup           R 1.0
+
+R.setup             github andrjohns boostmath 5ca8ba738c42c9ff83031682f20102360f9dbfdb
+version             1.0.2
+revision            0
+categories-append   math
+maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+license             MIT
+description         R bindings for the Boost math functions
+long_description    {*}${description}
+homepage            https://github.com/andrjohns/boostmath
+checksums           rmd160  75e504596ce1da00bffcf2a9ecab972a40ffe986 \
+                    sha256  d93b3344baf64ddd977828e99e1ae7ee772ffe298b13bd4660bd0f30fa3d16c8 \
+                    size    60414
+github.tarball_from archive
+
+depends_lib-append  port:R-BH \
+                    port:R-cpp11
+
+depends_test-append port:R-knitr \
+                    port:R-rmarkdown \
+                    port:R-tinytest
+
+# There are some errors in examples related to long double.
+# See: https://github.com/andrjohns/boostmath/issues/3
+test.run            yes
