@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran GuangchuangYu badger 0.2.4
-revision            1
+R.setup             cran GuangchuangYu badger 0.2.5
+revision            0
 categories-append   devel
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             Artistic-2
 description         Badge for R package
 long_description    {*}${description}
 homepage            https://github.com/GuangchuangYu/badger
-checksums           rmd160  78702d5c888b6cd91e3a50520268699a3a43dffd \
-                    sha256  6c26018c1576a9e7c536b07a600f7623059d219213564c561de6096a3deb81b4 \
-                    size    12717
+checksums           rmd160  b3cb5e88c1b2a049355bf05c4f15597795c81919 \
+                    sha256  24d35c81f8780da5106b9aa083abf4cb982a3458247345daa646a08a0f18a19f \
+                    size    13183
 supported_archs     noarch
 
 depends_lib-append  port:R-desc \
