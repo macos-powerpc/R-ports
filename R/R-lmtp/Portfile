@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is old.
-R.setup             cran nt-williams lmtp 1.5.2
+R.setup             cran nt-williams lmtp 1.5.3
 revision            0
 categories-append   economics
 platforms           {darwin any}
@@ -14,9 +14,9 @@ description         Non-parametric causal effects of feasible interventions \
                     based on modified treatment policies
 long_description    {*}${description}
 homepage            https://github.com/nt-williams/lmtp
-checksums           rmd160  7842823134b9558c7a4d83bda644bc5cd790ed48 \
-                    sha256  3c7cbf6776b0c11571b65183beda71260816d94c65a8897f9373d1f7720a90ae \
-                    size    684178
+checksums           rmd160  e7dbec0144f9927810babe93503f22ff38df7c13 \
+                    sha256  4026c79ee7f1c8e9d6c2eb66f763980adc321186be7f16a21d3f37da0dab9a71 \
+                    size    684569
 supported_archs     noarch
 
 depends_lib-append  port:R-checkmate \
