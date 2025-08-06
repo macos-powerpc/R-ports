@@ -4,16 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is outdated.
-R.setup             cran danheck MCMCprecision 0.4.0
-revision            2
+R.setup             cran danheck MCMCprecision 0.4.2
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Precision of discrete parameters in transdimensional MCMC
 long_description    {*}${description}
-checksums           rmd160  1fa396a9e0f43daadcc8ab17cfe465d6b4b259cc \
-                    sha256  4e419c325a9e66cab67ea2c141062791bd52a6e6308395731b5307b323641864 \
-                    size    390772
+homepage            https://github.com/danheck/MCMCprecision
+checksums           rmd160  7ae1dddfc4b74121bf888d21fab2d0c9b17c3604 \
+                    sha256  fc2109165a7f147e7d2a782774617e328282e10cf2e0a54a2ef1bf064db9fa04 \
+                    size    391200
 
 depends_lib-append  port:R-combinat \
                     port:R-Rcpp \
