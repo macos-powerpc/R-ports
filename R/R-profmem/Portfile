@@ -3,17 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github HenrikBengtsson profmem 0.6.0
-revision            3
+R.setup             github HenrikBengtsson profmem 0.7.0
+revision            0
 categories-append   devel
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
-license             {LGPL-2.1 LGPL-3}
+license             LGPL-2.1+
 description         Simple memory profiling for R
 long_description    {*}${description}
-checksums           rmd160  34e95f8b510451d4963d6e3a2e676d6fc64c33e2 \
-                    sha256  fc40277f987870bf8070d23a4e29c3fb1627362afa08c0a19279b3ea79ec64c7 \
-                    size    52572
+homepage            https://henrikbengtsson.github.io/profmem
+checksums           rmd160  7c5f0d1e1be2202584771a0002a64fe34c28b663 \
+                    sha256  782c124933df24e658bd0901198c6d38d682870a2624bd14e378764c02374052 \
+                    size    52550
 github.tarball_from archive
 supported_archs     noarch
 
