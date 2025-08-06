@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran pgnorm 2.0
-revision            3
+R.setup             cran steve.kalke pgnorm 2.0.1
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
-license             {GPL-2 GPL-3}
+license             GPL-2+
 description         p-Generalized normal distribution
 long_description    {*}${description}
-checksums           rmd160  37e61a40ac0c4151a91f7d6e8ff06df7eac85929 \
-                    sha256  a70066720dd645eaea782f9d88f9809f53232f60559d2d4c45d9aa5cf73d3fcd \
-                    size    21057
+checksums           rmd160  6edffee566b31f5e8df09b1b27125a073fa67920 \
+                    sha256  eaf5b852d6adfb4e20480f206deb8a7159a0a5c93cb4b6638eecded95b090af1 \
+                    size    16547
 supported_archs     noarch
-platforms           {darwin any}
 
 test.run            yes
