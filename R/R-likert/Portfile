@@ -3,17 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran jbryer likert 1.3.5
-revision            2
+R.setup             cran jbryer likert 1.3.5.1
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL
-description         Approach to analyzing Likert response items, with an emphasis on visualizations
-long_description    {*}${description}
-checksums           rmd160  538594ace6418a9cce6c481cc128be113c67a64f \
-                    sha256  77d0441926c114d402368ef40387250912aeda1098214da4453fdc7b74cf9130 \
-                    size    1718833
+description         Approach to analyzing Likert response items
+long_description    {*}${description}, with an emphasis on visualizations.
+homepage            https://github.com/jbryer/likert
+checksums           rmd160  53284a55d30286db061d8daba817fca3157b8ada \
+                    sha256  c99603740b4540b5138e9b491ed632a352053888ce7873c5a6df99028c25bd21 \
+                    size    1685471
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-ggplot2 \
                     port:R-gridExtra \
