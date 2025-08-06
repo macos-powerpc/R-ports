@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran fDMA 2.2.7
-revision            2
+R.setup             cran kdrachal fDMA 2.2.8
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Dynamic model averaging and dynamic model selection for continuous outcomes
 long_description    {*}${description}
-checksums           rmd160  f675e03b7bdbe7c43f8afd4a0a256102582af482 \
-                    sha256  ef814fd030a78d5bb24fc5f52990b07dbcd4223d10d7ebd7bc23f8d1ac07e108 \
-                    size    160233
+checksums           rmd160  2d9e6bcc62f01090cc46e4e4e4572fe8ba807ad2 \
+                    sha256  ecac679618ce4e6dc5f0f62f8326db944f64c2ac542eec64a5c041699b885eda \
+                    size    144996
 
 depends_lib-append  port:R-doParallel \
                     port:R-foreach \
