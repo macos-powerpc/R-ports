@@ -3,16 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran khliland MatrixCorrelation 0.10.0
-revision            3
+R.setup             cran khliland MatrixCorrelation 0.10.1
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         Matrix Correlation coefficients
 long_description    Computation and visualization of matrix correlation coefficients.
-checksums           rmd160  7c1e47e4e920fc20bb6a52da347469d669be0abe \
-                    sha256  7e3d1af2c0436b0ee1ee2b759a7d05b989ce48da43c9847b60a7489a59f043d9 \
-                    size    24496
+homepage            https://github.com/khliland/MatrixCorrelation
+checksums           rmd160  7e7a01b36f5218b152fdab959ae0587fe34afa03 \
+                    sha256  aedafd58eb6f021393191c9cb4ad919003bda0fe8e2fcd598c7753f7a747344e \
+                    size    25240
 
 depends_lib-append  port:R-plotrix \
                     port:R-pracma \
