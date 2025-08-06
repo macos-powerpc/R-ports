@@ -3,21 +3,29 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran Publish 2023.01.17
-revision            3
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
-license             {GPL-2 GPL-3}
+R.setup             cran tag Publish 2025.07.24
+revision            0
+platforms           {darwin any}
+maintainers         nomaintainer
+license             GPL-2+
 description         Format output of various routines in a suitable way \
                     for reports and publication.
 long_description    A bunch of convenience functions that transform the results of some basic statistical analyses \
                     into table format nearly ready for publication.
-checksums           rmd160  71edd37b8d40a78f178e00f6aa12035d02abfa48 \
-                    sha256  436cc2bf5cdca1b3fdf892c9d35227f01740f1a4b335ff7b42a37e12c0115953 \
-                    size    199006
+checksums           rmd160  582c3474c07fa722e7e249dea591314ad63e166c \
+                    sha256  fe141fffb13c74b4657e4e373d794862c4e598e40a5edad2ddcaf646014bc8ab \
+                    size    179336
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-data.table \
                     port:R-lava \
                     port:R-multcomp \
                     port:R-prodlim
+
+depends_test-append port:R-mitools \
+                    port:R-riskRegression \
+                    port:R-rms \
+                    port:R-smcfcs \
+                    port:R-testthat
+
+test.run            yes
