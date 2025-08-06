@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             bioconductor RforMassSpectrometry MsCoreUtils 1.16.1
-revision            1
+R.setup             bioconductor RforMassSpectrometry MsCoreUtils 1.20.0
+revision            0
 categories-append   bioconductor
 maintainers         nomaintainer
 license             Artistic-2
 description         Core utils for mass spectrometry data
 long_description    {*}${description}
 homepage            https://github.com/RforMassSpectrometry/MsCoreUtils
-checksums           rmd160  f22830c251c47efcea6c1aaaa37de0e8212de112 \
-                    sha256  ab3f627632e79c7d709ab45eb8beaac37470d6d453cc82b36789cea673034cba \
-                    size    421921
+checksums           rmd160  f3296f5718ae9f3e5b53e45c84b6e441870cd1bb \
+                    sha256  e40598d9d5cb5861f6a3dbeb9c6d6d43c5328e87df28f39082bfa257f1a39676 \
+                    size    424273
 
 depends_lib-append  port:R-clue \
                     port:R-Rcpp \
