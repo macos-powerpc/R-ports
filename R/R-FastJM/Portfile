@@ -3,19 +3,20 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran lishanpeng0913 FastJM 1.4.2
-revision            2
+R.setup             cran lishanpeng0913 FastJM 1.5.1
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3+
 description         Semi-parametric joint modeling of longitudinal and survival data
 long_description    {*}${description}
-checksums           rmd160  ed4764976059f300d207c3ee4e3a4bdabd5ab9e4 \
-                    sha256  68abbcad4d2fe2dd50beae87c2c87cdc9379b20efdb9fde01ba175be36f7b340 \
-                    size    154505
+checksums           rmd160  57c95f20136f4dfe653988f788d5c42ce83af3bb \
+                    sha256  94277908dc385c7d15106a68b40a8211f2fe4929f257c3d0522cee0c3f1e7538 \
+                    size    329801
 
 depends_lib-append  port:R-caret \
                     port:R-dplyr \
+                    port:R-magrittr \
                     port:R-Rcpp \
                     port:R-RcppEigen \
                     port:R-statmod \
