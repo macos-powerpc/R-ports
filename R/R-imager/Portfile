@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is archaic.
-R.setup             cran asgr imager 1.0.3
+R.setup             cran asgr imager 1.0.5
 revision            0
 categories-append   graphics
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             LGPL-3
 description         Image processing library based on CImg
 long_description    {*}${description}
 homepage            https://asgr.github.io/imager
-checksums           rmd160  41dc0bc20ff716160e07dc3f01cc58a188b669fe \
-                    sha256  a350b999a5fa39d7b7bb2472dfa66227b658bcb23f565ec674d7503dbf05e200 \
-                    size    4525106
+checksums           rmd160  949fb16cd0e9be0c27f6fcfcd83632f8c830eb86 \
+                    sha256  66919076fcc1211b1da4e20d934037c420c63c8a098c0b322cf3e398d3c20455 \
+                    size    4526601
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
