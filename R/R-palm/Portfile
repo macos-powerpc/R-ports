@@ -4,16 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is old.
-R.setup             cran b-steve palm 1.1.5
-revision            2
+R.setup             cran b-steve palm 1.1.6
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL
 description         Functions to fit point process models using the Palm likelihood
 long_description    {*}${description}
-checksums           rmd160  70ca36ac84d8eb6ac0eb5edf96d228c712dfb99c \
-                    sha256  857c2589b82b4cb737b51ec7cbf28d18c53e44288ec9ea379f4106b2f4461c81 \
-                    size    50824
+homepage            https://github.com/b-steve/palm
+checksums           rmd160  6a06468d2b4aab9b1c334c2bdc6b8b0281d354d7 \
+                    sha256  50018927ae8941337213485fa4143cfa808f562509379a0fd74208d32842f198 \
+                    size    51364
 
 depends_lib-append  port:R-gsl \
                     port:R-minqa \
