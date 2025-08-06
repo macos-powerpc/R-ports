@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran GPfit 1.0-8
-revision            3
+R.setup             cran hugh.chipman GPfit 1.0-9
+revision            0
 categories-append   math
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
-license             GPL-2
-description         Gaussian Processes modeling
-long_description    {*}${description}
-checksums           rmd160  d5d3232ad5eba4e6533bb6bd087cbd3967d7fd2d \
-                    sha256  7e4dfc28c49cad67afbd9c018255234c57a4baadc10a412ee660f72da28fb716 \
-                    size    23892
-supported_archs     noarch
 platforms           {darwin any}
+maintainers         nomaintainer
+license             GPL-2
+description         Gaussian Processes modelling
+long_description    {*}${description}
+checksums           rmd160  04f859e3f46711ef74ccf4f44e3f6993f31d5971 \
+                    sha256  6307704410bee389336dfead0c2f777942b35c042c0d6c6bd8cd3cff27a5683c \
+                    size    24153
+supported_archs     noarch
 
 depends_lib-append  port:R-lhs
 
