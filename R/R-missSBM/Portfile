@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran GrossSBM missSBM 1.0.4
-revision            2
+R.setup             cran GrossSBM missSBM 1.0.5
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Handling missing data in stochastic block models
 long_description    {*}${description}
 homepage            https://grosssbm.github.io/missSBM
-checksums           rmd160  727745e1cbda57ad16537692bcc58cb13a38067c \
-                    sha256  0248c90799770f1f1c54e02492533e47abaef4b89495526291add563574184bf \
-                    size    682006
+checksums           rmd160  14da26b56405435dc0ce6d14b1adb7a7bb57b841 \
+                    sha256  411d2424e23f2aff7b32a3d4190a2ce9f92774487b1121a6409e0e97f362954e \
+                    size    735657
 
 depends_lib-append  port:R-future.apply \
                     port:R-ggplot2 \
