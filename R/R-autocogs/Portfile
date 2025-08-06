@@ -3,18 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran schloerke autocogs 0.1.4
-revision            3
+R.setup             cran schloerke autocogs 0.1.5
+revision            0
 categories-append   math
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+platforms           {darwin any}
+maintainers         nomaintainer
 license             MIT
 description         Automatic Cognostic Summaries
 long_description    {*}${description}
-checksums           rmd160  dded7f25975f61ffae2ed353a0ba739b2607eaf2 \
-                    sha256  1d7e4d253f0019950a0f9751d6e8afbde68457a032a82979ea476a0f54a2476c \
-                    size    755383
+homepage            https://github.com/schloerke/autocogs
+checksums           rmd160  92c050d7afd75e206a7ebaf7665e335ce8b2edb2 \
+                    sha256  d00f7e50108a6be0b5cba8b4c2f725360ec7525b9b2bfd855d5c2070bb114b2b \
+                    size    756630
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-broom \
                     port:R-checkmate \
