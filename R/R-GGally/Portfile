@@ -7,7 +7,7 @@ PortGroup           R 1.0
 R.setup             github ggobi ggally 2.3.0 v
 # CRAN uses this name:
 set R.package       GGally
-revision            0
+revision            1
 categories-append   graphics
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -15,10 +15,10 @@ license             GPL-2+
 description         Extension to R-ggplot2
 long_description    {*}${description}
 homepage            https://ggobi.github.io/ggally
-checksums           rmd160  c7deaca8a031f158da4ead1386546dc192bfef03 \
-                    sha256  52be2f2f9c040b61bc0343ddfcefe861bd59c6d9cdf51bedbdf19242ada8ae10 \
-                    size    3270217
-github.tarball_from tarball
+checksums           rmd160  0e4f93f7b85c825eb556d6edd27857e46860b020 \
+                    sha256  7f8b8d7535c07e4516c2043e92076152415cc2a4e9f11efd23df4d0cf284ce55 \
+                    size    3269617
+github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-dplyr \
@@ -31,5 +31,6 @@ depends_lib-append  port:R-dplyr \
                     port:R-progress \
                     port:R-RColorBrewer \
                     port:R-rlang \
+                    port:R-S7 \
                     port:R-scales \
                     port:R-tidyr
