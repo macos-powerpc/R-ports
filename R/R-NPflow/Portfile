@@ -20,7 +20,6 @@ if {${os.platform} eq "darwin" && ${configure.cxx_stdlib} eq "libc++"} {
     incr revision
 }
 
-# R-S7 undeclared but needed: https://github.com/sistm/NPflow/issues/25
 depends_lib-append  port:R-ellipse \
                     port:R-fastcluster \
                     port:R-GGally \
@@ -29,7 +28,6 @@ depends_lib-append  port:R-ellipse \
                     port:R-Rcpp \
                     port:R-RcppArmadillo \
                     port:R-reshape2 \
-                    port:R-S7 \
                     port:R-truncnorm
 
 compilers.setup     require_fortran
