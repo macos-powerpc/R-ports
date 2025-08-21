@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           openssl 1.0
 PortGroup           R 1.0
 
-R.setup             cran apache arrow 21.0.0
+R.setup             cran apache arrow 21.0.0.1
 revision            0
 categories-append   devel
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             Apache-2
 description         Integration with Apache Arrow
 long_description    {*}${description}
 homepage            https://arrow.apache.org/docs/r
-checksums           rmd160  1fc2c8b1f5bd41a3e9d33f5694038077188aa02c \
-                    sha256  8624506e7a3b36b02a2ba090b8ab6c38da055deb7c46e05c58bde4bffe63fcc6 \
-                    size    4207004
+checksums           rmd160  ac72259027805baa4bf7d69ee96d45aa9eb260c9 \
+                    sha256  1e6c9ca2e6466045735d270e85ac2a4912451acc4ef4d70c526cb2a7c56f1ff3 \
+                    size    4206757
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
