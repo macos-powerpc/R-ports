@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran GabrielHoffman remaCor 0.0.18
-revision            2
+R.setup             cran GabrielHoffman remaCor 0.0.20
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             Artistic-2
 description         Random effects meta-analysis for correlated test statistics
 long_description    {*}${description}
 homepage            https://diseaseneurogenomics.github.io/remaCor
-checksums           rmd160  804c5e0b4021999ccb00983789db7ed80455d743 \
-                    sha256  57e4ffba44392f300525b18db36a44437a6fafce38a06eff065f5482e4171631 \
-                    size    685295
+checksums           rmd160  0f5beaf02a49d72baff199331e06adbfcf53bc4e \
+                    sha256  8c68ae044117cc72172389ee8ece8487f4e81861e99fe458bd6218db948f539f \
+                    size    691574
 
 depends_lib-append  port:R-EnvStats \
                     port:R-ggplot2 \
