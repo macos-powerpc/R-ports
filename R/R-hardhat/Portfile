@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github tidymodels hardhat 1.4.1 v
-revision            1
+R.setup             github tidymodels hardhat 1.4.2 v
+revision            0
 categories-append   devel
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             MIT
 description         Construct modelling packages
 long_description    {*}${description}
 homepage            https://hardhat.tidymodels.org
-checksums           rmd160  55cc6b1a7878f7ee0453a86d24c879048c669b8f \
-                    sha256  9d5dc2febeb6fbfeb1f1eab845075513e58814a9e1aea761c8eedb9fd22cfef7 \
-                    size    1319139
+checksums           rmd160  d1517500dc99281869b73fea3f2ddc4e610c930d \
+                    sha256  eb41b7ca286cb6e946aa2b1862230bdd4196a9b77de92f23baa808f3df24fa1c \
+                    size    1319347
 github.tarball_from archive
 supported_archs     noarch
 
