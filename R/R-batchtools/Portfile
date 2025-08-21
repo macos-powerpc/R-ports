@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran mllg batchtools 0.9.17
-revision            3
+R.setup             cran mllg batchtools 0.9.18
+revision            0
 categories-append   parallel
 maintainers         nomaintainer
 license             LGPL-3
 description         Tools for computation on batch systems
 long_description    {*}${description}
 homepage            https://markfairbanks.github.io/tidytable
-checksums           rmd160  4e278ae6dce1d492572ecb83bdaf67deeae39ae5 \
-                    sha256  b6e1dd54e8b70c2bf38d2ad1884f6b60fc74c1100f910f46724aa723c0749be6 \
-                    size    716399
+checksums           rmd160  51b20802fb70ff729909ec2b89ffa2fdeace7120 \
+                    sha256  47ffd7be8f4e06d89207f58aa7fdf49343e2af5578b539447ca2338fc0e7f0cf \
+                    size    720338
 
 depends_lib-append  port:R-backports \
                     port:R-base64url \
@@ -30,8 +30,8 @@ depends_lib-append  port:R-backports \
                     port:R-withr
 
 depends_test-append port:R-debugme \
-                    port:R-doParallel \
                     port:R-doMPI \
+                    port:R-doParallel \
                     port:R-e1071 \
                     port:R-foreach \
                     port:R-future \
