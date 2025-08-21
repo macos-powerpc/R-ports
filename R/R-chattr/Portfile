@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran mlverse chattr 0.3.0
+R.setup             cran mlverse chattr 0.3.1
 revision            0
 categories-append   llm
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             MIT
 description         Interact with Large Language Models
 long_description    {*}${description} in RStudio.
 homepage            https://mlverse.github.io/chattr
-checksums           rmd160  f4f4357e89bd6808111ace22bb7eb64ef5207f43 \
-                    sha256  b01c1d4282d8e4d830a37fa358314e5adf2b9a760787b97923ff453d0b45ebc0 \
-                    size    2493529
+checksums           rmd160  a60e719982492cbff561bef4e82a47c8001260aa \
+                    sha256  761d2cf63e48a0f2e4135aa12a7cfebf4a8524f48731bb5e5c4a483b70372472 \
+                    size    2493533
 supported_archs     noarch
 
 depends_lib-append  port:R-bslib \
