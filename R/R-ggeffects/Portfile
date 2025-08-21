@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran strengejacke ggeffects 2.3.0 v
+R.setup             cran strengejacke ggeffects 2.3.1 v
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -13,9 +13,9 @@ description         Create tidy data frames of marginal effects \
                     for R-ggplot from model outputs
 long_description    {*}${description}
 homepage            https://strengejacke.github.io/ggeffects
-checksums           rmd160  2db49a73e3a02b3188d3580011adb12fb0ebc63f \
-                    sha256  a08ebb0c5cd3d7dc338f1ceb13d0a6664d980a58e3e0b03491ccf999361c8d8f \
-                    size    375356
+checksums           rmd160  563c3b3687f7d63deafcfa2a737b9e7156aa58f2 \
+                    sha256  a124a92f4c399fa768ee10427b1ec273bd6bd3f473a21c6a258649cae62e7d05 \
+                    size    375327
 # github.tarball_from archive
 supported_archs     noarch
 
