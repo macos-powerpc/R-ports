@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran SebKrantz dfms 0.3.0
+R.setup             cran SebKrantz dfms 0.3.1
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             GPL-3
 description         Dynamic Factor Models
 long_description    {*}${description}
 homepage            https://sebkrantz.github.io/dfms
-checksums           rmd160  b3d6bf7f8e9d07599817856fbb9cf08833b640b5 \
-                    sha256  cd174b29ae80a0b722e65445f3be7cebec7e9e57692dc30cae812ff39fb18e33 \
-                    size    1991497
+checksums           rmd160  880d42ea02edcc7229df4064a1c0739c9704b355 \
+                    sha256  7db570b3ae135acc05b9687950dadc6f1b8e85e2cb47af164792fc31d7d973ae \
+                    size    1991609
 
 depends_lib-append  port:R-collapse \
                     port:R-Rcpp \
