@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran nickpoison astsa 2.2
-revision            1
+R.setup             cran nickpoison astsa 2.3
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             GPL-3
 description         Applied Statistical Time Series Analysis
 long_description    {*}${description}
 homepage            https://dsstoffer.github.io
-checksums           rmd160  b32ffd23e249398077a5b401aa89818ba5194557 \
-                    sha256  9fe92cb642f0398404b17474bb4abf67d4f4db172b31b4089585fac8cb2549b7 \
-                    size    859712
+checksums           rmd160  352d7f9a46a2a819a82993aa3c7e641bf144d780 \
+                    sha256  037706a4abd6ec35e83e920a2d7639e1618eab737b3ad03228a77982d0774ce8 \
+                    size    869271
 supported_archs     noarch
 
 test.run            yes
