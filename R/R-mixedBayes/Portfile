@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran kunfa mixedBayes 0.1.10
+R.setup             cran kunfa mixedBayes 0.1.11
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             GPL-2
 description         Bayesian Longitudinal Regularized Quantile Mixed Model
 long_description    {*}${description}
 homepage            https://github.com/kunfa/mixedBayes
-checksums           rmd160  7c7d7a0cda6589ca8e30032e1e6d103736718428 \
-                    sha256  c834bb3e0ae0f80905598a4b05f653f90d7c6afc403151c5b768a33958611f82 \
-                    size    46370
+checksums           rmd160  407416698fd1556ea86dce46e8938c2272ae6b2c \
+                    sha256  e0393c6b543cc23b24121cd658383944db47368d333a46d5a80e98f74ec6ac85 \
+                    size    46401
 
 depends_lib-append  port:R-Rcpp \
                     port:R-RcppArmadillo
