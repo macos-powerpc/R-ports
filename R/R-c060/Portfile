@@ -4,19 +4,20 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is outdated.
-R.setup             cran fbertran c060 0.3-0
-revision            2
+R.setup             cran fbertran c060 0.3-1
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2
-description         Extended inference for lasso and elastic-net regularized Cox and generalized linear models
+description         Extended inference for lasso and elastic-net regularized Cox \
+                    and generalized linear models
 long_description    {*}${description}
 homepage            https://fbertran.github.io/c060
-checksums           rmd160  5b5672c5e69be3daca3950239ecaf88dcbcf959e \
-                    sha256  f603c5a856884e7c7e9b874e78607258bc697261172af95e1f2a195a7d4fb936 \
-                    size    78238
+checksums           rmd160  b0d1ff01dc7f3a1ca6b59b7b980f859a166f6171 \
+                    sha256  b022a77b97043a49840d7a10ca6b3ac0ea9e7c26e22f3dad21b4f011906672c3 \
+                    size    77822
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-glmnet \
                     port:R-mlegp \
