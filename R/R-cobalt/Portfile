@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran ngreifer cobalt 4.6.0
+R.setup             cran ngreifer cobalt 4.6.1
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             GPL-2+
 description         Covariate balance tables and plots
 long_description    {*}${description}
 homepage            https://ngreifer.github.io/cobalt
-checksums           rmd160  66c724a05c86fd5fedb76a61a1a06cd9131d3504 \
-                    sha256  495c0c7dbb372af3cf3d72669a4bd8e9baa96bb28f24502224521abf00ffc529 \
-                    size    2106521
+checksums           rmd160  a46e7c7c4e30bc6a7e34b44e722d49c18b7c6936 \
+                    sha256  1baa284b8c01d4062b1f565f999be3ea69ca6373717aa8860e817ad96a15e89a \
+                    size    1940970
 supported_archs     noarch
 
 depends_lib-append  port:R-chk \
