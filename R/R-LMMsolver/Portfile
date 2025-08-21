@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github Biometris LMMsolver 1.0.10 v.
+R.setup             github Biometris LMMsolver 1.0.11 v.
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ description         Linear Mixed Model Solver
 long_description    An efficient and flexible system \
                     to solve sparse mixed model equations.
 homepage            https://biometris.github.io/LMMsolver/index.html
-checksums           rmd160  550d27a1415e571765a20df3adcab0fde31f71a4 \
-                    sha256  963baa8075c3bf4f6e4e2338328d7a2f5e4e8f5561119b8eb6a0d3450de5388c \
-                    size    6534352
+checksums           rmd160  15d0fa99617640b4d9be7b9e5191f208c8c4a869 \
+                    sha256  70c0b6a16d2c6790c2da563ff1ec9af239a06fc115c2959663f43d1aa9fdf7e8 \
+                    size    6525661
 github.tarball_from archive
 
 depends_lib-append  port:R-Rcpp \
