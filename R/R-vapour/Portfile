@@ -4,18 +4,19 @@ PortSystem          1.0
 PortGroup           conflicts_build 1.0
 PortGroup           R 1.0
 
-R.setup             github hypertidy vapour 0.11.0 v
-revision            2
+# Revert to GitHub once updated there.
+R.setup             cran hypertidy vapour 0.12.0 v
+revision            0
 categories-append   gis
 maintainers         nomaintainer
 license             GPL-3
 description         Access to the Geospatial Data Abstraction Library (GDAL)
 long_description    {*}${description}
 homepage            https://hypertidy.github.io/vapour
-checksums           rmd160  8ea487b0871b87c9b16e69332e6e635fba94dfed \
-                    sha256  3b4427e16c4b955569af725784de5c4fb64513c5601f0d91699b77725ebea451 \
-                    size    2571685
-github.tarball_from archive
+checksums           rmd160  af5693a0a679e82c838d894459c99af046d8da6b \
+                    sha256  f7d641ddf39f8530f17fd0c955a0d115cf9d53451c48262431162fc80efd1b3b \
+                    size    1729130
+# github.tarball_from archive
 
 # The build may opportunistically pick wrong libs, in violation of configure args.
 conflicts_build     gdal geos
