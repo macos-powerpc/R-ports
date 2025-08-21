@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is old.
-R.setup             cran davidgohel ggiraph 0.8.13
-revision            1
+R.setup             cran davidgohel ggiraph 0.9.0
+revision            0
 categories-append   graphics
 maintainers         nomaintainer
 license             GPL-3
 description         Make R-ggplot2 graphics interactive
 long_description    {*}${description}
 homepage            https://davidgohel.github.io/ggiraph
-checksums           rmd160  885a13b26c635d33152ffd7fc676436acd02fc47 \
-                    sha256  5c9d41e75d53ebf267733febbf9b5fb0358706eb7b5f94835aae9f58d1b7f0c9 \
-                    size    393280
+checksums           rmd160  c7c2f8e72a8ae183a48fe226236148388609fd7f \
+                    sha256  57e05d8e8943c29af9a143ba88b4aca849a467efd9980693026819f0aa01eacd \
+                    size    392832
 
 depends_lib-append  port:libpng \
                     port:R-cli \
