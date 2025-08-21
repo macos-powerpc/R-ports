@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cefet-rj-dal tspredit 1.2.727
+R.setup             cran cefet-rj-dal tspredit 1.2.737
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -13,9 +13,9 @@ description         Time series prediction integrated tuning
 long_description    ${name} provides functions for defining \
                     and conducting time series prediction.
 homepage            https://cefet-rj-dal.github.io/tspredit
-checksums           rmd160  5bc9e288c7d667139bdb118fd18c1b863e57d528 \
-                    sha256  eb85a911c635199c8333e0bbc999deb900bd519e0e6791a47c0291765e88a6a1 \
-                    size    50870
+checksums           rmd160  91eade006f672eb4566fa44d2a48067a5d1f7a47 \
+                    sha256  4d364d35f1abe55db6cabe99c533e6b9066572bb8f6dc62cce5d0c91aab23823 \
+                    size    50876
 supported_archs     noarch
 
 depends_lib-append  port:R-daltoolbox \
