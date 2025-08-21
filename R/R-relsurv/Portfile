@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran damjan.manevski relsurv 2.3-2
+R.setup             cran damjan.manevski relsurv 2.3-3
 revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-2+
 description         Relative survival
 long_description    {*}${description}
-checksums           rmd160  7ff00b4b2cf6eb614e7deef0e20fe7e555596757 \
-                    sha256  3b386596b2997272f7bae0e41fe578b6e83a24b39de7f88febb2fc0f37f72a25 \
-                    size    314927
+checksums           rmd160  853b4d6f9777264e52c8aef500a5e39de1a41c2c \
+                    sha256  78adc5b6a79f2d046f23ff53b728b4990c124b43ee26f24e070e9781da80ec1e \
+                    size    317684
 
 depends_lib-append  port:R-ggplot2 \
                     port:R-pammtools \
