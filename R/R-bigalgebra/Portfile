@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran fbertran bigalgebra 1.1.2
-revision            1
+R.setup             cran fbertran bigalgebra 2.0.0
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             {Apache-2 LGPL-3}
 description         BLAS/LAPACK routines for native R matrices and big.matrix objects
 long_description    {*}${description}
 homepage            https://fbertran.github.io/bigalgebra
-checksums           rmd160  796bae600840720fcd27b7fefd086878033ffe22 \
-                    sha256  16fb417ede469df786b76aafb3d25d605460d1ded01f521bff1d66dce9b0607e \
-                    size    28327
+checksums           rmd160  afbb0603e4d477dd7bff8c053e21c49a6647213e \
+                    sha256  21a896603fb4ef97fc70bd30514a167331d3726bfa63fd0fecd478985884a91a \
+                    size    32170
 
 depends_lib-append  port:R-BH \
                     port:R-bigmemory \
