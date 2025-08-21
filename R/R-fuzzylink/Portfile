@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran joeornstein fuzzylink 0.2.1
+R.setup             cran joeornstein fuzzylink 0.2.4
 revision            0
 categories-append   textproc
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             MIT
 description         Probabilistic record linkage using pretrained text embeddings
 long_description    {*}${description}
 homepage            https://github.com/joeornstein/fuzzylink
-checksums           rmd160  0711a7e44872e0d2d025003306b6d9ee4498d377 \
-                    sha256  cff2ecdbe89bd8a45223eb22c3c123f93d7e66530b269fafe9cff4abfac679e4 \
-                    size    23755
+checksums           rmd160  99ca5ecfd72bb79d8f1bb6441cd3b7ef367e5025 \
+                    sha256  856fe561713ba9584c80f8f1e21e26e8f5d1c0151db1057b53266e76ac2c039e \
+                    size    24450
 supported_archs     noarch
 
 depends_lib-append  port:R-dplyr \
