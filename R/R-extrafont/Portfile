@@ -18,3 +18,7 @@ supported_archs     noarch
 
 depends_lib-append  port:R-extrafontdb \
                     port:R-Rttf2pt1
+
+depends_test-append port:R-fontcm
+
+test.run            yes
