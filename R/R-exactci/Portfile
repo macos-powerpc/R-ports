@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran exactci 1.4-4
-revision            2
+R.setup             cran mfay exactci 1.4-5
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
 description         Exact p-values and matching confidence intervals for simple discrete parametric cases
 long_description    {*}${description}
-checksums           rmd160  8e3b114869f65f951e18ff0130eb30474ec43b0a \
-                    sha256  d01c8cd298b96a9b07d1e671bc2844e339020717fd3012d217c05eada53e3e04 \
-                    size    142355
+checksums           rmd160  75346158602719ec0db4e80c7887115f45a1c2c5 \
+                    sha256  c907d51559acc3b8df72b2b568dcf102dac81640a20602e38453e8e75820fc14 \
+                    size    140837
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-ssanv \
                     port:R-testthat
