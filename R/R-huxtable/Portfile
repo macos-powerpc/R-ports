@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran hughjonesd huxtable 5.6.0
+R.setup             cran hughjonesd huxtable 5.7.0
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -13,9 +13,9 @@ description         An R package to create styled tables in multiple \
                     output formats, with a friendly, modern interface
 long_description    {*}${description}
 homepage            https://hughjonesd.github.io/huxtable
-checksums           rmd160  42ba9e239c83fb87666a836f3fc676add93f94de \
-                    sha256  a603ef91e66778f2064c78dbc4615b1de44abd9d658fef527e5ce3dfbf406c99 \
-                    size    1334145
+checksums           rmd160  6c0c68a9dc535a50db96886ceadd9ea03a39f735 \
+                    sha256  e3a546db301d4a562c3d882641005f09da2a5eb1f1a7a01836c47596133f69f1 \
+                    size    2266835
 supported_archs     noarch
 
 depends_lib-append  port:R-assertthat \
@@ -33,6 +33,7 @@ depends_lib-append  port:R-assertthat \
                     port:R-tidyselect \
                     port:R-xml2
 
+# Test dep on R-W3CMarkupValidator is omitted.
 depends_test-append port:R-AER \
                     port:R-bookdown \
                     port:R-broom \
@@ -46,6 +47,7 @@ depends_test-append port:R-AER \
                     port:R-ggplot2 \
                     port:R-httr \
                     port:R-knitr \
+                    port:R-lintr \
                     port:R-lme4 \
                     port:R-lmtest \
                     port:R-officer \
@@ -56,6 +58,7 @@ depends_test-append port:R-AER \
                     port:R-rmarkdown \
                     port:R-sandwich \
                     port:R-scales \
+                    port:R-styler \
                     port:R-testthat \
                     port:R-tibble \
                     port:R-tinytex
