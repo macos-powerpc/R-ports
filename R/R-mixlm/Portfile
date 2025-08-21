@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran khliland mixlm 1.4.1
-revision            1
+R.setup             cran khliland mixlm 1.4.3
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             GPL-2+
 description         Mixed model ANOVA and statistics for education
 long_description    {*}${description}
 homepage            https://github.com/khliland/mixlm
-checksums           rmd160  505253e7087bb81c44c87f647b5d5c577d7249ae \
-                    sha256  709332790c7038acfb4a8ec7cf129e637b96ab2e16490b251df436547bcec643 \
-                    size    51178
+checksums           rmd160  a5b1dd3dd5a9ac32050b915839ffbc505b6e4f46 \
+                    sha256  c811fd2db82f03500383fddd1a4092e9a2f341b8a910fc1cffefcfc7cad0362e \
+                    size    52170
 supported_archs     noarch
 
 depends_lib-append  port:R-car \
@@ -23,7 +23,6 @@ depends_lib-append  port:R-car \
                     port:R-pls \
                     port:R-pracma
 
-depends_test-append port:R-hasseDiagram \
-                    port:R-lme4
+depends_test-append port:R-lme4
 
 test.run            yes
