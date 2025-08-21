@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran pachadotdev admix 2.4.2
+R.setup             cran pachadotdev admix 2.4.3
 revision            0
 categories-append   math
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             GPL-3+
 description         Admixture (aka Contamination) models
 long_description    Package Admix for {*}${description}.
 homepage            https://github.com/XavierMilhaud/admix-Rpackage
-checksums           rmd160  8211a5ce6f0c30710da108faf8221048c9e2a5db \
-                    sha256  3868c201174171d8a63b146fc18f63f6718a54a81663fd67b0a7ab00884db8b2 \
-                    size    2247477
+checksums           rmd160  09e8e9f5c8cc42d1e79d0e302050cb7339e0ad73 \
+                    sha256  053fc9419cc16db47d5daf26e760da50866be1194fd72abc000b7dab554e96c2 \
+                    size    2250836
 
 depends_lib-append  port:R-cubature \
                     port:R-EnvStats \
