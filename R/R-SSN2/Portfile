@@ -4,18 +4,23 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Just use CRAN tarball here.
-R.setup             cran USEPA SSN2 0.2.1
-revision            1
+R.setup             cran USEPA SSN2 0.3.0
+revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Spatial modelling on stream networks
 long_description    {*}${description}
 homepage            https://usepa.github.io/SSN2
-checksums           rmd160  84e3c0ac928058e8dbd6fda80ea9f91a9423b230 \
-                    sha256  71d4d379009b6997ee41bff2ae22157a64b26321c363c1d0beebd4ba6f79f07b \
-                    size    1273664
+checksums           rmd160  36807a3949c6ab0610a7f5803b95f2a68c560710 \
+                    sha256  2c460a99cf59c52187d67f7881d7b2bd90216f4280567dd0c463cbc521d084ad \
+                    size    1169884
 
-depends_lib-append  port:R-generics \
+depends_lib-append  port:R-doParallel \
+                    port:R-filematrix \
+                    port:R-foreach \
+                    port:R-generics \
+                    port:R-iterators \
+                    port:R-itertools \
                     port:R-RSQLite \
                     port:R-sf \
                     port:R-spmodel \
