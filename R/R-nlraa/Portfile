@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran femiguez nlraa 1.9.7
-revision            2
+R.setup             cran femiguez nlraa 1.9.10
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
 description         Non-linear Regression for Agricultural Applications
 long_description    {*}${description}
 homepage            https://github.com/femiguez/nlraa
-checksums           rmd160  cbc9df3ad9aa22ffd5b8d9b3408ac68fd625637c \
-                    sha256  8c20966c0a71ee2d887cad9914ab952373079c5bd1331a70a5ec1ac96ddc8276 \
-                    size    2804800
+checksums           rmd160  70c43c7de31f34618ea486ec47a84c8af76d585f \
+                    sha256  61c7cecbf7ecfe0a66df5fbb12daf68d892ab01bd7b4da31b13ee7c50d50f5e2 \
+                    size    2825107
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-knitr
 
