@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran vda1r22 bbnet 1.2.0
+R.setup             cran vda1r22 bbnet 1.2.1
 revision            0
 categories-append   economics
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             GPL-2+
 description         Create simple predictive models on Bayesian Belief Networks
 long_description    A system to build, visualise and evaluate Bayesian belief networks.
 homepage            https://github.com/vda1r22/bbnet
-checksums           rmd160  7649439c7734414acbaf5c2e948ff00f970005a6 \
-                    sha256  01b02162cc7efd939ce83247c2f3198964b37911324e35b6d6f3e23d21061edd \
-                    size    706453
+checksums           rmd160  123e26c4f55bbeeee2dbed498ae98da17e5de761 \
+                    sha256  0ee1c8589b19614fc4fd116f668b6b2a5430951c8808b5694bc91d933470fcbd \
+                    size    707487
 supported_archs     noarch
 
 depends_lib-append  port:R-dplyr \
