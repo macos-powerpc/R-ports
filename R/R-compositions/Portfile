@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran boogaart.de compositions 2.0-8
-revision            2
+R.setup             cran boogaart.de compositions 2.0-9
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Compositional data analysis
 long_description    {*}${description}
 homepage            http://www.stat.boogaart.de/compositions
-checksums           rmd160  ba4ffc069d47e78fba2a0a0b269060dd039b7f03 \
-                    sha256  c5063488f456992b5821458b3237322addffd3451ae91f9474707886971ef290 \
-                    size    2947341
+checksums           rmd160  2ead3b1a45f1ef172080c133a47159a1863e4337 \
+                    sha256  eda5f23c1ca20d3df454881e3dc45db87a4f408be6cdef2aee51dbed0ae297ff \
+                    size    2821555
 
 depends_lib-append  port:R-bayesm \
                     port:R-robustbase \
