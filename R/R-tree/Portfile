@@ -3,15 +3,15 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-project tree 1.0-44
-revision            1
+R.setup             cran r-project tree 1.0-45
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             {GPL-2 GPL-3}
 description         Classification and regression trees
 long_description    {*}${description}
-checksums           rmd160  0a2f4f87ac4bb43a0f2118bd3f77764cd5ea1a71 \
-                    sha256  db694b5ff6843218315d4e21485d240ac510964a7acf8e684ac038cec44bf70f \
-                    size    49521
+checksums           rmd160  2e6a57fd57d478f34ad428d5221d68d8684e069d \
+                    sha256  b397f593fbd7c063bc17ca1b6601088d01297d443d865bd8ea6ff9d3641c0697 \
+                    size    49853
 
 test.run            yes
