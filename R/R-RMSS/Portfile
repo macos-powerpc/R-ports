@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran anthony.christidis RMSS 1.2.0
+R.setup             cran anthony.christidis RMSS 1.2.1
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Robust Multi-Model Subset Selection
 long_description    {*}${description}
-checksums           rmd160  0d56a6408288be97215ae3ac3bac37f770242b15 \
-                    sha256  a9ec0ba34b57a4288434570d1e0774dd1af10af598d4e6533dd0cfeb9054d6b5 \
-                    size    61542
+checksums           rmd160  3b8812092b5b0303b3c6850dc64853af8fe34057 \
+                    sha256  10aa2f61ff3266575a95712073b0907add8fb5eae4bf9533a0d80ea270296d26 \
+                    size    62403
 
 depends_lib-append  port:R-cellWise \
                     port:R-Rcpp \
