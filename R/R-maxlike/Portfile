@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran RoelandCEKindt maxlike 0.1-11
-revision            2
+R.setup             cran RoelandCEKindt maxlike 0.1-12
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3+
 description         Model species distributions by estimating the probability \
                     of occurrence using presence-only data
 long_description    {*}${description}
-checksums           rmd160  f34b8c91a0f89d52d385b5332107551bbc536464 \
-                    sha256  6dde7bb4a46d5509a1fee024c2fd1d13c82e14a80806969ec89359103ade01e9 \
-                    size    481334
+checksums           rmd160  7e1392b34a85a7effacef680005703715b7c9926 \
+                    sha256  041556f4de7b4d071cbffa20e30246ace894b4c0f7831881ae669060aef4ff19 \
+                    size    481789
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-raster
