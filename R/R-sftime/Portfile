@@ -3,22 +3,23 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-spatial sftime 0.3.0
-revision            1
+R.setup             cran r-spatial sftime 0.3.1
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             Apache
 description         Classes and methods for simple feature objects that have a time column
 long_description    {*}${description}
 homepage            https://r-spatial.github.io/sftime
-checksums           rmd160  e580714b09b993c5fc796b31912050fecf5f1f74 \
-                    sha256  adadd4d5f6ef388b7145d83896fcc020ad03475eae9d86a100d6207611ded7b7 \
-                    size    89093
+checksums           rmd160  09d46b84ee9bf415e1b96dc38d20054a25fcc78a \
+                    sha256  d1df6a2f611059e1949a3b2ef75ec5310e7cca4289dcf7af369197f4d5c68874 \
+                    size    88783
 supported_archs     noarch
 
 depends_lib-append  port:R-sf
 
-depends_test-append port:R-dplyr \
+depends_test-append port:R-cubble \
+                    port:R-dplyr \
                     port:R-ggplot2 \
                     port:R-knitr \
                     port:R-magrittr \
