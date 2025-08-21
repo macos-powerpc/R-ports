@@ -4,16 +4,16 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran gmgeorg LambertW 0.6.9-1 v
-revision            2
+R.setup             cran gmgeorg LambertW 0.6.9-2 v
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Probabilistic models to analyze and gaussianize heavy-tailed, skewed data
 long_description    {*}${description}
-checksums           rmd160  3e8c3d741f467305cdf197d46c2b0eaa82372952 \
-                    sha256  52d2b4f506f7cb111026822a645f9897a107819ba5679d8fcbf57beea1dc46a6 \
-                    size    362917
+checksums           rmd160  6d95d084b5e502be82115016ea778d46c7cbb586 \
+                    sha256  a7b33a7fe6c33c7b583c6288afca068f27fc5a28939ee3b623f4575410ef112a \
+                    size    519916
 
 depends_lib-append  port:R-ggplot2 \
                     port:R-lamW \
