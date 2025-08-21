@@ -5,17 +5,17 @@ PortGroup           openssl 1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran jeroen mongolite 3.1.2
-revision            1
+R.setup             cran jeroen mongolite 4.0.0
+revision            0
 categories-append   databases
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             Apache-2
 description         Fast and simple MongoDB client
 long_description    {*}${description} for R.
 homepage            https://jeroen.github.io/mongolite
-checksums           rmd160  fe359c17370fb26773fbb59d7d0fccf098d41d98 \
-                    sha256  f9129c00cc4c2f3a2679a64264637f880918c2035d4180a15c144bd600c26bdd \
-                    size    1014601
+checksums           rmd160  3608cdc435c37346bb6e65700e955fd801a262bc \
+                    sha256  09808c1c68ada79b75dc22e617533611ac46f602a8e2194819600ef0d07d2892 \
+                    size    1015027
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
