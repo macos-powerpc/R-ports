@@ -3,10 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-# Commit-based until the next release.
-# https://github.com/reedacartwright/ironseed/issues/2
-R.setup             github reedacartwright ironseed 21d88356c40f4a7621cada33b3d329dc0434bcd0
-version             0.1.0.9000
+R.setup             cran reedacartwright ironseed 0.2.0
 revision            0
 categories-append   devel
 maintainers         nomaintainer
@@ -14,11 +11,11 @@ license             MIT
 description         Improved Random Number Generator Seeding
 long_description    {*}${description}
 homepage            https://github.com/reedacartwright/ironseed
-checksums           rmd160  cb2d2141de082fe4673b0f8ea6aaae07b1b977aa \
-                    sha256  1f2fd5c7d28d6af30650530a9f65ce3eaed9a6da489ae8c77715174dd18d2c88 \
-                    size    53999
-github.tarball_from archive
+checksums           rmd160  6be5bd10086184656aa40d531f5033fffe30f5f0 \
+                    sha256  f59274561e6267dc0c63646b289dc7404136635c616a0d9a63a51a913bff0b47 \
+                    size    44738
 
 depends_test-append port:R-tinytest
 
 test.run            yes
+ 
