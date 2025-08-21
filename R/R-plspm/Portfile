@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran gastonstat plspm 0.5.1
+R.setup             cran gastonstat plspm 0.5.2
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             GPL-3
 description         Partial least squares path modelling
 long_description    {*}${description} (PLS-PM).
 homepage            https://github.com/gastonstat/plspm
-checksums           rmd160  0a470df085d86ee96552240b9b8b5a160e59365b \
-                    sha256  1a6b28c31d7c17a3b50cb1ae2c80513c252da17613c111a9e6a1548c4bf46b02 \
-                    size    374784
+checksums           rmd160  3c8d77c53bfbb852f61391c6d505589281c2262e \
+                    sha256  7e225876ba3fe865eef0219e84d2b73dc119bc0ef43034b46b4e946d4e74b33a \
+                    size    370762
 supported_archs     noarch
 
 depends_lib-append  port:R-amap \
