@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran zoib 1.6
-revision            2
+R.setup             cran fang.liu.131 zoib 1.6.1
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3+
 description         Bayesian inference for beta regression and zero-or-one inflated beta regression
 long_description    {*}${description}
-checksums           rmd160  c0eb3a4db0c235cd6f8258143e3f50910e0d9d4d \
-                    sha256  5274df23c6da6062a35cc1626b362d9ea5469f3331fc4effb3331a7ba594a4df \
-                    size    55249
+checksums           rmd160  7c0be54bbc315488cb902fe828f2b05c5c7b8fae \
+                    sha256  ac92fc461ebdbca8c601d45cd13e1509e4f559985573be8fa499c56a0f3bf3d8 \
+                    size    54917
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-abind \
                     port:R-coda \
