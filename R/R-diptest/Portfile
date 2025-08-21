@@ -3,15 +3,15 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran mmaechler diptest 0.77-1
-revision            2
+R.setup             cran mmaechler diptest 0.77-2
+revision            0
 maintainers         nomaintainer
 license             GPL-2+
 description         Hartigan’s dip test statistic for unimodality – corrected
 long_description    {*}${description}
 homepage            https://github.com/mmaechler/diptest
-checksums           rmd160  5d4238f1ecfb838dcd90f39e1ec7b8b1366b9541 \
-                    sha256  224eae00f483ce0fb131719065667227417cc98ad2beda55bfd5efe2bb612813 \
-                    size    155314
+checksums           rmd160  19e595170b6e4b2efe8e593fb07e29e7abe7deb8 \
+                    sha256  3babf6964be9865a3d872c95c8c8ed49953240e7db5717718893a110d3ebcb3f \
+                    size    154019
 
 test.run            yes
