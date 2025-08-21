@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to r-forge once updated there.
-R.setup             cran r-project betareg 3.2-3
+R.setup             cran r-project betareg 3.2-4
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -14,9 +14,9 @@ long_description    Beta regression for modeling beta-distributed dependent vari
                     In addition to maximum likelihood regression (for both mean and precision of a beta-distributed response), \
                     bias-corrected and bias-reduced estimation as well as finite mixture models and recursive partitioning \
                     for Beta regressions are provided.
-checksums           rmd160  26fdcfbf124dac9b9d3372abf9b43aae3ffe251d \
-                    sha256  dcb682e305ec6390ad56ade6d99fcd8c30f122e39844b2e435f591a9e97f3f46 \
-                    size    1500452
+checksums           rmd160  37d1069fcf825d833811a2d820e773168e549a08 \
+                    sha256  5ba44d30d45eb3b5bd93ca13c03b596558576a77e61a99aa9b7e00c0b6a6abfd \
+                    size    1500658
 
 depends_lib-append  port:R-flexmix \
                     port:R-Formula \
