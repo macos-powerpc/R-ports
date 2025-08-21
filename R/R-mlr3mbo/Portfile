@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran mlr-org mlr3mbo 0.3.0 v
+R.setup             cran mlr-org mlr3mbo 0.3.1 v
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             LGPL-3
 description         Flexible Bayesian optimization
 long_description    {*}${description}
 homepage            https://mlr3mbo.mlr-org.com
-checksums           rmd160  3abf2638b98a4409afc2d6c2df279bfe26893cd1 \
-                    sha256  ba007186f53863270efbc02a9819763d8b108ab5f295fab538fcd18197ab11e7 \
-                    size    139241
+checksums           rmd160  ab85083104bb511529cbc5974e677c5238c7dc84 \
+                    sha256  49b8307ff0e60a38ce169d45bd7f1e8f0b3d624fb4f1d0a1f0d741778b159524 \
+                    size    139773
 
 depends_lib-append  port:R-bbotk \
                     port:R-checkmate \
