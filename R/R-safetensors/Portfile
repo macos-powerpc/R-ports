@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github mlverse safetensors 0.1.2 v
-revision            3
+R.setup             github mlverse safetensors 0.2.0 v
+revision            0
 categories-append   devel
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             MIT
 description         Safetensors file format
 long_description    {*}${description}
 homepage            https://mlverse.github.io/safetensors
-checksums           rmd160  17e3264556734af3d5f1bd5ff0732e69b21c3238 \
-                    sha256  c64296299e6467666cb5ed1d49ff62a1582657314a2da7db0379cd075ed0e23f \
-                    size    8664
+checksums           rmd160  2b200ca9f16ec0462d3a4698ec260b4aeb4a58ce \
+                    sha256  77491d3cd1aaf629ed02b1c57f787664e05ddf491536168b955da552bf601dc7 \
+                    size    9843
 github.tarball_from archive
 supported_archs     noarch
 
