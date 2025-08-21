@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran jhelvy cbcTools 0.6.2
+R.setup             cran jhelvy cbcTools 0.6.3
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -13,9 +13,9 @@ license             MIT
 description         Design and evaluate choice-based conjoint survey experiments
 long_description    {*}${description}
 homepage            https://jhelvy.github.io/cbcTools
-checksums           rmd160  96ac1f59a4d89b36faecabefe365b770cac2ca3b \
-                    sha256  92c0761b8144cc8bdde40b2bbf46a89ffb9776a3b504555487bad43a08a9465f \
-                    size    2285221
+checksums           rmd160  409e8292ead0934ccc8c3d5c70f85834f0064cf4 \
+                    sha256  a24349e80c34946f0a4402fad369e8fcb161eda07f66fd4c12fdb3343dfae524 \
+                    size    2290442
 supported_archs     noarch
 
 depends_lib-append  port:R-fastDummies \
