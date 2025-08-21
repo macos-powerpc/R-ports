@@ -4,15 +4,15 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran mhahslerc dbscan 1.2.2
-revision            1
+R.setup             cran mhahslerc dbscan 1.2.3
+revision            0
 maintainers         nomaintainer
 license             GPL-2+
 description         Density-Based Spatial Clustering of Applications with Noise
 long_description    {*}${description}
-checksums           rmd160  dbf4eb3d6d5344fefd76b25ac11a8793848134c5 \
-                    sha256  0c3abdd122521d9be8cbdb3589a91a18ef18a3d00493fdb140fd932bae0fe343 \
-                    size    2796284
+checksums           rmd160  10a6109b6c03908349f6ce2af1bb5759c4478dd3 \
+                    sha256  629a85cc0763ed743d1610d4184425f78d5fbc198f535a8c9a309f9d9838a6af \
+                    size    2796500
 
 depends_lib-append  port:R-generics \
                     port:R-Rcpp
