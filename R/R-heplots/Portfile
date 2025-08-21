@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran friendly heplots 1.7.5
+R.setup             cran friendly heplots 1.7.8
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             GPL-2+
 description         Visualizing hypothesis tests in multivariate linear models
 long_description    {*}${description}
 homepage            https://friendly.github.io/heplots
-checksums           rmd160  3de5980c4805720323b675a5f184db963cce3d33 \
-                    sha256  8bd13e2c15f3335eba9dcf535646612125e9ae2de0ce1f304788a786700b2555 \
-                    size    2990287
+checksums           rmd160  8ad8f571c94e07d0108aa6ab143f2759d22f1b39 \
+                    sha256  dc48800c6c7612017d1d25de40b8375e9ed70d359e2929221f76d882a5da9d28 \
+                    size    3454227
 supported_archs     noarch
 
 depends_lib-append  port:R-broom \
