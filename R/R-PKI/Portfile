@@ -4,9 +4,9 @@ PortSystem          1.0
 PortGroup           openssl 1.0
 PortGroup           R 1.0
 
-R.setup             github s-u PKI 13aa0f9bff4772df4dd598f6808bbed4efb66602
-version             0.1-14
-revision            2
+# Revert to GitHub once updated there.
+R.setup             cran s-u PKI 0.1-15
+revision            0
 categories-append   crypto
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             {GPL-2 GPL-3}
@@ -14,10 +14,10 @@ description         Public Key Infrastucture for R, \
                     based on the X.509 standard
 long_description    {*}${description}
 homepage            https://www.rforge.net/PKI
-checksums           rmd160  b27c8b211086fc6a2322b87217d7cd64ccf78a3c \
-                    sha256  beb793bb83120fe3e4d5e4582c356b78b09ed7893632c4bc9e5643927009443a \
-                    size    86289
-github.tarball_from archive
+checksums           rmd160  b15f50e128f474457ebb914a62eec7374064f5f7 \
+                    sha256  8d0d27054e45930a6e4ec9998ef111a4bde6c02c2c066ef0f1b15b7aeff1e7b0 \
+                    size    87246
+# github.tarball_from archive
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
