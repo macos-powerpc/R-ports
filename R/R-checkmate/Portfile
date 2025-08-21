@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran mllg checkmate 2.3.2
-revision            1
+R.setup             cran mllg checkmate 2.3.3
+revision            0
 categories-append   devel
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             BSD
 description         Fast and versatile argument checks
 long_description    {*}${description}
 homepage            https://github.com/mllg/checkmate
-checksums           rmd160  2bdea1f2ec22ed3817b12c945b90bfa02b5ca911 \
-                    sha256  7255732d6c2da51204128a910e8c0d05246324a0402fca4d0d99433af40a88e3 \
-                    size    229874
+checksums           rmd160  30ed75fa626aeeef6af29fa5289f6c82726b6ff4 \
+                    sha256  f7af5c701b85505141f68ea3d35e01034752bb22bc0578fc72bd58c0043ae57f \
+                    size    261479
 
 depends_lib-append  port:R-backports
 
