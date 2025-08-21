@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran ismev 1.42
-revision            2
+R.setup             cran eric.gilleland ismev 1.43
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         An Introduction to Statistical Modeling of Extreme Values
 long_description    {*}${description}
-checksums           rmd160  1010efc2790db6c9e9eec5d5efc568404d9c7c3a \
-                    sha256  0d57fbeca83bd478e84fcff795967d51d8448c629abe7adc6c4c18c7fb8bf1a5 \
-                    size    93428
+checksums           rmd160  d2f81b205bdb3c11096f76187ff51584c34aa1db \
+                    sha256  b2b7ddaed7994a4efd92a215ba90da7bdb63ccdcc3ebd26ffd4f476211e9c336 \
+                    size    90296
 supported_archs     noarch
-platforms           {darwin any}
 
 test.run            yes
