@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran asht 1.0.1
-revision            2
+R.setup             cran mfay asht 1.0.3
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
 description         Applied Statistical Hypothesis Tests
 long_description    {*}${description}
-checksums           rmd160  ded272aa8c30b4f09cab4632db99f6bece989e7c \
-                    sha256  66f6cc7af30756dc8ec7a890565d3ef885b223eb8ae1c762795b284b33c49923 \
-                    size    63685
+checksums           rmd160  fe0387a782b41c7a03dbf8b6ca99ea9b341ba429 \
+                    sha256  58057bbd318c0d13e2009e002a9a48c5806bf2fada338927068dbe2e8dbf89c6 \
+                    size    63907
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-bpcp \
                     port:R-coin \
