@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran CoTiMA CoTiMA 0.8.0
-revision            1
+R.setup             cran CoTiMA CoTiMA 1.0.2
+revision            0
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Continuous Time Meta-Analysis
 long_description    {*}${description}
 homepage            https://github.com/CoTiMA/CoTiMA
-checksums           rmd160  7662d61d95aa3a8277f4a0823d7b8fefe5635b17 \
-                    sha256  2187c773269c87bc3e7f4015292dc11699cda16ac75580b95be48fae64096c96 \
-                    size    3056439
+checksums           rmd160  686942df02d7e9a6bd1cf21678c580ca43dbb29b \
+                    sha256  e195410a3a0b9af02fc9cfbf3307f3ffd6007e88f1574463ab9540801a375a53 \
+                    size    3070493
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-abind \
                     port:R-crayon \
