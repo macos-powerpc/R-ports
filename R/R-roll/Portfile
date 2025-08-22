@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran jjf234 roll 1.1.7
-revision            3
+R.setup             cran jjf234 roll 1.2.0
+revision            0
 categories-append   math finance
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
@@ -12,9 +12,9 @@ description         Fast and efficient computation of rolling and expanding \
                     statistics for time-series data
 long_description    {*}${description}
 homepage            https://github.com/jasonjfoster/roll
-checksums           rmd160  2cd5eaa3af23fee50c028dbcd73da397e1bae390 \
-                    sha256  8f80cc02890944c8de3ef02090bab1660cdd1d36617a0ab90d8953edc753834e \
-                    size    125952
+checksums           rmd160  e9ec6bfbaa2fa418cb6ca0b6b262d1e5cb103c41 \
+                    sha256  6ede8e9ae4a34a0cc15088681a8a39cf0815a4ff9e08c7a38552bcada4ec67fe \
+                    size    126874
 
 depends_lib-append  port:R-Rcpp \
                     port:R-RcppArmadillo \
