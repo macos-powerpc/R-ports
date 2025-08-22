@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran edubruell tidyllm 0.3.4
-revision            1
+R.setup             cran edubruell tidyllm 0.3.5
+revision            0
 categories-append   llm
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             MIT
 description         Tidy Integration of Large Language Models
 long_description    {*}${description}
 homepage            https://edubruell.github.io/tidyllm
-checksums           rmd160  6e1d75cfffc2b73846751ca0ed8586d55ea3b741 \
-                    sha256  df83dc07e5175f2acebf59abd84f26b68c19f161d3e239da63f3169290bf0cd2 \
-                    size    1238760
+checksums           rmd160  091094210d61b00cda578f6165ba8670c80b6ab3 \
+                    sha256  5abcd5a1028c5f9ae775a911bf77734a6adf11f7a0b377d41c7a3b37f1a04bb0 \
+                    size    1344461
 supported_archs     noarch
 
 depends_lib-append  port:R-base64enc \
