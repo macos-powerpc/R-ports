@@ -3,22 +3,23 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran disaggregation 0.3.0
-revision            2
+R.setup             cran timcdlucas disaggregation 0.4.1
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             MIT
 description         Disaggregation regression models using R-TMB
 long_description    {*}${description}
-checksums           rmd160  434a93838634ba5af6dc3d7b8c387ecfcfee64ea \
-                    sha256  79e1f61354481d160ae484dfb11b4f312f19f5645408b8cc624925e4e70a5414 \
-                    size    472244
+checksums           rmd160  60aa86e28ccea80f5a980de18b983a61d68c7a1c \
+                    sha256  1ec5e2969ccfc0c955c64ae849baf8ac6dc98ee19651c80d0d44531d46b830a7 \
+                    size    351272
 
 depends_lib-append  port:R-cowplot \
                     port:R-dplyr \
                     port:R-fmesher \
                     port:R-ggplot2 \
                     port:R-RcppEigen \
+                    port:R-rSPDE \
                     port:R-sf \
                     port:R-sp \
                     port:R-sparseMVN \
