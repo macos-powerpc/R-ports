@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github davidchall ipaddress 1.0.2 v
-revision            2
+R.setup             github davidchall ipaddress 1.0.3 v
+revision            0
 categories-append   net
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Data analysis for IP addresses and networks
 long_description    {*}${description}
 homepage            https://davidchall.github.io/ipaddress
-checksums           rmd160  7574bf932e5338767fce05c666f4e158abb6fca1 \
-                    sha256  27afb621f857b4282f9ec316896d37b66ad27ab7d72c50cfa5b94dac75c0b42e \
-                    size    270214
-github.tarball_from tarball
+checksums           rmd160  f5f64ab5be4c791af218718552899e5fa99ab858 \
+                    sha256  dbc6dfcf6e7bd42b70f21c2a5919ef9195decabc2f49cad446d689a92cef211d \
+                    size    270539
+github.tarball_from archive
 
 depends_lib-append  port:R-AsioHeaders \
                     port:R-cli \
