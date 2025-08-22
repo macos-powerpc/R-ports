@@ -3,7 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github sfcheung manymome 0.2.9 v
+# Revert to GitHub once updated there.
+R.setup             cran sfcheung manymome 0.3.1 v
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -13,15 +14,16 @@ description         Mediation, moderation and moderated mediation \
                     after model fitting
 long_description    {*}${description}
 homepage            https://sfcheung.github.io/manymome
-checksums           rmd160  b7b7f63094ed9f4ebac6a1fc2b6c4471ae8b940f \
-                    sha256  a09bc24ffc99df83c3b470b9f45c4840f45cf988ee290156e1faca19072cb021 \
-                    size    2438579
-github.tarball_from archive
+checksums           rmd160  43285712c63aad96077e36ef144cde385ae1f103 \
+                    sha256  ae961991b37d970f3e9f688c6285741c5c03b3b7b59936bd53c098afef6fa2fd \
+                    size    2604868
+# github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-ggplot2 \
                     port:R-igraph \
                     port:R-lavaan \
+                    port:R-lmhelprs \
                     port:R-pbapply
 
 depends_test-append port:R-Amelia \
