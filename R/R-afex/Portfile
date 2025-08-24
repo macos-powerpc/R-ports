@@ -3,24 +3,26 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran singmann afex 1.4-1
-revision            1
+R.setup             cran singmann afex 1.5-0
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Analysis of Factorial Experiments
 long_description    {*}${description}
 homepage            https://afex.singmann.science
-checksums           rmd160  dbc2ad77679e1796faf9125d4fdccae7bba65d3e \
-                    sha256  ba7a35d97170fcfd4101f30630ba9cfa52fdac5b277cb345db67248a4455289e \
-                    size    3326796
+checksums           rmd160  f9d6a2041cd1eb4695896b75a7b65a7aef2ea27b \
+                    sha256  b78aa9acba8e7f47f9cfb69a9739f07635ba042a10364e92922f317fd0b777c6 \
+                    size    4294136
 supported_archs     noarch
 
 depends_lib-append  port:R-car \
                     port:R-lme4 \
                     port:R-lmerTest \
                     port:R-pbkrtest \
-                    port:R-reshape2
+                    port:R-reformulas \
+                    port:R-reshape2 \
+                    port:R-rlang
 
 # Several packages are omitted, since they are not in MacPorts atm.
 depends_test-append port:R-brms \
@@ -34,6 +36,7 @@ depends_test-append port:R-brms \
                     port:R-ggbeeswarm \
                     port:R-ggplot2 \
                     port:R-ggpubr \
+                    port:R-GLMMadaptive \
                     port:R-glmmTMB \
                     port:R-jtools \
                     port:R-knitr \
