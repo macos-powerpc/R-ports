@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran xliao cgam 1.28
+R.setup             cran xliao cgam 1.29
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -11,9 +11,9 @@ maintainers         nomaintainer
 license             GPL-2+
 description         Constrained Generalized Additive Model
 long_description    {*}${description}
-checksums           rmd160  e15d2f84b51a924f38fc2d77be6f058066ae59bc \
-                    sha256  d2e84f48cccc80b42e867af1b7b1e1e4e633f068be8064ee35ad9aa6f68ec6b2 \
-                    size    302534
+checksums           rmd160  16adfbcf6e28b0683d7894952f064715a45181ee \
+                    sha256  7391686d53795392d1e0df526a48f4932e22369e2876cdd31466e18d1a3f2988 \
+                    size    305005
 supported_archs     noarch
 
 depends_lib-append  port:R-coneproj \
