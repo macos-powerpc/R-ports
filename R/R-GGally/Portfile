@@ -4,10 +4,8 @@ PortSystem          1.0
 PortGroup           openssl 1.0
 PortGroup           R 1.0
 
-R.setup             github ggobi ggally 2.3.0 v
-# CRAN uses this name:
-set R.package       GGally
-revision            1
+R.setup             cran ggobi GGally 2.4.0 v
+revision            0
 categories-append   graphics
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -15,19 +13,18 @@ license             GPL-2+
 description         Extension to R-ggplot2
 long_description    {*}${description}
 homepage            https://ggobi.github.io/ggally
-checksums           rmd160  0e4f93f7b85c825eb556d6edd27857e46860b020 \
-                    sha256  7f8b8d7535c07e4516c2043e92076152415cc2a4e9f11efd23df4d0cf284ce55 \
-                    size    3269617
-github.tarball_from archive
+checksums           rmd160  f2b8eb41ea60ea67480e930cd7c8121206e81a8a \
+                    sha256  c8d458160e0c220bfeae49ceacd7762534a9ade7e75dfcd974c88c79aa8f7382 \
+                    size    1372802
 supported_archs     noarch
 
-depends_lib-append  port:R-dplyr \
+depends_lib-append  port:R-cli \
+                    port:R-dplyr \
                     port:R-ggplot2 \
                     port:R-ggstats \
                     port:R-gtable \
                     port:R-lifecycle \
                     port:R-magrittr \
-                    port:R-plyr \
                     port:R-progress \
                     port:R-RColorBrewer \
                     port:R-rlang \
