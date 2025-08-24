@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github tidymodels discrim 1.0.1 v
-revision            3
+R.setup             github tidymodels discrim 1.0.2 v
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,10 +12,10 @@ license             MIT
 description         Model wrappers for discriminant analysis
 long_description    {*}${description}
 homepage            https://discrim.tidymodels.org
-checksums           rmd160  2046d5e3e50b767ccce703d537b38cee366d17da \
-                    sha256  0482914275da14296a1bf0f347cde0015912a569917bbac5cc9b5d9def785663 \
-                    size    104908
-github.tarball_from tarball
+checksums           rmd160  beb6fd25b843c5093de3bdb5d6f623d4140f617d \
+                    sha256  320ae8cafd56c6ce9deba641a13a79e272b86b119562dc063c6e850b0521584d \
+                    size    153738
+github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-dials \
@@ -28,6 +28,7 @@ depends_test-append port:R-covr \
                     port:R-dplyr \
                     port:R-earth \
                     port:R-ggplot2 \
+                    port:R-hardhat \
                     port:R-klaR \
                     port:R-knitr \
                     port:R-mda \
