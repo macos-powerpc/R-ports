@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github marberts sps 0.6.1 v
+R.setup             cran marberts sps 0.6.2 v
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -12,10 +12,9 @@ license             MIT
 description         Sequential Poisson Sampling
 long_description    {*}${description}
 homepage            https://marberts.github.io/sps
-checksums           rmd160  0e9e9c9bd26aadd7a551755b29e4c9deeb2f2ec9 \
-                    sha256  29aea05030e3f5601b0456e8c17ca0e1fe2410de2d70553f26a978a0d0cc1ea1 \
-                    size    138668
-github.tarball_from archive
+checksums           rmd160  4afe1bb9974311b71bfc9274ecaa5b599c7aae82 \
+                    sha256  96d68961ee6bc76c64e0f9f0f7f6b235a8ba11d319e426577442f06b7270eb86 \
+                    size    195780
 supported_archs     noarch
 
 depends_test-append port:R-kit \
