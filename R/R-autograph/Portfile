@@ -1,0 +1,42 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+PortGroup           R 1.0
+
+R.setup             github stocnet autograph 0.2.0 v
+revision            0
+categories-append   math
+platforms           {darwin any}
+maintainers         nomaintainer
+license             MIT
+description         Automatic plotting of many graphs
+long_description    {*}${description}
+homepage            https://stocnet.github.io/autograph
+checksums           rmd160  4a00f1403fcb377ef8f93f30c70aea1b9ccee983 \
+                    sha256  1b67aac7a5368ca00781aa4dacbcdd3b7cf5a397603e510df37899d1be336956 \
+                    size    1256603
+github.tarball_from archive
+supported_archs     noarch
+
+depends_lib-append  port:R-cli \
+                    port:R-dplyr \
+                    port:R-ggdendro \
+                    port:R-ggplot2 \
+                    port:R-ggraph \
+                    port:R-igraph \
+                    port:R-manynet \
+                    port:R-tidygraph \
+                    port:R-tidyr
+
+# Some suggested deps are dropped:
+# https://github.com/joelgombin/concaveman/issues/18
+depends_test-append port:R-BiocManager \
+                    port:R-gganimate \
+                    port:R-ggforce \
+                    port:R-graphlayouts \
+                    port:R-patchwork \
+                    port:R-Rgraphviz \
+                    port:R-RSiena \
+                    port:R-testthat
+
+test.run            yes
