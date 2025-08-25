@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran mlr-org mlr 2.19.2
-revision            2
+R.setup             cran mlr-org mlr 2.19.3
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             BSD
 description         Machine Learning in R
 long_description    {*}${description}
 homepage            https://mlr.mlr-org.com
-checksums           rmd160  f6f87f10fea93ce635945197209922c9f61d9112 \
-                    sha256  85e67049f1067a7eae0f0e5b5c4e4e46a25407a17750512220f438a0fa5097c5 \
-                    size    2942566
+checksums           rmd160  fc2ea4df3fe6f6483f15fa2b5f45c6675b89aa8c \
+                    sha256  49d785160fa0d93be317573eb28b7926df1dc79991f58777b026b25bfb485c44 \
+                    size    2943826
 
 depends_lib-append  port:R-backports \
                     port:R-BBmisc \
@@ -26,9 +26,12 @@ depends_lib-append  port:R-backports \
                     port:R-XML
 
 # These are declared as optional dependencies, and not linked to.
-depends_run-append  port:gdal \
+depends_run-append  port:gdal-R \
+                    port:geos-R \
                     port:gmp \
                     port:gsl \
                     port:jags \
+                    port:libGLU \
                     port:mpfr \
+                    port:proj-R \
                     port:udunits
