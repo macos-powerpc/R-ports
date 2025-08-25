@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran davidgohel flextable 0.9.9
+R.setup             cran davidgohel flextable 0.9.10
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             GPL-3
 description         Functions for tabular reporting
 long_description    {*}${description}
 homepage            https://davidgohel.github.io/flextable
-checksums           rmd160  8c2418ad68affe9570a6cb4563dff4347aaf2970 \
-                    sha256  d89fd3fdd3b0cac4d8b878a5c1c6d276e76e0f5eadac0db8a95497c5d88220af \
-                    size    1334095
+checksums           rmd160  821dd0479f0dc35c8667d72b09fa45060d922b52 \
+                    sha256  14badace422635892a76f9bb43709f1cddf33afea1053bc88563c8fd2ee8f850 \
+                    size    1334215
 supported_archs     noarch
 
 depends_lib-append  port:R-data.table \
