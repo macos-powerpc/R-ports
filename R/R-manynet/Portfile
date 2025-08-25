@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran snlab-ch manynet 1.5.1
+R.setup             cran snlab-ch manynet 1.6.0
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -12,15 +12,13 @@ license             MIT
 description         Many ways to make, manipulate and map myriad networks
 long_description    {*}${description}
 homepage            https://snlab-ch.github.io/manynet
-checksums           rmd160  095cabe2ffa4f2079c5b276f4b4716aafbe49bdf \
-                    sha256  54ea45d5f51459b1cd110acfed89ffd14602981830e377d2eaec2c6a9e8295cf \
-                    size    1576377
+checksums           rmd160  6ef9f1b5670f8cbe3887bc6c4cb3d903783b6b6e \
+                    sha256  d27202befac29962ad746a94c6757449230c1a07fe2a1a8c96fd237d4fbf24d7 \
+                    size    1541747
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
                     port:R-dplyr \
-                    port:R-ggplot2 \
-                    port:R-ggraph \
                     port:R-igraph \
                     port:R-network \
                     port:R-pillar \
@@ -28,17 +26,11 @@ depends_lib-append  port:R-cli \
 
 # Some suggested deps are dropped:
 # https://github.com/joelgombin/concaveman/issues/18
-depends_test-append port:R-BiocManager \
-                    port:R-furrr \
-                    port:R-future \
-                    port:R-gganimate \
-                    port:R-ggforce \
-                    port:R-graphlayouts \
+depends_test-append port:R-autograph \
                     port:R-knitr \
+                    port:R-learnr \
                     port:R-netdiffuseR \
-                    port:R-patchwork \
                     port:R-readxl \
-                    port:R-Rgraphviz \
                     port:R-rmarkdown \
                     port:R-RSiena \
                     port:R-sna \
