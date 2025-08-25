@@ -3,30 +3,37 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran MatthieuStigler tsDyn 11.0.4.1 v
-revision            2
+R.setup             cran MatthieuStigler tsDyn 11.0.5.2 v
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-2+
 description         Non-linear AR time series models with regime switching
 long_description    {*}${description}
 homepage            https://github.com/MatthieuStigler/tsDyn
-checksums           rmd160  e851acc26be54af000ef6d54bd74ffb07d0ca5de \
-                    sha256  38af697636d2cb02c11a46fd109a35b29ac57e4f193d61a0bf7a256c8c9b8713 \
-                    size    2310381
+checksums           rmd160  3429b2993bde3be14285e65cfc38c008e5297b1e \
+                    sha256  e748c601827920fbaefa7c3d9f9f2fce0e91726d56bdb58dfc5180815c81c06c \
+                    size    3445405
 
 depends_lib-append  port:R-foreach \
                     port:R-forecast \
+                    port:R-generics \
                     port:R-mnormt \
                     port:R-tseries \
                     port:R-tseriesChaos \
                     port:R-urca \
                     port:R-vars
 
-depends_test-append port:R-rgl \
+depends_test-append port:R-broom \
+                    port:R-dplyr \
+                    port:R-purrr \
+                    port:R-rgl \
                     port:R-rugarch \
                     port:R-scatterplot3d \
                     port:R-sm \
-                    port:R-tidyverse
+                    port:R-stringr \
+                    port:R-testthat \
+                    port:R-tibble \
+                    port:R-tidyr
 
 test.run            yes
