@@ -24,3 +24,16 @@ depends_lib-append  port:R-digest \
                     port:R-htmlwidgets \
                     port:R-jsonlite \
                     port:R-reactR
+
+# R-V8 dropped until fixed properly.
+depends_test-append port:R-covr \
+                    port:R-crosstalk \
+                    port:R-dplyr \
+                    port:R-fontawesome \
+                    port:R-knitr \
+                    port:R-leaflet \
+                    port:R-rmarkdown \
+                    port:R-shiny \
+                    port:R-sparkline \
+                    port:R-testthat \
+                    port:R-tippy
