@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran dgallardo tpn 1.11
+R.setup             cran dgallardo tpn 1.12
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -11,9 +11,9 @@ maintainers         nomaintainer
 license             GPL-2+
 description         Truncated positive normal model and extensions
 long_description    {*}${description}
-checksums           rmd160  5227052bde296ea60bd0bb25a8e1dfd9ac53df54 \
-                    sha256  355c29dfa6e12f4bf0a9802904ef724137a5d4250b5e647b25264d2a35c3de31 \
-                    size    14534
+checksums           rmd160  598a41b196eac06acb8a6355ee5d4f85f16d2d2b \
+                    sha256  dd0eaee0e5cf5bc1407185c44c4af188f8296fc552ae320d89808c08a0bfb901 \
+                    size    14622
 supported_archs     noarch
 
 depends_lib-append  port:R-moments \
