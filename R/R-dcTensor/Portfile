@@ -3,19 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran rikenbit dcTensor 1.3.0
-revision            1
+R.setup             cran rikenbit dcTensor 1.3.1
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Discrete matrix/tensor decomposition
 long_description    {*}${description}
 homepage            https://github.com/rikenbit/dcTensor
-checksums           rmd160  18cb36d8f3f93cc929208ee270574c5ece2be5d1 \
-                    sha256  b64fd218fc16b0566ef10870502d7aabaf190fdc065b71b92dd2a152d29fc2fc \
-                    size    1572166
+checksums           rmd160  b3c80f8b53cf35bcf495c96b3957b3dec160db80 \
+                    sha256  96fc536e2faf1cbef4bc34869fc2834377654a8f9f917cc20eed2771e1cc93ac \
+                    size    1548245
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-fields \
                     port:R-nnTensor \
