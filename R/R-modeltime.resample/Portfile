@@ -1,0 +1,59 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+PortGroup           R 1.0
+
+# GitHub version lags behind.
+R.setup             cran business-science modeltime.resample 0.2.3
+revision            0
+categories-append   math
+platforms           {darwin any}
+maintainers         nomaintainer
+license             MIT
+description         Resampling tools for time series forecasting
+long_description    {*}${description}
+homepage            https://github.com/business-science/modeltime.resample
+checksums           rmd160  ef54fc60273246062f6dbcf44b88912ac5b6e063 \
+                    sha256  7b78fba8338cf01f7f70ea4e254aac96ff0a3d1b04ab45bb9d9047a30b262c5f \
+                    size    1928066
+supported_archs     noarch
+
+depends_lib-append  port:R-cli \
+                    port:R-crayon \
+                    port:R-dials \
+                    port:R-dplyr \
+                    port:R-forcats \
+                    port:R-ggplot2 \
+                    port:R-glue \
+                    port:R-hardhat \
+                    port:R-magrittr \
+                    port:R-modeltime \
+                    port:R-parsnip \
+                    port:R-plotly \
+                    port:R-progressr \
+                    port:R-purrr \
+                    port:R-recipes \
+                    port:R-rlang \
+                    port:R-rsample \
+                    port:R-stringr \
+                    port:R-tibble \
+                    port:R-tictoc \
+                    port:R-tidyr \
+                    port:R-timetk \
+                    port:R-tune \
+                    port:R-workflows \
+                    port:R-yardstick
+
+depends_test-append port:R-covr \
+                    port:R-glmnet \
+                    port:R-knitr \
+                    port:R-lubridate \
+                    port:R-remotes \
+                    port:R-rmarkdown \
+                    port:R-roxygen2 \
+                    port:R-testthat \
+                    port:R-tidymodels \
+                    port:R-tidyquant \
+                    port:R-tidyverse
+
+test.run            yes
