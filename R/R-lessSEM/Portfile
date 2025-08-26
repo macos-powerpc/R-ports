@@ -3,19 +3,20 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran jhorzek lessSEM 1.5.5
-revision            3
+R.setup             cran jhorzek lessSEM 1.5.6
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Non-smooth regularization for structural equation models
 long_description    {*}${description}
 homepage            https://jhorzek.github.io/lessSEM
-checksums           rmd160  89b7dc66cbcf50f7efd49c3f3c28fbfe38367f33 \
-                    sha256  4264701b5364451bd9a0a59a8a9d0aac4364e618a69756f37d23af3c7a469083 \
-                    size    1036386
+checksums           rmd160  adae099fa2393bd682c8639a037bf2efc499b3f2 \
+                    sha256  5050654318ddf2f81476de8b12a68dc1ff3642320b638f0aeaf217c527626a44 \
+                    size    1030135
 
 depends_lib-append  port:R-ggplot2 \
+                    port:R-ggrepel \
                     port:R-lavaan \
                     port:R-mvtnorm \
                     port:R-numDeriv \
@@ -27,7 +28,6 @@ depends_lib-append  port:R-ggplot2 \
                     port:R-tidyr
 
 compilers.setup     require_fortran
-compiler.cxx_standard 2017
 
 depends_test-append port:R-knitr \
                     port:R-plotly \
