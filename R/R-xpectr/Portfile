@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github ludvigolsen xpectr 0.4.3 v
-revision            2
+R.setup             github ludvigolsen xpectr 0.4.4 v
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Generate expectations for R-testthat unit testing
 long_description    {*}${description}
-checksums           rmd160  ae0e0439add30fe2e0731378eb18f9f5ea000499 \
-                    sha256  c264aef2e1240f66004ac2c08d66dab5c01a8af012984a4bef91d8c7f66d3fd6 \
-                    size    95423
-github.tarball_from tarball
+checksums           rmd160  50f982662b649cd290c167dc0267296d29247ab3 \
+                    sha256  5d353ce82c4d496bdaeed9c114dbb554a443314b341dc2f53f1ba035fcad2b68 \
+                    size    94815
+github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-checkmate \
