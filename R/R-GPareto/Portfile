@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran mbinois GPareto 1.1.8
-revision            2
+R.setup             cran mbinois GPareto 1.1.9
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Gaussian processes for Pareto front estimation and optimization
 long_description    {*}${description}
 homepage            https://github.com/mbinois/GPareto
-checksums           rmd160  a2a8b23ad68ba756f37d716f8305cf036f659e12 \
-                    sha256  696efa0dd47032753054d780bd0ef94bb0222c3d0a751c5eadde26dafb3d3abf \
-                    size    1049902
+checksums           rmd160  805538402fb82721ae2b4754958ee72bec4dbfa2 \
+                    sha256  9e5ed6c34873f0ba702aadbdf51fa213e252d0f4a765ad1c31e752526c57f5de \
+                    size    1057554
 
 depends_lib-append  port:R-DiceDesign \
                     port:R-DiceKriging \
@@ -27,7 +27,6 @@ depends_lib-append  port:R-DiceDesign \
                     port:R-rgenoud \
                     port:R-rgl
 
-depends_test-append port:R-DiceOptim \
-                    port:R-knitr
+depends_test-append port:R-knitr
 
 test.run            yes
