@@ -3,7 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github BjarkeHautop bayesSSM 0.6.1 v
+# Revert to GitHub once updated there.
+R.setup             cran BjarkeHautop bayesSSM 0.7.0 v
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,10 +12,10 @@ license             MIT
 description         Bayesian Methods for State Space Models
 long_description    {*}${description}
 homepage            https://bjarkehautop.github.io/bayesSSM
-checksums           rmd160  fab762f78e0e90c5795035a3b86067899bd9ac38 \
-                    sha256  8dbffc45cffdebe02e0d17e32ed31e942e2a5e2c2868113c5508081d7ab8ca1c \
-                    size    1561482
-github.tarball_from archive
+checksums           rmd160  95963853e258bdb4e48533991ba444f608e01e34 \
+                    sha256  8ae941d3e2014cbc397d98963a1c7304f98bb15f3f27b0b8ec55bbdcdd713bbc \
+                    size    134770
+# github.tarball_from archive
 
 post-extract {
     # Trash pre-compiled objects:
@@ -25,10 +26,10 @@ post-extract {
     }
 }
 
-depends_lib-append  port:R-dplyr \
+depends_lib-append  port:R-checkmate \
+                    port:R-dplyr \
                     port:R-future \
                     port:R-future.apply \
-                    port:R-lifecycle \
                     port:R-Rcpp
 
 depends_test-append port:R-expm \
