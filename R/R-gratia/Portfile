@@ -4,8 +4,8 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran gavinsimpson gratia 0.10.0 v
-revision            1
+R.setup             cran gavinsimpson gratia 0.11.1 v
+revision            0
 categories-append   graphics
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -14,9 +14,9 @@ description         Graceful ggplot-based graphics and other functions \
                     for GAMs fitted with R-mgcv
 long_description    {*}${description}
 homepage            https://gavinsimpson.github.io/gratia
-checksums           rmd160  2b709efe5fd6982aa0ef36255a73d624248a4ef3 \
-                    sha256  30aa4f13002a4f290e50416000e7be562c2859e0f7b46230314b931bab9cb8ac \
-                    size    4791507
+checksums           rmd160  1414d79d69742eaa2e6fe845123b5d964d4cfb4e \
+                    sha256  cddc0acd70a612f636d22b79b3893afa460ee3a89548818aaf61b6e11b7e3b78 \
+                    size    4319092
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
@@ -24,20 +24,24 @@ depends_lib-append  port:R-cli \
                     port:R-ggokabeito \
                     port:R-ggplot2 \
                     port:R-lifecycle \
+                    port:R-mirai \
                     port:R-mvnfast \
                     port:R-patchwork \
                     port:R-pillar \
                     port:R-purrr \
                     port:R-rlang \
+                    port:R-scales \
                     port:R-stringr \
                     port:R-tibble \
                     port:R-tidyr \
                     port:R-tidyselect \
+                    port:R-tweedie \
                     port:R-scales \
                     port:R-vctrs \
                     port:R-withr
 
-depends_test-append port:R-curl \
+depends_test-append port:R-carrier \
+                    port:R-curl \
                     port:R-distributional \
                     port:R-forcats \
                     port:R-gamair \
