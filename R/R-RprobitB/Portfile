@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran loelschlaeger RprobitB 1.1.4
-revision            2
+R.setup             cran loelschlaeger RprobitB 1.2.0
+revision            0
 categories-append   economics
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Bayesian Probit choice modelling
 long_description    {*}${description}
 homepage            https://loelschlaeger.de/RprobitB
-checksums           rmd160  51ac0cb1a491581b38b4d5d9cd9411659d0215f7 \
-                    sha256  fefb69c99aa83a18fc846cb21b81329c36d9e353b27dcca75f144e390766850c \
-                    size    1963515
+checksums           rmd160  01c8d2ee6fbaaad16f42c6ab25459a3c3bf242bc \
+                    sha256  d1cc795ebef92a4112720d69b649893118dbfc6f06356e95b409a0482429e57a \
+                    size    858780
 
 depends_lib-append  port:R-checkmate \
                     port:R-cli \
@@ -31,12 +31,13 @@ depends_lib-append  port:R-checkmate \
                     port:R-RcppArmadillo \
                     port:R-Rdpack \
                     port:R-rlang \
+                    port:R-testthat \
                     port:R-viridis
 
 compilers.setup     require_fortran
 
 depends_test-append port:R-knitr \
                     port:R-mlogit \
-                    port:R-testthat
+                    port:R-xml2
 
 test.run            yes
