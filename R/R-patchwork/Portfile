@@ -3,8 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-# Revert to GitHub once updated there.
-R.setup             cran thomasp85 patchwork 1.3.1 v
+R.setup             github thomasp85 patchwork 1.3.2 v
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,10 +11,10 @@ license             MIT
 description         Composer of ggplots
 long_description    {*}${description}
 homepage            https://patchwork.data-imaginist.com
-checksums           rmd160  e42d85cda01456d213804dddab103e165a43549a \
-                    sha256  e3e7ba0052b12649eb04c1f10317bef626167a4de37b26f662933490434591be \
-                    size    3323546
-# github.tarball_from archive
+checksums           rmd160  3a761c6a1ef6487a3dc3fc0401350fce11783214 \
+                    sha256  e05dcb857fdd6b100f85aba373c50763e625ec3fc939630553e7c80730e19111 \
+                    size    3226785
+github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
