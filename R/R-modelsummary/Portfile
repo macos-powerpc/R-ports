@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran vincentarelbundock modelsummary 2.4.0
+R.setup             cran vincentarelbundock modelsummary 2.5.0
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             GPL-3
 description         Summary tables and plots for statistical models and data
 long_description    {*}${description}
 homepage            https://vincentarelbundock.github.io/modelsummary
-checksums           rmd160  163ba41ecaad5959a4617e3b733354915e83722e \
-                    sha256  7bac6ce83b373108fcb835e1a750c2e3def5fda4a91fa6ba3b93835be9f13cec \
-                    size    3515810
+checksums           rmd160  3cabef2cef2ca10223f7bf700114e7736f4eb66e \
+                    sha256  9629b42e407d08623cd89655034ff31c5cb05bacd292cf88871258dbdecef790 \
+                    size    3105458
 supported_archs     noarch
 
 depends_lib-append  port:R-checkmate \
@@ -52,6 +52,7 @@ depends_test-append port:R-AER \
                     port:R-ggdist \
                     port:R-ggplot2 \
                     port:R-gh \
+                    port:R-glmmTMB \
                     port:R-gt \
                     port:R-gtExtras \
                     port:R-haven \
@@ -68,7 +69,6 @@ depends_test-append port:R-AER \
                     port:R-magick \
                     port:R-magrittr \
                     port:R-marginaleffects \
-                    port:R-margins \
                     port:R-mice \
                     port:R-officer \
                     port:R-openxlsx \
