@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github HenrikBengtsson future.batchtools 0.12.2
+R.setup             github HenrikBengtsson future.batchtools 0.20.0
 revision            0
 categories-append   parallel
 platforms           {darwin any}
@@ -12,10 +12,10 @@ license             LGPL-2.1+
 description         Future API for parallel and distributed processing using batchtools
 long_description    {*}${description}
 homepage            https://future.batchtools.futureverse.org
-checksums           rmd160  afc099615fe8e4419bd7f613c2c3f5a8ddaf3a21 \
-                    sha256  0caa5662c92906c7675e5efb13699a6391939be76ef740c775fc770523c6e653 \
-                    size    107226
-github.tarball_from tarball
+checksums           rmd160  94b50bdfaab95f41e058b14da48064638fd3626d \
+                    sha256  992b5e98d4d10d8aa29eb34b35126def24badceccf4a4b1df1d745096a7a6ea6 \
+                    size    120723
+github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-batchtools \
