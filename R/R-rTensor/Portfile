@@ -3,8 +3,9 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github rikenbit rTensor 1.4.8 v
-revision            2
+# Revert to GitHub once updated there.
+R.setup             cran rikenbit rTensor 1.4.9 v
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,10 +13,10 @@ license             GPL-2+
 description         Tools for tensor analysis and decomposition
 long_description    {*}${description}
 homepage            https://jamesyili.github.io/rTensor
-checksums           rmd160  0228c7184e82f5dd076d268b15e6a9ccf5eacda6 \
-                    sha256  ce15b4239a7fc05ea902cf3e2a8738e735306e6ab243b5c14ef216225edd8247 \
-                    size    33316
-github.tarball_from tarball
+checksums           rmd160  1a2894efa295ef599e36b875224c7e9b36b3e5c0 \
+                    sha256  a8a12e050e881fa24568f362489f503a08160a8dcf356af09c25bdd06d91435e \
+                    size    33111
+# github.tarball_from archive
 supported_archs     noarch
 
 test.run            yes
