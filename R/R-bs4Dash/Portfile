@@ -3,27 +3,30 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github RinteRface bs4Dash 2.3.4 v
-revision            1
+# Revert to GitHub once updated there.
+R.setup             cran RinteRface bs4Dash 2.3.5 v
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Bootstrap 4 version of R-shinydashboard
 long_description    {*}${description}
 homepage            https://rinterface.github.io/bs4Dash/index.html
-checksums           rmd160  81d52737a77c8f742bf12cf354434d0beea61b23 \
-                    sha256  28922fb47c233d3515059664f9f41485bc17f0501f2f2ffb2ce7f7342d53a240 \
-                    size    920362
-github.tarball_from archive
+checksums           rmd160  536a8d3a6c6801b62aed72da7e32afb4f110ac75 \
+                    sha256  c2161bbdccc33095de428e57397d1793ab809b1bbe2cd5657fd6fe10fdb80cda \
+                    size    1357297
+# github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-bslib \
+                    port:R-cli \
                     port:R-fresh \
                     port:R-htmltools \
                     port:R-httpuv \
                     port:R-httr \
                     port:R-jsonlite \
                     port:R-lifecycle \
+                    port:R-rlang \
                     port:R-shiny \
                     port:R-waiter
 
