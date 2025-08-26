@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github nalimilan logmult 0.7.4 v
-revision            2
+R.setup             github nalimilan logmult 0.7.5 v
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Log-multiplicative models, including association models
 long_description    {*}${description}
-checksums           rmd160  b719f08ef391c5c4520c5da28671c328bbf2cb7a \
-                    sha256  8a35c8963d348b062da418515b661f3f2abbf9a74030e62fe61471221d9f1aaf \
-                    size    102477
-github.tarball_from tarball
+checksums           rmd160  2cbdb8a0afe32e83585f53ca2c59a5ade8deee93 \
+                    sha256  71486bf030335e958ca07cee14fc96b6a7113ac8c0e4f7e15d8d517b17c0dfaa \
+                    size    102393
+github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-gnm \
