@@ -3,22 +3,23 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran SciViews svUnit 1.0.6
-revision            3
+R.setup             cran SciViews svUnit 1.0.8
+revision            0
 categories-append   devel
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2
-description         Complete unit test system and functions to implement its GUI part.
+description         Complete unit test system and functions to implement its GUI part
 long_description    {*}${description}
-checksums           rmd160  b82a9c771ccec7f38d23e9750ae551be3419a2b5 \
-                    sha256  263e6c03d6c2717dfd25b96d25f8019c9c98120de280a17224e0d79adba2d522 \
-                    size    906296
+homepage            https://www.sciviews.org/svUnit
+checksums           rmd160  03588eb318e60373f6bca1a39dd1b006ba694663 \
+                    sha256  2aafcba0f4dcb9f4cb16c4af4d77b786a3f4b87c6b79537a1d4969e0c6576fd2 \
+                    size    958699
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_test-append port:R-covr \
                     port:R-knitr \
-                    port:R-markdown \
+                    port:R-rmarkdown \
                     port:R-RUnit \
                     port:R-spelling \
                     port:R-svGUI \
