@@ -3,24 +3,26 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-project Ecfun 0.3-2
-revision            1
+R.setup             cran r-project Ecfun 0.4.0
+revision            0
 categories-append   economics
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Functions for R-Ecdat
 long_description    {*}${description}
-checksums           rmd160  b08f7855fee44d1ca82f21c9657a8a40129afe7f \
-                    sha256  fe61f637ecb811a61821c8d2cec420218f357b54f0f5a5ee5219050fc1e915e0 \
-                    size    925585
+checksums           rmd160  ebd0d914b4adbb9e13fd7662223b075f2e21e783 \
+                    sha256  6ff2c8533ac821edd138a8067f2eaaa6d829b97335f7438d6e0954ab61a926b2 \
+                    size    927021
 supported_archs     noarch
 
 depends_lib-append  port:R-BMA \
                     port:R-fda \
                     port:R-jpeg \
                     port:R-mvtnorm \
+                    port:R-readr \
                     port:R-rvest \
+                    port:R-rworldmap \
                     port:R-stringi \
                     port:R-TeachingDemos \
                     port:R-tis \
@@ -44,6 +46,7 @@ depends_test-append port:R-bayesplot \
                     port:R-maps \
                     port:R-markdown \
                     port:R-openxlsx \
+                    port:R-pandoc \
                     port:R-plyr \
                     port:R-pryr \
                     port:R-purrr \
