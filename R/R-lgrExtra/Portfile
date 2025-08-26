@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran s-fleck lgrExtra 0.2.0
+R.setup             cran s-fleck lgrExtra 0.2.1
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             MIT
 description         Extra appenders for R-lgr
 long_description    {*}${description}
 homepage            https://s-fleck.github.io/lgrExtra
-checksums           rmd160  eec914ccf482403b8a4ba16e6211de74df7b8c43 \
-                    sha256  dc2efcb4464819dee89adaa0e179297b0a67c0582077b16573cdf68eb243192f \
-                    size    57367
+checksums           rmd160  9b57cb0c6213aa825b41ef23ddc3873fc6bd1667 \
+                    sha256  c228bdde0549b9ec4afa4b70048d366cf9aded4d2051132be5a197ca7bfd2a75 \
+                    size    57495
 supported_archs     noarch
 
 depends_lib-append  port:R-data.table \
