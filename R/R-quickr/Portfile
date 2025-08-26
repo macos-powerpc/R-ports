@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github t-kalinowski quickr 0.1.0 v
+R.setup             github t-kalinowski quickr 0.2.0 v
 revision            0
 categories-append   lang devel
 platforms           {darwin any}
@@ -12,14 +12,13 @@ license             MIT
 description         Compiler for R
 long_description    {*}${description}
 homepage            https://github.com/t-kalinowski/quickr
-checksums           rmd160  a4a954dd7c50516f74a27741e436f30467471b34 \
-                    sha256  f5817bec9546d2db0cd6f6a9cd063399342049acde71f0e2b4d8465975b06682 \
-                    size    1609645
+checksums           rmd160  e04c0ed8c79e9969aadf60030c5dfe52762e5a1c \
+                    sha256  8aa8a05c0e2dd87c91dacb87f0f213cd86606c2bbcc40a5eb0b7bbea6418f2cd \
+                    size    1628323
 github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-dotty \
-                    port:R-cli \
                     port:R-glue \
                     port:R-S7
 
