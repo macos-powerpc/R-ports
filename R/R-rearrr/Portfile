@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github ludvigolsen rearrr 0.3.4 v
-revision            2
+R.setup             github ludvigolsen rearrr 0.3.5 v
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Rearrrange data by a set of methods
 long_description    {*}${description}
-checksums           rmd160  f75795179e544f799e06dfb96691259a181e66ca \
-                    sha256  6df9d3b9715553cd84c36d4d0fdb2a2260781ba3c18f1fe06cdbb27bb46ab144 \
-                    size    1300577
-github.tarball_from tarball
+checksums           rmd160  01896da765d6aab4cc763647b05bbbe25ec07854 \
+                    sha256  104b7fa2d812087233fde456ed2f7e200dc81c5907988dd435d6a808abc97a98 \
+                    size    1352585
+github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-checkmate \
