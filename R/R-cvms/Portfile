@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github ludvigolsen cvms 1.8.0 v
+R.setup             github ludvigolsen cvms 1.8.1 v
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -11,9 +11,9 @@ maintainers         nomaintainer
 license             MIT
 description         Cross-validation for model selection
 long_description    {*}${description}
-checksums           rmd160  3c06675d3dfc99fd95a7275801eecdf6f94e81c2 \
-                    sha256  8fd25fd544d8ab8697c4d206c714e441d2f8ff34742330778c218ee0a07228c4 \
-                    size    3044645
+checksums           rmd160  2b1aea428421baf67bd256f4122be00d27a91dc1 \
+                    sha256  523f1d3561999e5a1ff78baca649c4cb59606c69cc6e172b4247cc2ec2487e1e \
+                    size    3043537
 github.tarball_from archive
 supported_archs     noarch
 
