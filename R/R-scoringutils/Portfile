@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran epiforecasts scoringutils 2.1.1 v
+R.setup             cran epiforecasts scoringutils 2.1.2 v
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             MIT
 description         Utilities for scoring and assessing predictions
 long_description    {*}${description}
 homepage            https://epiforecasts.io/scoringutils
-checksums           rmd160  150e95638401cb073608b2b56ba95a151571a28c \
-                    sha256  ecbdabe1f299a76101b37a20c4c8a3735474b44c2c8f216023c3f7b597c4f49e \
-                    size    3787880
+checksums           rmd160  db24e90518167e2b50563701a3c1106dfad1b508 \
+                    sha256  177f001719a7dd22b1e859fe75055959e52ae4cfd3b0ec2cff65ae0fa8ca6de1 \
+                    size    3788126
 supported_archs     noarch
 
 depends_lib-append  port:R-checkmate \
