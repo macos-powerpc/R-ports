@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran asanaei LLMR 0.5.0
+R.setup             cran asanaei LLMR 0.6.0
 revision            0
 categories-append   llm
 platforms           {darwin any}
@@ -12,24 +12,28 @@ license             MIT
 description         Interface for Large Language Model APIs
 long_description    {*}${description} in R.
 homepage            https://github.com/asanaei/LLMR
-checksums           rmd160  d388aff3d164c7d8ede29e89ac31e4a52cc78f7e \
-                    sha256  4f22e923e06db7b051aba8578f272fb729d4d26d3e6d587b28858842f70b5912 \
-                    size    575367
+checksums           rmd160  8bd0bf53a4c7cce3d3ed89a9b2cf6d9415ab9eb3 \
+                    sha256  a9f0bb42a9f7a9849ffab9c606c7c14d687b033efc3e1e0f0c9161e19c0f2507 \
+                    size    318106
 supported_archs     noarch
 
 depends_lib-append  port:R-base64enc \
+                    port:R-cli \
                     port:R-dplyr \
                     port:R-future \
                     port:R-future.apply \
                     port:R-glue \
                     port:R-httr2 \
+                    port:R-jsonlite \
                     port:R-memoise \
                     port:R-mime \
                     port:R-purrr \
                     port:R-rlang \
                     port:R-tibble \
-                    port:R-tidyr
+                    port:R-tidyr \
+                    port:R-vctrs
 
+# R-jsonvalidate is broken due to depending on R-V8, therefore dropped.
 depends_test-append port:R-ggplot2 \
                     port:R-httptest2 \
                     port:R-knitr \
