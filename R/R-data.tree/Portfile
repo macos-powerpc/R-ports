@@ -3,19 +3,40 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github gluc data.tree 1.1.0 v
-revision            2
+# Revert to GitHub once updated there.
+R.setup             cran gluc data.tree 1.2.0 v
+revision            0
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         General purpose hierarchical data structure
 long_description    {*}${description}
 homepage            https://gluc.github.io/data.tree
-checksums           rmd160  dc9cdf5adda6f4a8214be2966c9cc43d4eee4b89 \
-                    sha256  0405c07deec26e1ac8d734e4789daa9cd9d0a9b719a1e5b927256ce0b0897b28 \
-                    size    491736
-github.tarball_from tarball
+checksums           rmd160  c86c378aedbcd3fc5b7c1a614a3ab8577e0877c7 \
+                    sha256  febb39f5878ad0d64b243d08d596116389ba1bc7a35807b2e851fda48e554f22 \
+                    size    1610346
+# github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-R6 \
                     port:R-stringi
+
+depends_test-append port:R-ape \
+                    port:R-DiagrammeR \
+                    port:R-doParallel \
+                    port:R-foreach \
+                    port:R-Formula \
+                    port:R-htmlwidgets \
+                    port:R-igraph \
+                    port:R-jsonlite \
+                    port:R-knitr \
+                    port:R-mockery \
+                    port:R-networkD3 \
+                    port:R-party \
+                    port:R-partykit \
+                    port:R-rmarkdown \
+                    port:R-testthat \
+                    port:R-treemap \
+                    port:R-yaml
+
+test.run            yes
