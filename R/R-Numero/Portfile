@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran vpmakine Numero 1.9.8
-revision            1
+R.setup             cran vpmakine Numero 1.9.10
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Statistical framework to define subgroups in complex datasets
 long_description    {*}${description}
-checksums           rmd160  2f2680d315ea66bef2b2d31cf5ab84c22472dcaf \
-                    sha256  c317e85c719b9a273049bd2cded898f76c2238a09faff6a6114347c802f3160d \
-                    size    3836904
+checksums           rmd160  6d723fc9fb95897374dee294b819abca9540f51e \
+                    sha256  a22a49436f531972fe45cef513b2c1dc4d4042fa23786f129d7449e71abe827d \
+                    size    3848348
 
 depends_lib-append  port:R-Rcpp
 
