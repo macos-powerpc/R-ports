@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran marcindubel bdsm 0.2.1
+R.setup             cran marcindubel bdsm 0.2.2
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -11,15 +11,16 @@ maintainers         nomaintainer
 license             MIT
 description         Bayesian Dynamic Systems Modelling
 long_description    {*}${description}
-checksums           rmd160  1a2b7a10f6a8d32d933180e09f3d0c1abde6d9cb \
-                    sha256  59be76b347fa5f0546e9be0a3df462ba4fd730fe50a324e53e718e1ce6aac30e \
-                    size    1249139
+checksums           rmd160  ca57d71b8a967685bc676a98badc2b02cd07bb1d \
+                    sha256  c449ffbdfe0f647a3422cc2e6af561152db6c54aa22e0cab9381b9d93a457233 \
+                    size    1347232
 supported_archs     noarch
 
 depends_lib-append  port:R-dplyr \
                     port:R-ggplot2 \
                     port:R-ggpubr \
                     port:R-gridExtra \
+                    port:R-knitr \
                     port:R-magrittr \
                     port:R-optimbase \
                     port:R-pbapply \
