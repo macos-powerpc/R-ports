@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github tidymodels workflows 1.2.0 v
-revision            1
+R.setup             github tidymodels workflows 1.3.0 v
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Modelling workflows
 long_description    {*}${description}
 homepage            https://workflows.tidymodels.org
-checksums           rmd160  c887039f14095596629dfd8d93b2b59c025a3a28 \
-                    sha256  1b5f2b43a041b9fdef25c412144bdc5ffd97b521823b02aa6e72a0e1178f7ea7 \
-                    size    169775
+checksums           rmd160  a6f1f436989aa0818cee1ff465fe17f4a3a13fdf \
+                    sha256  762aecc916c8d11afb041ec8eeaa48388dcf48574d48dd99f02be6823cef1812 \
+                    size    178131
 github.tarball_from archive
 supported_archs     noarch
 
@@ -41,6 +41,7 @@ depends_test-append port:R-butcher \
                     port:R-probably \
                     port:R-rsample \
                     port:R-rmarkdown \
+                    port:R-tailor \
                     port:R-testthat
 
 test.run            yes
