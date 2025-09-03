@@ -3,37 +3,34 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github tidymodels tune 1.3.0 v
-revision            1
+R.setup             github tidymodels tune 2.0.0 v
+revision            0
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Tidy tuning tools
 long_description    {*}${description}
 homepage            https://tune.tidymodels.org
-checksums           rmd160  c35607739da3e11dacf9bc9be481d49ae11eb95c \
-                    sha256  9a6ed37dffb4552062934362e9ba9d5f6554b3d6e9aeb60ab3055d071510bff7 \
-                    size    967384
+checksums           rmd160  6f98de7ae22700d587eced698512db5edde8465b \
+                    sha256  2dc5c01c59788673fdfb9323a71a59d89ba824b39556a05ccd4a1e8ff57b633b \
+                    size    1334928
 github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
                     port:R-dials \
-                    port:R-doFuture \
                     port:R-dplyr \
-                    port:R-foreach \
-                    port:R-future \
                     port:R-generics \
                     port:R-ggplot2 \
                     port:R-glue \
                     port:R-GPfit \
                     port:R-hardhat \
-                    port:R-lifecycle \
                     port:R-parsnip \
                     port:R-purrr \
                     port:R-recipes \
                     port:R-rlang \
                     port:R-rsample \
+                    port:R-tailor \
                     port:R-tibble \
                     port:R-tidyr \
                     port:R-tidyselect \
@@ -45,12 +42,17 @@ depends_lib-append  port:R-cli \
 depends_test-append port:R-C50 \
                     port:R-censored \
                     port:R-covr \
+                    port:R-future \
+                    port:R-future.apply \
                     port:R-kernlab \
                     port:R-kknn \
                     port:R-knitr \
+                    port:R-mirai \
                     port:R-modeldata \
+                    port:R-probably \
                     port:R-scales \
                     port:R-spelling \
+                    port:R-splines2 \
                     port:R-testthat \
                     port:R-xgboost \
                     port:R-xml2
