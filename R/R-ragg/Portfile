@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github r-lib ragg 1.4.0 v
+R.setup             github r-lib ragg 1.5.0 v
 revision            0
 categories-append   graphics
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             MIT
 description         Graphic devices based on AGG
 long_description    {*}${description}
 homepage            https://ragg.r-lib.org
-checksums           rmd160  726c70473b9d6dff1cbcda69f942345c5e65ce54 \
-                    sha256  8f6b0ac62a6b7a9d695b50498f474a02345b4286828ac755cc85b268bff7387d \
-                    size    610925
+checksums           rmd160  69f8315fa7f99ef2fa466a25d54b4bfad2be05f5 \
+                    sha256  6f9f49cbfc0ff62ca07a305b87b25a50c500478797002b4b64720f6988dca581 \
+                    size    616757
 github.tarball_from archive
 
 depends_build-append \
@@ -26,6 +26,7 @@ depends_lib-append  port:freetype \
                     port:R-systemfonts \
                     port:R-textshaping \
                     port:tiff \
+                    port:webp \
                     port:zlib \
                     port:zstd
 
