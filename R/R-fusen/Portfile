@@ -4,8 +4,8 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran ThinkR-open fusen 0.7.1 v
-revision            1
+R.setup             cran ThinkR-open fusen 0.7.2 v
+revision            0
 categories-append   devel
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -13,9 +13,9 @@ license             MIT
 description         Build a package from Rmarkdown files
 long_description    {*}${description}
 homepage            https://thinkr-open.github.io/fusen
-checksums           rmd160  273d256b5ef86842bdb422d546cbf49aa3f85078 \
-                    sha256  02112084d6c1bd119051ebe0d931f0d2fc803806a218fd9ae7eaeb082b25ce19 \
-                    size    952016
+checksums           rmd160  0396d33ce93d45f3244bfc9c5b5fc5143156c78a \
+                    sha256  3f8910f4c7ddbfb7e41daa6f949537227197099614b42567bb4deda20148ea4a \
+                    size    952473
 # github.tarball_from archive
 supported_archs     noarch
 
