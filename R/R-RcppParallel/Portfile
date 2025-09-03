@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran RcppCore RcppParallel 5.1.10
-revision            1
+R.setup             cran RcppCore RcppParallel 5.1.11-1
+revision            0
 categories-append   devel
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
-license             GPL-3
+license             GPL-3+
 description         High level functions for parallel programming with Rcpp
 long_description    {*}${description}
 homepage            https://rcppcore.github.io/RcppParallel
-checksums           rmd160  4ddbef3bb4bcc74d2e820acbac4053e173c7762a \
-                    sha256  eb257004ce2390f8e7f75d6cdd86466971bb24f9a20ccc5b0689bb7ce392f34d \
-                    size    1633793
+checksums           rmd160  75c6842310bdc1d20665f9cb365d7f00ac09c013 \
+                    sha256  e18c83548212cbd52f6629131564a392b870399343a5867d512dbca2a27a6362 \
+                    size    1633955
 
 # Use our standalone OneTBB instead of the bundled one,
 # which does not work correctly in some instances.
