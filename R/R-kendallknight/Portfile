@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran pachadotdev kendallknight 0.7.0
+R.setup             cran pachadotdev kendallknight 1.0.0
 revision            0
 categories-append   math
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             Apache-2
 description         Efficient implementation of Kendall's correlation coefficient computation
 long_description    {*}${description}
 homepage            https://pacha.dev/kendallknight
-checksums           rmd160  e85937eceaf2a7ab8d7ada6710f26e11f50793bc \
-                    sha256  30433615846005eb928a8b4802293268446c29e25a4f8c101248f4d7b4b8d656 \
-                    size    30902
+checksums           rmd160  e097db6da20133ad8802798f88ab1ed64b210e8f \
+                    sha256  5f6fc64779fa959a715bbceac1f57ccaeccba4b77510134f0cc88898c35d0214 \
+                    size    34646
 
 depends_lib-append  port:R-cpp11
 
