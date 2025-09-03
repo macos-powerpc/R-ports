@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran mmaechler sfsmisc 1.1-21
+R.setup             cran mmaechler sfsmisc 1.1-22
 revision            0
 categories-append   graphics sysutils
 platforms           {darwin any}
@@ -12,12 +12,13 @@ license             GPL-2+
 description         Utilities from Seminar für Statistik, ETH Zürich
 long_description    {*}${description}
 homepage            https://github.com/mmaechler/sfsmisc
-checksums           rmd160  74ef11180044abe6df8506d968ec0bb816d9c474 \
-                    sha256  14ca739233871c00429ee991f5b6259aabc670a39b6fb4d349e009db8fc6d470 \
-                    size    187050
+checksums           rmd160  5df2afd3fc405795ac7b398a564adf8911348fa7 \
+                    sha256  b2e900b2603d96ab01faf76ccf4ef22775a6f6f5549513f3c5343097b71efa80 \
+                    size    187528
 supported_archs     noarch
 
-depends_test-append port:R-e1071 \
+depends_test-append port:R-DescTools \
+                    port:R-e1071 \
                     port:R-gmp \
                     port:R-Hmisc \
                     port:R-lokern \
