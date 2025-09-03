@@ -4,21 +4,20 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran business-science timetk 2.9.0
-revision            2
+R.setup             cran business-science timetk 2.9.1
+revision            0
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3+
-description         Tool-kit for working with time series in R
-long_description    {*}${description}
+description         Tool-kit for working with time series
+long_description    {*}${description} in R.
 homepage            https://business-science.github.io/timetk
-checksums           rmd160  9167e92124e431ce70e3b65aae8f37a550ab7875 \
-                    sha256  6f5c47dd51a9632a1270debbe080740cf5d61f347332e68c6c1ec47ee333dbb8 \
-                    size    4116258
+checksums           rmd160  663f5847088cc0fecb170f7f9448a281a2a7a0ee \
+                    sha256  c72bc9a1022a43f324ee5b2d5470481359c7de7489e76032dc0aee69cfa830ee \
+                    size    3958088
 supported_archs     noarch
-platforms           {darwin any}
 
-depends_lib-append  port:R-anytime \
-                    port:R-assertthat \
+depends_lib-append  port:R-assertthat \
                     port:R-dplyr \
                     port:R-forcats \
                     port:R-forecast \
