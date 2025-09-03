@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran USDAForestService gdalraster 2.2.0
+R.setup             cran USDAForestService gdalraster 2.2.1
 revision            0
 categories-append   gis
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             MIT
 description         Bindings to the Geospatial Data Abstraction Library Raster API
 long_description    {*}${description}
 homepage            https://usdaforestservice.github.io/gdalraster
-checksums           rmd160  eb94cffd6ae0e15a0d4bc5dd88e98d6faf8af665 \
-                    sha256  814d9702954221a1f4ed7dc927fd33ea113e0327be8c996f1ef903eab228a771 \
-                    size    2980433
+checksums           rmd160  bba8ba7e2bd8140d8fe23ad29b0ba384e74b424d \
+                    sha256  4b79bc64995b4de56182e524d03639ddbf007594150bb47a90c346ab89b75cf8 \
+                    size    2982135
 # github.tarball_from archive
 
 depends_build-append \
