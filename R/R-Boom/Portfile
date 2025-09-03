@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran steve.the.bayesian Boom 0.9.15
-revision            2
+R.setup             cran steve.the.bayesian Boom 0.9.16
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             LGPL-2.1
 description         Bayesian Object-Oriented Modelling
 long_description    A C++ library for Bayesian modelling, with an emphasis on Markov chain Monte Carlo.
 homepage            https://github.com/steve-the-bayesian/BOOM
-checksums           rmd160  cb6400752052e47aad5d560912d1a8e083b92fe8 \
-                    sha256  5360029bcca7c0bcabbf1c4fca10e119ce0d06fb7c48947647bb39307520d601 \
-                    size    2507755
+checksums           rmd160  e7e7d0ef5ea1d85f6aa59d8244d7e71406384c01 \
+                    sha256  6a17ca88aff476a58a0634ec633e50b239e60473c038b78f90e192b533c22494 \
+                    size    2501472
 
 # Package uses an old broken version of Eigen.
 # Until updated, disable Altivec for PowerPC.
