@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran ssgraph 1.15
-revision            3
+R.setup             cran cran ssgraph 1.16
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
-license             {GPL-2 GPL-3}
+license             GPL-2+
 description         Bayesian graph structure learning using spike-and-slab priors
 long_description    {*}${description}
-checksums           rmd160  6c7bff7f40f5c10e7b439cbe8d8ae356d868cd45 \
-                    sha256  cd9691320238ee2cffa6d4f1bb0eae1adc93ef6132a18c365e64442ddbba45f9 \
-                    size    211017
+checksums           rmd160  c0faeb9cc95f329e7075872b9c95488119d2b306 \
+                    sha256  b7d3fa6b2fb1619a2adff7bcae4987dceb853aaade21b86c94cb7df1a9e38791 \
+                    size    208501
 
 depends_lib-append  port:R-BDgraph
 
