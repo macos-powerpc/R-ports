@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran tidyverts fabletools 0.5.0
-revision            1
+R.setup             cran tidyverts fabletools 0.5.1
+revision            0
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Core tools for packages in the fable framework
 long_description    {*}${description}
 homepage            https://fabletools.tidyverts.org
-checksums           rmd160  09b4790cd7b3216a34024459ae11aa961b2f2fdb \
-                    sha256  b003b5d02808dabe34a0ef03a3eb2507286e31e0542b0c540a536a53602f80e3 \
-                    size    253569
+checksums           rmd160  6804f904da0f6332bdf6110b020d3eda87bd6151 \
+                    sha256  fba553d556482ca9d80687980fc8d96c2638930bb46df8be97f0bc35ef35f0d4 \
+                    size    209915
 supported_archs     noarch
 
 depends_lib-append  port:R-distributional \
@@ -46,6 +46,7 @@ depends_test-append port:R-covr \
                     port:R-rmarkdown \
                     port:R-spelling \
                     port:R-testthat \
-                    port:R-tsibbledata
+                    port:R-tsibbledata \
+                    port:R-urca
 
 test.run            yes
