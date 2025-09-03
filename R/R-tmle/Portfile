@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran sgruber tmle 2.0.1.1
-revision            1
+R.setup             cran sgruber tmle 2.1.1
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
 license             {BSD GPL-2}
 description         Targeted Maximum Likelihood Estimation
 long_description    {*}${description}
-checksums           rmd160  99d37ae6641ef98f9fff59b872707a4188e48d4a \
-                    sha256  8c2448f176ed94201affb8a9c42a5d0f56f26e88131ff2c1f4a9d14c5a0d87f6 \
-                    size    45416
+checksums           rmd160  15b5cc09d7f12e2c21377b944f74e2b5d7fbd47e \
+                    sha256  5e1fccaea7bf923456b8197d3eca5314db074dcbec8ca0510a15cb837883b133 \
+                    size    46242
 supported_archs     noarch
 
 depends_lib-append  port:R-glmnet \
