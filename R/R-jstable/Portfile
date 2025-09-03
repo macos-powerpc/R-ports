@@ -4,16 +4,16 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran jinseob2kim jstable 1.3.16 v
+R.setup             cran jinseob2kim jstable 1.3.17 v
 revision            0
 maintainers         nomaintainer
 license             Apache-2
 description         Create tables from different types of regression
 long_description    {*}${description}
 homepage            https://github.com/jinseob2kim/jstable
-checksums           rmd160  0ab49b0de85609d347468b3d1e10fdcc2df8bc4d \
-                    sha256  8195e312ca8d73a2805ff2ffc2261c0fccdfbe1c54adb3ce73a3561601dc65d0 \
-                    size    443217
+checksums           rmd160  916a3788e36e5d25f821ca374cb48da5b7c7e460 \
+                    sha256  ae7b36f46b26b2a2241d727f4bc8baf8d2e8ac81b7b4ad105556e2cbdfa94230 \
+                    size    446759
 supported_archs     noarch
 
 depends_lib-append  port:R-car \
