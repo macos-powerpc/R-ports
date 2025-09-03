@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github easystats modelbased 0.12.0 v
+R.setup             github easystats modelbased 0.13.0 v
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             GPL-3
 description         Methods for correlation analysis
 long_description    {*}${description}
 homepage            https://easystats.github.io/modelbased
-checksums           rmd160  7b2947bf0f0770424c9d463bbe14b2c86acdf389 \
-                    sha256  5001ba5ec57d4468699ad9a050a01e69fdcef1e9e9dfa3ff6a49602fe8d0db50 \
-                    size    1246089
+checksums           rmd160  cd0a1293fa89fd4fdb5445a3d8b28b4f6df32949 \
+                    sha256  549e3991c343d82249d714a4060d384c55a0b9d393fa7cabf2a491ed1edff67c \
+                    size    1283009
 github.tarball_from archive
 supported_archs     noarch
 
@@ -33,7 +33,9 @@ depends_test-append port:R-afex \
                     port:R-coda \
                     port:R-collapse \
                     port:R-correlation \
+                    port:R-coxme \
                     port:R-curl \
+                    port:R-discovr \
                     port:R-easystats \
                     port:R-effectsize \
                     port:R-emmeans \
@@ -57,6 +59,7 @@ depends_test-append port:R-afex \
                     port:R-performance \
                     port:R-poorman \
                     port:R-pscl \
+                    port:R-Rdatasets \
                     port:R-RcppEigen \
                     port:R-report \
                     port:R-rmarkdown \
@@ -66,6 +69,8 @@ depends_test-append port:R-afex \
                     port:R-sandwich \
                     port:R-see \
                     port:R-testthat \
+                    port:R-tinyplot \
+                    port:R-tinytable \
                     port:R-vdiffr \
                     port:R-withr
 
