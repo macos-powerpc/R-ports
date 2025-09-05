@@ -3,19 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-# Revert to GitHub once updated there.
-R.setup             cran r-lib mockery 0.4.4
-revision            2
+R.setup             github r-lib mockery 0.4.5 v
+revision            0
 categories-append   devel
+platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
-description         Mocking library for R
-long_description    {*}${description}
-checksums           rmd160  c1045454310a93f5e99199119133fe60105355cf \
-                    sha256  072220a0f2455fca91649fc7ce4ed503cfaa965aa769d1bd0fd6622b222845c3 \
-                    size    20754
+description         Mocking library
+long_description    {*}${description} for R.
+checksums           rmd160  e36be0489774a6b124734e3b3bbfbb613111e0f2 \
+                    sha256  ef84c855d6712ed327a11b06765ea68acf7c57fa066a733826ccfe3748a22a8d \
+                    size    16165
+github.tarball_from archive
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-testthat
 
