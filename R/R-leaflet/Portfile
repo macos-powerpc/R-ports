@@ -4,18 +4,18 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran rstudio leaflet 2.2.2 v
-revision            2
+R.setup             cran rstudio leaflet 2.2.3 v
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
 description         Create and customize interactive maps
 long_description    {*}${description}
 homepage            https://rstudio.github.io/leaflet
-checksums           rmd160  73aeefa07db71b209e2b21edb263bbf5498f2e56 \
-                    sha256  d2877b8d394116cc648456a828c5b825728be6a7afbbb3d55cc142c91a1ab8eb \
-                    size    1983642
+checksums           rmd160  29b2154ec949103c45fce90a2b24a0026a442761 \
+                    sha256  af9fe3979806745f366da9e9178379dbeb46d3a2b7f224f1fc1506a3eea51ad0 \
+                    size    2013248
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-crosstalk \
                     port:R-htmltools \
@@ -26,9 +26,10 @@ depends_lib-append  port:R-crosstalk \
                     port:R-png \
                     port:R-raster \
                     port:R-RColorBrewer \
+                    port:R-rlang \
                     port:R-scales \
-                    port:R-sp \
-                    port:R-viridis \
+                    port:R-sf \
+                    port:R-viridisLite \
                     port:R-xfun
 
 depends_test-append port:R-knitr \
@@ -38,8 +39,8 @@ depends_test-append port:R-knitr \
                     port:R-RJSONIO \
                     port:R-rmarkdown \
                     port:R-s2 \
-                    port:R-sf \
                     port:R-shiny \
+                    port:R-sp \
                     port:R-terra \
                     port:R-testthat
 
