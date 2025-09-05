@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran stefanedwards lemon 0.5.1 v
+R.setup             cran stefanedwards lemon 0.5.2 v
 revision            0
 categories-append   graphics
 platforms           {darwin any}
@@ -13,9 +13,9 @@ license             GPL-3
 description         Freshing up your ggplot2 plots
 long_description    {*}${description}
 homepage            https://github.com/stefanedwards/lemon
-checksums           rmd160  dc67a7bf21e9f675e04c45167aea3e79463ef0da \
-                    sha256  dba80a6225fef3993445446efb2337e8e58b3ce25589f6d2f143f3cb87bd9453 \
-                    size    2386227
+checksums           rmd160  7da685bab543d1fcb34344273b922ee0fbe0344d \
+                    sha256  0b7bf82cb859d38c795bff2015179c9d48ac42a8f18aac4448e1dcc2170110fd \
+                    size    2451619
 supported_archs     noarch
 
 depends_lib-append  port:R-ggplot2 \
