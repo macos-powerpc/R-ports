@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github tidyverse googlesheets4 1.1.1 v
-revision            2
+R.setup             github tidyverse googlesheets4 1.1.2 v
+revision            0
 platforms           {darwin any}
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+maintainers         nomaintainer
 license             MIT
 description         Access Google Sheets using the Sheets API V4
 long_description    {*}${description}
 homepage            https://googlesheets4.tidyverse.org
-checksums           rmd160  c87110bdc39945bc568003872d0b0a3d3f1ce9b6 \
-                    sha256  8182dde24ed10dc1b5fbaf8c7d7baaa6c7c9f389fa1fe3355080aeb6ca93e83f \
-                    size    2034708
-github.tarball_from tarball
+checksums           rmd160  aa3b27ab1ae6da14c6de09414958d9ebc9be45ca \
+                    sha256  c1b4f31d4ac5ee3eb7861d3f86d6efb4d0dd312c1124258444a978c62308cc1a \
+                    size    2034554
+github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-cellranger \
