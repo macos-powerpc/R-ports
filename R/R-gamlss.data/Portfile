@@ -3,16 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran gamlss gamlss.data 6.0-6
-revision            2
+R.setup             cran gamlss gamlss.data 6.0-7
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
 license             {GPL-2 GPL-3}
 description         Data for generalised additive models for location scale and shape
 long_description    {*}${description}
-checksums           rmd160  fb0f0d5855314dbf96010e21d7683b96b60991e2 \
-                    sha256  bae0db19d95500b3f49f855d4ebd3ddb071c5e2d9104b27e0a73865f4909ab22 \
-                    size    946542
+homepage            https://www.gamlss.com
+checksums           rmd160  2c6a0c3cc88227a231e76b184ec0d0fa51a57540 \
+                    sha256  8028c2453541a6dea92d587ca23cf7f79bae8fc9f3588bbff6ff7eea71d86771 \
+                    size    949932
 supported_archs     noarch
-platforms           {darwin any}
 
 test.run            yes
