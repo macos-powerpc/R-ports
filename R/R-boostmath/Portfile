@@ -3,8 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github andrjohns boostmath 5ca8ba738c42c9ff83031682f20102360f9dbfdb
-version             1.0.2
+R.setup             cran andrjohns boostmath 1.1.0
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,10 +11,9 @@ license             MIT
 description         R bindings for the Boost math functions
 long_description    {*}${description}
 homepage            https://github.com/andrjohns/boostmath
-checksums           rmd160  75e504596ce1da00bffcf2a9ecab972a40ffe986 \
-                    sha256  d93b3344baf64ddd977828e99e1ae7ee772ffe298b13bd4660bd0f30fa3d16c8 \
-                    size    60414
-github.tarball_from archive
+checksums           rmd160  6382b56a3b3aa8043430583b1f95672d25c84514 \
+                    sha256  35a626caa259d1f295751dfc574c51cff223af9898e5dff06b1eb3692b38f9c1 \
+                    size    130695
 
 depends_lib-append  port:R-BH \
                     port:R-cpp11
