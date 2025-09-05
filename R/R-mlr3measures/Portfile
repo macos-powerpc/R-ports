@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github mlr-org mlr3measures 1.0.0 v
-revision            1
+R.setup             github mlr-org mlr3measures 1.1.0 v
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             LGPL-3
 description         Performance measures for R-mlr3
 long_description    {*}${description}
 homepage            https://mlr3measures.mlr-org.com
-checksums           rmd160  840d615d2c9471917ba753b41081730175c79d9d \
-                    sha256  014c9792270d9bdd7f990a4b328e4a6c99df84a00d1a0528bef98c535210c8c9 \
-                    size    58919
+checksums           rmd160  7be6af190f44486c7a51b67330fc44f5a08be184 \
+                    sha256  c5720b7806a1ebb84f5b4d5dfb5d9c8d6f641cfe83394de2b904bbdd48cbcfa7 \
+                    size    59347
 github.tarball_from archive
 supported_archs     noarch
 
