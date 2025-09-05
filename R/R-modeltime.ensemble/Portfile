@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran business-science modeltime.ensemble 1.0.4
+R.setup             cran business-science modeltime.ensemble 1.1.0
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -13,9 +13,9 @@ license             MIT
 description         Ensemble algorithms for time series forecasting with R-modeltime
 long_description    {*}${description}
 homepage            https://business-science.github.io/modeltime.ensemble
-checksums           rmd160  d1f0ab45dbe0bd895624d3394397daf2cbbb1aab \
-                    sha256  97245526db81ed7d7f877e3b42af4ad9edb2e2ca9c955eb469236f7229b9c288 \
-                    size    2131203
+checksums           rmd160  bda7f54c87c38189f23752a3e62af1fab8f9a0e7 \
+                    sha256  55f64a618a2784c9ab3338d483a72da2a041fa7ecae4809e261f3b08198770fd \
+                    size    1689072
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
