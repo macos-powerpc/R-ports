@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran business-science modeltime.resample 0.2.3
+R.setup             cran business-science modeltime.resample 0.3.0
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -13,9 +13,9 @@ license             MIT
 description         Resampling tools for time series forecasting
 long_description    {*}${description}
 homepage            https://github.com/business-science/modeltime.resample
-checksums           rmd160  ef54fc60273246062f6dbcf44b88912ac5b6e063 \
-                    sha256  7b78fba8338cf01f7f70ea4e254aac96ff0a3d1b04ab45bb9d9047a30b262c5f \
-                    size    1928066
+checksums           rmd160  fa66f764901f634de60c61d9ea151e7cae565490 \
+                    sha256  3600633a284084404dbfec47c1b903a98be034d5a2612e67b6adbe1819e3f945 \
+                    size    1800630
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
