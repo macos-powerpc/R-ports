@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran thomasp85 gganimate 1.0.10 v
+R.setup             cran thomasp85 gganimate 1.0.11 v
 revision            0
 categories-append   graphics
 platforms           {darwin any}
@@ -13,9 +13,9 @@ license             MIT
 description         Grammar of animated graphics
 long_description    {*}${description}
 homepage            https://gganimate.com
-checksums           rmd160  93ae6bdeba44c59527a6ddde7f31d9ef97e04fa7 \
-                    sha256  9dec6c4ee494bf8cffd18daeefdb9de20f54b5d2c107270a21a49529041e8ab9 \
-                    size    4465460
+checksums           rmd160  8bd8d9a4298063fc582338d2a2967b64e9ac26b8 \
+                    sha256  92488c872b4a9da0e30ede71e81661ee335b84f20e12a1e70332ae53aeaaeaca \
+                    size    4550597
 # github.tarball_from archive
 supported_archs     noarch
 
