@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-cas Ryacas0 0.4.4
-revision            2
+R.setup             cran r-cas Ryacas0 0.4.5
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         Legacy version of Ryacas, an interface to the yacas computer algebra system
 long_description    {*}${description}
-checksums           rmd160  1a5e27e427456f11ab23493c47c101269ed8c73e \
-                    sha256  abc63291eaf620c7fed7c722d64a6389b942f236685d8ff1191bf46187d55776 \
-                    size    436729
+checksums           rmd160  192d130dd7192a01fd99051bb8c28d4e6e9f272e \
+                    sha256  78b832b2549add6d18009d81e98c30f093e6debc1c7ee273b5a6ee606daf2757 \
+                    size    440534
 
 depends_lib-append  port:R-Rcpp \
                     port:R-settings \
