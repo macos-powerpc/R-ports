@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran steve.the.bayesian bsts 0.9.10
-revision            2
+R.setup             cran steve.the.bayesian bsts 0.9.11
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
-license             LGPL-2.1
+license             {LGPL-2.1 MIT}
 description         Bayesian Structural Time Series
 long_description    Time series regression using dynamic linear models fit using MCMC.
-checksums           rmd160  210d9d726fdcce8b3d5b9e5cd4ff0591aa7b2f1e \
-                    sha256  a302bc08d04ef8de83a7bf8dce03e949cadb423361bd85f9ad5dac77918271b1 \
-                    size    304301
+checksums           rmd160  43455749a0bfcb365e19b260802fbe2520a1468a \
+                    sha256  91355608144ca5ec0fc2c0b763a2012fa025974930cd340674f11a8bc9f43cd5 \
+                    size    304875
 
 depends_lib-append  port:R-Boom \
                     port:R-BoomSpikeSlab \
