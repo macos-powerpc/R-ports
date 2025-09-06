@@ -4,8 +4,8 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran r-lib usethis 3.1.0 v
-revision            1
+R.setup             cran r-lib usethis 3.2.1 v
+revision            0
 categories-append   devel
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -13,9 +13,9 @@ license             MIT
 description         Automate package and project setup
 long_description    {*}${description}
 homepage            https://usethis.r-lib.org
-checksums           rmd160  6721c64c3d8e8924be49d2a4fa7f9b63e4b54af4 \
-                    sha256  63afe81c1db19be1dbbf71313c93600306181a4051f84099469d338dbe6916d8 \
-                    size    384582
+checksums           rmd160  69341d3d4be8f1a43bcbb42abf60673aaa0679a0 \
+                    sha256  45bc39d35b0cc2ef7dfe03c488a05c0bac62b498a3d16f745b757e4fba772b77 \
+                    size    393912
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
@@ -42,10 +42,10 @@ depends_test-append port:R-covr \
                     port:R-knitr \
                     port:R-magick \
                     port:R-pkgload \
+                    port:R-quarto \
                     port:R-rmarkdown \
                     port:R-roxygen2 \
                     port:R-spelling \
-                    port:R-styler \
                     port:R-testthat
 
 # There seems to be a problem with R BATCH:
