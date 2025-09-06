@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran fbartos zcurve 2.4.4
+R.setup             cran fbartos zcurve 2.4.5
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             GPL-3
 description         Implementation of z-curves
 long_description    {*}${description}
 homepage            https://fbartos.github.io/zcurve
-checksums           rmd160  0d585c2263bf1ffa6bd27c07ddd3176132126d49 \
-                    sha256  bd8e5df15a074ca77c942eecad218c516086ba9bfd3e60880a7897a1b229094e \
-                    size    220518
+checksums           rmd160  f063d29e683f552b81ab03c95a9d19c2e68a28f6 \
+                    sha256  8af7ab184004021ba2c56079bde3fad3120c685a79fc87fd798430995e1afe20 \
+                    size    220540
 
 depends_lib-append  port:R-evmix \
                     port:R-ggplot2 \
