@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran philchalmers Spower 0.3.1
+R.setup             cran philchalmers Spower 0.4.0
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             GPL-3+
 description         Power analyses using Monte Carlo simulations
 long_description    {*}${description}
 homepage            https://github.com/philchalmers/Spower
-checksums           rmd160  0fde1521a39524b34dc0312d2fb393b54536d562 \
-                    sha256  bccd693439e7b9d7b2f701c5117440ca334c66cfdfbf29312fa102a0d7ffe2b5 \
-                    size    499839
+checksums           rmd160  37eb3fa1027b84b7276bbd20971b0529deb15eca \
+                    sha256  33f901b8569043055088c724bdd41818f10e900967b907d58a0c3ecf3356ab2a \
+                    size    2058168
 supported_archs     noarch
 
 depends_lib-append  port:R-car \
