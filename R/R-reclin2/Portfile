@@ -4,16 +4,16 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran djvanderlaan reclin2 0.5.0
-revision            2
+R.setup             cran djvanderlaan reclin2 0.6.0
+revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Record linkage toolkit
 long_description    {*}${description}
 homepage            https://github.com/djvanderlaan/reclin2
-checksums           rmd160  185dfe3d5c4653107e85920c2f1e928a164b99a9 \
-                    sha256  242e65e0979d10a9976d4172d20729e8c10bc971db9c0ff7125257474e364e22 \
-                    size    138294
+checksums           rmd160  d38ca0084f07abef9bb48c0cbb8bf0765144ba4b \
+                    sha256  109e038c833b2338c51b8d89819d3fbbc72b3b4a73595545f080fce6abe3ac9a \
+                    size    126573
 
 depends_lib-append  port:R-data.table \
                     port:R-lpSolve \
