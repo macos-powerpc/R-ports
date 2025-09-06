@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github spsanderson TidyDensity 1.5.1 v
+R.setup             github spsanderson TidyDensity 1.5.2 v
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -11,9 +11,9 @@ maintainers         nomaintainer
 license             MIT
 description         Functions for tidy analysis and generation of random data
 long_description    {*}${description}
-checksums           rmd160  e740155bc48e3967c10857d629922ee2d415b9f8 \
-                    sha256  ecb80bf48d12ac3ef93eb41aa718ae13166e11932f3ecef043d1a4d176f483e2 \
-                    size    16208610
+checksums           rmd160  9d43e4757001d5ce973c927322144395dacfc6d6 \
+                    sha256  d88c6e73af06b7ece246eccae213815b34f285d28a6e5456c0bceb496d275a5e \
+                    size    16436860
 github.tarball_from archive
 supported_archs     noarch
 
