@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is outdated.
-R.setup             cran aloy qqplotr 0.0.6 v
-revision            1
+R.setup             cran aloy qqplotr 0.0.7 v
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
 description         Quantile-quantile plot extensions for R-ggplot2
 long_description    {*}${description}
 homepage            https://github.com/aloy/qqplotr
-checksums           rmd160  ce833d725cdbe9cf30a94de332579680b7854300 \
-                    sha256  aedb29f07824ce2d0f13df33c0b66805f32f8092fb0861d668291502eaa9414e \
-                    size    963248
+checksums           rmd160  3b02b61c5194e334b1c3bc2d51f080b3f169af25 \
+                    sha256  080d1026523443ffab830acb9efc8d7275e571ea4bf47f5f3c6b338306ccfbf2 \
+                    size    963967
 supported_archs     noarch
 
 depends_lib-append  port:R-dplyr \
