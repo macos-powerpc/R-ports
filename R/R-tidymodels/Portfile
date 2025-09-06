@@ -4,18 +4,18 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran tidymodels tidymodels 1.2.0
-revision            2
+R.setup             cran tidymodels tidymodels 1.4.0
+revision            0
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Easily install and load the Tidymodels packages
 long_description    {*}${description}
 homepage            https://tidymodels.tidymodels.org
-checksums           rmd160  0c00e11112cd84e2e8a2f8a24d7793dfb0f1a3ee \
-                    sha256  eca6b7440757204a958617613ac12286a371b3c29cc8d452e8e2e0f4643d9212 \
-                    size    50750
+checksums           rmd160  a2538b199d43ee087cbf0671b9c2671187f0d4fe \
+                    sha256  590af27514a69415e77201e6926d1fd43327e228cdea845a572cfed2a58f10ea \
+                    size    47666
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-broom \
                     port:R-cli \
@@ -32,7 +32,7 @@ depends_lib-append  port:R-broom \
                     port:R-rlang \
                     port:R-rsample \
                     port:R-rstudioapi \
-                    port:R-tibble \
+                    port:R-tailor \
                     port:R-tidyr \
                     port:R-tune \
                     port:R-workflows \
