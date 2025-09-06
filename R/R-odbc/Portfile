@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github r-dbi odbc 1.6.1 v
-revision            1
+R.setup             github r-dbi odbc 1.6.3 v
+revision            0
 categories-append   databases
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         DBI-compatible interface to ODBC databases
 long_description    {*}${description}
 homepage            https://r-dbi.github.io/odbc
-checksums           rmd160  3ea060b0200e05e4d10ae521d06c9ad0144cca30 \
-                    sha256  6e4169a0ae22268fca02f35fffefd3ea2ae13b8782e1bf2d58120c73426d824a \
-                    size    872385
+checksums           rmd160  3ed073ef0c0a31c6e3b35b31cd0dd641c3f68022 \
+                    sha256  7e0fcdd1bcb76d45b5c3dad8ee1ca7dae12a3704cb5b99238a07734d0ea2374d \
+                    size    884681
 github.tarball_from archive
 
 patchfiles          patch-configure.diff
