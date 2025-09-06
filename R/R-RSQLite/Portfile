@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github r-dbi RSQLite 2.4.3.9001 v
+R.setup             github r-dbi RSQLite 2.4.3.9003 v
 revision            0
 categories-append   databases
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             LGPL-2.1+
 description         SQLite interface for R
 long_description    {*}${description}
 homepage            https://rsqlite.r-dbi.org
-checksums           rmd160  ddbc7f8dc7eb55516e0850f860f29572dd01293f \
-                    sha256  692b29793ad2ca2772ab54ac6a43efad273dcdd2d25dbd4634296113f1cee43d \
-                    size    4300125
+checksums           rmd160  99a9fa3ff8e0c52b0fcdc338889f601c6681d76d \
+                    sha256  fe9e1d0c0c68c4c5f033902c3a20e506239eebca164b1ecd8b77e77fa9c4d22a \
+                    size    4299320
 github.tarball_from archive
 
 depends_lib-append  port:R-bit64 \
