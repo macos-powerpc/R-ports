@@ -4,8 +4,8 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Use CRAN, since GitHub tarball is broken.
-R.setup             cran nicholasjclark mvgam 1.1.51 v
-revision            1
+R.setup             cran nicholasjclark mvgam 1.1.593 v
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
@@ -13,9 +13,9 @@ description         Multivariate (Dynamic) Generalized Additive Models
 long_description    Fit Bayesian dynamic generalized additive models \
                     to sets of time series.
 homepage            https://nicholasjclark.github.io/mvgam
-checksums           rmd160  f9236b28e46b2c4ec5db25b48014a8073e7a80d3 \
-                    sha256  f20d2beb8dfb1d6750aba240ed48cf148a3eb9dba5eef55eeda2d7688d51122a \
-                    size    3411958
+checksums           rmd160  ec89ee62ebfea9a8a3df4edb2eb72b41d9ed695e \
+                    sha256  da1fac238fa6f8e0b11fbc845427608e155982a0694ee37e5411630422f94974 \
+                    size    3440855
 
 depends_lib-append  port:R-bayesplot \
                     port:R-brms \
