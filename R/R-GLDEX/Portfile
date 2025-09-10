@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran GLDEX 2.0.0.9.3
-revision            2
+R.setup             cran cran GLDEX 2.0.0.9.4
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-3+
 description         Fitting single and mixture of generalised Lambda distributions
 long_description    {*}${description}
-checksums           rmd160  d6508787e77c21b9e2935919823d78d2a97460e7 \
-                    sha256  7a172fff39a1ad7cf43ce0e6d774ac21421a4333daa814ac65b5ee5827e16977 \
-                    size    95490
+checksums           rmd160  ca84d1448387ba8af1ad700e169204b8f6795027 \
+                    sha256  93608d179cba2636d3ca317b6cdc77c07f01101b6071b586d9a25b9c3c5daac5 \
+                    size    91542
 
 depends_lib-append  port:R-spacefillr
 
