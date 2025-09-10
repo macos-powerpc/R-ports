@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github tidyverse stringr 1.5.1 v
-revision            2
+R.setup             github tidyverse stringr 1.5.2 v
+revision            0
 categories-append   devel textproc
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -13,9 +13,9 @@ description         Fresh approach to string manipulation in R
 long_description    The stringr package provides a cohesive set of functions designed to make working with strings as easy as possible. \
                     If you’re not familiar with strings, the best place to start is the chapter on strings in R for Data Science.
 homepage            https://stringr.tidyverse.org
-checksums           rmd160  8a7f79e901aa0c67caf44721ddfbdde42eb6d224 \
-                    sha256  96d19d7693842acd00688860133b26fcf73d3108be7bbb8c06631a355e1acd55 \
-                    size    196273
+checksums           rmd160  688553ff6033c2c80fda7f7cff70841f271c212a \
+                    sha256  d2a8911ab6de0b8e080ef50bacc192d541fec61f76f8fd23cdbc087f351ecf7b \
+                    size    196304
 github.tarball_from archive
 supported_archs     noarch
 
