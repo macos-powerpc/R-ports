@@ -3,21 +3,24 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran dnychka fields 16.3
-revision            1
+R.setup             cran dnychka fields 17.1
+revision            0
 maintainers         nomaintainer
 license             GPL-2+
 description         Tools for spatial data
 long_description    {*}${description}
 homepage            https://github.com/dnychka/fieldsRPackage
-checksums           rmd160  dd76eaae44f450d7b732f82dd99dd43f6aad41ab \
-                    sha256  cbb7a0c0fbb94ff63ea2bade39953f72d15fe8ad3f7ac7111615c7ea4ea26b92 \
-                    size    3623407
+checksums           rmd160  27f4607a8a6779d928cc6fea20cad4fc3d2533b0 \
+                    sha256  36c5d0c2e47a71380082923a4c6abaa5b73f445147f5999a9147c9fb575ab17e \
+                    size    4049945
 
 depends_lib-append  port:R-maps \
+                    port:R-RColorBrewer \
                     port:R-spam \
                     port:R-viridisLite
 
 compilers.setup     require_fortran
+
+depends_test-append port:R-mapproj
 
 test.run            yes
