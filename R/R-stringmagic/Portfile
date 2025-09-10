@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran lrberge stringmagic 1.1.2
-revision            1
+R.setup             cran lrberge stringmagic 1.2.0
+revision            0
 categories-append   devel
 maintainers         nomaintainer
 license             GPL-2+
 description         Character string operations and interpolation
 long_description    {*}${description}, magic edition.
 homepage            https://lrberge.github.io/stringmagic
-checksums           rmd160  c18e5a3909e43d0effdceba816a8a6814a05e5bc \
-                    sha256  eed1c04aa99be5a99ecfdd32498279f170e261669cc1b91d18673454064b8f8c \
-                    size    3340420
+checksums           rmd160  22ebdb43f1d4e0858902c05c55b94abd731c82ee \
+                    sha256  a60281ff987d0db25c87f32303a7aa5ba3733d4e1915c877ca92d0f552fd13a0 \
+                    size    3362930
 
 depends_lib-append  port:R-Rcpp
 
