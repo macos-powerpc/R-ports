@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran roberto.ascari FlexReg 1.3.1
+R.setup             cran roberto.ascari FlexReg 1.4
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             GPL-2+
 description         Regression models for bounded continuous \
                     and discrete responses
 long_description    {*}${description}
-checksums           rmd160  73b8c779df9ef0e5437435d16b964ef006aadf5f \
-                    sha256  fec71beb642384e1b6b569f585150436a2724be27f9845124c656dfff00e4044 \
-                    size    317686
+checksums           rmd160  f31b4749dcb290f8c2fe892ff354fa0d2b5d4395 \
+                    sha256  61c9c3a5930ec83eb38886a64205f3b50b886aeb19db608bd8fa804eb3c740d1 \
+                    size    175508
 
 depends_lib-append  port:R-bayesplot \
                     port:R-BH \
@@ -26,7 +26,5 @@ depends_lib-append  port:R-bayesplot \
                     port:R-rstan \
                     port:R-rstantools \
                     port:R-StanHeaders
-
-depends_test-append port:R-testthat
 
 test.run            yes
