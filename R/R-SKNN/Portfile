@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran Yi.YA_yaya SKNN 4.0
-revision            1
+R.setup             cran Yi.YA_yaya SKNN 4.1.1
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2
 description         Super K-Nearest Neighbor (SKNN) classification algorithm
 long_description    {*}${description}
-checksums           rmd160  2c33e47ab960372462b461bc8326a288aef84e49 \
-                    sha256  c059e34ec8f3a9ea5edabce3aadb6d0a0df6f48c9d6019514ad6a6d96c414c37 \
-                    size    4179
+checksums           rmd160  8bbabf7cbf61cd3067bac2d26d649f9db4225328 \
+                    sha256  fcb59d35d98fcc9f70471e5441751694d45baac2fde25c254ba2372b04568191 \
+                    size    4248
 supported_archs     noarch
 
 test.run            yes
