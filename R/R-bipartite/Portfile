@@ -3,18 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran biometry bipartite 2.20
-revision            1
+R.setup             cran biometry bipartite 2.22
+revision            0
 maintainers         nomaintainer
 license             GPL-2+
 description         Visualising bipartite networks \
                     and calculating some (ecological) indices
 long_description    {*}${description}
-checksums           rmd160  4e894f5e3eeff40c02f83591a5d03acf51ea2416 \
-                    sha256  86f66ce178db0589c0aa4e51509696bf0fb8a316b06c0edecfd4ce924b32fd71 \
-                    size    2056825
+checksums           rmd160  f35870afd9fa041aa2d850195597ffa25f70e76c \
+                    sha256  5b43fae574778951f6a9b851d4465befe6f8918c9e42095c696a4729b7ef1e22 \
+                    size    4513741
 
-depends_lib-append  port:R-fields \
+depends_lib-append  port:R-corpcor \
+                    port:R-fields \
                     port:R-igraph \
                     port:R-permute \
                     port:R-sna \
