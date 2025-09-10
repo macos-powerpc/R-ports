@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github paul-buerkner brms 2746070ad9d29c2a9d132e8f19b4c5233c855f14
-version             2.22.13
+R.setup             github paul-buerkner brms 09722bcae152b5da136554036fb469828bdfa3d1
+version             2.23.0
 revision            0
 categories-append   math economics
 platforms           {darwin any}
@@ -13,9 +13,9 @@ license             GPL-2
 description         Bayesian applied regression modelling via RStan
 long_description    {*}${description}
 homepage            https://paul-buerkner.github.io/brms
-checksums           rmd160  786efa5eaadd33bee6013be44e119287e1a990b5 \
-                    sha256  ab23d96e4a618f3dd33e5a940c23095f80686b972279f4ea096cb680eb715bf0 \
-                    size    5536156
+checksums           rmd160  d30cfbcdae22538f616ace97ab5308471c4bdd65 \
+                    sha256  3af957c72e3b5d0bcb7110b2ba2781bbbbc8b6f368cc685ee5db4ec827e66847 \
+                    size    5542528
 github.tarball_from archive
 supported_archs     noarch
 
@@ -41,15 +41,18 @@ depends_lib-append  port:R-abind \
 depends_test-append port:R-ape \
                     port:R-arm \
                     port:R-cmdstanr \
+                    port:R-colorspace \
                     port:R-diffobj \
                     port:R-digest \
                     port:R-emmeans \
                     port:R-extraDistr \
+                    port:R-future.mirai \
                     port:R-gtable \
                     port:R-knitr \
                     port:R-lme4 \
                     port:R-MCMCglmm \
                     port:R-mice \
+                    port:R-mirai \
                     port:R-mnormt \
                     port:R-priorsense \
                     port:R-processx \
