@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-forge tramME 1.0.7
-revision            1
+R.setup             cran r-forge tramME 1.0.8
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         Transformation models with mixed effects
 long_description    {*}${description}
-checksums           rmd160  343fc99ef89ee42e2cfec14e1e0d8dbb51a71e50 \
-                    sha256  e18ab53866d365a4940bf559efb0d84d6b6de3d8b4890a8880abf07694810e94 \
-                    size    4963929
+checksums           rmd160  912f97d6bcca9e5b210d669984813b42ae982578 \
+                    sha256  085ec8aadc6ed386b97b251219290ebc4077317c18e1fd0436ae3234e0eb8187 \
+                    size    4985949
 
 depends_lib-append  port:R-alabama \
                     port:R-basefun \
