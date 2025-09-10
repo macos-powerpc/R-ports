@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran phamdn peramo 0.1.3
-revision            2
+R.setup             cran phamdn peramo 0.1.5
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Permutation tests for randomization model
 long_description    {*}${description}
-checksums           rmd160  770b03c847716142889355b3ce04304fb6b0a0f8 \
-                    sha256  8eeee6c2304e47bec540bbbb454dd2f0184e774d79d410490620d317af71ff59 \
-                    size    100691
+checksums           rmd160  fc10e6398d1e664aa96eb9cc7728aa1fdfdbdf47 \
+                    sha256  74967747d1ca280285e04d4bb75ef68d5e8da05a8933b0d00646778ae90a67b4 \
+                    size    100687
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-dplyr \
                     port:R-emmeans \
