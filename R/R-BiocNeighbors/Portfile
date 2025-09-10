@@ -3,28 +3,25 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             bioconductor Bioconductor BiocNeighbors 1.22.0
-revision            1
+R.setup             bioconductor Bioconductor BiocNeighbors 2.2.0
+revision            0
 categories-append   bioconductor
 maintainers         nomaintainer
 license             GPL-3
 description         Nearest neighbor detection for Bioconductor packages
 long_description    {*}${description}
-checksums           rmd160  16c2700bbd282314974b3c4003268f68dfc5c9d3 \
-                    sha256  2d727fa9e983afd7ff268eef5f6692846e44b50c7248868f98d51b4034232fcf \
-                    size    1042130
+checksums           rmd160  ee0dba0285bd4017107e11b879c8f8365f1a417f \
+                    sha256  3c5a6b91c7318702e51d3defc47591eee0a3f6babfc4c91a4b28f953e0a2d605 \
+                    size    336674
 
-depends_lib-append  port:R-BiocParallel \
-                    port:R-Rcpp \
-                    port:R-RcppHNSW \
-                    port:R-S4Vectors
+depends_lib-append  port:R-assorthead \
+                    port:R-Rcpp
 
-depends_test-append port:R-BiocStyle \
-                    port:R-FNN \
+depends_test-append port:R-BiocParallel \
+                    port:R-BiocStyle \
                     port:R-knitr \
-                    port:R-RcppAnnoy \
                     port:R-rmarkdown \
                     port:R-testthat
 
-# Tests freeze due to: https://trac.macports.org/ticket/67059
+# Tests may freeze due to: https://trac.macports.org/ticket/67059
 test.run            no
