@@ -3,23 +3,24 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran fhernanb DiscreteDists 1.0.0
-revision            1
+R.setup             cran fhernanb DiscreteDists 1.1.0
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Discrete Statistical Distributions
 long_description    {*}${description}
 homepage            https://github.com/fhernanb/DiscreteDists
-checksums           rmd160  1faf2b6d0c05c9bb000ed28a4320ca5a254db6e2 \
-                    sha256  7641fadaaf5b22931179af63871fb68e584bddee994727940fc286a7c82f4fb1 \
-                    size    596486
+checksums           rmd160  f38eceae5f29f7edb1e6190168429f0e8a1dad8a \
+                    sha256  250c5d8fd2ed60fe3de09c28a8ba9224e8bc77121e3ec4c0aec94f36fdae9bcf \
+                    size    556829
 
-depends_lib-append  port:R-gamlss \
+depends_lib-append  port:R-COMPoissonReg \
+                    port:R-gamlss \
                     port:R-gamlss.dist \
+                    port:R-nleqslv \
                     port:R-pracma \
-                    port:R-Rcpp \
-                    port:R-Rdpack
+                    port:R-Rcpp
 
 depends_test-append port:R-knitr \
                     port:R-rmarkdown
