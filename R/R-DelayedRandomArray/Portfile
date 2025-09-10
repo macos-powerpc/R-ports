@@ -3,22 +3,23 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             bioconductor LTLA DelayedRandomArray 1.12.0
-revision            1
+R.setup             bioconductor LTLA DelayedRandomArray 1.16.0
+revision            0
 categories-append   bioconductor
 maintainers         nomaintainer
 license             GPL-3
 description         Delayed arrays of random values
 long_description    {*}${description}
 homepage            https://github.com/LTLA/DelayedRandomArray
-checksums           rmd160  265dd4453d6eaeb1f48e2cb3223c9aa9e2eba49e \
-                    sha256  16dfb2da60add29d920ea2e2fdfe0fdaed3c164a0dd39d03376d130cd305fd53 \
-                    size    325272
+checksums           rmd160  830f12cca2b42d2c31eefc223d6988ec3e4147a3 \
+                    sha256  71bb65ae69fe718e82bcbea6875dce3d5392b58ec2bf409ae03ebffb371535d0 \
+                    size    326363
 
 depends_lib-append  port:R-BH \
                     port:R-DelayedArray \
                     port:R-dqrng \
-                    port:R-Rcpp
+                    port:R-Rcpp \
+                    port:R-SparseArray
 
 depends_test-append port:R-BiocStyle \
                     port:R-knitr \
