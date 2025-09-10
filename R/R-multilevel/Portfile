@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran pdbliese multilevel 2.7
-revision            1
+R.setup             cran pdbliese multilevel 2.7.1
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Multilevel functions
 long_description    Tools used by organizational researchers \
                     for the analysis of multilevel data.
-checksums           rmd160  f975450dcae684fa9f8fdae5447dcde07656cd05 \
-                    sha256  b15c1f945d6600cf4efbe7fb40d1f6617bdfbd8e9d881923598d322bf0c04737 \
-                    size    303903
+checksums           rmd160  902de46832ab53813019ff1abe72ffde3a218c86 \
+                    sha256  317c894bdb21571d3ed396057f2eaf588b5bfae82610d6329dc1dcafee16f91f \
+                    size    306394
 supported_archs     noarch
 
 test.run            yes
