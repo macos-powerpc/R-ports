@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran nicolas-robette descriptio 1.4.1
+R.setup             cran nicolas-robette descriptio 1.5
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             GPL-2+
 description         Descriptive statistical analysis
 long_description    {*}${description}
 homepage            https://nicolas-robette.github.io/descriptio
-checksums           rmd160  17198dfa441b286d77385380d8a9f499b5a88f1b \
-                    sha256  2d8454501078a1ce80c385ebde854aea56ddede83bfd690b4e7b0b74e3ef7ce0 \
-                    size    198073
+checksums           rmd160  b9d4ec3b651ca5ce01e1900478defcbbafc7eb0c \
+                    sha256  c0237454c80be2eb2f2cfc8f0ba1dd20d5e836b9683ede385e251a4e6ad4d347 \
+                    size    199581
 supported_archs     noarch
 
 depends_lib-append  port:R-ggplot2 \
