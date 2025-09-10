@@ -4,21 +4,22 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran ropensci rsvg 2.6.2
-revision            1
+R.setup             cran ropensci rsvg 2.7.0
+revision            0
 categories-append   graphics
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Render SVG images into PDF, PNG, EPS or Bitmap
 long_description    {*}${description}
 homepage            https://docs.ropensci.org/rsvg
-checksums           rmd160  4ca8ba1eeef390bc833fd971586998facbf3c72e \
-                    sha256  2b0a261c751025948d46c56b234b6d257a4936b75233131a281ddd84b932d76b \
-                    size    259950
+checksums           rmd160  3e560fc5c58f4c51b88e708f10974d2268dfcc0f \
+                    sha256  714a106ac5d4266ee2caa8f74c8e04111de9e2b7b77680ca41008ef628045751 \
+                    size    260083
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
 
+# See if we will need to downgrade: https://github.com/ropensci/rsvg/issues/49
 depends_lib-append  path:lib/pkgconfig/librsvg-2.0.pc:librsvg
 
 depends_test-append port:R-ggplot2 \
