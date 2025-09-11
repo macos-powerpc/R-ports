@@ -4,18 +4,19 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is outdated.
-R.setup             cran tudo-r BatchJobs 1.9
-revision            3
+R.setup             cran tudo-r BatchJobs 1.10
+revision            0
 categories-append   parallel
+platforms           {darwin any}
 maintainers         nomaintainer
 license             BSD
 description         Batch computing with R
 long_description    {*}${description}
-checksums           rmd160  d2838364687a966220aafa8843643cdc9db81fb8 \
-                    sha256  5da9c381df461320ed4033523bad1ee97f88a4670d2714fec32be92964115c77 \
-                    size    117092
+homepage            https://github.com/tudo-r/BatchJobs
+checksums           rmd160  f050dddcccbf730f70f2724593769ce6beb6c402 \
+                    sha256  1ecb3e0955d693d923a699579a7a751305e06188ca041735a1195cb7d0a2fef5 \
+                    size    116932
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-backports \
                     port:R-BBmisc \
