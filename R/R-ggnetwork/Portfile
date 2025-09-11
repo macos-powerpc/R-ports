@@ -4,18 +4,19 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran briatte ggnetwork 0.5.13 v.
-revision            2
+R.setup             cran briatte ggnetwork 0.5.14 v.
+revision            0
 categories-append   graphics
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
-license             GPL-3
-description         Geometries to plot network objects with ggplot2
-long_description    {*}${description}
-checksums           rmd160  b01a2588e24f9678baf065d3ca4679e9079ec8a6 \
-                    sha256  6c297ead19dbd89de3278f3705410b757f2d9744bc466d8175105833a4e1fd46 \
-                    size    2271315
-supported_archs     noarch
 platforms           {darwin any}
+maintainers         nomaintainer
+license             GPL-3
+description         Geometries to plot network objects with R-ggplot2
+long_description    {*}${description}
+homepage            https://github.com/briatte/ggnetwork
+checksums           rmd160  408de517fa7348cc95e30009f48e3be562f0aec9 \
+                    sha256  caab79d85a817608e9a9d827783f157393fc3f2b9de8c20669699175a19f3ff0 \
+                    size    1889616
+supported_archs     noarch
 
 depends_lib-append  port:R-igraph \
                     port:R-ggplot2 \
