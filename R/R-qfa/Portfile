@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran thl2019 qfa 4.1
+R.setup             cran thl2019 qfa 4.2
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             GPL-2+
 description         Quantile-Frequency Analysis (QFA) of time series
 long_description    {*}${description}
 homepage            https://github.com/thl2019/QFA
-checksums           rmd160  67c40394e65016c20b6ddaf19ade9cac72d2a8a9 \
-                    sha256  a53e26ec1328d230652b826ada8042d17a52f17d264421d32aef7be89a4ecd13 \
-                    size    324682
+checksums           rmd160  c45e194b57b6ea6a95422e27d22dd494daf0eb07 \
+                    sha256  7851a4eeec0255c5c85196ae39a2e52d3c764657a8e91ecb53dbf40a56219e74 \
+                    size    325830
 
 depends_lib-append  port:R-colorRamps \
                     port:R-doParallel \
