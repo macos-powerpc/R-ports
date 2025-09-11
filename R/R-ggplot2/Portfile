@@ -3,7 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github tidyverse ggplot2 3.5.2 v
+# Revert to GitHub once updated there.
+R.setup             cran tidyverse ggplot2 4.0.0 v
 revision            0
 categories-append   graphics
 platforms           {darwin any}
@@ -13,29 +14,28 @@ description         Create elegant data visualisations \
                     using the grammar of graphics
 long_description    {*}${description}
 homepage            https://ggplot2.tidyverse.org
-checksums           rmd160  1b06e99b0896c772ba5582c72e2f426dc17d8fbc \
-                    sha256  dfbfc159e5505b0e95daf7ca9986e90b6839d2f56a4bf79be3727b04ba69dc1b \
-                    size    3148040
-github.tarball_from archive
+checksums           rmd160  ece73cca920d55d1ee52bec17f1df07d2377c1fd \
+                    sha256  0f9fe288b5d9c2e23253427af9a707a3b2334a7706ad13752eccedf623871a7d \
+                    size    3810397
+# github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
-                    port:R-glue \
                     port:R-gtable \
                     port:R-isoband \
                     port:R-lifecycle \
                     port:R-rlang \
+                    port:R-S7 \
                     port:R-scales \
-                    port:R-tibble \
                     port:R-vctrs \
                     port:R-withr
 
 # Test dep on R-ggplot2movies is dropped.
-depends_test-append port:R-covr \
+depends_test-append port:R-broom \
+                    port:R-covr \
                     port:R-dplyr \
                     port:R-hexbin \
                     port:R-Hmisc \
-                    port:R-interp \
                     port:R-knitr \
                     port:R-mapproj \
                     port:R-maps \
@@ -46,10 +46,12 @@ depends_test-append port:R-covr \
                     port:R-ragg \
                     port:R-RColorBrewer \
                     port:R-rmarkdown \
+                    port:R-roxygen2 \
                     port:R-sf \
                     port:R-sp \
                     port:R-svglite \
                     port:R-testthat \
+                    port:R-tibble \
                     port:R-vdiffr \
                     port:R-xml2
 
