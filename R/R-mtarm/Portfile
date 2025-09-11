@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran lhvanegasp mtarm 0.1.6
+R.setup             cran lhvanegasp mtarm 0.1.7
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             {GPL-2 GPL-3}
 description         Bayesian estimation of multivariate threshold autoregressive models
 long_description    {*}${description}
 homepage            https://github.com/lhvanegasp/mtar
-checksums           rmd160  e28f655f25eadead027f69e97f49f517efbc7f77 \
-                    sha256  86f209e518fc7c8d76c2405005a2fe823165b367cc4d603d5d6799cd52142d7f \
-                    size    76392
+checksums           rmd160  c50255876c4e4b59461b0e212c62b3ae3bd9719e \
+                    sha256  e4dfc697e35857956ea96382a62b8b08a664b47e8de0750f041d1a9a9312d08b \
+                    size    88084
 supported_archs     noarch
 
 depends_lib-append  port:R-coda \
