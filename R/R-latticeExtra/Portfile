@@ -3,18 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran latticeExtra 0.6-30
-revision            3
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
-license             {GPL-2 GPL-3}
+R.setup             cran r-project latticeExtra 0.6-31
+revision            0
+categories-append   graphics
+platforms           {darwin any}
+maintainers         nomaintainer
+license             GPL-2+
 description         Extra graphical utilities based on lattice
 long_description    {*}${description}
 homepage            http://latticeextra.r-forge.r-project.org
-checksums           rmd160  59e293678782c04cc39b703e2cc518dd7e4bc35c \
-                    sha256  c550a76913624818482bf237d48883c58e368ba356ced8ed5e76146672279eed \
-                    size    1292936
+checksums           rmd160  b3acb8f0a3a01c02845257400f3168cff186206e \
+                    sha256  be69d8014bf722fab00d1afc7a8b515fdba65b25c7700ef44d76f092c5b6e66e \
+                    size    1294027
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-interp \
                     port:R-jpeg \
