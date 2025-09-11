@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran statnet ergm.rank 4.1.1
-revision            1
+R.setup             cran statnet ergm.rank 4.1.2
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
@@ -12,9 +12,9 @@ description         Fit, simulate and diagnose exponential-family models \
                     for rank-order relational data
 long_description    {*}${description}
 homepage            https://github.com/statnet/ergm.rank
-checksums           rmd160  d4dd51c1f2aeb71a2b302d1260fdd14f692858be \
-                    sha256  32f63eafd43192e46eb2f59796cd1ded149f03e7dd5a3002e5a8bab2da273a15 \
-                    size    301228
+checksums           rmd160  344ca134199fde5e00ee8ca5f01a23a2fcdde885 \
+                    sha256  6e84d4630d3282d6f92df194676b60d805813953364c9e533754c7f0acd4b65c \
+                    size    302367
 
 depends_lib-append  port:R-ergm \
                     port:R-network \
