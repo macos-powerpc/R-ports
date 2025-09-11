@@ -4,19 +4,19 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran atsa-es MARSS 3.11.9
-revision            2
+R.setup             cran atsa-es MARSS 3.11.10
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2
 description         Multivariate Auto-Regressive State-Space modelling
 long_description    {*}${description}
 homepage            https://atsa-es.github.io/MARSS
-checksums           rmd160  4e2f8fb79aa5b1592c875e17212de58fc33e5ae4 \
-                    sha256  357fc6248ca8a6588d99815ad88fa03cd1ef6de3879577d7865665671cdd3746 \
-                    size    2846891
+checksums           rmd160  b6e483d316456df3977577d442c7254102809a50 \
+                    sha256  decb03c5a58976e2f218bd901c4a98064f85fb765ff4afaa818180acd40abddd \
+                    size    3048059
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-generics \
                     port:R-KFAS \
@@ -26,6 +26,9 @@ depends_test-append port:R-forecast \
                     port:R-ggplot2 \
                     port:R-Hmisc \
                     port:R-knitr \
-                    port:R-marssTMB
+                    port:R-lme4 \
+                    port:R-maps \
+                    port:R-marssTMB \
+                    port:R-tidyr
 
 test.run            yes
