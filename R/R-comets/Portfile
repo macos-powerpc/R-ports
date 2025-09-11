@@ -3,27 +3,27 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github LucasKook comets 0.1-1
-revision            1
+R.setup             github LucasKook comets 0.2-1
+revision            0
 categories-append   math
-platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
 description         Covariance measure tests for conditional independence
 long_description    {*}${description}
-checksums           rmd160  510562e0a54201d2f2f9a9cc4288f2790b85f6cd \
-                    sha256  859f34bb7ebd06b831bd1f0e064f3f2e18f0a636a4fef2da9b4e5f7cfb64a168 \
-                    size    235698
+checksums           rmd160  4ea3bb3727ac2a2be54b7227abd56ef273d44342 \
+                    sha256  9f7ec4c544f2de7d5ab31cda03146076e693062ca187b66214bcb011b8bd4e90 \
+                    size    239639
 github.tarball_from archive
-supported_archs     noarch
 
 depends_lib-append  port:R-coin \
                     port:R-Formula \
                     port:R-glmnet \
-                    port:R-ranger
+                    port:R-ranger \
+                    port:R-Rcpp
 
 depends_test-append port:R-dplyr \
                     port:R-ggplot2 \
+                    port:R-lightgbm \
                     port:R-testthat \
                     port:R-tidyr \
                     port:R-xgboost
