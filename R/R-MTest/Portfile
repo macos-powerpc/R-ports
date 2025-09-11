@@ -3,18 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran vmoprojs MTest 1.0.2
-revision            2
+R.setup             cran vmoprojs MTest 1.0.3
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3+
 description         Procedure for multicollinearity testing using bootstrap
 long_description    {*}${description}
-checksums           rmd160  a88b0a76d2ccbef94ad5d88c06601ade360af2a4 \
-                    sha256  d607c85523544d8d0249b24026cebcc9f528da78684352b62475e7058b365fa7 \
-                    size    314404
+homepage            https://github.com/vmoprojs/MTest
+checksums           rmd160  10f77c21a7b6a505fd394e2f195ab2167e0c5863 \
+                    sha256  251bb8dbc74a170e5283272f3b02ffe8cde0a44e5e2137975cc2bc6b7956fd95 \
+                    size    314469
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-car \
                     port:R-ggplot2 \
