@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is archaic.
-R.setup             cran r-spatial spdep 1.3-13
+R.setup             cran r-spatial spdep 1.4-1
 revision            0
 categories-append   math gis
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             GPL-2+
 description         Spatial Dependence: weighting schemes, statistics
 long_description    {*}${description}
 homepage            https://r-spatial.github.io/spdep
-checksums           rmd160  cfd61dd4a755e4bb0d910203512c748512d32bd7 \
-                    sha256  7ac5905c126899f88fdf5c1f2bbedc7609e0c3ca210d40abaa5da2d2a9a2685a \
-                    size    4695720
+checksums           rmd160  92fa22e7fa1bd3a9e8ffeed2cece56796123a99e \
+                    sha256  4d0beca3b8b696373a74670f916cca3e77cbe97d002f3be62f172815774f5588 \
+                    size    4694107
 
 depends_lib-append  port:R-deldir \
                     port:R-e1071 \
@@ -28,10 +28,13 @@ compilers.setup     require_fortran
 
 # R-tmap is omitted for now.
 depends_test-append port:R-classInt \
+                    port:R-codingMatrices \
                     port:R-dbscan \
                     port:R-ggplot2 \
+                    port:R-Guerry \
                     port:R-igraph \
                     port:R-knitr \
+                    port:R-mipfp \
                     port:R-RColorBrewer \
                     port:R-rgeoda \
                     port:R-rmarkdown \
