@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran snlab-ch manynet 1.6.0
+R.setup             cran stocnet manynet 1.6.1
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -11,10 +11,10 @@ maintainers         nomaintainer
 license             MIT
 description         Many ways to make, manipulate and map myriad networks
 long_description    {*}${description}
-homepage            https://snlab-ch.github.io/manynet
-checksums           rmd160  6ef9f1b5670f8cbe3887bc6c4cb3d903783b6b6e \
-                    sha256  d27202befac29962ad746a94c6757449230c1a07fe2a1a8c96fd237d4fbf24d7 \
-                    size    1541747
+homepage            https://stocnet.github.io/manynet
+checksums           rmd160  4751641a44b92db0bb8e2cc98ee620e87487d36e \
+                    sha256  25edf8abb219481c3b28fb169aaf8ed6cb6611e183821e153edc3e46a22da6f7 \
+                    size    1471340
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
