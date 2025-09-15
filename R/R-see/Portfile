@@ -4,8 +4,8 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran easystats see 0.11.0 v
-revision            1
+R.setup             cran easystats see 0.12.0 v
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -13,9 +13,9 @@ license             GPL-3
 description         Model visualisation toolbox for R-easystats and R-ggplot2
 long_description    {*}${description}
 homepage            https://easystats.github.io/see
-checksums           rmd160  d1edda3130a6a88e29a1f1f995ed38ab96f16c73 \
-                    sha256  22b431c65f4b1f392c142378a4610dc01a5914de04510fabc8b3ebf3a919cc06 \
-                    size    138641
+checksums           rmd160  8aef083091e29c5240243969113ec4831e051dd2 \
+                    sha256  423c5eeee50cee44c22c30f87d7118a2032b3a879eaa4bf0f3dc7d3046114a44 \
+                    size    144555
 # github.tarball_from archive
 supported_archs     noarch
 
@@ -38,13 +38,13 @@ depends_test-append port:R-BH \
                     port:R-DHARMa \
                     port:R-emmeans \
                     port:R-factoextra \
+                    port:R-Formula \
                     port:R-ggdist \
                     port:R-ggraph \
                     port:R-ggrepel \
                     port:R-ggridges \
                     port:R-ggside \
                     port:R-glmmTMB \
-                    port:R-httr \
                     port:R-httr2 \
                     port:R-lavaan \
                     port:R-lme4 \
@@ -58,6 +58,7 @@ depends_test-append port:R-BH \
                     port:R-nFactors \
                     port:R-poorman \
                     port:R-psych \
+                    port:R-qqplotr \
                     port:R-randomForest \
                     port:R-RcppEigen \
                     port:R-rlang \
