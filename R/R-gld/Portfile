@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran newystats gld 2.6.7
-revision            1
+R.setup             cran newystats gld 2.6.8
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-2+
@@ -12,9 +12,9 @@ description         Estimation and use of the Generalised (Tukey) \
                     Lambda distribution
 long_description    {*}${description}
 homepage            https://github.com/newystats/gld
-checksums           rmd160  90b6933cb0138924608812f30afc88c13cdb15d6 \
-                    sha256  cc6ff7a4b8980ad04ed215295ea6053f0e7720ae7e00826e97bfa2cb82b5a070 \
-                    size    54432
+checksums           rmd160  31c9734f5dfd5d389ca7f8c156a6de187f3d8ce4 \
+                    sha256  aeb2bb7342ec2d425397c8d391be3c399fe897b3992eba42b54cbaf16789768e \
+                    size    54592
 
 depends_lib-append  port:R-e1071 \
                     port:R-lmom
