@@ -3,17 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github bcgov ssdtools 2.3.0.9000 v
+# Revert to GitHub once updated there.
+R.setup             cran bcgov ssdtools 2.4.0 v
 revision            0
 maintainers         nomaintainer
 license             Apache-2
 description         Species Sensitivity Distributions
 long_description    {*}${description}
 homepage            https://bcgov.github.io/ssdtools
-checksums           rmd160  50f62dfd2c519e98e1f393f2943da3178f49ebb2 \
-                    sha256  bc6598114807bd1c13df5ec4abcf504272901fa6bd96770b3a1110a6255ef6ac \
-                    size    2912832
-github.tarball_from archive
+checksums           rmd160  0c8233401c4595e246d3e4e339b80eddd4d6b5b4 \
+                    sha256  70d5488116fe5ed9509635db17cd450ff54bdfec8a295aa7a780f5ee390a3800 \
+                    size    1787117
+# github.tarball_from archive
 
 depends_lib-append  port:R-abind \
                     port:R-chk \
@@ -34,8 +35,7 @@ depends_lib-append  port:R-abind \
                     port:R-stringr \
                     port:R-tibble \
                     port:R-TMB \
-                    port:R-universals \
-                    port:R-withr
+                    port:R-universals
 
 depends_test-append port:R-actuar \
                     port:R-covr \
@@ -58,6 +58,7 @@ depends_test-append port:R-actuar \
                     port:R-tidyr \
                     port:R-tidyselect \
                     port:R-tinytex \
-                    port:R-VGAM
+                    port:R-VGAM \
+                    port:R-withr
 
 test.run            yes
