@@ -3,18 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran distro 0.1.0
-revision            3
-categories-append   devel
+R.setup             github nealrichardson distro 0.1.1 v
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
 license             Apache-2
 description         Linux distribution properties
 long_description    {*}${description}
-checksums           rmd160  33e1a39bfb06d972d5306cc365d87c01c3586c55 \
-                    sha256  4fd8a62c56c63d35dc72ed64d526e4eed581d42044d65a8e1909f60ee5ac680d \
-                    size    5074
+homepage            https://enpiar.com/distro
+checksums           rmd160  7f21137d6a9188cfcb40e48b6d0b869317b27cf1 \
+                    sha256  b0b69d04172cda6d741daf213c171cb3c02a8ccd4b64f49843e26ae1b0d92241 \
+                    size    6064
+github.tarball_from archive
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_test-append port:R-testthat
 
