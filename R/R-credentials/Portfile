@@ -4,8 +4,8 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is outdated.
-R.setup             cran r-lib credentials 2.0.2
-revision            1
+R.setup             cran r-lib credentials 2.0.3
+revision            0
 categories-append   net security
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -13,9 +13,9 @@ license             MIT
 description         Tools for managing SSH and Git credentials
 long_description    {*}${description}
 homepage            https://docs.ropensci.org/credentials
-checksums           rmd160  cd351a4b1b54a16f3091d33a5ab2aab7c4a1b710 \
-                    sha256  496bd78832b93cd3ee4aef3719aa3cd4ce337e82a74084f22022466e4d5b5d0a \
-                    size    283111
+checksums           rmd160  3ba9fdcaa137d642b17435ad16b7e088e279f798 \
+                    sha256  140043804b4cfcb5e174af3a188ce4cd1e17f7f6aeb777bbd4da21f6c73e013c \
+                    size    283143
 supported_archs     noarch
 
 depends_lib-append  port:git \
