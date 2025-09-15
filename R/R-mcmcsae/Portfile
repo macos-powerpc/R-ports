@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran hjboonstra mcmcsae 0.7.9
+R.setup             cran hjboonstra mcmcsae 0.8.0
 revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-3
 description         Markov Chain Monte Carlo Small Area Estimation
 long_description    {*}${description}
-checksums           rmd160  87549a5ed0d407f7e902f67580379ac745cd905c \
-                    sha256  88266e229db8f29e676b13d02e4f31616a41e70d0a57f804f4fa2b32f9f66918 \
-                    size    368391
+checksums           rmd160  cc00ab4fb74a127221953e74475f291ac806bfb3 \
+                    sha256  c36a5aa406452d6c0abe6449cf7e7b08ba49c1b0fb97c6ae8c137157df80a708 \
+                    size    373115
 
 depends_lib-append  port:R-collapse \
                     port:R-GIGrvg \
