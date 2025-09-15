@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github r-lib here 1.0.1.9031 v
+R.setup             github r-lib here 1.0.2 v
 revision            0
 categories-append   sysutils
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             MIT
 description         Simpler way to find your files
 long_description    {*}${description}
 homepage            https://here.r-lib.org
-checksums           rmd160  bd9a00dc3a03a58c1a6e8af90818685db8ca835a \
-                    sha256  934067816e1a801bd1b67f830466e6ee4d18ea9e0455dcd519d63fb440d8cca7 \
-                    size    39703
+checksums           rmd160  fae2daacd509fdde910ce9aa6b172fa7fac91f61 \
+                    sha256  8bff467fa504b3e92992d0d510c24996bedf8d1a441a8fd6351e0c6336f7c0a5 \
+                    size    39015
 github.tarball_from archive
 supported_archs     noarch
 
