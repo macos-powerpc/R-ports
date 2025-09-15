@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github tidyverse magrittr 2.0.3 v
-revision            4
+R.setup             github tidyverse magrittr 2.0.4 v
+revision            0
 maintainers         nomaintainer
 license             MIT
 description         Improve the readability of R code with the pipe.
 long_description    {*}${description}
 homepage            https://magrittr.tidyverse.org
-checksums           rmd160  44ce23f4b195569614201ce6fee3b68c6acb23f7 \
-                    sha256  29923b23945b42fd0ee17d8ba08d9cb0594994a9a34e7b5322d3331f04534217 \
-                    size    350782
+checksums           rmd160  1bf486ee54314b29ed14215f52ad097fd2237550 \
+                    sha256  f35a49553f770c0a986f981465699cca0858fb5bd48160bce20676e17c624d13 \
+                    size    349219
 github.tarball_from archive
 
 depends_test-append port:R-covr \
