@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran stocnet migraph 1.5.0
+R.setup             cran stocnet migraph 1.5.2
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -13,16 +13,16 @@ description         Tools for multimodal network analysis
 long_description    Univariate and multivariate tests for multimodal \
                     and other networks.
 homepage            https://stocnet.github.io/migraph
-checksums           rmd160  d024808a11b13181c42306a4226fd2138cc1722f \
-                    sha256  7c42e01224c83861580798703a7e7bba8888dda2ad48b99480e029836e9cb691 \
-                    size    2583635
+checksums           rmd160  bf744bfa6f8c4d6eb766607323b9d410fc81a490 \
+                    sha256  76558769673fed5f6ca199bd3d27ec811ebc07749f3de427b9db98b27268eb78 \
+                    size    2583543
 supported_archs     noarch
 
-depends_lib-append  port:R-dplyr \
+depends_lib-append  port:R-autograph \
+                    port:R-dplyr \
                     port:R-furrr \
                     port:R-future \
                     port:R-generics \
-                    port:R-ggplot2 \
                     port:R-manynet \
                     port:R-purrr
 
