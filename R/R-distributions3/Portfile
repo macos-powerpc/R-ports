@@ -3,18 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github alexpghayes distributions3 0.2.2 v
-revision            1
+# Revert to GitHub once updated there.
+R.setup             cran alexpghayes distributions3 0.2.3 v
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Probability distributions as S3 Objects
 long_description    {*}${description}
-checksums           rmd160  5a9cfa086a024f5270546c3768a00b1eda099aaa \
-                    sha256  40a77d7e0e15d88929f5eb941a066c923530a28987a2e7a317769128e558f063 \
-                    size    170686
-github.tarball_from archive
+checksums           rmd160  a1ad6f6501af1a9448ec04c2df3bc2a63e296b4d \
+                    sha256  0eb57b179c899e658d4f6b2c16df4bba25bec3e21ab6887f886f90c8ee84724b \
+                    size    444865
+# github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-ggplot2 \
