@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is outdated.
-R.setup             cran R-CF ncdfCF 0.6.1 v
+R.setup             cran R-CF ncdfCF 0.7.0 v
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             MIT
 description         Easy access to NetCDF files with CF metadata conventions
 long_description    {*}${description}
 homepage            https://github.com/R-CF/ncdfCF
-checksums           rmd160  6caad64c7c54e46b3e60fcb0be5f696cbb396fad \
-                    sha256  671060ad91adf95cc6c5f9cd7e6f92e2c259c786c78353dfe58c5d85a0906871 \
-                    size    1256844
+checksums           rmd160  db980f6ecb1924cc6b17ad042b69476e8daf0097 \
+                    sha256  d553d5aa24915499f78033d640db7d5b7bd2a9a050d10b53e3f94cd83535d47a \
+                    size    1377995
 supported_archs     noarch
 
 depends_lib-append  port:R-abind \
@@ -27,7 +27,8 @@ depends_test-append port:R-data.table \
                     port:R-knitr \
                     port:R-rmarkdown \
                     port:R-terra \
-                    port:R-testthat
+                    port:R-testthat \
+                    port:R-units
 
 # FIXME: one test fails on PowerPC: https://github.com/R-CF/ncdfCF/issues/11
 # Error in `ax1[[1L]]`: subscript out of bounds
