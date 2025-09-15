@@ -4,16 +4,16 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran alexanderrobitzsch miceadds 3.17-44
-revision            2
+R.setup             cran alexanderrobitzsch miceadds 3.18-36
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Additional multiple imputation functions for R-mice
 long_description    {*}${description}
-checksums           rmd160  e7af15601c35b6c89b02a51d9440c0589d83b129 \
-                    sha256  6ef69dd1ac3b547a1450ca54c719c5d1f983a585207cb09ae3ad6b42a8cc2165 \
-                    size    592663
+checksums           rmd160  4c8899ce11a6e8927433a91ea98f76d65eaeb0ca \
+                    sha256  3bca36fea6aeabb78f9edffd47d2733a35fdf9f9dfddd9bb002aa4c1532cea2d \
+                    size    593576
 
 depends_lib-append  port:R-mice \
                     port:R-mitools \
