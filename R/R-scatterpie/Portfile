@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran guangchuangyu scatterpie 0.2.5
+R.setup             cran guangchuangyu scatterpie 0.2.6
 revision            0
 categories-append   graphics
 platforms           {darwin any}
@@ -11,9 +11,9 @@ maintainers         nomaintainer
 license             Artistic-2
 description         Scatterpie plots
 long_description    {*}${description}
-checksums           rmd160  73b4989e6e72c210f908b5ebff05b9f71047ca32 \
-                    sha256  56f1dccf7980c901c8e76dbd29801894d2075268eac7d2a0ce3a3923f3282c18 \
-                    size    118875
+checksums           rmd160  e644f1bede15bcba28d432547b5467ba3410da5d \
+                    sha256  bbb93441b98dc8c2af0131c1ed578be4b89563c12e14a7643c411e82a018d994 \
+                    size    119012
 supported_archs     noarch
 
 depends_lib-append  port:R-dplyr \
