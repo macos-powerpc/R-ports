@@ -1,0 +1,47 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+PortGroup           R 1.0
+
+# GitHub version is old.
+R.setup             cran Malaga-FCA-group fcaR 1.2.2
+revision            0
+categories-append   math
+maintainers         nomaintainer
+license             GPL-3
+description         Formal Concept Analysis
+long_description    ${name} provides tools to perform fuzzy formal concept analysis.
+homepage            https://github.com/Malaga-FCA-group/fcaR
+checksums           rmd160  d29ebf5f7a1c63d8636e06ec88805f68691f7d7d \
+                    sha256  e3181d36a3d4d676f7fe7949c96e9923812c629561e0494287c2682cdbd63eef \
+                    size    550433
+
+depends_lib-append  port:R-dplyr \
+                    port:R-forcats \
+                    port:R-fractional \
+                    port:R-ggplot2 \
+                    port:R-glue \
+                    port:R-magrittr \
+                    port:R-POSetR \
+                    port:R-purrr \
+                    port:R-R6 \
+                    port:R-Rcpp \
+                    port:R-registry \
+                    port:R-rlang \
+                    port:R-settings \
+                    port:R-stringr \
+                    port:R-tibble \
+                    port:R-tidyr \
+                    port:R-tikzDevice
+
+depends_test-append port:R-arules \
+                    port:R-covr \
+                    port:R-hasseDiagram \
+                    port:R-knitr \
+                    port:R-markdown \
+                    port:R-rmarkdown \
+                    port:R-testthat \
+                    port:R-tictoc \
+                    port:R-tinytex
+
+test.run            yes
