@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran eddelbuettel RcppSimdJson 0.1.13
-revision            1
+R.setup             cran eddelbuettel RcppSimdJson 0.1.14
+revision            0
 categories-append   devel
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
@@ -12,13 +12,11 @@ description         Rcpp bindings for the simdjson header-only library \
                     for JSON parsing
 long_description    {*}${description}
 homepage            https://github.com/eddelbuettel/rcppsimdjson
-checksums           rmd160  573d583817f75541f1a197e82eee4565939d3904 \
-                    sha256  27d8eb2963020b1da789d4074cafe9b74d6d1d107baecba69026cf6875733e5c \
-                    size    2103923
+checksums           rmd160  831b83e7993540e5683713a59146a7038dc981d5 \
+                    sha256  159cb920f58f291dcbe6562e3cbf7af8b21f7d0ee246c1b6e4181868df764ca4 \
+                    size    2218741
 
 depends_lib-append  port:R-Rcpp
-
-compiler.cxx_standard 2017
 
 depends_test-append port:R-bit64 \
                     port:R-tinytest
