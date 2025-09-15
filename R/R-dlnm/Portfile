@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran gasparrini dlnm 2.4.7
-revision            2
+R.setup             cran gasparrini dlnm 2.4.10
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Distributed lag non-linear models
 long_description    {*}${description}
-checksums           rmd160  7e431340d78231a60819e36f794aafc984f7ae77 \
-                    sha256  e426dabc1d82355cb1249a9b5c9172cedbddb4ab64059bb96976976491e07c55 \
-                    size    1325828
+checksums           rmd160  cb995854550ffd638bffd3cece491ad1d4e8ab3d \
+                    sha256  3b75be8ce30b41c90a7b01f373d7a4ca9c5ddddb1739c5e6763c66ac2dfb0bf2 \
+                    size    929017
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-tsModel
 
