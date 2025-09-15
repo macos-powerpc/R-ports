@@ -3,16 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran brianna.hitt binGroup2 1.3.1
-revision            2
+R.setup             cran brianna.hitt binGroup2 1.3.3
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3+
 description         Identification and estimation using group testing
 long_description    {*}${description}
-checksums           rmd160  622068f662773edd3a265ff7a8ff44fd9ce30c54 \
-                    sha256  ab851f62327032bf61279b51f549e9f7715ba5e2208a40f87add6911d9460a00 \
-                    size    413603
+homepage            https://bdhitt.github.io/binGroup2
+checksums           rmd160  5d71ed727d063a30b90014a8ed43a4541d5a6f96 \
+                    sha256  861f6502650a422d287866bafd5694634d21070f9f768d6f4e896868fb44fc72 \
+                    size    411381
 
 depends_lib-append  port:R-ggplot2 \
                     port:R-partitions \
