@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran duxbury ergMargins 1.6
+R.setup             cran duxbury ergMargins 1.6.1
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -11,9 +11,9 @@ maintainers         nomaintainer
 license             GPL-2+
 description         Process analysis for exponential random graph models
 long_description    {*}${description}
-checksums           rmd160  ab16f3600edbcc8134beaf6ab96b2f53d003d844 \
-                    sha256  320250ea1ea4103925830a00cb7ed62c65c7ebd3b1a1d031aef947258ea1aa3a \
-                    size    45196
+checksums           rmd160  6ef866f781a685478c223c87d6d43956044bcae0 \
+                    sha256  12968e811ad9776ca03c5a3c1afc11d2df483b0a386d3db01536e609f106e0ec \
+                    size    45224
 supported_archs     noarch
 
 depends_lib-append  port:R-btergm \
