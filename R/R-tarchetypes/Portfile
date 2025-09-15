@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github ropensci tarchetypes 0.13.1
+R.setup             github ropensci tarchetypes 0.13.2
 revision            0
 categories-append   devel
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             MIT
 description         Archetypes for R-targets
 long_description    {*}${description}
 homepage            https://docs.ropensci.org/tarchetypes
-checksums           rmd160  cea4f1aaebe18c15521825eb2f66b087feb36369 \
-                    sha256  eefb81997082c662f6051cb9fbfcb9e152c2735b45072e3aebbe93c0f95bc9ad \
-                    size    269726
+checksums           rmd160  bfe9b76b17e78db4beba0bb62f5451133c47672b \
+                    sha256  7d75990fd28ffcee39ac312b012ef4a1ccb69e051c82df68ef3ff74f1530d928 \
+                    size    270079
 github.tarball_from archive
 supported_archs     noarch
 
