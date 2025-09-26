@@ -2,11 +2,10 @@
 
 PortSystem          1.0
 PortGroup           cmake 1.1
-PortGroup           compiler_blacklist_versions 1.0
 
 set realname        proj
 name                ${realname}-R
-version             9.6.2
+version             9.7.0
 revision            0
 categories          R gis science
 license             MIT
@@ -16,9 +15,9 @@ long_description    {*}${description}. Dedicated port to use with R packages.
 homepage            https://${realname}.org
 master_sites        https://download.osgeo.org/${realname}/
 distname            ${realname}-${version}
-checksums           rmd160  288e39384fec1a4d79e5eb8402d82c03116e1d86 \
-                    sha256  53d0cafaee3bb2390264a38668ed31d90787de05e71378ad7a8f35bb34c575d1 \
-                    size    6394614
+checksums           rmd160  679f2532e8a5e4edf71739f6aded23b8688e61f9 \
+                    sha256  65705ecd987b50bf63e15820ce6bd17c042feaabda981249831bd230f6689709 \
+                    size    5904389
 
 depends_lib-append  port:curl \
                     port:sqlite3 \
