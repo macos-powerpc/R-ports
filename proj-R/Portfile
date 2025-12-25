@@ -5,7 +5,7 @@ PortGroup           cmake 1.1
 
 set realname        proj
 name                ${realname}-R
-version             9.7.0
+version             9.7.1
 revision            0
 categories          R gis science
 license             MIT
@@ -15,9 +15,9 @@ long_description    {*}${description}. Dedicated port to use with R packages.
 homepage            https://${realname}.org
 master_sites        https://download.osgeo.org/${realname}/
 distname            ${realname}-${version}
-checksums           rmd160  679f2532e8a5e4edf71739f6aded23b8688e61f9 \
-                    sha256  65705ecd987b50bf63e15820ce6bd17c042feaabda981249831bd230f6689709 \
-                    size    5904389
+checksums           rmd160  6f2d45c0ad91b93a1591c57e622eb820d179f7f1 \
+                    sha256  6c097dc803c561929cdfcc46e4bf9945ea977611fb31493ad14e88edaeae260f \
+                    size    5915221
 
 depends_lib-append  port:curl \
                     port:sqlite3 \
