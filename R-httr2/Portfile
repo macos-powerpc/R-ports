@@ -3,8 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-# Revert to GitHub once updated there.
-R.setup             cran r-lib httr2 1.2.1 v
+R.setup             github r-lib httr2 1.2.2 v
 revision            0
 categories-append   devel net
 platforms           {darwin any}
@@ -13,10 +12,10 @@ license             MIT
 description         Perform HTTP requests and process the responses
 long_description    {*}${description}
 homepage            https://httr2.r-lib.org
-checksums           rmd160  c1e26b57b072e7b287383db15ee4d46b59425df0 \
-                    sha256  2728c37f5507740f41bde94703f74f67fc901ad122b1a58e8ad3af4224fd831e \
-                    size    271878
-# github.tarball_from archive
+checksums           rmd160  3851cfe0b6b4a5f9eeebe847fea56630b5a61419 \
+                    sha256  59dd93797a26b3c9e61579e48fd28c60bd8a0152585922d13a960010e170d5e9 \
+                    size    370589
+github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
@@ -31,6 +30,7 @@ depends_lib-append  port:R-cli \
                     port:R-vctrs \
                     port:R-withr
 
+# R-otelsdk is dropped until added to ports.
 depends_test-append port:R-askpass \
                     port:R-bench \
                     port:R-clipr \
@@ -42,6 +42,7 @@ depends_test-append port:R-askpass \
                     port:R-knitr \
                     port:R-later \
                     port:R-nanonext \
+                    port:R-otel \
                     port:R-paws.common \
                     port:R-promises \
                     port:R-rmarkdown \
