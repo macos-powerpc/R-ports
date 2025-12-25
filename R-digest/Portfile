@@ -3,23 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github eddelbuettel digest e1de340adc76c9c138364b46c6d1b5606ed9915e
-version             0.6.37.2
-revision            1
+R.setup             cran eddelbuettel digest 0.6.39
+revision            0
 categories-append   devel
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Create compact hash digests of R objects
 long_description    {*}${description}
 homepage            http://dirk.eddelbuettel.com/code/digest.html
-checksums           rmd160  6a5fe4ef4dfd8a1490e5b3a7559442c84d077a64 \
-                    sha256  07497338b0d4bfd3151488bafc211e0ecd40e2cfda587590e7d19a69bc884a5e \
-                    size    1122896
-github.tarball_from archive
-
-# https://github.com/eddelbuettel/digest/pull/232
-patchfiles-append   0001-Fix-endianness-handling.patch \
-                    0002-Fix-xxh3_128bits.patch
+checksums           rmd160  788f0d74f0804798b6f4df92e81a6efc2130a05e \
+                    sha256  8bf048b49b2d17077138fae758bda56bbd53278d9437f2fdeaedf979c90a13c9 \
+                    size    236629
 
 depends_test-append port:R-simplermarkdown \
                     port:R-tinytest
