@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github yihui xfun 0.53 v
+R.setup             github yihui xfun 0.55 v
 revision            0
 maintainers         nomaintainer
 license             MIT
 description         Miscellaneous R functions
 long_description    {*}${description}
 homepage            https://yihui.org/xfun
-checksums           rmd160  b930be2fc3959a637a528c6787f2c48828e20dfa \
-                    sha256  0a7a0d434bc349e1d378f2f34d784bb59c012a19caa7fc0a2334bde954fba75d \
-                    size    170458
+checksums           rmd160  69a65c4426295726e93b05bff4a7d0208e88c13d \
+                    sha256  4054c87c102ce6a3153335fdb3108b69d4b4d247f749f16d6279cef10f7c7bda \
+                    size    174517
 github.tarball_from archive
 
 depends_test-append port:R-commonmark \
