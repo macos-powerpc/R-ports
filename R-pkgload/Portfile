@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github r-lib pkgload 1.4.0 v
-revision            1
+R.setup             github r-lib pkgload 1.4.1 v
+revision            0
 categories-append   devel
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -13,9 +13,9 @@ description         Simulate package installation
 long_description    ${name} simulates the process of installing \
                     a package and then attaching it.
 homepage            https://pkgload.r-lib.org
-checksums           rmd160  4016187c874e7c1a195aaf84cb27c25211278a17 \
-                    sha256  376927fe12f65ba084a651b9bdf368d9914404a0753157e7294ab86e923f682f \
-                    size    81115
+checksums           rmd160  f19ec7ef4f7aa8fe0da44c1ff14569e4b0091a2f \
+                    sha256  0a6f4de05f6ac14ad42e0753c92ce9de6e61666de7124b3accaae68e5a7c7e07 \
+                    size    83683
 github.tarball_from archive
 supported_archs     noarch
 
