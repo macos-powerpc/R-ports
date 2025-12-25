@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github HenrikBengtsson future.callr 0.10.1
+R.setup             github HenrikBengtsson future.callr 0.10.2
 revision            0
 categories-append   devel
 platforms           {darwin any}
@@ -12,10 +12,10 @@ license             LGPL-2.1+
 description         Future API for parallel processing using callr
 long_description    {*}${description}
 homepage            https://future.callr.futureverse.org
-checksums           rmd160  0f39ed3012b0aca89a5492205d10d7827a4d50c9 \
-                    sha256  09c0fedccba657f44636c5f7eee6a21a334a8d1a5a37d5f4879f3f1911a6ef06 \
-                    size    83782
-github.tarball_from tarball
+checksums           rmd160  cb8a6c51d907c94cf30d019aa752b3122c926ee1 \
+                    sha256  5a8db2e8f8939ab9beb5ddd1eef6274c4d38176baa0488deb2e906f0531cb831 \
+                    size    83396
+github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-callr \
