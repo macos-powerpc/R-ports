@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github stan-dev loo 2.8.0 v
-revision            1
+R.setup             github stan-dev loo 2.9.0 v
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3+
-description         Efficient Leave-One-Out Cross-Validation and WAIC for Bayesian Models.
+description         Efficient Leave-One-Out Cross-Validation and WAIC for Bayesian Models
 long_description    {*}${description}
 homepage            https://mc-stan.org/loo
-checksums           rmd160  0b62ef0eb97dd56c64d1241b1aedb4defc04bba8 \
-                    sha256  a0db423fa3532b7ee1a97ff83d201e028f86947becc5405bc43cf8791fad62e4 \
-                    size    2456485
+checksums           rmd160  4c3fec56bde0a748e1e98ad9e6efc767e4694edb \
+                    sha256  fa59440f7204ec3fcef30510c07c34d4bcd480b0eda5475c035e768c0c3ab219 \
+                    size    17772991
 github.tarball_from archive
 supported_archs     noarch
 
