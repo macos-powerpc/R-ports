@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github HenrikBengtsson progressr 0.15.0
-revision            1
+R.setup             github HenrikBengtsson progressr 0.18.0
+revision            0
 categories-append   devel
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,14 +12,15 @@ license             GPL-3
 description         Inclusive, unifying API for progress updates
 long_description    {*}${description}
 homepage            https://progressr.futureverse.org
-checksums           rmd160  7b278cdccfb32113d3f9e2e2b55e21f2c99482c0 \
-                    sha256  9ca3e8c8908dc38c36f5e0b2bdba9cf417089386bc796e467918bc510c90f84e \
-                    size    235149
+checksums           rmd160  af430be82c3bd6901598888a7de5966750068684 \
+                    sha256  ba5384b1026992703a05e49064d6bfd16e3c03a4c8efb5bf42105085f3b37386 \
+                    size    220986
 github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-digest
 
+# R-ntfy is dropped for now.
 depends_test-append port:R-base64enc \
                     port:R-beepr \
                     port:R-cli \
