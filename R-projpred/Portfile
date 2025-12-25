@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran stan-dev projpred 2.9.0
+R.setup             cran stan-dev projpred 2.10.0
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             GPL-3
 description         Projection predictive feature selection
 long_description    {*}${description}
 homepage            https://mc-stan.org/projpred
-checksums           rmd160  f4e764f4c76fe4fa49a1c3ee3d7aeabcd712d7fc \
-                    sha256  e78109337aa4050d1f6737bf01956371383704fb4fbb5bcdab5eb9c0f8c10606 \
-                    size    1370480
+checksums           rmd160  00f4e6d00a0ce68d6f206b206eb3a624811d8fe8 \
+                    sha256  f404b1c0df634ab5821454386d379586c01047384d67d9227a22312655c59b47 \
+                    size    510364
 
 depends_lib-append  port:R-abind \
                     port:R-gamm4 \
@@ -27,6 +27,7 @@ depends_lib-append  port:R-abind \
                     port:R-ordinal \
                     port:R-Rcpp \
                     port:R-RcppArmadillo \
+                    port:R-reformulas \
                     port:R-rstantools \
                     port:R-scales
 
@@ -53,6 +54,7 @@ depends_test-append port:R-bayesplot \
                     port:R-rstanarm \
                     port:R-testthat \
                     port:R-ucminf \
+                    port:R-unix \
                     port:R-vdiffr
 
 test.run            yes
