@@ -4,8 +4,8 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran yihui knitr 1.50 v
-revision            1
+R.setup             cran yihui knitr 1.51 v
+revision            0
 categories-append   devel
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -13,9 +13,9 @@ license             GPL
 description         General-purpose literate programming engine
 long_description    {*}${description}
 homepage            https://yihui.org/knitr
-checksums           rmd160  08727f7b36e1ed1d71deb9788f878f7db031881c \
-                    sha256  105f5e8420ad766c94b96a787cb3ce368d12ef8702f867d0515c4fce728e2f41 \
-                    size    534264
+checksums           rmd160  033da764fcf43d448b171f648161369756161561 \
+                    sha256  bcfa3081677ff5c3881c7cef35f3305bbf6714b01320c81a523772663741ca11 \
+                    size    483744
 # github.tarball_from archive
 supported_archs     noarch
 
@@ -35,6 +35,7 @@ depends_test-append port:R-bslib \
                     port:R-JuliaCall \
                     port:R-magick \
                     port:R-markdown \
+                    port:R-otel \
                     port:R-png \
                     port:R-ragg \
                     port:R-reticulate \
