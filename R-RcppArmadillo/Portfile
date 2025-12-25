@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran RcppCore RcppArmadillo 15.0.2-1
+R.setup             cran RcppCore RcppArmadillo 15.2.3-1
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             GPL-2+
 description         Rcpp integration for the Armadillo Templated Linear Algebra Library
 long_description    {*}${description}
 homepage            https://dirk.eddelbuettel.com/code/rcpp.armadillo.html
-checksums           rmd160  298cc4b9b74672683dbcb88826f938a40f5a8ce3 \
-                    sha256  3dc69d06658f31513a1ef3110705c244d0c4b668af7735f7b30361c89d6ec426 \
-                    size    2118155
+checksums           rmd160  ae2b89aebdde55ee5537cd1425956429e9457ff1 \
+                    sha256  5bbb4c32001439e4d2090edaff3e0b5a00249aaa41f89c94a5c3c1a6548656f3 \
+                    size    2123239
 
 depends_lib-append  port:R-Rcpp
 
