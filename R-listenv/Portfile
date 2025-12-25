@@ -4,19 +4,19 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran HenrikBengtsson listenv 0.9.1
-revision            2
+R.setup             cran HenrikBengtsson listenv 0.10.0
+revision            0
 categories-append   devel
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
-license             LGPL-3
+platforms           {darwin any}
+maintainers         nomaintainer
+license             LGPL-2.1+
 description         Environments behaving (almost) as lists
 long_description    {*}${description}
 homepage            https://listenv.futureverse.org
-checksums           rmd160  f0e5f2fc9a6b7e00445b777dde01ca5c9bd6fabc \
-                    sha256  422aaf487b91c6512b83c05536f8dac255db79b16ee85254acc59a3fda8c1c3b \
-                    size    36600
+checksums           rmd160  bc862eb7c4554150b04c026154645fc6ea2028ef \
+                    sha256  6eddc1a201b67b61754a4f18c5d5b641f116b7a0981d8cce506d3989bcb4d6e4 \
+                    size    34253
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_test-append port:R-markdown \
                     port:R-R.rsp \
