@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github rspatial terra 1.8-60
+R.setup             github rspatial terra 1.8-86
 revision            0
 categories-append   gis
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             GPL-3+
 description         Spatial data analysis
 long_description    {*}${description}
 homepage            https://rspatial.org/terra
-checksums           rmd160  863f3c0f9623bb8d82b36ac5027cf21771a07cd8 \
-                    sha256  eb2d3bbb94f57ad3e98c951ea24429a7f6dbc8c43cd206750ad6cd566aa36fbb \
-                    size    1069162
+checksums           rmd160  e827feb36d62d61ea4fe29757f591191a5ce3f88 \
+                    sha256  425bc787007e072bf53c8b269e095a1f4c6c4923f08033def8935251b2955b50 \
+                    size    1081771
 github.tarball_from archive
 
 depends_build-append \
