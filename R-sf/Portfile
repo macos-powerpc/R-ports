@@ -6,17 +6,17 @@ PortGroup           openssl 1.0
 PortGroup           R 1.0
 
 # GitHub version is old.
-R.setup             cran r-spatial sf 1.0-21
-revision            2
+R.setup             cran r-spatial sf 1.0-23
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             {GPL-2 MIT}
 description         Simple features for R
 long_description    {*}${description}
 homepage            https://r-spatial.github.io/sf
-checksums           rmd160  0e059ad0ceadecb98842023197cb55ec8a4ad6fe \
-                    sha256  70c28a826387a56b5f270d48cbb42999f6fb59ec0e6984c84df920dbe0206e99 \
-                    size    4491745
+checksums           rmd160  b9c48c155369b8f1389374dc586992c5f75242a5 \
+                    sha256  4a44abad6e94b648b8a31269fa5a5ff862f69a9dfcdd60b8958a5b9ee3bddceb \
+                    size    9876325
 
 # The build may opportunistically pick wrong libs, in violation of configure args.
 conflicts_build     gdal geos
