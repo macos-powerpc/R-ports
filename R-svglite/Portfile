@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran r-lib svglite 2.2.0 v
+R.setup             cran r-lib svglite 2.2.2 v
 revision            0
 categories-append   graphics
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             GPL-2+
 description         SVG graphics device
 long_description    {*}${description}
 homepage            https://svglite.r-lib.org
-checksums           rmd160  05f8da5171495f1d818cd4ceca4de9105e3dbebc \
-                    sha256  62dbae66d96effaade40c5b45a9ee9c7fffe5272ebe5f0d40374c6e53bd5172b \
-                    size    134026
+checksums           rmd160  a91b8fb2610f3fb1cbebacaa1136327c57c40684 \
+                    sha256  5bf884ee031fbf3f5c60bcedc0532e4b77763e924a1508f584329aae9686187c \
+                    size    125651
 
 depends_lib-append  port:libpng \
                     port:R-base64enc \
