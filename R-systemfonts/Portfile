@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github r-lib systemfonts 1.2.3 v
+R.setup             github r-lib systemfonts 1.3.1 v
 revision            0
 categories-append   sysutils
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             MIT
 description         System native font handling
 long_description    {*}${description} in R.
 homepage            https://systemfonts.r-lib.org
-checksums           rmd160  dffe1ac6f2b22fd2a3caba404d204f78f471d6ed \
-                    sha256  1893acbba31b61b8ae5af32ce117d9c839941fa4881bb1f7379209117928cdfa \
-                    size    99022
+checksums           rmd160  63ba860bea0da45f04c4dcfeb35bc7aba1893886 \
+                    sha256  175e55b36e1ad24fdfe71eafbc425fe95089107ed6085c97e7d2d0b5f624a95c \
+                    size    230954
 github.tarball_from archive
 
 depends_build-append \
@@ -41,8 +41,11 @@ configure.env-append \
 
 depends_test-append port:R-covr \
                     port:R-farver \
+                    port:R-ggplot2 \
                     port:R-knitr \
+                    port:R-ragg \
                     port:R-rmarkdown \
+                    port:R-svglite \
                     port:R-testthat
 
 test.run            yes
