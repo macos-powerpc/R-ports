@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github r-lib devtools 2.4.5 v
-revision            3
+R.setup             github r-lib devtools 2.4.6 v
+revision            0
 categories-append   devel
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,10 +12,10 @@ license             MIT
 description         Tools to make developing R packages easier
 long_description    {*}${description}
 homepage            https://devtools.r-lib.org
-checksums           rmd160  05370ef4b309ab2ae1bd9ddba8c47e1f12334427 \
-                    sha256  b6ef49fbc0e31384c5dd704bb0782c8c2459d3af521ef0b8f74b2530109ce3ab \
-                    size    426256
-github.tarball_from tarball
+checksums           rmd160  ac81ca24f5357c96afb7e4986ab36f579ca5c2d1 \
+                    sha256  edbbe3d988880ed840d0008364d916eb86f3a40e0be046956cf72519dc1a6eeb \
+                    size    447982
+github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
