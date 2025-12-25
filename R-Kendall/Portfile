@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran Kendall 2.2.1
-revision            3
+R.setup             cran cran Kendall 2.2.2
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             {GPL-2 GPL-3}
 description         Kendall Rank Correlation and Mann–Kendall Trend Test
 long_description    {*}${description}
-checksums           rmd160  857083be050e87a261d68a02b3e1db2d7a6e1e95 \
-                    sha256  55f49d1c7f268ca36e5199042c9398420c9945842cc00eac4c728e486849b3f6 \
-                    size    11836
+checksums           rmd160  020f8c8a15556df9dab03460b2704f0973198afe \
+                    sha256  7b1e676a5e4855ed7c69f343b1241833f97b03399cdc640c8b62633b7897b6e9 \
+                    size    12106
 
 compilers.setup     require_fortran
 
