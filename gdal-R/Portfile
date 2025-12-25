@@ -11,7 +11,7 @@ legacysupport.newest_darwin_requires_legacy 16
 
 set realname        gdal
 name                ${realname}-R
-version             3.11.4
+version             3.12.1
 revision            0
 categories          R gis science
 license             MIT BSD
@@ -22,9 +22,9 @@ homepage            https://www.gdal.org
 master_sites        https://download.osgeo.org/gdal/${version}
 distname            ${realname}-${version}
 use_xz              yes
-checksums           rmd160  51092557946c09cd7394ae413b6ec053134e5ecc \
-                    sha256  6401eba2bb63f5ef7a08d2157f240194f06d508d096898a705637aeea9d3bbe8 \
-                    size    9321096
+checksums           rmd160  2dfa7abd71fe2368f256c2dd5fefe1ea56bf6e61 \
+                    sha256  2a4fd3170ff81def93db60f7f61f2842a2ae7ad0335e4ed4ba305252f05835de \
+                    size    9597108
 
 # Supported PostgreSQL versions
 set pg_suffixes     {15 16 17}
@@ -78,7 +78,9 @@ cmake.module_path-prepend \
 # By default, disable all drivers
 configure.args-append \
                     -DGDAL_BUILD_OPTIONAL_DRIVERS=OFF \
-                    -DOGR_BUILD_OPTIONAL_DRIVERS=OFF \
+                    -DOGR_BUILD_OPTIONAL_DRIVERS=OFF
+
+configure.args-append \
                     -DGDAL_ENABLE_PLUGINS=ON \
                     -DGDAL_USE_EXTERNAL_LIBS=ON
 
