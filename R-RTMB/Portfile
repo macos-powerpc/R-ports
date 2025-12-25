@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github kaskr RTMB 1.7 v
-revision            1
+R.setup             github kaskr RTMB 1.8 v
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         R bindings for TMB
 long_description    Native R interface to TMB (Template Model Builder), \
                     so models can be written entirely in R rather than C++.
-checksums           rmd160  ca1448b26719b14074b09dbfb69f019e1b86b011 \
-                    sha256  d9c785bd26e1b35786bea3b9e7f50bec163a2b7df420ea6fbd9f2a7d9b51c6e0 \
-                    size    1005949
+checksums           rmd160  d76d97970acb19d14e77dfb8de29ba3b7e14b487 \
+                    sha256  0df2903b6c8d81f98ed427468267bae27678288c51ea9636020ca07e91c3aa40 \
+                    size    491429
 github.tarball_from archive
 
 worksrcdir          ${worksrcpath}/${R.package}
