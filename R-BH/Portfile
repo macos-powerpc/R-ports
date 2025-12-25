@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran eddelbuettel BH 1.87.0-1
-revision            2
+R.setup             cran eddelbuettel BH 1.90.0-1
+revision            0
 categories-append   devel
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,13 +12,12 @@ license             Boost-1
 description         Boost C++ Header Files
 long_description    {*}${description}
 homepage            https://dirk.eddelbuettel.com/code/bh.html
-checksums           rmd160  b891d8e35266ec348b671d4b87555f334ff3790e \
-                    sha256  59829ae635f42a23289a1c51617f5f972704e1b243b604dad20ef5a812e60393 \
-                    size    14335542
+checksums           rmd160  a6382b898499a525ebfe22734bfcc61fcd6a19d3 \
+                    sha256  2e1fafb05938e81073561ae4892dc543ef15807e375e0ea8fa75e3ab79f0281b \
+                    size    14307014
 supported_archs     noarch
 
-# Cherry-picked from upstream patches:
-patchfiles-append   patch-interprocess.diff \
-                    patch-fix-environ.diff
+# Backport from upstream:
+patchfiles-append   patch-powerpc-atomic.diff
 
 test.run            yes
