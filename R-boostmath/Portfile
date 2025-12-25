@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran andrjohns boostmath 1.2.0
+R.setup             cran andrjohns boostmath 1.4.0
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             MIT
 description         R bindings for the Boost math functions
 long_description    {*}${description}
 homepage            https://github.com/andrjohns/boostmath
-checksums           rmd160  66abd98e0d54f41ca7d354bc3886f9641a9f1157 \
-                    sha256  4d5194b1f025426157f77a425157a5ca64dd239703518cda45f0164a29d798e0 \
-                    size    144318
+checksums           rmd160  4ce3ec10df29882c976e560470d2a0b2a64459e5 \
+                    sha256  102f1ad267db3cdfa7d784186b6a5c63ec195a8787bb34e21922b4de2d29857c \
+                    size    177670
 
 depends_lib-append  port:R-BH \
                     port:R-cpp11
@@ -22,6 +22,4 @@ depends_test-append port:R-knitr \
                     port:R-rmarkdown \
                     port:R-tinytest
 
-# There are some errors in examples related to long double.
-# See: https://github.com/andrjohns/boostmath/issues/3
 test.run            yes
