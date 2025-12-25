@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran Yves.Rosseel lavaan 0.6-19
-revision            1
+R.setup             cran Yves.Rosseel lavaan 0.6-21
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -13,9 +13,9 @@ description         Latent variable analysis
 long_description    Fit a variety of latent variable models, including confirmatory factor \
                     analysis, structural equation modeling and latent growth curve models.
 homepage            https://lavaan.ugent.be
-checksums           rmd160  bacdcc3692cca894e08f1e8f8e6a0d3957a0b028 \
-                    sha256  47b137e3c164d33a433698bd5da82157cc8d9bfa8b04711d10a1745a57e8b785 \
-                    size    948608
+checksums           rmd160  8d29ce14a45a73ff8639ef6cd829d24758286612 \
+                    sha256  f986d9a3c03c2d26262dfeccbb8d5604ce8d38787a8eb3af1b2d1f3d8571b54f \
+                    size    1079904
 supported_archs     noarch
 
 depends_lib-append  port:R-mnormt \
