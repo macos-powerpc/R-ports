@@ -4,8 +4,8 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran paleolimbot wk 0.9.4
-revision            1
+R.setup             cran paleolimbot wk 0.9.5
+revision            0
 categories-append   math geometry
 maintainers         nomaintainer
 license             MIT
@@ -14,9 +14,9 @@ long_description    ${name} provides a minimal R and C++ API for parsing \
                     well-known binary and well-known text representation \
                     of geometries to and from R-native formats.
 homepage            https://paleolimbot.github.io/wk
-checksums           rmd160  94e9fe41dc65fd312ca9242479959bd2890ca484 \
-                    sha256  b973dd5fa9aed94efc7ea4027146e804ba54df818a71278d6a5b7df0ae9e348b \
-                    size    1041219
+checksums           rmd160  ea94cd8bdb398b1c125e2314f63d448ad5635eeb \
+                    sha256  b720282890f8d322ff8217bd857bab8f5549343ea2a635a3c2ada63ce1206aed \
+                    size    1041465
 
 depends_test-append port:R-readr \
                     port:R-sf \
