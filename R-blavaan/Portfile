@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran ecmerkle blavaan 0.5-8
-revision            1
+R.setup             cran ecmerkle blavaan 0.5-9
+revision            0
 categories-append   math economics
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3+
 description         Bayesian latent variable analysis
 long_description    {*}${description}
 homepage            https://ecmerkle.github.io/blavaan
-checksums           rmd160  2f4ea648deed0b221ecaf7771cb088ac92bec706 \
-                    sha256  317f6abf4bac061571d8850ada8359d110f28de183c689c732e920237f89fd02 \
-                    size    1643855
+checksums           rmd160  449bc2990aadcd4722b87ba5340bd0f005cdb7ef \
+                    sha256  96e51f410d15cf54f169ec0ce77aa52eceb3b7d64eb4c913f522d675f269d74e \
+                    size    1661555
 
 # See: https://github.com/stan-dev/rstan/issues/1095
 # This is a safe choice. Possibly, on some 32-bit configurations
