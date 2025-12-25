@@ -3,19 +3,21 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran matthiaskaeding RcppGreedySetCover 0.1.0
-revision            3
+R.setup             cran matthiaskaeding RcppGreedySetCover 0.1.1
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             MIT
-description         Fast implementation of the greedy algorithm for the set cover problem using Rcpp
-long_description    {*}${description}
-checksums           rmd160  a5b56c17c5c66efe1d81499466fb6c6eeeb21a1e \
-                    sha256  3d149a5d9b31a401a9cdfabd4ca4b02f438bcafd16474bdaabf3eeaa5f8a04ed \
-                    size    5691
+description         Fast implementation of the greedy algorithm for the set cover problem
+long_description    {*}${description} using Rcpp.
+checksums           rmd160  fca1e9410045e9145f5b5ab796e3bd0687ea988e \
+                    sha256  b0e9489bc096bbfd378bb027a9cff8f1c799e5a1b24403378cc2ff993ff803f2 \
+                    size    6488
 
 depends_lib-append  port:R-BH \
                     port:R-data.table \
                     port:R-Rcpp
+
+depends_test-append port:R-testthat
 
 test.run            yes
