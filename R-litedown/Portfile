@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github yihui litedown 0.7 v
-revision            1
+R.setup             github yihui litedown 0.9 v
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Light-weight version of R-markdown
 long_description    {*}${description}
-checksums           rmd160  70696d6c73fb9c7c4eac1e4f6aaa82d3a28a15ba \
-                    sha256  eab2574b4c85923127e4020f530788e281cca0aa5f849b6c82669f4969db2dff \
-                    size    170850
+checksums           rmd160  a5a2d8aba4505c0e6ecb8a9407643dd360274da0 \
+                    sha256  9dc6b97467ba65b9d0845bd5f45a2e37129af759c7cd57533891aaf688a0f95b \
+                    size    176275
 github.tarball_from archive
 supported_archs     noarch
 
