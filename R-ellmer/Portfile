@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran tidyverse ellmer 0.3.1
+R.setup             cran tidyverse ellmer 0.4.0
 revision            0
 categories-append   llm
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             MIT
 description         Chat with Large Language Models
 long_description    {*}${description}
 homepage            https://ellmer.tidyverse.org
-checksums           rmd160  d4b674848475ffc3284aae42678e6b0c0a5201eb \
-                    sha256  a526fb778bfc270172072c14dc4acb4d5775612bba9325b8b828c50c1109307d \
-                    size    1047946
+checksums           rmd160  fe64fee2573e097cef4c6ec95e6859d2666aff6f \
+                    sha256  6778c2f9b3f7046ff33b6933a17c3abe7bd64924532df7dfb10d82bf8759c8b1 \
+                    size    3092506
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
@@ -27,7 +27,9 @@ depends_lib-append  port:R-cli \
                     port:R-promises \
                     port:R-R6 \
                     port:R-rlang \
-                    port:R-S7
+                    port:R-S7 \
+                    port:R-tibble \
+                    port:R-vctrs
 
 # FIXME: one test fails: [ FAIL 1 | WARN 0 | SKIP 74 | PASS 97 ]
 # Error in `value[[3L]](cond)`: invalid graphics state
