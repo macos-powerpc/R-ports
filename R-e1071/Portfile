@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-project e1071 1.7-16
-revision            1
+R.setup             cran r-project e1071 1.7-17
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             {GPL-2 GPL-3}
 description         Misc Functions of the Department of Statistics, Probability Theory Group (Formerly: E1071), TU Wien
 long_description    Functions for latent class analysis, short time Fourier transform, fuzzy clustering, support vector machines, \
                     shortest path computation, bagged clustering, naive Bayes classifier, generalized k-nearest neighbour.
-checksums           rmd160  fd6f0fc42e843f055473bfe1f9af6b32dfae72c5 \
-                    sha256  12d565e3033fdb94c96c1e49f1a08202fcfb9e2a804a2e6b8fd204bdd97c3a4f \
-                    size    326734
+checksums           rmd160  9eeb30f8127e2ba8c612810b72129688254ed885 \
+                    sha256  6debc371ad478c2aa6de1f6510e254e80e797de4974b855f63b35509a3c2ac87 \
+                    size    318056
 
 depends_lib-append  port:R-proxy
 
