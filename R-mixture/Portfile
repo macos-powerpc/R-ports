@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran mcnicholas mixture 2.1.2
+R.setup             cran mcnicholas mixture 2.2.0
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Mixture models for clustering and classification
 long_description    {*}${description}
-checksums           rmd160  57a92716a32abbb742a21e3121489fcb3336741b \
-                    sha256  68a7ae2f8927c7fcb9fa12aebe35c47ec77b0bedbe9c869eed4fd0b6c3916a5d \
-                    size    211146
+checksums           rmd160  b060ac09bd2edd07ee7623fd11dad0b8429645a1 \
+                    sha256  0931a3a76a5b22f31f5b4777be6601e4246f7366a62529dcbee9dfa5547a069c \
+                    size    215045
 
 depends_lib-append  port:gsl \
                     port:R-BH \
