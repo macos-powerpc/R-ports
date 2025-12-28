@@ -3,25 +3,34 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github tidyverse forcats 1.0.0 v
-revision            3
+R.setup             github tidyverse forcats 1.0.1 v
+revision            0
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Tools for working with categorical variables (factors)
 long_description    {*}${description}
 homepage            https://forcats.tidyverse.org
-checksums           rmd160  ee021473cbea6a4000890cf8a9620887fa99ad50 \
-                    sha256  7fc30edb153fc3aef31436173e961cd9cfd6cd2db8e197cfaae2d99f4f361f5c \
-                    size    1062862
-github.tarball_from tarball
+checksums           rmd160  78338232270dc90538e3a5979dfd62c023025b9d \
+                    sha256  54d4af2a61e5b53946f99cc52b2917d73f3a80eefeeb02739e0fca7c1b7b5803 \
+                    size    1064202
+github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
-                    port:R-ellipsis \
                     port:R-glue \
                     port:R-lifecycle \
                     port:R-magrittr \
                     port:R-rlang \
-                    port:R-tibble \
+                    port:R-tibble
+
+depends_test-append port:R-covr \
+                    port:R-dplyr \
+                    port:R-ggplot2 \
+                    port:R-knitr \
+                    port:R-readr \
+                    port:R-rmarkdown \
+                    port:R-testthat \
                     port:R-withr
+
+test.run            yes
