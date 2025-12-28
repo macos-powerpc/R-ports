@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran Pijavski 1.0.3
-revision            2
+R.setup             cran cran Pijavski 1.0.5
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             LGPL-3
 description         Global univariate minimization of Lipschitz functions
 long_description    {*}${description}
-checksums           rmd160  cc9811cedeb85c4eebfa2c719ecbd55497107352 \
-                    sha256  7dfa4b87e1c704ae9b7819e621e398d2af85f3f13aa12cffd8b806eb5260574b \
-                    size    47120
+checksums           rmd160  8e40660e0447b4d4e3975c65bb6938057a2a8ef7 \
+                    sha256  5c78adccff4cd2ff4b4ae440517007d715a0e67b0a57eb850ecfeb012d809851 \
+                    size    47639
 
 depends_lib-append  port:R-Rcpp
 
