@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-project timeSeries 4041.111
-revision            1
+R.setup             cran r-project timeSeries 4052.112
+revision            0
 categories-append   finance
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -14,9 +14,9 @@ long_description    S4 classes and various tools for financial time series – \
                     basic functions such as scaling and sorting, subsetting, \
                     mathematical operations and statistical functions.
 homepage            https://r-forge.r-project.org/projects/rmetrics
-checksums           rmd160  55ea3fbf1d822b1e875f35f63e948bf200527900 \
-                    sha256  053d24772c0298e5979e3757c3fd7285fe6c10f31c1ead5a639dd190f6fa8a43 \
-                    size    1339628
+checksums           rmd160  3be45339a951570aa744cd286379c6be6623ab62 \
+                    sha256  c4e50a669cfa34814a71e47bb93020442ec40694fc3f1c7bcd94edf2368c6993 \
+                    size    1457372
 supported_archs     noarch
 
 depends_lib-append  port:R-timeDate
