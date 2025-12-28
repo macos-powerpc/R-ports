@@ -4,29 +4,33 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran bcallaway11 did 2.1.2
-revision            3
+R.setup             cran bcallaway11 did 2.3.0
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2
 description         Treatment effects with multiple periods and groups
 long_description    {*}${description}
 homepage            https://bcallaway11.github.io/did
-checksums           rmd160  7adf276003594eccfccf80e798c81571a95faae3 \
-                    sha256  32394e0919dbfcd9c1bc2c8b13c23936f6f0ba38be545f5c7df5096bc4a8241f \
-                    size    4539018
+checksums           rmd160  68b3f378199211f03ccfdee3fd2a885d24b5e245 \
+                    sha256  92bc0af15230bff17e75507845718b0ce6d3249085eeceef598b499565b9e8a3 \
+                    size    4636706
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-BMisc \
+                    port:R-data.table \
                     port:R-DRDID \
+                    port:R-dreamerr \
+                    port:R-fastglm \
                     port:R-generics \
                     port:R-ggplot2 \
                     port:R-ggpubr \
                     port:R-pbapply \
                     port:R-tidyr
 
-depends_test-append port:R-covr \
+depends_test-append port:R-backports \
+                    port:R-covr \
                     port:R-here \
                     port:R-knitr \
                     port:R-plm \
