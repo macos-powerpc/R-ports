@@ -3,10 +3,11 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github enricoschumann textutils 0.4-1 v _CRAN
-revision            2
+# Revert to GitHub once updated there.
+R.setup             cran enricoschumann textutils 0.4-3 v _CRAN
+revision            0
 platforms           {darwin any}
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+maintainers         nomaintainer
 license             GPL-3
 description         Utilities for handling strings and text
 long_description    Utilities for handling character vectors that store human-readable text \
@@ -15,10 +16,10 @@ long_description    Utilities for handling character vectors that store human-re
                     (e.g. for expanding and aligning strings that form the lines of such reports), \
                     it also provides generic functions for transforming R objects to HTML and to plain text.
 homepage            http://enricoschumann.net/R/packages/textutils
-checksums           rmd160  268c8bc5f712fee8f10a8a1eb32a84fa072941ea \
-                    sha256  8e0eccdc84b678bfd40b5c62355b1d1338d47e4b70ce8971c856ed24eae34a7a \
-                    size    32574
-github.tarball_from tarball
+checksums           rmd160  0d35bf345c4ab5d0e1acf716b8138b866952b850 \
+                    sha256  e1eca8fbd2018e4cc152b08ae0db7fd05b05d2e5779b2e20cc25275a354e7fae \
+                    size    150298
+# github.tarball_from archive
 supported_archs     noarch
 
 depends_test-append port:R-tinytest
