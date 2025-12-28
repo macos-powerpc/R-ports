@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-project tram 1.2-3
+R.setup             cran r-project tram 1.3-2
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             GPL-2
 description         R-Formula-based user-interfaces to specific \
                     transformation models
 long_description    {*}${description} implemented in R-mlt.
-checksums           rmd160  9b74c344d149a42c7ffded098da7110b76a919e3 \
-                    sha256  32baf591d815ea64aabbc9ef643e446dc7f7acf8cbba4e3aa9ec334431b503ab \
-                    size    1685235
+checksums           rmd160  933d7ffc4c6606ae611543871d25455027f746eb \
+                    sha256  a9678032a431defccb4e07d4bea2f70618155bf68474afe180ee353140bc93cb \
+                    size    2234932
 supported_archs     noarch
 
 depends_lib-append  port:R-basefun \
@@ -25,31 +25,48 @@ depends_lib-append  port:R-basefun \
                     port:R-sandwich \
                     port:R-variables
 
+# Some test dependencies are omitted.
 depends_test-append port:R-alabama \
                     port:R-asht \
                     port:R-ATR \
                     port:R-coin \
                     port:R-colorspace \
+                    port:R-cotram \
                     port:R-coxme \
+                    port:R-eha \
+                    port:R-english \
+                    port:R-flexsurv \
                     port:R-gamlss \
+                    port:R-gamlss.cens \
+                    port:R-gamlss.data \
                     port:R-geepack \
                     port:R-glmmTMB \
                     port:R-gridExtra \
                     port:R-HSAUR3 \
+                    port:R-icenReg \
                     port:R-knitr \
+                    port:R-KONPsurv \
+                    port:R-latex2exp \
                     port:R-latticeExtra \
                     port:R-lme4 \
                     port:R-merDeriv \
                     port:R-mlbench \
                     port:R-mlt.docreg \
+                    port:R-mpr \
                     port:R-numDeriv \
                     port:R-ordinal \
                     port:R-ordinalCont \
                     port:R-quantreg \
                     port:R-randomForestSRC \
+                    port:R-ranger \
+                    port:R-rms \
+                    port:R-rstpm2 \
                     port:R-SparseGrid \
+                    port:R-Stat2Data \
                     port:R-TH.data \
                     port:R-tramME \
-                    port:R-trtf
+                    port:R-tramvs \
+                    port:R-trtf \
+                    port:R-xtable
 
 test.run            yes
