@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-project fUnitRoots 4040.81
-revision            1
+R.setup             cran r-project fUnitRoots 4052.82
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-2+
 description         Modelling trends and unit roots
 long_description    {*}${description}
-checksums           rmd160  50beacfceb7417bee156a85dcc9dc662704a4b34 \
-                    sha256  543f1635bbff745e350aefa77ae4c1e0f2aec69988d4226d54eee389f197105d \
-                    size    571024
+checksums           rmd160  54c9ebcbf1b3695d4da52eda4937c730fc41700f \
+                    sha256  3396605942327d5410e35fcb98aeeed01ea2d8f0dbf61bc5bf16f68547e77335 \
+                    size    571523
 
 depends_lib-append  port:R-fBasics \
                     port:R-timeSeries \
