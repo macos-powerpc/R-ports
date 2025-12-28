@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-project XML 3.99-0.19
+R.setup             cran r-project XML 3.99-0.20
 revision            0
 categories-append   devel textproc
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             BSD
 description         Tools for parsing and generating XML within R and S-Plus
 long_description    {*}${description}
 homepage            https://www.omegahat.net/RSXML
-checksums           rmd160  096fc216ee95222a73f82f75ead0aa434366afff \
-                    sha256  476437c1e4cdbbb3a938437e9a19b13ca9beac8de930dec5210fc1dfd3da4c6d \
-                    size    966919
+checksums           rmd160  d9a0a96da09dd21bcd19bbdb981b6dc6ff497795 \
+                    sha256  f5fbb829a763c81b35571227cbeba346dee9713ff9c6c0c1a73f73256d51707c \
+                    size    966751
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
