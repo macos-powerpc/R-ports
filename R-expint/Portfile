@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran expint 0.1-8
-revision            3
+R.setup             cran vigou3 expint 0.1-9
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
-license             {GPL-2 GPL-3}
+license             GPL-2+
 description         Exponential integral and incomplete Gamma function
 long_description    {*}${description}
 homepage            https://gitlab.com/vigou3/expint
-checksums           rmd160  05dc0e184f31617290aeea910a2419a04c57a96a \
-                    sha256  12654fe0069090c059086d507a99d1061a14acfda4e204c27c0b397c0962c6b2 \
-                    size    217053
+checksums           rmd160  b715698aafb356cecc242d4ec9a0078dcb5074f0 \
+                    sha256  98cf95b9a7b2e06fa8a60f80c49ce593561a307901107d9b73a66e03a8f44f4c \
+                    size    115071
 
 test.run            yes
