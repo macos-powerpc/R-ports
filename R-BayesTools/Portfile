@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran FBartos BayesTools 0.2.22
+R.setup             cran FBartos BayesTools 0.2.23
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -13,9 +13,9 @@ license             GPL-3
 description         Tools for Bayesian Analyses
 long_description    {*}${description}
 homepage            https://fbartos.github.io/BayesTools
-checksums           rmd160  af470a8af47ca54f9aefd62785313b5f4057f3b0 \
-                    sha256  e80abb519ec62fe677cbf697fff2d552af201d6169d1a51e6bcc2a780e82c782 \
-                    size    465863
+checksums           rmd160  3f5e1566bdfdc36e3e1edc5a2c2c5e942bfcf253 \
+                    sha256  3667fb82dc98fbaa3468ebbe729a07d4aea5bd55dc6341d175716546d1c2920f \
+                    size    465720
 supported_archs     noarch
 
 depends_lib-append  port:R-bridgesampling \
