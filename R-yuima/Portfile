@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran yuimaproject yuima 1.15.30
+R.setup             cran yuimaproject yuima 1.15.34
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             GPL-2
 description         Simulation and inference for SDEs and other stochastic processes
 long_description    {*}${description}
 homepage            https://yuimaproject.com
-checksums           rmd160  5fcd8183e1f9f4135417aaa3c3f365d85f635b88 \
-                    sha256  2609cb26284a5ac279baceab822a07f3454216b33fb46a56cd65578a2af6b29c \
-                    size    801076
+checksums           rmd160  09063a897677e903c42f3181950f83eecc8ce150 \
+                    sha256  eae22c83483aaec36b9c85de9156c355beb56952c7831ec3f548ebde4e994615 \
+                    size    813567
 
 depends_lib-append  port:R-calculus \
                     port:R-coda \
