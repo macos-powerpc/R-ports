@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github ropensci vcr 2.0.0 v
+R.setup             github ropensci vcr 2.1.0 v
 revision            0
 categories-append   net
 platforms           {darwin any}
@@ -11,9 +11,9 @@ maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Record HTTP calls and replay them
 long_description    {*}${description}
-checksums           rmd160  a4be22c4bb6fe3ca3cd9abe227bb96bf64b55e4d \
-                    sha256  71998665c28adedfe19e5d0c1a43c984628a8d4e74dc41d86e2e64ece5ff4f73 \
-                    size    214215
+checksums           rmd160  391450cd353dfbcce659810a17a18587333631a8 \
+                    sha256  c2fbd1c4bae60aace02a29a0747f3374eb1fe58cb876273d48826867fb01d716 \
+                    size    212355
 github.tarball_from archive
 supported_archs     noarch
 
