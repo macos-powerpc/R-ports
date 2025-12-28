@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github JanMarvin openxlsx2 1.19 v
+R.setup             github JanMarvin openxlsx2 1.22 v
 revision            0
 categories-append   office
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,15 +11,14 @@ license             MIT
 description         Read, write and edit xlsx files
 long_description    {*}${description}
 homepage            https://janmarvin.github.io/openxlsx2
-checksums           rmd160  15f32e3cbb9e90a85a465c82b967cab175128d17 \
-                    sha256  0caeca20d3968ff0a9391868dca4d0d62058e54dc8b6d270af4884d80fc52ae1 \
-                    size    5825642
+checksums           rmd160  cc8513a07dd3c39da12a0b9b3799dc77fcdf7389 \
+                    sha256  dca96d29883a844e35b9fb2990b81efe2d6ada6e4db29b8a9be4f242dad81af7 \
+                    size    5828081
 github.tarball_from archive
 
 depends_lib-append  port:R-R6 \
                     port:R-Rcpp \
-                    port:R-stringi \
-                    port:R-zip
+                    port:R-stringi
 
 depends_test-append port:R-ggplot2 \
                     port:R-knitr \
@@ -27,7 +26,8 @@ depends_test-append port:R-ggplot2 \
                     port:R-rmarkdown \
                     port:R-rvg \
                     port:R-testthat \
-                    port:R-waldo
+                    port:R-waldo \
+                    port:R-zip
 
 # One test fails on 32-bit, apparently due to rounding: https://github.com/JanMarvin/openxlsx2/issues/566
 # Some more testing on Big-endian: https://github.com/JanMarvin/openxlsx2/pull/688
