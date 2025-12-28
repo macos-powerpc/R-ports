@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github tidyverse blob 1.2.4.9016 v
-revision            1
+R.setup             github tidyverse blob 1.2.4.9019 v
+revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Simple S3 class for representing vectors of binary data
 long_description    {*}${description}
 homepage            https://blob.tidyverse.org
-checksums           rmd160  21fd97a43a88034f67e5436dd6dcfa89626c6cfd \
-                    sha256  676af2337fa86ea8da80c567fa4c82237371bfa7afea2809c42f5c00debcb74f \
-                    size    33830
+checksums           rmd160  0f6d319e0f48f9710d3ee16226bd5bc96f940dc3 \
+                    sha256  9779f91b3c5e31f7e784538bd1d9e9c81a7df77fa4aacc48bffaeb773d74e956 \
+                    size    37687
 github.tarball_from archive
 supported_archs     noarch
 
