@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github rconsortium S7 0.2.0 v
-revision            1
+R.setup             github rconsortium S7 0.2.1 v
+revision            0
 categories-append   devel
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Object-oriented system meant to become a successor to S3 and S4
 long_description    {*}${description}
 homepage            https://rconsortium.github.io/S7
-checksums           rmd160  bb2539e220ea2ed4d5dbef4c38cfc9448d5838e6 \
-                    sha256  91cd1dc6e893e3c8c4724483f053c3cec2000e729c44da993304581faeaee765 \
-                    size    179730
+checksums           rmd160  db4c920769a33a00bd33684a498f35d59f688fc9 \
+                    sha256  43215dbc22b58ce38473b8df873fff315c6a8a7c96b0e1a0a335a8029b7d1577 \
+                    size    180198
 github.tarball_from archive
 
 depends_test-append port:R-bench \
