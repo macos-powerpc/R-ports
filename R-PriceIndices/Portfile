@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran jacek.bialek PriceIndices 0.2.4
+R.setup             cran jacek.bialek PriceIndices 0.2.6
 revision            0
 categories-append   economics
 platforms           {darwin any}
@@ -11,20 +11,18 @@ maintainers         nomaintainer
 license             GPL-3
 description         Calculate bilateral and multilateral price indices
 long_description    {*}${description}
-checksums           rmd160  c14c187b3a92562f9a81928d33efa9a9bec8bed8 \
-                    sha256  bf3d45d9e85a53292e40fe296ff1b9599b90aef85971748111c616aa4bae0e96 \
-                    size    715461
+checksums           rmd160  4c56383cc83b19a34943cfcc7feb223eb00f6cc2 \
+                    sha256  bfdc5bdcd6c2ebea14283497d379204f3b2d0693b8c733a6671d0195a8edf08c \
+                    size    741515
 supported_archs     noarch
 
-depends_lib-append  port:R-caret \
-                    port:R-dplyr \
+depends_lib-append  port:R-dplyr \
                     port:R-ggplot2 \
                     port:R-lubridate \
                     port:R-reclin2 \
                     port:R-reshape \
                     port:R-strex \
-                    port:R-stringr \
-                    port:R-xgboost
+                    port:R-stringr
 
 depends_test-append port:R-knitr \
                     port:R-rmarkdown \
