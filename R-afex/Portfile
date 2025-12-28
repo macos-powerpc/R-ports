@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran singmann afex 1.5-0
+R.setup             cran singmann afex 1.5-1
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             GPL-2+
 description         Analysis of Factorial Experiments
 long_description    {*}${description}
 homepage            https://afex.singmann.science
-checksums           rmd160  f9d6a2041cd1eb4695896b75a7b65a7aef2ea27b \
-                    sha256  b78aa9acba8e7f47f9cfb69a9739f07635ba042a10364e92922f317fd0b777c6 \
-                    size    4294136
+checksums           rmd160  f621fc6f538853e42babe7d182bf33dff63c944a \
+                    sha256  68c5bb370579e288c4e11603a84aa637d2c44995faee10ebc2b42ebd86c03dbb \
+                    size    4411945
 supported_archs     noarch
 
 depends_lib-append  port:R-car \
@@ -36,6 +36,7 @@ depends_test-append port:R-brms \
                     port:R-ggbeeswarm \
                     port:R-ggplot2 \
                     port:R-ggpubr \
+                    port:R-ggthemes \
                     port:R-GLMMadaptive \
                     port:R-glmmTMB \
                     port:R-jtools \
