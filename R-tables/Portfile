@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran dmurdoch tables 0.9.31
-revision            1
+R.setup             cran dmurdoch tables 0.9.33
+revision            0
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
@@ -13,9 +13,9 @@ long_description    Computes and displays complex tables of summary statistics. 
                     Output may be in LaTeX, HTML, plain text or an R matrix \
                     for further processing.
 homepage            https://dmurdoch.github.io/tables
-checksums           rmd160  88b5cf368ccdb0ba44a4c91f2c9159ba468dd427 \
-                    sha256  b81acf193e30a259afc273888d833fd7b4954b3a184bd4de44d798e08d9ce88c \
-                    size    339840
+checksums           rmd160  0829ff8f8e6f984b79a6c234644031c7e364d528 \
+                    sha256  7b9287aaceda7f0a18fcc67ddece476ef47fe8d7a85b8091c94e215e5e52f26f \
+                    size    720111
 supported_archs     noarch
 
 depends_lib-append  port:R-htmltools \
