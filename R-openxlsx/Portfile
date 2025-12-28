@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran ycphs openxlsx 4.2.8
-revision            1
+R.setup             cran ycphs openxlsx 4.2.8.1
+revision            0
 maintainers         nomaintainer
 license             MIT
 description         Read, write and edit xlsx files
 long_description    {*}${description}
 homepage            https://ycphs.github.io/openxlsx/index.html
-checksums           rmd160  99da5a935c1814d3032874496d1dd1d523e8b72d \
-                    sha256  8a0861ab8b677f6cd5f582f7c6721c0451cd04d65c6e9cc6ebdb7fbc6597e4d8 \
-                    size    1411343
+checksums           rmd160  523953e84712ec9fa9622ac8abaeefeb5cb51532 \
+                    sha256  46ed7c1c8db9646eaf4fe6abe00a0eacd40d28707428a7c611c2816195c71a63 \
+                    size    1412047
 
 depends_lib-append  port:R-Rcpp \
                     port:R-stringi \
