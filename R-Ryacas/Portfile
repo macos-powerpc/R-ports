@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github r-cas Ryacas 1.1.5 v
-revision            2
+R.setup             github r-cas Ryacas 1.1.6 v
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL
 description         R interface to the Yacas Computer Algebra System
 long_description    {*}${description}
-checksums           rmd160  d488040853e754ea599f87df5b35943fe0010da6 \
-                    sha256  85fb8977e0921306db3e9e75992d9f847b414cd5ba164d46c1d40b78e1c655da \
-                    size    772298
-github.tarball_from tarball
+checksums           rmd160  711942dfcc4a0fc460a78c6a65b2178383a497cd \
+                    sha256  8e7767f5733e092aca98737b8397c449ef07e7d7ef10c60f8ad4882b35428e94 \
+                    size    773142
+github.tarball_from archive
 
 depends_lib-append  port:R-magrittr \
                     port:R-Rcpp
