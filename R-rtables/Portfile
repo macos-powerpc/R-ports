@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github insightsengineering rtables 0.6.13 v
+R.setup             github insightsengineering rtables 0.6.15 v
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             Apache-2
 description         Reporting tables with R
 long_description    {*}${description}
 homepage            https://insightsengineering.github.io/rtables
-checksums           rmd160  3540c91c9443d4698fd6ea123a14f117a7587158 \
-                    sha256  63b4b541f9348069a106486efe3953b067c665cf0dab1110b2cdfb5d9329a48a \
-                    size    12783734
+checksums           rmd160  7bf8ca115347324cf169097f4b9562eb3f598d59 \
+                    sha256  09646ff322ef878627930514755343ad4fa64185b9d6781e63e28aea8f053b65 \
+                    size    12818927
 github.tarball_from archive
 supported_archs     noarch
 
