@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran loelschlaeger ao 1.2.1
+R.setup             cran loelschlaeger ao 1.2.2
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -13,9 +13,9 @@ license             GPL-3
 description         Alternating Optimization
 long_description    {*}${description}
 homepage            https://loelschlaeger.de/ao
-checksums           rmd160  55c14e0cafd2761c77c4af6c6e66d47399598be0 \
-                    sha256  24dc1e90108fb3b2615c89ade2f6445e3d42aca8e5f24db208fb6cad74e1dd28 \
-                    size    192981
+checksums           rmd160  44b43c6e7335bd6e6a8c2c33edb9cb8d85edb25d \
+                    sha256  aac06df7e0902f779a209d8ff891ed456e8b1b8546e1a93a5fa2c30f04e5fc62 \
+                    size    193224
 supported_archs     noarch
 
 depends_lib-append  port:R-checkmate \
