@@ -3,21 +3,39 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran quentingronau bridgesampling 1.1-2
-revision            3
+R.setup             cran quentingronau bridgesampling 1.2-1
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
-license             {GPL-2 GPL-3}
+license             GPL-2+
 description         Bridge Sampling for Marginal Likelihoods and Bayes Factors
 long_description    {*}${description}
-checksums           rmd160  b213640aff2ce99dbfe5a2f9cde3f4602b449e33 \
-                    sha256  54ecd39aa2e36d4d521d3d36425f9fe56a3f8547df6048c814c5931d790f3e6b \
-                    size    1679600
+checksums           rmd160  ff7a969f43c4d7cb7b9a24e2f6bb0ca886f2136b \
+                    sha256  e85f4fa1d1c226e485b5ffb71b83c6d80d7d6a1083795af3e526b9c87929e998 \
+                    size    1193768
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-Brobdingnag \
                     port:R-coda \
                     port:R-mvtnorm \
                     port:R-scales \
                     port:R-stringr
+
+depends_test-append port:R-BayesFactor \
+                    port:R-cmdstanr \
+                    port:R-knitr \
+                    port:R-MCMCpack \
+                    port:R-nimble \
+                    port:R-rmarkdown \
+                    port:R-R.rsp \
+                    port:R-R2jags \
+                    port:R-Rcpp \
+                    port:R-RcppEigen \
+                    port:R-rjags \
+                    port:R-rstan \
+                    port:R-rstanarm \
+                    port:R-runjags \
+                    port:R-testthat
+
+test.run            yes
