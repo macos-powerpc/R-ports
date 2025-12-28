@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github r-lib sparsevctrs 0.3.4 v
+R.setup             github r-lib sparsevctrs 0.3.5 v
 revision            0
 categories-append   devel
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             MIT
 description         Sparse vectors for use in data frames
 long_description    {*}${description}
 homepage            https://r-lib.github.io/sparsevctrs
-checksums           rmd160  a3d2cbfc6044922d8e4ae89f045a02c8e3428f64 \
-                    sha256  7de4879751faf2e3f68e11b316b6b1cb1c015ec949a302fc3a85edb1ad003694 \
-                    size    92697
+checksums           rmd160  d38e0dca07ef759f27d48d839c79eda0f78a5f68 \
+                    sha256  fd3f3101ad17ccb0b068097c414029d1dfd46902c7300274eeea28df84665a22 \
+                    size    93146
 github.tarball_from archive
 
 depends_lib-append  port:R-cli \
