@@ -3,18 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-project zoo 1.8-14
+R.setup             cran r-project zoo 1.8-15
 revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             {GPL-2 GPL-3}
 description         S3 infrastructure for regular and irregular time series
 long_description    {*}${description}.
 homepage            https://zoo.R-Forge.R-project.org
-checksums           rmd160  2cc10bc6796aea77c2e0d73bb55f3cd48876bc58 \
-                    sha256  a82bb6535c42ab48b125c878f924febfac800003592e00a800b5b4c528412796 \
-                    size    778426
+checksums           rmd160  ea618accf2aa536788c5263c3a5e1f45f0042ea4 \
+                    sha256  c0d139b7d3dee4f28202bc8d82fd76109af26530c43e39a051b1eb145d1861ea \
+                    size    806453
 
-# Test dep on R-tinyplot is dropped.
 depends_test-append port:R-AER \
                     port:R-coda \
                     port:R-chron \
@@ -25,6 +24,7 @@ depends_test-append port:R-AER \
                     port:R-strucchange \
                     port:R-timeDate \
                     port:R-timeSeries \
+                    port:R-tinyplot \
                     port:R-tis \
                     port:R-tseries \
                     port:R-xts
