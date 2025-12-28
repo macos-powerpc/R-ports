@@ -1,6 +1,6 @@
---- configure	2025-03-26 17:17:37.000000000 +0800
-+++ configure	2025-03-30 11:02:37.000000000 +0800
-@@ -2834,15 +2834,9 @@
+--- configure	2025-12-02 02:35:59.000000000 +0800
++++ configure	2025-12-28 01:30:22.000000000 +0800
+@@ -3307,15 +3307,9 @@
  
  if test `uname -s` = "Darwin"
  then
@@ -19,11 +19,11 @@
    ac_pkg_openmp=no
    { printf "%s\n" "$as_me:${as_lineno-$LINENO}: checking whether OpenMP will work in a package" >&5
  printf %s "checking whether OpenMP will work in a package... " >&6; }
-@@ -2865,8 +2859,7 @@
+@@ -3338,8 +3332,7 @@
      OPENMP_LIB=''
      echo '*****************************************************************************************'
      echo '         OpenMP is unavailable on this Mac OSX system. Training speed may be suboptimal.'
--    echo '         To use all CPU cores for training jobs, you should install OpenMP by running:'
+-    echo '         To use all CPU cores for training jobs, you should install OpenMP by running'
 -    echo '             brew install libomp'
 +    echo '         To use all CPU cores for training jobs, you should install OpenMP.'
      echo '*****************************************************************************************'

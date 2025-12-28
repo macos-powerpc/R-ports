@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran dmlc xgboost 1.7.11.1
+R.setup             cran dmlc xgboost 3.1.2.1
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             Apache-2
 description         Extreme Gradient Boosting
 long_description    {*}${description}
-checksums           rmd160  321f932d3bdd8a2a43a00bb7b2e9f04050b8d6b1 \
-                    sha256  c15b631be77ae17fef46166abffb3336738a812c219d82c601bc70664a88d7c5 \
-                    size    1085939
+checksums           rmd160  c88f8b277a52b8bdbe32414e8c06037d7c659258 \
+                    sha256  74d82a7a47e89509efed8a3eac7c4934d9bf8e97cf3bbc3fcd44211b8a42da8b \
+                    size    1596671
 
 depends_build-append \
                     path:bin/cmake:cmake
@@ -22,8 +22,7 @@ depends_lib-append  port:R-data.table \
 # See:
 # https://github.com/dmlc/xgboost/issues/8946
 # https://github.com/dmlc/xgboost/pull/8964
-patchfiles          patch-unbreak-32-bit.diff \
-                    patch-fix-OpenMP.diff
+patchfiles          patch-fix-OpenMP.diff
 
 post-patch {
     reinplace "s,@OMP_PREFIX@,${prefix}," ${worksrcpath}/configure
@@ -38,18 +37,17 @@ post-patch {
     }
 }
 
-depends_test-append port:R-caret \
-                    port:R-Ckmeans.1d.dp \
-                    port:R-cplm \
-                    port:R-crayon \
+# R-DiagrammeRsvg is omitted due to dependency on V8.
+depends_test-append port:R-Ckmeans.1d.dp \
                     port:R-DiagrammeR \
-                    port:R-e1071 \
                     port:R-float \
                     port:R-ggplot2 \
+                    port:R-htmlwidgets \
                     port:R-igraph \
                     port:R-knitr \
-                    port:R-lintr \
+                    port:R-RhpcBLASctl \
                     port:R-rmarkdown \
+                    port:R-rsvg \
                     port:R-testthat \
                     port:R-titanic \
                     port:R-vcd
