@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github tidymodels infer 1.0.9 v
+R.setup             github tidymodels infer 1.1.0 v
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             MIT
 description         Tidy statistical inference
 long_description    {*}${description}
 homepage            https://infer.tidymodels.org
-checksums           rmd160  26e53c3f57c93a1157f4c11f80be01671c995c92 \
-                    sha256  94f1f7a9fe2712e58edbc0954e7b129333a6cb330e4133e7bb2b39f696fbb2ce \
-                    size    2529435
+checksums           rmd160  11488fc822316f4388f0ac545402759c4b0d62fa \
+                    sha256  109192f2c1ed5b096a97224f8090a6ac0496c7a0883144c0f9a176f5f540275c \
+                    size    2772972
 github.tarball_from archive
 supported_archs     noarch
 
@@ -31,7 +31,8 @@ depends_lib-append  port:R-broom \
                     port:R-rlang \
                     port:R-tibble \
                     port:R-tidyr \
-                    port:R-vctrs
+                    port:R-vctrs \
+                    port:R-withr
 
 depends_test-append port:R-covr \
                     port:R-devtools \
