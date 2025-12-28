@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-# Revert to GitHub once updated there.
-R.setup             cran paleolimbot geos 0.2.4
-revision            2
+R.setup             github paleolimbot geos 0.2.5 v
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Open Source Geometry Engine (GEOS) R API
 long_description    {*}${description}
 homepage            https://paleolimbot.github.io/geos
-checksums           rmd160  4f720c0db0a208a54afc63b157e3741ca4228cdd \
-                    sha256  162d7146a723e1374ac0c6b2216466f8db3cce807a4c7c559a151fbf72aa9d0d \
-                    size    162176
+checksums           rmd160  d8a2d7b10b4792f2bfe96ca9351a090ddf5de98c \
+                    sha256  8be6eb37f60a0ee94fd85c92c83e307161c2d2039e21e3889f0fed9751fce40e \
+                    size    159575
+github.tarball_from archive
 
 depends_lib-append  port:R-libgeos \
                     port:R-wk
