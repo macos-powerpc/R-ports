@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # GitHub version lags behind.
 R.setup             cran ropensci magick 2.9.0
-revision            0
+revision            1
 categories-append   graphics
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
@@ -24,8 +24,11 @@ depends_lib-append  port:ImageMagick \
                     port:R-magrittr \
                     port:R-Rcpp
 
+# Drop brewisms:
+patchfiles          patch-configure.diff
+
 # See: https://trac.macports.org/ticket/66978
-patchfiles          patch-isnan.diff
+patchfiles-append   patch-isnan.diff
 
 # As of now, libstdc++ in MacPorts uses old ABI.
 if {${os.platform} eq "darwin" && ${configure.cxx_stdlib} ne "libc++"} {
