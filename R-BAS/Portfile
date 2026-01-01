@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github merliseclyde BAS 1.7.5 v
-revision            1
+R.setup             github merliseclyde BAS 2.0.2 v
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3+
 description         Bayesian variable selection and model averaging \
                     via Bayesian adaptive sampling
 long_description    {*}${description}
-checksums           rmd160  4368e66ca5cb7d570fe618ab9188bbee50300c1d \
-                    sha256  25f3240e83eef889c011b92a5f7118d62dbb317a4e51af48cec795c08b435b11 \
-                    size    1001818
+checksums           rmd160  526bf1f540a6efb1f2e0cb79145f9dd68a160dfe \
+                    sha256  7cb2d27f6ea04630d4685de1f643ec4f8b735c5cc58816ee4947b5932cb90f4a \
+                    size    1033978
 github.tarball_from archive
 
 compilers.setup     require_fortran
