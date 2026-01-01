@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran thiagoestatistico bgev 0.1
-revision            2
+R.setup             cran thiagoestatistico bgev 0.2
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
 description         Bimodal GEV distribution with location parameter
 long_description    {*}${description}
-checksums           rmd160  55906aa6e4d0c98039d060ef6ba35a7020687dac \
-                    sha256  a0b62e5be7778f8a42a45d57b9741dc3ad9eef7b7b7eb31d42afede228217bef \
-                    size    23997
+checksums           rmd160  5d4750ec861b905a4d8c912a86b6b937bb4abc40 \
+                    sha256  ba52dbcabc4b0ccc672e557d0c6760d7b787fe55f927a69f024272e365b2c01c \
+                    size    26200
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-DEoptim \
                     port:R-EnvStats
