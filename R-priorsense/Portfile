@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran n-kall priorsense 1.1.1
+R.setup             cran n-kall priorsense 1.2.0
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -13,9 +13,9 @@ description         Prior diagnostics and sensitivity analysis
 long_description    ${name} provides functions for prior and likelihood \
                     sensitivity analysis in Bayesian models.
 homepage            https://n-kall.github.io/priorsense
-checksums           rmd160  9c555b9914818abbbb5a216ba666b46c3be3f555 \
-                    sha256  b26c3ed6d4a601dd3d4ca6ca8b7849538a2020e3f3d440d114e727e68ccf535e \
-                    size    1740359
+checksums           rmd160  8dad95eb345ae2331b75ac366f9b0bfc0e19616e \
+                    sha256  24de6c5069b128a9169ea7c0a5a24cf9996c68eee05db29091aa4d6440193066 \
+                    size    2004440
 supported_archs     noarch
 
 depends_lib-append  port:R-checkmate \
