@@ -3,19 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran handcock rpm 0.7-3
-revision            2
+R.setup             cran handcock rpm 0.7-4
+revision            0
 categories-append   economics
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Modelling of Revealed Preferences Matchings
 long_description    Statistical estimation of revealed preference models \
                     from data collected on bipartite matchings.
-homepage            https://handcock.github.io
-checksums           rmd160  518235be5abacb9f39772fcf59bd98bfd49061fa \
-                    sha256  41c57327250b5feeee3eb6ca83ca9d9aecbf69c5acc576ca7efcac28b3dff4af \
-                    size    148312
-
+homepage            https://github.com/handcock/rpm
+checksums           rmd160  7781650f3eec746691758f5b10329a0a85f5fe1f \
+                    sha256  d7c193fc2b97304bdafd8bbd9e5686154fe8d1d1b31f31f0fbe22bf4a2d37473 \
+                    size    147590
+ 
 depends_lib-append  port:R-abind \
                     port:R-coda \
                     port:R-doFuture \
