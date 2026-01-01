@@ -3,22 +3,27 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran futile.logger 1.4.3
-revision            3
+R.setup             cran zatonovo futile.logger 1.4.9
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
 license             LGPL-3
 description         Logging utility for R
 long_description    {*}${description}
-checksums           rmd160  2cce77ff9191f52f221a15ae5fcab08c6d2e378e \
-                    sha256  5e8b32d65f77a86d17d90fd8690fc085aa0612df8018e4d6d6c1a60fa65776e4 \
-                    size    17456
+homepage            https://github.com/zatonovo/futile.logger
+checksums           rmd160  9dbf5d1920c01c75fbb5911e45fbc4549883e650 \
+                    sha256  496bedbe2e52d06db22a4d659b8e7dd9ad0f1d1f95ead459ec02d05d0ac2b3d6 \
+                    size    24311
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-futile.options \
                     port:R-lambda.r
 
-depends_test-append port:R-jsonlite \
-                    port:R-testthat
+depends_test-append port:R-crayon \
+                    port:R-glue \
+                    port:R-httr \
+                    port:R-jsonlite \
+                    port:R-rsyslog \
+                    port:R-testit
 
 test.run            yes
