@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github tidymodels tune 2.0.0 v
+R.setup             github tidymodels tune 2.0.1 v
 revision            0
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             MIT
 description         Tidy tuning tools
 long_description    {*}${description}
 homepage            https://tune.tidymodels.org
-checksums           rmd160  6f98de7ae22700d587eced698512db5edde8465b \
-                    sha256  2dc5c01c59788673fdfb9323a71a59d89ba824b39556a05ccd4a1e8ff57b633b \
-                    size    1334928
+checksums           rmd160  76e088c32ab5891a9b61c0b2bffd9fe9b452641b \
+                    sha256  75d94e15261eb61079ded5cde010a19e577258c386004f31b722046fd3432d98 \
+                    size    1334946
 github.tarball_from archive
 supported_archs     noarch
 
