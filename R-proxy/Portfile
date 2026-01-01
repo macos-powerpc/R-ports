@@ -3,13 +3,13 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-project proxy 0.4-28
+R.setup             cran r-project proxy 0.4-29
 revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         Distance and Similarity Measures
 long_description    Provides an extensible framework for the efficient calculation of auto- and cross-proximities, \
                     along with implementations of the most popular ones.
-checksums           rmd160  0caaf0ac0377e9810faf85c9f04f232b92dd2e8b \
-                    sha256  5907a82f4b6793ec373c056f3b3b5460f231d17df1814d20976133f5ae81b8fe \
-                    size    68931
+checksums           rmd160  2466e3522657800ddc3e5588ae9dc23c7ead691e \
+                    sha256  c6eb0e36ef2eecb1b8564f0188ca8d2c91a80865c86698386a7b5d5baa92c35b \
+                    size    71437
