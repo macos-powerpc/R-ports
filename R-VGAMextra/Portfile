@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran victor.miranda VGAMextra 0.0-8
+R.setup             cran victor.miranda VGAMextra 0.0-9
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         Additions and extensions of the VGAM package
 long_description    {*}${description}
-checksums           rmd160  b8bc50e9cd68816ec8564b3aef4de78dbb9fce13 \
-                    sha256  65883693f845ca6cd4556c33bcad0fa7806d9f75136b4278156037f6a901ca60 \
-                    size    305213
+checksums           rmd160  427a3974ac744cf53b88f7e399cf7f68ddfbbf0e \
+                    sha256  1533c79faa148a9ec9a32077378fd1238e2c9f37365d71daa20430ab5e3ea760 \
+                    size    305294
 
 depends_lib-append  port:R-VGAM
 
