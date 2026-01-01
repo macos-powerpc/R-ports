@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran t.yee VGAM 1.1-13
-revision            1
+R.setup             cran t.yee VGAM 1.1-14
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Vector generalized linear and additive models
 long_description    {*}${description}
 homepage            https://www.stat.auckland.ac.nz/~yee/VGAM
-checksums           rmd160  70f3b68feb1b0f2873b7c7b7a92709b73d235343 \
-                    sha256  be388d62db6974fae5bb428af5fdf2b51d9aae9cd5e6f7b4d5401937b35a119f \
-                    size    1710222
+checksums           rmd160  5a8d5e05f9d7947703ba7c8d7a9fb59420ba2ef1 \
+                    sha256  87820cf3141ecb5d16e1f9b16df6fa97358abcb9df063fd4673ab33c6983248f \
+                    size    1732944
 
 compilers.setup     require_fortran
 
