@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran mtsagris Directional 7.2
+R.setup             cran mtsagris Directional 7.3
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -11,9 +11,9 @@ maintainers         nomaintainer
 license             GPL-2+
 description         Collection of functions for directional data analysis
 long_description    {*}${description}
-checksums           rmd160  0bfc018aa2ae6047451840da56c4d3e749bbe4e6 \
-                    sha256  2a28dcfe8da2d2e15a7ee120541e79648485016b8fc1dd18574414c1c598f988 \
-                    size    167111
+checksums           rmd160  38384e16000baf9e0f8cca68ddf21c06fcdb037d \
+                    sha256  8549df9fd6cf19ca8f9944cc6c4116983fc2e68aa39f8e432bb3b06074b97270 \
+                    size    167245
 supported_archs     noarch
 
 depends_lib-append  port:R-bigstatsr \
