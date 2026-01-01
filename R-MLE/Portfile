@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran mtsagris MLE 1.5
+R.setup             cran mtsagris MLE 1.6
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             GPL-2+
 description         Maximum likelihood estimation of various univariate \
                     and multivariate distributions
 long_description    {*}${description}
-checksums           rmd160  27e993ad4d794ea0b316d25694ee681a4824c5c9 \
-                    sha256  0ff532d1e9383b7d3ac36e18189d1a2987330291732f0cd875791b282a150c18 \
-                    size    26384
+checksums           rmd160  5c67ffe5b6d15628afc7ab7160eca98579362001 \
+                    sha256  254d9ca315824d94d9a059881b36f941627dbde3de60ed81880d4a4b5fdf6752 \
+                    size    26628
 supported_archs     noarch
 
 depends_lib-append  port:R-BGFD \
