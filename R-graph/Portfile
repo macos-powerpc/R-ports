@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             bioconductor Bioconductor graph 1.86.0
+R.setup             bioconductor Bioconductor graph 1.88.1
 revision            0
 categories-append   bioconductor graphics math
 maintainers         nomaintainer
 license             Artistic-2
 description         Package that implements some simple graph-handling capabilities
 long_description    {*}${description}
-checksums           rmd160  a59bded1b1884a495e1fcb6a503372468a59e6fd \
-                    sha256  ac9e196dfcb43848a851ea2d339cff41f8f16c7e80e76282c8fe7b822df8f367 \
-                    size    1498650
+checksums           rmd160  25d8186177e1d4dc75cb5a41e4c738d556df6318 \
+                    sha256  eb1bd8b54276c3fe104e3743b76b877e81c8ee428b2b66b007ac251d56d68f50 \
+                    size    1504775
 
 depends_lib-append  port:R-BiocGenerics
 
