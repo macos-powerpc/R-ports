@@ -3,24 +3,32 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran MaartenMarsman bgms 0.1.4.2
-revision            1
+R.setup             cran Bayesian-Graphical-Modelling-Lab bgms 0.1.6.1
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Bayesian variable selection for networks of binary and/or ordinal variables
 long_description    Bayesian variable selection methods for analyzing the structure \
                     of a Markov random field model for a network of binary and/or ordinal variables.
-homepage            https://maartenmarsman.github.io/bgms
-checksums           rmd160  fa704a1c5c4662031776eba702fd13910e15e232 \
-                    sha256  9c012822e09b60fb365809d34b8e66016ff0061b773d53e71a8a95829dbe8a49 \
-                    size    139343
+homepage            https://Bayesian-Graphical-Modelling-Lab.github.io/bgms
+checksums           rmd160  0624816b63431e73ef15cee79edacbc11ed93371 \
+                    sha256  d53c70fe7dc4f98c38d3af937a78073758f49dfd49cc42d21922cf50eeb6606a \
+                    size    3021522
 
-depends_lib-append  port:R-Rcpp \
-                    port:R-RcppProgress \
+depends_lib-append  port:R-BH \
+                    port:R-coda \
+                    port:R-dqrng \
+                    port:R-lifecycle \
+                    port:R-Rcpp \
+                    port:R-RcppArmadillo \
+                    port:R-RcppParallel \
                     port:R-Rdpack
 
-depends_test-append port:R-knitr \
+compilers.setup     require_fortran
+
+depends_test-append port:R-ggplot2 \
+                    port:R-knitr \
                     port:R-qgraph \
                     port:R-rmarkdown \
                     port:R-testthat
