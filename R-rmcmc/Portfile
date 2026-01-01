@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github UCL rmcmc 0.1.1 v
-revision            1
+R.setup             github UCL rmcmc 0.1.2 v
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             MIT
 description         Robust Markov Chain Monte Carlo methods
 long_description    {*}${description}
 homepage            http://github-pages.ucl.ac.uk/rmcmc
-checksums           rmd160  161208bee0611f5aa84a239e577e1a63caa61984 \
-                    sha256  34b357f63e980e9c435742284af761ffa22cc0b5f67e480a9eaac7b184c5af2b \
-                    size    88516
+checksums           rmd160  e7f8166cce5e9ab047da9dd92ded6a6d43f02f7d \
+                    sha256  1d34cc1e0da5de5f1878ec0b538944daa71ff76f4f88bc52feaccb7a53310f5d \
+                    size    96784
 github.tarball_from archive
 supported_archs     noarch
 
