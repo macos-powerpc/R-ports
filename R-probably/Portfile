@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github tidymodels probably 1.1.1 v
+R.setup             github tidymodels probably 1.2.0 v
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             MIT
 description         Tools for post-processing class probability estimates
 long_description    {*}${description}
 homepage            https://probably.tidymodels.org
-checksums           rmd160  5e28e114229a0e493ba67970d359a259a44c5b07 \
-                    sha256  123acb3a39ee77b546537b0476793c010f8b54f124a1745b5eb6d5f69fceea0c \
-                    size    1171202
+checksums           rmd160  6f7d94ffe600537ce5828babd9e152058aeb5425 \
+                    sha256  e5f1f37e6647945f752d01c0ca3d101ae1dad03d1767dc10a4f4d5db208d83b1 \
+                    size    1172046
 github.tarball_from archive
 supported_archs     noarch
 
