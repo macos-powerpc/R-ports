@@ -3,22 +3,25 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran RobinHankin cmvnorm 1.0-7
-revision            3
+R.setup             cran RobinHankin cmvnorm 1.1-1
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         Complex multivariate Gaussian distribution
 long_description    {*}${description}
-checksums           rmd160  68950c41da5b458cf3d4c125a78c88f9f0f50383 \
-                    sha256  989d8c9ff51ba1141f49836f814e9782dd12718cd825ab2d5b16b5376053247e \
-                    size    212198
+checksums           rmd160  09e790546c1c702cca3733931de2ba0bd386ff79 \
+                    sha256  3c4738efb90cbb7c7b22ea271ba003c2c7d73f949991f24c91926d9cdd36920b \
+                    size    208363
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-elliptic \
-                    port:R-emulator
+                    port:R-emulator \
+                    port:R-quadform
 
-depends_test-append port:R-knitr
+depends_test-append port:R-knitr \
+                    port:R-mvtnorm \
+                    port:R-testthat
 
 test.run            yes
