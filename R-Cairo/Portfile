@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran s-u Cairo 1.6-5
+R.setup             cran s-u Cairo 1.7-0
 revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             {GPL-2 GPL-3}
 description         R graphics device using cairo graphics library
 long_description    {*}${description}
 homepage            http://www.rforge.net/Cairo
-checksums           rmd160  349d734dc229ad45224b4808e76de2d50100281f \
-                    sha256  8778a2fd7c8b8b3167282e59c05c8d66892bea9e3b1b13abbb47b72c9d75892a \
-                    size    101458
+checksums           rmd160  894b7cfdc8615abc18d15564d1ad54d93433a80b \
+                    sha256  fcb84a614bbb85b976dd4fd1c17e2f7fd2f4fa21c3ac9e930819d88099a61d52 \
+                    size    110573
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
