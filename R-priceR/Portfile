@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran stevecondylios priceR 1.0.2
-revision            1
+R.setup             cran stevecondylios priceR 1.0.3
+revision            0
 categories-append   economics finance
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             MIT
 description         Economics and pricing tools
 long_description    Functions to aid in micro- and macroeconomic analysis \
                     and handling of price and currency data.
-checksums           rmd160  db54d63cbd84784b587f67e6dc1679f1c276dc4c \
-                    sha256  89733c70d95552c0d2867cc6863d62f0c73d6f197c2d9f573c79efca46d74323 \
-                    size    78666
+checksums           rmd160  8f853a43e9bed19fd6d8be6d394bd1602097ee58 \
+                    sha256  ef2e1c8f0bfdbd99d3ee66e3001b13e19b9fc056771f72db3fc8ca8dbc0ceef4 \
+                    size    76973
 supported_archs     noarch
 
 depends_lib-append  port:R-dplyr \
