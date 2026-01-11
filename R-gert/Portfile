@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran r-lib gert 2.2.0
+R.setup             cran r-lib gert 2.3.0
 revision            0
 categories-append   devel www
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             MIT
 description         Simple Git client for R
 long_description    {*}${description}
 homepage            https://docs.ropensci.org/gert
-checksums           rmd160  5b0e5c9df69db62e3125289f3d55d530cdfe15ca \
-                    sha256  94686a6e6e61fa68f903e7ee1bd451915bf8e868a5b1e82e7bddfd3b319a7b34 \
-                    size    122745
+checksums           rmd160  a3adf9db01913f1e9555b3a3c0c60f63e1b5341e \
+                    sha256  4fc4fd6de98218429f6186923b64e77ddbe4a74a40d0abafe8fbf7aa2d398799 \
+                    size    129952
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
