@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran xliao coneproj 1.22
+R.setup             cran xliao coneproj 1.23
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Primal or dual cone projections with routines for constrained regression
 long_description    {*}${description}
-checksums           rmd160  22beaac9174c1755b5930f5a324b0056212344bf \
-                    sha256  235e183e6d967f05c1f1903fbabe8cbaa7a46767b7a6b332c62fb4fdd3be288b \
-                    size    33524
+checksums           rmd160  fc998170c2e65b475ea986a41567ad4698a9bbed \
+                    sha256  56157511547ddb2e0df5ae8b1c1b05a2868af797ef2d170020a16238c5866d99 \
+                    size    33523
 
 depends_lib-append  port:R-Rcpp \
                     port:R-RcppArmadillo
