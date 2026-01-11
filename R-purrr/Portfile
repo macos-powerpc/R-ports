@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran tidyverse purrr 1.2.0 v
+R.setup             cran tidyverse purrr 1.2.1 v
 revision            0
 categories-append   devel
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             MIT
 description         Functional programming tools
 long_description    {*}${description}
 homepage            https://purrr.tidyverse.org
-checksums           rmd160  09c3ba1fa0357ed31be34540e7efd5261e17d52e \
-                    sha256  bb3f59fed9b83d9fafda75480e47c72a72d134c322ff597cb031aac871773bb3 \
-                    size    278251
+checksums           rmd160  bcccef2376e9cdc930c7b2fb08cd93c31d189998 \
+                    sha256  b3bb91dbc67a1cc34080eae960d330626cc76585f80360524b5fceb08febf363 \
+                    size    278294
 
 depends_lib-append  port:R-cli \
                     port:R-lifecycle \
