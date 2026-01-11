@@ -3,14 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran eddelbuettel RcppCCTZ 0.2.12
-revision            3
+R.setup             cran eddelbuettel RcppCCTZ 0.2.14
+revision            0
 maintainers         nomaintainer
 license             {GPL-2 GPL-3}
 description         Rcpp bindings for the CCTZ library
 long_description    {*}${description}
-checksums           rmd160  5461690ba65fa393bdb9bfba657cf76387511f51 \
-                    sha256  2a2087bdb7ab4b617487b87677a81ccd0c5529f776cfe90d2e23d5f5478424cb \
-                    size    82303
+homepage            https://dirk.eddelbuettel.com/code/rcpp.cctz.html
+checksums           rmd160  fba11566796a9fb694b641095419123884192af6 \
+                    sha256  2c3643b4218ef2008470a4b2d8feb519c217e5570d34a1ecf117e0f8d14a637e \
+                    size    81513
 
 depends_lib-append  port:R-Rcpp
+
+depends_test-append port:R-tinytest
+
+test.run            yes
