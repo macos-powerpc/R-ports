@@ -3,18 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github easystats report 0.6.1 v
-revision            1
+# Revert to GitHub once updated there.
+R.setup             cran easystats report 0.6.3 v
+revision            0
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Automated reporting of results and statistical models
 long_description    {*}${description}
 homepage            https://easystats.github.io/report
-checksums           rmd160  ed359bf3ff0e84c39caf9a297aab1dc9833ee72a \
-                    sha256  4b732d2c328dd36b9918418995f3127693de5eaeae6b2b9ba58a2407abf2bb14 \
-                    size    2096156
-github.tarball_from archive
+checksums           rmd160  a02f6e16284bcd93fff2957386f7172b087e7f49 \
+                    sha256  0fb46811a265349836e289069d865acdd0d2517aa16e6de76ff263fcf61ec4ec \
+                    size    1910189
+# github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-bayestestR \
@@ -30,6 +31,8 @@ depends_test-append port:R-BayesFactor \
                     port:R-collapse \
                     port:R-dplyr \
                     port:R-emmeans \
+                    port:R-GLMMadaptive \
+                    port:R-glmmTMB \
                     port:R-ivreg \
                     port:R-knitr \
                     port:R-lavaan \
