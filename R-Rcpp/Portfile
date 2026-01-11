@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran RcppCore Rcpp 1.1.0
+R.setup             cran RcppCore Rcpp 1.1.1
 revision            0
 categories-append   devel
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             GPL-2+
 description         Seamless R and C++ Integration
 long_description    {*}${description}
 homepage            https://www.rcpp.org
-checksums           rmd160  b5185ae8f34ab5a9ff5b9611bbe9a31a4e71a452 \
-                    sha256  84211c2520ba68c839b2e75761e97afc90baeebccbaf216ac8534fa2076cfb4d \
-                    size    3107035
+checksums           rmd160  08c88c583ecfc17793cf00d7f8ef11918e1bf562 \
+                    sha256  da0c616a71c82150397259516b2ea7558dbd31a5b4a217423ec9666b3a0fcfb7 \
+                    size    1883133
 
 # https://trac.macports.org/ticket/67254
 platform darwin 8 {
