@@ -4,16 +4,16 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran theAeon HighFive 3.2.0
+R.setup             cran theAeon HighFive 3.3.0
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             Boost-1
 description         C++ interface to HDF5
 long_description    HighFive {*}${description}.
-checksums           rmd160  07617fe74a35d34101668a76fbd1e1ce7bf354e8 \
-                    sha256  2bbe566ccbc352b7c54178cefec2d23f224c1e6973be246bacd141be64d16b2f \
-                    size    77313
+checksums           rmd160  879448f338506c4be0f2f3f84800298f5fdd8c25 \
+                    sha256  15b8c3b3788c27d75923167c3c7e9995415dbc962c7839128ef2c759a084fadb \
+                    size    78574
 # github.tarball_from archive
 supported_archs     noarch
 
