@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran OVVO-Financial NNS 11.5
+R.setup             cran OVVO-Financial NNS 11.6.4
 revision            0
 categories-append   math finance
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             GPL-3
 description         Non-linear Non-parametric Statistics
 long_description    {*}${description} using partial moments.
 homepage            https://github.com/OVVO-Financial/NNS
-checksums           rmd160  44aa0a87247d26a9dce3ff02c0338a915fb2f7a5 \
-                    sha256  102e36e46e03499b3003f49a495549c692088a4c419677ce6f3a877b2d36501e \
-                    size    1321843
+checksums           rmd160  b8d23a08a8bf3926a9e2fade5dc1d1f3f9bcc8a5 \
+                    sha256  724cc3260ce8c0401608d2f8b6c3434193fe7295c497b5748cad55e38975324d \
+                    size    2032349
 
 # TODO: https://github.com/OVVO-Financial/NNS/issues/12
 depends_lib-append  port:R-data.table \
