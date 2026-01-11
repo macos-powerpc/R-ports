@@ -5,17 +5,17 @@ PortGroup           R 1.0
 
 # Has to match version of R-spam64.
 # Watch out, CRAN is careless and may not upgrade them simultaneously.
-R.setup             cran reinhard.furrer spam 2.10-0
-revision            2
+R.setup             cran reinhard.furrer spam 2.11-3
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             {BSD LGPL-2}
 description         SPArse Matrix
 long_description    {*}${description}
 homepage            https://www.math.uzh.ch/pages/spam
-checksums           rmd160  226a29b60f6996ef8a0088389fa8c70601f3a82e \
-                    sha256  719c86a23801ecf051ffd8291912ee3567af4010e74af470fbf09e274728ac79 \
-                    size    1832293
+checksums           rmd160  3e9b90cbae6dc9c9f7c758da63ddc2a8bac892d6 \
+                    sha256  a2a64f87297181042378cde05b34b8dc59a36e4e8975f775b24c85836cb0b995 \
+                    size    979865
 # master_sites        https://git.math.uzh.ch/reinhard.furrer/spam/-/raw/master/
 
 depends_lib-append  port:R-dotCall64 \
