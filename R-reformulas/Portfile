@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran bbolker reformulas 0.4.3
+R.setup             cran bbolker reformulas 0.4.3.1
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -12,15 +12,16 @@ license             GPL-3
 description         Machinery for processing random effect formulas
 long_description    {*}${description}
 homepage            https://github.com/bbolker/reformulas
-checksums           rmd160  5e36ca9035f2dd03b590986be7ddd6a27783bc1f \
-                    sha256  07e1e1d41d85a126c3b74b63b9af1aa20ba5d419e7fb13db99f717f97be1dbc1 \
-                    size    83151
+checksums           rmd160  523de59ecf0a62e9d18a15eef8cb68fedd8fb2ba \
+                    sha256  4ba05936d0b2e4a0f1bb1715ea14164d9e3b787ad47e3434a03bc838cf512a7a \
+                    size    85222
 supported_archs     noarch
 
 depends_lib-append  port:R-Rdpack
 
 depends_test-append port:R-glmmTMB \
                     port:R-lme4 \
+                    port:R-testthat \
                     port:R-tinytest
 
 test.run            yes
