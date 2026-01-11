@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran milbo rpart.plot 3.1.3
+R.setup             cran milbo rpart.plot 3.1.4
 revision            0
 categories-append   graphics math
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             GPL-3
 description         Plot rpart models
 long_description    {*}${description}
 homepage            http://www.milbo.org/rpart-plot/index.html
-checksums           rmd160  02780edd858285f7a7beb71697ecc19c7bdad793 \
-                    sha256  7361afa0eac102bf3b72a2d3bd1a07d2f75faf392eb15d7b4dba58b3cbb94a06 \
-                    size    671433
+checksums           rmd160  da45e5e52dc18da5009f9957ab97a5ea84d3d28d \
+                    sha256  2d5afd32c118d2afbcb643e664ebe792b295543296f1eaf7cbaaa8c5db7dcf3e \
+                    size    649991
 supported_archs     noarch
 
 depends_test-append port:R-earth
