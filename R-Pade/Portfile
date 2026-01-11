@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran aadler Pade 1.0.8 v
+R.setup             cran aadler Pade 1.0.9 v
 revision            0
 platforms           {darwin any}
 categories-append   math
@@ -13,9 +13,9 @@ license             {BSD GPL-2+}
 description         Padé approximant coefficients
 long_description    {*}${description}
 homepage            https://github.com/aadler/Pade
-checksums           rmd160  a00dff3b0e80a335c1bd225f528ea915bcfbdc4e \
-                    sha256  5ada7321a6b0abc5d875d458023eaac2358b9f54a7ef3fa5e02ec619feb3a62f \
-                    size    11050
+checksums           rmd160  c537c2429fcbc3e3891674eb2ef1f5c95990fef2 \
+                    sha256  193506d7d472da2ca08d5178f1d2aef9e1946db4ba58e97ad979ea5e84a80029 \
+                    size    11264
 supported_archs     noarch
 
 depends_test-append port:R-covr \
