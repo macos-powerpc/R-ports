@@ -4,15 +4,15 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran mhahsler arules 1.7-11 arules_
+R.setup             cran mhahsler arules 1.7.13 arules_
 revision            0
 maintainers         nomaintainer
 license             GPL-3
 description         Mining association rules and frequent item sets
 long_description    {*}${description}
-checksums           rmd160  646965feaf38cac0cd26a65bb28090334d3556b0 \
-                    sha256  4794274883efdc5a6bb6423df6cae179fb1c71065cf05fc08736c83349eb995c \
-                    size    1866695
+checksums           rmd160  be5d78d1c8d20107d9b49624be13fc4f92b1f56e \
+                    sha256  4e463a634ef0ae48096886b4fe3a882eb24635c2a51dbe4154bdc54a0e2e5cba \
+                    size    1866320
 # github.tarball_from archive
 
 depends_lib-append  port:R-generics
