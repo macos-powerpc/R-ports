@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran milbo plotmo 3.6.4
-revision            1
+R.setup             cran milbo plotmo 3.7.0
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
 description         Plot residuals, response and partial dependence plots
 long_description    {*}${description}
-checksums           rmd160  aead57b489de21dfdf8f3169d0e4affa184783ab \
-                    sha256  c8b23f608307917619d09df6c1fc7d8ac69872b3bfe0502d2999acd822ed8272 \
-                    size    1263769
+checksums           rmd160  ef3eb367d5bd0d32f24cdcb791987a495ea9dca5 \
+                    sha256  80e6621f01967582524a763f47671c66b77935d64e048437e2b2d32a15812032 \
+                    size    1267507
 supported_archs     noarch
 
 depends_lib-append  port:R-Formula \
