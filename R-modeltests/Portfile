@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran alexpghayes modeltests 0.1.6
-revision            1
+R.setup             cran alexpghayes modeltests 0.1.8
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Testing infrastructure for Broom model generics
 long_description    {*}${description}
 homepage            https://github.com/alexpghayes/modeltests
-checksums           rmd160  dbd4a7dc8a40b67d3ab74950cbeb1fb3198a33b0 \
-                    sha256  6c470a3168a155fa25837b45b9df81e9c2de48b586240d31ab34b4f1f2e45784 \
-                    size    23772
+checksums           rmd160  73ca8d7c50b0ee5fff70806000ea7cd75b83bea8 \
+                    sha256  c30af4191196825f08e6c17ff0a6434d8837421e77790a5f81f9b999d01b6977 \
+                    size    24722
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-dplyr \
                     port:R-generics \
