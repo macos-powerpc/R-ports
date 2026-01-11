@@ -3,18 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-# gfortran supports ieee_arithmetic since gcc 15.x in upstream and in gcc 14.2
-# in PPCPorts/MacPorts, so no need in a fallback for < 10.6 anymore.
-R.setup             cran aadler Delaporte 8.4.2 v
+R.setup             cran aadler Delaporte 8.4.3 v
 revision            0
 categories-append   math
 maintainers         nomaintainer
 license             BSD
 description         Statistical functions for the Delaporte distribution
 long_description    {*}${description}
-checksums           rmd160  2c3072e028f09532c2b258204c7f2fbb27d1e08a \
-                    sha256  8f44ab4a202397840e0a12fb9291c1477d9ce68b3d0459e93a88f79f65adcca6 \
-                    size    35441
+checksums           rmd160  ad883c0eab22029628d1ab087a5c84ffd8f8dfd1 \
+                    sha256  af49300e5a2003cffbe80a7c70d7aa1358f7e35b5fce4c912b6890777387af0c \
+                    size    35646
 
 compilers.setup     require_fortran
 
