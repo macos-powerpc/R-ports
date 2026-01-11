@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran tidymodels parsnip 1.4.0
+R.setup             cran tidymodels parsnip 1.4.1
 revision            0
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             MIT
 description         Common API to modeling and analysis functions
 long_description    {*}${description}
 homepage            https://parsnip.tidymodels.org
-checksums           rmd160  0bff869e40520eb680a40d0260bd81c619cdfdda \
-                    sha256  88f6f44e97135264ad3b8408bcb7ba8f8ed8b41dc6c69ee606ed082002fb76e2 \
-                    size    733129
+checksums           rmd160  582e8a4f548be6ae3706a35f4e9d209bef2748a9 \
+                    sha256  acdd5cae847a234bce29ff476a6f0187280663228d8ff1362cca08e831d9df72 \
+                    size    733195
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
