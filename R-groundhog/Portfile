@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran CredibilityLab groundhog 3.2.3
+R.setup             cran CredibilityLab groundhog 3.4.0
 revision            0
 categories-append   devel
 platforms           {darwin any}
@@ -13,9 +13,9 @@ license             GPL-3
 description         Version-control for CRAN, GitHub and GitLab packages
 long_description    {*}${description}
 homepage            https://groundhogr.com
-checksums           rmd160  751ceeb79cac1ac67ffd0f696a25892fcaab5f28 \
-                    sha256  f7d136c66a8f6080067b42c84a8fa24a6b754bbc738f038c101bcae7e91c9c26 \
-                    size    82192
+checksums           rmd160  338d858f014c211c172bc0b7c46fadd06c9043a8 \
+                    sha256  1bfc2a43f9416c9fc520269657a0b5f52f3803e74049c159668eac50ada4de3e \
+                    size    89242
 supported_archs     noarch
 
 depends_test-append port:R-git2r \
