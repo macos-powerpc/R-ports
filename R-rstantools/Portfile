@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran stan-dev rstantools 2.5.0
+R.setup             cran stan-dev rstantools 2.6.0
 revision            0
 categories-append   devel math
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             GPL-3+
 description         Tools for developing R packages interfacing with Stan
 long_description    {*}${description}
 homepage            https://mc-stan.org/rstantools
-checksums           rmd160  072c22a184478a11fa4bac123904ed760eacb69c \
-                    sha256  3801b785b958c2dbeb34405cc75c7acc0ab07110c0c94a75746630f3dcc372be \
-                    size    99999
+checksums           rmd160  ab834feeb44761f28315959ce1b60170b9b75a28 \
+                    sha256  6fe4d8f48e42bb48a0d65aedf017b4e1a919a29e3431301cc0295f7777a7f837 \
+                    size    81100
 supported_archs     noarch
 
 depends_lib-append  port:R-desc \
