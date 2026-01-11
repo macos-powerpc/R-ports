@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran pascalcroteau matrixset 0.4.0
-revision            1
+R.setup             cran pascalcroteau matrixset 0.4.1
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Creating and manipulating matrix ensemble
 long_description    {*}${description}
 homepage            https://github.com/pascalcroteau/matrixset
-checksums           rmd160  5fdd5d17fa6d499a37bc5fa802f80469be6a544b \
-                    sha256  3898678179800d091faeac20cf365c3c589eafad648218c5b926cec1d743d4c4 \
-                    size    510530
+checksums           rmd160  7d11073c5fb3742b288acde3072ed5bc6b603bff \
+                    sha256  1b93cc8fc080ec93e15d7bc1e6f8d79607e95f6b69dabc5a3c00be90b9998241 \
+                    size    511853
 
 depends_lib-append  port:R-cli \
                     port:R-crayon \
