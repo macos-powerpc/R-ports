@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github easystats modelbased 0.13.0 v
+R.setup             github easystats modelbased 0.13.1 v
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             GPL-3
 description         Methods for correlation analysis
 long_description    {*}${description}
 homepage            https://easystats.github.io/modelbased
-checksums           rmd160  cd0a1293fa89fd4fdb5445a3d8b28b4f6df32949 \
-                    sha256  549e3991c343d82249d714a4060d384c55a0b9d393fa7cabf2a491ed1edff67c \
-                    size    1283009
+checksums           rmd160  4d3ffa9c5f9d18fc3b2ef5b840cac2037e057959 \
+                    sha256  cd925156b77e63eee96173c845fce3c9915d560ce53c126347297832010e6e55 \
+                    size    1293888
 github.tarball_from archive
 supported_archs     noarch
 
@@ -50,6 +50,7 @@ depends_test-append port:R-afex \
                     port:R-lmerTest \
                     port:R-logspline \
                     port:R-marginaleffects \
+                    port:R-MatchIt \
                     port:R-mice \
                     port:R-mvtnorm \
                     port:R-ordinal \
