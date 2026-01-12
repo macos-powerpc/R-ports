@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran husson FactoMineR 2.12
+R.setup             cran husson FactoMineR 2.13
 revision            0
 maintainers         nomaintainer
 license             GPL-2+
 description         Multivariate exploratory data analysis and data mining
 long_description    {*}${description}
 homepage            http://factominer.free.fr
-checksums           rmd160  3ad54f4eeb6b5c6e11328f9e4467e210754371e2 \
-                    sha256  c064aee58cc485017b2d860616f13529ca1791ef14094d21643a0e6d62f2b6a2 \
-                    size    2837924
+checksums           rmd160  5d0c1377fc5fc15d4341a3a03cf48edcf472242f \
+                    sha256  0967669c4b1fdbf3a34bacba353b95238f437e4ef6975f1751408d5d5eee3e6b \
+                    size    2838632
 
 depends_lib-append  port:R-car \
                     port:R-DT \
