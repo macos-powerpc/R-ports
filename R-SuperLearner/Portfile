@@ -3,20 +3,20 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran ecpolley SuperLearner 2.0-29
-revision            2
+R.setup             cran ecpolley SuperLearner 2.0-40
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
 description         Implements the super-learner prediction method and contains a library \
                     of prediction algorithms to be used in the super-learner
 long_description    {*}${description}
 homepage            https://github.com/ecpolley/SuperLearner
-checksums           rmd160  34508ea5e24c8713166cb813c1b20e69d046ddbe \
-                    sha256  236b03f969f4880680abb7f818bbbd92926ac3cb30b55560e3ee4d25d1572b3c \
-                    size    528103
+checksums           rmd160  6fda7fe9d5e355de3bdaae29d2d87385c98c193f \
+                    sha256  3f7af5bd2d077369aa2c4a157face7f2dc664984bd059fd76ca65b33cc981f92 \
+                    size    513501
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-cvAUC \
                     port:R-gam \
