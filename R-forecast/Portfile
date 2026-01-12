@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran robjhyndman forecast 8.24.0
-revision            1
+R.setup             cran robjhyndman forecast 9.0.0
+revision            0
 categories-append   math finance
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Forecasting functions for time series and linear models
 long_description    {*}${description}
 homepage            https://pkg.robjhyndman.com/forecast
-checksums           rmd160  1a61792070704137b6933bff926b3de2ca682278 \
-                    sha256  fb0bf1f1bfa3e3df379d6a1ebce9e64d92829eefedde5400d13578f37bd61646 \
-                    size    581947
+checksums           rmd160  7c39db4d218a27454fc1f87003c3c4c1c9522765 \
+                    sha256  cd87ed85a29ddd9e9db53ad8482ef53ead18947c29502ded0c8123f40a538617 \
+                    size    589836
 
 depends_lib-append  port:R-colorspace \
                     port:R-fracdiff \
