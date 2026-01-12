@@ -3,16 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran eddelbuettel RcppAnnoy 0.0.22
-revision            2
+R.setup             cran eddelbuettel RcppAnnoy 0.0.23
+revision            0
+categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
-license             {GPL-2 GPL-3}
+license             GPL-2+
 description         Rcpp bindings for Annoy, a library for approximate nearest neighbors
 long_description    {*}${description}
 homepage            https://dirk.eddelbuettel.com/code/rcpp.annoy.html
-checksums           rmd160  08eebb89dfd3ce3e084f57a95d30d3a1821f0778 \
-                    sha256  9f2121d787c4d3e7beccdd65f5d1de81f31c99d57d5d61ca3cc5af7169dd8f65 \
-                    size    156284
+checksums           rmd160  7ff0a23e056be7cff636682f088c2acb625f97ff \
+                    sha256  e502e8d98590a3b9dc7ec82ec7242ab737a653603ecb0fc7145798f3e7e2d1dc \
+                    size    118177
 
 depends_lib-append  port:R-Rcpp
 
