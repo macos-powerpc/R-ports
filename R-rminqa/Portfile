@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran rminqa 0.2.2
-revision            3
+R.setup             cran S.I.Watson rminqa 0.3.1
+revision            0
 categories-append   math
-maintainers         nomaintainer
-license             {GPL-2 GPL-3}
+maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+license             GPL-2+
 description         Derivative-free optimization algorithms in R using C++
-long_description    {*}${description}
-checksums           rmd160  7153466fd773afbbc4e2312d6f281f7de76cd593 \
-                    sha256  2306b94d79ec2a4588265dadc1970f1a4eb49d20afd54c4c8c1f7754d36704f3 \
-                    size    31114
+long_description    Perform derivative-free optimization algorithms in R using C++.
+checksums           rmd160  3a017711e86e35283d732e75479eb9b0f5d6b4c5 \
+                    sha256  510945e7829e4a70518f6a6ed50d1a62a5a6a35da6abf1cfc2a853a26a95f162 \
+                    size    50131
 
 depends_lib-append  port:R-Rcpp
 
