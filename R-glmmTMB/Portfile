@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is old.
-R.setup             cran glmmTMB glmmTMB 1.1.12
+R.setup             cran glmmTMB glmmTMB 1.1.13
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,12 +12,13 @@ license             AGPL-3
 description         Generalized Linear Mixed Models using Template Model Builder
 long_description    {*}${description}
 homepage            https://github.com/glmmTMB/glmmTMB
-checksums           rmd160  b6aa745b901a47695cca81dbfe57279d49518567 \
-                    sha256  b27272232b79ec2f75edf70013d9e18fe431991ce8b43b0b78b670222c2cbb1d \
-                    size    4963478
+checksums           rmd160  8e1e5792e025bd26e22e2d58c3bd233c4d8910ad \
+                    sha256  2a94095ef4235b371978b78ef25c9338b8523e3c2cc49eaf5bd0a48ff31cde0b \
+                    size    5135402
 
 depends_lib-append  port:R-lme4 \
                     port:R-numDeriv \
+                    port:R-pbkrtest \
                     port:R-RcppEigen \
                     port:R-reformulas \
                     port:R-sandwich \
