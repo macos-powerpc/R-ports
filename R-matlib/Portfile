@@ -4,8 +4,8 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran friendly matlib 1.0.0
-revision            1
+R.setup             cran friendly matlib 1.0.1
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -14,9 +14,9 @@ description         Matrix functions for teaching and learning linear algebra \
                     and multivariate statistics
 homepage            http://friendly.github.io/matlib
 long_description    {*}${description}
-checksums           rmd160  c5c1d37fba54574106494d4f14f97d13df436a66 \
-                    sha256  6c130ed6e435dc33d070f70cdc1fa932bd45122024cf2bc8faa4a0663bb971b1 \
-                    size    660187
+checksums           rmd160  09619e9f1f88f490aea5df793ab8b30bf8707467 \
+                    sha256  7efb4f9683627bdbec3e8fdf385b317805ec492a8ea200678b2e7f1d799d4a58 \
+                    size    817459
 supported_archs     noarch
 
 depends_lib-append  port:R-car \
@@ -28,7 +28,9 @@ depends_lib-append  port:R-car \
                     port:R-xtable
 
 # Optional dep on R-webshot2 is dropped.
-depends_test-append port:R-carData \
+depends_test-append port:R-bookdown \
+                    port:R-carData \
+                    port:R-clipr \
                     port:R-markdown
 
 test.run            yes
