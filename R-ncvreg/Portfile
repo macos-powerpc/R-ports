@@ -3,18 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github pbreheny ncvreg 3.14.3 ncvreg_
-revision            1
+# GitHub version lags behind.
+R.setup             cran pbreheny ncvreg 3.16.0 ncvreg_
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Regularization paths for SCAD and MCP penalized regression models
 long_description    {*}${description}
 homepage            https://pbreheny.github.io/ncvreg
-checksums           rmd160  8b2b4ce764092e060101f12734291951e1e16e3b \
-                    sha256  e5a41deb7d02b85f280c77ce2aad58df9043e78daca4edb51712c8c623b1742e \
-                    size    103151
-github.tarball_from archive
+checksums           rmd160  57068b67233d7118824e9aab3104ff8ce9f195dc \
+                    sha256  354ec5c7166ae0b166878b4609fafe4542e2be4f8df936671243d5a8be092145 \
+                    size    166049
+# github.tarball_from archive
 
 depends_test-append port:R-ashr \
                     port:R-knitr \
