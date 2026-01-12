@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is outdated.
-R.setup             cran dbosak01 sassy 1.2.8
+R.setup             cran dbosak01 sassy 1.2.9
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             public-domain
 description         Meta-package that aims to make R easier for everyone
 long_description    {*}${description}
 homepage            https://sassy.r-sassy.org
-checksums           rmd160  570288fc2a63c84dbc3b48683d658bac85afe3cc \
-                    sha256  a32d38f01e7893ad948fa49343d3cc2622361d0ea9d5d1980d0419b6f342a30d \
-                    size    5028478
+checksums           rmd160  64f0cea169cbcc310a64c81fd085e9b113cbbe79 \
+                    sha256  41aec0e2f6d5706c05770c7a73ce132d97d1f52568e77d5e684ce808ae8c384b \
+                    size    5030393
 supported_archs     noarch
 
 depends_lib-append  port:R-common \
