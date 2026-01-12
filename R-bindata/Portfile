@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-project bindata 0.9-21
-revision            1
+R.setup             cran r-project bindata 0.9-23
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2
 description         Generation of artificial binary data
 long_description    {*}${description}
-checksums           rmd160  ebfaf72ebb99291900df6d694e47f26b2c6d9e30 \
-                    sha256  adf889297a7559126ef85724ae3cdc6d45b63d0778166d13b2b2a34cb73c2e68 \
-                    size    218869
+checksums           rmd160  e071a1a5998fab21bfb661e5ae9da50a21693851 \
+                    sha256  e50c2714ab8cfb9176ee78bd77299e4ff1fcb6c6407e6ce76d06dfe8e5dcbbb8 \
+                    size    252493
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-e1071 \
                     port:R-mvtnorm
