@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran schaarschmidt binGroup 2.2-1
-revision            1
+R.setup             cran schaarschmidt binGroup 2.2-3
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             GPL-3+
 description         Evaluation and experimental design \
                     for binomial group testing
 long_description    {*}${description}
-checksums           rmd160  28aee7d90dc821bfc4b4fea5a9fe5b2020a3bc31 \
-                    sha256  d7b914fb7b727dc15e727c8fac87cb604f1033e7ea98147635c50f0d96916731 \
-                    size    276203
+checksums           rmd160  30ef55aabddb9f7886d6ff9362685093780a60a5 \
+                    sha256  174d8586e140e032b69087a3f121737dd8543624ab0b96b88bd6a662c2878b2a \
+                    size    260968
 supported_archs     noarch
 
 depends_lib-append  port:R-partitions \
