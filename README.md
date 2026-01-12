@@ -7,16 +7,18 @@ Current maintenace is moved here; while most of these ports are also present in 
 they are not updated there anymore. Consider using this repo to stay up-to-date.
 Despite macos-powerpc umbrella, ports here are not specific to PowerPC and can be used on x86 and aarch64.
 
-To use this, clone the repository to a location of choice. For example, to the root of MacPorts prefix, /opt/local/R-ports:
+Update 2025.12: this repository now replaces `R` subdirectory of MacPorts.
 
-%> sudo git clone --depth=1 https://github.com/macos-powerpc/R-ports /opt/local/R-ports
+To use it, clone the repository as `R` into a [local overlay](https://guide.macports.org/chunked/development.local-repositories.html). For example, as `/opt/local/R-ports/R`:
 
+%> sudo mkdir /opt/local/R-ports && cd /opt/local/R-ports
+%> sudo git clone --depth=1 https://github.com/macos-powerpc/R-ports R
 %> sudo chown -R macports /opt/local/R-ports
 
 This makes sure that the resulting tree will be readable by the "macports" user.
 To update the tree later on, use:
 
-%> sudo -u macports git -C /opt/local/R-ports pull
+%> sudo -u macports git -C /opt/local/R-ports/R pull
 
 Then, edit /opt/local/etc/macports/sources.conf: towards the end of the file, add the following line *above* the line that has [default] at the end:
 
