@@ -3,17 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran leifeld texreg 1.39.4
-revision            1
+R.setup             cran leifeld texreg 1.39.5
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Conversion of R regression output to LaTeX or HTML tables
 long_description    {*}${description}
-checksums           rmd160  68dfc2390e9bf9e2dbb4fb0833f7e62caad54278 \
-                    sha256  3eb2dd3962652bd1b31389355cc2ecae680ae4fde91c7156454a6614e43983c0 \
-                    size    393798
+homepage            https://github.com/leifeld/texreg
+checksums           rmd160  c1a99c11a54eccb3716ff1c6f8c2e999954ed4c6 \
+                    sha256  862d2abbf6d91f589948820241dffa6064bc3b6349e5dc57b836dbcdb93ab7c0 \
+                    size    394544
 supported_archs     noarch
 
 depends_lib-append  port:R-httr
@@ -35,11 +36,16 @@ depends_test-append port:R-AER \
                     port:R-fixest \
                     port:R-forecast \
                     port:R-gamlss \
+                    port:R-gamlss.inf \
+                    port:R-gee \
                     port:R-ggplot2 \
                     port:R-glmmTMB \
+                    port:R-gmm \
                     port:R-gnm \
+                    port:R-h2o \
                     port:R-huxtable \
                     port:R-knitr \
+                    port:R-latentnet \
                     port:R-lme4 \
                     port:R-lmtest \
                     port:R-logitr \
