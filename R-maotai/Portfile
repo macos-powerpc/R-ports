@@ -3,19 +3,20 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran kisungyou maotai 0.2.6
-revision            1
+R.setup             cran kisungyou maotai 0.3.0
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Tools for matrix algebra, optimization and inference
 long_description    {*}${description}
 homepage            https://github.com/kisungyou/maotai
-checksums           rmd160  2f1964d39d77a5a35bd714b9f1687467a4c4e122 \
-                    sha256  76ce9bf30dd412d86c2922b94d6e0d68f27973e53ac423e237b08bdc6c2b5667 \
-                    size    120736
+checksums           rmd160  aaa3f193ce9c28c38414a89c7a6484cb4c45183e \
+                    sha256  6a753713629ea76cd198b0114bbf37255726d78bb6914e8f6785752c5a28f59c \
+                    size    134921
 
 depends_lib-append  port:R-dbscan \
+                    port:R-gsignal \
                     port:R-fastcluster \
                     port:R-labdsv \
                     port:R-pracma \
