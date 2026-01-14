@@ -3,7 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-# Revert to GitHub once updated there.
+# Update to 2.x is not possible, unless this is addressed:
+# https://github.com/r-dcm/measr/issues/75
 R.setup             cran wjakethompson measr 1.0.0
 revision            3
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
