@@ -4,8 +4,8 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran mitchelloharawild distributional 0.5.0
-revision            1
+R.setup             cran mitchelloharawild distributional 0.6.0
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -13,9 +13,9 @@ license             GPL-3
 description         Vectorised Probability Distributions
 long_description    {*}${description}
 homepage            https://pkg.mitchelloharawild.com/distributional
-checksums           rmd160  4d0b10ad9fbbd89267235945b294f241db83ef0d \
-                    sha256  345cde8a5479b4783a7bee47196b360303901a03e2e72e36ca4c5e49df2e71ac \
-                    size    107440
+checksums           rmd160  ba912ab2720dd00b0152aad90d90e0a37136b800 \
+                    sha256  cf8c3802e2ec8422f075b505b48aa8da80ddb8f1ad5049c5704f84f38f8d419a \
+                    size    138399
 supported_archs     noarch
 
 depends_lib-append  port:R-generics \
@@ -32,6 +32,7 @@ depends_test-append port:R-actuar \
                     port:R-ggplot2 \
                     port:R-gk \
                     port:R-mvtnorm \
+                    port:R-pkgdown \
                     port:R-testthat
 
 test.run            yes
