@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           conflicts_build 1.0
 PortGroup           R 1.0
 
-R.setup             github r-spatial lwgeom 3bc3f6a787a512536e7969182231f7324041f19b
-version             0.2-15
-revision            2
+R.setup             github r-spatial lwgeom 34d30eb1742a2093272f47fbf6fba1f4506495bf
+version             0.2-16
+revision            0
 categories-append   math gis
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         Bindings to selected liblwgeom functions for simple features
 long_description    {*}${description}
-checksums           rmd160  dbd7f1e947d31658c510ad1feaba450495780cd5 \
-                    sha256  34b03f6bd75fb48d2000ef233f683fff270ac54baa8745493b802338e39f2eeb \
-                    size    467926
+checksums           rmd160  d40f2f6eb7d85fe520fccb842844be167b9e5e6e \
+                    sha256  e9d64061c254d07578c68efda112114a9e41a315a6fe0670e958abcc68f9411a \
+                    size    468668
 github.tarball_from archive
 
 # The build may opportunistically pick wrong libs, in violation of configure args.
