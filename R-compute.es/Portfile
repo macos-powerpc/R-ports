@@ -3,17 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran compute.es 0.2-5
-revision            2
+R.setup             cran acdelre compute.es 0.2-6
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2
 description         Compute effect sizes
 long_description    {*}${description}
-checksums           rmd160  42eb8d1d4841f2b9a45f54b2ef17665878a8837b \
-                    sha256  a826d309928f56e9a38ae330009354fb4794e5dab0bf6e5deee0bc41871e2300 \
-                    size    22626
+homepage            https://acdelre.github.io
+checksums           rmd160  4e4d157a4739c8110743420843be714f7b416709 \
+                    sha256  96ceedb1b1230b427e04b8162c11750bab2a79fd908c3e68be4cf73d145fedbc \
+                    size    23313
 supported_archs     noarch
-platforms           {darwin any}
 
 test.run            yes
