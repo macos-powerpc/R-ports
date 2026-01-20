@@ -4,16 +4,16 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran gforge Gmisc 3.0.4
+R.setup             cran gforge Gmisc 3.1.0
 revision            0
 maintainers         nomaintainer
 license             GPL-3+
 description         Descriptive statistics, transition plots and more
 long_description    {*}${description}
 homepage            https://gforge.se
-checksums           rmd160  bdacd9b88d01f931124310d980540359ae52e95a \
-                    sha256  2e044ca70852f1b45f5894f99b260f3ece835766bc9f47f1ce9de13d00fc707c \
-                    size    1022167
+checksums           rmd160  fba42ebf332d5d3fc1a646c6490f061995c01c13 \
+                    sha256  4ead388af4bf3dbc8f634f20646f270af5b25b55bdb8493af6c767e1b5f2de82 \
+                    size    1154452
 
 depends_lib-append  port:R-abind \
                     port:R-checkmate \
