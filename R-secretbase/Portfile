@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran shikokuchuo secretbase 1.1.0
+R.setup             cran shikokuchuo secretbase 1.1.1
 revision            0
 categories-append   crypto
 maintainers         nomaintainer
@@ -11,8 +11,8 @@ license             GPL-3+
 description         Cryptographic hash and extendable-output functions
 long_description    {*}${description}
 homepage            https://shikokuchuo.net/secretbase
-checksums           rmd160  6c29805e5b1bc3081e8d994be66a7117057669d6 \
-                    sha256  b33bf47e1dfa10e3df5a65dd1ae8916d2321082de05809e38c317aecfb9fb661 \
-                    size    34762
+checksums           rmd160  9aa0444855027d7a4bece4a91e4e4b7c67ca37b8 \
+                    sha256  6221128109f0a077e520d703d3454bfdbc519ab41b694b234fded586358e1257 \
+                    size    34858
 
 test.run            yes
