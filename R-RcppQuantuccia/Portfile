@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran eddelbuettel RcppQuantuccia 0.1.3
+R.setup             cran eddelbuettel RcppQuantuccia 0.1.4
 revision            0
 categories-append   finance
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             GPL-2+
 description         R bindings to the calendaring functionality of QuantLib
 long_description    {*}${description}
 homepage            https://dirk.eddelbuettel.com/code/rcpp.quantuccia.html
-checksums           rmd160  987dfcda4a3da7e20529df16af07aade04a3266a \
-                    sha256  7138dfc34fa0c802cfee11fd1125adff8b4d3ef21352176f0357f104b33f0b20 \
-                    size    129665
+checksums           rmd160  df323ee53a20d3047f40d9d09f21cf7870bbcc42 \
+                    sha256  30d75c38ef77a87c88443f106f60f4daeaa4427034e60fd7b1de683a6d601e42 \
+                    size    129887
 
 depends_lib-append  port:R-BH \
                     port:R-Rcpp
