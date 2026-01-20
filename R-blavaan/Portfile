@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran ecmerkle blavaan 0.5-9
+R.setup             cran ecmerkle blavaan 0.5-10
 revision            0
 categories-append   math economics
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             GPL-3+
 description         Bayesian latent variable analysis
 long_description    {*}${description}
 homepage            https://ecmerkle.github.io/blavaan
-checksums           rmd160  449bc2990aadcd4722b87ba5340bd0f005cdb7ef \
-                    sha256  96e51f410d15cf54f169ec0ce77aa52eceb3b7d64eb4c913f522d675f269d74e \
-                    size    1661555
+checksums           rmd160  d91d2e50c3adb635a75a40b2ea901c77e5eea85b \
+                    sha256  834612f8f05ed02137faab2384411c5efe4e3e3dcaf2ead4f73c5f629c3ce9d5 \
+                    size    1666447
 
 # See: https://github.com/stan-dev/rstan/issues/1095
 # This is a safe choice. Possibly, on some 32-bit configurations
@@ -29,6 +29,7 @@ depends_lib-append  port:R-bayesplot \
                     port:R-BH \
                     port:R-coda \
                     port:R-future.apply \
+                    port:R-igraph \
                     port:R-lavaan \
                     port:R-loo \
                     port:R-mnormt \
