@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran NorskRegnesentral shapr 1.0.5 v
+R.setup             cran NorskRegnesentral shapr 1.0.7 v
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             MIT
 description         Prediction explanation with dependence-aware Shapley values
 long_description    {*}${description}.
 homepage            https://norskregnesentral.github.io/shapr
-checksums           rmd160  fb8ae4e893faebb2b65cedfe2e7b78e57e20472c \
-                    sha256  8ba98687412293414e4c587071b3dfcfb1276432a711a0aa8d41b6012a50d2cd \
-                    size    3545615
+checksums           rmd160  88c1e832cc37faa937d18c09b71647b2dc549622 \
+                    sha256  194e5f8dc4e9c0a0f6282a249d7c5691b70afacdb5e217648e508dec463a7eb9 \
+                    size    3503772
 
 depends_lib-append  port:R-cli \
                     port:R-data.table \
@@ -25,6 +25,7 @@ depends_lib-append  port:R-cli \
 
 compilers.setup     require_fortran
 
+# Some optional deps are dropped.
 depends_test-append port:R-coro \
                     port:R-dials \
                     port:R-forecast \
