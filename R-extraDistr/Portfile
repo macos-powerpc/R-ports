@@ -4,16 +4,16 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran twolodzko extraDistr 1.10.0.1
+R.setup             cran twolodzko extraDistr 1.10.0.2
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         Additional univariate and multivariate distributions
 long_description    {*}${description}
-checksums           rmd160  7d820693fc2be5e321e80de422c9216d5da4b02f \
-                    sha256  b55feaddb5f5d47d7842977271a03eb881306fc03564146116c09c3810832074 \
-                    size    148544
+checksums           rmd160  ffd0f399cef6ddc1c55bc3171ed73f13d2b61080 \
+                    sha256  a0290ac118af4123278742804aec4454ab363f6634bbdbe74334fbf58506a71a \
+                    size    148559
 # github.tarball_from archive
 
 depends_lib-append  port:R-Rcpp
