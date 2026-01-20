@@ -3,19 +3,20 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran mattgress cpfa 1.2-1
+R.setup             cran mattgress cpfa 1.2-5
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Classification with Parallel Factor Analysis
 long_description    {*}${description}
-checksums           rmd160  ad99e8187df319100704bcdeab561502526441ba \
-                    sha256  69d666489dd15999dac1d0067898f4f4789935dc8a4becaca970677e09453a1e \
-                    size    301355
+checksums           rmd160  d8506ef7d5e6b82993f7d6d575720b9be36ce268 \
+                    sha256  8bcf3157e51b415d4adac1f3c1f139e25c7e62ecdacd1aefed0c38e092f14959 \
+                    size    319501
 supported_archs     noarch
 
 depends_lib-append  port:R-doParallel \
+                    port:R-doRNG \
                     port:R-e1071 \
                     port:R-foreach \
                     port:R-glmnet \
