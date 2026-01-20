@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran faosorios L1pack 0.60
+R.setup             cran faosorios L1pack 0.62
 revision            0
 categories-append   math
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             GPL-3
 description         Routines for L1 estimation
 long_description    {*}${description}
 homepage            https://github.com/faosorios/L1pack
-checksums           rmd160  807421bc26ae413623547b08f294e7847cd99e29 \
-                    sha256  d8611b591602ea8c48a53ebb0da669e98c0e4ba9a9620f95f339f9d0c0eb7043 \
-                    size    37336
+checksums           rmd160  7865ca5029f609354bfdc93d23c7241cfef1c4d7 \
+                    sha256  27e4359544f479a0eb1f5bcc54a27a0a0dc11b7c8c01c7c40d103656bdfefd88 \
+                    size    37462
 
 depends_lib-append  port:R-fastmatrix
 
