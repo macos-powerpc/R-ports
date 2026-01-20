@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran vito.muggeo segmented 2.1-4
-revision            1
+R.setup             cran vito.muggeo segmented 2.2-0
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL
 description         Regression models with break-points estimation
 long_description    {*}${description}
-checksums           rmd160  02f811126407f506ae8d705ca91633167210ca1e \
-                    sha256  abd2e7c81a0ccdf59d98aeaae464b4791ed622a1b26fae666dca10cd4694f1eb \
-                    size    311459
+checksums           rmd160  ff1d52ad2174003cf23c156ecc103d6a2194d4fa \
+                    sha256  bdd29a1847dc9f754b14904be0b946eab17e1a8da0491de32246a87c7314d6ed \
+                    size    322914
 supported_archs     noarch
 
 test.run            yes
