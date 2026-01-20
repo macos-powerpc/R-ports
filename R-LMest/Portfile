@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran francesco.bartolucci LMest 3.2.7
+R.setup             cran francesco.bartolucci LMest 3.2.8
 revision            0
 categories-append   math
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             GPL-2+
 description         Generalized Latent Markov Models
 long_description    Latent Markov models for longitudinal continuous \
                     and categorical data.
-checksums           rmd160  d696f2f52b804538ca8b0cb57cf9f099b5faa25e \
-                    sha256  fcfa5ef2f92b5ad6812f9f3492be6be9bc97e76a931f65e2889e0524d9a8515c \
-                    size    695879
+checksums           rmd160  cd2fcb000345d9bd56d0c09de9376f1f487a4d02 \
+                    sha256  c65991467639aa716d2ceb8dc06190c179dd7b7c496c9605c043a83741bf70ed \
+                    size    695996
 
 depends_lib-append  port:R-diagram \
                     port:R-Formula \
