@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran ProjectMOSAIC ggformula 0.12.2
+R.setup             cran ProjectMOSAIC ggformula 1.0.1
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,12 +12,13 @@ license             MIT
 description         Formula interface to the grammar of graphics
 long_description    {*}${description}
 homepage            https://github.com/ProjectMOSAIC/ggformula
-checksums           rmd160  c78f9df3c427c5ec0ed3f0e52509c824088a3957 \
-                    sha256  925df147d9f69a776a7674415b3e14429d8fd32a80855a6a2b102fb7e9dc2085 \
-                    size    2462500
+checksums           rmd160  784135f8deef16cbdf04e2b2251c2aa301985975 \
+                    sha256  cdb6a3c46491cfe550b61e859e58b270d4a6bc2bd12792fb6152c372a694e812 \
+                    size    7387846
 supported_archs     noarch
 
 depends_lib-append  port:R-ggplot2 \
+                    port:R-ggiraph \
                     port:R-ggridges \
                     port:R-labelled \
                     port:R-mosaicCore \
