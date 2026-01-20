@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is old.
-R.setup             cran cdriveraus ctsem 3.10.4
+R.setup             cran cdriveraus ctsem 3.10.5
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,12 +12,13 @@ license             GPL-3
 description         Continuous Time Structural Equation Modelling
 long_description    {*}${description}
 homepage            https://github.com/cdriveraus/ctsem
-checksums           rmd160  b6b252855016a6ab43e1d1acd1b1c96c3fdb8832 \
-                    sha256  ad944562888809ea903ea26e32c720a4fa917d51eac88ae7331e429e24798c48 \
-                    size    1775469
+checksums           rmd160  a66afd02af50d44ee4a634dae7e627f061bb728f \
+                    sha256  67380b80110ddbe709e18788cb3b1954055f6fe54bfedef245e3b9292711bfbe \
+                    size    1784924
 
 depends_lib-append  port:R-BH \
                     port:R-cOde \
+                    port:R-corpcor \
                     port:R-data.table \
                     port:R-Deriv \
                     port:R-expm \
@@ -26,6 +27,7 @@ depends_lib-append  port:R-BH \
                     port:R-mvtnorm \
                     port:R-parallelly \
                     port:R-plyr \
+                    port:R-png \
                     port:R-Rcpp \
                     port:R-RcppEigen \
                     port:R-RcppParallel \
@@ -46,7 +48,9 @@ depends_test-append port:R-arules \
                     port:R-knitr \
                     port:R-lme4 \
                     port:R-papaja \
+                    port:R-pdftools \
                     port:R-qgam \
+                    port:R-rstudioapi \
                     port:R-shiny \
                     port:R-testthat \
                     port:R-tinytex
