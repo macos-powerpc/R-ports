@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran HughParsonage hutils 1.8.1
-revision            3
+R.setup             cran HughParsonage hutils 2.0.0
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
 description         Miscellaneous R functions and aliases
 long_description    {*}${description}
-checksums           rmd160  dbfec9325d8380014ebac5bb1ff8414a38071022 \
-                    sha256  e464f7610cb837539ed3cd6b52c2c4d6975a92723ef1f82ebf6529df5e51be5d \
-                    size    140629
+checksums           rmd160  accec93b6e18146c1ffeb44b6121243d6846218b \
+                    sha256  3ce012fb10da5f6fa6382396f7c88ef7fdf4412dfb4cc3a9b8d0c8a45a30f51b \
+                    size    125752
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-data.table \
                     port:R-fastmatch \
