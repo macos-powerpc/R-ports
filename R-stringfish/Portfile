@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran traversc stringfish 0.17.0
+R.setup             cran traversc stringfish 0.18.0
 revision            0
 categories-append   devel
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Alternative string implementation
 long_description    {*}${description}
-checksums           rmd160  afdd75add4dab9ecd1928344d65ef6b8484c3cb2 \
-                    sha256  9e0af5404b07c2db5912f8663dbb6f09c813b5598d7ec90fd5501f1c4453d674 \
-                    size    1159741
+checksums           rmd160  c292f27a161be3a5556c6333f45f66a4449d9446 \
+                    sha256  e2df642db65b03e15e7762d7fa612bb84f7bf6b20007ceab2bfe3b93f1163aef \
+                    size    1159934
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
@@ -23,7 +23,6 @@ depends_lib-append  port:pcre2 \
 
 depends_test-append port:R-dplyr \
                     port:R-knitr \
-                    port:R-qs \
                     port:R-qs2 \
                     port:R-rlang \
                     port:R-rmarkdown \
