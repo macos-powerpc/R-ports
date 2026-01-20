@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is old.
-R.setup             cran andrewzm FRK 2.3.1
-revision            1
+R.setup             cran andrewzm FRK 2.3.2
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Fixed Rank Kriging
 long_description    A tool for spatial/spatio-temporal modelling and prediction with large datasets.
 homepage            https://andrewzm.github.io/FRK
-checksums           rmd160  1a5346f2401c65168d32341f4f46cb3dd4b24ec7 \
-                    sha256  b419f5c4907288e76d16001058d04a8d2524323105b73e96d2526d4927868ffe \
-                    size    4595258
+checksums           rmd160  dc8168761f927f5961e25765e46143c0304be7a1 \
+                    sha256  d34ac280eeceaefda029c0ddcb651ea9dae8a556015376423f327037327c1321 \
+                    size    4619895
 
 depends_lib-append  port:R-digest \
                     port:R-dplyr \
