@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran eigenmodel 1.11
-revision            3
+R.setup             cran pdhoff eigenmodel 1.12
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2
 description         Semi-parametric factor and regression models for symmetric relational data
 long_description    {*}${description}
 homepage            https://pdhoff.github.io
-checksums           rmd160  8bb232a4bd493deb9ad0763be63156139f540d8f \
-                    sha256  8dac650db4331c427c1afbfc7296889d3eb164c0b5feee99e9c37533ce0776d0 \
-                    size    24582
+checksums           rmd160  db0b7c7a482a492465030353251640bcdc148057 \
+                    sha256  7714d1ac31ec422bea802963d0b4c0577711935d51896b4cdbfe6c2ae393bb89 \
+                    size    24370
 supported_archs     noarch
-platforms           {darwin any}
 
 test.run            yes
