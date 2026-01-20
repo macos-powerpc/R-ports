@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran analythium deps 0.4.0
-revision            1
+R.setup             cran analythium deps 0.4.1
+revision            0
 categories-append   devel
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             MIT
 description         Dependency management with roxygen-style comments
 long_description    {*}${description}
 homepage            https://hub.analythium.io/deps
-checksums           rmd160  6891ed945ba0e4215b636e712873e6b3573a8389 \
-                    sha256  d0bc90d1a17d315c9f9abdaa5beefdd4581ca626a651fb8df40ad9155b5af490 \
-                    size    12732
+checksums           rmd160  3f4889143d5b47a9d54fc9aa9eac75e92bd358cc \
+                    sha256  5f35c0d44b95126de2a10a5c8fc7783a48d77e64c8bbf195fc335b338a48b429 \
+                    size    11512
 supported_archs     noarch
 
 depends_lib-append  port:R-jsonlite \
