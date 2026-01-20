@@ -3,15 +3,15 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-forge fastmatch 1.1-6
-revision            1
+R.setup             cran r-forge fastmatch 1.1-8
+revision            0
 maintainers         nomaintainer
 license             GPL-2
 description         Fast match() function
 long_description    {*}${description}
 homepage            https://www.rforge.net/fastmatch
-checksums           rmd160  785f15a84372dd85b6408eaf58aefd9b804bfea2 \
-                    sha256  10b147ff26df1bda6f41e13ffc8b5740309a01838c78e1902404832da64f4d66 \
-                    size    15655
+checksums           rmd160  64bc263fdd4cc00ea02e51c9eddf92649387925b \
+                    sha256  2661c01bdc2383f4a30bf940e6bc3b68f1329db5f0e837df8160eb893f748d54 \
+                    size    17943
 
 test.run            yes
