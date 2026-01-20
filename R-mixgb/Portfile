@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran agnesdeng mixgb 1.5.3 v
+R.setup             cran agnesdeng mixgb 2.2.3 v
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,12 +12,12 @@ license             GPL-3+
 description         Multiple imputation via xgboost
 long_description    {*}${description}
 homepage            https://agnesdeng.github.io/mixgb
-checksums           rmd160  cb4c29ac1a8be59b1184613bbed0d60c6f4bc952 \
-                    sha256  df2f9cbfc61507f98354e0d16c1ce74c91b5659be5e8b2068bae4a79b6097dc5 \
-                    size    688211
+checksums           rmd160  9840c3c62053cd9693489e08d9c6b514267fcb4a \
+                    sha256  eac4e334c5ee8b2aa0536d45de8d4b25efa5622bb5b5b61f7583d9601349eb48 \
+                    size    804533
 
-depends_lib-append  port:R-data.table \
-                    port:R-magrittr \
+depends_lib-append  port:R-cli \
+                    port:R-data.table \
                     port:R-mice \
                     port:R-Rcpp \
                     port:R-RcppArmadillo \
