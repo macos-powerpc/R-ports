@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is archaic.
-R.setup             cran HenrikBengtsson doFuture 1.1.2
+R.setup             cran HenrikBengtsson doFuture 1.2.0
 revision            0
 categories-append   parallel
 platforms           {darwin any}
@@ -13,9 +13,9 @@ license             LGPL-2.1+
 description         Use R-foreach to parallelize via the R-future framework
 long_description    {*}${description}
 homepage            https://doFuture.futureverse.org
-checksums           rmd160  86e045a29cabed5f256c77a0cc81d53139479eef \
-                    sha256  2aa6aca19a872d6001549316a0a9600200e1e68e7fa109e27531abc42f71c571 \
-                    size    77196
+checksums           rmd160  42e090b3b2d1e31438fd2a2f27012eba896d5d64 \
+                    sha256  00c2691bff8b1dc95eb2aec862e664b418d7aba20e760a848da87f91d172a133 \
+                    size    78630
 supported_archs     noarch
 
 depends_lib-append  port:R-foreach \
