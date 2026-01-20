@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran aphalo gginnards 0.2.0-1
+R.setup             cran aphalo gginnards 0.2.0-2
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             GPL-2+
 description         Explore the innards of R-ggplot2 objects
 long_description    {*}${description}
 homepage            https://github.com/aphalo/gginnards
-checksums           rmd160  1c9212bbcdfbb91bd2cf954e1fb43e2aed3965a1 \
-                    sha256  83a66db01d94f50004a188db35da274eb9ffda737f1eff11e57bbd8b306c5d18 \
-                    size    217377
+checksums           rmd160  f0d5688ad9215de3f01b76c3cd16b1985225be6c \
+                    sha256  96036b7167460a0e4b01904bfbcdf1f901f85de85062d0de5764b586f3c8d8f0 \
+                    size    221392
 supported_archs     noarch
 
 depends_lib-append  port:R-ggplot2 \
@@ -23,8 +23,10 @@ depends_lib-append  port:R-ggplot2 \
                     port:R-tibble
 
 depends_test-append port:R-knitr \
+                    port:R-lobstr \
                     port:R-pryr \
                     port:R-rmarkdown \
+                    port:R-S7 \
                     port:R-sf
 
 test.run            yes
