@@ -3,20 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran meboot 1.4-9.4
-revision            2
+R.setup             cran ovvo.open.source meboot 1.5
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Maximum entropy bootstrap for time series
 long_description    {*}${description}
-checksums           rmd160  a3b8b2614b65c6b89b09b0221e79d18caa7470f3 \
-                    sha256  daa5fe43c9002ae4d51010e3655bf674addd8c8c2635e304dc4e5b43dbb86a2a \
-                    size    463592
+checksums           rmd160  61d7bd8be2eba66056fac457de646b93b8c186d9 \
+                    sha256  0aa4f7bffc48bcf9ceebe7acf160490692e9bef194f6ed7f031a9f7727fcd446 \
+                    size    420118
 
 depends_lib-append  port:R-dynlm \
-                    port:R-hdrcde \
-                    port:R-tdigest
+                    port:R-hdrcde
 
 depends_test-append port:R-car \
                     port:R-ConvergenceConcepts \
