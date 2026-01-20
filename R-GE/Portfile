@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran LiWuR GE 0.5.0
+R.setup             cran LiWuR GE 0.5.4
 revision            0
 categories-append   economics
 platforms           {darwin any}
@@ -11,9 +11,9 @@ maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             {GPL-2 GPL-3}
 description         General Equilibrium Modelling
 long_description    {*}${description}
-checksums           rmd160  71696819f1dd0ee9b7c37d53556b58457a21d81d \
-                    sha256  c5ae671d925ee23405ea97b04a7864f655a80d70bbeb3fd7406d2224e15a44d7 \
-                    size    297600
+checksums           rmd160  e2513321cf87b42850d2f4d511c2b8bed97dd1a8 \
+                    sha256  8ce0fe54b49fd3953724f92635152f5d15462b6d061fdc09770a70198d2db826 \
+                    size    291825
 supported_archs     noarch
 
 depends_lib-append  port:R-CGE \
