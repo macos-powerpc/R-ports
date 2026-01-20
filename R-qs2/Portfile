@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran traversc qs2 0.1.6
+R.setup             cran traversc qs2 0.1.7
 revision            0
 categories-append   devel
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             GPL-3
 description         Quick Serialization of R objects
 long_description    {*}${description}
 homepage            https://github.com/traversc/qs2
-checksums           rmd160  248528f8ced8fa900099f3a329a00779894b1e85 \
-                    sha256  ebc9b763d3c8d5e253e396138c62aad67d86ba15e36cd0e1f688a81a74ac3ade \
-                    size    964743
+checksums           rmd160  f2c9a7351e87c0f750ee7caa2f4d1fef57818337 \
+                    sha256  8a3f5229f68cbdfaec3db84afa992c7569dd327fdc6e07e5eff73c17502cfee8 \
+                    size    972339
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
@@ -22,14 +22,6 @@ depends_lib-append  port:R-Rcpp \
                     port:R-RcppParallel \
                     port:R-stringfish \
                     port:zstd
-
-# Unfortunately, configure test does not work:
-# https://github.com/traversc/qs2/issues/1
-# So we just force it with gcc regardless:
-if {[string match *gcc* ${configure.compiler}]} {
-    patchfiles-append \
-                    patch-force-latomic.diff
-}
 
 build.args-append   --configure-args="--without-simd --with-TBB"
 
