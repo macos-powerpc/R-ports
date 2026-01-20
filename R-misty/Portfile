@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran takuya.yanagida misty 0.7.6
+R.setup             cran takuya.yanagida misty 0.8.0
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Miscellaneous functions for descriptive statistics
 long_description    {*}${description}
-checksums           rmd160  f7d440285fd19e3f8381160c138a868c94545747 \
-                    sha256  9376e3bfd188d42b93282dc3d0b682e2576bd472768a8e66204544729fff0c47 \
-                    size    878217
+checksums           rmd160  8594c91909ec86145e5d06a63ec5ca67b44b02e9 \
+                    sha256  5a44cce537be75611b5c23be1f013fd1f589f561656c2903366ada4296fde9bf \
+                    size    916505
 supported_archs     noarch
 
 depends_lib-append  port:R-ggplot2 \
