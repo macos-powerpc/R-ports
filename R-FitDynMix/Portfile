@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran marco-bee FitDynMix 1.0.1
+R.setup             cran marco-bee FitDynMix 1.0.2
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             MIT
 description         Estimation of dynamic mixtures
 long_description    {*}${description}
 homepage            https://github.com/marco-bee/FitDynMix
-checksums           rmd160  06e1846dce604740f27375d7078a0135a72ab743 \
-                    sha256  072fc47252c2e7f5ae837bf99a9e8a57965d3a6cf4aec0c6f8850c21b18cbfb6 \
-                    size    44044
+checksums           rmd160  077a5881e79867a138d29beaa58bdac71bc89a94 \
+                    sha256  eb7485d165e34f8c20ff733f3dcbb745e5d5ba09d1b8b6cdd671cc05177aceac \
+                    size    44085
 supported_archs     noarch
 
 depends_lib-append  port:R-evir \
