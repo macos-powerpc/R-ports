@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran Japal zCompositions 1.5.0-5
+R.setup             cran Japal zCompositions 1.6.0
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ description         Treatment of zeros, left-censored and missing values \
                     in compositional data-sets
 long_description    {*}${description}
 homepage            https://github.com/Japal/zCompositions
-checksums           rmd160  f8d7bad24201d26635169a7ddbf8af58c1cb00a1 \
-                    sha256  a5e71c878ae1c8141851a456fee5aaebc83a19654bb4aef9cf7b92ef6799981f \
-                    size    54810
+checksums           rmd160  5cb5cce8b496232b4aa982e942fd1d1dc5190378 \
+                    sha256  912056ca36e182a9924a1bce8a5e43a871186cda2c727455cdb281c058d478fc \
+                    size    63083
 supported_archs     noarch
 
 depends_lib-append  port:R-truncnorm
