@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran mixsmsn 1.1-10
-revision            2
+R.setup             cran marcosop mixsmsn 1.1-12
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Fit a finite mixture of scale mixture of skew-normal distributions
 long_description    {*}${description}
-checksums           rmd160  01f2e1e2d2772033eb871bc92d9a89b3c761b7e8 \
-                    sha256  7dec9a14f17786c32ab6fd290e9051f66da8c15f84af4310ffc2285a4c5e61f0 \
-                    size    40356
+checksums           rmd160  0611a7390ad4ac26a13452a1d393c18a8bde5595 \
+                    sha256  806a3b74353f9206217633e1c461f4118a61cf75baac0004a39dd20bb21ea890 \
+                    size    40629
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-mvtnorm
 
