@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           active_variants 1.1
 PortGroup           R 1.0
 
-R.setup             cran s-u rJava 1.0-11
-revision            1
+R.setup             cran s-u rJava 1.0-14
+revision            0
 categories-append   java
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             LGPL-2.1
 description         Low-level R-to-Java interface
 long_description    ${name} is a low-level interface to Java VM.
 homepage            https://github.com/s-u/rJava
-checksums           rmd160  02249232534895d91cc795c33c7ce6af98490ed8 \
-                    sha256  9ea0ccf5553d86f7de8649a8324766c4f0810f35b7be561640dd87fd37986417 \
-                    size    634103
+checksums           rmd160  fed2af80c584fe434db0f5b522b0d4df40587689 \
+                    sha256  b9c9e324d2846e7b3ec22992271d27252d3cd6291491931f9362bbb78bc8c355 \
+                    size    636254
 
 require_active_variants R java
 
