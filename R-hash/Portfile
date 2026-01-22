@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran hash 2.2.6.3
-revision            2
+R.setup             cran drjphughesjr hash 2.2.6.4
+revision            0
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Full-featured implementation of hash tables/associative arrays/dictionaries
 long_description    {*}${description}
-checksums           rmd160  447e9a923a2f3a346f7478fcb43f67f1d8916073 \
-                    sha256  8a030b5be9c6494b44af9d8cd7a966cc94a41ae0aaecb553fc36de4762749110 \
-                    size    17257
+checksums           rmd160  5f025b5af552c2abfc223e07ad9a33bf1debaf56 \
+                    sha256  dd78749a2832c6496f1b2beb7c14b0a5ca244a3ef68f7b1fe4899b2a2c9f9b7a \
+                    size    17234
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_test-append port:R-testthat
 
