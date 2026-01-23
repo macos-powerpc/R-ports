@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran apache adbcdrivermanager 0.19.0-1
+R.setup             cran apache adbcdrivermanager 0.22.0
 revision            0
 categories-append   databases
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             Apache-2
 description         Arrow Database Connectivity (ADBC) driver manager
 long_description    {*}${description}
 homepage            https://github.com/apache/arrow-adbc
-checksums           rmd160  cb95ecd7513c68de0d906010b7038bbe58a871d5 \
-                    sha256  e02f8fad93ec7f35a5d7c8526ce34f25410c1c282cc7e027fd8119c8090f721c \
-                    size    499708
+checksums           rmd160  38067990ca633629b34b9f78e0eada2312115588 \
+                    sha256  3ecbff9dfe541d2575b226332489f59a2ea57ddfad69ce56a1d3241f9241031a \
+                    size    509205
 
 depends_lib-append  port:R-nanoarrow
 
