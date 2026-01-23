@@ -4,15 +4,15 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran 2005m kit 0.0.19 v
-revision            1
+R.setup             cran 2005m kit 0.0.21 v
+revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Data manipulation functions implemented in C
 long_description    {*}${description}
-checksums           rmd160  aac350ff06570281afd261b873235be903130a10 \
-                    sha256  be551b742fc4fe9adb3c79f21c661450ff075148e1efc144936e1636f0291828 \
-                    size    93131
+checksums           rmd160  3ef45b8d72bcdc498a2aef4efc496941d4588bf6 \
+                    sha256  bfe4ffbb87e11cb7d87207b96f82cbae8381c5fb445c05f6a8653fab99424fca \
+                    size    87305
 # github.tarball_from archive
 
 compiler.openmp_version 3.0
@@ -24,5 +24,8 @@ post-patch {
         reinplace "s,-lomp,-L${prefix}/lib/libomp -lomp,g" ${worksrcpath}/configure
     }
 }
+
+depends_test-append port:R-knitr \
+                    port:R-rmarkdown
 
 test.run            yes
