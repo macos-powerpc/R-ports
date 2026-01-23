@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran GeoBosh rbibutils 2.3
-revision            1
+R.setup             cran GeoBosh rbibutils 2.4.1
+revision            0
 maintainers         nomaintainer
 license             GPL-2
 description         Read Bibtex files and convert between bibliography formats
 long_description    {*}${description}
 homepage            https://geobosh.github.io/rbibutils
-checksums           rmd160  0d2a0691985cffa082d8cf3f36bc6f302c0ba25f \
-                    sha256  0c35ad62219bbdaa9b6d9be892a1aeb02e7faa05ca9a6fb15a3129d3d250777f \
-                    size    1132601
+checksums           rmd160  35f22ce8a223d6a40a6650eb80a2277e074841e6 \
+                    sha256  da313d920a0f35ffdf30a54929ba8904b2b5a0d7f11a519db8674148129c8f32 \
+                    size    1191704
 
 depends_test-append port:R-testthat
 
