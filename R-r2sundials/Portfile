@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran sgsokol r2sundials 7.2.1-3
+R.setup             cran sgsokol r2sundials 7.2.1-4
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Rcpp wrapper for SUNDIALS/CVODES library
 long_description    {*}${description}
-checksums           rmd160  367b66faec92861561a43cb96d63790d3fad273f \
-                    sha256  df53ca2bb9bae8e792ea9418feb21018e4555a6c2949a4092ab429f840a605f8 \
-                    size    434241
+checksums           rmd160  d2bc893ed6cbc93311e6b5b7a422608ac67dc4ff \
+                    sha256  35120c31b7bdbdb4ff5213a9237a67c014ce88dc1559d3916986f6262bb241d2 \
+                    size    433380
 
 depends_lib-append  port:R-Rcpp \
                     port:R-RcppArmadillo \
