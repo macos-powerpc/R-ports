@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is outdated.
-R.setup             cran jknowles merTools 0.6.3
+R.setup             cran jknowles merTools 0.6.4
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -13,9 +13,9 @@ license             GPL-2+
 description         Tools for analyzing mixed effect regression models
 long_description    {*}${description}
 homepage            https://github.com/jknowles/merTools
-checksums           rmd160  0be70687e4aa9b91dee9d884f0496afc16b45b87 \
-                    sha256  859d9d9eb82f38b6665ca48911750404e1c54a5cb2cc1735aaddf1d54c0eb9d6 \
-                    size    641789
+checksums           rmd160  b61daca9e44d96c4802b88769ae2c9c0ff17a6b9 \
+                    sha256  4c73280257de121d3d5fc722a3008f0d7581e2b8120c483073839a050d01525d \
+                    size    641911
 supported_archs     noarch
 
 depends_lib-append  port:R-abind \
