@@ -3,16 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran mlegp 3.1.9
-revision            3
+R.setup             cran dancikg mlegp 3.1.10
+revision            0
 categories-append   math
 maintainers         nomaintainer
-license             {GPL-2 GPL-3}
+license             GPL-2+
 description         Maximum Likelihood Estimates of Gaussian Processes
 long_description    {*}${description}
-checksums           rmd160  4e73444c7f47fac48ee8ec3c9d74c635ea8a0469 \
-                    sha256  63296d17a162fdce0958b10f45cb7d5dab4b3ee29340528d33cedcae08a040b3 \
-                    size    331827
+homepage            https://github.com/gdancik/mlegp
+checksums           rmd160  0894013efb305ffff84080bc350ad0ac92ae6e1e \
+                    sha256  5a894ce0824364f9327d80923c9ee9c9cdefcf233bfffe9f29c0bc0e97045edd \
+                    size    195222
 
 compilers.setup     require_fortran
 
