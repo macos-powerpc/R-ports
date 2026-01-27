@@ -3,19 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran sn 2.1.1
-revision            3
+R.setup             cran adelchi.azzalini sn 2.1.2
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             {GPL-2 GPL-3}
 description         Skew-Normal and related distributions such as the skew-t and the SUN
 long_description    {*}${description}
 homepage            http://azzalini.stat.unipd.it/SN
-checksums           rmd160  c5b414041de2541abc3be2d3457dd098572b82f1 \
-                    sha256  f9f6b56d91dc7cb18dc8308d0875b9648c90b268d1aaf8f4c5164ff016df22bd \
-                    size    827061
+checksums           rmd160  06a5c918dac5502cb1d480ff6f2b167456a1f639 \
+                    sha256  2e801e3f74d970dd84c62badb0cb19ee53798016a7dd0b9840c53334f2583e66 \
+                    size    824864
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-mnormt \
                     port:R-numDeriv \
