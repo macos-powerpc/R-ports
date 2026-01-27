@@ -3,20 +3,21 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran rsparapa BART 2.9.9
-revision            1
+R.setup             cran rsparapa BART 2.9.10
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Bayesian Additive Regression Trees
 long_description    {*}${description}
-checksums           rmd160  8b5e84ce28a80a110befb5f64b72058cdfab28d7 \
-                    sha256  5b087a321427f077bf595c075b4f7538e125a9ea580fffe5b2135873853da1ca \
-                    size    3780743
+checksums           rmd160  82314971481acf857c1b3018db2740f0c1b51b96 \
+                    sha256  a70b64ef465e9fa6f267e1269ca9be14d39642f4c55361d57141a7d37f371e84 \
+                    size    3781113
 
 depends_lib-append  port:R-Rcpp
 
 depends_test-append port:R-knitr \
-                    port:R-rmarkdown
+                    port:R-rmarkdown \
+                    port:R-rpart.plot
 
 test.run            yes
