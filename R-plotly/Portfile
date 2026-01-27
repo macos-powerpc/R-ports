@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran plotly plotly 4.11.0
+R.setup             cran plotly plotly 4.12.0
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             MIT
 description         Create interactive web graphics via plotly.js
 long_description    {*}${description}
 homepage-append     https://plotly-r.com
-checksums           rmd160  54be18fc679e55c411dde65bd3a83144e9ebffbe \
-                    sha256  ba9009cd7e913590872aa153b13be719e4dfcee8cd24f8631bd35c99044bceb3 \
-                    size    4681790
+checksums           rmd160  df3221035821781bed23745d82462dc788cf42b0 \
+                    sha256  f9f6dbd6e45509c6de11d542d1c1bb654162811c2d24ac90f8deece032727acf \
+                    size    4614623
 supported_archs     noarch
 
 depends_lib-append  port:R-base64enc \
