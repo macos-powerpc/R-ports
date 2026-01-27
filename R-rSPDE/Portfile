@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is archaic.
-R.setup             cran davidbolin rSPDE 2.5.1
+R.setup             cran davidbolin rSPDE 2.5.2
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -13,9 +13,9 @@ license             GPL-3+
 description         Rational approximations of fractional stochastic partial differential equations
 long_description    {*}${description}
 homepage            https://davidbolin.github.io/rSPDE
-checksums           rmd160  ad72fe3a03daf082ed46fdadc9f163b40d22a03d \
-                    sha256  0e7ff92f8b67624f77cdb6f1d16b750707174a757c5676e3c0750ae210758112 \
-                    size    4836528
+checksums           rmd160  8127da77d95b7c5d9de58eb283828698175af44c \
+                    sha256  87c9fc5175ab31841c95cabcc2169e9015e8628b0b438d26641e597582ccb34a \
+                    size    3661163
 supported_archs     noarch
 
 depends_lib-append  port:R-broom \
