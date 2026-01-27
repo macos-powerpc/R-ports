@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is outdated.
-R.setup             cran R-CF ncdfCF 0.7.0 v
+R.setup             cran R-CF ncdfCF 0.8.0 v
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             MIT
 description         Easy access to NetCDF files with CF metadata conventions
 long_description    {*}${description}
 homepage            https://github.com/R-CF/ncdfCF
-checksums           rmd160  db980f6ecb1924cc6b17ad042b69476e8daf0097 \
-                    sha256  d553d5aa24915499f78033d640db7d5b7bd2a9a050d10b53e3f94cd83535d47a \
-                    size    1377995
+checksums           rmd160  76d39db749311e76a2acfb18a16fc7ed2c69964e \
+                    sha256  a6a2031bba118ea48db96a68ad8955208988debc331ecfe8665b44eb56647c9c \
+                    size    1224374
 supported_archs     noarch
 
 depends_lib-append  port:R-abind \
