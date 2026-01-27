@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran pbreheny plmmr 4.2.2 plmmr_
+R.setup             cran pbreheny plmmr 4.2.3 plmmr_
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             GPL-3
 description         Penalized Linear Mixed Models for Correlated Data
 long_description    Fits penalized linear mixed models that correct for unobserved confounding factors.
 homepage            https://pbreheny.github.io/plmmr
-checksums           rmd160  25aa2ec4ef9de29da6a7f4d27d2c5d114964a0de \
-                    sha256  63af43ce5d1fd92fa7c33fcd3685ddafd084da532a355721520110b2a8f9aeb1 \
-                    size    2500523
+checksums           rmd160  664af846af3c2ce051f39202669aaa21667fff99 \
+                    sha256  2ec11b825a40bd14656b2648a2aa2fbc5e5c44485fb2671297a31c4c4ea09fb0 \
+                    size    2499759
 
 depends_lib-append  port:R-BH \
                     port:R-bigalgebra \
