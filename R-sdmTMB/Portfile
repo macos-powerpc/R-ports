@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran pbs-assess sdmTMB 0.7.4 v
+R.setup             cran pbs-assess sdmTMB 1.0.0 v
 revision            0
 categories-append   math
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             GPL-3
 description         Spatial and spatio-temporal SPDE-based GLMMs
 long_description    {*}${description} with R-TMB.
 homepage            https://pbs-assess.github.io/sdmTMB
-checksums           rmd160  f4ca8611572c068186fb1fcf1eb7efad87948b1f \
-                    sha256  44bfb88b3874e3345117bc351062229f17e4e0efe78e4c4857fe616ae8612013 \
-                    size    799821
+checksums           rmd160  3b15b3adaf9c4887fdc819de2de006a540d88486 \
+                    sha256  acfd2a5685ba9286f59ce05cff47f413e1e29da890dcb1a92846a1d0a9413a93 \
+                    size    847629
 
 depends_lib-append  port:R-abind \
                     port:R-assertthat \
@@ -23,10 +23,10 @@ depends_lib-append  port:R-abind \
                     port:R-fmesher \
                     port:R-generics \
                     port:R-lifecycle \
-                    port:R-lme4 \
                     port:R-mvtnorm \
-                    port:R-rlang \
                     port:R-RcppEigen \
+                    port:R-reformulas \
+                    port:R-rlang \
                     port:R-TMB
 
 compiler.cxx_standard 2017
@@ -43,12 +43,14 @@ depends_test-append port:R-DHARMa \
                     port:R-ggplot2 \
                     port:R-glmmTMB \
                     port:R-knitr \
+                    port:R-lme4 \
                     port:R-rmarkdown \
                     port:R-sf \
                     port:R-spatstat.data \
                     port:R-splancs \
                     port:R-testthat \
                     port:R-tibble \
-                    port:R-visreg
+                    port:R-visreg \
+                    port:R-waywiser
 
 test.run            yes
