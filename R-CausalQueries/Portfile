@@ -3,7 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github integrated-inferences CausalQueries 1.4.3 v
+# Revert to GitHub once updated there.
+R.setup             cran integrated-inferences CausalQueries 1.4.5 v
 revision            0
 categories-append   economics math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,10 +12,10 @@ license             MIT
 description         Make, update and query binary causal models
 long_description    {*}${description}
 homepage            https://integrated-inferences.github.io/CausalQueries
-checksums           rmd160  cf4700aa822ee80a4b6bc9ee23146a7e969eee10 \
-                    sha256  bd9f873ab3bc1db254d5f9a36ba192dfadb88108f720972f9a90c6633ee5a413 \
-                    size    2319539
-github.tarball_from archive
+checksums           rmd160  75110ad7f334fddbbd0531d1bad902382433aa44 \
+                    sha256  830123bb6da38f2d32e1f483e38a627f5d932215f0531a8ae41e3ddbed2d657d \
+                    size    488021
+# github.tarball_from archive
 
 depends_lib-append  port:R-BH \
                     port:R-dirmult \
