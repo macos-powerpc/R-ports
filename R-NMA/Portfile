@@ -3,22 +3,23 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran noma NMA 1.4-3
-revision            1
+R.setup             cran nomahi NMA 3.1-1
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
 description         Network meta-analysis based on multivariate meta-analysis models
 long_description    {*}${description}
-homepage            https://www.ism.ac.jp/~noma/file/software/NMA.r
-checksums           rmd160  7aee8c472f3fd2d9b71ac6dd26518df34168f5aa \
-                    sha256  e2aab0b20f74e2bb151885cdedbda8f22ddfbfb5d50e1f56270520c07f56c327 \
-                    size    37384
+homepage            https://github.com/nomahi/NMA
+checksums           rmd160  d1843f6f8547062dd55e69245d38f74f31897b52 \
+                    sha256  10b275d644dc4059cf5bee5b61a0688c31412e5d978131b25d586ea257ef173c \
+                    size    51472
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-forestplot \
                     port:R-ggplot2 \
                     port:R-metafor \
+                    port:R-nleqslv \
                     port:R-stringr
 
 test.run            yes
