@@ -4,8 +4,8 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran JeffreyRacine np 0.60-18
-revision            1
+R.setup             cran JeffreyRacine np 0.60-19
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL
@@ -13,15 +13,16 @@ description         Nonparametric kernel smoothing methods \
                     for mixed data types
 long_description    {*}${description}
 homepage            https://github.com/JeffreyRacine/R-Package-np
-checksums           rmd160  4515ea56a2455cdceeabf187c4ba2e54c1888766 \
-                    sha256  b21c54c1ac2cb2105087b8af012e0444b2a53b47965f42e776c094b85a7c2a9b \
-                    size    1505450
+checksums           rmd160  1982058d723795df18f62d5964da0560003fa0da \
+                    sha256  433de4e2ecde0622d3db3663679d1cd5e3ada4d65edbe88bf8107a12de53f1a6 \
+                    size    1505644
 
 depends_lib-append  port:R-cubature \
                     port:R-quadprog \
                     port:R-quantreg
 
-depends_test-append port:R-ks \
+depends_test-append port:R-crs \
+                    port:R-ks \
                     port:R-logspline
 
 test.run            yes
