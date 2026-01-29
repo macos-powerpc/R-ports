@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github guido-s netmeta 3.2-0
+R.setup             github guido-s netmeta 3.3-1
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Network meta-analysis using frequentist methods
 long_description    {*}${description}
-checksums           rmd160  76fb38a029c0009bb40c73c15607abcea197c54b \
-                    sha256  9eb7715bdee279e025eec5626e9c3bab5f72e4b1f7935fa9e64853b770205d55 \
-                    size    1090701
+checksums           rmd160  a99e404ee14d37217a72e1a9154fd05dacee7a3d \
+                    sha256  a3ba5a143093404b9dc6610a544f46713ed0745e517def0399a1e5da7efaf969 \
+                    size    1172846
 github.tarball_from archive
 supported_archs     noarch
 
@@ -29,11 +29,14 @@ depends_lib-append  port:R-colorspace \
 # Test dep on R-crossnma is dropped.
 depends_test-append port:R-brglm2 \
                     port:R-cccp \
+                    port:R-gemtc \
                     port:R-graph \
                     port:R-gridExtra \
+                    port:R-knitr \
                     port:R-R.rsp \
                     port:R-rgl \
                     port:R-Rgraphviz \
+                    port:R-rmarkdown \
                     port:R-testthat \
                     port:R-tictoc \
                     port:R-writexl
