@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran glmmLasso 1.6.3
-revision            2
+R.setup             cran groll glmmLasso 1.6.4
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         Variable selection for generalized linear mixed models by l1-penalized estimation
 long_description    {*}${description}
-checksums           rmd160  fe325cf46b5d3648305fb01ce8bc45cb836c35dd \
-                    sha256  2fb2bbdec58bf18dd1a7cde82c23346c29629c72a6d83801c5b3425b759d5cac \
-                    size    69514
+checksums           rmd160  886d0b068a17f680895ce32b7134f99f1d0c250f \
+                    sha256  497ca067e5316cc3ab931914890b2041fb078317dbe33446f1e2b16eca98a43a \
+                    size    72013
 
 depends_lib-append  port:R-minqa \
                     port:R-Rcpp \
