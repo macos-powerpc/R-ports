@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-project timeDate 4051.111
+R.setup             cran r-project timeDate 4052.112
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             GPL-2+
 description         Rmetrics – chronological and calendar objects
 long_description    {*}${description}
 homepage            https://geobosh.github.io/timeDateDoc
-checksums           rmd160  79e34641f2e28373b75303ab802974308db21304 \
-                    sha256  fb9513f6049effed47e9e97804e96f27d38a6935fc8bb59a9d68bf2aac9021d5 \
-                    size    366544
+checksums           rmd160  5ef5259181f356e00025377a88c50c644936199c \
+                    sha256  7f5b8e294f9fdf977cb721e711a6fcd664e379ee1b0ddb4c733374940e0e4646 \
+                    size    367313
 supported_archs     noarch
 
 depends_test-append port:R-RUnit
