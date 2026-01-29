@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran duxbury netmediate 1.1.0
+R.setup             cran duxbury netmediate 1.1.1
 revision            0
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Micro-macro analysis for social networks
 long_description    {*}${description}
-checksums           rmd160  e20c7dd38d89072e88fd77f6c5894183bda8e127 \
-                    sha256  a63c344840fbb7df4e3aa91bc4b95013573c411ee03f8d0083175d3995f5623b \
-                    size    55420
+checksums           rmd160  e4de505a5d081e4530ec31b34023d71b253a8496 \
+                    sha256  26677ea1535c408bae927a15e860c2baaf5fc7e4d7bd4de2a45b785a8edeb8d5 \
+                    size    55586
 supported_archs     noarch
 
 depends_lib-append  port:R-btergm \
