@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran MathsCell nlsic 1.1.1
+R.setup             cran MathsCell nlsic 1.2.0
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -13,12 +13,13 @@ license             GPL-2
 description         Non-linear least squares with inequality constraints
 long_description    {*}${description}
 homepage            https://github.com/MathsCell/nlsic
-checksums           rmd160  f072b1ddb4270c0729f4a0b370ff94798da9aaa6 \
-                    sha256  89bf3dc366894e23c98a139fb186db7fbf18fee853599cdf8573957189438ae5 \
-                    size    24288
+checksums           rmd160  b964c51911113bd69ab457f8ab0b8210609f7bc6 \
+                    sha256  d88ab35fb771f7f0959d0500cbbc7b106fb93e26c44cb34898878b3aced1b809 \
+                    size    25420
 supported_archs     noarch
 
 depends_lib-append  port:R-dotty \
+                    port:R-glue \
                     port:R-nnls
 
 depends_test-append port:R-limSolve \
