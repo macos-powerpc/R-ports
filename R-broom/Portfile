@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran tidymodels broom 1.0.11
+R.setup             cran tidymodels broom 1.0.12
 revision            0
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             MIT
 description         Convert statistical objects into tidy tibbles
 long_description    {*}${description}
 homepage            https://broom.tidymodels.org
-checksums           rmd160  651699861e177ecae167b0a3b8e1901858f7428f \
-                    sha256  6db69ca6ecc4fc310cd5ec2559169cbddeb5c26946663c689e84f459347b17e6 \
-                    size    510265
+checksums           rmd160  be5904bf26bc791b938b7e80cb80fe2675cce49b \
+                    sha256  29c483cc0d39d402f4d35415e054cab7733ad8e543629b29cc8f1e26aee0f79b \
+                    size    510457
 supported_archs     noarch
 
 depends_lib-append  port:R-backports \
@@ -56,8 +56,8 @@ depends_test-append port:R-AER \
                     port:R-glmnetUtils \
                     port:R-gmm \
                     port:R-Hmisc \
-                    port:R-irlba \
                     port:R-interp \
+                    port:R-irlba \
                     port:R-joineRML \
                     port:R-Kendall \
                     port:R-knitr \
@@ -72,6 +72,7 @@ depends_test-append port:R-AER \
                     port:R-lmtest \
                     port:R-lsmeans \
                     port:R-maps \
+                    port:R-margins \
                     port:R-mclust \
                     port:R-mediation \
                     port:R-metafor \
