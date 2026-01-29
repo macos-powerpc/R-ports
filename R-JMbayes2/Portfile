@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is outdated.
-R.setup             cran drizopoulos JMbayes2 0.5-7
+R.setup             cran drizopoulos JMbayes2 0.6-0
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             GPL-3+
 description         Network meta-analysis using Bayesian methods
 long_description    {*}${description}
 homepage            https://drizopoulos.github.io/JMbayes2
-checksums           rmd160  055775fd9e9e87395b6e9cae600011e34732735a \
-                    sha256  6ead099eb981c3d8436f093e67621f77201867ada7b2993df73223b246364d36 \
-                    size    306174
+checksums           rmd160  9fded41bb08e0d1e0a4d9cdaf9114b3781d55184 \
+                    sha256  35544aa0c804bd3c62e635c68921630efa26754ce030ca008bead93260430998 \
+                    size    332861
 
 depends_lib-append  port:R-abind \
                     port:R-coda \
@@ -24,7 +24,8 @@ depends_lib-append  port:R-abind \
                     port:R-matrixStats \
                     port:R-parallelly \
                     port:R-Rcpp \
-                    port:R-RcppArmadillo
+                    port:R-RcppArmadillo \
+                    port:R-survC1
 
 compilers.setup     require_fortran
 
