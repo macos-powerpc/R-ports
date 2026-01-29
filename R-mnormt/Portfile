@@ -3,16 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran mnormt 2.1.1
-revision            3
+R.setup             cran adelchi.azzalini mnormt 2.1.2
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             {GPL-2 GPL-3}
 description         The Multivariate Normal and t distributions, and their truncated versions
 long_description    {*}${description}
 homepage            http://azzalini.stat.unipd.it/SW/Pkg-mnormt
-checksums           rmd160  a869d5781018922bdfbc0d9c9e118cf13a905a49 \
-                    sha256  95fca70378af0afd5a388982ba5528f5b27e02157eeb9940a0a9762d11511308 \
-                    size    65806
+checksums           rmd160  5ba4d7696d689f0de839d054df7ac21e8f9f6c7e \
+                    sha256  684fe9e07cf0b448cf6f0eda026606d8f4e4fd20f077f108630098ae7d0a09b2 \
+                    size    64436
 
 compilers.setup     require_fortran
+
+test.run            yes
