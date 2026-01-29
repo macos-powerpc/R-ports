@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran MathsCell bspline 2.5.0
+R.setup             cran MathsCell bspline 2.5.1
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             GPL-2
 description         B-spline interpolation and regression
 long_description    {*}${description}
 homepage            https://github.com/MathsCell/bspline
-checksums           rmd160  d229839ae3aa436bf8c634d11f6e27730309303e \
-                    sha256  239563c5f26d9224a7ec5d92bb1d889186e9b96d576994ca446acd29bb847506 \
-                    size    27222
+checksums           rmd160  9875ca64e444aea357ae5da8febb4422eee8bfff \
+                    sha256  bf72a7ec679e5971506942aeb12a01d1bcd8dc50f00b7d5626bc9d0342bb028d \
+                    size    27288
 
 depends_lib-append  port:R-arrApply \
                     port:R-nlsic \
