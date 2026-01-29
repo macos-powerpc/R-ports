@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is old.
-R.setup             cran cdriveraus ctsem 3.10.5
+R.setup             cran cdriveraus ctsem 3.10.6
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             GPL-3
 description         Continuous Time Structural Equation Modelling
 long_description    {*}${description}
 homepage            https://github.com/cdriveraus/ctsem
-checksums           rmd160  a66afd02af50d44ee4a634dae7e627f061bb728f \
-                    sha256  67380b80110ddbe709e18788cb3b1954055f6fe54bfedef245e3b9292711bfbe \
-                    size    1784924
+checksums           rmd160  0ceff4dedb881b3afa5dddb96396073fbbeb7f80 \
+                    sha256  0b4e3647a0728d06f672aee18094694128092480c3893d119ff2fe4739d81233 \
+                    size    1784933
 
 depends_lib-append  port:R-BH \
                     port:R-cOde \
