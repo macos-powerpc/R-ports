@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran fatihorcan84 MonteCarloSEM 0.0.8
-revision            2
+R.setup             cran fatihorcan84 MonteCarloSEM 2.0.0
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3+
 description         Monte Carlo data simulation package
 long_description    {*}${description}
-checksums           rmd160  25f665402f0cb49f104600c99212bf5417eba385 \
-                    sha256  4dd294842b5433d369bf752d3f463b0f85ff341b9d6bbd5db0a2c9ee91322c51 \
-                    size    11723
+checksums           rmd160  c467636e4bd09e5454f2e4737813b9ccc177f21a \
+                    sha256  13ab773009ae023931c5bf9dbfc80cd5643a740c30ea27ca9887cec5b30bba76 \
+                    size    14623
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-lavaan
 
