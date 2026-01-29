@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran kollerma robustlmm 3.3-3
+R.setup             cran kollerma robustlmm 3.4-2
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         Robust linear mixed effects models
 long_description    {*}${description}
-checksums           rmd160  17a609c66550b195230c13c934fc6039b3cda57a \
-                    sha256  2d89b269b63d595534e050befd2cc173bed16f4af1e7bdb2c52e85764d1586b9 \
-                    size    3420631
+checksums           rmd160  ad07b89e33f08c81789c3e4f4f90251226458bb3 \
+                    sha256  61b2fe4a472e4e66df585c30153d3ada885325bf62a5cf4f47d08211d59ab741 \
+                    size    3437157
 
 depends_lib-append  port:R-fastGHQuad \
                     port:R-lme4 \
