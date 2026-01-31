@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran bayesm 3.1-6
-revision            2
+R.setup             cran perossichi bayesm 3.1-7
+revision            0
 categories-append   economics
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Bayesian inference for marketing and micro-econometrics
 long_description    {*}${description}
-checksums           rmd160  ec4720943689d167191f981a122bac9527bdc50b \
-                    sha256  17d72b9cdc090845f98e7a04640380d0baef8bc23d1487c8f64dc192fdb93cb5 \
-                    size    2267618
+checksums           rmd160  422ee55d17c253ef0e092a51bd676265c07491e7 \
+                    sha256  d207debbb7c6a4e37ed2b45336df156e454f3a214d90d24e1bca8a2ba8704999 \
+                    size    2221868
 
 depends_lib-append  port:R-Rcpp \
                     port:R-RcppArmadillo
