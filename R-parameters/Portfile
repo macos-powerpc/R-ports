@@ -3,8 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-# Revert to GitHub once updated there.
-R.setup             cran easystats parameters 0.28.2 v
+R.setup             github easystats parameters 0.28.3 v
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -13,10 +12,10 @@ license             GPL-3
 description         Processing of model parameters
 long_description    {*}${description}
 homepage            https://easystats.github.io/parameters
-checksums           rmd160  5856f720c992db298d34c54fdddc0670757adff3 \
-                    sha256  974ad206cb0bf854b94455b11861a97f466ff92c85e16d98eaf10fe7aca0ee31 \
-                    size    736211
-# github.tarball_from archive
+checksums           rmd160  db2bf7701d7c2d8aeba361db0fa5b8d2690ace6a \
+                    sha256  a8c26cb7c12eaddafa76e7334e468406c5ec4a22703dc1924f86bb0c21bceb87 \
+                    size    1138990
+github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-bayestestR \
