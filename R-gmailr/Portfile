@@ -3,24 +3,25 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github r-lib gmailr 2.0.0 v
-revision            2
+R.setup             github r-lib gmailr 3.0.0 v
+revision            0
 categories-append   devel net
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT
 description         Access the Gmail RESTful API
 long_description    {*}${description}
-checksums           rmd160  ba1fb8751b69e41bbdb2e261e7872ff2d28f3fbc \
-                    sha256  0d1f7a80da3619eb4a32768534dc49aa55d934bdea5f66dd022c60c0db30f925 \
-                    size    7502759
-github.tarball_from tarball
+checksums           rmd160  f140e124d245131fabc383c058db5bbf8cd0d711 \
+                    sha256  9f9ae77599c94cc61980794af943f936ae5dbd8a7822dd82afb014d54a0c17ea \
+                    size    7470142
+github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-base64enc \
                     port:R-cli \
                     port:R-crayon \
                     port:R-gargle \
+                    port:R-glue \
                     port:R-httr \
                     port:R-jsonlite \
                     port:R-lifecycle \
