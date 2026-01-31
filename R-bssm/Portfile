@@ -4,16 +4,16 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran helske bssm 2.0.2 v.
-revision            2
+R.setup             cran helske bssm 2.0.3 v.
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Bayesian inference of non-linear and non-Gaussian state space models
 long_description    {*}${description}
-checksums           rmd160  427cf621bbfe4145f4777045151a3a25fc7fc17f \
-                    sha256  d67b911c560e3b9da62fbe83751e8163e756500aea1579fb497cfc6245582e88 \
-                    size    2486081
+checksums           rmd160  edfafbbb42ba49333d81332f971bf01040b4cf8a \
+                    sha256  8014b484dbea83d286510babe246dd5745e15f99cd401c4828506fd4823b1073 \
+                    size    2491062
 
 depends_lib-append  port:R-bayesplot \
                     port:R-checkmate \
