@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran numbers 0.8-5
-revision            3
+R.setup             cran hwborchers numbers 0.9-2
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3+
 description         Number-theoretic functions
 long_description    {*}${description}
-checksums           rmd160  dd525b8a2fe3ad3a887952e12ad35e28ebbcf74d \
-                    sha256  77d5dedb7f953689ab9e89c14e673c0c8f644c8b392fab4ee4fb793930ad220b \
-                    size    51286
+checksums           rmd160  f4126011f4db376cc244f8d1434d8d9f10502017 \
+                    sha256  01e3150612a16eae2747f141f31f9edcae9f9f5df0136a209bf0cd866f5affcd \
+                    size    56287
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_test-append port:R-gmp
 
