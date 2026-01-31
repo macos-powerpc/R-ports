@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran s-fleck lgr 0.5.0 v
+R.setup             cran s-fleck lgr 0.5.2 v
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             MIT
 description         Fully featured logging framework
 long_description    {*}${description}
 homepage            https://s-fleck.github.io/lgr
-checksums           rmd160  0f2c6a2bd733408559bd8b41f38c09929b72dfad \
-                    sha256  c285a559ea310010be5be56df861b4e887c5ac095eb7b2218bc95578dc780bc0 \
-                    size    585652
+checksums           rmd160  f33a879f9acb729a3f495fcd3e5efaa36b05850e \
+                    sha256  4649e34129b3e1cbbca801983adbe6f857a748301bdb1330985e69dde9892273 \
+                    size    585978
 # github.tarball_from archive
 supported_archs     noarch
 
