@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran arne.henningsen linprog 0.9-6
+R.setup             r-forge arne.henningsen linprog 0.9-7
 revision            0
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             GPL-2+
 description         Linear Programming/Optimization
 long_description    {*}${description}
 homepage            https://linprog.r-forge.r-project.org
-checksums           rmd160  8f05239c3602883cf90ba9a7e5ef88e1b9cccd3a \
-                    sha256  8e5d38217b95795f1af715fd4283d35c74158f4ba6418636e981f7d6636a43e0 \
-                    size    18695
+checksums           rmd160  db82a77e93e46ce8170fc0f007389b9ef9fa10c8 \
+                    sha256  9f33ebdf33e0e21649892fcd3618446e586c8df19071242e5b16b8082d63103e \
+                    size    17178
 supported_archs     noarch
 
 depends_lib-append  port:R-lpSolve
