@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-project DPQmpfr 0.3-3
-revision            1
+R.setup             r-forge r-project DPQmpfr 0.3-4
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             GPL-2+
 description         DPQ (density, probability, quantile) distribution \
                     computations using MPFR
 long_description    {*}${description}
-checksums           rmd160  9609162f85ac41dd2681e99f8e4dde15037d2d1f \
-                    sha256  c6b70784537974de356277319fa6d0fd6d68e99913a449537939c80a7cf40d54 \
-                    size    63041
+checksums           rmd160  55d976c4a2675d603793f4b69f08d70ab1b265af \
+                    sha256  b0eaf1d23b57b02aa1386a65642338409a6c93bbb2010bc6682f318ee4af8358 \
+                    size    66547
 supported_archs     noarch
 
 depends_lib-append  port:R-DPQ \
