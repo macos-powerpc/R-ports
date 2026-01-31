@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran ADMM 0.3.3
-revision            3
+R.setup             cran kisung.you ADMM 0.3.4
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3+
 description         Algorithms using Alternating Direction Method of Multipliers
 long_description    {*}${description}
-checksums           rmd160  bb6956f4f3402effff34b83ca842f947d895669a \
-                    sha256  1618e822808c68ec76f9060dc39c6ac2cc6f5dff0603a0359f727490bf8d7111 \
-                    size    54946
+checksums           rmd160  9c0ac9859abf5522becf34f187a698a8ed947357 \
+                    sha256  b65d8250813dfdaacf4092eb5e9ed4f21b383ac2ba7c8b6a177e1fe92dc0cb33 \
+                    size    53414
 
 depends_lib-append  port:R-doParallel \
                     port:R-foreach \
