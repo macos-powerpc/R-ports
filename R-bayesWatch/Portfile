@@ -3,15 +3,15 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran murph290 bayesWatch 0.1.3
-revision            2
+R.setup             cran murph290 bayesWatch 0.1.4
+revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Bayesian change-point detection for process monitoring with fault detection
 long_description    {*}${description}
-checksums           rmd160  6922200282975114705cebee99f65824607583c2 \
-                    sha256  c178ab6f82358b6dcb5672bd6a1fde55709b6f2911d13f7d789215cc90e96e12 \
-                    size    2254002
+checksums           rmd160  7e2598d68791717c759ab9e2835135a5176f3a6e \
+                    sha256  e8804a96cf73480db4eaf3d08ca43965dedbc9bd7fc0edbd67a01d67780ff180 \
+                    size    2257180
 
 depends_lib-append  port:R-BDgraph \
                     port:R-BH \
