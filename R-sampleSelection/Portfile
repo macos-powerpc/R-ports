@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran sampleSelection 1.2-12
-revision            3
+R.setup             r-forge r-project sampleSelection 1.2-15
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
-license             {GPL-2 GPL-3}
+license             GPL-2+
 description         Sample selection models
 long_description    {*}${description}
-checksums           rmd160  5a3ca20ef417b5f118859314355b8f55e1ba31c2 \
-                    sha256  be0584c2a017843a2dbc34e9c42d7c5c15992e276bcc5c1b7b47382218e2a1aa \
-                    size    3121528
+checksums           rmd160  9a6439bcf4d2cb204161e3841fbab31a672775b5 \
+                    sha256  47a003a0889af5fe3ca1e24fb38307c2f5a6790e3fcd8f3f49058fbdd84776bc \
+                    size    3529964
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-Formula \
                     port:R-maxLik \
@@ -22,3 +22,8 @@ depends_lib-append  port:R-Formula \
                     port:R-mvtnorm \
                     port:R-systemfit \
                     port:R-VGAM
+
+depends_test-append port:R-Ecdat \
+                    port:R-lmtest
+
+test.run            yes
