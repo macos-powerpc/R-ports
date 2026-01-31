@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-project DPQ 0.6-0
+R.setup             cran r-project DPQ 0.6-1
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             GPL-2+
 description         DPQ: Density, Probability, Quantile computations
 long_description    {*}${description}
 homepage            https://r-forge.r-project.org/scm/viewvc.php/pkg/DPQ
-checksums           rmd160  b11333b31785ef102f14142590f46ce1552687f6 \
-                    sha256  34bac053b35b3ccdcf33521ec1aef69ec9c3afc6ecc5093d5c8627147abe214f \
-                    size    2035733
+checksums           rmd160  8d8f5f2ee2f30b09a9cff40c2e8e1a12e8a5d415 \
+                    sha256  db54be9f1b50927cf786788979300ce4dbed52af10b5a96a7e84259089bfe88c \
+                    size    2041353
 
 depends_lib-append  port:R-sfsmisc
 
