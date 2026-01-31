@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran mlindsk ess 1.1.2
-revision            2
+R.setup             cran mlindsk ess 1.1.2.1
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL-3
 description         Efficient step-wise selection in decomposable models
 long_description    {*}${description}
 homepage            https://github.com/mlindsk/ess
-checksums           rmd160  f0b43becc6b09bcd20d4708285abe2364fe4381d \
-                    sha256  b0ec29a5c44ac193763df9436f446304572434071c14eb23f65aa7612d10bcb2 \
-                    size    98835
+checksums           rmd160  ed382df51a825d25794482a075cb3c32a5d4108f \
+                    sha256  457e6bc2fc291241b92f1963cc738d9525736606c6d67883baa331c2337c570e \
+                    size    91453
 
 depends_lib-append  port:R-igraph \
                     port:R-Rcpp
