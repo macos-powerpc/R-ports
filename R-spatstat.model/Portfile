@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran spatstat spatstat.model 3.4-0
+R.setup             cran spatstat spatstat.model 3.6-1
 revision            0
 categories-append   math
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             GPL-2+
 description         Parametric statistical modelling and inference
 long_description    {*}${description} for the R-spatstat family.
 homepage            https://github.com/spatstat/${R.package}
-checksums           rmd160  c17c2f64a11d09551f03fd83c90f5ccc5724bbd0 \
-                    sha256  ae6f758295a1bae252b3bd20c40d773bb7f776f70479709297c5fb5fe04df151 \
-                    size    818106
+checksums           rmd160  6aab4372dcd989cc8ba7d90d2b25b1c55efeeb5c \
+                    sha256  9e59e5ddd75301b5a5eaf12ba12a44f7318dbd75f5f7b95feb633fa72fa57900 \
+                    size    857259
 
 depends_lib-append  port:R-abind \
                     port:R-goftest \

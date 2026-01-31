@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran spatstat spatstat.linnet 3.3-1
+R.setup             cran spatstat spatstat.linnet 3.4-0
 revision            0
 categories-append   math
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             GPL-2+
 description         Linear networks functionality
 long_description    {*}${description} of the R-spatstat family.
 homepage            https://github.com/spatstat/${R.package}
-checksums           rmd160  f16e2a4c4a5e68736a217b512cbec62cc3268fc6 \
-                    sha256  deca866a2db895d137bbf7fceb35bc12df80bb82972da45e1ff90b9c354092ab \
-                    size    292071
+checksums           rmd160  cdfe06df426372dc13fedbd993da6b63c7f62476 \
+                    sha256  9d72a0c88c1dfe7cd14e4cf42bd952ca6e85fe0764b7417ec0ade85fa6ae43a3 \
+                    size    330785
 
 depends_lib-append  port:R-spatstat.data \
                     port:R-spatstat.explore \

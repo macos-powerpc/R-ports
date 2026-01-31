@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran spatstat spatstat 3.4-0
+R.setup             cran spatstat spatstat 3.5-0
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             GPL-2+
 description         Spatial point pattern analysis, model fitting, simulation, tests
 long_description    {*}${description}
 homepage            https://github.com/spatstat/${R.package}
-checksums           rmd160  f0ef2912c48bb5878b4ab262e1cbfd38630f6344 \
-                    sha256  1b2bced2a79f4e6a85a24710d9e7f78139387f89ea2959fa4004fb0fcd0ef8c7 \
-                    size    4315917
+checksums           rmd160  df15f49bb174417fb6b9e571f828dbe1ce907e6b \
+                    sha256  7139b504b043496ad54d8fb5fa997ff0b9558c4a6e680a7d99ab3fc1a94725a4 \
+                    size    4418265
 # CRAN is lying.
 supported_archs     noarch
 

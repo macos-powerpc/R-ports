@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran spatstat spatstat.data 3.1-8
+R.setup             cran spatstat spatstat.data 3.1-9
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             GPL-2+
 description         Data-sets for R-spatstat family
 long_description    {*}${description}
 homepage            https://github.com/spatstat/${R.package}
-checksums           rmd160  bcc5ec30163969e78f631684e4f3e18f7846c8c8 \
-                    sha256  664c06d27ff8d09c3fabba76c4e2852490bf2d0746de979dddc30ad7957e5a9b \
-                    size    3021755
+checksums           rmd160  44d3c51fbe30ec16186d4d4cb0c5a042c418090c \
+                    sha256  e57b48fecad1ec72508f1485eee2c80de2de83ea72af29b2e98ef3bcf8f3246f \
+                    size    3021786
 supported_archs     noarch
 
 depends_lib-append  port:R-spatstat.utils

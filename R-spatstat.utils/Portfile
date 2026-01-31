@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran spatstat spatstat.utils 3.1-5
+R.setup             cran spatstat spatstat.utils 3.2-1
 revision            0
 categories-append   math
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             GPL-2+
 description         Utility functions for R-spatstat
 long_description    {*}${description}
 homepage            https://github.com/spatstat/${R.package}
-checksums           rmd160  340d5de60f75c5665e09b203fb757acc797935e2 \
-                    sha256  bf52226f564a85b225f9e297dcb62608920828ae069536076dc0264a35ca7f68 \
-                    size    104176
+checksums           rmd160  0527469fa3b819d529d7953602771476c8bf9487 \
+                    sha256  619a129077016c2c14f7bb8cd8b66abe7dcf7458187e5d984e9b77e9e6bd6fb1 \
+                    size    106058
 
 depends_test-append port:R-spatstat.model
 
