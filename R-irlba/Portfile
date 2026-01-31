@@ -3,16 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran bwlewis irlba 2.3.5.1
-revision            3
+R.setup             cran bwlewis irlba 2.3.7
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Fast truncated singular value decompositions
 long_description    Fast truncated singular value decomposition and principal components analysis \
                     for large dense and sparse matrices.
-checksums           rmd160  95eb1a514b50ef88d66d87187d54ac0ee6629570 \
-                    sha256  2cfe6384fef91c223a9920895ce89496f990d1450d731e44309fdbec2bb5c5cf \
-                    size    233555
+homepage            https://github.com/bwlewis/irlba/issues
+checksums           rmd160  91598ec756fa564f4edeed9e0a3f9b6ef9bf5950 \
+                    sha256  33acd384832443df378c2e906440a90a1928f79a57ef324852f0fe846ff66899 \
+                    size    391622
 
 compilers.setup     require_fortran
+
+test.run            yes
