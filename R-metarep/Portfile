@@ -3,19 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran IJaljuli metarep 1.2.0
-revision            2
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+R.setup             cran IJaljuli metarep 1.2.1
+revision            0
+platforms           {darwin any}
+maintainers         nomaintainer
 license             GPL-2+
 description         Replicability-analysis tools for meta-analysis
 long_description    {*}${description}
 homepage            https://github.com/IJaljuli/metarep
-checksums           rmd160  37b66b1a254b83ff72704d3b95d4ca42a50bef3b \
-                    sha256  c9ea8481e702f3236e74fb3b37b2816778a1b48349e190b05de0591f6cdbae13 \
-                    size    179862
+checksums           rmd160  9b5db3a1e734d56e894200e597797f778d6e0c93 \
+                    sha256  12341d5c0b0e26b88071d2f2a05b330b4713303509f17be3a1fe5b3d72d6765c \
+                    size    181111
 # Despite CRAN claim, there is nothing to compile here.
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-meta
 
