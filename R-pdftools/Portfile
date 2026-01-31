@@ -4,16 +4,16 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran ropensci pdftools 3.6.0
+R.setup             cran ropensci pdftools 3.7.0
 revision            0
 categories-append   print
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Text extraction, rendering and converting of PDF documents
 long_description    {*}${description}
-checksums           rmd160  d3b4f8d5aefe01afcaf25a6899d9d324483162f7 \
-                    sha256  4529a7669baaadbfbbb328c8c75d34c86f51cab5071945ff9cedd8f633f421c4 \
-                    size    935419
+checksums           rmd160  ea271ff4d1e04c52b51e5f3f6ae0cab641186c3a \
+                    sha256  07f7ef60086c63e98324835072435861bd2e94b0ebf5df5d68d11412f9cf6e0d \
+                    size    935572
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
