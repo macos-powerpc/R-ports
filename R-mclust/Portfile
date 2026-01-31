@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran mclust-org mclust 6.1.1
-revision            1
+R.setup             cran mclust-org mclust 6.1.2
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
@@ -12,9 +12,9 @@ description         Gaussian mixture modelling for model-based clustering, \
                     classification and density estimation
 long_description    {*}${description}
 homepage            https://mclust-org.github.io/mclust
-checksums           rmd160  465230463fb1eba0158293888c8d0b6f59b00f69 \
-                    sha256  ddd7018e5e6ea7f92c7fc9872b391491b7e91c2cd89ef1dcaf4408afb5116775 \
-                    size    2753243
+checksums           rmd160  a2cd43084bb9954764e70af515bec362d05edc4d \
+                    sha256  5b1db4eaa5d5af4a4bc6c0ffaaf3bb0c389a7b143d11305bc3d01f79b12049cc \
+                    size    2779985
 
 compilers.setup     require_fortran
 
