@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran dmurdoch rgl 1.3.24
+R.setup             cran dmurdoch rgl 1.3.31
 revision            0
 categories-append   graphics
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             GPL
 description         3D visualization using OpenGL
 long_description    {*}${description}
 homepage            https://dmurdoch.github.io/rgl
-checksums           rmd160  2a571e458eef17127ca77bb9f7799e43845df7d6 \
-                    sha256  9f580a97c56eaf28344da83a2309e35cd665fa77ba07a324d9c4789bdc03ee49 \
-                    size    4146898
+checksums           rmd160  c7598a92c6d6ea5bf6ed0cba63d5ee4177618f8e \
+                    sha256  76f534358751390845ce1c89c6007cc146f95de5560fd7baaea2406fd95fc0d4 \
+                    size    4151619
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
