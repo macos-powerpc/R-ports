@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github tidymodels rsample 1.3.1 v
+R.setup             github tidymodels rsample 1.3.2 v
 revision            0
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ description         General resampling infrastructure
 long_description    Classes and functions to create and summarize different types \
                     of resampling objects (e.g. bootstrap, cross-validation).
 homepage            https://rsample.tidymodels.org
-checksums           rmd160  33458ee322ecd0a92fd062639155c759f1b6f8b0 \
-                    sha256  4c97b66ea9d391588592209bc887b91e445f2cabc1cf2f702d51432f598b4276 \
-                    size    1383861
+checksums           rmd160  76add5a751e7b06d77a775fe58590f35c8f5b943 \
+                    sha256  5fddd04ed1b98f9b7dae044a20f1b99bec94747b0e11dc0f049fa7b8d40401bf \
+                    size    1391541
 github.tarball_from archive
 supported_archs     noarch
 
