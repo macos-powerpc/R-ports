@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran eduardoconceicao DEoptimR 1.1-4
+R.setup             r-forge eduardoconceicao DEoptimR 1.1-5
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -11,9 +11,9 @@ maintainers         nomaintainer
 license             GPL-2+
 description         Differential Evolution Optimization in pure R
 long_description    {*}${description}
-checksums           rmd160  fc395e6b02411f31c8fbcb1759f6a09fc440227d \
-                    sha256  5a1bdd10d6f75e77e91bed0568e7be9f08dd2996a0b2ca2b3c80a71626e602a2 \
-                    size    19586
+checksums           rmd160  8faec5ffac6dc0ba76211d15cc32fdac3142c40f \
+                    sha256  231562e73c36e64492c41dd5112f738f013153cfdfcd1ff5c1b463d00775be4f \
+                    size    18846
 supported_archs     noarch
 
 depends_test-append port:R-robustbase
