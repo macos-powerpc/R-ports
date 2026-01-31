@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran easystats see 0.12.0 v
+R.setup             cran easystats see 0.13.0 v
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -13,9 +13,9 @@ license             GPL-3
 description         Model visualisation toolbox for R-easystats and R-ggplot2
 long_description    {*}${description}
 homepage            https://easystats.github.io/see
-checksums           rmd160  8aef083091e29c5240243969113ec4831e051dd2 \
-                    sha256  423c5eeee50cee44c22c30f87d7118a2032b3a879eaa4bf0f3dc7d3046114a44 \
-                    size    144555
+checksums           rmd160  5a6a59a866bb765e16d1a6889d610a405c64d59a \
+                    sha256  a0fa4a1f586ca8fd74d4762d4fbc3b116fdb82d4e1a70ba12c0879e95d799ac5 \
+                    size    148935
 # github.tarball_from archive
 supported_archs     noarch
 
