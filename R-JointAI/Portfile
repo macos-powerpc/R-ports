@@ -3,19 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran nerler JointAI 1.0.6
-revision            2
+R.setup             cran nerler JointAI 1.1.0
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Joint Analysis and Imputation of Incomplete Data
 long_description    {*}${description}
 homepage            https://nerler.github.io/JointAI
-checksums           rmd160  0ebeda02e9bcdaa2e43a973ae769af07f9d3e54e \
-                    sha256  e57e4d4c0a07112e9108aed93dfbf7d3542e14bfd25a7382616d1de1895d93ed \
-                    size    2607993
+checksums           rmd160  7804e2d832aaa372ca18538f0a7cd7df3cb7bc93 \
+                    sha256  6432b56edde209b419729042b66ddf44cf13bbb4b7f894a0fda0da62ad7796d6 \
+                    size    3796401
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-coda \
                     port:R-future \
@@ -27,11 +27,13 @@ depends_lib-append  port:R-coda \
 depends_run-append  port:jags
 
 depends_test-append port:R-bookdown \
+                    port:R-corrplot \
                     port:R-covr \
                     port:R-knitr \
                     port:R-ggplot2 \
                     port:R-ggpubr \
                     port:R-rmarkdown \
+                    port:R-svglite \
                     port:R-testthat
 
 test.run            yes
