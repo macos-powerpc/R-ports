@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran blakemoya copre 0.2.1
-revision            1
+R.setup             cran blakemoya copre 0.2.2
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Tools for non-parametric martingale posterior sampling
 long_description    Performs Bayesian non-parametric density estimation using Martingale posterior distributions \
                     including the Copula Resampling (CopRe) algorithm.
-checksums           rmd160  16592ebc07e6308adde9d50abeaa88076bd3994f \
-                    sha256  11d550ef30c20b566ad557b6e8eb3685cdb17a20788cd64750725c59f9d0f7d1 \
-                    size    2470620
+checksums           rmd160  602e5af950d48ef1b397fb249cdd768c27c47458 \
+                    sha256  09b6ef9c149a3364c7b19b0826b9b49ff593e7d10513007e73a4b560f0a3b955 \
+                    size    2471111
 
 depends_lib-append  port:R-abind \
                     port:R-BH \
