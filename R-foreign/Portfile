@@ -6,15 +6,15 @@ PortGroup           R 1.0
 R.recommended       yes
 
 # This is a recommended package. Keep it CRAN-sourced.
-R.setup             cran r-project foreign 0.8-90
-revision            1
+R.setup             cran r-project foreign 0.8-91
+revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Read and write data in other statistical software formats
 long_description    {*}${description}. Recommended package.
 homepage-append     https://svn.r-project.org/R-packages/trunk/foreign
-checksums           rmd160  5f2575e24463a88073eb9534d82ddcd3a40f1eec \
-                    sha256  1dc6798002a50b9014227a2d20c0c2450fe6feb991a4a0b3bee36c0ee779a196 \
-                    size    365447
+checksums           rmd160  4c5d3e7ec83bcb6606958b4c9b4a92ffdbde913c \
+                    sha256  fdf6c2c6077659a7dc069e58528d3c7cd93b6571c708d98994565386afce5298 \
+                    size    366215
 
 test.run            yes
