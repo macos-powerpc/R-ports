@@ -3,15 +3,15 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran edgarcia circular 0.5-1
-revision            1
+R.setup             cran edgarcia circular 0.5-2
+revision            0
 maintainers         nomaintainer
 license             GPL-2
 description         Circular statistics
 long_description    {*}${description}
-checksums           rmd160  a6afd4b495b74cf9607b032acb5109c5d69f7c1b \
-                    sha256  fb59fc9119d777fbc77fe054db83abce84c470ac3269c2aa42b5f5df7683f3d9 \
-                    size    183830
+checksums           rmd160  466b028e0293b5cea0a348987de68717bd26bb3c \
+                    sha256  3925622cd99d902d2c0e11b85127873f3d301f2b9db05edf722a9c10731f7ddc \
+                    size    184067
 
 depends_lib-append  port:R-mvtnorm
 
