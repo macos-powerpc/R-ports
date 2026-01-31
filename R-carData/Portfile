@@ -3,15 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran carData 3.0-5
-revision            3
-maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
-license             {GPL-2 GPL-3}
+R.setup             cran brad.price carData 3.0-6
+revision            0
+platforms           {darwin any}
+maintainers         nomaintainer
+license             GPL-2+
 description         Companion to Applied Regression Data Sets
 long_description    {*}${description}
 homepage            https://socialsciences.mcmaster.ca/jfox/Books/Companion/index.html
-checksums           rmd160  5442c2ade5c3e3dd4382d359ed43768ebe3fd782 \
-                    sha256  02e77159b33e3afb8cd9cfab11cf5a996a93175f924b07d991ce44bc6e16451a \
-                    size    1004201
+checksums           rmd160  2d055c58fcef094c904d7248775aa4dc433aa7c2 \
+                    sha256  b14d5b40b35e5a59c1ec1cdf3cce2cea239b60ff6977a821cca0d6d5b4112551 \
+                    size    995588
 supported_archs     noarch
-platforms           {darwin any}
+
+depends_test-append port:R-car
+
+test.run            yes
