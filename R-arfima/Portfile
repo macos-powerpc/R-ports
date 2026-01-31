@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran arfima 1.8-1
-revision            3
+R.setup             cran jqveenstra arfima 1.8-2
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Fractional ARIMA (and other long memory) time series modelling
 long_description    {*}${description}
-checksums           rmd160  c3cbd11130937d67562cf4b17c6268c8b5ed9cd3 \
-                    sha256  8beb0ba5c5fc5fcc54462f9edb121779deffdddff25df53aeed8279444694bd7 \
-                    size    84567
+checksums           rmd160  233c1e90be21cd6ddf6b77ed7fc01112963777af \
+                    sha256  a9b458142296c6654d31bb0c3e5cca931aa066feaf234eca40b1a900d5603d15 \
+                    size    85109
 
 depends_lib-append  port:R-ltsa
 
