@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran danielmork dlmtree 1.1.0
+R.setup             cran danielmork dlmtree 1.1.1
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             GPL-3+
 description         Bayesian Treed Distributed Lag Models
 long_description    {*}${description}
 homepage            https://danielmork.github.io/dlmtree
-checksums           rmd160  eb1dff31236d4fef41db5be1a2ad112b422d92d8 \
-                    sha256  caf8b13bbd4ad69b565547c4770b3ea5d87c386f7ba0b5acf5e5707bd15b5ffa \
-                    size    3380253
+checksums           rmd160  a6b807a4060cc2085820c74d2658e2fba1de5b5a \
+                    sha256  044edca8a4e7ef9b04be25aa442f2526c473923175a486c5dd8e25f31cd5978d \
+                    size    3380062
 # github.tarball_from archive
 
 depends_lib-append  port:R-coda \
