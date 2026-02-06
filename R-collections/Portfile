@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran randy3k collections 0.3.10
+R.setup             cran randy3k collections 0.3.11
 revision            0
 categories-append   devel
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             MIT
 description         High-performance container data types
 long_description    {*}${description}
 homepage            https://randy3k.github.io/collections
-checksums           rmd160  41dd9df6a40ee4c954cc23933c9a37cc7536b668 \
-                    sha256  f6a00769060990f13308e709b1d099ddcbdfabbb77fded4a9f704a775135ef2e \
-                    size    111861
+checksums           rmd160  bb81967fee1446b03f0114dfa736704991607f62 \
+                    sha256  7ef40db7dbb161b3345289699b1e1d0b9a2cb0abd4f8e46a9bd1b3b890bc7584 \
+                    size    111980
 
 depends_test-append port:R-testthat
 
