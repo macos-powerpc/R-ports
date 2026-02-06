@@ -4,16 +4,16 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran gavinsimpson permute 0.9-8 v
+R.setup             cran gavinsimpson permute 0.9-10 v
 revision            0
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         Restricted permutations
 long_description    Functions for generating restricted permutations of data.
-checksums           rmd160  2e6c9d6c28d1afd2b9f5e95b5097bc61a878ba69 \
-                    sha256  f2c838526046925c6e7495784846139bb6f0ac6712abf0335096a473dc29e34b \
-                    size    119505
+checksums           rmd160  a2a9a75faad7de76e6cee5fbcaa2c475ca6d1834 \
+                    sha256  dc182b20d2f0dcafbe0384640b949b9d70faee4cbd20bf88ab55de811b105104 \
+                    size    120438
 # github.tarball_from archive
 supported_archs     noarch
 
