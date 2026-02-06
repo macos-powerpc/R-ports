@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           openssl 1.0
 PortGroup           R 1.0
 
-R.setup             r-forge s-u RSclient 0.7-10
-revision            2
+R.setup             r-forge s-u RSclient 0.7-12
+revision            0
 categories-append   net
 maintainers         nomaintainer
 license             GPL-2
 description         Client for Rserve
 long_description    {*}${description}, allowing to connect to Rserve instances and issue commands.
-homepage            https://www.rforge.net/RSclient
+homepage            https://www.rforge.net/${R.package}
 master_sites        ${homepage}/snapshot/
-checksums           rmd160  f6daf14983855395a433d3d32dc32673d46d904b \
-                    sha256  a5d11532b7bf6534e3143eef29a91338d367d48d30647773e20601bc640d5d47 \
-                    size    39735
+checksums           rmd160  6b6b3b40c0bf79386e0914ca392cbd38f8adf3c9 \
+                    sha256  cb62e62536508ec1dab402969e56fea16501705ba6c6a2644d910b6b8caeca86 \
+                    size    41645
 
 test.run            yes
