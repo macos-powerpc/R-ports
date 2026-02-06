@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github ygeunkim bvhar 2.3.0 v
+R.setup             github ygeunkim bvhar 2.4.0 v
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             MIT
 description         Bayesian Vector Heterogeneous Autoregressive Modelling
 long_description    {*}${description}
 homepage            https://ygeunkim.github.io/package/bvhar
-checksums           rmd160  0f2b7686de60cadd84afa58d49146236c75c6c6e \
-                    sha256  ec0a7b5c79d4f34ef615a0448d443fa7c26c4617691e3de1e9018dfe4dfe2562 \
-                    size    680380
+checksums           rmd160  f6e9deae1cecb41eb3b2e7ae3190793abad8c677 \
+                    sha256  a0a3d6e10d60cb9844f8ea24188a8aba091bb31ea2fc6f71701ff3a3686ea07e \
+                    size    634532
 github.tarball_from archive
 
 depends_lib-append  port:R-bayesplot \
@@ -27,6 +27,7 @@ depends_lib-append  port:R-bayesplot \
                     port:R-purrr \
                     port:R-Rcpp \
                     port:R-RcppEigen \
+                    port:R-RcppNumerical \
                     port:R-RcppSpdlog \
                     port:R-RcppThread \
                     port:R-tibble \
