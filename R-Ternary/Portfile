@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github ms609 Ternary 2.3.3
-revision            1
+R.setup             github ms609 Ternary 2.3.6
+revision            0
 categories-append   graphics
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,16 +12,16 @@ license             GPL-2+
 description         Create Ternary and Holdridge plots
 long_description    {*}${description}
 homepage            https://ms609.github.io/Ternary
-checksums           rmd160  e82066a31131b8eed3e083e31972d4aa7affb3ec \
-                    sha256  70a4a486ae4dca4ffbcf0b3aa6f05a1c77bc05602c71d7efba124e6ea621915e \
-                    size    778302
+checksums           rmd160  edf7a5e51f60ec927f4609d67cb61cd65a87b4c9 \
+                    sha256  b0b5291efe819d50c1ef8349e8140c9bf5cfffc36d9c97ffbcb397519203cf4d \
+                    size    782239
 github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-PlotTools \
-                    port:R-RcppHungarian \
                     port:R-shiny \
-                    port:R-sp
+                    port:R-sp \
+                    port:R-TreeDist
 
 # FIXME: one test fails:
 # https://github.com/ms609/Ternary/issues/87
