@@ -4,18 +4,18 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran ropensci bibtex 0.5.1
-revision            3
+R.setup             cran ropensci bibtex 0.5.2
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
-license             {GPL-2 GPL-3}
+license             GPL-2+
 description         Utility to parse bibtex files
 long_description    {*}${description}
 homepage            https://docs.ropensci.org/bibtex
-checksums           rmd160  c2d747be424aa858f6fed3a54b7189dd61f4d847 \
-                    sha256  f3c1a0a4e666c4addd73ff13ce8ce073d73d10ebca36d333328ade8a0b493ed1 \
-                    size    79311
+checksums           rmd160  5381faee7bed7a150f06d8b1b1e3276dd7101be8 \
+                    sha256  a8e309708370800109ca67e307c68206ab098b8791de0b19b91d3001eca2a91f \
+                    size    88331
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-backports
 
