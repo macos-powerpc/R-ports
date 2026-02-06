@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran giona ghypernet 1.1.0
-revision            3
+R.setup             cran giona ghypernet 1.1.2
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             AGPL-3
 description         Fit and simulate generalised hypergeometric ensembles of graphs
 long_description    {*}${description}
-checksums           rmd160  a782efd62bc029c8aec5dac8af1d048bd9cc022f \
-                    sha256  89ac157aefe1afe57a0221955d5afcdfda1a1fd319290a90ba565d68f7199c4c \
-                    size    716715
+checksums           rmd160  18995832a28878ec68f7b2e661a7aa11520e9d81 \
+                    sha256  58f04c94b4113e6a84ef354a305acab0441ed0dcd474a762d9ab1c907d3307df \
+                    size    483145
 supported_archs     noarch
 
 depends_lib-append  port:R-dplyr \
