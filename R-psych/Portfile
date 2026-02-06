@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran revelle psych 2.5.6
+R.setup             cran revelle psych 2.6.1
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ description         Procedures for psychological, psychometric \
                     and personality research
 long_description    {*}${description}
 homepage            https://personality-project.org/r/psych
-checksums           rmd160  ca9c6c384e3e7057cc0371f80366886d3aa32f50 \
-                    sha256  ced7eb0ef4e6be7ddab22b0b3f934d3dbd25eefc394067ff9fa1a916ec315110 \
-                    size    1152216
+checksums           rmd160  71e23955e5efaeb64a6e9bdef7299709b6a99a65 \
+                    sha256  d0629626f01baa705beffbfd55e14229a16c4875b21b6992d787bb560e9e11f8 \
+                    size    1175052
 supported_archs     noarch
 
 depends_lib-append  port:R-GPArotation \
