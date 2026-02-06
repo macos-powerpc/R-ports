@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran matrix-profile-foundation matrixprofiler 0.1.9
-revision            5
+R.setup             cran matrix-profile-foundation matrixprofiler 0.1.10
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Matrix profile for R
 long_description    This is the core functions needed by the tsmp package. \
                     The low-level and carefully checked mathematical functions are here.
-checksums           rmd160  62e5f89bfbc8e356ee1cf8aaaf4870f08fdf3c76 \
-                    sha256  4655387cb9581e9459835cf62a6ca93214a524671972912d4984f95dc1eb17cf \
-                    size    280769
+checksums           rmd160  9ceb64f589f91cef8fa83db2ffb82bb4f5d7d81a \
+                    sha256  9ed39350cd8ef8041be6b3bceee7208d1fe5f0638127771b516fff20962b324a \
+                    size    282074
 
 depends_lib-append  port:R-checkmate \
                     port:R-Rcpp \
