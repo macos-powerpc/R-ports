@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github r-dbi RMariaDB 1.3.3 v
-revision            1
+R.setup             github r-dbi RMariaDB 1.3.5 v
+revision            0
 categories-append   databases
 maintainers         nomaintainer
 license             MIT
 description         Database interface and MariaDB driver
 long_description    {*}${description}
 homepage            https://rmariadb.r-dbi.org
-checksums           rmd160  ea3321cb527d25f3892d75eb5fdadde68fe46e0d \
-                    sha256  ddfd54df2bc67e30ca1bf8204065bf4de108c06348d88549b2375f5cc8b0ff12 \
-                    size    917729
+checksums           rmd160  d2e80d559f61142e6b1fb374c62120f75d840cd5 \
+                    sha256  c1e4b37bf19bb2809eb5271db422cfb3ccf2ff0a85de844172c9cbac77952352 \
+                    size    921989
 github.tarball_from archive
 
 set mariadb_ver     10.11
