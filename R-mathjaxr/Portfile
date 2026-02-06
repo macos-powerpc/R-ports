@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran wviechtb mathjaxr 1.8-0 v
+R.setup             cran wviechtb mathjaxr 2.0-0 v
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -12,12 +12,10 @@ maintainers         nomaintainer
 license             GPL-3
 description         Using Mathjax in Rd Files
 long_description    {*}${description}
-checksums           rmd160  d27d90875c3eb03c5704fe247079b8b32bdf33aa \
-                    sha256  eb2197c51c01c75654f7b0c755de1f14f8cbdda16945cb259cc2c5f60d321034 \
-                    size    1059933
+checksums           rmd160  52a78dce597bdaa847769ed9dd2ee06d3d8b53e6 \
+                    sha256  5edf7c410d02bf45747ac8ce5f11760190992c8b691e14260093068efb855dc3 \
+                    size    3114027
 # github.tarball_from archive
 supported_archs     noarch
-
-depends_test-append port:R-js
 
 test.run            yes
