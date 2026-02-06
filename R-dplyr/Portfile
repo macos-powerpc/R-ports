@@ -4,16 +4,16 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran tidyverse dplyr 1.1.4
-revision            2
+R.setup             cran tidyverse dplyr 1.2.0
+revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Grammar of data manipulation
 long_description    {*}${description}
 homepage            https://dplyr.tidyverse.org
-checksums           rmd160  8ede9074a70196dc941d7ced94debdb8bd4706d7 \
-                    sha256  cf730414d5d4ab387b4e9890a4b1df9d17a3903488e8da8df1cf2e11e44558cb \
-                    size    1207521
+checksums           rmd160  633a1a90c73084965b4b437ada569714ec96576d \
+                    sha256  a82c292f2249d439157986b504edd1d99741f467c75bf08969254ca8d441bfa3 \
+                    size    922393
 
 depends_lib-append  port:R-cli \
                     port:R-generics \
@@ -27,9 +27,7 @@ depends_lib-append  port:R-cli \
                     port:R-tidyselect \
                     port:R-vctrs
 
-depends_test-append port:R-bench \
-                    port:R-broom \
-                    port:R-callr \
+depends_test-append port:R-broom \
                     port:R-covr \
                     port:R-DBI \
                     port:R-dbplyr \
