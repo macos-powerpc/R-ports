@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran hujiaqi GrFA 0.2.1
+R.setup             cran hujiaqi GrFA 0.2.2
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -11,9 +11,9 @@ maintainers         nomaintainer
 license             GPL-3
 description         Group Factor Analysis
 long_description    {*}${description}
-checksums           rmd160  647c6d0782ab2400e1c55de27e2f1a0add673cfa \
-                    sha256  bb64a9b0dc63f15ad3fe46943903335314a9f57aa55d023dcd382e84ff77dc85 \
-                    size    3972678
+checksums           rmd160  5060523b5539a9b36aff506835e85f0232123325 \
+                    sha256  d8043afbd7cbcd9d3f3e47a13b8145e29fced4539294538876991a1926dce397 \
+                    size    3978619
 supported_archs     noarch
 
 depends_lib-append  port:R-mvtnorm
