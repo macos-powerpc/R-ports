@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran silvaneojunior kDGLM 1.2.7
-revision            1
+R.setup             cran silvaneojunior kDGLM 1.2.12
+revision            0
 categories-append   economics math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3+
@@ -13,9 +13,9 @@ long_description    ${name} provides routines for filtering and smoothing, \
                     forecasting, sampling and Bayesian analysis \
                     of dynamic generalized linear models.
 homepage            https://silvaneojunior.github.io/kDGLM
-checksums           rmd160  dd0614dc8861050bd06891d8c6a5f6c8ac6293b2 \
-                    sha256  7c99f4190630223a6c9651d6b77ea3361073830fe51a87c44156e7bbad5e7570 \
-                    size    3407347
+checksums           rmd160  5b0178f7f58a014478ce2b30a9278faa55df72a1 \
+                    sha256  769fd19161dc0365a3d943eb86555da3e93d0d5e1c22d88eacc64ab011dca120 \
+                    size    3558028
 supported_archs     noarch
 
 depends_lib-append  port:R-extraDistr \
