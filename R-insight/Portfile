@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github easystats insight 1.4.5 v
+R.setup             github easystats insight 1.4.6 v
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             GPL-3
 description         Easy access to model information for various model objects
 long_description    {*}${description}
 homepage            https://easystats.github.io/insight
-checksums           rmd160  71415f5eb38904883f4343f28a912e47391ae4c5 \
-                    sha256  4c7446169b4ff54648c28d9e3094562ca17fa627449c2dba0fe42370b6c93a2b \
-                    size    1738252
+checksums           rmd160  6f2ff5f03da78ec1d97ccc25d6c0c837aae2525c \
+                    sha256  cc168955b3e247b136bb4317bb7db11fe3637d3c6221d3daa30d0bd1451b62c6 \
+                    size    1740558
 github.tarball_from archive
 supported_archs     noarch
 
