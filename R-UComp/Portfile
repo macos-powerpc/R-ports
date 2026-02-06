@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran Diego.Pedregal UComp 5.1.1
+R.setup             cran Diego.Pedregal UComp 5.1.7
 revision            0
 categories-append   math
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             GPL-3
 description         Automatic unobserved components \
                     and other time series models
 long_description    {*}${description}
-checksums           rmd160  62f6b6a9560bcefce91f3b079a499069689909d6 \
-                    sha256  44926b7d5f672d8404481298d6d3ef35e0b6bff34b61b7d4a294453578eb7228 \
-                    size    200235
+checksums           rmd160  ccd59e27780cd2845a90cfe0f4f187bde84905f8 \
+                    sha256  1e41f5fa2887622072d752f0afb16042077987adc9c19b7dcc58322f3f66d7ec \
+                    size    174080
 
 depends_lib-append  port:R-ggforce \
                     port:R-ggplot2 \
