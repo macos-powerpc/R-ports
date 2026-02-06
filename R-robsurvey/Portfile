@@ -4,15 +4,15 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran tobiasschoch robsurvey 0.7 v
-revision            1
+R.setup             cran tobiasschoch robsurvey 0.7-3 v
+revision            0
 maintainers         nomaintainer
 license             GPL-2+
 description         Robust survey statistics estimation
 long_description    {*}${description}
-checksums           rmd160  73293380dbcfbd92e1468ff188719e61c797f86f \
-                    sha256  04973c1c4bf81bb78caaff32b293ebe6f62cafd5bec49be3e288513dfdab72cb \
-                    size    1804599
+checksums           rmd160  cdcfc72e5ebd3da08f8f42148bbe146cdd3718a2 \
+                    sha256  5b90e55886a79e49cd9ee28f0f01d2eb2b4abe65629e25a3b7d3dfedd73bdea6 \
+                    size    1809264
 # github.tarball_from archive
 
 depends_lib-append  port:R-survey
