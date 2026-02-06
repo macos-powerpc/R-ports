@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran YuLab-SMU yulab.utils 0.2.3
+R.setup             cran YuLab-SMU yulab.utils 0.2.4
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             Artistic-2
 description         Miscellaneous functions commonly used by YuLab-SMU
 long_description    {*}${description}
 homepage            https://yulab-smu.top
-checksums           rmd160  baac6c47b07745a52ca69939d972ea312613fafc \
-                    sha256  11b2a402a7fbf66f655315784a2468e061eaae7fb18ac7ef634f829aa05e7caf \
-                    size    34130
+checksums           rmd160  e2f646be70a80b42f40e4b292dc27620822ec64a \
+                    sha256  437055d75f7e81d1afd403c0eaae34780a8baf779f01fc5ef0b4b17e45407b81 \
+                    size    34166
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
