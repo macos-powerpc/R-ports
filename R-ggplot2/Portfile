@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran tidyverse ggplot2 4.0.1 v
+R.setup             cran tidyverse ggplot2 4.0.2 v
 revision            0
 categories-append   graphics
 platforms           {darwin any}
@@ -14,9 +14,9 @@ description         Create elegant data visualisations \
                     using the grammar of graphics
 long_description    {*}${description}
 homepage            https://ggplot2.tidyverse.org
-checksums           rmd160  0c971d02cabeb97117a286135296247891d6a77d \
-                    sha256  77151025e8a17eaa043b2685421772e4e30a8a592493780f0a4583ca7b5e0ec4 \
-                    size    6343443
+checksums           rmd160  2af6db63e28ec99a64e537adf030dc1c80894180 \
+                    sha256  b915244599222a71ea56e256ba3810e444424190dbc37654de08b366ef144412 \
+                    size    6358661
 # github.tarball_from archive
 supported_archs     noarch
 
@@ -36,6 +36,7 @@ depends_test-append port:R-broom \
                     port:R-dplyr \
                     port:R-hexbin \
                     port:R-Hmisc \
+                    port:R-hms \
                     port:R-knitr \
                     port:R-mapproj \
                     port:R-maps \
@@ -43,6 +44,7 @@ depends_test-append port:R-broom \
                     port:R-munsell \
                     port:R-profvis \
                     port:R-quantreg \
+                    port:R-quarto \
                     port:R-ragg \
                     port:R-RColorBrewer \
                     port:R-rmarkdown \
