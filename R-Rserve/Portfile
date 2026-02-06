@@ -4,8 +4,8 @@ PortSystem          1.0
 PortGroup           openssl 1.0
 PortGroup           R 1.0
 
-R.setup             r-forge rforge Rserve 1.8-13
-revision            2
+R.setup             r-forge rforge Rserve 1.8-17
+revision            0
 categories-append   net devel
 maintainers         nomaintainer
 license             GPL-2
@@ -13,8 +13,8 @@ description         Binary R server
 long_description    {*}${description}
 homepage            https://www.rforge.net/Rserve
 master_sites        ${homepage}/snapshot/
-checksums           rmd160  16fb9c4e0ab264010fe025f927b3ddcbbda1611b \
-                    sha256  a1f9c432d88268804e39e4f8daa941960aa27a8669c6a3c50729f11fe0592e28 \
-                    size    538032
+checksums           rmd160  41576ef9f538eeccae7784c7fd7800b273fd046d \
+                    sha256  975ef4ac36a52d55797c2fcc9989b50fb579eb591535eecc2804aeb783338aab \
+                    size    543060
 
 test.run            yes
