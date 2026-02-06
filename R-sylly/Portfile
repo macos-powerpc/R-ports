@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github unDocUMeantIt sylly 0.1-6
-revision            2
+R.setup             github unDocUMeantIt sylly 0.1-7
+revision            0
 categories-append   textproc
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,10 +12,10 @@ license             GPL-3+
 description         Hyphenation and syllable counting for text analysis
 long_description    {*}${description}
 homepage            https://undocumeantit.github.io/repos/l10n
-checksums           rmd160  79e35d20a5111231910212782c372be5864eee90 \
-                    sha256  67428c6daeb89e280ead9bb0ea97fd7d5313923ad37734a4024f3f3d6667e4ef \
-                    size    70506
-github.tarball_from tarball
+checksums           rmd160  be92b082cc13d0d7a97f778560fa3305c3424779 \
+                    sha256  de06b8e58a380be95f8ec0bcd2f7e05cc7fa75563dd3568d7e86bacc23e47cfb \
+                    size    71636
+github.tarball_from archive
 supported_archs     noarch
 
 depends_test-append port:R-knitr \
