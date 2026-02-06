@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Upstream is late with publishing updates on R-forge.
-R.setup             cran r-project robustbase 0.99-6
+R.setup             cran r-project robustbase 0.99-7
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             GPL-2+
 description         Basic robust statistics
 long_description    {*}${description}
 homepage            https://robustbase.R-forge.R-project.org
-checksums           rmd160  6a4084a009b4554a073b11c850842925d586d22b \
-                    sha256  fa08c42c2cba521210725fd57bd1d456ced68e3da7569cffe38be24a4cf31a1d \
-                    size    2322108
+checksums           rmd160  f90844125ca35ebdf54b2a82ee092cb539401f0b \
+                    sha256  9f5d19d1bcace8c9edc3c96fa5b9a7fdff7566528d0b68422ca6a92e7c588cfd \
+                    size    2324260
 
 depends_lib-append  port:R-DEoptimR
 
