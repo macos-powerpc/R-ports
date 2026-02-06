@@ -3,8 +3,9 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github friendly nestedLogit 0.3.2 v.
-revision            2
+# Revert to GitHub once updated there.
+R.setup             cran friendly nestedLogit 0.3.4 v.
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,10 +13,10 @@ license             GPL-2+
 description         Nested dichotomy logistic regression models
 long_description    {*}${description}
 homepage            https://friendly.github.io/nestedLogit
-checksums           rmd160  fab89992b790877463b05a279caa4fcaa58bbaee \
-                    sha256  d3894799806602a9bae3ce7a7ee3b75cc7555376589bf14a340e4f906137105a \
-                    size    3946741
-github.tarball_from tarball
+checksums           rmd160  732ccbce85e573fcdf1263eab939a217024d1e6d \
+                    sha256  e54eaa56b563f96c41361d499fb728e50b53004d11645651ea141a5f51fc7a05 \
+                    size    794283
+# github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-broom \
