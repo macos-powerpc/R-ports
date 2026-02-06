@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran mclust-org mclustAddons 0.9.2
+R.setup             cran mclust-org mclustAddons 0.10
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             GPL-2+
 description         Addons for the R-mclust package
 long_description    {*}${description}
 homepage            https://mclust-org.github.io/mclustAddons
-checksums           rmd160  e27cfaf1f32420b0ae8a349761f8ec450a69d711 \
-                    sha256  ce1bfaacedb06499e6bc76a05407f78e6c6e33c482b17808653bc5ab2aaf5e6e \
-                    size    1524846
+checksums           rmd160  225bcfdfe19b75acafb6b92414dcf84c4407bc72 \
+                    sha256  ae7c6232a1e72503b7a99d225539964e46303b1ce3f67f71dd4c1c2a06330a60 \
+                    size    1534758
 
 depends_lib-append  port:R-cli \
                     port:R-doParallel \
