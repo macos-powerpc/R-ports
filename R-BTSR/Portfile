@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran taianeprass BTSR 1.0.1
+R.setup             cran taianeprass BTSR 1.0.2
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3+
 description         Bounded Time Series Regression
 long_description    {*}${description}
-checksums           rmd160  958bac61962785798b84561d9f1147d3e6d48796 \
-                    sha256  2b00d69ee27d9c6ef524c5e667caed7a5765126a5988269b9bbe5968bb323878 \
-                    size    292705
+checksums           rmd160  084536fcf387b5c70ec8d2161c9a173357fb5b37 \
+                    sha256  8af92d66a68053e8f802ecaa8d03e220bc5168249bfcd1ec7da04d8ee4f616f2 \
+                    size    292679
 
 depends_lib-append  port:R-Rdpack
 
