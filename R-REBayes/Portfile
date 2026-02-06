@@ -3,18 +3,20 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-project REBayes 2.56
-revision            1
+R.setup             cran r-project REBayes 2.59
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2+
 description         Empirical Bayes Estimation and Inference
 long_description    {*}${description}
-checksums           rmd160  76bbd155c8abb3b2259abe22eecb91036855f531 \
-                    sha256  d263607c4c5a4f6cb1ca270f148e4f2f66566fe9284bb175f36c0ef9fd8ad871 \
-                    size    1190286
+checksums           rmd160  8b1dddfdc0f422922bb19420e46d239aec6880c7 \
+                    sha256  31d671a29c1afcfdefeabb13a2b76c26c51fad0f5d23dfc047f2eb1e4294654e \
+                    size    1195740
 supported_archs     noarch
+
+depends_lib-append  port:R-deconvolveR
 
 depends_test-append port:R-digest \
                     port:R-knitr \
