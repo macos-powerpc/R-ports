@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran restriktor.org restriktor 0.5-90
-revision            1
+R.setup             cran restriktor.org restriktor 0.6-30
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             GPL-2+
 description         Restricted statistical estimation and inference \
                     for linear models
 long_description    {*}${description}
-checksums           rmd160  3aa9cc44fe3e1668c62cde0e101f6e3f91337375 \
-                    sha256  120565e43f4ebd7d89f6d2875d78acf40e1190118a016153692d161107884abb \
-                    size    611192
+checksums           rmd160  2038159912c844d6d77e750e2c99f09f1d268415 \
+                    sha256  d44c13fd1fbee53ec705529c6f626a595b6fbde1136f200fc9d30493e97cfcb7 \
+                    size    1425221
 supported_archs     noarch
 
 depends_lib-append  port:R-future \
@@ -31,6 +31,7 @@ depends_lib-append  port:R-future \
 
 depends_test-append port:R-bain \
                     port:R-knitr \
+                    port:R-metadat \
                     port:R-rmarkdown \
                     port:R-testthat
 
