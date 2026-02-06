@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran marcinjurek1988 GPvecchia 0.1.7
+R.setup             cran marcinjurek1988 GPvecchia 0.1.8
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Scalable Gaussian-process approximations
 long_description    {*}${description}
-checksums           rmd160  d55bb47a130c3ce26fd887ca7e8273c02025dff4 \
-                    sha256  b10275e345e75d07c547ea17195fb0a89e4353c6789f8b2c4a7f0f9b9deb71b7 \
-                    size    190361
+checksums           rmd160  44406525e3d1af48bfe736db85635f1d6239f4f0 \
+                    sha256  7e45265e1b20f94df7353065eaae4ebfd7f9112d9ec4d237e3b4a38b77b4807d \
+                    size    190438
 
 depends_lib-append  port:R-BH \
                     port:R-fields \
