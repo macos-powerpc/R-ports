@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran bssherwood rqPen 4.1.3
-revision            1
+R.setup             cran bssherwood rqPen 4.2
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             MIT
 description         Penalized quantile regression
 long_description    {*}${description}
 homepage            https://github.com/bssherwood/rqpen
-checksums           rmd160  89831bb01b6ea0a02c15d2cff91d4d7d1183019d \
-                    sha256  b740ead8c2ce8771be52a0ef7f0ab4dbd3f39621e5b3df25375f6d88b497fdd5 \
-                    size    123081
+checksums           rmd160  812b973077a4e35bcbc75072c77c3fb99528e9a8 \
+                    sha256  54eaa610af688dda3792a7247aa0b21693986e603ac14ae1cd5bd84d0d7dde11 \
+                    size    123514
 
 depends_lib-append  port:R-data.table \
                     port:R-hqreg \
