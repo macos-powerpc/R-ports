@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran spedygiorgio markovchain 0.10.0
-revision            1
+R.setup             cran spedygiorgio markovchain 0.10.3
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Bootstrap unit root tests
 long_description    {*}${description}
 homepage            https://spedygiorgio.github.io/markovchain
-checksums           rmd160  9b8379194a44064ff84a8723401a4bd2d8748bde \
-                    sha256  fbd44f72b34795c2c5163662a57b6a7dca2c0b485de4538dda6b445153f33b53 \
-                    size    655743
+checksums           rmd160  f8ee72be45a8aab33c90571837559c910e42acba \
+                    sha256  d9879483a05d4995c31d00f7a0fa7c8b1ba29fbe2a15d34ccd2c7d784ecda701 \
+                    size    656478
 
 depends_lib-append  port:R-expm \
                     port:R-igraph \
@@ -29,6 +29,8 @@ depends_test-append port:R-bookdown \
                     port:R-DiagrammeR \
                     port:R-etm \
                     port:R-knitr \
+                    port:R-MCMCpack \
+                    port:R-microbenchmark \
                     port:R-msm \
                     port:R-rmarkdown \
                     port:R-Rsolnp \
