@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github insightsengineering cards 0.7.0 v
+R.setup             github insightsengineering cards 0.7.1 v
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             Apache-2
 description         Analysis Results Data
 long_description    {*}${description}
 homepage            https://insightsengineering.github.io/cards
-checksums           rmd160  fcb1fecde5ce5967c2bde84a2ef5b0b1d8507d74 \
-                    sha256  78ff261835dcb6b1851b7932ee53715b00e7ccd73d2be5415a0f328f5f33f32a \
-                    size    584138
+checksums           rmd160  eb9a0f2feccde2301a3cc209173ba668f669ac27 \
+                    sha256  5837b37c6fcabb34cda9d1da9e64da5cd4f1c2c8832512677cbff50a07b213c9 \
+                    size    632035
 github.tarball_from archive
 supported_archs     noarch
 
