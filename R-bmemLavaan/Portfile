@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran johnnyzhz bmemLavaan 0.6
+R.setup             cran johnnyzhz bmemLavaan 0.7
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -12,13 +12,12 @@ license             GPL-2
 description         Mediation analysis with missing data \
                     and non-normal data
 long_description    {*}${description}
-checksums           rmd160  96b2c836af27aa70cebdc0e1ae8d03db232b7e85 \
-                    sha256  bd1639ac0dcf91e5d63a254d8e233322733be957b25755b55ef53d791bf0e618 \
-                    size    338242
+checksums           rmd160  e06e1b587928d09d98461dab63692ef2f2c50fe6 \
+                    sha256  6ad5841a3a18e23bcb33221dd65cf62f541b2978f7153c2a8ce4bb4d17190f86 \
+                    size    389813
 supported_archs     noarch
 
 depends_lib-append  port:R-Amelia \
-                    port:R-mice \
                     port:R-lavaan \
                     port:R-rsem \
                     port:R-sem \
