@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-forge skmeans 0.2-17
-revision            1
+R.setup             cran r-forge skmeans 0.2-19
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2
 description         Spherical k-means clustering
 long_description    {*}${description}
-checksums           rmd160  3d5406478b636dca2a694cea6facdffedd141b4b \
-                    sha256  7cc713a85656af395d3bf8b890da6e4596e0dcf3908a32481d3ab2db11890619 \
-                    size    199499
+checksums           rmd160  f44f3a0caef65567046d365c6701422accc9e719 \
+                    sha256  c92b29ad8e3028c7519673e4bae92f5dc7259276edfca4836b11370e5a658ae2 \
+                    size    221159
 supported_archs     noarch
 
 depends_lib-append  port:R-clue \
