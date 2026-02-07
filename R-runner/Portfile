@@ -4,16 +4,16 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran gogonzo runner 0.4.4
-revision            2
+R.setup             cran gogonzo runner 0.4.6
+revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         R package performing simple running calculations
 long_description    {*}${description}
 homepage            https://gogonzo.github.io/runner
-checksums           rmd160  af6f76b1b8710f54f9d9136af82a486bd786fcf1 \
-                    sha256  04b28813579fe22c89b1f84a3237cfa153754ddfb11971c989e38fceb895186e \
-                    size    990275
+checksums           rmd160  b83e69460fda3791bb57ffc22cda1ad5c288af21 \
+                    sha256  faff9f5958ed5f7a71ecfe159d04b5608998a6651b66ea6f595b7612b5555435 \
+                    size    1072174
 
 depends_lib-append  port:R-Rcpp
 
