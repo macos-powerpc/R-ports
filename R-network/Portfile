@@ -3,15 +3,15 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran buttsc network 1.19.0
-revision            1
+R.setup             cran buttsc network 1.20.0
+revision            0
 maintainers         nomaintainer
 license             GPL-2+
 description         Classes for relational data
 long_description    {*}${description}
-checksums           rmd160  fcdd1987a16b26c0f90c9463bad0138060c5c841 \
-                    sha256  fd12a007fb16411ef386102f3ebb582ffc5b6798a7eb83858cb8601e1a152012 \
-                    size    507232
+checksums           rmd160  fb1a80aed51d2cc940331c49c7bfa7f3c2e9ad58 \
+                    sha256  55d956be5b4e0f56931fdf1f44ca66c7f1aaafd2b859a01901c2ff248cec851f \
+                    size    515766
 
 depends_lib-append  port:R-magrittr \
                     port:R-statnet.common \
