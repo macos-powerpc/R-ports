@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran dbosak01 reporter 1.4.5
+R.setup             cran dbosak01 reporter 1.4.6
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             public-domain
 description         Functions to create regulatory-style statistical reports
 long_description    {*}${description}
 homepage            https://reporter.r-sassy.org
-checksums           rmd160  062bb5dee33d45377df922305307633a9c710672 \
-                    sha256  12ff64a657d2092267bbc280642f7b613013209eec8f860a91a75c10d286821f \
-                    size    3486831
+checksums           rmd160  59af7a03430105e3c24b540664db6166709bf8e1 \
+                    sha256  0eb0c3c8b44fdf416bef28b1fe61baeeb67afb80976f8cc7f870cbb1656ea134 \
+                    size    3364362
 supported_archs     noarch
 
 depends_lib-append  port:R-common \
