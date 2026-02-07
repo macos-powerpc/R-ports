@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran gavinsimpson gratia 0.11.1 v
+R.setup             cran gavinsimpson gratia 0.11.2 v
 revision            0
 categories-append   graphics
 platforms           {darwin any}
@@ -14,9 +14,9 @@ description         Graceful ggplot-based graphics and other functions \
                     for GAMs fitted with R-mgcv
 long_description    {*}${description}
 homepage            https://gavinsimpson.github.io/gratia
-checksums           rmd160  1414d79d69742eaa2e6fe845123b5d964d4cfb4e \
-                    sha256  cddc0acd70a612f636d22b79b3893afa460ee3a89548818aaf61b6e11b7e3b78 \
-                    size    4319092
+checksums           rmd160  d896f9e4e5b465f87f64f9258c7736608c0fa3d1 \
+                    sha256  f2c5f9ded3637e7748c58022651eee9987a17b9e7e815039004ea3b9e8f06e23 \
+                    size    4348817
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
