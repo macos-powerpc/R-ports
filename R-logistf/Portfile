@@ -3,16 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran georgheinze logistf 1.26.0
-revision            2
+R.setup             cran georgheinze logistf 1.26.1
+revision            0
 categories-append   math
 maintainers         nomaintainer
 license             GPL
 description         Firth’s bias-reduced logistic regression
 long_description    {*}${description}
-checksums           rmd160  329d558ff51956781500dd04fd5815c73eb4c9a8 \
-                    sha256  f916e568c8c64fc48695c72214439267c02310c6c68d3ffea5708ec00e80190b \
-                    size    76220
+homepage            https://github.com/georgheinze/logistf
+checksums           rmd160  aefeb1cfcf835fca8146697479c00239100a5a99 \
+                    sha256  351e0ffca232c0ffe29cbda53a3f5770dab30fb72b8223d782ee1ae5f37e8592 \
+                    size    75713
 
 depends_lib-append  port:R-formula.tools \
                     port:R-mice
