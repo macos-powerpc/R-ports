@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran ngreifer fwb 0.5.0
+R.setup             cran ngreifer fwb 0.5.1
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -12,9 +12,9 @@ license             GPL-2+
 description         Fractional Weighted Bootstrap
 long_description    {*}${description}
 homepage            https://ngreifer.github.io/fwb
-checksums           rmd160  8ce499959727aee0de3d73d04bf5752dcb398d49 \
-                    sha256  29e5fc623fc1cffb26bcb21b055cbdc3d302df20918dda50d1cb21c99951ff73 \
-                    size    361725
+checksums           rmd160  f34f5952f2091b6e3d19818096b697f471a36637 \
+                    sha256  1efc9389739bd5ff20ba917775cd90da8621a535e82f97c8457b4589f3818461 \
+                    size    361932
 supported_archs     noarch
 
 depends_lib-append  port:R-chk \
