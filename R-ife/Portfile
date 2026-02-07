@@ -3,19 +3,21 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran nt-williams ife 0.2.0
+R.setup             cran nt-williams ife 0.2.3
 revision            0
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3+
 description         Influence function-based estimate objects
 long_description    ${name} implements an S7 class for estimates based on influence functions.
-checksums           rmd160  ac71b9901448df40fa33ac7868032dbc1e3f9e93 \
-                    sha256  b729db24f0a728c34cb593c1283c5e0f82fe6bcdad285cd1bbedb08d3f24a022 \
-                    size    5742
+homepage            https://github.com/nt-williams/ife
+checksums           rmd160  3b83b47c672f18726f9870883e7b32ef7fc5f8e3 \
+                    sha256  b6be1e9ba514db95118e425d2f78deabb2c9f745f44f35a301ff9b5f266d5ed2 \
+                    size    6671
 supported_archs     noarch
 
 depends_lib-append  port:R-cli \
+                    port:R-collapse \
                     port:R-generics \
                     port:R-S7
 
