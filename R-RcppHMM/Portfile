@@ -3,15 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran RcppHMM 1.2.2
-revision            3
-maintainers         nomaintainer
-license             {GPL-2 GPL-3}
+R.setup             cran robalecarova RcppHMM 1.2.2.1
+revision            0
+categories-append   math
+maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
+license             GPL-3+
 description         Rcpp Hidden Markov Model
 long_description    {*}${description}
-checksums           rmd160  58e80191f31e4c3a50f7f91f076e6d4b068d2f3a \
-                    sha256  c6d3ef59a1f8841f65c4273847cad79e36bb1733edd395d57a82fba06dfd8d69 \
-                    size    32809
+checksums           rmd160  c3ae12987cf74f4e4d12f73909c063ad7d5c5324 \
+                    sha256  e1394569a3a0baff347ce222205183bd99e8a22c29bbe75452ae405f68e646e6 \
+                    size    31110
 
 depends_lib-append  port:R-Rcpp \
                     port:R-RcppArmadillo
