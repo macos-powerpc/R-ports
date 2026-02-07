@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran psychbruce bruceR 2025.8
+R.setup             cran psychbruce bruceR 2026.1
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             GPL-3
 description         Broadly useful, convenient and efficient R functions
 long_description    {*}${description}
 homepage            https://psychbruce.github.io/bruceR
-checksums           rmd160  46f9fca6f654c6c72948ab01d82660ca5acec22a \
-                    sha256  cf10a92b0f05616f6e537c7c1ca1581662e95d172e4993b476252462ecfd4a3c \
-                    size    178368
+checksums           rmd160  1918153cd943c1af6f85bb688e31a6cf7dd5e939 \
+                    sha256  5a1357d3d3e42d4a49a92b071a27599ea9667e4944281ee1445ddabc7c80f712 \
+                    size    178612
 supported_archs     noarch
 
 depends_lib-append  port:R-afex \
