@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-project partykit 1.2-24
+R.setup             cran r-project partykit 1.2-25
 revision            0
 categories-append   math
 maintainers         nomaintainer
@@ -11,9 +11,9 @@ license             {GPL-2 GPL-3}
 description         Toolkit for recursive partytioning
 long_description    {*}${description}
 homepage            http://partykit.r-forge.r-project.org/partykit
-checksums           rmd160  545183829128e801ced1e01b73ddf34c60f20886 \
-                    sha256  40c06b75458f100f3e203fb47f80d5be6f632628bfafa2704d27250a7914c9ff \
-                    size    2044723
+checksums           rmd160  1a5be737f7042b971a1db8aeb10f5824980ef024 \
+                    sha256  7abd05afd2c5d09a378ec5ec54366045357ceb22dddca501a1109cabc5da8820 \
+                    size    2045835
 
 depends_lib-append  port:R-Formula \
                     port:R-inum \
@@ -22,6 +22,7 @@ depends_lib-append  port:R-Formula \
 
 # Test dependency on R-rJava and R-RWeka are dropped
 # in order to avoid requiring Java in R.
+# (It works on powerpc now, we just do not want to require it.)
 depends_test-append port:R-AER \
                     port:R-coin \
                     port:R-mlbench \
