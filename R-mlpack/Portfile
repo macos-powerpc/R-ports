@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran mlpack mlpack 4.6.3
+R.setup             cran mlpack mlpack 4.7.0
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ description         Rcpp integration for the mlpack library
 long_description    A fast, flexible machine learning library, written in C++, \
                     that aims to provide fast, extensible implementations \
                     of cutting-edge machine learning algorithms.
-checksums           rmd160  6dcb01ed5742a78f6bb42fb7c5a9a73471172a39 \
-                    sha256  aba2c1024978d11abbeea887e751b772ee4bcfb209023924054c28cc48b52ec4 \
-                    size    1747885
+checksums           rmd160  a2a6e112270caf2abd8fa01e41d9f226cbaefaf6 \
+                    sha256  773cfdcdb5cae79ccd00a80406ed5c24386a95eef3789e01d2571445d5fdf3c2 \
+                    size    1787224
 
 depends_lib-append  port:R-Rcpp \
                     port:R-RcppArmadillo \
