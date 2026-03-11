@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran Nikolaus.Umlauf BayesXsrc 3.0-7
+R.setup             cran Nikolaus.Umlauf BayesXsrc 3.0-7.1
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             {GPL-2 GPL-3}
 description         Distribution of the BayesX C++ sources
 long_description    {*}${description}
-checksums           rmd160  bc80ee06de0237f2086d5258927e59951751bdf7 \
-                    sha256  fa1fe46491af2c964940297557aa43f6cc43558308c3d11c1c34820082fed539 \
-                    size    1302773
+checksums           rmd160  01c86f294327a81f73fc885bf751d81907406f24 \
+                    sha256  5126988ef85659938dc59522528b087aecee5572e762de1ded96f535529a0a03 \
+                    size    1302812
 
 # bayesxsrc/structadd/distr.cpp: error: 'isnan' was not declared in this scope; did you mean 'std::isnan'?
 patchfiles          patch-fix-isnan.diff
