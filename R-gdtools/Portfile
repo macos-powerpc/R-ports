@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran davidgohel gdtools 0.4.4
+R.setup             cran davidgohel gdtools 0.5.0
 revision            0
 categories-append   graphics
 maintainers         nomaintainer
@@ -11,16 +11,16 @@ license             GPL-3
 description         Utilities for graphical rendering and fonts management
 long_description    {*}${description}
 homepage            https://davidgohel.github.io/gdtools
-checksums           rmd160  4fd3e5a25718fe440c443987e1a75ad8a814b225 \
-                    sha256  6d13032caa3ba7879bfeae48505def9815fd339444edbeae21233b04a9401ed2 \
-                    size    73899
+checksums           rmd160  ddbf9b4417fcdbf831f6b946713081848d0d104e \
+                    sha256  aee90810068ebac8204ae2703c641cbb8943f214b6f4bb64c0c00860a9a7f395 \
+                    size    79407
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
 
 depends_lib-append  path:lib/pkgconfig/cairo.pc:cairo \
-                    port:fontconfig \
-                    port:freetype \
+                    path:lib/pkgconfig/fontconfig.pc:fontconfig \
+                    path:lib/pkgconfig/freetype2.pc:freetype \
                     port:R-fontquiver \
                     port:R-htmltools \
                     port:R-Rcpp \
