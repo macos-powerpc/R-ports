@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran jwood000 RcppAlgos 2.9.5
+R.setup             cran jwood000 RcppAlgos 2.10.0
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -13,19 +13,22 @@ description         High-performance tools for combinatorics and computational m
 long_description    Provides optimized functions and flexible combinatorial iterators \
                     implemented in C++ for solving problems in combinatorics and computational mathematics.
 homepage            https://github.com/jwood000/RcppAlgos
-checksums           rmd160  3fdd0599abadcda533a64e2679bbfdac552ec518 \
-                    sha256  f3e96234c590d3e0492c63e4348436e134b6662b90d591692604d14f6d8249e0 \
-                    size    1041435
+checksums           rmd160  7c8e23dfa1a013c861937c812ad4137f20d5b64d \
+                    sha256  d8406094ef13b963401bd6266f809b05f848f96f0f3695262bd2be3c75b4dc47 \
+                    size    1616404
 
 depends_lib-append  port:gmp \
                     port:R-cpp11 \
                     port:R-gmp
 
-depends_test-append port:R-knitr \
+depends_test-append port:R-covr \
+                    port:R-knitr \
                     port:R-microbenchmark \
                     port:R-partitions \
+                    port:R-prettydoc \
                     port:R-RcppBigIntAlgos \
                     port:R-rmarkdown \
-                    port:R-testthat
+                    port:R-testthat \
+                    port:R-xml2
 
 test.run            yes
