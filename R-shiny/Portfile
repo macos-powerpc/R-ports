@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran rstudio shiny 1.11.1
+R.setup             cran rstudio shiny 1.13.0
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -11,16 +11,15 @@ license             GPL-3
 description         Web application framework for R
 long_description    {*}${description}
 homepage            https://shiny.posit.co
-checksums           rmd160  64262e17fab481580318203263b3ecb5ace45c67 \
-                    sha256  6f8c0f8618646f6b6d0c2d4ccf8b2430de6b1dc67edec19bb6b88594f4de7129 \
-                    size    2668971
+checksums           rmd160  c927bd1a288514eb839f29c8a3b20c56766e0a3c \
+                    sha256  ff1e2ec23b39a5b9ac7eebdef541f3832f6de07256f6ddb11562daba7ba51951 \
+                    size    2712329
 supported_archs     noarch
 
 depends_lib-append  port:R-bslib \
                     port:R-cachem \
+                    port:R-cli \
                     port:R-commonmark \
-                    port:R-crayon \
-                    port:R-ellipsis \
                     port:R-fastmap \
                     port:R-fontawesome \
                     port:R-glue \
@@ -30,6 +29,7 @@ depends_lib-append  port:R-bslib \
                     port:R-later \
                     port:R-lifecycle \
                     port:R-mime \
+                    port:R-otel \
                     port:R-promises \
                     port:R-R6 \
                     port:R-rlang \
@@ -37,6 +37,7 @@ depends_lib-append  port:R-bslib \
                     port:R-withr \
                     port:R-xtable
 
+# R-otelsdk is dropped until fixed.
 depends_test-append port:R-Cairo \
                     port:R-coro \
                     port:R-DT \
