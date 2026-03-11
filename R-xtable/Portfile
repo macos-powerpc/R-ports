@@ -3,21 +3,22 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran cran xtable 1.8-4
-revision            3
+R.setup             cran r-project xtable 1.8-8
+revision            0
+platforms           {darwin any}
 maintainers         nomaintainer
-license             {GPL-2 GPL-3}
+license             GPL-2+
 description         Export tables to LaTeX or HTML
 long_description    {*}${description}
 homepage            http://xtable.r-forge.r-project.org
-checksums           rmd160  a933bf73256425cdd77abb1a42c906830046f148 \
-                    sha256  5abec0e8c27865ef0880f1d19c9f9ca7cc0fd24eadaa72bcd270c3fb4075fd1c \
-                    size    564589
+checksums           rmd160  42de0bc985e9d3a28ab61045744fb332bace200f \
+                    sha256  b999c031b91255fb92134b0e70e5f84c5609e9312c0518393b9d0a4aaf6b2510 \
+                    size    618708
 supported_archs     noarch
-platforms           {darwin any}
 
-depends_test-append port:R-knitr \
-                    port:R-plm \
+depends_test-append port:R-glue \
+                    port:R-knitr \
+                    port:R-tinytex \
                     port:R-zoo
 
 test.run            yes
