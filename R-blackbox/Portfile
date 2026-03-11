@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran francois.rousset blackbox 1.1.46
-revision            1
+R.setup             cran francois.rousset blackbox 1.1.54
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             CeCILL-2
 description         Black box optimization and exploration of parameter space
 long_description    {*}${description}
-checksums           rmd160  3d6e8d1f73a5f2b738e86df211086baa77f78d48 \
-                    sha256  14d1a501470b441f95e266f6716631010bd97213c0cdaed200ef9769cb1ea90e \
-                    size    185404
+checksums           rmd160  283b3643a4eda256a8e8dc5354d765b0778bde10 \
+                    sha256  5f4eed11a444d92a450fb2c911e6769c8a9845a3a09bc94bf5c2e98dc5ad6550 \
+                    size    185624
 
 depends_lib-append  port:R-foreach \
                     port:R-geometry \
