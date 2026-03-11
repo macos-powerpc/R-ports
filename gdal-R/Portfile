@@ -11,7 +11,7 @@ legacysupport.newest_darwin_requires_legacy 16
 
 set realname        gdal
 name                ${realname}-R
-version             3.12.1
+version             3.12.2
 revision            0
 categories          R gis science
 license             MIT BSD
@@ -22,12 +22,12 @@ homepage            https://www.gdal.org
 master_sites        https://download.osgeo.org/gdal/${version}
 distname            ${realname}-${version}
 use_xz              yes
-checksums           rmd160  2dfa7abd71fe2368f256c2dd5fefe1ea56bf6e61 \
-                    sha256  2a4fd3170ff81def93db60f7f61f2842a2ae7ad0335e4ed4ba305252f05835de \
-                    size    9597108
+checksums           rmd160  006285caec6470dda266365221dd45336cd50463 \
+                    sha256  21c5e0f91974383b4c5692b7103650f176f2f54f1b0d449787f444b89881e9b4 \
+                    size    9605624
 
 # Supported PostgreSQL versions
-set pg_suffixes     {15 16 17}
+set pg_suffixes     {15 16 17 18}
 
 depends_build-append \
                     port:bash-completion \
