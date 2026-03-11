@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran edzer sp 2.2-0
-revision            1
+R.setup             cran edzer sp 2.2-1
+revision            0
 categories-append   gis
 maintainers         nomaintainer
 license             GPL-2+
 description         Classes and methods for spatial data
 long_description    {*}${description}
 homepage            https://edzer.github.io/sp
-checksums           rmd160  192d9a6bac7dc98356772f1d366f049618e58c17 \
-                    sha256  b57be793a96bec568bed5b619e62ec1f4efaf879adc0e57e486b891768148b98 \
-                    size    4474033
+checksums           rmd160  c9bdebc38b1e034dfed09002df8094e4d8786deb \
+                    sha256  277a4533bc784a08fdbb710757b6af0c7a492691bfb07d8f0b2aa8ad7c857652 \
+                    size    4472598
 
 depends_test-append port:R-deldir \
                     port:R-gstat \
