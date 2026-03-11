@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran mtsagris Compositional 7.7
+R.setup             cran mtsagris Compositional 8.1
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -11,26 +11,26 @@ maintainers         nomaintainer
 license             GPL-2+
 description         Compositional data analysis
 long_description    {*}${description}
-checksums           rmd160  4918eb8881585453c9e3e9d1a31a47def589523c \
-                    sha256  d877bbe1b4502c4a93883b0fe90f4253f344a60f0938dd3624b440c87957c321 \
-                    size    211441
+checksums           rmd160  66f5bd03cdd21d8713a6b05426a40f11474fb6dc \
+                    sha256  5abd1d4a59826b5314944deebf8d5989751faaa63f7a952d67e740fbada95d01 \
+                    size    211723
 supported_archs     noarch
 
 depends_lib-append  port:R-bigstatsr \
-                    port:R-doParallel \
                     port:R-emplik \
                     port:R-energy \
-                    port:R-foreach \
                     port:R-glmnet \
                     port:R-mda \
                     port:R-minpack.lm \
                     port:R-mixture \
                     port:R-mvhtests \
+                    port:R-osqp \
                     port:R-quadprog \
                     port:R-quantreg \
                     port:R-regda \
                     port:R-Rfast \
                     port:R-Rfast2 \
+                    port:R-rgl \
                     port:R-Rnanoflann \
                     port:R-sn
 
