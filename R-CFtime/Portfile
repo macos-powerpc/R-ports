@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran pvanlaake CFtime 1.7.0
+R.setup             cran pvanlaake CFtime 1.7.2
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -11,16 +11,14 @@ license             MIT
 description         Use CF-compliant calendars with climate projection data
 long_description    {*}${description}
 homepage            https://github.com/pvanlaake/CFtime
-checksums           rmd160  13dd26a10544d654e4921b0dc7e345ba205a120b \
-                    sha256  a50b47679dce05b628705c3890143ecd33dbf8e411a96b11d4ca724f0bd2726f \
-                    size    501218
+checksums           rmd160  90893461250406ad43a4a6130cef2ec0f436edbf \
+                    sha256  ac4c0e5eb287200340e42aca990adc6b2d412c6050928b0616e6a3ccbf70b264 \
+                    size    405366
 supported_archs     noarch
 
 depends_lib-append  port:R-R6
 
-depends_test-append port:R-knitr \
-                    port:R-ncdfCF \
-                    port:R-rmarkdown \
+depends_test-append port:R-rmarkdown \
                     port:R-stringr \
                     port:R-testthat
 
