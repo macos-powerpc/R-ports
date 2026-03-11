@@ -3,18 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran phargarten2 matrixNormal 0.1.1
-revision            2
+R.setup             cran phargarten2 matrixNormal 0.1.2
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3
 description         Matrix normal distribution
 long_description    {*}${description}
-checksums           rmd160  c21bcb72d0393414b5f93e4f1611ca9c206bcff1 \
-                    sha256  5fb069ecc2444db63fad72854ff4a515232ed9d9c65bf77d3b4b76a9c7d00951 \
-                    size    37446
+checksums           rmd160  06384bc50c9672fa2832cb0869c3edb2de1574f9 \
+                    sha256  a03396298644dc707888a5382ba1926d5140ea70f330282fa3d694d12b814f7d \
+                    size    36441
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-mvtnorm
 
