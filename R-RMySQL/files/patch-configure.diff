@@ -1,5 +1,5 @@
---- configure	2023-09-26 19:00:17.000000000 +0700
-+++ configure	2023-09-28 01:00:44.000000000 +0700
+--- configure	2026-03-03 00:01:37.000000000 +0800
++++ configure	2026-03-11 09:34:26.000000000 +0800
 @@ -8,7 +8,7 @@
  PKG_DEB_NAME="libmariadbclient-dev | libmariadb-client-lgpl-dev"
  PKG_RPM_NAME="mariadb-connector-c-devel | mariadb-devel | mysql-devel"
@@ -9,14 +9,10 @@
  PKG_TEST_HEADER="<mysql.h>"
  PKG_LIBS="-lmysqlclient"
  
-@@ -30,18 +30,6 @@
+@@ -30,14 +30,6 @@
    echo "Found mysql_config cflags and libs!"
    PKG_CFLAGS=${PKGCONFIG_CFLAGS}
    PKG_LIBS=${PKGCONFIG_LIBS}
--  # Workaround for homebrew linkin bug
--  if [ `uname` = "Darwin" ]; then
--    PKG_LIBS="-L/usr/local/opt/openssl/lib $PKG_LIBS"
--  fi
 -elif [ `uname` = "Darwin" ]; then
 -  test ! "$CI" && brew --version 2>/dev/null
 -  if [ $? -eq 0 ]; then
@@ -28,7 +24,7 @@
  fi
  
  # Find compiler
-@@ -63,7 +51,7 @@
+@@ -59,7 +51,7 @@
    echo " * deb: $PKG_DEB_NAME (Debian, Ubuntu)"
    echo " * rpm: $PKG_RPM_NAME (Fedora, CentOS, RHEL)"
    echo " * csw: $PKG_CSW_NAME (Solaris)"
