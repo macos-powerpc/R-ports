@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran dbosak01 common 1.1.4
+R.setup             cran dbosak01 common 1.1.5
 revision            0
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -12,9 +12,9 @@ license             public-domain
 description         Solutions for common problems in the base R
 long_description    {*}${description}
 homepage            https://common.r-sassy.org
-checksums           rmd160  03bc3a991b486aca975fa99fed50405c882018ac \
-                    sha256  3adbcca79e1e073761a50978626fd9d4fbd76717db243537fd4aa264947b87c3 \
-                    size    510112
+checksums           rmd160  e513129856050737b0a2b77ba0bb3e7bd3eb968e \
+                    sha256  5ad5c66749f8901785380f83286e63c10a09a3cb0a193fffe82bae0802b1367f \
+                    size    510963
 supported_archs     noarch
 
 depends_test-append port:R-box \
