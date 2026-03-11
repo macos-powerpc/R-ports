@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran IDSIA bayesRecon 0.3.3
+R.setup             cran IDSIA bayesRecon 1.0.0
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -13,12 +13,13 @@ description         Provides methods for probabilistic reconciliation \
                     of hierarchical forecasts of time series
 long_description    {*}${description}
 homepage            https://github.com/IDSIA/bayesRecon
-checksums           rmd160  fe8ce2a113d638d606cfac31a7c6c973eb650e26 \
-                    sha256  0c029b50d7842d19af2cf10202911c14c5fbd469e0546e793e05ee347825be21 \
-                    size    2286749
+checksums           rmd160  3ef3ce9e5706af7bc0e48b7e30d9b6df797b29d6 \
+                    sha256  83c1e271e29bb3c711cdabd4bde17e26163da3ef5bcacdbc90d2657d643ff2fc \
+                    size    3027540
 supported_archs     noarch
 
-depends_lib-append  port:R-lpSolve
+depends_lib-append  port:R-lpSolve \
+                    port:R-nloptr
 
 depends_test-append port:R-forecast \
                     port:R-glarma \
