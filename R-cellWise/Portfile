@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran jakob.raymaekers cellWise 2.5.3
-revision            2
+R.setup             cran jakob.raymaekers cellWise 2.5.7
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Analyzing data with cellwise outliers
 long_description    {*}${description}
-checksums           rmd160  13fe1ccbb806ad7b3189861e15c5f5a2194b62d5 \
-                    sha256  89c065c09f98e8e3970ecedb3d73d9a3397d5887d6df439c4fb5d35184af512b \
-                    size    4706351
+checksums           rmd160  9f2735f697f1db297a419160dc15cd1d1e95e0d5 \
+                    sha256  7ec193580f609a2bb6b8ff60b0a857f708df159ad71ea4631b1ebb160f0fc890 \
+                    size    4708389
 
 depends_lib-append  port:R-ggplot2 \
                     port:R-gridExtra \
