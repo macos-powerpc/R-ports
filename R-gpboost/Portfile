@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is outdated.
-R.setup             cran fabsig gpboost 1.6.5
+R.setup             cran fabsig gpboost 1.6.6
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -13,9 +13,9 @@ description         Combining tree-boosting with Gaussian process \
                     and mixed effects models
 long_description    {*}${description}
 homepage            https://github.com/fabsig/GPBoost
-checksums           rmd160  132964762a125f22415f97cecb3d44721e8f87bc \
-                    sha256  ec62903be0156d30b1f89805f2589dcc3b93f0fca684411e1c425ab02afeade8 \
-                    size    2303662
+checksums           rmd160  62debe056d8f616a7867aac791fab28eadbdd2d4 \
+                    sha256  59ef66bb9a83ac751eb7a30e493fb7048aa6939103bbee8373e4ea981d181e1e \
+                    size    2341119
 
 depends_lib-append  port:R-data.table \
                     port:R-R6 \
