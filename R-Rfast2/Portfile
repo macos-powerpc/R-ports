@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran RfastOfficial Rfast2 0.1.5.5
+R.setup             cran RfastOfficial Rfast2 0.1.5.6
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Collection of efficient and extremely fast R functions – II
 long_description    {*}${description}
-checksums           rmd160  584bceb13eead7f308381cbf89986adc9b5566f7 \
-                    sha256  639b343dec14a61540090cea45bbfba27c73eac660133d8b0b483fd2ad2924ee \
-                    size    184926
+checksums           rmd160  35eff1923dcd719ac4725e5cccaef3aa62473826 \
+                    sha256  a9b4bb5578221fc09911d17f0d9dad3eb923f673dd181e6884499dfe2ad1134f \
+                    size    185624
 
 depends_lib-append  port:R-BH \
                     port:R-Rcpp \
