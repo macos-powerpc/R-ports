@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran eddelbuettel nanotime 0.3.12
-revision            1
+R.setup             cran eddelbuettel nanotime 0.3.13
+revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Nanosecond-resolution time support
 long_description    {*}${description} for R.
 homepage            https://dirk.eddelbuettel.com/code/nanotime.html
-checksums           rmd160  e7191e0c0d4319557e927584306f1619b8768659 \
-                    sha256  fb511779777f69d2e1729e7de0fad6de86ab30a28738dff0524dffeb31f3eba4 \
-                    size    408691
+checksums           rmd160  d73ec6c03dcb77f0d90da917eec6dbcdcedc71a4 \
+                    sha256  09e1d3943c2c908732a6f459b1a0af6381969d23ab841168d21198d4f29991af \
+                    size    388402
 
 depends_lib-append  port:R-bit64 \
                     port:R-Rcpp \
