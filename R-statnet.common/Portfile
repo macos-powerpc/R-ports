@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github statnet statnet.common 4.12.0
+R.setup             github statnet statnet.common 4.13.0
 revision            0
 maintainers         nomaintainer
 license             GPL-3
@@ -11,9 +11,9 @@ description         Common R scripts and utilities used by the Statnet \
                     Project software
 long_description    {*}${description}
 homepage            https://github.com/statnet/statnet.common
-checksums           rmd160  9fb33868bd97db8686af18f67304c884b252ddde \
-                    sha256  df985d2af79834952ad2a3e3aa5e5c839de027d7f5733075ac67642bf4c64f40 \
-                    size    100931
+checksums           rmd160  9192d6589e060c18c440984b2b62cf0fa7d4aace \
+                    sha256  db796426b8ea32ba750bb6456d2c7749a97fd2421e359f5cb959fa3cc5a2feca \
+                    size    105368
 github.tarball_from archive
 
 depends_lib-append  port:R-coda
