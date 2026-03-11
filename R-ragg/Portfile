@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github r-lib ragg 1.5.0 v
+R.setup             github r-lib ragg 1.5.1 v
 revision            0
 categories-append   graphics
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,15 +11,15 @@ license             MIT
 description         Graphic devices based on AGG
 long_description    {*}${description}
 homepage            https://ragg.r-lib.org
-checksums           rmd160  69f8315fa7f99ef2fa466a25d54b4bfad2be05f5 \
-                    sha256  6f9f49cbfc0ff62ca07a305b87b25a50c500478797002b4b64720f6988dca581 \
-                    size    616757
+checksums           rmd160  f89f4256bfcb5b6bf883f843aa82e22e2caac77e \
+                    sha256  d17721173387e9b850a74da4f163ca15a62c651843af3eb646df98c1b74e2557 \
+                    size    618201
 github.tarball_from archive
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
 
-depends_lib-append  port:freetype \
+depends_lib-append  path:lib/pkgconfig/freetype2.pc:freetype \
                     path:include/turbojpeg.h:libjpeg-turbo \
                     port:libpng \
                     port:lzma \
