@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran xliao cgam 1.30
+R.setup             cran xliao cgam 1.31
 revision            0
 categories-append   math
 platforms           {darwin any}
@@ -11,9 +11,9 @@ maintainers         nomaintainer
 license             GPL-2+
 description         Constrained Generalized Additive Model
 long_description    {*}${description}
-checksums           rmd160  81c2f60b7e0a9ee7326c5db29517de59407187fd \
-                    sha256  586ed0919aff5470bd2d1cd6d25851afca1c3c750b29491af95143ac4c3f40e7 \
-                    size    314813
+checksums           rmd160  46f996ee666d032049b2221aecccb09778259d49 \
+                    sha256  ba6028aaf604dce1419d423bb71fa117e35b4b4ad035d62cdf2d83212be60627 \
+                    size    316126
 supported_archs     noarch
 
 depends_lib-append  port:R-coneproj \
@@ -27,6 +27,7 @@ depends_lib-append  port:R-coneproj \
                     port:R-svDialogs \
                     port:R-zeallot
 
-depends_test-append port:R-roxygen2
+depends_test-append port:R-patchwork \
+                    port:R-roxygen2
 
 test.run            yes
