@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran eddelbuettel RcppSpdlog 0.0.26
+R.setup             cran eddelbuettel RcppSpdlog 0.0.27
 revision            0
 categories-append   devel
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             GPL-2+
 description         R and C++ interfaces to spdlog C++ header library for logging
 long_description    {*}${description}
 homepage            https://dirk.eddelbuettel.com/code/rcpp.spdlog.html
-checksums           rmd160  00d72068084856a104830f8087faa8d486a6acc9 \
-                    sha256  2682d8cc256b13eab5af884cc18b69635a964abb8b389584b2701f3ee21576ab \
-                    size    292061
+checksums           rmd160  aa58fccf6ec05b33cda31839855f231831cd860d \
+                    sha256  80d97e4414b25d219dd30f9c783dc2d022c22cd070d0d7f032f3534f6559cf23 \
+                    size    292617
 
 depends_lib-append  port:R-Rcpp
 
