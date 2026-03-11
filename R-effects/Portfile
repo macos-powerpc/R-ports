@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran jfox effects 4.2-4
+R.setup             cran jfox effects 4.2-5
 revision            0
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -11,9 +11,9 @@ license             GPL-2+
 description         Effect displays for linear, generalized linear and other models
 long_description    Graphical and tabular effect displays, e.g., of interactions, \
                     for various statistical models with linear predictors.
-checksums           rmd160  7477bc2f9e3ee7466f8336e47fd2183912f7d767 \
-                    sha256  497fce4ad10c713af1e38a5dd60d49b4bf00fe7b060d603d41527c3397f20852 \
-                    size    2213771
+checksums           rmd160  5247d0ab6a188a65e28af67784257c3a75fe0c3f \
+                    sha256  065318f44b87e5d2d58232843fd77ba38ddf40e50a2ca80e8265d83843b0ebb1 \
+                    size    2194991
 supported_archs     noarch
 
 depends_lib-append  port:R-carData \
