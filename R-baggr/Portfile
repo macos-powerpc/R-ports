@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version is outdated.
-R.setup             cran wwiecek baggr 0.7.11
+R.setup             cran wwiecek baggr 0.8
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -13,9 +13,9 @@ description         Bayesian aggregate treatment effects
 long_description    Running and comparing meta-analyses of data with hierarchical Bayesian models in Stan, \
                     including convenience functions for formatting data, plotting and pooling measures specific to meta-analysis.
 homepage            https://github.com/wwiecek/baggr
-checksums           rmd160  6f2defa2439de0f85c7e85855ca781bc1b9b830c \
-                    sha256  9b5a0ebf141b0c28a2834647ba8ecc73eb7925316ca77cfa2971940568437b83 \
-                    size    3087499
+checksums           rmd160  7c351fffa63ceb50ea59da364ee32996e4a8cd99 \
+                    sha256  b6b3e11135b3d9095aa37af940f0d1af895c9cacc5fdb7e28594fe72d7f9198a \
+                    size    3106574
 
 depends_lib-append  port:R-bayesplot \
                     port:R-BH \
@@ -30,11 +30,11 @@ depends_lib-append  port:R-bayesplot \
                     port:R-RcppParallel \
                     port:R-rstan \
                     port:R-rstantools \
-                    port:R-StanHeaders \
-                    port:R-testthat
+                    port:R-StanHeaders
 
 depends_test-append port:R-covr \
                     port:R-knitr \
-                    port:R-rmarkdown
+                    port:R-rmarkdown \
+                    port:R-testthat
 
 test.run            yes
