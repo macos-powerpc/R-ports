@@ -3,17 +3,19 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran alexis.dinno dunn.test 1.3.6
-revision            2
+R.setup             cran alexis.dinno dunn.test 1.3.7
+revision            0
 categories-append   math
+platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2
 description         Dunn’s test of multiple comparisons using rank sums
 long_description    {*}${description}
-checksums           rmd160  b54102e86f077ee0f29fa2a8dc26aafbb4d703f3 \
-                    sha256  49630ad486aa72371223c5f36233fac3e1f8382d79ae1648d7953a4b01f6787c \
-                    size    10858
+checksums           rmd160  0ec2d62225278c7458ed7dac30b50e1ea4dad3e6 \
+                    sha256  edf78fbbb3a044b58906df806ff7e0a8171715f52e98d607c3e90a651ae69485 \
+                    size    11895
 supported_archs     noarch
-platforms           {darwin any}
+
+depends_lib-append  port:R-rlang
 
 test.run            yes
