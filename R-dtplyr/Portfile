@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran tidyverse dtplyr 1.3.2 v
+R.setup             cran tidyverse dtplyr 1.3.3 v
 revision            0
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             MIT
 description         Data table back-end for R-dplyr
 long_description    {*}${description}
 homepage            https://dtplyr.tidyverse.org
-checksums           rmd160  b53a5390e070911eafd6b32705c03efcd0f3fa50 \
-                    sha256  766003e3cbad4e5d03cfdf240a25e49a813d96ecdbef0cd74ffaf4298182216e \
-                    size    200286
+checksums           rmd160  74f246e695f9c7d27355423edf2c5d06e1f9e85c \
+                    sha256  cbcf0671dd551a0ceacc8f88d83c0bb6cdc967d0f817dc4c211f78fdb536b188 \
+                    size    199752
 # github.tarball_from archive
 supported_archs     noarch
 
