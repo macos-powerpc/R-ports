@@ -7,7 +7,7 @@ PortGroup           R 1.0
 # clock_gettime, timespec_gettimespec_get
 legacysupport.newest_darwin_requires_legacy 15
 
-R.setup             github r-lib later 1.4.4 v
+R.setup             github r-lib later 1.4.6 v
 revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
@@ -16,9 +16,9 @@ long_description    Schedule an R function or formula to run \
                     after a specified period of time. \
                     Similar to JavaScript’s setTimeout function.
 homepage            https://r-lib.github.io/later
-checksums           rmd160  79bfa6e66e007cff0e4340be3995c986fb25012e \
-                    sha256  ddf93180a603503d1d3c5d996d40ddcc97adcd7c5057bad21052770f868a245c \
-                    size    70646
+checksums           rmd160  a3950c8b411a86be35f2abd19f2ca347da80bf7e \
+                    sha256  26b9dcb05003f6d634f13f51f33e1ece69a1da5c2ec87d10e962782dcbdebe96 \
+                    size    68686
 github.tarball_from archive
 
 depends_lib-append  port:R-Rcpp \
@@ -35,6 +35,7 @@ if {${os.platform} eq "darwin" && ${os.major} < 16} {
 
 depends_test-append port:R-knitr \
                     port:R-nanonext \
+                    port:R-promises \
                     port:R-rmarkdown \
                     port:R-testthat
 
