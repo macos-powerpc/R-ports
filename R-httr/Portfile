@@ -4,19 +4,19 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran r-lib httr 1.4.7
-revision            2
-categories-append   devel
+R.setup             cran r-lib httr 1.4.8
+revision            0
+categories-append   www
+platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Tools for working with URLs and HTTP
 long_description    {*}${description}
 homepage            https://httr.r-lib.org
-checksums           rmd160  933aab857b077645f33df9d7418c49987b4e6d55 \
-                    sha256  1555e6c2fb67bd38ff11b479f74aa287b2d93f4add487aec53b836ff07de3a3a \
-                    size    118500
+checksums           rmd160  cf4d4012ff45018ec3c0a2b8a739782a8f1fcac5 \
+                    sha256  62acf6759814f0a2923d18904971e16e01d6147419ceb816dac02113fc3e09f8 \
+                    size    113914
 supported_archs     noarch
-platforms           {darwin any}
 
 depends_lib-append  port:R-curl \
                     port:R-jsonlite \
