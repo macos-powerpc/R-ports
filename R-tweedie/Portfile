@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran pdunn2 tweedie 3.0.12
+R.setup             cran pdunn2 tweedie 3.0.17
 revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Evaluation of Tweedie exponential family models
 long_description    {*}${description}
-checksums           rmd160  18eb02a6160be81a57448fbaefa1851894c029f5 \
-                    sha256  f38f24ad58e51d707a7dacb4c3a351204ee3256b52f602445233268c782d24dd \
-                    size    250044
+checksums           rmd160  7529bce731b464fda08f914d6daf05f0fcfa4c9f \
+                    sha256  4be7c6dbd064a5316976771b8846977df0eb9ccb3a63444b8988dce71a9c3ea9 \
+                    size    2048517
 
 depends_lib-append  port:R-lifecycle \
                     port:R-statmod
