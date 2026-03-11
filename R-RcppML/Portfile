@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran zdebruine RcppML 0.3.7
-revision            3
+R.setup             cran zdebruine RcppML 0.3.7.1
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
-license             {GPL-2 GPL-3}
+license             GPL-2+
 description         Rcpp Machine Learning library
 long_description    Fast machine learning algorithms including matrix factorization \
                     and divisive clustering for large sparse and dense matrices.
-checksums           rmd160  5b533d46ea4e2c2f51854f86d97a585199856950 \
-                    sha256  325c6515085527eb9123cc5e87e028547065771ed4d623048f41886ae28908c6 \
-                    size    45879
+checksums           rmd160  3cd5863ff2de275ef0e7eb18d0139c3fe1f8672e \
+                    sha256  9a2e2556b436504b270ac29b31d7a72c07fe5f34d48562e5930366fb228aae4b \
+                    size    45810
 
 depends_lib-append  port:R-Rcpp \
                     port:R-RcppEigen
