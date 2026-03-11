@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran paullabonne BayesMultiMode 0.7.3
-revision            1
+R.setup             cran paullabonne BayesMultiMode 0.7.5
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             GPL-3+
 description         Bayesian mode inference
 long_description    {*}${description}
 homepage            https://github.com/paullabonne/BayesMultiMode
-checksums           rmd160  0abe5ede0df537295ff90441d6e6d4426bf368fd \
-                    sha256  e23853a4c22ad34f1e3b3db8e2e32ad1c90ae0342c626f7ca1b0675916747b81 \
-                    size    5163844
+checksums           rmd160  c5d121836aa771de9f6f456d885bf44c9c56b38f \
+                    sha256  1ca7e06a3100625c75bbdc3f065cafff3476ad1a8f2bc45d3bacfa6b6bf9aed6 \
+                    size    5038687
 supported_archs     noarch
 
 depends_lib-append  port:R-assertthat \
