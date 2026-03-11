@@ -3,7 +3,7 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran ardata-fr doconv 0.3.3
+R.setup             cran ardata-fr doconv 0.4.0
 revision            0
 categories-append   graphics
 platforms           {darwin any}
@@ -11,19 +11,22 @@ maintainers         nomaintainer
 license             MIT
 description         Document conversion to PDF or PNG
 long_description    {*}${description}
-checksums           rmd160  ff4bebadd5115d7de455bedb5d9b06ec0a21cd41 \
-                    sha256  6081cd59ca026d59d8d0641c8e1daee0134a66b40ec94616a3cfa8beab8a7dd2 \
-                    size    257676
+checksums           rmd160  6b92f6f05c26956a37469f13da46cc3ff0e8f868 \
+                    sha256  08a63b17be6100c8345d62efbd315f90ab6f3f651965a6b524cec35722258820 \
+                    size    461295
 supported_archs     noarch
 
-depends_lib-append  port:R-locatexec \
+depends_lib-append  port:R-gdtools \
+                    port:R-locatexec \
                     port:R-magick \
                     port:R-pdftools \
                     port:R-processx
 
-patchfiles          patch-no-webshot2.diff
-
-depends_test-append port:R-testthat \
+# R-webshot2 is omitted.
+depends_test-append port:R-curl \
+                    port:R-flextable \
+                    port:R-ragg \
+                    port:R-testthat \
                     port:R-tinytest
 
 # Despite declared dependencies, there are no specific tests.
