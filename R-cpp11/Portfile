@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github r-lib cpp11 0.5.3 v
-revision            1
+R.setup             github r-lib cpp11 0.5.5 v
+revision            0
 categories-append   devel
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -13,9 +13,9 @@ description         ${name} helps you to interact with R objects \
                     using C++ code
 long_description    {*}${description}
 homepage            https://cpp11.r-lib.org
-checksums           rmd160  32522eef6a07f0d4117b916c50ece421d6f0d6ed \
-                    sha256  4cd915020bf8ee17e86c3a3dc842c4b5a5110826628ee71726ce1c0722fc7d51 \
-                    size    205838
+checksums           rmd160  3752992aa3e9b77fd0336df8b3df082f151ab083 \
+                    sha256  67e6ccee73b13061d54b0b33617472803d130a5bee35982cf306414677297010 \
+                    size    214315
 github.tarball_from archive
 supported_archs     noarch
 
