@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran eddelbuettel RcppGSL 0.3.13
-revision            5
+R.setup             cran eddelbuettel RcppGSL 0.3.14
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Rcpp integration for GNU GSL vectors and matrices
 long_description    {*}${description}
 homepage            https://dirk.eddelbuettel.com/code/rcpp.gsl.html
-checksums           rmd160  2b08eab354c0146a6e7986a576e681bf21dfe9d8 \
-                    sha256  fe5e73bc119c6424e1a40b6fea17417a7bba93e81dbe9b7cf86dde9b8e8d93e7 \
-                    size    302527
+checksums           rmd160  0330c978240ed98447ca6a717bd3127172b733dd \
+                    sha256  1ff7fc159375ae063b434a8c509cffe2435d7ff7e19c7fa79538219db5905aaa \
+                    size    373034
 
 depends_lib-append  port:gsl \
                     port:R-Rcpp
