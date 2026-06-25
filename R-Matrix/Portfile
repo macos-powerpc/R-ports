@@ -6,17 +6,17 @@ PortGroup           R 1.0
 R.recommended       yes
 
 # This is a recommended package. Keep it CRAN-sourced.
-R.setup             cran r-forge Matrix 1.7-4
-revision            1
+R.setup             cran r-forge Matrix 1.7-5
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Sparse and dense matrix classes and methods
 long_description    {*}${description}. Recommended package.
 homepage-append     https://Matrix.R-forge.R-project.org
-checksums           rmd160  749ceeaecdede942051c27a599012c64cbf472a9 \
-                    sha256  7b131ecb6a21ff09a33691dac7bf8a7bc2eab9fd1dd09ef14856d74346eb4779 \
-                    size    2485182
+checksums           rmd160  9f4710ca4e89f0673ae7d6b9dee5592343008375 \
+                    sha256  308b0edd7bcb023a8bb50cc5cec98e66b3658c94a5badfb1ce6024e595fa8a83 \
+                    size    2529215
 
 # R-Matrix uses bundled parts of SuiteSparse. The version used in 1.7-0
 # has a bug breaking it for < 10.7 (fixed in upstream already).
