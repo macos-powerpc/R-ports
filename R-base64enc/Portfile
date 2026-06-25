@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-project base64enc 0.1-3
-revision            4
+R.setup             cran r-project base64enc 0.1-6
+revision            0
 maintainers         nomaintainer
 license             {GPL-2 GPL-3}
 description         Tools for base64 encoding
 long_description    This package provides tools for handling base64 encoding. \
                     It is more flexible than the orphaned base64 package.
 homepage            http://www.rforge.net/base64enc
-checksums           rmd160  db3fd80f395c4fd7e927bcb62b514bed771a2430 \
-                    sha256  6d856d8a364bcdc499a0bf38bfd283b7c743d08f0b288174fba7dbf0a04b688d \
-                    size    7833
+checksums           rmd160  a089043d71ab8ce25954fce207ca6951394a45ed \
+                    sha256  3c7e9d22f7409fa2989008fa6e980c3dd8e2693eb20676acf2470ae7addb0816 \
+                    size    9418
 
 depends_test-append port:R-png
 
