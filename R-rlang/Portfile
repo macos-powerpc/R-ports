@@ -4,8 +4,8 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran r-lib rlang 1.1.7
-revision            1
+R.setup             cran r-lib rlang 1.2.0
+revision            0
 categories-append   devel
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
@@ -13,9 +13,9 @@ description         Low-level API for programming with R
 long_description    ${name} is a collection of frameworks and APIs \
                     for programming with R.
 homepage            https://rlang.r-lib.org
-checksums           rmd160  0092f49a437dfc6a5d3aef3e18f5907ab4a234bb \
-                    sha256  123c91e7eaacd3514a368a31c30617d36a874def37f6cafdacc0c7d1409be373 \
-                    size    770338
+checksums           rmd160  24a9d4b8a551adcc7568425e7e7d478bb6325cbd \
+                    sha256  8f808ad4f6c1ba37d81b6a4a2cdb4a7d4d30d5bee4ba3e9924352d85a3874357 \
+                    size    780860
 
 depends_test-append port:R-cli \
                     port:R-covr \
