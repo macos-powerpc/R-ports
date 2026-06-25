@@ -9,7 +9,7 @@ PortGroup           cmake 1.1
 set realname        geos
 name                ${realname}-R
 version             3.14.1
-revision            0
+revision            1
 categories          R science math gis
 license             LGPL-2.1
 maintainers         {@barracuda156 macos-powerpc.org:barracuda}

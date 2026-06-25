@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # GitHub version lags behind.
 R.setup             cran pbreheny ncvreg 3.16.0 ncvreg_
-revision            0
+revision            1
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3

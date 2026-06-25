@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 R.setup             github edelweiss611428 rupturesRcpp f325c886eeaef4ce71017e266f83d59b7c47e6ef
 version             0.1.0
-revision            0
+revision            1
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3

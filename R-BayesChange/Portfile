@@ -6,7 +6,7 @@ PortGroup           R 1.0
 # Do not upgrade to 2.x unless this is addressed:
 # https://github.com/lucadanese/BayesChange/issues/6
 R.setup             cran lucadanese BayesChange 1.1.2
-revision            0
+revision            1
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3+

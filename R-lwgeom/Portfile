@@ -6,7 +6,7 @@ PortGroup           R 1.0
 
 R.setup             github r-spatial lwgeom 34d30eb1742a2093272f47fbf6fba1f4506495bf
 version             0.2-16
-revision            0
+revision            1
 categories-append   math gis
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2

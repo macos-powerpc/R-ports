@@ -5,7 +5,7 @@ PortGroup           java 1.0
 PortGroup           R 1.0
 
 R.setup             cran tsungwu h2o 3.44.0.3
-revision            0
+revision            1
 maintainers         nomaintainer
 license             Apache-2
 description         R interface for the H2O scalable machine learning platform

@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # GitHub version lags behind.
 R.setup             cran cmmr hdf5lib 2.0.0.5
-revision            0
+revision            1
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Headers and static libraries for HDF5

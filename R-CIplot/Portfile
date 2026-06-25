@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             github toshi-ara CIplot 1.0 CRAN-
-revision            2
+revision            3
 categories-append   graphics
 platforms           {darwin any}
 maintainers         nomaintainer

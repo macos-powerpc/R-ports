@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             cran takeshiemura compound.Cox 3.33
-revision            0
+revision            1
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-2

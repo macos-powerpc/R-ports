@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 R.setup             github andrjohns StanEstimators 369fd03ce24259e6feb125cde4cfd27f839100ef
 version             0.2.0.9000
-revision            0
+revision            1
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT

@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # GitHub version lies about itself.
 R.setup             cran jbengler tidyplots 0.3.1 v
-revision            0
+revision            1
 platforms           {darwin any}
 maintainers         nomaintainer
 license             MIT

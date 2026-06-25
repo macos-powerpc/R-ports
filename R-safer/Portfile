@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 R.setup             github talegari safer 7e08b0ba5cf783f7672c7ab0b994c31a7641c0b1
 version             0.2.2
-revision            2
+revision            3
 categories-append   crypto
 platforms           {darwin any}
 maintainers         nomaintainer

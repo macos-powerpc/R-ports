@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # GitHub version lags behind.
 R.setup             cran franciscomartinezdelrio utsf 1.3.0 v
-revision            0
+revision            1
 categories-append   finance
 platforms           {darwin any}
 maintainers         nomaintainer

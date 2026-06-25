@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             github eclarke ggbeeswarm 0.7.2 v
-revision            2
+revision            3
 categories-append   graphics
 platforms           {darwin any}
 maintainers         nomaintainer

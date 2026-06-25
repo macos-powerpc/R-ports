@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # GitHub version is outdated.
 R.setup             cran LyzandeR tableHTML 2.1.2 v
-revision            0
+revision            1
 categories-append   www
 platforms           {darwin any}
 maintainers         nomaintainer

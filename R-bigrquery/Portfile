@@ -6,7 +6,7 @@ PortGroup           R 1.0
 # Cannot update until this is addressed:
 # https://github.com/r-dbi/bigrquery/issues/644
 R.setup             github r-dbi bigrquery 1.5.1 v
-revision            2
+revision            3
 categories-append   devel
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3

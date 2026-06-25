@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # GitHub version is outdated.
 R.setup             cran AlexisDerumigny ElliptCopulas 0.1.4.1
-revision            0
+revision            1
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer

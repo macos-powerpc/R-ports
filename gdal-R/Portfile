@@ -12,7 +12,7 @@ legacysupport.newest_darwin_requires_legacy 16
 set realname        gdal
 name                ${realname}-R
 version             3.12.2
-revision            0
+revision            1
 categories          R gis science
 license             MIT BSD
 maintainers         {@barracuda156 macos-powerpc.org:barracuda}

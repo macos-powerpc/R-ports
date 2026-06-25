@@ -6,7 +6,7 @@ PortGroup           R 1.0
 # There is a mismatch between versioning on CRAN and GitHub,
 # for now use CRAN tarball.
 R.setup             cran khliland CCI 0.3.1
-revision            0
+revision            1
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer

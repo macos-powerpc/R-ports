@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             github jcrodriguez1989 chatgpt 0.2.3 v
-revision            2
+revision            3
 categories-append   llm www
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer

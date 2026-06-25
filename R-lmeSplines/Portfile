@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # GitHub version is old.
 R.setup             cran agalecki lmeSplines 1.1.15 v
-revision            0
+revision            1
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer

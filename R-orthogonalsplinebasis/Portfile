@@ -6,7 +6,7 @@ PortGroup           R 1.0
 R.setup             github halpo obsplines 0.1.7 v
 # Match package name on CRAN:
 set R.package       orthogonalsplinebasis
-revision            3
+revision            4
 categories-append   math
 platforms           {darwin any}
 maintainers         nomaintainer

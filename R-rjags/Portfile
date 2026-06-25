@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # On the next update drop `incr revision` below.
 R.setup             cran martyn.plummer rjags 4-17
-revision            1
+revision            2
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2

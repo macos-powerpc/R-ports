@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             github const-ae ggsignif 0.6.4
-revision            3
+revision            4
 platforms           {darwin any}
 maintainers         nomaintainer
 license             GPL-3

@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
 R.setup             cran rsquaredacademy rfm 0.3.0 v
-revision            2
+revision            3
 categories-append   economics
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT

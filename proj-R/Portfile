@@ -6,7 +6,7 @@ PortGroup           cmake 1.1
 set realname        proj
 name                ${realname}-R
 version             9.7.1
-revision            0
+revision            1
 categories          R gis science
 license             MIT
 maintainers         {@barracuda156 macos-powerpc.org:barracuda}

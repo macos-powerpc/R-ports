@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # Revert to GitLab once updated there.
 R.setup             cran luke-tierney misc3d 0.9-2 R-
-revision            0
+revision            1
 categories-append   graphics
 platforms           {darwin any}
 maintainers         nomaintainer

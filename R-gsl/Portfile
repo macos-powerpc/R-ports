@@ -5,7 +5,7 @@ PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
 R.setup             cran RobinHankin gsl 2.1-9
-revision            0
+revision            1
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3
 description         Wrapper for the Gnu Scientific Library

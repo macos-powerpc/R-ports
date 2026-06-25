@@ -9,7 +9,7 @@ legacysupport.newest_darwin_requires_legacy 10
 
 # Revert to GitHub once updated there.
 R.setup             cran tidyverse haven 2.5.5
-revision            0
+revision            1
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Import and export SPSS, Stata and SAS files

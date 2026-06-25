@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             cran cran SetMethods 4.0
-revision            3
+revision            4
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2
 description         Functions for set-theoretic multi-method research and advanced QCA

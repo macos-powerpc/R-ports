@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             cran mcomas coda.base 1.0.3
-revision            0
+revision            1
 maintainers         nomaintainer
 license             GPL
 description         Basic set of functions for compositional data analysis

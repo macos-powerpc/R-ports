@@ -5,7 +5,7 @@ PortGroup           active_variants 1.1
 PortGroup           R 1.0
 
 R.setup             cran s-u rJava 1.0-14
-revision            0
+revision            1
 categories-append   java
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             LGPL-2.1
