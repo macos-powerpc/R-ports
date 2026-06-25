@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github tidyverse glue 1.8.0 v
-revision            2
+R.setup             github tidyverse glue 1.8.1 v
+revision            0
 categories-append   devel
 maintainers         nomaintainer
 license             MIT
@@ -13,9 +13,9 @@ long_description    Glue offers interpreted string literals that are small, fast
                     Glue does this by embedding R expressions in curly braces which are then evaluated \
                     and inserted into the argument string.
 homepage            https://glue.tidyverse.org
-checksums           rmd160  c9a99292b3f726334a4e071120c3e2da352b8f79 \
-                    sha256  6a9d5970c8169358a7ae8209546f8426415094be8ee5713e7dd33be5edc0c5ea \
-                    size    222879
+checksums           rmd160  3d6db5a212134078fb5f797de433cb83a27b3a43 \
+                    sha256  392460f697ee03dd62e3fb7587dd9cfebf9882f2c775ee221398c35fca9e7d05 \
+                    size    469766
 github.tarball_from archive
 
 depends_test-append port:R-crayon \
