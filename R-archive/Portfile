@@ -3,19 +3,18 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-# Revert to GitHub once updated there.
-R.setup             cran r-lib archive 1.1.12.1 v
-revision            1
+R.setup             github r-lib archive 1.1.13 v
+revision            0
 categories-append   archivers devel
 maintainers         nomaintainer
 license             MIT
 description         Multi-format archive and compression support
 long_description    {*}${description}
 homepage            https://archive.r-lib.org
-checksums           rmd160  2f5ab1870ef13504193836a9fa0dee713bd9f2d8 \
-                    sha256  74995f61df47d25549e73884d5eac67ea4370317263b8ef9bb945f6997affa85 \
-                    size    144964
-# github.tarball_from archive
+checksums           rmd160  f1bdb71a7f069ba76f86219959d39dd8b2e63ce6 \
+                    sha256  2b0665039daab47c74532bd090a7e84fbef3bcac01773034c345f51314d26ea6 \
+                    size    146758
+github.tarball_from archive
 
 depends_lib-append  port:libarchive \
                     port:R-cli \
