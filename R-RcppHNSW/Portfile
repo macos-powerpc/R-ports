@@ -3,16 +3,16 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github jlmelville rcpphnsw 0.6.0 v
+R.setup             github jlmelville rcpphnsw 0.7.0 v
 set R.package       RcppHNSW
-revision            3
+revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-3+
 description         Rcpp bindings for the approximate nearest neighbors library hnswlib
 long_description    {*}${description}
-checksums           rmd160  92fa7cfbd3edcdcb9fce2a907fa0d94453940ce5 \
-                    sha256  82de5a3ab983c0bd7a5bbe71ba91bb88f417f1e4df2e6dc5b449ff562bc44a39 \
-                    size    55145
+checksums           rmd160  e959c655349afc2422c68877f329ed3a32ca92a3 \
+                    sha256  04f5fc7ea56005ce173ccd60e9b1189164330ea379f7e944ff46dae6aa3b6b2f \
+                    size    56684
 github.tarball_from archive
 
 depends_lib-append  port:R-Rcpp
