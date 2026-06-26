@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github r-lib withr 3.0.2 v
-revision            2
+R.setup             github r-lib withr 3.0.3 v
+revision            0
 categories-append   devel
 platforms           {darwin any}
 maintainers         nomaintainer
@@ -13,9 +13,9 @@ description         Methods for temporarily modifying global state
 long_description    A set of functions to run code with safely and temporarily modified global state, \
                     withr makes working with the global state, i.e. side effects, less error-prone.
 homepage            https://withr.r-lib.org
-checksums           rmd160  52b9685ca88a3b9e6dc220ff5bccc9ec8d36845b \
-                    sha256  939c3c116930de0671e27580eec6a9ef28cc80f8c63782bb170c14c9ecf3ae6f \
-                    size    130423
+checksums           rmd160  9cc889625c2c6287ccf1ac41631455377d04e728 \
+                    sha256  a3a4fa14e21c013036d37d356caeef7f45b750d2ee4c6b55fd12b936eebd2937 \
+                    size    136754
 github.tarball_from archive
 supported_archs     noarch
 
