@@ -3,8 +3,9 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github stan-dev loo 2.9.0 v
-revision            1
+# Revert to GitHub once updated there.
+R.setup             cran stan-dev loo 2.10.0 v
+revision            0
 categories-append   math
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,10 +13,10 @@ license             GPL-3+
 description         Efficient Leave-One-Out Cross-Validation and WAIC for Bayesian Models
 long_description    {*}${description}
 homepage            https://mc-stan.org/loo
-checksums           rmd160  4c3fec56bde0a748e1e98ad9e6efc767e4694edb \
-                    sha256  fa59440f7204ec3fcef30510c07c34d4bcd480b0eda5475c035e768c0c3ab219 \
-                    size    17772991
-github.tarball_from archive
+checksums           rmd160  b1ca2fd1553971628b5c574474883c00d1f3eedd \
+                    sha256  d17c8c45905e2b935398156a5ebb610e11549b2c81cf184fbf2e8041b6d89bcb \
+                    size    2880695
+# github.tarball_from archive
 supported_archs     noarch
 
 depends_lib-append  port:R-checkmate \
