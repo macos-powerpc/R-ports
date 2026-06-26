@@ -19,8 +19,15 @@ checksums           rmd160  505d082aea60ad376a7f69bd187765e44adca978 \
                     sha256  76ba40750b475c8b1ad6a86c9e05f0c1746af16d965235ff9293953920aed7f4 \
                     size    2253853
 
+compilers.setup     require_fortran
+
 depends_build-append \
                     path:bin/cmake:cmake
+
+# https://github.com/astamm/nloptr/issues/211
+post-patch {
+    reinplace "s|CMD config CXX11|CMD config CXX20|g" ${worksrcpath}/src/scripts/r_config.sh
+}
 
 if {${os.platform} eq "darwin" && ${os.major} < 11} {
     patchfiles-append \
@@ -30,8 +37,6 @@ if {${os.platform} eq "darwin" && ${os.major} < 11} {
         reinplace "s|@PREFIX@|${prefix}|g" ${worksrcpath}/src/scripts/r_config.sh
     }
 }
-
-compilers.setup     require_fortran
 
 depends_test-append port:R-covr \
                     port:R-knitr \
