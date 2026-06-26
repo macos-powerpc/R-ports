@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran lme4 lme4 1.1-38
-revision            1
+R.setup             cran lme4 lme4 2.0-1
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         Linear Mixed-Effects Models using Eigen and S4
 long_description    {*}${description}
 homepage            https://github.com/lme4/lme4
-checksums           rmd160  727d428f44be71aa9fa34b6af9718e21b7c61a79 \
-                    sha256  97f895c10053ea178a116e2c5a3095208fc54ff2b67be3351faab9a6608c8cc7 \
-                    size    3774010
+checksums           rmd160  808cd90ed630183dbea5f2fc625fbe2b6f277c88 \
+                    sha256  a34b75c1ef05d7c023d9d86c9d644381a4098de5b3008f9256b89b3a380917a4 \
+                    size    3701223
 
 depends_lib-append  port:R-minqa \
                     port:R-nloptr \
