@@ -7,16 +7,16 @@ PortGroup           R 1.0
 # strnlen
 legacysupport.newest_darwin_requires_legacy 10
 
-R.setup             github tidyverse vroom 1.7.0 v
-revision            1
+R.setup             github tidyverse vroom 1.7.1 v
+revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         The fastest delimited reader for R
 long_description    {*}${description}
 homepage            https://vroom.r-lib.org
-checksums           rmd160  a464559f1ff15ea2e9d9862f99be82d392bacef0 \
-                    sha256  56eeecaa5ad7eecee21b157a2f8fa0d252c1cb7477047684f25a063dfd11b9bc \
-                    size    2690781
+checksums           rmd160  ce7994a21a531a741c20234290697432f8f9070c \
+                    sha256  610ba07b37e09edf802c4e5ec251c863e16d260dfddf96f7a905e0aa5603fab2 \
+                    size    2691445
 github.tarball_from archive
 
 depends_lib-append  port:R-bit64 \
