@@ -3,21 +3,22 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran r-lib bit64 4.6.0-1
-revision            2
+R.setup             cran r-lib bit64 4.8.2
+revision            0
 categories-append   devel
 maintainers         nomaintainer
 license             {GPL-2 GPL-3}
 description         S3 class for vectors of 64-bit integers
 long_description    {*}${description}
 homepage            https://github.com/r-lib/bit64
-checksums           rmd160  4ed42b21d7a2d2ea95fda777b9fbd6b9cd981088 \
-                    sha256  fbc0ce142fc22c9a9fdcbac930a814dfb648563d4b6a77dff739c23cc81319b7 \
-                    size    142045
+checksums           rmd160  6694a8c3024440f46b4b54b50534b5e235cdd113 \
+                    sha256  be5907acc6ebc389e9fb3fb6760b07ca4ee9c6da2fe1c286277bc67b9af5db9f \
+                    size    171594
 
 depends_lib-append  port:R-bit
 
-depends_test-append port:R-testthat \
+depends_test-append port:R-patrick \
+                    port:R-testthat \
                     port:R-withr
 
 test.run            yes
