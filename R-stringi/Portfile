@@ -16,6 +16,10 @@ checksums           rmd160  1fd226d4dee2378b4d98b3d8f4aa731958694dbd \
                     size    118701097
 github.tarball_from archive
 
+# TODO: as of 1.8.7 with ICU 78.3 and gcc16, the build refuses to use icu port, and instead
+# builds a bundled copy. Perhaps because of C++20 being the default with R now, while
+# icu port is built with C++17? Not a big deal, but verify on the next update.
+
 # ICU is an optional dependency, but it is linked to, if available.
 # Make it consistent. Anyway, R itself requires ICU installed.
 depends_lib-append  path:lib/pkgconfig/icu-uc.pc:icu
