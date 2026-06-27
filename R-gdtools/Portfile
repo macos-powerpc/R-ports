@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran davidgohel gdtools 0.5.0
-revision            1
+R.setup             cran davidgohel gdtools 0.5.1
+revision            0
 categories-append   graphics
 maintainers         nomaintainer
 license             GPL-3
 description         Utilities for graphical rendering and fonts management
 long_description    {*}${description}
 homepage            https://davidgohel.github.io/gdtools
-checksums           rmd160  ddbf9b4417fcdbf831f6b946713081848d0d104e \
-                    sha256  aee90810068ebac8204ae2703c641cbb8943f214b6f4bb64c0c00860a9a7f395 \
-                    size    79407
+checksums           rmd160  797db7c68efe6ef8d3a27cbf37623517b4f460d1 \
+                    sha256  94c15014fcfa7a83de863b7d690a98a05a8cb929dcb056af8f304632dc4441e7 \
+                    size    80023
 
 depends_build-append \
                     path:bin/pkg-config:pkgconfig
