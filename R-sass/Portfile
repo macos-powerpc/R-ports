@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 R.setup             cran rstudio sass 0.4.10
-revision            1
+revision            2
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Syntactically Awesome Style Sheets
@@ -20,9 +20,12 @@ depends_lib-append  port:R-fs \
                     port:R-rlang
 
 if {${configure.cxx_stdlib} ne "libc++"} {
-    # error: unrecognized command-line option '-stdlib=libc++'
+    # error: unrecognized command-line option '-stdlib=libc++'.
+    # Set ABI explicitly, since the build does not respect flags from R settings.
+    # Somehow the port still builds, but the library has ABI-specific symbols
+    # like __ZTINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE, which we do not want.
     post-patch {
-        reinplace "s|-stdlib=libc++||g" ${worksrcpath}/src/libsass/Makefile
+        reinplace "s|-stdlib=libc++|-D_GLIBCXX_USE_CXX11_ABI=0|g" ${worksrcpath}/src/libsass/Makefile
     }
 }
 
