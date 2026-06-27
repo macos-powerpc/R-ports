@@ -4,17 +4,17 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # GitHub version lags behind.
-R.setup             cran coolbutuseless yyjsonr 0.1.21 v
-revision            1
+R.setup             cran coolbutuseless yyjsonr 0.1.22 v
+revision            0
 categories-append   devel
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Fast JSON, NDJSON and GeoJSON parser and generator
 long_description    {*}${description}
 homepage            https://coolbutuseless.github.io/package/yyjsonr
-checksums           rmd160  4f2eb64f3b198c736933913f886d6e35425746c5 \
-                    sha256  7e95d6e142d696edd01167be0b45d66b1dd692048d0a1af0dccc16220f606895 \
-                    size    1371260
+checksums           rmd160  64fe56a2817045c295ff56f9b7cfbc4731c7c43d \
+                    sha256  ca2c68e0c1589e536bb76aac8235a75d90bde82e32e3367a321a12731fa48b8e \
+                    size    1387119
 # github.tarball_from archive
 
 depends_test-append port:R-bit64 \
