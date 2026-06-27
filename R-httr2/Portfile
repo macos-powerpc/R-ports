@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github r-lib httr2 1.2.2 v
-revision            1
+R.setup             github r-lib httr2 1.2.3 v
+revision            0
 categories-append   devel net
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -12,9 +12,9 @@ license             MIT
 description         Perform HTTP requests and process the responses
 long_description    {*}${description}
 homepage            https://httr2.r-lib.org
-checksums           rmd160  3851cfe0b6b4a5f9eeebe847fea56630b5a61419 \
-                    sha256  59dd93797a26b3c9e61579e48fd28c60bd8a0152585922d13a960010e170d5e9 \
-                    size    370589
+checksums           rmd160  05b40d71a126a71160905330210fa5fa50ba47b2 \
+                    sha256  b72b3088669630fee3c2884cd6a2ed4ff17be021e186289dfdcdbd024fa6e343 \
+                    size    395053
 github.tarball_from archive
 supported_archs     noarch
 
@@ -35,6 +35,7 @@ depends_test-append port:R-askpass \
                     port:R-bench \
                     port:R-clipr \
                     port:R-covr \
+                    port:R-digest \
                     port:R-docopt \
                     port:R-httpuv \
                     port:R-jose \
