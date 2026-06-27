@@ -4,8 +4,8 @@ PortSystem          1.0
 PortGroup           R 1.0
 
 # Revert to GitHub once updated there.
-R.setup             cran r-lib pkgload 1.5.0 v
-revision            1
+R.setup             cran r-lib pkgload 1.5.3 v
+revision            0
 categories-append   devel
 platforms           {darwin any}
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
@@ -14,9 +14,9 @@ description         Simulate package installation
 long_description    ${name} simulates the process of installing \
                     a package and then attaching it.
 homepage            https://pkgload.r-lib.org
-checksums           rmd160  7f996ba3d66d6ea9d7c29923ce948e63ae832b3e \
-                    sha256  214e8aa183814a9bfb82211fcfc67c6c1171fc0faf42bea84a651aebff9993e6 \
-                    size    87781
+checksums           rmd160  69e2e788cfe3b5e32c5e5a2d021d24d1bae5eff9 \
+                    sha256  5e539f91ca36b8ed80933101baf2a57462b9342c68556f5d4dcb86c01639df28 \
+                    size    89069
 # github.tarball_from archive
 supported_archs     noarch
 
