@@ -3,23 +3,27 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github wilkelab isoband 0.2.7 v
-revision            4
+R.setup             github wilkelab isoband 0.3.0 v
+revision            0
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
 description         Generate isolines and isobands from regularly spaced elevation grids.
 long_description    {*}${description}
 homepage            https://wilkelab.org/isoband
-checksums           rmd160  9be6f2e8caf507d953246dec220a06582a0d5426 \
-                    sha256  59ee6c69cb019ab13b33a6601796276a51c46854f31626dba9cbdde541bd0886 \
-                    size    1220497
+checksums           rmd160  39c58419055eaf7939bf5375b52f50c147b6564a \
+                    sha256  d46a5805c04f604502d96540b81ecc24f74203ab29e2c5d8ed5b1f78d0cd1b1c \
+                    size    1223978
 github.tarball_from archive
 
-depends_test-append port:R-covr \
+depends_lib-append  port:R-cli \
+                    port:R-cpp11 \
+                    port:R-rlang
+
+depends_test-append port:R-bench \
+                    port:R-covr \
                     port:R-ggplot2 \
                     port:R-knitr \
                     port:R-magick \
-                    port:R-microbenchmark \
                     port:R-rmarkdown \
                     port:R-sf \
                     port:R-testthat \
