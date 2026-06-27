@@ -3,17 +3,17 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             cran hdakpo ucminf 1.2.2
-revision            2
+R.setup             cran hdakpo ucminf 1.2.3
+revision            0
 categories-append   math
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             GPL-2+
 description         General-purpose unconstrained non-linear optimization
 long_description    {*}${description}
 homepage            https://github.com/hdakpo/ucminf
-checksums           rmd160  cf831f9f313db784f9ea9e6dfcb3d8c447df2dea \
-                    sha256  4bdb6ae769fa49a167cfdc92dc544ba3b6f34df6c08810cfb0c55613aff5bd29 \
-                    size    16883
+checksums           rmd160  809bbc47b97ed6a5fbd1976718d2a317c4de66b2 \
+                    sha256  4dcfc0e97a9e66f640d8f7a2c22a59e608d04dc49dadbf23aad5fb4e425a9015 \
+                    size    17196
 
 compilers.setup     require_fortran
 
