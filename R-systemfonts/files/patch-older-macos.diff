@@ -1,9 +1,21 @@
---- configure	2024-03-07 16:41:51.000000000 +0800
-+++ configure	2024-03-15 12:18:38.000000000 +0800
-@@ -10,34 +10,11 @@
- PKG_DEB_NAME="libfontconfig1-dev"
+--- src/font_fallback.cpp	2026-03-05 20:23:57.000000000 +0800
++++ src/font_fallback.cpp	2026-06-28 02:20:48.000000000 +0800
+@@ -36,7 +36,7 @@
+ 
+   // Validate that FreeType can load the substitute font
+   if (result != nullptr && !cache.load_font(result->path, result->index)) {
+-#ifdef __APPLE__
++#if defined(__APPLE__) && defined(__clang__) // Cocoa code in this package cannot be compiled with gcc
+     // Save info before deleting
+     std::string unloadable_family(result->family);
+     std::string unloadable_path(result->path);
+
+--- configure	2026-03-05 20:23:57.000000000 +0800
++++ configure	2026-06-28 02:10:31.000000000 +0800
+@@ -11,34 +11,11 @@
  PKG_RPM_NAME="fontconfig-devel"
  PKG_CSW_NAME="fontconfig_dev"
+ PKG_APK_NAME="harfbuzz-dev fribidi-dev"
 -PKG_BREW_NAME="freetype"
 +PKG_MP_NAME="freetype"
  PKG_TEST_HEADER="<fontconfig/fontconfig.h>"
@@ -36,7 +48,7 @@
  # Use pkg-config if available
  if [ "`command -v pkg-config`" ]; then
    PKGCONFIG_CFLAGS=`pkg-config --cflags --silence-errors ${PKG_CONFIG_NAME}`
-@@ -53,15 +30,6 @@
+@@ -54,15 +31,6 @@
    echo "Found pkg-config cflags and libs!"
    PKG_CFLAGS=${PKGCONFIG_CFLAGS}
    PKG_LIBS=${PKGCONFIG_LIBS}
@@ -52,12 +64,12 @@
  fi
  
  # For debugging
-@@ -83,7 +51,7 @@
-   echo " * deb: $PKG_DEB_NAME (Debian, Ubuntu, etc)"
+@@ -85,7 +53,7 @@
    echo " * rpm: $PKG_RPM_NAME (Fedora, EPEL)"
    echo " * csw: $PKG_CSW_NAME (Solaris)"
+   echo " * apk: $PKG_APK_NAME (Alpine)"
 -  echo " * brew: $PKG_BREW_NAME (OSX)"
-+  echo " * MacPorts: $PKG_MP_NAME (OSX)"
++  echo " * MacPorts/PPCPorts: $PKG_MP_NAME (macOS)"
    echo "If $PKG_CONFIG_NAME is already installed, check that 'pkg-config' is in your"
    echo "PATH and PKG_CONFIG_PATH contains a $PKG_CONFIG_NAME.pc file. If pkg-config"
    echo "is unavailable you can set INCLUDE_DIR and LIB_DIR manually via:"
