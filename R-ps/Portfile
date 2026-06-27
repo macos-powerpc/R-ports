@@ -3,8 +3,8 @@
 PortSystem          1.0
 PortGroup           R 1.0
 
-R.setup             github r-lib ps 1.9.0 v
-revision            2
+R.setup             github r-lib ps 1.9.3 v
+revision            0
 categories-append   sysutils
 maintainers         {@barracuda156 macos-powerpc.org:barracuda} openmaintainer
 license             MIT
@@ -12,9 +12,9 @@ description         R package to query, list and manipulate system processes
 long_description    ps implements an API to query and manipulate system processes. \
                     Most of its code is based on the psutil Python package.
 homepage            https://ps.r-lib.org
-checksums           rmd160  2a6396073f59494199eccc9449206a2744cdadea \
-                    sha256  e4c2474222a288c95a4d177b72a42b0eb767824a875d1a9becbe5321123d5d3c \
-                    size    172590
+checksums           rmd160  3684b8b6e1b0e0b487786d97d7959f52a32f33a8 \
+                    sha256  36cf7ebb7a55e965b757efe80177d5c14783835d70194e78b6ca8ebf39845564 \
+                    size    178326
 github.tarball_from archive
 
 if {[string match *gcc* ${configure.compiler}]} {
